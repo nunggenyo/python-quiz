@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./quiz.css";
 
 export default function Quiz() {
+  const [quizFile, setQuizFile] = useState(null);
   const [data, setData] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selected, setSelected] = useState(null);
@@ -10,15 +11,62 @@ export default function Quiz() {
   const [wrongCount, setWrongCount] = useState(0);
   const [finished, setFinished] = useState(false);
 
+  // Fetch selected quiz file
   useEffect(() => {
-    fetch("/quiz.json")
-      .then((res) => res.json())
-      .then((json) => setData(json));
-  }, []);
+    if (!quizFile) return;
+
+    fetch(`/${quizFile}`)
+      .then(res => res.json())
+      .then(json => setData(json));
+  }, [quizFile]);
+
+  const startQuiz = (file) => {
+    setQuizFile(file);
+    setData(null);
+    setCurrentQuestion(0);
+    setSelected(null);
+    setShowAnswer(false);
+    setCorrectCount(0);
+    setWrongCount(0);
+    setFinished(false);
+  };
+
+  const restartToMenu = () => {
+    setQuizFile(null);
+    setData(null);
+  };
+
+  // ==========================
+  // MENU SCREEN
+  // ==========================
+  if (!quizFile) {
+    return (
+      <div className="quiz-container">
+        <div className="quiz-card">
+          <h2>Select Quiz</h2>
+
+          <button
+            className="next-btn"
+            onClick={() => startQuiz("day_1.json")}
+          >
+            Day 1
+          </button>
+
+          <button
+            className="next-btn"
+            onClick={() => startQuiz("day_2.json")}
+            style={{ marginTop: "10px" }}
+          >
+            Day 2
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (!data) return <div className="loading">Loading...</div>;
 
-  const questions = data.topics.flatMap(topic => topic.questions);
+  const questions = data.questions;
   const question = questions[currentQuestion];
 
   const handleOptionClick = (index) => {
@@ -45,47 +93,35 @@ export default function Quiz() {
     setShowAnswer(false);
   };
 
-  const restartQuiz = () => {
-    setCurrentQuestion(0);
-    setSelected(null);
-    setShowAnswer(false);
-    setCorrectCount(0);
-    setWrongCount(0);
-    setFinished(false);
-  };
-
+  // ==========================
+  // RESULT SCREEN
+  // ==========================
   if (finished) {
     return (
       <div className="quiz-container">
         <div className="quiz-card">
           <h2>Quiz Finished 🎉</h2>
-          <p>Total Questions: {questions.length}</p>
+          <p>Total: {questions.length}</p>
           <p>✅ Correct: {correctCount}</p>
           <p>❌ Wrong: {wrongCount}</p>
 
-          <button className="next-btn" onClick={restartQuiz}>
-            Restart Quiz
+          <button className="next-btn" onClick={restartToMenu}>
+            Back to Menu
           </button>
         </div>
       </div>
     );
   }
 
+  // ==========================
+  // QUIZ SCREEN
+  // ==========================
   return (
     <div className="quiz-container">
       <div className="quiz-card">
-        <h2 className="quiz-title">Quiz App</h2>
+        <h2>Question {currentQuestion + 1} / {questions.length}</h2>
 
-        <div className="question-count">
-          Question {currentQuestion + 1} / {questions.length}
-        </div>
-
-        {/* LIVE SCORE DISPLAY */}
-        <div style={{ marginBottom: "15px", fontSize: "14px" }}>
-          ✅ {correctCount} | ❌ {wrongCount}
-        </div>
-
-        <h3 className="question-text">{question.question}</h3>
+        <p>{question.question}</p>
 
         <div className="options">
           {question.options.map((option, index) => {
@@ -115,10 +151,15 @@ export default function Quiz() {
             </div>
 
             <button className="next-btn" onClick={nextQuestion}>
-              Next Question →
+              Next →
             </button>
           </>
         )}
+
+        <div style={{ marginBottom: "10px", marginTop: "15px", textAlign: "right", fontSize: "14px" }}>
+          ✅ {correctCount} | ❌ {wrongCount}
+        </div>
+
       </div>
     </div>
   );

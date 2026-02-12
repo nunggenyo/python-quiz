@@ -1,0 +1,554 @@
+{
+  "questions": [
+    {
+      "question": "In Python, which of the following is the correct way to initialize a variable with a string literal and then convert it to all uppercase using a string method?",
+      "options": [
+        "name = 'gemini'; name.upper()",
+        "string name = 'gemini'; name.toUpperCase()",
+        "name := 'gemini'; upper(name)",
+        "var name = 'gemini'; name.case(upper)"
+      ],
+      "answer": 0,
+      "explanation": "Python variables are defined by assignment, and the .upper() method is the standard way to return a copy of the string in uppercase."
+    },
+    {
+      "question": "When working with the command line, which operator is used to 'pipe' the output of one command as the input to another?",
+      "options": [
+        ">",
+        ">>",
+        "|",
+        "<"
+      ],
+      "answer": 2,
+      "explanation": "The vertical bar (|) is the pipe operator, used to redirect the output of one process to the input of another."
+    },
+    {
+      "question": "Which of the following code snippets will correctly handle a scenario where a user provides a non-integer input for an age field?",
+      "options": [
+        "if type(input) != int: print('Error')",
+        "try: age = int(input()) except ValueError: print('Invalid input')",
+        "catch (Exception e): age = input()",
+        "validate age as integer else throw error"
+      ],
+      "answer": 1,
+      "explanation": "The try/except block with ValueError is the standard Pythonic way to handle input validation for type conversion."
+    },
+    {
+      "question": "What is the result of the following Python operation: 15 // 4?",
+      "options": [
+        "3.75",
+        "3",
+        "4",
+        "3.0"
+      ],
+      "answer": 1,
+      "explanation": "The // operator performs floor division, returning the largest integer less than or equal to the result."
+    },
+    {
+      "question": "In Python function scope, if a variable is defined inside a function and also outside that function, which value is used inside the function if no 'global' keyword is used?",
+      "options": [
+        "The global value",
+        "The local value",
+        "An UnboundLocalError is always thrown",
+        "The variable is shared between both scopes automatically"
+      ],
+      "answer": 1,
+      "explanation": "Python prioritizes local scope. If a variable is assigned within a function, it is treated as local to that function."
+    },
+    {
+      "question": "Which command line instruction is typically used to stop a running script or process in most console environments?",
+      "options": [
+        "Ctrl + S",
+        "Ctrl + Z",
+        "Ctrl + C",
+        "Ctrl + X"
+      ],
+      "answer": 2,
+      "explanation": "Ctrl + C sends an interrupt signal (SIGINT) to the running process, causing it to terminate."
+    },
+    {
+      "question": "Which of the following is a valid Python list slice to obtain the first three elements of a list named 'data'?",
+      "options": [
+        "data[1:3]",
+        "data[0:2]",
+        "data[:3]",
+        "data[3:]"
+      ],
+      "answer": 2,
+      "explanation": "Slicing syntax [start:stop] is exclusive of the stop index. data[:3] gets elements at indices 0, 1, and 2."
+    },
+    {
+      "question": "In a 'while' loop, what is the primary difference between the 'break' and 'continue' statements?",
+      "options": [
+        "Break restarts the loop; continue exits it.",
+        "Break exits the loop entirely; continue skips the current iteration and moves to the next.",
+        "Break is only for 'for' loops; continue is only for 'while' loops.",
+        "They are functionally identical."
+      ],
+      "answer": 1,
+      "explanation": "Break terminates the loop immediately. Continue skips the remaining code in the block for the current loop and checks the condition again."
+    },
+    {
+      "question": "What will be the output of: print('Python'[1:4])?",
+      "options": [
+        "Pyt",
+        "ytho",
+        "yth",
+        "yton"
+      ],
+      "answer": 2,
+      "explanation": "String indexing starts at 0. Index 1 is 'y'. The slice ends before index 4 ('h'), so it returns 'yth'."
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": [
+        "func",
+        "function",
+        "def",
+        "define"
+      ],
+      "answer": 2,
+      "explanation": "The 'def' keyword is used to start the definition of a function in Python."
+    },
+    {
+      "question": "In the context of Command-line basics, what does 'redirecting' (using '>') do?",
+      "options": [
+        "Sends output to another command.",
+        "Saves the output of a command into a file, overwriting its contents.",
+        "Appends the output of a command to an existing file.",
+        "Changes the directory of the current console."
+      ],
+      "answer": 1,
+      "explanation": "The '>' operator redirects standard output to a file, overwriting the file if it already exists."
+    },
+    {
+      "question": "What is the expected output of the following code?\n\ndef add(a, b=5):\n    return a + b\n\nprint(add(10))",
+      "options": [
+        "10",
+        "15",
+        "5",
+        "Error: missing parameter"
+      ],
+      "answer": 1,
+      "explanation": "The function uses a default parameter value for 'b'. Since only 10 is passed, b defaults to 5, resulting in 15."
+    },
+    {
+      "question": "Which Python data type is immutable?",
+      "options": [
+        "List",
+        "Dictionary",
+        "String",
+        "Set"
+      ],
+      "answer": 2,
+      "explanation": "Strings in Python are immutable, meaning they cannot be changed after they are created."
+    },
+    {
+      "question": "In a command-line interface, which command is typically used to view the contents of a file one page at a time?",
+      "options": [
+        "view",
+        "show",
+        "more",
+        "page"
+      ],
+      "answer": 2,
+      "explanation": "The 'more' (or 'less') command is a pager used to view text files one screenful at a time."
+    },
+    {
+      "question": "Which of the following is the correct syntax for a for-loop that iterates 5 times?",
+      "options": [
+        "for i in 5:",
+        "for i range(5):",
+        "for i in range(5):",
+        "for (i=0; i<5; i++):"
+      ],
+      "answer": 2,
+      "explanation": "In Python, the 'range' function generates a sequence of numbers, and 'in' is used to iterate over it."
+    },
+    {
+      "question": "When defining a function, where should optional parameters (those with default values) be placed?",
+      "options": [
+        "At the beginning of the parameter list.",
+        "In the middle of the parameter list.",
+        "At the end of the parameter list.",
+        "It does not matter where they are placed."
+      ],
+      "answer": 2,
+      "explanation": "Non-default arguments must precede default arguments in a Python function signature."
+    },
+    {
+      "question": "What is the result of the expression: 2 ** 3?",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "The ** operator is used for exponentiation (2 cubed)."
+    },
+    {
+      "question": "Which of the following string methods can be used to check if a string ends with a specific character or substring?",
+      "options": [
+        "has_suffix()",
+        "endswith()",
+        "finish()",
+        "tail()"
+      ],
+      "answer": 1,
+      "explanation": ".endswith() returns True if the string ends with the specified value, otherwise False."
+    },
+    {
+      "question": "In Python, how do you capture a specific exception type to prevent a program from crashing?",
+      "options": [
+        "catch ExceptionName:",
+        "except ExceptionName:",
+        "handle ExceptionName:",
+        "error ExceptionName:"
+      ],
+      "answer": 1,
+      "explanation": "The 'except' keyword followed by the Exception class is used to catch and handle errors."
+    },
+    {
+      "question": "What is the purpose of the 'return' keyword in a function?",
+      "options": [
+        "To exit the program.",
+        "To print a value to the console.",
+        "To send a value back to the caller of the function.",
+        "To restart the function from the beginning."
+      ],
+      "answer": 2,
+      "explanation": "The 'return' statement terminates the function execution and sends a value back to the line of code that called it."
+    },
+    {
+      "question": "What is 'Command-line execution' in the context of Python?",
+      "options": [
+        "Writing code in a text editor.",
+        "Running a Python script using a command like 'python script.py' in a terminal.",
+        "Executing code using a web browser.",
+        "Connecting a keyboard to a computer."
+      ],
+      "answer": 1,
+      "explanation": "Execution refers to the process of triggering the Python interpreter to run a saved script file via the CLI."
+    },
+    {
+      "question": "Which operator is used for 'logical AND' in Python?",
+      "options": [
+        "&&",
+        "&",
+        "and",
+        "amp"
+      ],
+      "answer": 2,
+      "explanation": "Python uses English words ('and', 'or', 'not') for logical operators."
+    },
+    {
+      "question": "What happens if you try to concatenate a string and an integer using the '+' operator in Python?",
+      "options": [
+        "The integer is automatically converted to a string.",
+        "The string is converted to an integer.",
+        "A TypeError is raised.",
+        "The operation results in None."
+      ],
+      "answer": 2,
+      "explanation": "Python is strongly typed and does not perform implicit type coercion between strings and numbers for concatenation."
+    },
+    {
+      "question": "Which of the following is used to comment out a single line of code in Python?",
+      "options": [
+        "//",
+        "/*",
+        "#",
+        "--"
+      ],
+      "answer": 2,
+      "explanation": "The hash symbol (#) is used to start a single-line comment in Python."
+    },
+    {
+      "question": "What is 'scope' in programming?",
+      "options": [
+        "The physical size of the source code file.",
+        "The region of a program where a variable is accessible.",
+        "The maximum value an integer can hold.",
+        "The speed at which a function executes."
+      ],
+      "answer": 1,
+      "explanation": "Scope determines the visibility and lifetime of variables and parameters in different parts of the code."
+    },
+    {
+      "question": "Which of the following is NOT a valid Python variable name?",
+      "options": [
+        "_my_var",
+        "var2",
+        "2var",
+        "myVar"
+      ],
+      "answer": 2,
+      "explanation": "Variable names in Python cannot start with a digit."
+    },
+    {
+      "question": "Which built-in function is used to receive input from the user via the console?",
+      "options": [
+        "get()",
+        "read()",
+        "input()",
+        "scan()"
+      ],
+      "answer": 2,
+      "explanation": "The input() function prompts the user and returns their input as a string."
+    },
+    {
+      "question": "In a try/except block, which block of code runs regardless of whether an exception occurred or not?",
+      "options": [
+        "else",
+        "finally",
+        "always",
+        "catch"
+      ],
+      "answer": 1,
+      "explanation": "The 'finally' block is used for clean-up actions and executes under all circumstances."
+    },
+    {
+      "question": "What is the purpose of the 'break' keyword in a loop?",
+      "options": [
+        "To skip the current line of code.",
+        "To exit the current loop prematurely.",
+        "To pause the program for a few seconds.",
+        "To jump to the 'except' block."
+      ],
+      "answer": 1,
+      "explanation": "Break is used to exit the innermost loop it is contained within."
+    },
+    {
+      "question": "Which command-line basic involves adding the output of a command to the end of an existing file?",
+      "options": [
+        "Piping",
+        "Paging",
+        "Appending (>>)",
+        "Redirecting (>)"
+      ],
+      "answer": 2,
+      "explanation": "The '>>' operator is used for appending output to a file without deleting existing content."
+    },
+    {
+      "question": "Which string method can be used to replace all occurrences of a substring with another substring?",
+      "options": [
+        "swap()",
+        "change()",
+        "replace()",
+        "modify()"
+      ],
+      "answer": 2,
+      "explanation": "The .replace(old, new) method returns a string where all occurrences of the 'old' substring are replaced with 'new'."
+    },
+    {
+      "question": "What does the range(2, 10, 2) function produce?",
+      "options": [
+        "2, 4, 6, 8, 10",
+        "2, 4, 6, 8",
+        "2, 3, 4, 5, 6, 7, 8, 9",
+        "4, 6, 8, 10"
+      ],
+      "answer": 1,
+      "explanation": "Range(start, stop, step) starts at 2, increments by 2, and stops before reaching 10."
+    },
+    {
+      "question": "In Python, which function would you use to find the number of characters in a string?",
+      "options": [
+        "count()",
+        "len()",
+        "size()",
+        "length()"
+      ],
+      "answer": 1,
+      "explanation": "The len() function returns the length of an object, such as a string or list."
+    },
+    {
+      "question": "Which of the following is used to define a block of code in Python?",
+      "options": [
+        "Curly braces {}",
+        "Parentheses ()",
+        "Indentation",
+        "Keywords 'begin' and 'end'"
+      ],
+      "answer": 2,
+      "explanation": "Python uses whitespace (indentation) to define the scope and structure of code blocks."
+    },
+    {
+      "question": "What is a 'string literal'?",
+      "options": [
+        "A variable that holds a string.",
+        "A sequence of characters surrounded by quotes directly in the code.",
+        "A function that prints strings.",
+        "The length of a string."
+      ],
+      "answer": 1,
+      "explanation": "A string literal is the actual text written in the source code, e.g., 'Hello World'."
+    },
+    {
+      "question": "Which comparison operator checks if two values are NOT equal?",
+      "options": [
+        "<>",
+        "not=",
+        "!=",
+        "~="
+      ],
+      "answer": 2,
+      "explanation": "In Python, != is the operator used to determine inequality."
+    },
+    {
+      "question": "What is the output of the following?\nx = 5\ny = \"5\"\nprint(x == int(y))",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "answer": 0,
+      "explanation": "The string 'y' is cast to an integer 5, and then compared to the integer x, which is equal."
+    },
+    {
+      "question": "In the command line, what does 'editing' typically refer to?",
+      "options": [
+        "Compiling the code.",
+        "Modifying source files using a text editor like nano, vim, or notepad.",
+        "Executing the program.",
+        "Renaming the file."
+      ],
+      "answer": 1,
+      "explanation": "Editing refers to the act of using a text editor to change the contents of the script file."
+    },
+    {
+      "question": "Which of the following creates a list in Python?",
+      "options": [
+        "items = {1, 2, 3}",
+        "items = (1, 2, 3)",
+        "items = [1, 2, 3]",
+        "items = <1, 2, 3>"
+      ],
+      "answer": 2,
+      "explanation": "Square brackets [] are used to define a list in Python."
+    },
+    {
+      "question": "What is the result of 'apple' in ['apple', 'banana', 'cherry']?",
+      "options": [
+        "0",
+        "True",
+        "False",
+        "['apple']"
+      ],
+      "answer": 1,
+      "explanation": "The 'in' operator checks for membership in a sequence and returns a boolean."
+    },
+    {
+      "question": "Which of the following is used to handle 'any other' condition in an if-statement if the previous conditions are false?",
+      "options": [
+        "elif",
+        "else",
+        "otherwise",
+        "default"
+      ],
+      "answer": 1,
+      "explanation": "The 'else' block executes if none of the preceding 'if' or 'elif' conditions are met."
+    },
+    {
+      "question": "What will 'print(f\"Value: {10 + 2}\")' output?",
+      "options": [
+        "Value: {10 + 2}",
+        "Value: 12",
+        "f\"Value: 12\"",
+        "Error"
+      ],
+      "answer": 1,
+      "explanation": "This is an f-string (formatted string literal) which evaluates expressions inside curly braces."
+    },
+    {
+      "question": "In Python, 'None' represents:",
+      "options": [
+        "Zero",
+        "An empty string",
+        "The absence of a value",
+        "A logical False"
+      ],
+      "answer": 2,
+      "explanation": "None is a special constant used to represent the absence of a value or a null value."
+    },
+    {
+      "question": "Which string method removes whitespace from both the beginning and the end of a string?",
+      "options": [
+        "clean()",
+        "strip()",
+        "trim()",
+        "cut()"
+      ],
+      "answer": 1,
+      "explanation": "The .strip() method removes all leading and trailing whitespace characters."
+    },
+    {
+      "question": "What is an 'argument' in the context of functions?",
+      "options": [
+        "The name of the function.",
+        "The value passed to a function when it is called.",
+        "An error in the code.",
+        "A variable defined inside the function."
+      ],
+      "answer": 1,
+      "explanation": "Arguments are the actual values you provide to the function's parameters during invocation."
+    },
+    {
+      "question": "Which of the following is the modulo operator in Python, used to find the remainder of a division?",
+      "options": [
+        "rem",
+        "mod",
+        "%",
+        "&"
+      ],
+      "answer": 2,
+      "explanation": "The percent sign (%) is the modulo operator."
+    },
+    {
+      "question": "In Python, can a function return multiple values?",
+      "options": [
+        "No, it can only return one value.",
+        "Yes, by separating them with commas (returning a tuple).",
+        "Yes, but only if they are the same data type.",
+        "No, you must use a list to return more than one thing."
+      ],
+      "answer": 1,
+      "explanation": "Functions can return multiple values separated by commas, which Python packs into a single tuple."
+    },
+    {
+      "question": "Which command-line tool is used to display the first few lines of a file?",
+      "options": [
+        "start",
+        "top",
+        "head",
+        "first"
+      ],
+      "answer": 2,
+      "explanation": "The 'head' command outputs the beginning part of files."
+    },
+    {
+      "question": "What type of error is 'try/except' specifically designed to catch during runtime?",
+      "options": [
+        "Syntax Errors",
+        "Indentation Errors",
+        "Exceptions",
+        "Logical Errors"
+      ],
+      "answer": 2,
+      "explanation": "Exceptions are errors that occur during the execution of the program (runtime), whereas syntax errors prevent the program from running at all."
+    },
+    {
+      "question": "What does the 'continue' keyword do when encountered inside a loop?",
+      "options": [
+        "Exits the loop.",
+        "Skips the rest of the current iteration and jumps to the next iteration.",
+        "Restarts the entire program.",
+        "Executes the 'else' block of the loop."
+      ],
+      "answer": 1,
+      "explanation": "Continue stops the current iteration and returns to the loop's start to evaluate the condition for the next cycle."
+    }
+  ]
+}
