@@ -375,10 +375,12 @@ body {
   font-size: 16px;
   color: var(--text-primary);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 12px;
   position: relative;
   overflow: hidden;
+  min-height: 56px;
 }
 
 .option-card::before {
@@ -409,11 +411,18 @@ body {
 
 .option-text {
   flex: 1;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
 }
 
 .option-icon {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
   opacity: 0;
   transform: scale(0);
   animation: popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
