@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "question": "What is the result of 'Hello World'[6:]?",
+      "options": ["World", "Hello ", "W", "orld"],
+      "answer": 0,
+      "explanation": "Starting at index 6 (the 'W') and going to the end captures 'World'."
+    },
+    {
+      "question": "Which f-string expression correctly centers the string 'Title' within 20 characters, using dashes as padding?",
+      "options": ["f'{Title:-^20}'", "f'{Title:^20-}'", "f'{Title:center-20}'", "f'{Title:-c20}'"],
+      "answer": 0,
+      "explanation": "In the format specifier, '-' is the fill character, '^' is the alignment, and '20' is the width."
+    },
+    {
+      "question": "If you need to store a fixed sequence of coordinates (x, y) that should never be altered, which data type is most appropriate?",
+      "options": ["List", "Set", "Tuple", "Dictionary"],
+      "answer": 2,
+      "explanation": "Tuples are immutable, making them ideal for fixed data like coordinates or database records."
+    },
+    {
+      "question": "What is the output of 'list(filter(None, [0, 1, False, 2, '']))'?",
+      "options": ["[0, 1, False, 2, '']", "[1, 2]", "[0, False, '']", "[1, False, 2]"],
+      "answer": 1,
+      "explanation": "When the first argument to filter is None, it removes all elements that are 'falsy' (0, False, empty strings, etc.)."
+    },
+    {
+      "question": "Which dictionary method allows you to merge two dictionaries in Python 3.9+ using a single operator?",
+      "options": ["d1 + d2", "d1 | d2", "d1 & d2", "d1 << d2"],
+      "answer": 1,
+      "explanation": "The 'union' operator (|) was introduced for dictionaries in Python 3.9."
+    },
+    {
+      "question": "What is the result of 'enumerate(['apple'], start=1)' when converted to a list?",
+      "options": ["[(0, 'apple')]", "[('apple', 1)]", "[(1, 'apple')]", "[(1, 0, 'apple')]"],
+      "answer": 2,
+      "explanation": "The 'start' parameter shifts the index count without affecting the list items."
+    },
+    {
+      "question": "What happens when you try to add an item to a set using 'my_set.add(item)' if the item already exists?",
+      "options": ["An error is raised.", "A duplicate is added.", "The set remains unchanged.", "The old item is deleted and the new one is added."],
+      "answer": 2,
+      "explanation": "Sets only store unique values; adding an existing item has no effect."
+    },
+    {
+      "question": "Which pattern is used to safely increment a value in a dictionary that might not yet contain the key?",
+      "options": ["d[key] += 1", "d[key] = d.get(key, 0) + 1", "d.increment(key)", "if key: d[key] += 1"],
+      "answer": 1,
+      "explanation": "This ensures that if the key is missing, it starts at 0 before adding 1."
+    },
+    {
+      "question": "What is the result of [x**2 for x in range(3)]?",
+      "options": ["[1, 4, 9]", "[0, 1, 4]", "[0, 1, 2]", "[1, 2, 4]"],
+      "answer": 1,
+      "explanation": "range(3) produces 0, 1, 2. Their squares are 0, 1, 4."
+    },
+    {
+      "question": "In the context manager 'with open('log.txt', 'a') as f:', what does 'a' represent?",
+      "options": ["Access mode", "Append mode", "Archive mode", "Automatic mode"],
+      "answer": 1,
+      "explanation": "Append mode opens the file for writing but keeps existing content, starting at the end of the file."
+    },
+    {
+      "question": "Which pathlib method returns True if a path points to a directory rather than a file?",
+      "options": [".is_dir()", ".is_folder()", ".isdir()", ".check_dir()"],
+      "answer": 0,
+      "explanation": "The .is_dir() method specifically checks for directory status."
+    },
+    {
+      "question": "What is the output of 'json.dumps(['a', 1, (2, 3)])'?",
+      "options": "['[\"a\", 1, [2, 3]]']",
+      "options": ["'[\"a\", 1, [2, 3]]'", "['a', 1, [2, 3]]", "{\"a\": 1, \"tuple\": [2, 3]}", "Error"],
+      "answer": 0,
+      "explanation": "JSON does not have a tuple type, so Python tuples are serialized as JSON arrays (square brackets)."
+    },
+    {
+      "question": "Which dictionary method removes a key and returns its value, but allows a default if the key is missing?",
+      "options": [".remove()", ".delete()", ".pop()", ".discard()"],
+      "answer": 2,
+      "explanation": "d.pop(key, default) is the safe way to remove an item and handle its potential absence."
+    },
+    {
+      "question": "How do you read all lines of a file into a list of strings?",
+      "options": ["f.read()", "f.readlines()", "list(f.read())", "f.get_all()"],
+      "answer": 1,
+      "explanation": "readlines() captures every line, including the newline characters, as elements in a list."
+    },
+    {
+      "question": "What is 'Nested Dictionary' lookup?",
+      "options": ["Searching for a dictionary in a file.", "A dictionary with only one key.", "A dictionary that is sorted.", "Accessing a value inside a dictionary that is a value of another dictionary."],
+      "answer": 3,
+      "explanation": "It involves multi-stage indexing like dict['outer']['inner']."
+    },
+    {
+      "question": "Which built-in function returns the number of items in a dictionary or list?",
+      "options": ["count()", "size()", "len()", "length()"],
+      "answer": 2,
+      "explanation": "len() is the universal function for getting the size of a collection in Python."
+    },
+    {
+      "question": "What is the result of 'zip([1, 2], ['a', 'b', 'c'])'?",
+      "options": ["[(1, 'a'), (2, 'b'), (None, 'c')]", "[(1, 'a'), (2, 'b')]", "[(1, 'a', 'b', 'c'), (2, 'a', 'b', 'c')]", "Error"],
+      "answer": 1,
+      "explanation": "zip() stops as soon as the shortest iterable is exhausted."
+    },
+    {
+      "question": "What is 'data cleaning' regarding JSON/CSV processing?",
+      "options": ["Deleting the files.", "Standardizing formats, handling missing values, and correcting data types.", "Compressing the file.", "Renaming the columns."],
+      "answer": 1,
+      "explanation": "Cleaning ensures data is consistent and usable for analysis or database entry."
+    },
+    {
+      "question": "When connecting a database to HTML via Python, what acts as the 'Controller' or 'Logic' layer?",
+      "options": ["The HTML file", "The CSS file", "The Python script (e.g., Flask/Django route)", "The SQL table"],
+      "answer": 2,
+      "explanation": "Python handles the logic of fetching data and passing it to the view (HTML)."
+    },
+    {
+      "question": "Which syntax is a valid 'Dictionary Comprehension'?",
+      "options": ["{x: x**2 for x in range(5)}", "{x**2 for x in range(5)}", "[x: x**2 for x in range(5)]", "(x: x**2 for x in range(5))"],
+      "answer": 0,
+      "explanation": "Dictionary comprehensions require a key-value pair separated by a colon."
+    },
+    {
+      "question": "What is the primary characteristic of a 'Set' in Python?",
+      "options": ["Maintains insertion order.", "Allows duplicate values.", "Stores unique elements in an unordered fashion.", "Can only store integers."],
+      "answer": 2,
+      "explanation": "Sets are designed for uniqueness and high-performance membership testing."
+    },
+    {
+      "question": "Which 'pathlib' operator is used to append a filename to a directory path?",
+      "options": ["+", "&", "/", ">>"],
+      "answer": 2,
+      "explanation": "The forward slash (/) is overloaded in pathlib to represent path joining."
+    },
+    {
+      "question": "What is the output of 'True + True'?",
+      "options": ["True", "2", "Error", "TrueTrue"],
+      "answer": 1,
+      "explanation": "In Python, booleans are a subclass of integers (True=1, False=0)."
+    },
+    {
+      "question": "How do you check for keys that exist in 'dict_a' but NOT in 'dict_b'?",
+      "options": ["dict_a - dict_b", "dict_a.keys() - dict_b.keys()", "dict_a.not_in(dict_b)", "dict_a | dict_b"],
+      "answer": 1,
+      "explanation": "The .keys() method returns a set-like object that supports set difference (-)."
+    },
+    {
+      "question": "What is the result of '{1, 2, 3}.issubset({1, 2, 3, 4})'?",
+      "options": ["False", "None", "Error", "True"],
+      "answer": 3,
+      "explanation": "All elements of the first set are contained in the second."
+    },
+    {
+      "question": "Which function allows you to load a JSON file into a Python object?",
+      "options": ["json.load()", "json.loads()", "json.read()", "json.parse()"],
+      "answer": 0,
+      "explanation": "json.load() (without the 's') reads directly from a file stream."
+    },
+    {
+      "question": "In f-strings, what does 'f\"{val:.2%}\"' do for val=0.12345?",
+      "options": ["12.34%", "0.12%", "12.35%", "0.12345%"],
+      "answer": 0,
+      "explanation": "It multiplies by 100, adds a '%' sign, and rounds to 2 decimal places."
+    },
+    {
+      "question": "What is the output of 'type( (1) )'?",
+      "options": ["<class 'tuple'>", "<class 'int'>", "<class 'list'>", "<class 'set'>"],
+      "answer": 1,
+      "explanation": "A single value in parentheses without a trailing comma is treated as a prioritized expression (integer), not a tuple."
+    },
+    {
+      "question": "Which string method checks if all characters are alphabetic?",
+      "options": [".is_alpha()", ".isalpha()", ".isletter()", ".checkalpha()"],
+      "answer": 1,
+      "explanation": ".isalpha() returns True if the string is non-empty and all characters are letters."
+    },
+    {
+      "question": "What is a 'Grouping' pattern in Python dictionaries?",
+      "options": ["Putting dictionaries in a list.", "Naming all dictionaries the same thing.", "Combining strings together.", "Using a dictionary where keys are categories and values are lists of items."],
+      "answer": 3,
+      "explanation": "This pattern is used to categorize items (e.g., grouping words by their length)."
+    },
+    {
+      "question": "What does 'pathlib.Path('file.txt').write_text('Hello')' do?",
+      "options": ["Appends 'Hello' to the file.", "Creates/overwrites the file and writes 'Hello'.", "Reads the file for the word 'Hello'.", "Raises an error if the file exists."],
+      "answer": 1,
+      "explanation": "This is a convenience method that handles opening and closing the file for a simple string write."
+    },
+    {
+      "question": "What is the result of ' {x: x for x in 'ab'} '?",
+      "options": ["{'a', 'b'}", "{'a': 'a', 'b': 'b'}", "['a': 'a', 'b': 'b']", "Error"],
+      "answer": 1,
+      "explanation": "This is a dictionary comprehension using the characters of the string as both keys and values."
+    },
+    {
+      "question": "What is the output of 'sorted({'b': 1, 'a': 2})'?",
+      "options": ["['a', 'b']", "[1, 2]", "['b', 'a']", "{'a': 2, 'b': 1}"],
+      "answer": 0,
+      "explanation": "The sorted() function on a dictionary returns a sorted list of its keys."
+    },
+    {
+      "question": "How do you convert a JSON string 's' into a dictionary?",
+      "options": ["json.load(s)", "dict(s)", "json.parse(s)", "json.loads(s)"],
+      "answer": 3,
+      "explanation": "json.loads() (load string) is used for string inputs."
+    },
+    {
+      "question": "What is a 'List of Dictionaries' commonly used for?",
+      "options": ["Storing coordinates.", "Representing a table (like a CSV or Database result).", "Speeding up math operations.", "Storing single characters."],
+      "answer": 1,
+      "explanation": "Each dictionary represents a row/record, and the list represents the table."
+    },
+    {
+      "question": "What is the purpose of 'csv.writer(file).writerow(list)'?",
+      "options": ["To read a row.", "To write a single list of data as a row in a CSV file.", "To delete a row.", "To format the headers."],
+      "answer": 1,
+      "explanation": "The writerow() method takes an iterable and formats it according to CSV standards."
+    },
+    {
+      "question": "What happens if you slice a list beyond its actual length (e.g., [1, 2][0:100])?",
+      "options": ["An IndexError is raised.", "It returns the whole list up to the end without error.", "It pads the list with None.", "It returns an empty list."],
+      "answer": 1,
+      "explanation": "Python's slicing is 'forgiving' and will simply return all available elements."
+    },
+    {
+      "question": "Which method is used to create a shallow copy of a list?",
+      "options": ["list.copy()", "list.clone()", "list.duplicate()", "list.replicate()"],
+      "answer": 0,
+      "explanation": ".copy() creates a new list object containing the same elements."
+    },
+    {
+      "question": "What is the result of ' {1, 2} & {2, 3} '?",
+      "options": ["{1, 2, 3}", "{2}", "{1, 3}", "{1, 2, 2, 3}"],
+      "answer": 1,
+      "explanation": "The ampersand (&) performs an intersection (items common to both sets)."
+    },
+    {
+      "question": "Which of these is a 'falsy' value in Python?",
+      "options": ["0", "0.0", "''", "All of the above"],
+      "answer": 3,
+      "explanation": "Numeric zeros, empty strings, and empty collections are all evaluated as False in boolean contexts."
+    },
+    {
+      "question": "How do you read a file line-by-line efficiently without loading the whole file into memory?",
+      "options": ["for line in f:", "f.read_lines()", "f.all()", "f.stream()"],
+      "answer": 0,
+      "explanation": "Iterating directly over the file object uses a buffer to read one line at a time."
+    },
+    {
+      "question": "What does 'json.dumps(data, sort_keys=True)' do?",
+      "options": ["Sorts the values in the JSON.", "Alphabetizes the keys in the output string.", "Deletes duplicate keys.", "Validates the keys against a list."],
+      "answer": 1,
+      "explanation": "This ensures the resulting JSON string has keys in a predictable, sorted order."
+    },
+    {
+      "question": "In 'pathlib', what is 'Path('image.png').name'?",
+      "options": ["image", ".png", "image.png", "The full path"],
+      "answer": 2,
+      "explanation": ".name returns the final component of the path (filename and extension)."
+    },
+    {
+      "question": "What is the result of ' (1, 2) + (3, 4) '?",
+      "options": ["(4, 6)", "(1, 2, 3, 4)", "((1, 2), (3, 4))", "Error"],
+      "answer": 1,
+      "explanation": "The '+' operator concatenates tuples to create a new tuple."
+    },
+    {
+      "question": "What is the main advantage of using JSON over CSV for complex data?",
+      "options": ["JSON is smaller in size.", "JSON supports nested structures (lists/dicts within dicts).", "JSON is easier for humans to read.", "JSON is older and more compatible."],
+      "answer": 1,
+      "explanation": "CSV is limited to a flat, 2D table structure, whereas JSON can represent complex hierarchies."
+    },
+    {
+      "question": "How do you initialize a dictionary with default values for a list of keys?",
+      "options": ["dict.fromkeys(keys, 0)", "dict(keys, 0)", "{keys: 0}", "dict.init(keys, 0)"],
+      "answer": 0,
+      "explanation": "fromkeys() is a class method that creates a new dictionary from an iterable of keys."
+    },
+    {
+      "question": "What is the output of ' 'Python'.find('z') '?",
+      "options": ["-1", "False", "Error", "None"],
+      "answer": 0,
+      "explanation": ".find() returns -1 if the substring is not found, unlike .index() which raises an error."
+    },
+    {
+      "question": "In a SQL-to-Python connection, what is a 'Cursor'?",
+      "options": ["The mouse pointer on the screen.", "An object used to execute SQL commands and fetch results.", "The password for the database.", "A type of list that stores only numbers."],
+      "answer": 1,
+      "explanation": "The cursor is the interface through which you interact with the database connection."
+    },
+    {
+      "question": "What is the result of ' [x for x in range(10) if x > 5 and x < 8] '?",
+      "options": ["[6, 7, 8]", "[5, 6, 7, 8]", "[5, 6, 7]", "[6, 7]"],
+      "answer": 3,
+      "explanation": "Only 6 and 7 satisfy both conditions in the range."
+    },
+    {
+      "question": "Which of the following creates an empty set?",
+      "options": ["{}", "set()", "[]", "()"],
+      "answer": 1,
+      "explanation": "{} creates an empty dictionary. set() is required to create an empty set."
+    }
+  ]
+}

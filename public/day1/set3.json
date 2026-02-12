@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "question": "Which term describes the physical components of a computer that execute the instructions provided by software?",
+      "options": ["Firmware", "Hardware", "Middleware", "Liveware"],
+      "answer": 1,
+      "explanation": "Hardware refers to the tangible parts of a computer system, such as the CPU and RAM, which perform the actual computing."
+    },
+    {
+      "question": "What is the primary role of a 'Linker' in the software execution process?",
+      "options": ["To combine multiple object files into a single executable program", "To translate Python code into JavaScript", "To check the code for spelling and grammar errors", "To host the website on a public server"],
+      "answer": 0,
+      "explanation": "After compilation, a linker combines various code modules and libraries into a final executable file."
+    },
+    {
+      "question": "Which activity in the software lifecycle involves making small changes to improve performance without changing the program's core function?",
+      "options": ["Analysis", "Design", "Enhancement", "Debugging"],
+      "answer": 2,
+      "explanation": "Enhancement (or Refactoring) involves improving the existing code base for better efficiency or maintainability."
+    },
+    {
+      "question": "In a 'Distributed Architecture', what happens if one node fails?",
+      "options": ["The entire system immediately stops working.", "The system can often continue to function using other nodes.", "The data on all other nodes is deleted.", "The compiler must be restarted."],
+      "answer": 1,
+      "explanation": "Distributed systems, like microservices, are designed for high availability and fault tolerance."
+    },
+    {
+      "question": "What does the 'Application Tier' (Middle Tier) do in a three-tier architecture?",
+      "options": ["It displays the buttons and images to the user.", "It stores the raw data in tables.", "It processes the business logic and coordinates data flow.", "It provides the physical internet connection."],
+      "answer": 2,
+      "explanation": "The Application tier acts as the 'brain,' handling calculations and logical decisions."
+    },
+    {
+      "question": "Which software development methodology is characterized by 'Sprints' and 'Daily Stand-ups'?",
+      "options": ["Waterfall", "Rapid Application Development", "Prototyping", "Agile (Scrum)"],
+      "answer": 3,
+      "explanation": "Scrum is a popular Agile framework that uses time-boxed iterations called Sprints."
+    },
+    {
+      "question": "What is the main advantage of 'Rapid Application Development' (RAD)?",
+      "options": ["It produces the most extensive documentation.", "It allows for quick adjustments based on user prototypes.", "It is the cheapest method for large-scale infrastructure.", "It requires no testing phase."],
+      "answer": 1,
+      "explanation": "RAD focuses on gathering requirements through iterative prototyping rather than long planning phases."
+    },
+    {
+      "question": "In a UML 'Use-Case Diagram', what does a stick figure represent?",
+      "options": ["A specific line of code", "A hardware server", "An Actor (User or External System)", "A bug in the program"],
+      "answer": 2,
+      "explanation": "Actors represent entities outside the system that interact with it."
+    },
+    {
+      "question": "Which UML diagram uses 'Guards' (e.g., [x > 5]) to show conditional paths?",
+      "options": ["Class Diagram", "State Transition Diagram", "Use-Case Diagram", "Package Diagram"],
+      "answer": 1,
+      "explanation": "State diagrams use guards to define the conditions under which a transition between states occurs."
+    },
+    {
+      "question": "What is 'Requirement Elicitation'?",
+      "options": ["The process of deleting unnecessary code.", "The practice of gathering requirements from stakeholders.", "Converting requirements into binary code.", "Testing the software for security vulnerabilities."],
+      "answer": 1,
+      "explanation": "Elicitation is the first step of requirements engineering, involving interviews, surveys, and observation."
+    },
+    {
+      "question": "Which tool would a developer use to identify 'Dead Code' (code that never runs)?",
+      "options": ["A GUI Designer", "A Static Analysis Tool", "A Web Browser", "A Database Manager"],
+      "answer": 1,
+      "explanation": "Static analysis tools can detect unreachable code and unused variables without running the program."
+    },
+    {
+      "question": "What does a 'Sequence Diagram' emphasize?",
+      "options": ["The physical location of servers.", "The relationships between database tables.", "The order of messages exchanged between objects over time.", "The internal folder structure of the project."],
+      "answer": 2,
+      "explanation": "Sequence diagrams are interaction diagrams that detail how operations are carried out."
+    },
+    {
+      "question": "What is the 'Data Tier' responsible for in web applications?",
+      "options": ["Rendering the CSS styles.", "Executing the Python functions.", "Persistent storage and retrieval of information.", "Managing the user's login session in the browser."],
+      "answer": 2,
+      "explanation": "The data tier consists of database servers where information is kept permanently."
+    },
+    {
+      "question": "Which of these is a hallmark of the 'Prototyping' model?",
+      "options": ["Building a 'throw-away' version of the UI to clarify needs.", "Writing the entire program in one sitting.", "Using only machine code for efficiency.", "Skipping the design phase entirely."],
+      "answer": 0,
+      "explanation": "Prototypes are early samples built to test a concept or process."
+    },
+    {
+      "question": "In the end-to-end web workflow, what does 'DNS' do?",
+      "options": ["It encrypts the user's password.", "It translates a domain name (like google.com) into an IP address.", "It stores the images for the website.", "It compiles the server-side code."],
+      "answer": 1,
+      "explanation": "DNS (Domain Name System) acts as the phonebook of the internet."
+    },
+    {
+      "question": "What is 'Software Maintenance'?",
+      "options": ["Cleaning the dust out of the computer.", "Updating and fixing software after its initial release.", "Writing the initial requirements document.", "Choosing which IDE to use."],
+      "answer": 1,
+      "explanation": "Maintenance ensures the software remains functional and relevant in a changing environment."
+    },
+    {
+      "question": "Which UML diagram is most useful for designing a database schema?",
+      "options": ["Sequence Diagram", "Use-Case Diagram", "Class Diagram", "State Diagram"],
+      "answer": 2,
+      "explanation": "Class diagrams map closely to database tables, showing entities and their attributes."
+    },
+    {
+      "question": "What does 'Traceability' ensure in software development?",
+      "options": ["That the code can be traced back to a specific requirement.", "That the developer's location is known at all times.", "That the software can run on a GPS device.", "That the binary code is easy to read."],
+      "answer": 0,
+      "explanation": "Traceability links requirements to design, code, and test cases to ensure nothing is missed."
+    },
+    {
+      "question": "Which methodology is best when the client does not have a clear vision of the final product?",
+      "options": ["Waterfall", "Prototyping", "Binary Development", "Monolithic Architecture"],
+      "answer": 1,
+      "explanation": "Prototyping allows the client to see a 'working' model and refine their requirements."
+    },
+    {
+      "question": "What is the primary function of an 'Interpreter'?",
+      "options": ["To translate and execute code line-by-line.", "To translate the whole program at once into an EXE file.", "To design the user interface.", "To manage the server's hardware."],
+      "answer": 0,
+      "explanation": "Unlike compilers, interpreters execute instructions directly from the source code during runtime."
+    },
+    {
+      "question": "In a Class Diagram, what does a diamond shape on a line represent?",
+      "options": ["An error in the logic.", "Aggregation or Composition (ownership).", "A starting point of the program.", "A private variable."],
+      "answer": 1,
+      "explanation": "The diamond symbol represents a 'part-of' relationship between classes."
+    },
+    {
+      "question": "What is the 'Presentation Tier' in a web application?",
+      "options": ["The hidden database code.", "The physical CPU of the server.", "The legal presentation given to investors.", "The user interface (usually HTML/CSS/JS)."],
+      "answer": 3,
+      "explanation": "The presentation tier is the top-most level of the application which users interact with directly."
+    },
+    {
+      "question": "Which development phase follows 'Analysis' and precedes 'Construction'?",
+      "options": ["Testing", "Deployment", "Design", "Maintenance"],
+      "answer": 2,
+      "explanation": "The Design phase creates the technical blueprint based on the requirements found in Analysis."
+    },
+    {
+      "question": "What does 'UML' stand for?",
+      "options": ["Universal Machine Language", "Unified Modeling Language", "User Management Level", "Unique Mark-up Logic"],
+      "answer": 1,
+      "explanation": "UML is the industry standard for visualizing and documenting software system designs."
+    },
+    {
+      "question": "Which is an example of a 'Functional' requirement?",
+      "options": ["The website must load in 1 second.", "The system must be available 99.9% of the time.", "The user must be able to add items to a shopping cart.", "The code must be written in Python."],
+      "answer": 2,
+      "explanation": "Functional requirements define what the system 'does'."
+    }
+  ]
+}

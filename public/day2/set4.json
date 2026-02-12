@@ -1,0 +1,554 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following is true regarding Python's memory management for small integers (typically -5 to 256)?",
+      "options": [
+        "They are recreated every time they are assigned.",
+        "They are deleted immediately after use to save RAM.",
+        "They are 'interned' or pre-cached by the interpreter.",
+        "They cannot be used in arithmetic operations."
+      ],
+      "answer": 2,
+      "explanation": "Python interns small integers to optimize performance, meaning multiple variables pointing to '10' will often share the same memory address."
+    },
+    {
+      "question": "What is the correct way to declare a variable 'x' as a specific type using type hinting?",
+      "options": [
+        "var x int = 5",
+        "x: int = 5",
+        "int x = 5",
+        "x = 5 (type: int)"
+      ],
+      "answer": 1,
+      "explanation": "Python 3.6+ uses the 'variable: type = value' syntax for type hinting."
+    },
+    {
+      "question": "Which function allows you to view all the names (variables and functions) currently defined in the local scope?",
+      "options": [
+        "dir()",
+        "locals()",
+        "vars()",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "All three functions provide ways to inspect the current scope or object attributes, with locals() specifically returning a dictionary of the local namespace."
+    },
+    {
+      "question": "What is the result of the expression: 7 // -3?",
+      "options": [
+        "-2",
+        "-2.33",
+        "-3",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "Floor division always rounds toward negative infinity. 7 / -3 is -2.33, and the floor is -3."
+    },
+    {
+      "question": "Which mathematical constant is provided by the 'math' module to represent the ratio of a circle's circumference to its diameter?",
+      "options": [
+        "math.pi",
+        "math.tau",
+        "math.e",
+        "math.inf"
+      ],
+      "answer": 0,
+      "explanation": "math.pi provides the value of $\\pi$ (approximately 3.14159)."
+    },
+    {
+      "question": "In Python, which operator is used for the 'Matrix Multiplication' introduced in version 3.5?",
+      "options": [
+        "*",
+        "**",
+        "&",
+        "@"
+      ],
+      "answer": 3,
+      "explanation": "The '@' operator was specifically added to Python for matrix multiplication."
+    },
+    {
+      "question": "What is the output of: round(4.5)?",
+      "options": [
+        "4",
+        "5",
+        "4.0",
+        "4.5"
+      ],
+      "answer": 0,
+      "explanation": "Python 3 rounds to the nearest even number for .5 cases; 4 is even, so it rounds down."
+    },
+    {
+      "question": "Which command-line tool is used to change file permissions in a Linux/Unix environment?",
+      "options": [
+        "chown",
+        "chmod",
+        "perm",
+        "access"
+      ],
+      "answer": 1,
+      "explanation": "'chmod' (change mode) is used to define read, write, and execute permissions."
+    },
+    {
+      "question": "What does the 'top' command do in a terminal?",
+      "options": [
+        "Shows the first 10 lines of a file",
+        "Shows the highest directory in the file system",
+        "Provides a real-time view of running system processes",
+        "Moves a file to the top of the folder"
+      ],
+      "answer": 2,
+      "explanation": "'top' is a task manager that displays CPU and memory usage of active processes."
+    },
+    {
+      "question": "Which command-line flag is used with 'grep' to perform a case-insensitive search?",
+      "options": [
+        "-v",
+        "-l",
+        "-c",
+        "-i"
+      ],
+      "answer": 3,
+      "explanation": "The '-i' flag stands for 'ignore case'."
+    },
+    {
+      "question": "What is the result of the string operation: 'Python'[1:5:2]?",
+      "options": [
+        "yh",
+        "yo",
+        "yth",
+        "yhon"
+      ],
+      "answer": 1,
+      "explanation": "The slice [start:stop:step] starts at index 1 ('y'), goes up to 5 ('n'), and skips every 2nd character, resulting in 'yo'."
+    },
+    {
+      "question": "Which method returns True if all characters in the string are whitespace?",
+      "options": [
+        ".isempty()",
+        ".isspace()",
+        ".isblank()",
+        ".isvoid()"
+      ],
+      "answer": 1,
+      "explanation": ".isspace() checks for spaces, tabs, and newlines."
+    },
+    {
+      "question": "How do you check if the string 'data' consists entirely of uppercase letters?",
+      "options": [
+        "data.upper() == True",
+        "data.is_upper()",
+        "data.isupper()",
+        "data.checkUpper()"
+      ],
+      "answer": 2,
+      "explanation": ".isupper() is the built-in boolean check for casing."
+    },
+    {
+      "question": "What is the result of '123'.zfill(5)?",
+      "options": [
+        "12300",
+        "00123",
+        "  123",
+        "123.00"
+      ],
+      "answer": 1,
+      "explanation": ".zfill(width) pads the string with zeros on the left until it reaches the specified width."
+    },
+    {
+      "question": "Which of the following is equivalent to the expression: x = x | y?",
+      "options": [
+        "x |= y",
+        "x =| y",
+        "x = x or y",
+        "x || y"
+      ],
+      "answer": 0,
+      "explanation": "Python uses compound assignment operators like |= for bitwise OR."
+    },
+    {
+      "question": "What will be the output of the following code?\n\nfor i in range(3):\n    pass\nprint(i)",
+      "options": [
+        "0",
+        "2",
+        "3",
+        "NameError"
+      ],
+      "answer": 1,
+      "explanation": "In Python, loop variables (i) leak into the surrounding scope and retain their last value."
+    },
+    {
+      "question": "What is the primary difference between 'while' and 'for' loops in Python?",
+      "options": [
+        "For loops are faster",
+        "While loops cannot use the 'break' statement",
+        "For loops iterate over a sequence; while loops repeat based on a condition",
+        "While loops are only for mathematical calculations"
+      ],
+      "answer": 2,
+      "explanation": "For loops are used for definite iteration (sequences), while loops for indefinite iteration."
+    },
+    {
+      "question": "What will be the result of the following expression?\n\n3 > 2 > 1",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "This is a chained comparison, equivalent to (3 > 2) and (2 > 1)."
+    },
+    {
+      "question": "Which statement is used inside a loop to go immediately to the next iteration, skipping the current code?",
+      "options": [
+        "skip",
+        "next",
+        "continue",
+        "pass"
+      ],
+      "answer": 2,
+      "explanation": "'continue' ends the current cycle of the loop and starts the next one."
+    },
+    {
+      "question": "What happens when an 'else' block is attached to a 'while' loop?",
+      "options": [
+        "It runs if the loop condition is False at the start.",
+        "It runs if the loop completes normally without a 'break'.",
+        "It runs only if an error occurs in the loop.",
+        "It runs every time the condition is checked."
+      ],
+      "answer": 1,
+      "explanation": "The loop-else block executes if the loop terminates naturally (not via break)."
+    },
+    {
+      "question": "What does the 'enumerate()' function return when used in a for loop?",
+      "options": [
+        "Only the values of the list",
+        "Only the indices of the list",
+        "A tuple containing (index, value) for each item",
+        "The total count of items"
+      ],
+      "answer": 2,
+      "explanation": "enumerate() adds a counter to an iterable and returns it as an enumerate object."
+    },
+    {
+      "question": "Which keyword is used to create a function that yields a sequence of values over time rather than returning them all at once?",
+      "options": [
+        "produce",
+        "yield",
+        "generator",
+        "return"
+      ],
+      "answer": 1,
+      "explanation": "'yield' is used to create generator functions."
+    },
+    {
+      "question": "What is the purpose of the '__init__' method in a Python class?",
+      "options": [
+        "To destroy an object",
+        "To define the class name",
+        "To initialize an object's attributes when it's created",
+        "To make the class private"
+      ],
+      "answer": 2,
+      "explanation": "__init__ is the constructor method in Python classes."
+    },
+    {
+      "question": "What will happen if you try to call a function with more arguments than it was defined to accept?",
+      "options": [
+        "Python ignores the extra arguments",
+        "The extra arguments are set to None",
+        "A TypeError is raised",
+        "The function runs but returns an Error"
+      ],
+      "answer": 2,
+      "explanation": "Python strictly enforces the number of positional arguments unless *args is used."
+    },
+    {
+      "question": "Which built-in function returns a list of all attributes and methods of an object?",
+      "options": [
+        "help()",
+        "type()",
+        "dir()",
+        "inspect()"
+      ],
+      "answer": 2,
+      "explanation": "dir() provides a valid list of attributes for the specified object."
+    },
+    {
+      "question": "What does the 'self' parameter represent in a class method?",
+      "options": [
+        "The class itself",
+        "A keyword used to start a function",
+        "The specific instance of the object",
+        "A reference to the global scope"
+      ],
+      "answer": 2,
+      "explanation": "'self' is a reference to the current instance of the class."
+    },
+    {
+      "question": "Which of the following is the correct syntax for a lambda function that squares a number?",
+      "options": [
+        "lambda x: x * x",
+        "def lambda(x): return x**2",
+        "lambda x => x**2",
+        "x lambda: x * x"
+      ],
+      "answer": 0,
+      "explanation": "The syntax is: lambda [arguments] : expression."
+    },
+    {
+      "question": "What is a 'decorator' in Python?",
+      "options": [
+        "A way to add comments to code",
+        "A function that modifies the behavior of another function",
+        "A tool for designing user interfaces",
+        "A keyword used to delete variables"
+      ],
+      "answer": 1,
+      "explanation": "Decorators wrap a function, modifying its behavior without permanently altering the source code."
+    },
+    {
+      "question": "Which exception is raised when you attempt to use a variable that has not yet been defined?",
+      "options": [
+        "ValueError",
+        "AttributeError",
+        "KeyError",
+        "NameError"
+      ],
+      "answer": 3,
+      "explanation": "NameError occurs when a local or global name is not found."
+    },
+    {
+      "question": "What is the effect of the 'raise' statement without any arguments inside an 'except' block?",
+      "options": [
+        "It clears the current error",
+        "It re-raises the current exception that was caught",
+        "It stops the program silently",
+        "It triggers a new TypeError"
+      ],
+      "answer": 1,
+      "explanation": "Using 'raise' alone inside an except block propagates the caught exception up the stack."
+    },
+    {
+      "question": "Which of the following is the most general exception class that should usually be caught last?",
+      "options": [
+        "RuntimeError",
+        "Exception",
+        "BaseException",
+        "SystemExit"
+      ],
+      "answer": 1,
+      "explanation": "While BaseException is the root, 'Exception' is the base class for all non-exit exceptions."
+    },
+    {
+      "question": "What will be the output of the following?\n\ntry:\n    int('abc')\nexcept (ValueError, TypeError):\n    print('Caught')",
+      "options": [
+        "ValueError",
+        "Caught",
+        "Error",
+        "Nothing"
+      ],
+      "answer": 1,
+      "explanation": "The code raises a ValueError, which is caught by the tuple of specified exceptions."
+    },
+    {
+      "question": "What is the purpose of the 'with' statement when opening a file?",
+      "options": [
+        "To make the code run faster",
+        "To automatically close the file after the block finishes",
+        "To allow multiple users to edit the file",
+        "To encrypt the file contents"
+      ],
+      "answer": 1,
+      "explanation": "The 'with' statement uses context managers to ensure resources are cleaned up (closed)."
+    },
+    {
+      "question": "In exception handling, which block executes only if NO exception was raised in the try block?",
+      "options": [
+        "finally",
+        "except",
+        "else",
+        "then"
+      ],
+      "answer": 2,
+      "explanation": "The 'else' block in try-except is executed if the code in the try block completes without errors."
+    },
+    {
+      "question": "What is the result of applying 'bool()' to the integer 0?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "answer": 1,
+      "explanation": "In Python, 0 is considered Falsy."
+    },
+    {
+      "question": "How do you check the memory size of a Python object in bytes?",
+      "options": [
+        "object.size()",
+        "len(object)",
+        "sys.getsizeof(object)",
+        "mem(object)"
+      ],
+      "answer": 2,
+      "explanation": "The 'sys' module provides getsizeof() to measure an object's memory footprint."
+    },
+    {
+      "question": "Which collection type is unordered and does not allow duplicate elements?",
+      "options": [
+        "List",
+        "Tuple",
+        "Set",
+        "Dictionary"
+      ],
+      "answer": 2,
+      "explanation": "Sets are collections of unique, unordered items."
+    },
+    {
+      "question": "What is the output of: [x**2 for x in range(3)]?",
+      "options": [
+        "[1, 4, 9]",
+        "[0, 1, 4]",
+        "[0, 1, 2]",
+        "[1, 2, 3]"
+      ],
+      "answer": 1,
+      "explanation": "This is a list comprehension calculating squares for 0, 1, and 2."
+    },
+    {
+      "question": "Which dictionary method returns the value of a key if it exists, otherwise returning a default value without raising an error?",
+      "options": [
+        ".find()",
+        ".fetch()",
+        ".get()",
+        ".search()"
+      ],
+      "answer": 2,
+      "explanation": "dict.get(key, default) is safer than dict[key] because it avoids KeyErrors."
+    },
+    {
+      "question": "How do you merge two dictionaries 'd1' and 'd2' in Python 3.9+?",
+      "options": [
+        "d3 = d1 + d2",
+        "d3 = d1.merge(d2)",
+        "d3 = d1 | d2",
+        "d3 = d1 & d2"
+      ],
+      "answer": 2,
+      "explanation": "Python 3.9 introduced the union operator (|) for dictionaries."
+    },
+    {
+      "question": "What does the 'id()' function return?",
+      "options": [
+        "The object's value",
+        "The object's unique memory address integer",
+        "The object's variable name",
+        "The object's data type"
+      ],
+      "answer": 1,
+      "explanation": "id() returns the 'identity' of an object, which is unique and constant during its lifetime."
+    },
+    {
+      "question": "Which of the following is used to remove an item from a list by its value, not its index?",
+      "options": [
+        "list.pop()",
+        "list.remove()",
+        "list.delete()",
+        "del list[x]"
+      ],
+      "answer": 1,
+      "explanation": ".remove(value) deletes the first occurrence of that value; .pop(index) deletes by position."
+    },
+    {
+      "question": "What is the output of: type(1,)?",
+      "options": [
+        "<class 'int'>",
+        "<class 'tuple'>",
+        "<class 'list'>",
+        "SyntaxError"
+      ],
+      "answer": 1,
+      "explanation": "A comma after a single value inside parentheses (or even without them) defines a tuple."
+    },
+    {
+      "question": "Which command-line command is used to create a new directory?",
+      "options": [
+        "newdir",
+        "mkdir",
+        "createdir",
+        "md"
+      ],
+      "answer": 1,
+      "explanation": "'mkdir' stands for 'make directory'."
+    },
+    {
+      "question": "How do you access the value associated with the key 'name' in dictionary 'user'?",
+      "options": [
+        "user['name']",
+        "user.name",
+        "user->name",
+        "user(name)"
+      ],
+      "answer": 0,
+      "explanation": "Dictionaries use square brackets and the key string for access."
+    },
+    {
+      "question": "What is the default value of the second argument in 'getattr(object, name, default)' if not provided?",
+      "options": [
+        "None",
+        "0",
+        "It raises an AttributeError if not found",
+        "False"
+      ],
+      "answer": 2,
+      "explanation": "If 'default' is not provided and the attribute doesn't exist, getattr raises an AttributeError."
+    },
+    {
+      "question": "Which string method converts the first character of every word to uppercase?",
+      "options": [
+        ".capitalize()",
+        ".upper()",
+        ".title()",
+        ".swapcase()"
+      ],
+      "answer": 2,
+      "explanation": ".title() capitalizes the first letter of each word; .capitalize() only does the first letter of the string."
+    },
+    {
+      "question": "What is the result of: 10 // 3 * 3?",
+      "options": [
+        "9",
+        "10",
+        "9.0",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "Operators with same precedence are evaluated left to right. 10 // 3 = 3; then 3 * 3 = 9."
+    },
+    {
+      "question": "Which statement is used to import only a specific function 'sqrt' from the 'math' module?",
+      "options": [
+        "import sqrt from math",
+        "from math import sqrt",
+        "import math.sqrt",
+        "get sqrt from math"
+      ],
+      "answer": 1,
+      "explanation": "The 'from module import name' syntax is used for selective imports."
+    },
+    {
+      "question": "What will be the value of 'x' after this code?\n\nx = [1, 2]\nx *= 2",
+      "options": [
+        "[2, 4]",
+        "[1, 2, 1, 2]",
+        "[1, 1, 2, 2]",
+        "Error"
+      ],
+      "answer": 1,
+      "explanation": "Multiplying a list by an integer 'n' concatenates the list to itself 'n' times."
+    }
+  ]
+}

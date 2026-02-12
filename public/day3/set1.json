@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "question": "What is the result of the slice 'DataScience'[:4]?",
+      "options": ["Data", "Science", "ataS", "DataS"],
+      "answer": 0,
+      "explanation": "Omitting the start index defaults to 0. It takes indices 0, 1, 2, and 3."
+    },
+    {
+      "question": "Which string method is most effective for removing specific characters from the ends of a string, like '!!!Hello!!!'?",
+      "options": [".replace('!', '')", ".strip('!')", ".remove('!')", ".clean('!')"],
+      "answer": 1,
+      "explanation": ".strip() removes the specified characters from both the leading and trailing ends."
+    },
+    {
+      "question": "What happens if you try to use a list as a key in a dictionary?",
+      "options": ["It works normally.", "The list is converted to a string automatically.", "It raises a TypeError because lists are unhashable.", "It raises a ValueError."],
+      "answer": 2,
+      "explanation": "Dictionary keys must be immutable (hashable). Lists are mutable and therefore cannot be keys."
+    },
+    {
+      "question": "Which of the following is the most efficient way to merge two lists 'a' and 'b' into a single list?",
+      "options": ["a + b", "a.append(b)", "a.extend(b)", "Both 0 and 2"],
+      "answer": 3,
+      "explanation": "Both '+' (creates a new list) and '.extend()' (modifies in place) are standard ways to combine lists."
+    },
+    {
+      "question": "What is the result of 'set([1, 2, 2, 3]) == {1, 2, 3}'?",
+      "options": ["True", "False", "Error", "None"],
+      "answer": 0,
+      "explanation": "The set() constructor removes the duplicate '2', making both sides identical."
+    },
+    {
+      "question": "Which iteration tool is used to retrieve both the item and its index in a single loop?",
+      "options": ["zip()", "range()", "enumerate()", "list.index()"],
+      "answer": 2,
+      "explanation": "enumerate() returns a tuple of (index, item) for each iteration."
+    },
+    {
+      "question": "What is the output of 'dict([('name', 'Alice'), ('age', 25)])'?",
+      "options": ["{'name': 'Alice', 'age': 25}", "[name, Alice, age, 25]", "{'Alice': 'name', 25: 'age'}", "('name', 'Alice', 'age', 25)"],
+      "answer": 0,
+      "explanation": "The dict() constructor can accept an iterable of key-value pairs (tuples)."
+    },
+    {
+      "question": "How do you access the value 5 from the nested dictionary 'd = {'a': {'b': 5}}'?",
+      "options": ["d['a', 'b']", "d['a']['b']", "d.get('a', 'b')", "d['a' + 'b']"],
+      "answer": 1,
+      "explanation": "To access nested dictionaries, chain the keys in separate square brackets."
+    },
+    {
+      "question": "Which dictionary method returns an object containing all the values without the keys?",
+      "options": [".keys()", ".items()", ".values()", ".list()"],
+      "answer": 2,
+      "explanation": ".values() provides a view of all values present in the dictionary."
+    },
+    {
+      "question": "What is the primary purpose of a 'defaultdict' from the 'collections' module?",
+      "options": ["To sort keys automatically.", "To provide a default value for non-existent keys, avoiding KeyErrors.", "To limit the size of a dictionary.", "To make dictionaries immutable."],
+      "answer": 1,
+      "explanation": "defaultdict initializes a key with a default type (like a list or int) when it is first accessed."
+    },
+    {
+      "question": "What is the result of [x for x in range(10) if x % 3 == 0]?",
+      "options": ["[3, 6, 9]", "[0, 3, 6, 9]", "[1, 3, 9]", "[0, 1, 2, 3]"],
+      "answer": 1,
+      "explanation": "The range(10) includes 0; 0 % 3 is 0, so it is included in the list."
+    },
+    {
+      "question": "How do you create a set containing the squares of numbers 0-4 using a comprehension?",
+      "options": ["{x**2 for x in range(5)}", "[x**2 for x in range(5)]", "(x**2 for x in range(5))", "{x: x**2 for x in range(5)}"],
+      "answer": 0,
+      "explanation": "Set comprehensions use curly braces but do not use key:value pairs."
+    },
+    {
+      "question": "When using 'with open('file.txt', 'w')', what happens if 'file.txt' already exists?",
+      "options": ["The program crashes.", "It appends to the file.", "The file is overwritten (truncated).", "It opens in read-only mode."],
+      "answer": 2,
+      "explanation": "The 'w' mode deletes the existing content before writing new data."
+    },
+    {
+      "question": "Which 'pathlib' attribute allows you to get the parent directory of a file path?",
+      "options": [".folder", ".up", ".parent", ".base"],
+      "answer": 2,
+      "explanation": "Path('a/b/c.txt').parent returns the path to 'a/b'."
+    },
+    {
+      "question": "What is the standard separator used in a JSON file?",
+      "options": ["Comma", "Semicolon", "Tab", "Pipe"],
+      "answer": 0,
+      "explanation": "JSON uses commas to separate key-value pairs and array elements."
+    },
+    {
+      "question": "In the 'csv' module, what does the 'newline=''' argument do inside the open() function?",
+      "options": ["It adds an extra space between rows.", "It prevents blank lines from being inserted between rows on some systems.", "It counts the number of lines.", "It deletes the header row."],
+      "answer": 1,
+      "explanation": "This is a recommended practice when working with the CSV module to ensure cross-platform consistency."
+    },
+    {
+      "question": "What is 'data cleaning' regarding JSON or CSV types?",
+      "options": ["Formatting the file with spaces.", "Converting data types and handling missing values.", "Moving the file to a different folder.", "Deleting the file."],
+      "answer": 1,
+      "explanation": "Data cleaning ensures the data is in the correct format (e.g., converting a string '10' to an integer 10)."
+    },
+    {
+      "question": "What is the purpose of 'json.dump(data, file_object)'?",
+      "options": ["To read a JSON string.", "To write a Python object to a file as JSON.", "To display JSON on the screen.", "To convert JSON to CSV."],
+      "answer": 1,
+      "explanation": "json.dump() serializes data directly into an open file pointer."
+    },
+    {
+      "question": "In a Python-powered web page, how is data usually passed to the HTML?",
+      "options": ["By printing it to the terminal.", "Using a template engine (like Jinja2) to inject variables into HTML tags.", "By hardcoding the text into the browser.", "By saving it as an image."],
+      "answer": 1,
+      "explanation": "Python backends pass dictionaries of data to HTML templates for dynamic rendering."
+    },
+    {
+      "question": "Which SQL command is used to retrieve data from a database to display in Python?",
+      "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+      "answer": 2,
+      "explanation": "SELECT is the standard command for fetching records from a database table."
+    },
+    {
+      "question": "What is the output of 'len({x for x in 'banana'})'?",
+      "options": ["6", "3", "1", "Error"],
+      "answer": 1,
+      "explanation": "A set of 'banana' results in {'b', 'a', 'n'}, which has a length of 3."
+    },
+    {
+      "question": "Which string method checks if a string ends with a specific suffix?",
+      "options": [".suffix()", ".has_suffix()", ".endswith()", ".is_last()"],
+      "answer": 2,
+      "explanation": ".endswith() returns True or False based on the trailing characters."
+    },
+    {
+      "question": "How do you convert a list of integers into a list of strings?",
+      "options": ["list(map(str, my_list))", "[str(x) for x in my_list]", "Both 0 and 1", "str(my_list)"],
+      "answer": 2,
+      "explanation": "Both map() and list comprehensions are efficient ways to perform type conversion on a collection."
+    },
+    {
+      "question": "What does the 'zip(*iterator)' syntax do?",
+      "options": ["Compresses the iterator into a ZIP file.", "Unpacks the elements into separate sequences (unzipping).", "Multiplies the iterator items.", "Adds an index to the items."],
+      "answer": 1,
+      "explanation": "This 'star-unpacking' with zip is a common idiom for transposing data."
+    },
+    {
+      "question": "What is the result of '10' in '100'?",
+      "options": ["True", "False", "Error", "1"],
+      "answer": 0,
+      "explanation": "The 'in' operator checks for substring existence in Python strings."
+    },
+    {
+      "question": "Which method updates a dictionary with values from another dictionary, overwriting existing keys?",
+      "options": [".add()", ".merge()", ".update()", ".append()"],
+      "answer": 2,
+      "explanation": "dict.update(other_dict) merges the contents into the original dictionary."
+    },
+    {
+      "question": "What is a 'List Comprehension' with an 'else' clause syntax?",
+      "options": ["[x if condition else y for x in list]", "[x for x in list if condition else y]", "[if condition x else y for x in list]", "Python does not support else in comprehensions."],
+      "answer": 0,
+      "explanation": "If an 'else' is used, the conditional expression must come before the 'for' loop."
+    },
+    {
+      "question": "In 'pathlib', what does 'Path.home()' return?",
+      "options": ["The root directory (/) ", "The current working directory", "The current user's home directory", "The location of the Python interpreter"],
+      "answer": 2,
+      "explanation": "It provides a cross-platform way to find the user's home path."
+    },
+    {
+      "question": "What is the output of 'json.dumps({'a': 1, 'b': 2}, indent=4)'?",
+      "options": ["A compressed string.", "A dictionary.", "A formatted string with 4 spaces of indentation for readability.", "A list of strings."],
+      "answer": 2,
+      "explanation": "The 'indent' parameter is used for 'pretty-printing' JSON output."
+    },
+    {
+      "question": "What is a 'Lookup Table' pattern primarily used for?",
+      "options": ["To search for files on a computer.", "To replace complex if-elif-else blocks with dictionary lookups.", "To list all possible variables.", "To store user passwords."],
+      "answer": 1,
+      "explanation": "Mapping inputs to outputs in a dictionary is faster and more readable than multiple 'if' statements."
+    },
+    {
+      "question": "Which mode should you use in 'open()' to read a file as binary data?",
+      "options": ["'r'", "'rb'", "'br'", "Both 1 and 2"],
+      "answer": 3,
+      "explanation": "'rb' stands for 'read binary'. The order of the letters 'r' and 'b' does not matter."
+    },
+    {
+      "question": "What is the result of '  hello world  '.split()?",
+      "options": ["['  hello', 'world  ']", "['hello', 'world']", "[' ', 'hello', 'world', ' ']", "['hello world']"],
+      "answer": 1,
+      "explanation": "When split() is called without arguments, it splits by any whitespace and discards empty strings from the result."
+    },
+    {
+      "question": "How do you create a dictionary mapping 'keys' to 'values' using 'zip'?",
+      "options": ["dict(zip(keys, values))", "zip(keys, values).to_dict()", "{keys: values}", "dict.from_zip(keys, values)"],
+      "answer": 0,
+      "explanation": "Passing a zip object (which yields tuples) to dict() is the most concise way to combine two lists into a dictionary."
+    },
+    {
+      "question": "What does 'pathlib.Path('test.py').resolve()' do?",
+      "options": ["Checks if the code has errors.", "Returns the absolute path of the file.", "Deletes the file.", "Renames the file."],
+      "answer": 1,
+      "explanation": "resolve() makes the path absolute, resolving any symbolic links or '..' references."
+    },
+    {
+      "question": "Which f-string expression displays 0.5 as '50.0%'?",
+      "options": ["f'{0.5:%}'", "f'{0.5:.1%}'", "f'{0.5:p}'", "f'{0.5*100}%'"],
+      "answer": 1,
+      "explanation": "The '%' format specifier multiplies by 100 and adds the percentage sign; '.1' specifies the decimal precision."
+    },
+    {
+      "question": "What is the result of 'list('abc')'?",
+      "options": ["['abc']", "['a', 'b', 'c']", "('a', 'b', 'c')", "['a', 'bc']"],
+      "answer": 1,
+      "explanation": "Converting a string to a list creates a list of its individual characters."
+    },
+    {
+      "question": "How do you check for the intersection of two sets 's1' and 's2'?",
+      "options": ["s1.union(s2)", "s1 & s2", "s1 | s2", "s1 + s2"],
+      "answer": 1,
+      "explanation": "The ampersand (&) is the operator for set intersection (common elements)."
+    },
+    {
+      "question": "What is the result of {x for x in [1, 1, 2, 2]}?",
+      "options": ["{1, 1, 2, 2}", "[1, 2]", "{1, 2}", "Error"],
+      "answer": 2,
+      "explanation": "This set comprehension results in a set of unique elements."
+    },
+    {
+      "question": "Which dictionary method returns the key-value pairs as a list of tuples?",
+      "options": [".keys()", ".values()", ".items()", ".get()"],
+      "answer": 2,
+      "explanation": ".items() is essential for iterating over both keys and values in a for-loop."
+    },
+    {
+      "question": "What is 'CSV' short for?",
+      "options": ["Common Separated Values", "Comma Separated Values", "Character Standard View", "Code System Version"],
+      "answer": 1,
+      "explanation": "CSV is a simple file format used to store tabular data in plain text."
+    },
+    {
+      "question": "Which of these is used for 'safe path handling' across different operating systems?",
+      "options": ["os.path.join", "pathlib.Path", "Manually adding slashes", "Both 0 and 1"],
+      "answer": 3,
+      "explanation": "While 'pathlib' is the modern, object-oriented way, both 'os.path' and 'pathlib' provide safe, cross-platform path manipulation."
+    },
+    {
+      "question": "What is the output of ' ' '.join(['a', 'b'])'?",
+      "options": ["ab", "a b", "['a', ' ', 'b']", "a, b"],
+      "answer": 1,
+      "explanation": "The string ' ' (a space) is used as the connector between the list elements."
+    },
+    {
+      "question": "What happens if you use 'json.loads()' on a string that is NOT valid JSON?",
+      "options": ["It returns None.", "It returns an empty dictionary.", "It raises a JSONDecodeError.", "It fixes the string automatically."],
+      "answer": 2,
+      "explanation": "JSON is strictly formatted; any syntax error will cause the parser to fail."
+    },
+    {
+      "question": "In Python frequency counting, what is the 'dictionary update' pattern?",
+      "options": ["d[key] = d.get(key, 0) + 1", "d.add(key)", "d[key] += 1 (without checking if it exists)", "d.count(key)"],
+      "answer": 0,
+      "explanation": "Using .get(key, 0) ensures that the code doesn't crash if the key is being seen for the first time."
+    },
+    {
+      "question": "What is the result of 'bool({})'?",
+      "options": ["True", "False", "None", "Error"],
+      "answer": 1,
+      "explanation": "An empty dictionary is considered 'falsy'."
+    },
+    {
+      "question": "Which f-string syntax is used to pad a number 'n' with leading zeros to be 3 digits long (e.g., 5 becomes 005)?",
+      "options": ["f'{n:03}'", "f'{n:3z}'", "f'{n:>3}'", "f'{n:003}'"],
+      "answer": 0,
+      "explanation": "The format '03' tells Python to use 0 as the padding character for a width of 3."
+    },
+    {
+      "question": "In a web application, which Python library is most commonly used for 'Database Abstraction'?",
+      "options": ["math", "json", "SQLAlchemy", "pathlib"],
+      "answer": 2,
+      "explanation": "SQLAlchemy (and Django ORM) allow developers to interact with databases using Python classes instead of raw SQL."
+    },
+    {
+      "question": "What does the 'a+' mode in open() do?",
+      "options": ["Opens for reading and appending.", "Opens for absolute writing.", "Opens for archived reading.", "Opens for advanced editing."],
+      "answer": 0,
+      "explanation": "The '+' allows both reading and writing, while 'a' ensures data is appended to the end."
+    },
+    {
+      "question": "What is the result of 'range(5)[-1]'?",
+      "options": ["0", "4", "5", "Error"],
+      "answer": 1,
+      "explanation": "range(5) represents 0, 1, 2, 3, 4. Indexing -1 gets the last element, which is 4."
+    },
+    {
+      "question": "Which collection is unordered, but provides extremely fast 'membership testing' (using 'in')?",
+      "options": ["List", "Tuple", "Set", "String"],
+      "answer": 2,
+      "explanation": "Sets use hash tables, making membership checks $O(1)$ compared to $O(n)$ for lists."
+    }
+  ]
+}

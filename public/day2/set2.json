@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following follows the PEP 8 recommendation for a internal-use variable or method?",
+      "options": ["_single_leading_underscore", "double__underscore__", "ALL_CAPS", "camelCase"],
+      "answer": 0,
+      "explanation": "A single leading underscore is a weak 'internal use' indicator in Python."
+    },
+    {
+      "question": "What happens to the object '10' in memory after this code runs?\n\nx = 10\nx = 20",
+      "options": ["It is modified to become 20", "It is deleted immediately", "It remains until garbage collected", "It is stored in the x variable"],
+      "answer": 2,
+      "explanation": "Integers are immutable. When x is reassigned, the reference to 10 is dropped, making it eligible for garbage collection."
+    },
+    {
+      "question": "Which of these is a valid way to assign the same value to multiple variables simultaneously?",
+      "options": ["a, b, c = 1", "a = b = c = 1", "(a, b, c) == 1", "a : b : c = 1"],
+      "answer": 1,
+      "explanation": "Chained assignment 'a = b = c = 1' assigns the same object to all three names."
+    },
+    {
+      "question": "What is the result of using the 'del' statement on a variable name?",
+      "options": ["It deletes the object from memory", "It removes the name binding from the scope", "It sets the variable to None", "It clears the variable's value but keeps the name"],
+      "answer": 1,
+      "explanation": "'del' removes the reference (the name), not necessarily the object itself (which is handled by garbage collection)."
+    },
+    {
+      "question": "Which function is used to check if two variables point to the exact same object in memory?",
+      "options": ["==", "is", "id()", "Both 'is' and 'id()'"],
+      "answer": 3,
+      "explanation": "The 'is' operator checks for identity, while comparing their id() values also confirms if they occupy the same memory address."
+    },
+    {
+      "question": "What will be the type of the variable 'result' in this code?\n\nx = 5\ny = 2.0\nresult = x + y",
+      "options": ["int", "float", "complex", "decimal"],
+      "answer": 1,
+      "explanation": "In an operation between an int and a float, Python implicitly promotes the int to a float."
+    },
+    {
+      "question": "What is the result of the expression: 16 // 3",
+      "options": ["5.33", "6", "5", "5.0"],
+      "answer": 2,
+      "explanation": "Floor division returns the largest integer less than or equal to the result ($16/3 = 5.33$, so $5$)."
+    },
+    {
+      "question": "Which of the following evaluates to True?",
+      "options": ["0 is True", "bool('False')", "None is True", "bool('')"],
+      "answer": 1,
+      "explanation": "Any non-empty string, including the string 'False', evaluates to True when cast to a boolean."
+    },
+    {
+      "question": "What is the result of 2 * 3 ** 2?",
+      "options": ["36", "18", "64", "12"],
+      "answer": 1,
+      "explanation": "Exponentiation (**) has higher precedence than multiplication (*). So, $3^2 = 9$, then $2 * 9 = 18$."
+    },
+    {
+      "question": "Which library would you typically import to perform advanced mathematical operations like square roots or trigonometry?",
+      "options": ["math", "calc", "science", "numbers"],
+      "answer": 0,
+      "explanation": "The 'math' module provides access to the mathematical functions defined by the C standard."
+    },
+    {
+      "question": "What is the value of: round(2.5) and round(3.5) in Python 3?",
+      "options": ["3 and 4", "2 and 3", "2 and 4", "3 and 3"],
+      "answer": 2,
+      "explanation": "Python 3 rounds to the nearest *even* number for .5 cases (Banker's rounding)."
+    },
+    {
+      "question": "In the command line, what is the difference between '>' and '>>'?",
+      "options": ["> overwrites, >> appends", "> appends, >> overwrites", "Both overwrite", "Both append"],
+      "answer": 0,
+      "explanation": "'>' creates a new file or overwrites an existing one; '>>' adds content to the end of a file."
+    },
+    {
+      "question": "Which command is used to display the full path of the current working directory?",
+      "options": ["dir", "where", "path", "pwd"],
+      "answer": 3,
+      "explanation": "'pwd' stands for 'Print Working Directory'."
+    },
+    {
+      "question": "What does the command 'ls -a' do in a Unix-based terminal?",
+      "options": ["Lists all files, including hidden ones", "Lists files in alphabetical order", "Lists files with their attributes", "Lists only directories"],
+      "answer": 0,
+      "explanation": "The '-a' flag stands for 'all', showing files starting with a dot (hidden files)."
+    },
+    {
+      "question": "Which shortcut moves the cursor to the beginning of the line in most terminals?",
+      "options": ["Ctrl + E", "Ctrl + A", "Ctrl + K", "Ctrl + L"],
+      "answer": 1,
+      "explanation": "Ctrl + A moves to the start; Ctrl + E moves to the end of the line."
+    },
+    {
+      "question": "How do you run a Python module as a script from the command line (e.g., the 'unittest' module)?",
+      "options": ["python run unittest", "python -m unittest", "python unittest.py", "pip install unittest"],
+      "answer": 1,
+      "explanation": "The '-m' flag searches the sys.path for the named module and runs its content as __main__."
+    },
+    {
+      "question": "What will the following code print?\n\nprint('Python'[::-1])",
+      "options": ["Python", "P", "nohtyP", "ythoP"],
+      "answer": 2,
+      "explanation": "The slice [::-1] is a common idiom for reversing a string."
+    },
+    {
+      "question": "Which method should you use to check if a string contains only alphanumeric characters?",
+      "options": [".isnumeric()", ".isalpha()", ".isalnum()", ".isascii()"],
+      "answer": 2,
+      "explanation": ".isalnum() returns True if the string contains only letters and numbers."
+    },
+    {
+      "question": "What is the output of: '   hello world   '.split()?",
+      "options": ["['   hello', 'world   ']", "['hello', 'world']", "[' ', 'hello', 'world', ' ']", "['   ', 'hello', 'world', '   ']"],
+      "answer": 1,
+      "explanation": "When called without arguments, .split() treats any run of whitespace as a single separator and strips leading/trailing whitespace."
+    },
+    {
+      "question": "Which of the following is the most modern and preferred way to format strings in Python 3.6+?",
+      "options": ["The % operator", "The .format() method", "f-strings", "string.Template"],
+      "answer": 2,
+      "explanation": "F-strings (Formatted String Literals) are faster and more readable than previous methods."
+    },
+    {
+      "question": "What does the string method .join() do?",
+      "options": ["Combines two strings together", "Concatenates a list of strings using a separator", "Adds a character to the end of a string", "Merges two dictionaries"],
+      "answer": 1,
+      "explanation": "Example: '-'.join(['a', 'b']) results in 'a-b'."
+    },
+    {
+      "question": "What will 'banana'.replace('a', 'o', 1) return?",
+      "options": ["bonono", "banana", "bonana", "bonano"],
+      "answer": 2,
+      "explanation": "The third argument in .replace() specifies the maximum number of replacements to perform."
+    },
+    {
+      "question": "Which logical operator has the lowest precedence in Python?",
+      "options": ["not", "and", "or", "=="],
+      "answer": 2,
+      "explanation": "Precedence order for logical operators is 'not' (highest), then 'and', then 'or' (lowest)."
+    },
+    {
+      "question": "What is the output of this code?\n\nx = [1, 2]\nif x:\n    print('Full')\nelse:\n    print('Empty')",
+      "options": ["Full", "Empty", "Error", "None"],
+      "answer": 0,
+      "explanation": "Non-empty sequences are truthy in Python."
+    },
+    {
+      "question": "What will range(5, 0, -1) produce when converted to a list?",
+      "options": ["[5, 4, 3, 2, 1, 0]", "[4, 3, 2, 1, 0]", "[5, 4, 3, 2, 1]", "[0, 1, 2, 3, 4, 5]"],
+      "answer": 2,
+      "explanation": "It starts at 5, decrements by 1, and stops *before* reaching 0."
+    },
+    {
+      "question": "In a 'for...else' construct, when does the 'else' block execute?",
+      "options": ["If the loop was terminated by a break", "If the loop completed all iterations without a break", "If the loop never started", "Every time the loop finishes an iteration"],
+      "answer": 1,
+      "explanation": "The 'else' block in a loop is a 'no-break' block; it runs only if the loop finishes normally."
+    },
+    {
+      "question": "Which statement is used to define an empty loop or class without causing a syntax error?",
+      "options": ["break", "continue", "pass", "void"],
+      "answer": 2,
+      "explanation": "'pass' is a null statement used as a placeholder."
+    },
+    {
+      "question": "What is the result of 'a' in 'apple'?",
+      "options": ["True", "False", "1", "0"],
+      "answer": 0,
+      "explanation": "The 'in' operator checks for membership in a sequence."
+    },
+    {
+      "question": "What is the result of: not (5 > 2 or 3 < 1)?",
+      "options": ["True", "False", "None", "Error"],
+      "answer": 1,
+      "explanation": "(5 > 2) is True, (3 < 1) is False. True or False is True. 'not True' is False."
+    },
+    {
+      "question": "How do you define a function that accepts any number of positional arguments?",
+      "options": ["def func(args):", "def func(*args):", "def func(**args):", "def func(args[]):"],
+      "answer": 1,
+      "explanation": "The single asterisk (*) packs positional arguments into a tuple."
+    },
+    {
+      "question": "What will be the output of this code?\n\ndef func(x=[]):\n    x.append(1)\n    return x\n\nprint(func())\nprint(func())",
+      "options": ["[1] then [1]", "[1] then [1, 1]", "[1] then Error", "[] then [1]"],
+      "answer": 1,
+      "explanation": "Default arguments are evaluated once at definition. The same list object is reused in subsequent calls."
+    },
+    {
+      "question": "Which keyword allows you to access a variable defined in the nearest enclosing scope that is not global?",
+      "options": ["global", "local", "nonlocal", "self"],
+      "answer": 2,
+      "explanation": "'nonlocal' is used in nested functions to refer to variables in the outer (non-global) scope."
+    },
+    {
+      "question": "What is a lambda function in Python?",
+      "options": ["A function that runs in the background", "An anonymous, one-line function", "A function used only for math", "A built-in sorting function"],
+      "answer": 1,
+      "explanation": "Lambda functions are small, anonymous functions defined with the 'lambda' keyword."
+    },
+    {
+      "question": "What does 'docstring' refer to in a function?",
+      "options": ["The return type", "The function's name", "A string literal used to document the function", "The string representation of the function"],
+      "answer": 2,
+      "explanation": "Docstrings are triple-quoted strings placed immediately after the function header."
+    },
+    {
+      "question": "Which function allows you to execute a string as Python code?",
+      "options": ["run()", "exec()", "eval()", "Both exec() and eval()"],
+      "answer": 3,
+      "explanation": "eval() evaluates expressions; exec() executes dynamic code/statements."
+    },
+    {
+      "question": "How do you check if a function 'my_func' is callable?",
+      "options": ["is_callable(my_func)", "my_func.can_call()", "callable(my_func)", "type(my_func) == 'function'"],
+      "answer": 2,
+      "explanation": "The built-in callable() function returns True if the object can be called."
+    },
+    {
+      "question": "What is the correct way to raise a custom exception?",
+      "options": ["throw Exception('msg')", "raise Exception('msg')", "error Exception('msg')", "trigger Exception('msg')"],
+      "answer": 1,
+      "explanation": "Python uses the 'raise' keyword to signal an exception."
+    },
+    {
+      "question": "Which exception is raised when you try to access a dictionary key that doesn't exist?",
+      "options": ["IndexError", "ValueError", "KeyError", "AttributeError"],
+      "answer": 2,
+      "explanation": "KeyError is the specific exception for missing dictionary keys."
+    },
+    {
+      "question": "What is the purpose of the 'assert' statement?",
+      "options": ["To handle expected errors", "To check if a condition is True and raise an error if not", "To import modules safely", "To define a constant"],
+      "answer": 1,
+      "explanation": "Assertions are debugging aids that test a condition; if it's False, an AssertionError is raised."
+    },
+    {
+      "question": "What is the output of:\n\ntry:\n    res = 10 / 2\nexcept:\n    res = 0\nelse:\n    res = 5\nprint(res)",
+      "options": ["5.0", "0", "5", "10"],
+      "answer": 2,
+      "explanation": "The 'else' block in a try-except runs only if NO exception occurred in the try block."
+    },
+    {
+      "question": "Which of the following can catch multiple specific exceptions in one line?",
+      "options": ["except ValueError, TypeError:", "except (ValueError, TypeError):", "except ValueError | TypeError:", "except ValueError or TypeError:"],
+      "answer": 1,
+      "explanation": "Multiple exceptions must be provided as a tuple in the except clause."
+    },
+    {
+      "question": "Which keyword is used to create a context manager (e.g., for closing files automatically)?",
+      "options": ["using", "open", "with", "context"],
+      "answer": 2,
+      "explanation": "The 'with' statement simplifies exception handling by encapsulating common preparation and cleanup tasks."
+    },
+    {
+      "question": "What will happen if you run: raise KeyboardInterrupt?",
+      "options": ["The program stops as if Ctrl+C was pressed", "The program ignores it", "A syntax error occurs", "The computer restarts"],
+      "answer": 0,
+      "explanation": "Manually raising KeyboardInterrupt mimics the signal sent by the user to stop a script."
+    },
+    {
+      "question": "What is the base class for all built-in exceptions in Python?",
+      "options": ["Exception", "BaseException", "Error", "Object"],
+      "answer": 1,
+      "explanation": "BaseException is the root of the exception hierarchy. Exception inherits from it."
+    },
+    {
+      "question": "Which built-in function is used to get the number of items in a list?",
+      "options": ["count()", "length()", "len()", "size()"],
+      "answer": 2,
+      "explanation": "len() returns the length (number of items) of an object."
+    },
+    {
+      "question": "How do you insert an item at the beginning of a list?",
+      "options": ["list.append(item)", "list.insert(0, item)", "list.prepend(item)", "list.add(item)"],
+      "answer": 1,
+      "explanation": "list.insert(index, object) inserts an element at a specific position."
+    },
+    {
+      "question": "What is the result of: [1, 2] + [3, 4]?",
+      "options": ["[1, 2, 3, 4]", "[[1, 2], [3, 4]]", "[4, 6]", "Error"],
+      "answer": 0,
+      "explanation": "The '+' operator on lists performs concatenation."
+    },
+    {
+      "question": "What is the main difference between a List and a Tuple?",
+      "options": ["Lists are faster", "Tuples are mutable", "Lists are mutable, Tuples are immutable", "Tuples can only hold integers"],
+      "answer": 2,
+      "explanation": "Lists can be changed after creation (mutable); tuples cannot (immutable)."
+    },
+    {
+      "question": "Which of the following is a correct way to create an empty dictionary?",
+      "options": ["d = []", "d = {}", "d = set()", "d = ()"],
+      "answer": 1,
+      "explanation": "{} creates an empty dictionary, whereas set() creates an empty set."
+    },
+    {
+      "question": "What is the output of: print(3 == 3.0)?",
+      "options": ["True", "False", "TypeError", "None"],
+      "answer": 0,
+      "explanation": "Python's '==' operator compares the values; an integer 3 and float 3.0 are considered equal in value."
+    }
+  ]
+}
