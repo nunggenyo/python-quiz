@@ -1,554 +1,502 @@
-{
-  "questions": [
-    {
-      "question": "Which of the following describes the 'dynamically typed' nature of Python variables?",
-      "options": [
-        "Variables must be declared with a type before assignment.",
-        "A variable's type can change if it is reassigned to a different value.",
-        "Variables can only hold numeric data types.",
-        "The type of a variable is determined at compile time and cannot change."
-      ],
-      "answer": 1,
-      "explanation": "In Python, types are associated with objects, not the variable names themselves, allowing a name to point to a string and later an integer."
-    },
-    {
-      "question": "What is the purpose of a 'shebang' line (e.g., #!/usr/bin/env python3) at the top of a script?",
-      "options": [
-        "It is a mandatory comment for PEP 8 compliance.",
-        "It tells the shell which interpreter to use to run the script.",
-        "It speeds up the execution of mathematical operations.",
-        "It defines the global scope for the entire program."
-      ],
-      "answer": 1,
-      "explanation": "The shebang line allows a script to be executed as a standalone executable in Unix-like environments."
-    },
-    {
-      "question": "Which of these is the correct way to assign values to three variables in a single line so they all have different values?",
-      "options": [
-        "x, y, z = 1, 2, 3",
-        "x = 1, y = 2, z = 3",
-        "x: 1, y: 2, z: 3",
-        "x = 1; y = 2; z = 3"
-      ],
-      "answer": 0,
-      "explanation": "Tuple unpacking allows for multiple assignments in a single, clean line."
-    },
-    {
-      "question": "What is the result of the expression: 2 * (3 + 4) ** 2?",
-      "options": [
-        "98",
-        "50",
-        "196",
-        "28"
-      ],
-      "answer": 0,
-      "explanation": "Parentheses are evaluated first (7), then exponentiation ($7^2 = 49$), then multiplication ($2 * 49 = 98$)."
-    },
-    {
-      "question": "Which input/output combination will correctly ask for a name and then greet the user?",
-      "options": [
-        "name = print('Name?'); input('Hi ' + name)",
-        "name = input('Name? '); print(f'Hi {name}')",
-        "input('Name? ') = name; print('Hi', name)",
-        "read(name); echo 'Hi ' + name"
-      ],
-      "answer": 1,
-      "explanation": "input() captures the data, and f-strings provide a modern way to format the output."
-    },
-    {
-      "question": "What happens if you use the '+' operator between an integer and a string (e.g., 5 + '5')?",
-      "options": [
-        "It results in '55'.",
-        "It results in 10.",
-        "It raises a TypeError.",
-        "It raises a ValueError."
-      ],
-      "answer": 2,
-      "explanation": "Python does not perform implicit type conversion between numbers and strings."
-    },
-    {
-      "question": "Which mathematical operator is used to calculate $5^3$?",
-      "options": [
-        "5 ^ 3",
-        "5 ** 3",
-        "5 * 3",
-        "pow(5, 3) only"
-      ],
-      "answer": 1,
-      "explanation": "The double asterisk (**) is the exponentiation operator in Python."
-    },
-    {
-      "question": "In the command line, which command allows you to edit a file directly in the terminal?",
-      "options": [
-        "nano",
-        "cat",
-        "less",
-        "grep"
-      ],
-      "answer": 0,
-      "explanation": "Nano is a common, user-friendly terminal-based text editor."
-    },
-    {
-      "question": "Which command-line operation would you use to search for the string 'login' in all .py files in the current folder?",
-      "options": [
-        "find 'login' *.py",
-        "grep 'login' *.py",
-        "search 'login' *.py",
-        "cat *.py | find 'login'"
-      ],
-      "answer": 1,
-      "explanation": "Grep is the standard tool for pattern matching within files."
-    },
-    {
-      "question": "What does the command-line shortcut 'Ctrl + L' typically do?",
-      "options": [
-        "Exits the terminal.",
-        "Clears the terminal screen.",
-        "Locks the current file.",
-        "Lists all directory contents."
-      ],
-      "answer": 1,
-      "explanation": "Ctrl + L is a common shortcut for the 'clear' command."
-    },
-    {
-      "question": "If you want to run a script 'test.py' and save its errors to a file 'error.log' instead of seeing them on the screen, which redirect would you use?",
-      "options": [
-        "python test.py > error.log",
-        "python test.py 2> error.log",
-        "python test.py | error.log",
-        "python test.py &> error.log"
-      ],
-      "answer": 1,
-      "explanation": "The '2>' operator redirects stderr (standard error) to a file."
-    },
-    {
-      "question": "What is the effect of the 'head -n 5 file.txt' command?",
-      "options": [
-        "It deletes the first 5 lines.",
-        "It shows only the 5th line.",
-        "It shows the first 5 lines of the file.",
-        "It renames the file to '5'."
-      ],
-      "answer": 2,
-      "explanation": "The 'head' command views the start of a file, and -n specifies the number of lines."
-    },
-    {
-      "question": "Which of the following is an example of an 'escape character' used to include a double quote inside a double-quoted string?",
-      "options": [
-        "\\\"",
-        "/\"",
-        "\"\"",
-        "&quote;"
-      ],
-      "answer": 0,
-      "explanation": "The backslash (\\) is used to escape special characters in Python strings."
-    },
-    {
-      "question": "What will 'Python'.lower().islower() return?",
-      "options": [
-        "None",
-        "False",
-        "True",
-        "Error"
-      ],
-      "answer": 2,
-      "explanation": "'Python'.lower() becomes 'python', and .islower() then checks if it is entirely lowercase."
-    },
-    {
-      "question": "How do you check the number of characters in a string 'msg'?",
-      "options": [
-        "msg.length()",
-        "len(msg)",
-        "count(msg)",
-        "msg.size()"
-      ],
-      "answer": 1,
-      "explanation": "The len() function is the standard way to get the length of any sequence in Python."
-    },
-    {
-      "question": "What is the output of 'Hello' + ' ' + 'World'?",
-      "options": [
-        "Hello World",
-        "HelloWorld",
-        "['Hello', ' ', 'World']",
-        "Error"
-      ],
-      "answer": 0,
-      "explanation": "String concatenation using the '+' operator joins strings exactly as they are."
-    },
-    {
-      "question": "Which string method would you use to change 'hello world' into 'Hello world'?",
-      "options": [
-        ".title()",
-        ".upper()",
-        ".capitalize()",
-        ".swapcase()"
-      ],
-      "answer": 2,
-      "explanation": ".capitalize() only uppercases the very first character of the string."
-    },
-    {
-      "question": "What does '1,2,3'.split(',') return?",
-      "options": [
-        "(1, 2, 3)",
-        "['1', '2', '3']",
-        "[1, 2, 3]",
-        "'1' '2' '3'"
-      ],
-      "answer": 1,
-      "explanation": ".split() returns a list of strings, even if the content looks like numbers."
-    },
-    {
-      "question": "What is the correct structure of a 'while' loop that runs as long as 'x' is positive?",
-      "options": [
-        "while x > 0 { }",
-        "while x > 0:",
-        "during x > 0:",
-        "while (x > 0)"
-      ],
-      "answer": 1,
-      "explanation": "Python's while loop requires a colon and an indented block."
-    },
-    {
-      "question": "In a loop, which statement is used to skip only the current iteration and proceed to the next one?",
-      "options": [
-        "break",
-        "pass",
-        "skip",
-        "continue"
-      ],
-      "answer": 3,
-      "explanation": "Continue skips the remaining code in the loop body for that cycle."
-    },
-    {
-      "question": "What is the output of the following code?\n\nfor i in range(1, 4):\n    if i == 2:\n        break\n    print(i)",
-      "options": [
-        "1 2 3",
-        "1",
-        "1 3",
-        "2"
-      ],
-      "answer": 1,
-      "explanation": "The loop starts at 1, prints it, and then hits the break at 2, terminating the loop."
-    },
-    {
-      "question": "Which logical operator returns True only if both conditions are True?",
-      "options": [
-        "or",
-        "not",
-        "and",
-        "both"
-      ],
-      "answer": 2,
-      "explanation": "The 'and' operator requires both sides to be truthy."
-    },
-    {
-      "question": "How do you write an 'if' statement that checks if 'x' is not equal to 10?",
-      "options": [
-        "if x not 10:",
-        "if x <> 10:",
-        "if x != 10:",
-        "if x is not 10:"
-      ],
-      "answer": 2,
-      "explanation": "While 'is not' exists for identity, '!=' is the standard operator for value inequality."
-    },
-    {
-      "question": "What is the output of: bool(None)?",
-      "options": [
-        "False",
-        "True",
-        "None",
-        "Error"
-      ],
-      "answer": 0,
-      "explanation": "None is one of the built-in falsy values in Python."
-    },
-    {
-      "question": "In a function definition 'def greet(name, msg):', what are 'name' and 'msg' called?",
-      "options": [
-        "Arguments",
-        "Parameters",
-        "Returns",
-        "Variables"
-      ],
-      "answer": 1,
-      "explanation": "Parameters are the placeholders in the definition; arguments are the actual values passed during the call."
-    },
-    {
-      "question": "Which keyword is used to send a result back from a function to the caller?",
-      "options": [
-        "send",
-        "output",
-        "return",
-        "exit"
-      ],
-      "answer": 2,
-      "explanation": "The 'return' statement exits the function and provides a value."
-    },
-    {
-      "question": "What is the 'scope' of a variable assigned inside a function?",
-      "options": [
-        "Global scope",
-        "Local scope",
-        "Module scope",
-        "Universal scope"
-      ],
-      "answer": 1,
-      "explanation": "Variables defined inside a function body are only accessible within that function."
-    },
-    {
-      "question": "What will happen if you try to use a global variable inside a function without the 'global' keyword?",
-      "options": [
-        "You can read its value but cannot reassign it.",
-        "You cannot read or write its value.",
-        "The program will always crash.",
-        "The variable becomes private automatically."
-      ],
-      "answer": 0,
-      "explanation": "You can access (read) global variables, but trying to assign to them creates a new local variable instead."
-    },
-    {
-      "question": "How do you define a function that does nothing when called?",
-      "options": [
-        "def func(): return",
-        "def func(): pass",
-        "def func():",
-        "Both 1 and 2"
-      ],
-      "answer": 3,
-      "explanation": "Both 'pass' and an empty 'return' allow a function to execute and finish without performing actions."
-    },
-    {
-      "question": "What will be the result of: print(print('Hello'))?",
-      "options": [
-        "Hello Hello",
-        "Hello None",
-        "Error",
-        "Hello"
-      ],
-      "answer": 1,
-      "explanation": "The inner print() displays 'Hello' and returns None, which the outer print() then displays."
-    },
-    {
-      "question": "Which block is used to enclose code that might potentially raise an error?",
-      "options": [
-        "except",
-        "error",
-        "try",
-        "catch"
-      ],
-      "answer": 2,
-      "explanation": "The 'try' block tests a block of code for errors."
-    },
-    {
-      "question": "Which error is raised when a user provides 'abc' to an int(input()) call?",
-      "options": [
-        "TypeError",
-        "NameError",
-        "ValueError",
-        "InputError"
-      ],
-      "answer": 2,
-      "explanation": "ValueError is raised when a function receives an argument of the right type but inappropriate value."
-    },
-    {
-      "question": "What is the standard way to handle any possible error while keeping the program running?",
-      "options": [
-        "try: ... except Exception:",
-        "if error: stop",
-        "try: ... finally:",
-        "except all:"
-      ],
-      "answer": 0,
-      "explanation": "Catching 'Exception' is the broad way to handle most non-system-exit errors."
-    },
-    {
-      "question": "What code goes into an 'except' block?",
-      "options": [
-        "The code that runs only if everything is successful.",
-        "The code that cleans up files and connections.",
-        "The code that executes when a specific error occurs.",
-        "The main logic of the program."
-      ],
-      "answer": 2,
-      "explanation": "The except block is the error handler."
-    },
-    {
-      "question": "How do you provide a user-friendly message for a ZeroDivisionError?",
-      "options": [
-        "if x/y: ...",
-        "try:\n    res = x/y\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')",
-        "catch ZeroDivisionError: print('error')",
-        "try x/y except: print('error')"
-      ],
-      "answer": 1,
-      "explanation": "Specific exception handling allows for targeted error messages."
-    },
-    {
-      "question": "What is the primary benefit of input validation using try/except?",
-      "options": [
-        "It makes the code run faster.",
-        "It prevents the program from crashing on unexpected user input.",
-        "It automatically corrects the user's mistakes.",
-        "It hides the code from the user."
-      ],
-      "answer": 1,
-      "explanation": "Validation ensures the program can recover gracefully from bad data."
-    },
-    {
-      "question": "Which function allows you to see the memory address of a variable?",
-      "options": [
-        "address()",
-        "mem()",
-        "id()",
-        "hex()"
-      ],
-      "answer": 2,
-      "explanation": "id() returns the identity of an object, which corresponds to its address in CPython."
-    },
-    {
-      "question": "What is the result of 10 // 3?",
-      "options": [
-        "3.333",
-        "3",
-        "4",
-        "3.0"
-      ],
-      "answer": 1,
-      "explanation": "// is the floor division operator, discarding the decimal."
-    },
-    {
-      "question": "Which command is used to go back to the previous directory in the terminal?",
-      "options": [
-        "cd ..",
-        "cd back",
-        "cd -",
-        "Both 1 and 3"
-      ],
-      "answer": 3,
-      "explanation": "'cd ..' moves up one level, 'cd -' moves to the previous working directory."
-    },
-    {
-      "question": "What is the result of 'abc' * 3?",
-      "options": [
-        "abcabcabc",
-        "abc3",
-        "Error",
-        "['abc', 'abc', 'abc']"
-      ],
-      "answer": 0,
-      "explanation": "Multiplying a string by an integer repeats the string."
-    },
-    {
-      "question": "How do you check if 'x' is between 5 and 10 inclusive in Python?",
-      "options": [
-        "if 5 <= x <= 10:",
-        "if x >= 5 and x <= 10:",
-        "if x in range(5, 11):",
-        "All of the above"
-      ],
-      "answer": 3,
-      "explanation": "Python supports chained comparisons, logical 'and', and range checks."
-    },
-    {
-      "question": "What is a 'parameter with a default value'?",
-      "options": [
-        "A parameter that must always be provided.",
-        "A parameter that uses a preset value if no argument is passed.",
-        "A parameter that can only be an integer.",
-        "A parameter that cannot be used in a return statement."
-      ],
-      "answer": 1,
-      "explanation": "Default values make arguments optional."
-    },
-    {
-      "question": "Which block runs regardless of whether an exception occurred or not?",
-      "options": [
-        "else",
-        "finally",
-        "always",
-        "except"
-      ],
-      "answer": 1,
-      "explanation": "Finally is used for cleanup code that must always execute."
-    },
-    {
-      "question": "What will '10' + 10 result in?",
-      "options": [
-        "20",
-        "1010",
-        "TypeError",
-        "ValueError"
-      ],
-      "answer": 2,
-      "explanation": "You cannot add a string to an integer without explicit casting."
-    },
-    {
-      "question": "Which of these is a 'truthy' value in Python?",
-      "options": [
-        "0",
-        "'' (empty string)",
-        "[] (empty list)",
-        "' '"
-      ],
-      "answer": 3,
-      "explanation": "A string containing a space is not empty, therefore it is True."
-    },
-    {
-      "question": "What is the output of range(5) when used in a loop?",
-      "options": [
-        "1, 2, 3, 4, 5",
-        "0, 1, 2, 3, 4, 5",
-        "0, 1, 2, 3, 4",
-        "5, 4, 3, 2, 1"
-      ],
-      "answer": 2,
-      "explanation": "Range starts at 0 and stops before the specified number."
-    },
-    {
-      "question": "How do you define a function named 'calculate'?",
-      "options": [
-        "function calculate():",
-        "def calculate():",
-        "calculate() ->",
-        "define calculate():"
-      ],
-      "answer": 1,
-      "explanation": "Def is the keyword for function definition."
-    },
-    {
-      "question": "What does the 'pipe' operator (|) do in the terminal?",
-      "options": [
-        "Redirects output to a file.",
-        "Passes output of one command as input to another.",
-        "Stops a running process.",
-        "Clears the command history."
-      ],
-      "answer": 1,
-      "explanation": "Pipes chain commands together."
-    },
-    {
-      "question": "What is the result of 'apple'.find('p')?",
-      "options": [
-        "1",
-        "2",
-        "True",
-        "0"
-      ],
-      "answer": 0,
-      "explanation": ".find() returns the index of the first occurrence (a is 0, p is 1)."
-    },
-    {
-      "question": "What is the correct way to write an empty function that will be implemented later?",
-      "options": [
-        "def future_func(): pass",
-        "def future_func(): ...",
-        "def future_func(): return None",
-        "All of the above"
-      ],
-      "answer": 3,
-      "explanation": "All these options are syntactically correct ways to define a 'stub' function."
-    }
-  ]
-}
+[
+  {
+    "question": "Which of the following describes the 'dynamically typed' nature of Python variables?",
+    "options": [
+      "Variables must be declared with a type before assignment.",
+      "Variables can only hold numeric data types.",
+      "The type of a variable is determined at compile time and cannot change."
+    ],
+    "answer": "A variable's type can change if it is reassigned to a different value.",
+    "explanation": "In Python, types are associated with objects, not the variable names themselves, allowing a name to point to a string and later an integer."
+  },
+  {
+    "question": "What is the purpose of a 'shebang' line (e.g., #!/usr/bin/env python3) at the top of a script?",
+    "options": [
+      "It is a mandatory comment for PEP 8 compliance.",
+      "It speeds up the execution of mathematical operations.",
+      "It defines the global scope for the entire program."
+    ],
+    "answer": "It tells the shell which interpreter to use to run the script.",
+    "explanation": "The shebang line allows a script to be executed as a standalone executable in Unix-like environments."
+  },
+  {
+    "question": "Which of these is the correct way to assign values to three variables in a single line so they all have different values?",
+    "options": [
+      "x = 1, y = 2, z = 3",
+      "x: 1, y: 2, z: 3",
+      "x = 1; y = 2; z = 3"
+    ],
+    "answer": "x, y, z = 1, 2, 3",
+    "explanation": "Tuple unpacking allows for multiple assignments in a single, clean line."
+  },
+  {
+    "question": "What is the result of the expression: 2 * (3 + 4) ** 2?",
+    "options": [
+      "50",
+      "196",
+      "28"
+    ],
+    "answer": "98",
+    "explanation": "Parentheses are evaluated first (7), then exponentiation ($7^2 = 49$), then multiplication ($2 * 49 = 98$)."
+  },
+  {
+    "question": "Which input/output combination will correctly ask for a name and then greet the user?",
+    "options": [
+      "name = print('Name?'); input('Hi ' + name)",
+      "input('Name? ') = name; print('Hi', name)",
+      "read(name); echo 'Hi ' + name"
+    ],
+    "answer": "name = input('Name? '); print(f'Hi {name}')",
+    "explanation": "input() captures the data, and f-strings provide a modern way to format the output."
+  },
+  {
+    "question": "What happens if you use the '+' operator between an integer and a string (e.g., 5 + '5')?",
+    "options": [
+      "It results in '55'.",
+      "It results in 10.",
+      "It raises a ValueError."
+    ],
+    "answer": "It raises a TypeError.",
+    "explanation": "Python does not perform implicit type conversion between numbers and strings."
+  },
+  {
+    "question": "Which mathematical operator is used to calculate $5^3$?",
+    "options": [
+      "5 ^ 3",
+      "5 * 3",
+      "pow(5, 3) only"
+    ],
+    "answer": "5 ** 3",
+    "explanation": "The double asterisk (**) is the exponentiation operator in Python."
+  },
+  {
+    "question": "In the command line, which command allows you to edit a file directly in the terminal?",
+    "options": [
+      "cat",
+      "less",
+      "grep"
+    ],
+    "answer": "nano",
+    "explanation": "Nano is a common, user-friendly terminal-based text editor."
+  },
+  {
+    "question": "Which command-line operation would you use to search for the string 'login' in all .py files in the current folder?",
+    "options": [
+      "find 'login' *.py",
+      "search 'login' *.py",
+      "cat *.py | find 'login'"
+    ],
+    "answer": "grep 'login' *.py",
+    "explanation": "Grep is the standard tool for pattern matching within files."
+  },
+  {
+    "question": "What does the command-line shortcut 'Ctrl + L' typically do?",
+    "options": [
+      "Exits the terminal.",
+      "Locks the current file.",
+      "Lists all directory contents."
+    ],
+    "answer": "Clears the terminal screen.",
+    "explanation": "Ctrl + L is a common shortcut for the 'clear' command."
+  },
+  {
+    "question": "If you want to run a script 'test.py' and save its errors to a file 'error.log' instead of seeing them on the screen, which redirect would you use?",
+    "options": [
+      "python test.py > error.log",
+      "python test.py | error.log",
+      "python test.py &> error.log"
+    ],
+    "answer": "python test.py 2> error.log",
+    "explanation": "The '2>' operator redirects stderr (standard error) to a file."
+  },
+  {
+    "question": "What is the effect of the 'head -n 5 file.txt' command?",
+    "options": [
+      "It deletes the first 5 lines.",
+      "It shows only the 5th line.",
+      "It renames the file to '5'."
+    ],
+    "answer": "It shows the first 5 lines of the file.",
+    "explanation": "The 'head' command views the start of a file, and -n specifies the number of lines."
+  },
+  {
+    "question": "Which of the following is an example of an 'escape character' used to include a double quote inside a double-quoted string?",
+    "options": [
+      "/\"",
+      "\"\"",
+      "&quote;"
+    ],
+    "answer": "\\\"",
+    "explanation": "The backslash (\\) is used to escape special characters in Python strings."
+  },
+  {
+    "question": "What will 'Python'.lower().islower() return?",
+    "options": [
+      "None",
+      "False",
+      "Error"
+    ],
+    "answer": "True",
+    "explanation": "'Python'.lower() becomes 'python', and .islower() then checks if it is entirely lowercase."
+  },
+  {
+    "question": "How do you check the number of characters in a string 'msg'?",
+    "options": [
+      "msg.length()",
+      "count(msg)",
+      "msg.size()"
+    ],
+    "answer": "len(msg)",
+    "explanation": "The len() function is the standard way to get the length of any sequence in Python."
+  },
+  {
+    "question": "What is the output of 'Hello' + ' ' + 'World'?",
+    "options": [
+      "HelloWorld",
+      "['Hello', ' ', 'World']",
+      "Error"
+    ],
+    "answer": "Hello World",
+    "explanation": "String concatenation using the '+' operator joins strings exactly as they are."
+  },
+  {
+    "question": "Which string method would you use to change 'hello world' into 'Hello world'?",
+    "options": [
+      ".title()",
+      ".upper()",
+      ".swapcase()"
+    ],
+    "answer": ".capitalize()",
+    "explanation": ".capitalize() only uppercases the very first character of the string."
+  },
+  {
+    "question": "What does '1,2,3'.split(',') return?",
+    "options": [
+      "(1, 2, 3)",
+      "[1, 2, 3]",
+      "'1' '2' '3'"
+    ],
+    "answer": "['1', '2', '3']",
+    "explanation": ".split() returns a list of strings, even if the content looks like numbers."
+  },
+  {
+    "question": "What is the correct structure of a 'while' loop that runs as long as 'x' is positive?",
+    "options": [
+      "while x > 0 { }",
+      "during x > 0:",
+      "while (x > 0)"
+    ],
+    "answer": "while x > 0:",
+    "explanation": "Python's while loop requires a colon and an indented block."
+  },
+  {
+    "question": "In a loop, which statement is used to skip only the current iteration and proceed to the next one?",
+    "options": [
+      "break",
+      "pass",
+      "skip"
+    ],
+    "answer": "continue",
+    "explanation": "Continue skips the remaining code in the loop body for that cycle."
+  },
+  {
+    "question": "What is the output of the following code?\n\nfor i in range(1, 4):\n    if i == 2:\n        break\n    print(i)",
+    "options": [
+      "1 2 3",
+      "1 3",
+      "2"
+    ],
+    "answer": "1",
+    "explanation": "The loop starts at 1, prints it, and then hits the break at 2, terminating the loop."
+  },
+  {
+    "question": "Which logical operator returns True only if both conditions are True?",
+    "options": [
+      "or",
+      "not",
+      "both"
+    ],
+    "answer": "and",
+    "explanation": "The 'and' operator requires both sides to be truthy."
+  },
+  {
+    "question": "How do you write an 'if' statement that checks if 'x' is not equal to 10?",
+    "options": [
+      "if x not 10:",
+      "if x <> 10:",
+      "if x is not 10:"
+    ],
+    "answer": "if x != 10:",
+    "explanation": "While 'is not' exists for identity, '!=' is the standard operator for value inequality."
+  },
+  {
+    "question": "What is the output of: bool(None)?",
+    "options": [
+      "True",
+      "None",
+      "Error"
+    ],
+    "answer": "False",
+    "explanation": "None is one of the built-in falsy values in Python."
+  },
+  {
+    "question": "In a function definition 'def greet(name, msg):', what are 'name' and 'msg' called?",
+    "options": [
+      "Arguments",
+      "Returns",
+      "Variables"
+    ],
+    "answer": "Parameters",
+    "explanation": "Parameters are the placeholders in the definition; arguments are the actual values passed during the call."
+  },
+  {
+    "question": "Which keyword is used to send a result back from a function to the caller?",
+    "options": [
+      "send",
+      "output",
+      "exit"
+    ],
+    "answer": "return",
+    "explanation": "The 'return' statement exits the function and provides a value."
+  },
+  {
+    "question": "What is the 'scope' of a variable assigned inside a function?",
+    "options": [
+      "Global scope",
+      "Module scope",
+      "Universal scope"
+    ],
+    "answer": "Local scope",
+    "explanation": "Variables defined inside a function body are only accessible within that function."
+  },
+  {
+    "question": "What will happen if you try to use a global variable inside a function without the 'global' keyword?",
+    "options": [
+      "You cannot read or write its value.",
+      "The program will always crash.",
+      "The variable becomes private automatically."
+    ],
+    "answer": "You can read its value but cannot reassign it.",
+    "explanation": "You can access (read) global variables, but trying to assign to them creates a new local variable instead."
+  },
+  {
+    "question": "How do you define a function that does nothing when called?",
+    "options": [
+      "def func(): return",
+      "def func(): pass",
+      "def func():"
+    ],
+    "answer": "Both 1 and 2",
+    "explanation": "Both 'pass' and an empty 'return' allow a function to execute and finish without performing actions."
+  },
+  {
+    "question": "What will be the result of: print(print('Hello'))?",
+    "options": [
+      "Hello Hello",
+      "Error",
+      "Hello"
+    ],
+    "answer": "Hello None",
+    "explanation": "The inner print() displays 'Hello' and returns None, which the outer print() then displays."
+  },
+  {
+    "question": "Which block is used to enclose code that might potentially raise an error?",
+    "options": [
+      "except",
+      "error",
+      "catch"
+    ],
+    "answer": "try",
+    "explanation": "The 'try' block tests a block of code for errors."
+  },
+  {
+    "question": "Which error is raised when a user provides 'abc' to an int(input()) call?",
+    "options": [
+      "TypeError",
+      "NameError",
+      "InputError"
+    ],
+    "answer": "ValueError",
+    "explanation": "ValueError is raised when a function receives an argument of the right type but inappropriate value."
+  },
+  {
+    "question": "What is the standard way to handle any possible error while keeping the program running?",
+    "options": [
+      "if error: stop",
+      "try: ... finally:",
+      "except all:"
+    ],
+    "answer": "try: ... except Exception:",
+    "explanation": "Catching 'Exception' is the broad way to handle most non-system-exit errors."
+  },
+  {
+    "question": "What code goes into an 'except' block?",
+    "options": [
+      "The code that runs only if everything is successful.",
+      "The code that cleans up files and connections.",
+      "The main logic of the program."
+    ],
+    "answer": "The code that executes when a specific error occurs.",
+    "explanation": "The except block is the error handler."
+  },
+  {
+    "question": "How do you provide a user-friendly message for a ZeroDivisionError?",
+    "options": [
+      "if x/y: ...",
+      "catch ZeroDivisionError: print('error')",
+      "try x/y except: print('error')"
+    ],
+    "answer": "try:\n    res = x/y\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')",
+    "explanation": "Specific exception handling allows for targeted error messages."
+  },
+  {
+    "question": "What is the primary benefit of input validation using try/except?",
+    "options": [
+      "It makes the code run faster.",
+      "It automatically corrects the user's mistakes.",
+      "It hides the code from the user."
+    ],
+    "answer": "It prevents the program from crashing on unexpected user input.",
+    "explanation": "Validation ensures the program can recover gracefully from bad data."
+  },
+  {
+    "question": "Which function allows you to see the memory address of a variable?",
+    "options": [
+      "address()",
+      "mem()",
+      "hex()"
+    ],
+    "answer": "id()",
+    "explanation": "id() returns the identity of an object, which corresponds to its address in CPython."
+  },
+  {
+    "question": "What is the result of 10 // 3?",
+    "options": [
+      "3.333",
+      "4",
+      "3.0"
+    ],
+    "answer": "3",
+    "explanation": "// is the floor division operator, discarding the decimal."
+  },
+  {
+    "question": "Which command is used to go back to the previous directory in the terminal?",
+    "options": [
+      "cd ..",
+      "cd back",
+      "cd -"
+    ],
+    "answer": "Both 1 and 3",
+    "explanation": "'cd ..' moves up one level, 'cd -' moves to the previous working directory."
+  },
+  {
+    "question": "What is the result of 'abc' * 3?",
+    "options": [
+      "abc3",
+      "Error",
+      "['abc', 'abc', 'abc']"
+    ],
+    "answer": "abcabcabc",
+    "explanation": "Multiplying a string by an integer repeats the string."
+  },
+  {
+    "question": "How do you check if 'x' is between 5 and 10 inclusive in Python?",
+    "options": [
+      "if 5 <= x <= 10:",
+      "if x >= 5 and x <= 10:",
+      "if x in range(5, 11):"
+    ],
+    "answer": "All of the above",
+    "explanation": "Python supports chained comparisons, logical 'and', and range checks."
+  },
+  {
+    "question": "What is a 'parameter with a default value'?",
+    "options": [
+      "A parameter that must always be provided.",
+      "A parameter that can only be an integer.",
+      "A parameter that cannot be used in a return statement."
+    ],
+    "answer": "A parameter that uses a preset value if no argument is passed.",
+    "explanation": "Default values make arguments optional."
+  },
+  {
+    "question": "Which block runs regardless of whether an exception occurred or not?",
+    "options": [
+      "else",
+      "always",
+      "except"
+    ],
+    "answer": "finally",
+    "explanation": "Finally is used for cleanup code that must always execute."
+  },
+  {
+    "question": "What will '10' + 10 result in?",
+    "options": [
+      "20",
+      "1010",
+      "ValueError"
+    ],
+    "answer": "TypeError",
+    "explanation": "You cannot add a string to an integer without explicit casting."
+  },
+  {
+    "question": "Which of these is a 'truthy' value in Python?",
+    "options": [
+      "0",
+      "'' (empty string)",
+      "[] (empty list)"
+    ],
+    "answer": "' '",
+    "explanation": "A string containing a space is not empty, therefore it is True."
+  },
+  {
+    "question": "What is the output of range(5) when used in a loop?",
+    "options": [
+      "1, 2, 3, 4, 5",
+      "0, 1, 2, 3, 4, 5",
+      "5, 4, 3, 2, 1"
+    ],
+    "answer": "0, 1, 2, 3, 4",
+    "explanation": "Range starts at 0 and stops before the specified number."
+  },
+  {
+    "question": "How do you define a function named 'calculate'?",
+    "options": [
+      "function calculate():",
+      "calculate() ->",
+      "define calculate():"
+    ],
+    "answer": "def calculate():",
+    "explanation": "Def is the keyword for function definition."
+  },
+  {
+    "question": "What does the 'pipe' operator (|) do in the terminal?",
+    "options": [
+      "Redirects output to a file.",
+      "Stops a running process.",
+      "Clears the command history."
+    ],
+    "answer": "Passes output of one command as input to another.",
+    "explanation": "Pipes chain commands together."
+  },
+  {
+    "question": "What is the result of 'apple'.find('p')?",
+    "options": [
+      "2",
+      "True",
+      "0"
+    ],
+    "answer": "1",
+    "explanation": ".find() returns the index of the first occurrence (a is 0, p is 1)."
+  },
+  {
+    "question": "What is the correct way to write an empty function that will be implemented later?",
+    "options": [
+      "def future_func(): pass",
+      "def future_func(): ...",
+      "def future_func(): return None"
+    ],
+    "answer": "All of the above",
+    "explanation": "All these options are syntactically correct ways to define a 'stub' function."
+  }
+]

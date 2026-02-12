@@ -388,6 +388,26 @@ body {
   line-height: 1.4;
   margin-bottom: 32px;
   color: var(--text-primary);
+
+  /* Support multi-line text outside <pre> as well */
+  white-space: pre-wrap;
+}
+
+/* Style the code block */
+.question-title pre {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 16px;
+  border-radius: 8px;
+  overflow-x: auto;       /* horizontal scroll if code is long */
+  font-family: 'Fira Code', monospace;
+  font-size: 20px;
+  margin-top: 16px;
+  white-space: pre-wrap;   /* wrap long lines inside pre */
+}
+
+.question-title code {
+  color: #f0f0f0;          /* code text color */
+  font-weight: 500;
 }
 
 /* Options Grid */

@@ -1,369 +1,502 @@
-{
-  "questions": [
-    {
-      "question": "What is the correct way to declare a variable that is intended to be used only within a specific module but not exported via 'from module import *'?",
-      "options": ["__variable", "variable_", "_variable", "var-variable"],
-      "answer": 2,
-      "explanation": "A single leading underscore (_variable) is a Python convention indicating a name is intended for internal use; it also prevents the name from being imported when using '* imports'."
-    },
-    {
-      "question": "What will be the value of 'a' after this code executes?\n\na = [1, 2, 3]\nb = a\na = [4, 5, 6]",
-      "options": ["[1, 2, 3]", "[4, 5, 6]", "[1, 2, 3, 4, 5, 6]", "Error"],
-      "answer": 1,
-      "explanation": "Reassigning 'a' to a new list object does not change 'b', but 'a' now points to the new list [4, 5, 6]."
-    },
-    {
-      "question": "Which of the following describes the 'dynamic typing' feature in Python?",
-      "options": [
-        "Variables must be declared with a type before assignment.",
-        "The type of a variable is determined at runtime based on its value.",
-        "A variable's type cannot be changed once it is set.",
-        "Python requires a compiler to check types before execution."
-      ],
-      "answer": 1,
-      "explanation": "In Python, types are associated with objects, not variable names, allowing a name to point to different types of objects over time."
-    },
-    {
-      "question": "Which built-in function is used to delete an attribute from an object?",
-      "options": ["del", "remove()", "delattr()", "pop()"],
-      "answer": 2,
-      "explanation": "While 'del' is a statement, delattr() is the functional way to remove an attribute from an object dynamically."
-    },
-    {
-      "question": "In Python 3.x, what is the maximum size of an integer?",
-      "options": [
-        "64 bits",
-        "2^31 - 1",
-        "It is limited only by available memory",
-        "128 bits"
-      ],
-      "answer": 2,
-      "explanation": "Python 3 integers have arbitrary precision, meaning they can grow as large as the system's RAM allows."
-    },
-    {
-      "question": "What is the result of 1.1 + 2.2 == 3.3 in Python?",
-      "options": ["True", "False", "None", "Error"],
-      "answer": 1,
-      "explanation": "Due to floating-point binary representation, 1.1 + 2.2 equals 3.3000000000000003, which is not exactly 3.3."
-    },
-    {
-      "question": "Which operator performs bitwise XOR in Python?",
-      "options": ["&", "|", "^", "~"],
-      "answer": 2,
-      "explanation": "The caret (^) operator is used for bitwise XOR (exclusive or) operations."
-    },
-    {
-      "question": "What is the result of the expression: divmod(10, 3)?",
-      "options": ["3.33", "(3, 1)", "[3, 1]", "3"],
-      "answer": 1,
-      "explanation": "The divmod() function returns a tuple containing the quotient and the remainder: (10 // 3, 10 % 3)."
-    },
-    {
-      "question": "Which method is used to get the absolute value of a number?",
-      "options": ["math.abs()", "absolute()", "abs()", "num.abs()"],
-      "answer": 2,
-      "explanation": "abs() is a built-in function that works on integers, floats, and complex numbers."
-    },
-    {
-      "question": "What does the expression 0.1.as_integer_ratio() return?",
-      "options": ["(1, 10)", "(3602879701896397, 36028797018963968)", "(0.1, 1)", "Error"],
-      "answer": 1,
-      "explanation": "This method returns a tuple representing the exact fraction that represents the float in binary."
-    },
-    {
-      "question": "What is the result of 1j * 1j?",
-      "options": ["-1", "(-1+0j)", "1", "sqrt(-1)"],
-      "answer": 1,
-      "explanation": "Python uses 'j' for complex numbers. $j^2 = -1$, and complex results are represented as (real+imag j)."
-    },
-    {
-      "question": "In a shell, which command is used to search for files by name within a directory tree?",
-      "options": ["grep", "locate", "find", "ls -f"],
-      "answer": 2,
-      "explanation": "The 'find' command is specifically designed for traversing directory trees to locate files based on criteria like name or size."
-    },
-    {
-      "question": "Which command-line argument is used to install a package via pip without using the cache?",
-      "options": ["--no-cache-dir", "--force", "-u", "--ignore"],
-      "answer": 0,
-      "explanation": "The --no-cache-dir flag ensures pip downloads the package fresh from the index."
-    },
-    {
-      "question": "In the terminal, what does the command 'cd ..' do?",
-      "options": [
-        "Goes to the home directory",
-        "Goes to the root directory",
-        "Moves up one level to the parent directory",
-        "Refresh current directory"
-      ],
-      "answer": 2,
-      "explanation": "Two dots (..) represent the parent of the current working directory."
-    },
-    {
-      "question": "Which command allows you to rename a file 'old.txt' to 'new.txt' in the command line?",
-      "options": ["rn old.txt new.txt", "mv old.txt new.txt", "cp old.txt new.txt", "rename old.txt new.txt"],
-      "answer": 1,
-      "explanation": "The 'mv' (move) command is used both for moving files and for renaming them."
-    },
-    {
-      "question": "Which environment variable is used by the shell to locate executable programs?",
-      "options": ["PYTHONPATH", "HOME", "PATH", "ROOT"],
-      "answer": 2,
-      "explanation": "The PATH variable contains a list of directories the shell searches through for executable files."
-    },
-    {
-      "question": "What will print('Python'[1:4:2]) output?",
-      "options": ["y h", "yh", "ytho", "y t"],
-      "answer": 1,
-      "explanation": "Slicing with a step [start:stop:step] takes index 1 ('y') and index 3 ('h')."
-    },
-    {
-      "question": "Which string method returns True if all characters in the string are whitespace?",
-      "options": [".isempty()", ".isblank()", ".isspace()", ".isnull()"],
-      "answer": 2,
-      "explanation": ".isspace() checks for spaces, tabs, and newlines."
-    },
-    {
-      "question": "What is the output of 'Hello'.zfill(8)?",
-      "options": ["Hello000", "   Hello", "000Hello", "Hello   "],
-      "answer": 2,
-      "explanation": "zfill() pads the string with zeros on the left until it reaches the specified width."
-    },
-    {
-      "question": "Which method would you use to find the highest index of a substring in a string?",
-      "options": [".find()", ".index()", ".rfind()", ".last()"],
-      "answer": 2,
-      "explanation": ".rfind() (right find) returns the highest index of the substring or -1 if not found."
-    },
-    {
-      "question": "What will 'a-b-c'.split('-', 1) return?",
-      "options": ["['a', 'b', 'c']", "['a', 'b-c']", "['a-b', 'c']", "['a', '-', 'b-c']"],
-      "answer": 1,
-      "explanation": "The second argument limits the number of splits to 1, starting from the left."
-    },
-    {
-      "question": "What does 'Python'.partition('th') return?",
-      "options": [
-        "['Py', 'on']",
-        "('Py', 'th', 'on')",
-        "('Py', 'on')",
-        "['Py', 'th', 'on']"
-      ],
-      "answer": 1,
-      "explanation": "partition() returns a 3-tuple: (before, separator, after)."
-    },
-    {
-      "question": "Which operator is used to perform a 'Logical NOT' on a boolean value?",
-      "options": ["!", "not", "~", "inverse"],
-      "answer": 1,
-      "explanation": "In Python, 'not' is the keyword for boolean negation."
-    },
-    {
-      "question": "What will be the output of: print(bool('False') == False)?",
-      "options": ["True", "False", "None", "Error"],
-      "answer": 1,
-      "explanation": "bool('False') is True because the string is non-empty. True == False is False."
-    },
-    {
-      "question": "What is the result of the expression: 1 < 2 < 3?",
-      "options": ["True", "False", "Error", "1"],
-      "answer": 0,
-      "explanation": "Python evaluates this as (1 < 2) and (2 < 3), which is True and True."
-    },
-    {
-      "question": "Which statement allows you to skip the current iteration of a loop and continue with the next one?",
-      "options": ["skip", "pass", "continue", "next"],
-      "answer": 2,
-      "explanation": "'continue' ends the current loop body execution and jumps to the next iteration."
-    },
-    {
-      "question": "What is the value of x after the loop?\n\nx = 0\nfor i in range(5):\n    if i % 2 == 0:\n        x += i",
-      "options": ["6", "10", "4", "2"],
-      "answer": 0,
-      "explanation": "The loop adds even numbers from 0, 1, 2, 3, 4. So, 0 + 2 + 4 = 6."
-    },
-    {
-      "question": "Which keyword is used in a 'while' loop to execute code only if the loop finished without a 'break'?",
-      "options": ["else", "finally", "then", "except"],
-      "answer": 0,
-      "explanation": "Python's while/for loops can have an 'else' block that runs if the loop condition becomes false naturally."
-    },
-    {
-      "question": "What will happen in an infinite loop if the system runs out of memory?",
-      "options": [
-        "The loop automatically breaks",
-        "A MemoryError is raised",
-        "The computer restarts",
-        "The code runs faster"
-      ],
-      "answer": 1,
-      "explanation": "Python raises a MemoryError exception when an operation runs out of RAM."
-    },
-    {
-      "question": "How do you define a function that accepts any number of keyword arguments?",
-      "options": ["def f(*args):", "def f(**kwargs):", "def f(kwargs):", "def f(*kwargs):"],
-      "answer": 1,
-      "explanation": "The double asterisk (**) packs named arguments into a dictionary."
-    },
-    {
-      "question": "What is the output of the following?\n\ndef my_func(a, b):\n    return a + b\n\nprint(my_func(b=1, a=2))",
-      "options": ["Error", "3", "12", "None"],
-      "answer": 1,
-      "explanation": "Arguments can be passed by keyword, allowing for any order."
-    },
-    {
-      "question": "What is a 'pure function' in Python?",
-      "options": [
-        "A function with no return statement",
-        "A function that only uses built-in types",
-        "A function that has no side effects and returns the same output for the same input",
-        "A function defined without the 'def' keyword"
-      ],
-      "answer": 2,
-      "explanation": "Pure functions do not modify global variables or state and are predictable."
-    },
-    {
-      "question": "What will happen if you call a function before it is defined in a script?",
-      "options": [
-        "Python hoists the definition to the top",
-        "A NameError is raised",
-        "The script runs but returns None",
-        "It only works if the function is inside a class"
-      ],
-      "answer": 1,
-      "explanation": "Python is an interpreted language; it must see the 'def' statement before the function is called."
-    },
-    {
-      "question": "What is the purpose of the 'yield' keyword?",
-      "options": [
-        "To return a value and terminate the function",
-        "To pause a function and return a generator object",
-        "To wait for user input",
-        "To allow other programs to run"
-      ],
-      "answer": 1,
-      "explanation": "'yield' turns a function into a generator, allowing it to produce a sequence of values over time."
-    },
-    {
-      "question": "Which attribute of a function contains its name as a string?",
-      "options": ["func.name", "func.__name__", "func.id", "func.__str__"],
-      "answer": 1,
-      "explanation": "The special attribute __name__ holds the name of the function."
-    },
-    {
-      "question": "What is the result of applying a decorator to a function?",
-      "options": [
-        "It deletes the function",
-        "It changes the function's name",
-        "It wraps the function to modify its behavior",
-        "It speeds up the function execution"
-      ],
-      "answer": 2,
-      "explanation": "Decorators are higher-order functions that take a function and return a modified version of it."
-    },
-    {
-      "question": "In the context of functions, what does 'L' stand for in the LEGB rule?",
-      "options": ["Literal", "List", "Local", "Logic"],
-      "answer": 2,
-      "explanation": "LEGB stands for Local, Enclosing, Global, and Built-in scopes."
-    },
-    {
-      "question": "Which of the following can be used to catch any exception that occurs in a try block?",
-      "options": ["except:", "except Exception:", "Both are correct", "except Any:"],
-      "answer": 2,
-      "explanation": "'except:' catches every error (including system exits), while 'except Exception:' catches all non-system-exiting errors."
-    },
-    {
-      "question": "What is the primary benefit of using a 'with' statement for file operations?",
-      "options": [
-        "It makes the code run faster",
-        "It automatically closes the file even if an error occurs",
-        "It encrypts the file content",
-        "It allows multiple people to edit the file"
-      ],
-      "answer": 1,
-      "explanation": "The 'with' statement acts as a context manager, ensuring resource cleanup (closing the file handle)."
-    },
-    {
-      "question": "Which statement is used to trigger an exception manually?",
-      "options": ["trigger", "raise", "throw", "error"],
-      "answer": 1,
-      "explanation": "The 'raise' statement is used to signal that an error or exceptional condition has occurred."
-    },
-    {
-      "question": "How do you define a custom exception class?",
-      "options": [
-        "class MyError:",
-        "class MyError(Exception):",
-        "def MyError():",
-        "MyError = new Exception()"
-      ],
-      "answer": 1,
-      "explanation": "Custom exceptions should inherit from the built-in Exception class (or one of its subclasses)."
-    },
-    {
-      "question": "What is the output of the following?\n\ntry:\n    int('abc')\nexcept ValueError:\n    print('Value Error')\nexcept Exception:\n    print('Exception')",
-      "options": ["Value Error", "Exception", "Value Error then Exception", "Error"],
-      "answer": 0,
-      "explanation": "Only the first matching 'except' block is executed."
-    },
-    {
-      "question": "What is a 'traceback' in Python?",
-      "options": [
-        "A list of all variables in the script",
-        "A report showing the sequence of function calls that led to an error",
-        "A way to undo the last command",
-        "A type of loop"
-      ],
-      "answer": 1,
-      "explanation": "When an exception is unhandled, Python prints a traceback to help developers locate the source of the crash."
-    },
-    {
-      "question": "What does the 'warn' function in the 'warnings' module do?",
-      "options": [
-        "Terminates the program immediately",
-        "Prints a message to alert the user of a non-critical issue",
-        "Fixes the code automatically",
-        "Sends an email to the developer"
-      ],
-      "answer": 1,
-      "explanation": "Warnings are used to notify users of things like deprecated features without stopping program execution."
-    },
-    {
-      "question": "Which method removes and returns the last item from a list?",
-      "options": [".remove()", ".delete()", ".pop()", ".discard()"],
-      "answer": 2,
-      "explanation": ".pop() without arguments removes the item at the last index and returns it."
-    },
-    {
-      "question": "What is the result of: list(set([1, 2, 2, 3]))?",
-      "options": ["[1, 2, 2, 3]", "[1, 2, 3]", "[1, 3]", "Error"],
-      "answer": 1,
-      "explanation": "Converting a list to a set removes duplicates, and converting it back results in a list of unique items."
-    },
-    {
-      "question": "How do you access the value associated with key 'k' in dictionary 'd' without risking a KeyError?",
-      "options": ["d['k']", "d.get('k')", "d.find('k')", "d.value('k')"],
-      "answer": 1,
-      "explanation": "d.get('k') returns None (or a default value) if the key is missing, rather than raising an error."
-    },
-    {
-      "question": "Which of these data types is unordered?",
-      "options": ["List", "Tuple", "Set", "String"],
-      "answer": 2,
-      "explanation": "Sets do not maintain elements in any specific order and do not support indexing."
-    },
-    {
-      "question": "What is the result of: bool(None)?",
-      "options": ["True", "False", "None", "Error"],
-      "answer": 1,
-      "explanation": "The None object is considered falsy in Python."
-    },
-    {
-      "question": "Which built-in function returns a list of all attributes and methods of an object?",
-      "options": ["help()", "type()", "dir()", "list()"],
-      "answer": 2,
-      "explanation": "dir() is used for introspection to see what a variable or module contains."
-    }
-  ]
-}
+[
+  {
+    "question": "What is the correct way to declare a variable that is intended to be used only within a specific module but not exported via 'from module import *'?",
+    "options": [
+      "__variable",
+      "variable_",
+      "var-variable"
+    ],
+    "answer": "_variable",
+    "explanation": "A single leading underscore (_variable) is a Python convention indicating a name is intended for internal use; it also prevents the name from being imported when using '* imports'."
+  },
+  {
+    "question": "What will be the value of 'a' after this code executes? \na = [1, 2, 3]\nb = a\na = [4, 5, 6]",
+    "options": [
+      "[1, 2, 3]",
+      "[1, 2, 3, 4, 5, 6]",
+      "Error "
+    ],
+    "answer": "[4, 5, 6]",
+    "explanation": "Reassigning 'a' to a new list object does not change 'b', but 'a' now points to the new list [4, 5, 6]."
+  },
+  {
+    "question": "Which of the following describes the 'dynamic typing' feature in Python?",
+    "options": [
+      "Variables must be declared with a type before assignment.",
+      "A variable's type cannot be changed once it is set.",
+      "Python requires a compiler to check types before execution."
+    ],
+    "answer": "The type of a variable is determined at runtime based on its value.",
+    "explanation": "In Python, types are associated with objects, not variable names, allowing a name to point to different types of objects over time."
+  },
+  {
+    "question": "Which built-in function is used to delete an attribute from an object?",
+    "options": [
+      "del",
+      "remove()",
+      "pop()"
+    ],
+    "answer": "delattr()",
+    "explanation": "While 'del' is a statement, delattr() is the functional way to remove an attribute from an object dynamically."
+  },
+  {
+    "question": "In Python 3.x, what is the maximum size of an integer?",
+    "options": [
+      "64 bits",
+      "2^31 - 1",
+      "128 bits"
+    ],
+    "answer": "It is limited only by available memory",
+    "explanation": "Python 3 integers have arbitrary precision, meaning they can grow as large as the system's RAM allows."
+  },
+  {
+    "question": "What is the result of 1.1 + 2.2 == 3.3 in Python?",
+    "options": [
+      "True",
+      "None",
+      "Error"
+    ],
+    "answer": "False",
+    "explanation": "Due to floating-point binary representation, 1.1 + 2.2 equals 3.3000000000000003, which is not exactly 3.3."
+  },
+  {
+    "question": "Which operator performs bitwise XOR in Python?",
+    "options": [
+      "&",
+      "|",
+      "~"
+    ],
+    "answer": "^",
+    "explanation": "The caret (^) operator is used for bitwise XOR (exclusive or) operations."
+  },
+  {
+    "question": "What is the result of the expression: divmod(10, 3)?",
+    "options": [
+      "3.33",
+      "[3, 1]",
+      "3"
+    ],
+    "answer": "(3, 1)",
+    "explanation": "The divmod() function returns a tuple containing the quotient and the remainder: (10 // 3, 10 % 3)."
+  },
+  {
+    "question": "Which method is used to get the absolute value of a number?",
+    "options": [
+      "math.abs()",
+      "absolute()",
+      "num.abs()"
+    ],
+    "answer": "abs()",
+    "explanation": "abs() is a built-in function that works on integers, floats, and complex numbers."
+  },
+  {
+    "question": "What does the expression 0.1.as_integer_ratio() return?",
+    "options": [
+      "(1, 10)",
+      "(0.1, 1)",
+      "Error"
+    ],
+    "answer": "(3602879701896397, 36028797018963968)",
+    "explanation": "This method returns a tuple representing the exact fraction that represents the float in binary."
+  },
+  {
+    "question": "What is the result of 1j * 1j?",
+    "options": [
+      "-1",
+      "1",
+      "sqrt(-1)"
+    ],
+    "answer": "(-1+0j)",
+    "explanation": "Python uses 'j' for complex numbers. $j^2 = -1$, and complex results are represented as (real+imag j)."
+  },
+  {
+    "question": "In a shell, which command is used to search for files by name within a directory tree?",
+    "options": [
+      "grep",
+      "locate",
+      "ls -f"
+    ],
+    "answer": "find",
+    "explanation": "The 'find' command is specifically designed for traversing directory trees to locate files based on criteria like name or size."
+  },
+  {
+    "question": "Which command-line argument is used to install a package via pip without using the cache?",
+    "options": [
+      "--force",
+      "-u",
+      "--ignore"
+    ],
+    "answer": "--no-cache-dir",
+    "explanation": "The --no-cache-dir flag ensures pip downloads the package fresh from the index."
+  },
+  {
+    "question": "In the terminal, what does the command 'cd ..' do?",
+    "options": [
+      "Goes to the home directory",
+      "Goes to the root directory",
+      "Refresh current directory"
+    ],
+    "answer": "Moves up one level to the parent directory",
+    "explanation": "Two dots (..) represent the parent of the current working directory."
+  },
+  {
+    "question": "Which command allows you to rename a file 'old.txt' to 'new.txt' in the command line?",
+    "options": [
+      "rn old.txt new.txt",
+      "cp old.txt new.txt",
+      "rename old.txt new.txt"
+    ],
+    "answer": "mv old.txt new.txt",
+    "explanation": "The 'mv' (move) command is used both for moving files and for renaming them."
+  },
+  {
+    "question": "Which environment variable is used by the shell to locate executable programs?",
+    "options": [
+      "PYTHONPATH",
+      "HOME",
+      "ROOT"
+    ],
+    "answer": "PATH",
+    "explanation": "The PATH variable contains a list of directories the shell searches through for executable files."
+  },
+  {
+    "question": "What will print('Python'[1:4:2]) output?",
+    "options": [
+      "y h",
+      "ytho",
+      "y t"
+    ],
+    "answer": "yh",
+    "explanation": "Slicing with a step [start:stop:step] takes index 1 ('y') and index 3 ('h')."
+  },
+  {
+    "question": "Which string method returns True if all characters in the string are whitespace?",
+    "options": [
+      ".isempty()",
+      ".isblank()",
+      ".isnull()"
+    ],
+    "answer": ".isspace()",
+    "explanation": ".isspace() checks for spaces, tabs, and newlines."
+  },
+  {
+    "question": "What is the output of 'Hello'.zfill(8)?",
+    "options": [
+      "Hello000",
+      "   Hello",
+      "Hello   "
+    ],
+    "answer": "000Hello",
+    "explanation": "zfill() pads the string with zeros on the left until it reaches the specified width."
+  },
+  {
+    "question": "Which method would you use to find the highest index of a substring in a string?",
+    "options": [
+      ".find()",
+      ".index()",
+      ".last()"
+    ],
+    "answer": ".rfind()",
+    "explanation": ".rfind() (right find) returns the highest index of the substring or -1 if not found."
+  },
+  {
+    "question": "What will 'a-b-c'.split('-', 1) return?",
+    "options": [
+      "['a', 'b', 'c']",
+      "['a-b', 'c']",
+      "['a', '-', 'b-c']"
+    ],
+    "answer": "['a', 'b-c']",
+    "explanation": "The second argument limits the number of splits to 1, starting from the left."
+  },
+  {
+    "question": "What does 'Python'.partition('th') return?",
+    "options": [
+      "['Py', 'on']",
+      "('Py', 'on')",
+      "['Py', 'th', 'on']"
+    ],
+    "answer": "('Py', 'th', 'on')",
+    "explanation": "partition() returns a 3-tuple: (before, separator, after)."
+  },
+  {
+    "question": "Which operator is used to perform a 'Logical NOT' on a boolean value?",
+    "options": [
+      "!",
+      "~",
+      "inverse"
+    ],
+    "answer": "not",
+    "explanation": "In Python, 'not' is the keyword for boolean negation."
+  },
+  {
+    "question": "What will be the output of: print(bool('False') == False)?",
+    "options": [
+      "True",
+      "None",
+      "Error"
+    ],
+    "answer": "False",
+    "explanation": "bool('False') is True because the string is non-empty. True == False is False."
+  },
+  {
+    "question": "What is the result of the expression: 1 < 2 < 3?",
+    "options": [
+      "False",
+      "Error",
+      "1"
+    ],
+    "answer": "True",
+    "explanation": "Python evaluates this as (1 < 2) and (2 < 3), which is True and True."
+  },
+  {
+    "question": "Which statement allows you to skip the current iteration of a loop and continue with the next one?",
+    "options": [
+      "skip",
+      "pass",
+      "next"
+    ],
+    "answer": "continue",
+    "explanation": "'continue' ends the current loop body execution and jumps to the next iteration."
+  },
+  {
+    "question": "What is the value of x after the loop?\n\nx = 0\nfor i in range(5):\n    if i % 2 == 0:\n        x += i",
+    "options": [
+      "10",
+      "4",
+      "2"
+    ],
+    "answer": "6",
+    "explanation": "The loop adds even numbers from 0, 1, 2, 3, 4. So, 0 + 2 + 4 = 6."
+  },
+  {
+    "question": "Which keyword is used in a 'while' loop to execute code only if the loop finished without a 'break'?",
+    "options": [
+      "finally",
+      "then",
+      "except"
+    ],
+    "answer": "else",
+    "explanation": "Python's while/for loops can have an 'else' block that runs if the loop condition becomes false naturally."
+  },
+  {
+    "question": "What will happen in an infinite loop if the system runs out of memory?",
+    "options": [
+      "The loop automatically breaks",
+      "The computer restarts",
+      "The code runs faster"
+    ],
+    "answer": "A MemoryError is raised",
+    "explanation": "Python raises a MemoryError exception when an operation runs out of RAM."
+  },
+  {
+    "question": "How do you define a function that accepts any number of keyword arguments?",
+    "options": [
+      "def f(*args):",
+      "def f(kwargs):",
+      "def f(*kwargs):"
+    ],
+    "answer": "def f(**kwargs):",
+    "explanation": "The double asterisk (**) packs named arguments into a dictionary."
+  },
+  {
+    "question": "What is the output of the following?\n\ndef my_func(a, b):\n    return a + b\n\nprint(my_func(b=1, a=2))",
+    "options": [
+      "Error",
+      "12",
+      "None"
+    ],
+    "answer": "3",
+    "explanation": "Arguments can be passed by keyword, allowing for any order."
+  },
+  {
+    "question": "What is a 'pure function' in Python?",
+    "options": [
+      "A function with no return statement",
+      "A function that only uses built-in types",
+      "A function defined without the 'def' keyword"
+    ],
+    "answer": "A function that has no side effects and returns the same output for the same input",
+    "explanation": "Pure functions do not modify global variables or state and are predictable."
+  },
+  {
+    "question": "What will happen if you call a function before it is defined in a script?",
+    "options": [
+      "Python hoists the definition to the top",
+      "The script runs but returns None",
+      "It only works if the function is inside a class"
+    ],
+    "answer": "A NameError is raised",
+    "explanation": "Python is an interpreted language; it must see the 'def' statement before the function is called."
+  },
+  {
+    "question": "What is the purpose of the 'yield' keyword?",
+    "options": [
+      "To return a value and terminate the function",
+      "To wait for user input",
+      "To allow other programs to run"
+    ],
+    "answer": "To pause a function and return a generator object",
+    "explanation": "'yield' turns a function into a generator, allowing it to produce a sequence of values over time."
+  },
+  {
+    "question": "Which attribute of a function contains its name as a string?",
+    "options": [
+      "func.name",
+      "func.id",
+      "func.__str__"
+    ],
+    "answer": "func.__name__",
+    "explanation": "The special attribute __name__ holds the name of the function."
+  },
+  {
+    "question": "What is the result of applying a decorator to a function?",
+    "options": [
+      "It deletes the function",
+      "It changes the function's name",
+      "It speeds up the function execution"
+    ],
+    "answer": "It wraps the function to modify its behavior",
+    "explanation": "Decorators are higher-order functions that take a function and return a modified version of it."
+  },
+  {
+    "question": "In the context of functions, what does 'L' stand for in the LEGB rule?",
+    "options": [
+      "Literal",
+      "List",
+      "Logic"
+    ],
+    "answer": "Local",
+    "explanation": "LEGB stands for Local, Enclosing, Global, and Built-in scopes."
+  },
+  {
+    "question": "Which of the following can be used to catch any exception that occurs in a try block?",
+    "options": [
+      "except:",
+      "except Exception:",
+      "except Any:"
+    ],
+    "answer": "Both are correct",
+    "explanation": "'except:' catches every error (including system exits), while 'except Exception:' catches all non-system-exiting errors."
+  },
+  {
+    "question": "What is the primary benefit of using a 'with' statement for file operations?",
+    "options": [
+      "It makes the code run faster",
+      "It encrypts the file content",
+      "It allows multiple people to edit the file"
+    ],
+    "answer": "It automatically closes the file even if an error occurs",
+    "explanation": "The 'with' statement acts as a context manager, ensuring resource cleanup (closing the file handle)."
+  },
+  {
+    "question": "Which statement is used to trigger an exception manually?",
+    "options": [
+      "trigger",
+      "throw",
+      "error"
+    ],
+    "answer": "raise",
+    "explanation": "The 'raise' statement is used to signal that an error or exceptional condition has occurred."
+  },
+  {
+    "question": "How do you define a custom exception class?",
+    "options": [
+      "class MyError:",
+      "def MyError():",
+      "MyError = new Exception()"
+    ],
+    "answer": "class MyError(Exception):",
+    "explanation": "Custom exceptions should inherit from the built-in Exception class (or one of its subclasses)."
+  },
+  {
+    "question": "What is the output of the following?\n\ntry:\n    int('abc')\nexcept ValueError:\n    print('Value Error')\nexcept Exception:\n    print('Exception')",
+    "options": [
+      "Exception",
+      "Value Error then Exception",
+      "Error"
+    ],
+    "answer": "Value Error",
+    "explanation": "Only the first matching 'except' block is executed."
+  },
+  {
+    "question": "What is a 'traceback' in Python?",
+    "options": [
+      "A list of all variables in the script",
+      "A way to undo the last command",
+      "A type of loop"
+    ],
+    "answer": "A report showing the sequence of function calls that led to an error",
+    "explanation": "When an exception is unhandled, Python prints a traceback to help developers locate the source of the crash."
+  },
+  {
+    "question": "What does the 'warn' function in the 'warnings' module do?",
+    "options": [
+      "Terminates the program immediately",
+      "Fixes the code automatically",
+      "Sends an email to the developer"
+    ],
+    "answer": "Prints a message to alert the user of a non-critical issue",
+    "explanation": "Warnings are used to notify users of things like deprecated features without stopping program execution."
+  },
+  {
+    "question": "Which method removes and returns the last item from a list?",
+    "options": [
+      ".remove()",
+      ".delete()",
+      ".discard()"
+    ],
+    "answer": ".pop()",
+    "explanation": ".pop() without arguments removes the item at the last index and returns it."
+  },
+  {
+    "question": "What is the result of: list(set([1, 2, 2, 3]))?",
+    "options": [
+      "[1, 2, 2, 3]",
+      "[1, 3]",
+      "Error"
+    ],
+    "answer": "[1, 2, 3]",
+    "explanation": "Converting a list to a set removes duplicates, and converting it back results in a list of unique items."
+  },
+  {
+    "question": "How do you access the value associated with key 'k' in dictionary 'd' without risking a KeyError?",
+    "options": [
+      "d['k']",
+      "d.find('k')",
+      "d.value('k')"
+    ],
+    "answer": "d.get('k')",
+    "explanation": "d.get('k') returns None (or a default value) if the key is missing, rather than raising an error."
+  },
+  {
+    "question": "Which of these data types is unordered?",
+    "options": [
+      "List",
+      "Tuple",
+      "String"
+    ],
+    "answer": "Set",
+    "explanation": "Sets do not maintain elements in any specific order and do not support indexing."
+  },
+  {
+    "question": "What is the result of: bool(None)?",
+    "options": [
+      "True",
+      "None",
+      "Error"
+    ],
+    "answer": "False",
+    "explanation": "The None object is considered falsy in Python."
+  },
+  {
+    "question": "Which built-in function returns a list of all attributes and methods of an object?",
+    "options": [
+      "help()",
+      "type()",
+      "list()"
+    ],
+    "answer": "dir()",
+    "explanation": "dir() is used for introspection to see what a variable or module contains."
+  }
+]

@@ -5,7 +5,6 @@ export default function Quiz() {
   const [selectedDay, setSelectedDay] = useState(null);
   const [selectedSet, setSelectedSet] = useState(null);
   const [data, setData] = useState(null);
-  const [processedQuestions, setProcessedQuestions] = useState([]); // Stores randomized questions
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selected, setSelected] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
@@ -13,53 +12,38 @@ export default function Quiz() {
   const [wrongCount, setWrongCount] = useState(0);
   const [finished, setFinished] = useState(false);
 
+  // Manual configuration of sets per day
   const dayConfigs = {
     day1: { sets: [1, 2, 3], title: "Day 1", subtitle: "Software Design and Development" },
     day2: { sets: [1, 2, 3, 4, 5], title: "Day 2", subtitle: "Programming Basics - 1 (Python)" },
     day3: { sets: [1, 2, 3, 4, 5], title: "Day 3", subtitle: "Programming Basics - 2 (Python)" }
   };
 
-  // Utility to shuffle array
-  const shuffleArray = (array) => {
-    const newArr = [...array];
-    for (let i = newArr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
-    }
-    return newArr;
-  };
-
+  // Fetch selected quiz file
   useEffect(() => {
     if (!selectedDay || !selectedSet) return;
 
     fetch(`/${selectedDay}/set${selectedSet}.json`)
       .then(res => res.json())
-      .then(json => {
-        // Randomize options for every question upon load
-        const randomized = json.map(q => {
-          // Combine original wrong options and the correct answer into one array
-          const allOptions = shuffleArray([...q.options, q.answer]);
-          return { ...q, displayOptions: allOptions };
-        });
-        setProcessedQuestions(randomized);
-        setData(json);
-      })
+      .then(json => setData(json))
       .catch(err => console.error("Failed to load quiz:", err));
   }, [selectedDay, selectedSet]);
 
   const selectDay = (day) => {
     setSelectedDay(day);
-    resetState();
+    setSelectedSet(null);
+    setData(null);
+    setCurrentQuestion(0);
+    setSelected(null);
+    setShowAnswer(false);
+    setCorrectCount(0);
+    setWrongCount(0);
+    setFinished(false);
   };
 
   const selectSet = (setNumber) => {
     setSelectedSet(setNumber);
-    resetState();
-  };
-
-  const resetState = () => {
     setData(null);
-    setProcessedQuestions([]);
     setCurrentQuestion(0);
     setSelected(null);
     setShowAnswer(false);
@@ -77,31 +61,6 @@ export default function Quiz() {
     setSelectedDay(null);
     setSelectedSet(null);
     setData(null);
-  };
-
-  const handleOptionClick = (index, optionText) => {
-    if (showAnswer) return;
-
-    const question = processedQuestions[currentQuestion];
-    setSelected(index);
-    setShowAnswer(true);
-
-    // New logic: Compare selected text with the answer string
-    if (optionText === question.answer) {
-      setCorrectCount(prev => prev + 1);
-    } else {
-      setWrongCount(prev => prev + 1);
-    }
-  };
-
-  const nextQuestion = () => {
-    if (currentQuestion + 1 === processedQuestions.length) {
-      setFinished(true);
-      return;
-    }
-    setCurrentQuestion(prev => prev + 1);
-    setSelected(null);
-    setShowAnswer(false);
   };
 
   // MENU SCREEN - SELECT DAY
@@ -198,7 +157,7 @@ export default function Quiz() {
     );
   }
 
-  if (!data || processedQuestions.length === 0) {
+  if (!data) {
     return (
       <div className="quiz-container">
         <div className="loading-screen">
@@ -209,14 +168,37 @@ export default function Quiz() {
     );
   }
 
-  const question = processedQuestions[currentQuestion];
-  const progress = ((currentQuestion + 1) / processedQuestions.length) * 100;
+  const questions = data.questions;
+  const question = questions[currentQuestion];
+  const progress = ((currentQuestion + 1) / questions.length) * 100;
 
-  // ... (Result Screen remains largely same, just use processedQuestions.length)
+  const handleOptionClick = (index) => {
+    if (showAnswer) return;
+
+    setSelected(index);
+    setShowAnswer(true);
+
+    if (index === question.answer) {
+      setCorrectCount(prev => prev + 1);
+    } else {
+      setWrongCount(prev => prev + 1);
+    }
+  };
+
+  const nextQuestion = () => {
+    if (currentQuestion + 1 === questions.length) {
+      setFinished(true);
+      return;
+    }
+
+    setCurrentQuestion(prev => prev + 1);
+    setSelected(null);
+    setShowAnswer(false);
+  };
 
   // RESULT SCREEN
   if (finished) {
-    const percentage = Math.round((correctCount / processedQuestions.length) * 100);
+    const percentage = Math.round((correctCount / questions.length) * 100);
     const isPerfect = percentage === 100;
     const isGood = percentage >= 70;
 
@@ -266,7 +248,7 @@ export default function Quiz() {
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <div className="stat-value total">{processedQuestions.length}</div>
+              <div className="stat-value total">{questions.length}</div>
               <div className="stat-label">Total</div>
             </div>
           </div>
@@ -291,14 +273,11 @@ export default function Quiz() {
   }
 
   // QUIZ SCREEN
-  
   return (
     <div className="quiz-container">
       <div className="quiz-card">
-        {/* ... Header and Progress Bar ... */}
         <div className="quiz-header">
-          
-           <div className="quiz-nav-buttons">
+          <div className="quiz-nav-buttons">
             <button className="quiz-nav-btn" onClick={backToSets} title="Back to Sets">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -313,14 +292,25 @@ export default function Quiz() {
             </button>
           </div>
 
-           <div className="progress-bar">
+          <div className="progress-bar">
             <div className="progress-fill" style={{ width: `${progress}%` }}></div>
           </div>
+          
           <div className="question-meta">
-            <span className="question-number">Question {currentQuestion + 1} of {processedQuestions.length}</span>
+            <span className="question-number">Question {currentQuestion + 1} of {questions.length}</span>
             <div className="score-tracker">
-              <span className="score-item correct-score">{correctCount}</span>
-              <span className="score-item wrong-score">{wrongCount}</span>
+              <span className="score-item correct-score">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                {correctCount}
+              </span>
+              <span className="score-item wrong-score">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                </svg>
+                {wrongCount}
+              </span>
             </div>
           </div>
         </div>
@@ -328,24 +318,37 @@ export default function Quiz() {
         <h3 className="question-title">{question.question}</h3>
 
         <div className="options-grid">
-          {question.displayOptions.map((option, index) => {
+          {question.options.map((option, index) => {
             let className = "option-card";
-            let isCorrect = option === question.answer;
-            let isSelected = index === selected;
+            let icon = null;
 
             if (showAnswer) {
-              if (isCorrect) className += " correct";
-              else if (isSelected) className += " wrong";
+              if (index === question.answer) {
+                className += " correct";
+                icon = (
+                  <svg className="option-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  </svg>
+                );
+              } else if (index === selected) {
+                className += " wrong";
+                icon = (
+                  <svg className="option-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                  </svg>
+                );
+              }
             }
 
             return (
               <button
                 key={index}
                 className={className}
-                onClick={() => handleOptionClick(index, option)}
+                onClick={() => handleOptionClick(index)}
                 disabled={showAnswer}
               >
                 <span className="option-text">{option}</span>
+                {icon}
               </button>
             );
           })}
@@ -353,10 +356,19 @@ export default function Quiz() {
 
         {showAnswer && (
           <div className="explanation-box">
-            <div className="explanation-header"><span>Explanation</span></div>
+            <div className="explanation-header">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+              <span>Explanation</span>
+            </div>
             <p className="explanation-text">{question.explanation}</p>
+            
             <button className="next-question-btn" onClick={nextQuestion}>
-              {currentQuestion + 1 === processedQuestions.length ? 'Finish' : 'Next'}
+              {currentQuestion + 1 === questions.length ? 'Finish Quiz' : 'Next Question'}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </button>
           </div>
         )}

@@ -1,356 +1,322 @@
-{
-  "questions": [
-    {
-      "question": "A developer is tasked with creating a complex flight booking system. They begin by breaking the system down into smaller, manageable components like \"Search Flights,\" \"Select Seat,\" and \"Process Payment.\" Which pillar of computational thinking is being applied here?",
-      "options": [
-        "Abstraction",
-        "Decomposition",
-        "Pattern Recognition",
-        "Generalization"
-      ],
-      "answer": 1,
-      "explanation": "Decomposition involves breaking down a complex problem or system into smaller, more manageable parts."
-    },
-    {
-      "question": "When modeling a \"Vehicle\" in software, a developer decides to include properties like \"Speed\" and \"Direction\" but intentionally excludes \"License Plate Number\" and \"Scratch on Bumper\" to create a general model. This process is best described as:",
-      "options": [
-        "Algorithm Sequencing",
-        "Pattern Recognition",
-        "Abstraction",
-        "Decomposition"
-      ],
-      "answer": 2,
-      "explanation": "Abstraction is the process of filtering out specific details that are not necessary for the model to focus on the essential characteristics."
-    },
-    {
-      "question": "In the context of the Software Development Life Cycle (SDLC), which phase is primarily responsible for bridging the gap between capturing user requirements and the actual construction (coding) of the software?",
-      "options": [
-        "Maintenance",
-        "Deployment",
-        "Design",
-        "Testing"
-      ],
-      "answer": 2,
-      "explanation": "The Design phase transforms requirements into a blueprint that guides the actual coding or construction of the software."
-    },
-    {
-      "question": "A programmer is writing an algorithm for a temperature sensor. They write: IF Temp > 180 THEN Wait() ELSE On(). However, the requirement was to turn the light on only if the temperature exceeded 180. This is an example of:",
-      "options": [
-        "A syntax error in the programming language.",
-        "A correct sequence but incorrect input.",
-        "An incorrect decision logic (logical error).",
-        "A failure in the hardware sensor."
-      ],
-      "answer": 2,
-      "explanation": "The code runs but produces the wrong result based on the requirements, which is a logic error."
-    },
-    {
-      "question": "Which of the following best describes the relationship between \"Class\" and \"Object\" using the logic of Generalization?",
-      "options": [
-        "A \"Bird\" is an instance of the specific concept \"Animal.\"",
-        "\"Animal\" is a generalization; a \"Bird\" is a specific category within it.",
-        "\"Animal\" and \"Bird\" are unrelated independent variables.",
-        "A \"Bird\" is a generalization of the concept \"Animal.\""
-      ],
-      "answer": 1,
-      "explanation": "Generalization identifies commonalities; 'Animal' represents the broader category, while 'Bird' is a specific type within that category."
-    },
-    {
-      "question": "In a standard flowchart, which symbol would you use to represent the specific question \"Is the user logged in?\" which results in a Yes or No path?",
-      "options": [
-        "An Oval (Start/Stop)",
-        "A Rectangle (Process)",
-        "A Parallelogram (Input/Output)",
-        "A Diamond (Decision)"
-      ],
-      "answer": 3,
-      "explanation": "A diamond symbol is used in flowcharts to represent a decision point that branches into different paths."
-    },
-    {
-      "question": "Within the software ecosystem, what is the primary function of the Operating System (OS) in relation to Application Software?",
-      "options": [
-        "It performs specific user tasks like word processing.",
-        "It acts as a bridge, managing hardware resources for the App.",
-        "It serves as the physical hardware layer for data storage.",
-        "It is primarily responsible for the graphical user interface design."
-      ],
-      "answer": 1,
-      "explanation": "The OS manages hardware resources and provides services that allow applications to function."
-    },
-    {
-      "question": "If a developer notices that the code for \"User Login,\" \"Admin Login,\" and \"Guest Access\" shares 90% of the same validation logic, and they decide to create a single reusable function for validation, they are utilizing:",
-      "options": [
-        "Pattern Recognition",
-        "Decomposition",
-        "Algorithm Sequencing",
-        "Hardware Optimization"
-      ],
-      "answer": 0,
-      "explanation": "Identifying similarities across different parts of a system to simplify or consolidate them is pattern recognition."
-    },
-    {
-      "question": "A startup is building a competitive multiplayer game that requires high-end graphics processing and immediate response times, regardless of internet latency. Which client architecture is most appropriate?",
-      "options": [
-        "Thin Client, relying heavily on the server for processing.",
-        "Thick Client, performing substantial processing locally.",
-        "Static Web Application, delivering pre-written HTML.",
-        "Thin Client, utilizing a standard web browser."
-      ],
-      "answer": 1,
-      "explanation": "A thick client handles heavy processing and graphics locally, which reduces reliance on constant server communication for performance[."
-    },
-    {
-      "question": "In a 3-Tier Architecture, if a developer needs to modify the calculation used to determine tax rates without affecting the user interface or the database structure, which tier should they update?",
-      "options": [
-        "The Presentation Tier",
-        "The Application Tier (Business Logic)",
-        "The Data Tier",
-        "The Network Tier"
-      ],
-      "answer": 1,
-      "explanation": "The Application Tier contains the business logic and rules, such as calculations, independent of the UI and database"
-    },
-    {
-      "question": "Which of the following is a potential risk associated with a centralized Client-Server architecture compared to a distributed Peer-to-Peer (P2P) architecture?",
-      "options": [
-        "It is more difficult to manage security updates.",
-        "It represents a Single Point of Failure.",
-        "It cannot support static web pages.",
-        "It requires more complex client-side processing."
-      ],
-      "answer": 1,
-      "explanation": "In a client-server model, if the central server fails, the entire system becomes unavailable, creating a single point of failure."
-    },
-    {
-      "question": "When a user requests a page from a Dynamic Website, how does the server typically generate the response?",
-      "options": [
-        "It retrieves a pre-written HTML file and sends it immediately.",
-        "It uses scripts to query a database and builds the page on the fly.",
-        "It downloads the entire application to the client for local processing.",
-        "It bypasses the web server and connects directly to the database."
-      ],
-      "answer": 1,
-      "explanation": "Dynamic sites generate content on the fly by executing server-side scripts that often interact with databases."
-    },
-    {
-      "question": "In a Software-as-a-Service (SaaS) model, \"Multi-Tenancy\" implies that:",
-      "options": [
-        "Each customer has their own dedicated server hardware.",
-        "A single instance of the application serves multiple customers.",
-        "The software is installed locally on every user's device.",
-        "Customers must manage their own database maintenance."
-      ],
-      "answer": 1,
-      "explanation": "Multi-tenancy allows a single software instance to serve multiple clients or 'tenants' simultaneously."
-    },
-    {
-      "question": "During the \"Life of a Web Request,\" what immediately follows the client resolving the hostname to an IP address?",
-      "options": [
-        "The browser renders the content.",
-        "The client sends the HTTP request.",
-        "A TCP handshake is established.",
-        "The server processes the logic."
-      ],
-      "answer": 2,
-      "explanation": "After the IP address is found, the client must establish a connection via a TCP handshake before sending data."
-    },
-    {
-      "question": "If a software architect is prioritizing \"Scalability\" and \"Extensibility\" over immediate functionality, they are primarily focusing on:",
-      "options": [
-        "User Interface Design",
-        "Quality Attributes",
-        "Detailed Class Structure",
-        "Database Schema Normalization"
-      ],
-      "answer": 1,
-      "explanation": "Scalability and extensibility are non-functional characteristics known as quality attributes."
-    },
-    {
-      "question": "Which diagramming artifact would a software architect uses to define the static structure of objects, such as \"Customer\" and \"Flight,\" and their specific relationships?",
-      "options": [
-        "UI Wireframes",
-        "Component Diagrams",
-        "Class Diagrams",
-        "Flowcharts"
-      ],
-      "answer": 2,
-      "explanation": "Class diagrams represent the static structure of a system by showing its classes and the relationships between them."
-    },
-    {
-      "question": "A development team is working on a safety-critical medical device where requirements are fixed and stability is paramount. Which methodology is most appropriate?",
-      "options": [
-        "Rapid Application Development (RAD)",
-        "The Waterfall Model",
-        "Agile Scrum",
-        "Kanban"
-      ],
-      "answer": 1,
-      "explanation": "Waterfall is best suited for projects with fixed requirements and where high stability is required before moving between phases."
-    },
-    {
-      "question": "What is the defining characteristic of the Spiral Model that distinguishes it from other iterative models?",
-      "options": [
-        "It focuses heavily on \"User Design\" workshops.",
-        "It requires a finished product at the end of the first loop.",
-        "It is explicitly driven by Risk Assessment in every phase.",
-        "It eliminates the need for a planning phase."
-      ],
-      "answer": 2,
-      "explanation": "The Spiral Model uniquely emphasizes risk assessment and management at every iteration."
-    },
-    {
-      "question": "Which of the following scenarios best illustrates the Agile value of \"Responding to Change over Following a Plan\"?",
-      "options": [
-        "The team refuses a client's request for a new feature because the contract was signed months ago.",
-        "The team adjusts the current iteration's scope to accommodate a critical market shift discovered yesterday.",
-        "The team spends three months documenting the entire system before writing a single line of code.",
-        "The team delivers the exact software specified in the initial requirements document, even though it is now obsolete."
-      ],
-      "answer": 1,
-      "explanation": "Agile prioritizes flexibility and adjusting to new information over strictly adhering to an initial plan."
-    },
-    {
-      "question": "In the Scrum framework, which practice is primarily used to ensure the team communicates daily and stays aligned on immediate goals?",
-      "options": [
-        "The Sprint Review",
-        "The Daily Standup",
-        "The Retrospective",
-        "The Design Phase"
-      ],
-      "answer": 1,
-      "explanation": "The Daily Standup is a brief daily meeting used to synchronize the team's activities and progress."
-    },
-    {
-      "question": "A major pitfall of Rapid Application Development (RAD) is that:",
-      "options": [
-        "It does not allow for user feedback until the very end.",
-        "It can lead to \"hack and test\" coding that ignores system architecture.",
-        "It is too slow for modern business needs.",
-        "It requires excessive documentation before coding begins."
-      ],
-      "answer": 1,
-      "explanation": "RAD focuses on speed and prototyping, which can sometimes result in poor long-term architecture or disorganized code."
-    },
-    {
-      "question": "What is the primary goal of DevOps?",
-      "options": [
-        "To separate the development team from the operations team to ensure security.",
-        "To slow down deployment to ensure higher quality code.",
-        "To bridge the gap between Development and Operations for continuous delivery.",
-        "To replace all human operators with AI automation tools."
-      ],
-      "answer": 2,
-      "explanation": "DevOps aims to unify development and operations to improve the speed and reliability of software delivery."
-    },
-    {
-      "question": "Which Lean Software Development principle advises against making irreversible decisions too early in the process?",
-      "options": [
-        "Amplify Learning",
-        "Deliver as Fast as Possible",
-        "Decide as Late as Possible",
-        "Empower the Team"
-      ],
-      "answer": 2,
-      "explanation": "This principle suggests delaying commitments until the point where they can be made based on facts rather than assumptions."
-    },
-    {
-      "question": "In the context of Incremental Development, what happens to the requirements for the current increment once work begins?",
-      "options": [
-        "They are allowed to change daily based on user feedback.",
-        "They are frozen to ensure stability for that specific release.",
-        "They are discarded and rewritten by the developers.",
-        "They are merged with the requirements of the next increment."
-      ],
-      "answer": 1,
-      "explanation": "Requirements for a specific increment are usually frozen once development on that increment starts to provide a stable target."
-    },
-    {
-      "question": "A requirement states: \"The system shall allow the user to generate a monthly sales report.\" This is an example of a:",
-      "options": [
-        "Non-Functional Requirement",
-        "Functional Requirement",
-        "Design Constraint",
-        "Performance Requirement"
-      ],
-      "answer": 1,
-      "explanation": "Functional requirements define specific behaviors or functions that the system must be able to perform."
-    },
-    {
-      "question": "Conversely, a requirement stating \"The sales report must be generated within 3 seconds of the user request\" is a:",
-      "options": [
-        "Functional Requirement",
-        "Non-Functional Requirement",
-        "User Story",
-        "Feasibility Study"
-      ],
-      "answer": 1,
-      "explanation": "Non-functional requirements describe how a system should perform a task (e.g., speed, reliability) rather than what it does."
-    },
-    {
-      "question": "According to the V-Model of development, which testing activity verifies the \"Detailed Design\" phase?",
-      "options": [
-        "Acceptance Testing",
-        "System Testing",
-        "Integration Testing",
-        "Unit Testing"
-      ],
-      "answer": 3,
-      "explanation": "In the V-Model, Unit Testing is the activity that validates the smallest components of the detailed design."
-    },
-    {
-      "question": "In a UML Use Case diagram, what does a \"Stick Figure\" represent?",
-      "options": [
-        "A specific internal function of the code.",
-        "An Actor, which can be a user or another system.",
-        "The boundary of the system.",
-        "A state of waiting or processing."
-      ],
-      "answer": 1,
-      "explanation": "Stick figures represent 'Actors,' which are entities (people or other systems) interacting with the software."
-    },
-    {
-      "question": "Which UML diagram would be best suited to visualize the precise order of messages exchanged between a \"User,\" a \"Login Controller,\" and a \"Database\" over a specific period of time?",
-      "options": [
-        "Class Diagram",
-        "State Transition Diagram",
-        "Sequence Diagram",
-        "Use Case Diagram"
-      ],
-      "answer": 2,
-      "explanation": "Sequence diagrams are used to show the chronological order of interactions between different objects or components."
-    },
-    {
-      "question": "When prioritizing requirements, \"Ancillary Functionality\" refers to:",
-      "options": [
-        "Essential features without which the product fails.",
-        "Supportive features that improve convenience but are not critical to operation.",
-        "The underlying operating system requirements.",
-        "Security protocols that must be implemented first."
-      ],
-      "answer": 1,
-      "explanation": "Ancillary requirements are 'nice-to-have' features that provide extra value but aren't fundamental to the system's core purpose."
-    },
-    {
-      "question": "In a State Transition Diagram, what triggers the movement from one state (e.g., \"Waiting\") to another state (e.g., \"Processing\")?",
-      "options": [
-        "A Class Attribute",
-        "A Transition Event",
-        "A Swimlane",
-        "An Actor"
-      ],
-      "answer": 1,
-      "explanation": "A transition event is the trigger that causes an object to move from its current state to a different one."
-    },
-    {
-      "question": "Which of the following pairs correctly maps a Design Activity to its resulting Design Product?",
-      "options": [
-        "Architectural Design – Interface Specification",
-        "Component Design – System Architecture",
-        "Data Structure Design – Data Structure Specification",
-        "Interface Design – Component Specification"
-      ],
-      "answer": 2,
-      "explanation": "The output of designing data structures is the specification that describes how that data is organized and stored[."
-    }
-  ]
-}
+[
+  {
+    "question": "A developer is tasked with creating a complex flight booking system. They begin by breaking the system down into smaller, manageable components like \"Search Flights,\" \"Select Seat,\" and \"Process Payment.\" Which pillar of computational thinking is being applied here?",
+    "options": [
+      "Abstraction",
+      "Pattern Recognition",
+      "Generalization"
+    ],
+    "answer": "Decomposition",
+    "explanation": "Decomposition involves breaking down a complex problem or system into smaller, more manageable parts."
+  },
+  {
+    "question": "When modeling a \"Vehicle\" in software, a developer decides to include properties like \"Speed\" and \"Direction\" but intentionally excludes \"License Plate Number\" and \"Scratch on Bumper\" to create a general model. This process is best described as:",
+    "options": [
+      "Algorithm Sequencing",
+      "Pattern Recognition",
+      "Decomposition"
+    ],
+    "answer": "Abstraction",
+    "explanation": "Abstraction is the process of filtering out specific details that are not necessary for the model to focus on the essential characteristics."
+  },
+  {
+    "question": "In the context of the Software Development Life Cycle (SDLC), which phase is primarily responsible for bridging the gap between capturing user requirements and the actual construction (coding) of the software?",
+    "options": [
+      "Maintenance",
+      "Deployment",
+      "Testing"
+    ],
+    "answer": "Design",
+    "explanation": "The Design phase transforms requirements into a blueprint that guides the actual coding or construction of the software."
+  },
+  {
+    "question": "A programmer is writing an algorithm for a temperature sensor. They write: IF Temp > 180 THEN Wait() ELSE On(). However, the requirement was to turn the light on only if the temperature exceeded 180. This is an example of:",
+    "options": [
+      "A syntax error in the programming language.",
+      "A correct sequence but incorrect input.",
+      "A failure in the hardware sensor."
+    ],
+    "answer": "An incorrect decision logic (logical error).",
+    "explanation": "The code runs but produces the wrong result based on the requirements, which is a logic error."
+  },
+  {
+    "question": "Which of the following best describes the relationship between \"Class\" and \"Object\" using the logic of Generalization?",
+    "options": [
+      "A \"Bird\" is an instance of the specific concept \"Animal.\"",
+      "\"Animal\" and \"Bird\" are unrelated independent variables.",
+      "A \"Bird\" is a generalization of the concept \"Animal.\""
+    ],
+    "answer": "\"Animal\" is a generalization; a \"Bird\" is a specific category within it.",
+    "explanation": "Generalization identifies commonalities; 'Animal' represents the broader category, while 'Bird' is a specific type within that category."
+  },
+  {
+    "question": "In a standard flowchart, which symbol would you use to represent the specific question \"Is the user logged in?\" which results in a Yes or No path?",
+    "options": [
+      "An Oval (Start/Stop)",
+      "A Rectangle (Process)",
+      "A Parallelogram (Input/Output)"
+    ],
+    "answer": "A Diamond (Decision)",
+    "explanation": "A diamond symbol is used in flowcharts to represent a decision point that branches into different paths."
+  },
+  {
+    "question": "Within the software ecosystem, what is the primary function of the Operating System (OS) in relation to Application Software?",
+    "options": [
+      "It performs specific user tasks like word processing.",
+      "It serves as the physical hardware layer for data storage.",
+      "It is primarily responsible for the graphical user interface design."
+    ],
+    "answer": "It acts as a bridge, managing hardware resources for the App.",
+    "explanation": "The OS manages hardware resources and provides services that allow applications to function."
+  },
+  {
+    "question": "If a developer notices that the code for \"User Login,\" \"Admin Login,\" and \"Guest Access\" shares 90% of the same validation logic, and they decide to create a single reusable function for validation, they are utilizing:",
+    "options": [
+      "Decomposition",
+      "Algorithm Sequencing",
+      "Hardware Optimization"
+    ],
+    "answer": "Pattern Recognition",
+    "explanation": "Identifying similarities across different parts of a system to simplify or consolidate them is pattern recognition."
+  },
+  {
+    "question": "A startup is building a competitive multiplayer game that requires high-end graphics processing and immediate response times, regardless of internet latency. Which client architecture is most appropriate?",
+    "options": [
+      "Thin Client, relying heavily on the server for processing.",
+      "Static Web Application, delivering pre-written HTML.",
+      "Thin Client, utilizing a standard web browser."
+    ],
+    "answer": "Thick Client, performing substantial processing locally.",
+    "explanation": "A thick client handles heavy processing and graphics locally, which reduces reliance on constant server communication for performance[."
+  },
+  {
+    "question": "In a 3-Tier Architecture, if a developer needs to modify the calculation used to determine tax rates without affecting the user interface or the database structure, which tier should they update?",
+    "options": [
+      "The Presentation Tier",
+      "The Data Tier",
+      "The Network Tier"
+    ],
+    "answer": "The Application Tier (Business Logic)",
+    "explanation": "The Application Tier contains the business logic and rules, such as calculations, independent of the UI and database"
+  },
+  {
+    "question": "Which of the following is a potential risk associated with a centralized Client-Server architecture compared to a distributed Peer-to-Peer (P2P) architecture?",
+    "options": [
+      "It is more difficult to manage security updates.",
+      "It cannot support static web pages.",
+      "It requires more complex client-side processing."
+    ],
+    "answer": "It represents a Single Point of Failure.",
+    "explanation": "In a client-server model, if the central server fails, the entire system becomes unavailable, creating a single point of failure."
+  },
+  {
+    "question": "When a user requests a page from a Dynamic Website, how does the server typically generate the response?",
+    "options": [
+      "It retrieves a pre-written HTML file and sends it immediately.",
+      "It downloads the entire application to the client for local processing.",
+      "It bypasses the web server and connects directly to the database."
+    ],
+    "answer": "It uses scripts to query a database and builds the page on the fly.",
+    "explanation": "Dynamic sites generate content on the fly by executing server-side scripts that often interact with databases."
+  },
+  {
+    "question": "In a Software-as-a-Service (SaaS) model, \"Multi-Tenancy\" implies that:",
+    "options": [
+      "Each customer has their own dedicated server hardware.",
+      "The software is installed locally on every user's device.",
+      "Customers must manage their own database maintenance."
+    ],
+    "answer": "A single instance of the application serves multiple customers.",
+    "explanation": "Multi-tenancy allows a single software instance to serve multiple clients or 'tenants' simultaneously."
+  },
+  {
+    "question": "During the \"Life of a Web Request,\" what immediately follows the client resolving the hostname to an IP address?",
+    "options": [
+      "The browser renders the content.",
+      "The client sends the HTTP request.",
+      "The server processes the logic."
+    ],
+    "answer": "A TCP handshake is established.",
+    "explanation": "After the IP address is found, the client must establish a connection via a TCP handshake before sending data."
+  },
+  {
+    "question": "If a software architect is prioritizing \"Scalability\" and \"Extensibility\" over immediate functionality, they are primarily focusing on:",
+    "options": [
+      "User Interface Design",
+      "Detailed Class Structure",
+      "Database Schema Normalization"
+    ],
+    "answer": "Quality Attributes",
+    "explanation": "Scalability and extensibility are non-functional characteristics known as quality attributes."
+  },
+  {
+    "question": "Which diagramming artifact would a software architect uses to define the static structure of objects, such as \"Customer\" and \"Flight,\" and their specific relationships?",
+    "options": [
+      "UI Wireframes",
+      "Component Diagrams",
+      "Flowcharts"
+    ],
+    "answer": "Class Diagrams",
+    "explanation": "Class diagrams represent the static structure of a system by showing its classes and the relationships between them."
+  },
+  {
+    "question": "A development team is working on a safety-critical medical device where requirements are fixed and stability is paramount. Which methodology is most appropriate?",
+    "options": [
+      "Rapid Application Development (RAD)",
+      "Agile Scrum",
+      "Kanban"
+    ],
+    "answer": "The Waterfall Model",
+    "explanation": "Waterfall is best suited for projects with fixed requirements and where high stability is required before moving between phases."
+  },
+  {
+    "question": "What is the defining characteristic of the Spiral Model that distinguishes it from other iterative models?",
+    "options": [
+      "It focuses heavily on \"User Design\" workshops.",
+      "It requires a finished product at the end of the first loop.",
+      "It eliminates the need for a planning phase."
+    ],
+    "answer": "It is explicitly driven by Risk Assessment in every phase.",
+    "explanation": "The Spiral Model uniquely emphasizes risk assessment and management at every iteration."
+  },
+  {
+    "question": "Which of the following scenarios best illustrates the Agile value of \"Responding to Change over Following a Plan\"?",
+    "options": [
+      "The team refuses a client's request for a new feature because the contract was signed months ago.",
+      "The team spends three months documenting the entire system before writing a single line of code.",
+      "The team delivers the exact software specified in the initial requirements document, even though it is now obsolete."
+    ],
+    "answer": "The team adjusts the current iteration's scope to accommodate a critical market shift discovered yesterday.",
+    "explanation": "Agile prioritizes flexibility and adjusting to new information over strictly adhering to an initial plan."
+  },
+  {
+    "question": "In the Scrum framework, which practice is primarily used to ensure the team communicates daily and stays aligned on immediate goals?",
+    "options": [
+      "The Sprint Review",
+      "The Retrospective",
+      "The Design Phase"
+    ],
+    "answer": "The Daily Standup",
+    "explanation": "The Daily Standup is a brief daily meeting used to synchronize the team's activities and progress."
+  },
+  {
+    "question": "A major pitfall of Rapid Application Development (RAD) is that:",
+    "options": [
+      "It does not allow for user feedback until the very end.",
+      "It is too slow for modern business needs.",
+      "It requires excessive documentation before coding begins."
+    ],
+    "answer": "It can lead to \"hack and test\" coding that ignores system architecture.",
+    "explanation": "RAD focuses on speed and prototyping, which can sometimes result in poor long-term architecture or disorganized code."
+  },
+  {
+    "question": "What is the primary goal of DevOps?",
+    "options": [
+      "To separate the development team from the operations team to ensure security.",
+      "To slow down deployment to ensure higher quality code.",
+      "To replace all human operators with AI automation tools."
+    ],
+    "answer": "To bridge the gap between Development and Operations for continuous delivery.",
+    "explanation": "DevOps aims to unify development and operations to improve the speed and reliability of software delivery."
+  },
+  {
+    "question": "Which Lean Software Development principle advises against making irreversible decisions too early in the process?",
+    "options": [
+      "Amplify Learning",
+      "Deliver as Fast as Possible",
+      "Empower the Team"
+    ],
+    "answer": "Decide as Late as Possible",
+    "explanation": "This principle suggests delaying commitments until the point where they can be made based on facts rather than assumptions."
+  },
+  {
+    "question": "In the context of Incremental Development, what happens to the requirements for the current increment once work begins?",
+    "options": [
+      "They are allowed to change daily based on user feedback.",
+      "They are discarded and rewritten by the developers.",
+      "They are merged with the requirements of the next increment."
+    ],
+    "answer": "They are frozen to ensure stability for that specific release.",
+    "explanation": "Requirements for a specific increment are usually frozen once development on that increment starts to provide a stable target."
+  },
+  {
+    "question": "A requirement states: \"The system shall allow the user to generate a monthly sales report.\" This is an example of a:",
+    "options": [
+      "Non-Functional Requirement",
+      "Design Constraint",
+      "Performance Requirement"
+    ],
+    "answer": "Functional Requirement",
+    "explanation": "Functional requirements define specific behaviors or functions that the system must be able to perform."
+  },
+  {
+    "question": "Conversely, a requirement stating \"The sales report must be generated within 3 seconds of the user request\" is a:",
+    "options": [
+      "Functional Requirement",
+      "User Story",
+      "Feasibility Study"
+    ],
+    "answer": "Non-Functional Requirement",
+    "explanation": "Non-functional requirements describe how a system should perform a task (e.g., speed, reliability) rather than what it does."
+  },
+  {
+    "question": "According to the V-Model of development, which testing activity verifies the \"Detailed Design\" phase?",
+    "options": [
+      "Acceptance Testing",
+      "System Testing",
+      "Integration Testing"
+    ],
+    "answer": "Unit Testing",
+    "explanation": "In the V-Model, Unit Testing is the activity that validates the smallest components of the detailed design."
+  },
+  {
+    "question": "In a UML Use Case diagram, what does a \"Stick Figure\" represent?",
+    "options": [
+      "A specific internal function of the code.",
+      "The boundary of the system.",
+      "A state of waiting or processing."
+    ],
+    "answer": "An Actor, which can be a user or another system.",
+    "explanation": "Stick figures represent 'Actors,' which are entities (people or other systems) interacting with the software."
+  },
+  {
+    "question": "Which UML diagram would be best suited to visualize the precise order of messages exchanged between a \"User,\" a \"Login Controller,\" and a \"Database\" over a specific period of time?",
+    "options": [
+      "Class Diagram",
+      "State Transition Diagram",
+      "Use Case Diagram"
+    ],
+    "answer": "Sequence Diagram",
+    "explanation": "Sequence diagrams are used to show the chronological order of interactions between different objects or components."
+  },
+  {
+    "question": "When prioritizing requirements, \"Ancillary Functionality\" refers to:",
+    "options": [
+      "Essential features without which the product fails.",
+      "The underlying operating system requirements.",
+      "Security protocols that must be implemented first."
+    ],
+    "answer": "Supportive features that improve convenience but are not critical to operation.",
+    "explanation": "Ancillary requirements are 'nice-to-have' features that provide extra value but aren't fundamental to the system's core purpose."
+  },
+  {
+    "question": "In a State Transition Diagram, what triggers the movement from one state (e.g., \"Waiting\") to another state (e.g., \"Processing\")?",
+    "options": [
+      "A Class Attribute",
+      "A Swimlane",
+      "An Actor"
+    ],
+    "answer": "A Transition Event",
+    "explanation": "A transition event is the trigger that causes an object to move from its current state to a different one."
+  },
+  {
+    "question": "Which of the following pairs correctly maps a Design Activity to its resulting Design Product?",
+    "options": [
+      "Architectural Design – Interface Specification",
+      "Component Design – System Architecture",
+      "Interface Design – Component Specification"
+    ],
+    "answer": "Data Structure Design – Data Structure Specification",
+    "explanation": "The output of designing data structures is the specification that describes how that data is organized and stored[."
+  }
+]

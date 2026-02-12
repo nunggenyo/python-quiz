@@ -1,224 +1,202 @@
-{
-  "questions": [
-    {
-      "question": "What is the primary goal of the 'Analysis' phase in the software development lifecycle?",
-      "options": [
-        "To write the source code for the main application modules.",
-        "To fix syntax errors found during the compilation process.",
-        "To deploy the software to a cloud-based server environment.",
-        "To identify the system requirements and constraints from stakeholders."
-      ],
-      "answer": 3,
-      "explanation": "Analysis focuses on understanding 'what' the system should do before 'how' it will do it is decided."
-    },
-    {
-      "question": "In the context of software architecture, what is a 'Three-Tier Architecture'?",
-      "options": [
-        "A system split into Presentation, Application, and Data layers.",
-        "A development team consisting of three specialized programmers.",
-        "A program that can only run on three different operating systems.",
-        "A database that stores data in three separate physical locations."
-      ],
-      "answer": 0,
-      "explanation": "This architecture enhances scalability and security by separating the user interface, logic, and storage."
-    },
-    {
-      "question": "Which of the following best describes the 'Agile' methodology?",
-      "options": [
-        "A rigid, linear process where requirements are never changed.",
-        "An iterative approach focused on continuous delivery and feedback.",
-        "A method where coding starts immediately without any prior design.",
-        "A process used only for developing low-level hardware drivers."
-      ],
-      "answer": 1,
-      "explanation": "Agile prioritizes flexibility, collaboration, and small, frequent software releases."
-    },
-    {
-      "question": "What does a 'Use-Case Diagram' in UML primarily illustrate?",
-      "options": [
-        "The internal logic of a specific function or method.",
-        "The physical hardware components of a network.",
-        "The interactions between external actors and the system's functions.",
-        "The sequence of memory allocation during program execution."
-      ],
-      "answer": 2,
-      "explanation": "Use-case diagrams represent the high-level goals (use cases) and the users (actors) who interact with them."
-    },
-    {
-      "question": "Which phase of development focuses on identifying and resolving defects in the code?",
-      "options": [
-        "Requirements Capturing",
-        "Software Design",
-        "Debugging and Testing",
-        "Maintenance and Enhancement"
-      ],
-      "answer": 2,
-      "explanation": "Testing identifies the presence of errors, while debugging is the process of locating and fixing them."
-    },
-    {
-      "question": "What is 'Full-stack development'?",
-      "options": [
-        "Programming that only involves server-side database management.",
-        "Designing the physical casing and hardware of a computer.",
-        "Developing both the client-side and server-side of an application.",
-        "The process of stacking multiple servers on top of each other."
-      ],
-      "answer": 2,
-      "explanation": "Full-stack developers work on the front-end (UI) and the back-end (logic/database) layers."
-    },
-    {
-      "question": "Which UML diagram is best suited for showing how objects interact with each other in a specific time-ordered sequence?",
-      "options": [
-        "Class Diagram",
-        "State Transition Diagram",
-        "Sequence Diagram",
-        "Use-Case Diagram"
-      ],
-      "answer": 2,
-      "explanation": "Sequence diagrams focus on the chronological exchange of messages between object lifelines."
-    },
-    {
-      "question": "What is the defining characteristic of 'SaaS' (Software as a Service)?",
-      "options": [
-        "Software that must be installed via a physical disk.",
-        "Software hosted centrally and accessed via the web on a subscription.",
-        "Software that is open-source and free for everyone to modify.",
-        "Software designed exclusively for internal government use."
-      ],
-      "answer": 1,
-      "explanation": "SaaS allows users to connect to and use cloud-based apps over the Internet."
-    },
-    {
-      "question": "What does 'Static Analysis' involve in the development process?",
-      "options": [
-        "Running the program with multiple test inputs to find crashes.",
-        "Reviewing the code without executing it to find potential bugs.",
-        "Analyzing the hardware power consumption while the app is idle.",
-        "Counting the number of users currently logged into the system."
-      ],
-      "answer": 1,
-      "explanation": "Static analysis tools (like linters) find issues in the source code before the program ever runs."
-    },
-    {
-      "question": "In the Waterfall methodology, what happens if requirements change mid-project?",
-      "options": [
-        "The changes are integrated immediately into the current phase.",
-        "The project is usually forced to restart or undergo costly revisions.",
-        "The software automatically updates itself to match the new needs.",
-        "The developers switch to Agile for that specific week."
-      ],
-      "answer": 1,
-      "explanation": "Waterfall is sequential and rigid; it is difficult to go 'upstream' to change previous phases."
-    },
-    {
-      "question": "Which UML diagram shows the attributes, methods, and relationships of different entities in the system?",
-      "options": [
-        "Activity Diagram",
-        "Class Diagram",
-        "Deployment Diagram",
-        "Sequence Diagram"
-      ],
-      "answer": 1,
-      "explanation": "Class diagrams represent the static structure of an object-oriented system."
-    },
-    {
-      "question": "What is the purpose of 'Requirements Capturing'?",
-      "options": [
-        "To write the first draft of the user interface code.",
-        "To define the hardware specifications of the server.",
-        "To document what the software is intended to do for the end user.",
-        "To calculate the total number of lines of code needed."
-      ],
-      "answer": 2,
-      "explanation": "This process ensures the development team understands the client's needs and goals."
-    },
-    {
-      "question": "What is a 'Mock-up' in the design process?",
-      "options": [
-        "A final executable version of the software.",
-        "A static visual model of the user interface.",
-        "A test that is designed to fail purposefully.",
-        "A meeting where developers critique each other's code."
-      ],
-      "answer": 1,
-      "explanation": "Mock-ups help stakeholders visualize the UI without requiring actual functional code."
-    },
-    {
-      "question": "In a client-server model, what is the role of the 'Client'?",
-      "options": [
-        "To store all global data in a permanent database.",
-        "To provide services and resources to other computers.",
-        "To request services or data from a central server.",
-        "To compile the source code into machine language."
-      ],
-      "answer": 2,
-      "explanation": "The client (like a web browser) initiates requests, which the server then processes."
-    },
-    {
-      "question": "Which concept refers to breaking a large application into many small, independently deployable services?",
-      "options": [
-        "Monolithic Architecture",
-        "Peer-to-Peer Architecture",
-        "Microservices Architecture",
-        "Centralized Architecture"
-      ],
-      "answer": 2,
-      "explanation": "Microservices improve scalability and allow different parts of an app to be written in different languages."
-    },
-    {
-      "question": "What occurs during the 'Construction' phase of software development?",
-      "options": [
-        "Stakeholders are interviewed about their business needs.",
-        "The actual coding and unit testing of the software occurs.",
-        "The software is retired and replaced by a newer version.",
-        "A legal contract is signed between the client and developer."
-      ],
-      "answer": 1,
-      "explanation": "Construction is the phase where the design is translated into functional source code."
-    },
-    {
-      "question": "What is a 'State Transition Diagram' used to model?",
-      "options": [
-        "The flow of data between different physical servers.",
-        "The hierarchy of employees in a software company.",
-        "The various conditions or 'states' an object can occupy.",
-        "The cost of a project over its total duration."
-      ],
-      "answer": 2,
-      "explanation": "It tracks how an object changes from one state to another in response to events."
-    },
-    {
-      "question": "Which of these is a 'Non-functional Requirement'?",
-      "options": [
-        "The user must be able to log in with an email address.",
-        "The system should be able to process 1,000 transactions per second.",
-        "The application must have a 'Save' button on the main screen.",
-        "The program must calculate the tax on every purchase."
-      ],
-      "answer": 1,
-      "explanation": "Non-functional requirements describe system attributes like performance, security, and usability."
-    },
-    {
-      "question": "What is the 'Code and Fix' approach characteristic of?",
-      "options": [
-        "Modern enterprise-grade software development.",
-        "Strict adherence to the Waterfall model.",
-        "The use of advanced automated testing tools.",
-        "A lack of formal design or requirements analysis."
-      ],
-      "answer": 3,
-      "explanation": "Code and Fix involves writing code immediately and fixing issues as they arise, which is risky for large projects."
-    },
-    {
-      "question": "In the end-to-end workflow of a web request, what does the server return to the browser?",
-      "options": [
-        "A compiled .exe file.",
-        "A response, typically containing HTML, CSS, or JSON data.",
-        "The entire source code of the server's database.",
-        "A request for the user's hard drive serial number."
-      ],
-      "answer": 1,
-      "explanation": "The server processes the request and sends back the necessary resources for the browser to display."
-    }
-  ]
-}
+[
+  {
+    "question": "What is the primary goal of the 'Analysis' phase in the software development lifecycle?",
+    "options": [
+      "To write the source code for the main application modules.",
+      "To fix syntax errors found during the compilation process.",
+      "To deploy the software to a cloud-based server environment."
+    ],
+    "answer": "To identify the system requirements and constraints from stakeholders.",
+    "explanation": "Analysis focuses on understanding 'what' the system should do before 'how' it will do it is decided."
+  },
+  {
+    "question": "In the context of software architecture, what is a 'Three-Tier Architecture'?",
+    "options": [
+      "A development team consisting of three specialized programmers.",
+      "A program that can only run on three different operating systems.",
+      "A database that stores data in three separate physical locations."
+    ],
+    "answer": "A system split into Presentation, Application, and Data layers.",
+    "explanation": "This architecture enhances scalability and security by separating the user interface, logic, and storage."
+  },
+  {
+    "question": "Which of the following best describes the 'Agile' methodology?",
+    "options": [
+      "A rigid, linear process where requirements are never changed.",
+      "A method where coding starts immediately without any prior design.",
+      "A process used only for developing low-level hardware drivers."
+    ],
+    "answer": "An iterative approach focused on continuous delivery and feedback.",
+    "explanation": "Agile prioritizes flexibility, collaboration, and small, frequent software releases."
+  },
+  {
+    "question": "What does a 'Use-Case Diagram' in UML primarily illustrate?",
+    "options": [
+      "The internal logic of a specific function or method.",
+      "The physical hardware components of a network.",
+      "The sequence of memory allocation during program execution."
+    ],
+    "answer": "The interactions between external actors and the system's functions.",
+    "explanation": "Use-case diagrams represent the high-level goals (use cases) and the users (actors) who interact with them."
+  },
+  {
+    "question": "Which phase of development focuses on identifying and resolving defects in the code?",
+    "options": [
+      "Requirements Capturing",
+      "Software Design",
+      "Maintenance and Enhancement"
+    ],
+    "answer": "Debugging and Testing",
+    "explanation": "Testing identifies the presence of errors, while debugging is the process of locating and fixing them."
+  },
+  {
+    "question": "What is 'Full-stack development'?",
+    "options": [
+      "Programming that only involves server-side database management.",
+      "Designing the physical casing and hardware of a computer.",
+      "The process of stacking multiple servers on top of each other."
+    ],
+    "answer": "Developing both the client-side and server-side of an application.",
+    "explanation": "Full-stack developers work on the front-end (UI) and the back-end (logic/database) layers."
+  },
+  {
+    "question": "Which UML diagram is best suited for showing how objects interact with each other in a specific time-ordered sequence?",
+    "options": [
+      "Class Diagram",
+      "State Transition Diagram",
+      "Use-Case Diagram"
+    ],
+    "answer": "Sequence Diagram",
+    "explanation": "Sequence diagrams focus on the chronological exchange of messages between object lifelines."
+  },
+  {
+    "question": "What is the defining characteristic of 'SaaS' (Software as a Service)?",
+    "options": [
+      "Software that must be installed via a physical disk.",
+      "Software that is open-source and free for everyone to modify.",
+      "Software designed exclusively for internal government use."
+    ],
+    "answer": "Software hosted centrally and accessed via the web on a subscription.",
+    "explanation": "SaaS allows users to connect to and use cloud-based apps over the Internet."
+  },
+  {
+    "question": "What does 'Static Analysis' involve in the development process?",
+    "options": [
+      "Running the program with multiple test inputs to find crashes.",
+      "Analyzing the hardware power consumption while the app is idle.",
+      "Counting the number of users currently logged into the system."
+    ],
+    "answer": "Reviewing the code without executing it to find potential bugs.",
+    "explanation": "Static analysis tools (like linters) find issues in the source code before the program ever runs."
+  },
+  {
+    "question": "In the Waterfall methodology, what happens if requirements change mid-project?",
+    "options": [
+      "The changes are integrated immediately into the current phase.",
+      "The software automatically updates itself to match the new needs.",
+      "The developers switch to Agile for that specific week."
+    ],
+    "answer": "The project is usually forced to restart or undergo costly revisions.",
+    "explanation": "Waterfall is sequential and rigid; it is difficult to go 'upstream' to change previous phases."
+  },
+  {
+    "question": "Which UML diagram shows the attributes, methods, and relationships of different entities in the system?",
+    "options": [
+      "Activity Diagram",
+      "Deployment Diagram",
+      "Sequence Diagram"
+    ],
+    "answer": "Class Diagram",
+    "explanation": "Class diagrams represent the static structure of an object-oriented system."
+  },
+  {
+    "question": "What is the purpose of 'Requirements Capturing'?",
+    "options": [
+      "To write the first draft of the user interface code.",
+      "To define the hardware specifications of the server.",
+      "To calculate the total number of lines of code needed."
+    ],
+    "answer": "To document what the software is intended to do for the end user.",
+    "explanation": "This process ensures the development team understands the client's needs and goals."
+  },
+  {
+    "question": "What is a 'Mock-up' in the design process?",
+    "options": [
+      "A final executable version of the software.",
+      "A test that is designed to fail purposefully.",
+      "A meeting where developers critique each other's code."
+    ],
+    "answer": "A static visual model of the user interface.",
+    "explanation": "Mock-ups help stakeholders visualize the UI without requiring actual functional code."
+  },
+  {
+    "question": "In a client-server model, what is the role of the 'Client'?",
+    "options": [
+      "To store all global data in a permanent database.",
+      "To provide services and resources to other computers.",
+      "To compile the source code into machine language."
+    ],
+    "answer": "To request services or data from a central server.",
+    "explanation": "The client (like a web browser) initiates requests, which the server then processes."
+  },
+  {
+    "question": "Which concept refers to breaking a large application into many small, independently deployable services?",
+    "options": [
+      "Monolithic Architecture",
+      "Peer-to-Peer Architecture",
+      "Centralized Architecture"
+    ],
+    "answer": "Microservices Architecture",
+    "explanation": "Microservices improve scalability and allow different parts of an app to be written in different languages."
+  },
+  {
+    "question": "What occurs during the 'Construction' phase of software development?",
+    "options": [
+      "Stakeholders are interviewed about their business needs.",
+      "The software is retired and replaced by a newer version.",
+      "A legal contract is signed between the client and developer."
+    ],
+    "answer": "The actual coding and unit testing of the software occurs.",
+    "explanation": "Construction is the phase where the design is translated into functional source code."
+  },
+  {
+    "question": "What is a 'State Transition Diagram' used to model?",
+    "options": [
+      "The flow of data between different physical servers.",
+      "The hierarchy of employees in a software company.",
+      "The cost of a project over its total duration."
+    ],
+    "answer": "The various conditions or 'states' an object can occupy.",
+    "explanation": "It tracks how an object changes from one state to another in response to events."
+  },
+  {
+    "question": "Which of these is a 'Non-functional Requirement'?",
+    "options": [
+      "The user must be able to log in with an email address.",
+      "The application must have a 'Save' button on the main screen.",
+      "The program must calculate the tax on every purchase."
+    ],
+    "answer": "The system should be able to process 1,000 transactions per second.",
+    "explanation": "Non-functional requirements describe system attributes like performance, security, and usability."
+  },
+  {
+    "question": "What is the 'Code and Fix' approach characteristic of?",
+    "options": [
+      "Modern enterprise-grade software development.",
+      "Strict adherence to the Waterfall model.",
+      "The use of advanced automated testing tools."
+    ],
+    "answer": "A lack of formal design or requirements analysis.",
+    "explanation": "Code and Fix involves writing code immediately and fixing issues as they arise, which is risky for large projects."
+  },
+  {
+    "question": "In the end-to-end workflow of a web request, what does the server return to the browser?",
+    "options": [
+      "A compiled .exe file.",
+      "The entire source code of the server's database.",
+      "A request for the user's hard drive serial number."
+    ],
+    "answer": "A response, typically containing HTML, CSS, or JSON data.",
+    "explanation": "The server processes the request and sends back the necessary resources for the browser to display."
+  }
+]
