@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Which of the following best defines 'Computing' in a professional software development context?",
+    "options": [
+      "The physical act of typing code into an integrated development environment (IDE).",
+      "The specific execution of binary instructions by a Central Processing Unit (CPU).",
+      "The storage of data within a non-volatile memory system."
+    ],
+    "answer": "The process of using computer technology to complete a given goal-oriented task.",
+    "explanation": "Computing is a broad term encompassing the study and use of computers and information technology, ranging from hardware design to algorithmic processing and software applications."
+  },
+  {
+    "question": "In the context of software execution, what is the primary role of a 'Compiler'?",
+    "options": [
+      "To execute high-level code line-by-line during runtime.",
+      "To manage memory allocation for a running application.",
+      "To provide a graphical user interface for debugging code."
+    ],
+    "answer": "To translate high-level source code into machine code or intermediate code before execution.",
+    "explanation": "A compiler transforms source code into a lower-level representation (machine code or bytecode) as a separate step prior to execution, unlike an interpreter which processes code at runtime."
+  },
+  {
+    "question": "A developer is tasked with identifying the 'end-to-end' workflow of a web request. Which component is responsible for translating a domain name (e.g., example.com) into an IP address?",
+    "options": [
+      "The Load Balancer",
+      "The Web Server",
+      "The Application Gateway"
+    ],
+    "answer": "The DNS Server",
+    "explanation": "The Domain Name System (DNS) is the first step in the web request workflow, resolving human-readable hostnames into IP addresses that the client can connect to."
+  },
+  {
+    "question": "In a typical Three-Tier Architecture, which tier is responsible for managing the logic related to data retrieval and business rules?",
+    "options": [
+      "Presentation Tier",
+      "Data (Storage) Tier",
+      "Network Tier"
+    ],
+    "answer": "Application (Logic) Tier",
+    "explanation": "The Application Tier acts as the 'brain' of the system, processing business logic and acting as an intermediary between the user interface (Presentation) and the database (Data)."
+  },
+  {
+    "question": "What is a defining characteristic of the 'SaaS' (Software-as-a-Service) model?",
+    "options": [
+      "Users purchase a lifetime license and install the software locally.",
+      "Code is distributed peer-to-peer among all users.",
+      "The hardware is owned and maintained by the end-user."
+    ],
+    "answer": "The software is centrally hosted and licensed on a subscription basis.",
+    "explanation": "SaaS delivers applications over the internet, where the provider manages the infrastructure and the user accesses the service typically via a browser."
+  },
+  {
+    "question": "Which software architecture relies on a network of nodes where each node acts as both a client and a server?",
+    "options": [
+      "Client-Server",
+      "Microservices",
+      "Monolithic"
+    ],
+    "answer": "Peer-to-Peer (P2P)",
+    "explanation": "In a P2P architecture, there is no central server; instead, tasks and workloads are partitioned among equal participants (peers)."
+  },
+  {
+    "question": "Under the Waterfall methodology, at what stage are requirements typically considered 'frozen'?",
+    "options": [
+      "After the Construction phase.",
+      "During the Testing phase.",
+      "Continuous changes are encouraged throughout the process."
+    ],
+    "answer": "At the end of the Requirements Analysis phase.",
+    "explanation": "Waterfall is a sequential model where each phase must be completed before the next begins, making changes to requirements very difficult once the project moves into Design and Construction."
+  },
+  {
+    "question": "Which software development methodology emphasizes 'Iterative Development' and 'Responding to Change' over following a rigid plan?",
+    "options": [
+      "Waterfall",
+      "Code-and-fix",
+      "Centralized"
+    ],
+    "answer": "Agile",
+    "explanation": "The Agile Manifesto prioritizes individuals and interactions, working software, customer collaboration, and responding to change over rigid processes and plans."
+  },
+  {
+    "question": "A 'Full-Stack Developer' is expected to have proficiency in which of the following areas?",
+    "options": [
+      "Only Front-end UI/UX design.",
+      "Only Back-end database and server management.",
+      "Only low-level assembly programming."
+    ],
+    "answer": "Both Front-end (Client-side) and Back-end (Server-side) development.",
+    "explanation": "Full-stack development involves working on all layers of an application, including the user interface, server logic, and database."
+  },
+  {
+    "question": "In a UML Class Diagram, what does a solid line with a hollow diamond at the end represent?",
+    "options": [
+      "Inheritance (Generalization)",
+      "Composition (Strong ownership)",
+      "Dependency"
+    ],
+    "answer": "Aggregation (Weak ownership)",
+    "explanation": "Aggregation represents a 'has-a' relationship where the child can exist independently of the parent. Composition (filled diamond) implies the child cannot exist without the parent."
+  },
+  {
+    "question": "Which UML diagram is specifically designed to model the dynamic behavior of a system by showing how objects interact via messages over time?",
+    "options": [
+      "Class Diagram",
+      "Use-case Diagram",
+      "State Transition Diagram"
+    ],
+    "answer": "Sequence Diagram",
+    "explanation": "Sequence diagrams are interaction diagrams that detail how operations are carried out, showing the exchange of messages between lifelines in chronological order."
+  },
+  {
+    "question": "What is the primary benefit of using a 'Static Analysis' tool like FindBugs or Pylint?",
+    "options": [
+      "It executes the code to find runtime performance bottlenecks.",
+      "It automatically deploys code to a production server.",
+      "It creates mock-up designs for the GUI."
+    ],
+    "answer": "It examines the source code without executing it to find potential bugs or style violations.",
+    "explanation": "Static analysis tools check code for patterns that indicate errors, security vulnerabilities, or poor practices before the program is even run."
+  },
+  {
+    "question": "In the Git version control system, which command is used to move changes from the 'Staging Area' to the local repository?",
+    "options": [
+      "git push",
+      "git add",
+      "git checkout"
+    ],
+    "answer": "git commit",
+    "explanation": "The 'git add' command moves changes to the staging area, and 'git commit' permanently records those changes into the local repository."
+  },
+  {
+    "question": "Which programming paradigm treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data?",
+    "options": [
+      "Object-Oriented Programming",
+      "Procedural Programming",
+      "Scripting"
+    ],
+    "answer": "Functional Programming",
+    "explanation": "Functional programming focuses on pure functions and immutability, which is a sub-type of the declarative paradigm, distinct from stateful imperative paradigms like OOP."
+  },
+  {
+    "question": "What is the key difference between 'Compiled' and 'Interpreted' languages?",
+    "options": [
+      "Compiled languages are only used for front-end development.",
+      "Interpreted languages are generally faster at runtime than compiled languages.",
+      "There is no difference; the terms are synonymous."
+    ],
+    "answer": "Compiled languages are converted to machine code before execution; interpreted languages are read and executed line-by-line.",
+    "explanation": "Compilers perform the translation as a pre-processing step, while interpreters (like the Python interpreter) process and execute source code instructions directly at runtime."
+  },
+  {
+    "question": "A Microservices architecture is often preferred over a Monolithic architecture because:",
+    "options": [
+      "Microservices are easier to build for small, simple applications.",
+      "Microservices reduce the complexity of network communication.",
+      "Microservices eliminate the need for a database."
+    ],
+    "answer": "Microservices allow individual components to be scaled and deployed independently.",
+    "explanation": "The modularity of microservices allows teams to update or scale specific functions (like a payment service) without redeploying the entire application."
+  },
+  {
+    "question": "During the 'Requirements Capturing' process, what is the purpose of a 'Mock-up'?",
+    "options": [
+      "To provide a final, production-ready database schema.",
+      "To write the unit tests for the application.",
+      "To document the hardware specifications of the server."
+    ],
+    "answer": "To visualize the user interface and gather early feedback on design and layout.",
+    "explanation": "Mock-ups are static representations of the GUI that help stakeholders understand the look and feel of the software before development begins."
+  },
+  {
+    "question": "Which of the following Unix commands is used to search for a specific pattern within a text file?",
+    "options": [
+      "ls",
+      "cd",
+      "mkdir"
+    ],
+    "answer": "grep",
+    "explanation": "The 'grep' (Global Regular Expression Print) command is a powerful tool for searching plain-text data sets for lines that match a regular expression."
+  },
+  {
+    "question": "In software construction, what is 'Technical Debt' primarily associated with?",
+    "options": [
+      "The cost of purchasing high-end developer hardware.",
+      "The salary paid to senior developers.",
+      "The licensing fees for open-source libraries."
+    ],
+    "answer": "The implied cost of additional rework caused by choosing an easy, quick solution now instead of a better approach that takes longer.",
+    "explanation": "Technical debt occurs when shortcuts are taken during development (often in 'code-and-fix' or rushed agile cycles), requiring future refactoring to maintain system health."
+  },
+  {
+    "question": "What is a 'Build Tool' like Apache Maven or Make primarily used for?",
+    "options": [
+      "Writing the documentation for the project requirements.",
+      "Hosting the project's website.",
+      "Managing employee payroll."
+    ],
+    "answer": "Automating the compilation, linking, and packaging of software projects.",
+    "explanation": "Build tools manage dependencies and automate the complex steps required to turn source code into an executable or distributable artifact."
+  },
+  {
+    "question": "In a UML State Transition Diagram, what does a 'Transition' represent?",
+    "options": [
+      "A permanent data record in the database.",
+      "The internal attributes of a class.",
+      "A set of actors interacting with the system."
+    ],
+    "answer": "The movement from one state to another, triggered by an event.",
+    "explanation": "Transitions show how a system changes states (e.g., from 'Idle' to 'Processing') in response to specific stimuli or conditions."
+  },
+  {
+    "question": "What is the primary difference between 'Testing' and 'Debugging'?",
+    "options": [
+      "Testing is done by developers; Debugging is done by users.",
+      "Testing involves writing code; Debugging involves deleting code.",
+      "There is no difference; they are different words for the same activity."
+    ],
+    "answer": "Testing is the process of finding errors; Debugging is the process of locating and fixing the cause of those errors.",
+    "explanation": "Testing identifies that a bug exists (failure), whereas debugging is the investigative process to find the defect in the code and resolve it."
+  },
+  {
+    "question": "Which of the following is an example of a 'Distributed' architecture?",
+    "options": [
+      "A single mainframes system where all terminals connect to one CPU.",
+      "A classic monolithic web application on one server.",
+      "A spreadsheet running locally on a desktop."
+    ],
+    "answer": "A peer-to-peer file sharing network.",
+    "explanation": "Distributed architectures spread the processing and data across multiple nodes, whereas centralized architectures rely on a single central authority."
+  },
+  {
+    "question": "In the context of GitHub, what is a 'Pull Request' (PR)?",
+    "options": [
+      "A request to download the repository to a local machine.",
+      "A way to delete a branch from the remote repository.",
+      "An automated alert that the server is down."
+    ],
+    "answer": "A method of submitting contributions to a project by asking the maintainer to merge your changes.",
+    "explanation": "Pull requests are the heart of collaboration on GitHub, allowing developers to notify others about changes they've pushed to a branch in a repository."
+  },
+  {
+    "question": "Which programming paradigm is most closely associated with the use of 'Classes' and 'Objects' to model real-world entities?",
+    "options": [
+      "Procedural",
+      "Functional",
+      "Logic-based"
+    ],
+    "answer": "Object-Oriented",
+    "explanation": "Object-Oriented Programming (OOP) uses objects—which contain both data (attributes) and code (methods)—to organize software design."
+  },
+  {
+    "question": "What does 'Refactoring' refer to in software development?",
+    "options": [
+      "Adding new features to an existing application.",
+      "The process of converting a GUI design into a UML diagram.",
+      "Moving an application from a local server to the cloud."
+    ],
+    "answer": "Restructuring existing computer code without changing its external behavior.",
+    "explanation": "Refactoring is done to improve the non-functional attributes of the software (like readability or maintainability) while ensuring the features remain exactly the same."
+  },
+  {
+    "question": "Which of the following describes the 'Prototyping' methodology?",
+    "options": [
+      "Creating a complete system in one go without user feedback.",
+      "Using only assembly language to maximize performance.",
+      "Avoiding all documentation until the project is finished."
+    ],
+    "answer": "Building a simplified, incomplete version of the software to explore requirements and design.",
+    "explanation": "Prototyping helps clarify requirements by giving users something tangible to interact with early in the development lifecycle."
+  },
+  {
+    "question": "What is the primary function of an IDE (Integrated Development Environment)?",
+    "options": [
+      "To host the application's database in the cloud.",
+      "To replace the need for a human programmer.",
+      "To translate natural language directly into binary."
+    ],
+    "answer": "To provide a single interface for writing, compiling, debugging, and managing code.",
+    "explanation": "An IDE combines multiple developer tools (editor, compiler, debugger) into one application to improve productivity."
+  },
+  {
+    "question": "In the 'End-to-End' workflow of a web request, what happens immediately after the browser receives the IP address from the DNS server?",
+    "options": [
+      "The browser renders the HTML/CSS.",
+      "The server queries the database.",
+      "The user enters their password."
+    ],
+    "answer": "The browser initiates a TCP/IP connection (or TLS handshake) with the server.",
+    "explanation": "Once the IP address is known, the client must establish a network connection with the destination server before any HTTP request can be sent."
+  },
+  {
+    "question": "Which methodology is best suited for projects with strictly defined requirements that are unlikely to change during development?",
+    "options": [
+      "Agile",
+      "Rapid Application Development (RAD)",
+      "Prototyping"
+    ],
+    "answer": "Waterfall",
+    "explanation": "Waterfall's linear, rigid structure makes it efficient for projects where requirements are fixed and well-understood from the start."
+  },
+  {
+    "question": "What is the purpose of 'Code Optimization'?",
+    "options": [
+      "To make the code as long as possible to impress stakeholders.",
+      "To change the programming language of the project.",
+      "To add more comments to the source file."
+    ],
+    "answer": "To improve the performance of the code (e.g., speed, memory usage) without changing its functionality.",
+    "explanation": "Optimization focuses on making the code run more efficiently, often targeting bottlenecks identified through profiling."
+  },
+  {
+    "question": "In a UML Use-case Diagram, what does an 'Actor' represent?",
+    "options": [
+      "A specific person by name (e.g., 'John Smith').",
+      "A function inside a class.",
+      "A physical database server."
+    ],
+    "answer": "A role played by a user or another system that interacts with the application.",
+    "explanation": "Actors are external entities that interact with the system; they represent roles (like 'Admin' or 'Customer') rather than specific individuals."
+  },
+  {
+    "question": "Which of the following is a 'Back-end' technology?",
+    "options": [
+      "CSS3",
+      "HTML5",
+      "JavaScript (DOM manipulation)"
+    ],
+    "answer": "PostgreSQL",
+    "explanation": "PostgreSQL is a relational database management system, which is a core component of the back-end (data) layer. HTML and CSS are front-end technologies."
+  },
+  {
+    "question": "What is the main drawback of the 'Code-and-Fix' methodology?",
+    "options": [
+      "It requires too much planning and documentation.",
+      "It is too slow for simple prototypes.",
+      "It requires specialized UML certifications."
+    ],
+    "answer": "It lacks structural design and becomes unmanageable as the project grows.",
+    "explanation": "Code-and-fix is often used for small scripts, but for larger projects, the lack of a design phase leads to spaghetti code and high maintenance costs."
+  },
+  {
+    "question": "A 'Microservices' architecture typically communicates between services using:",
+    "options": [
+      "Direct memory sharing.",
+      "A single shared global variable.",
+      "Manual human intervention."
+    ],
+    "answer": "Lightweight protocols like REST (HTTP) or message queues.",
+    "explanation": "Because microservices are independent processes (often on different servers), they must communicate over a network using standardized protocols."
+  },
+  {
+    "question": "In software maintenance, what is the difference between 'Correction' and 'Enhancement'?",
+    "options": [
+      "Correction is for the front-end; Enhancement is for the back-end.",
+      "Enhancement is done before the software is released; Correction is done after.",
+      "They are the same."
+    ],
+    "answer": "Correction is fixing bugs; Enhancement is adding new features or improving performance.",
+    "explanation": "Correction addresses errors that prevent the software from meeting original requirements, while enhancement evolves the software to meet new needs."
+  },
+  {
+    "question": "Which of these is a typical function of a 'GUI Designer' tool?",
+    "options": [
+      "Compiling C++ code into machine language.",
+      "Managing database transactions and rollbacks.",
+      "Defining the internal logic of a sorting algorithm."
+    ],
+    "answer": "Drag-and-drop placement of buttons, text fields, and labels for a user interface.",
+    "explanation": "GUI designers are visual tools that allow developers to layout the user interface components without writing the underlying coordinate code manually."
+  },
+  {
+    "question": "In the context of software execution, what is 'Bytecode'?",
+    "options": [
+      "Pure binary code that runs directly on any CPU.",
+      "The source code written in a text editor.",
+      "The comments inside a software program."
+    ],
+    "answer": "An intermediate representation of code that is executed by a Virtual Machine (like the Python VM).",
+    "explanation": "Many modern languages (Python, Java) compile source code into bytecode, which is then interpreted or JIT-compiled by a runtime environment."
+  },
+  {
+    "question": "Which of the following is a centralized version control system (CVCS) rather than a distributed one (DVCS)?",
+    "options": [
+      "Git",
+      "Mercurial",
+      "Bazaar"
+    ],
+    "answer": "Subversion (SVN)",
+    "explanation": "SVN relies on a single central server to host the repository, whereas Git and Mercurial allow every user to have a full copy of the repository history locally."
+  },
+  {
+    "question": "When considering Software Design, what is the principle of 'Separation of Concerns'?",
+    "options": [
+      "Ensuring that developers do not talk to each other to prevent distractions.",
+      "Keeping the source code on a different server than the database.",
+      "Using different programming languages for every file in the project."
+    ],
+    "answer": "Dividing a program into distinct sections, each addressing a separate piece of functionality.",
+    "explanation": "Separation of concerns leads to modularity, making the software easier to maintain, test, and understand."
+  },
+  {
+    "question": "In Agile development, what is a 'Sprint'?",
+    "options": [
+      "A long-term project roadmap lasting 1-2 years.",
+      "A race to see which developer can write code the fastest.",
+      "The final testing phase before the product is discontinued."
+    ],
+    "answer": "A short, time-boxed period (e.g., 2 weeks) in which a specific set of tasks must be completed.",
+    "explanation": "Sprints allow Agile teams to deliver working software incrementally and adapt to feedback frequently."
+  },
+  {
+    "question": "Which of the following describes 'Rapid Application Development' (RAD)?",
+    "options": [
+      "Using only low-level languages like C to make the software run fast.",
+      "Skipping the testing phase to release the software sooner.",
+      "Hiring more programmers to finish a Waterfall project on time."
+    ],
+    "answer": "A focus on rapid prototyping and iterative delivery to speed up software development.",
+    "explanation": "RAD prioritizes rapid feedback and prototyping over extensive up-front planning, allowing for faster evolution of the software."
+  },
+  {
+    "question": "What is the role of 'Requirements Capturing' in the SDLC?",
+    "options": [
+      "To write the first draft of the user manual.",
+      "To fix all the bugs in the final product.",
+      "To choose which IDE the developers will use."
+    ],
+    "answer": "To determine exactly what the software must do and the constraints under which it must operate.",
+    "explanation": "Requirements capturing is the foundation of the project, ensuring that the development team builds the correct system for the stakeholders."
+  },
+  {
+    "question": "In a 'Microservices' architecture, what is the 'API Gateway' used for?",
+    "options": [
+      "To store the primary data for all services.",
+      "To compile the code for the entire system.",
+      "To provide the physical networking cables for the server room."
+    ],
+    "answer": "To serve as a single entry point for all client requests, routing them to the appropriate services.",
+    "explanation": "An API Gateway handles cross-cutting concerns like authentication, rate limiting, and request routing in a microservices environment."
+  },
+  {
+    "question": "Which of the following is a 'Front-end' development activity?",
+    "options": [
+      "Writing SQL queries to fetch user data.",
+      "Optimizing server-side cache settings.",
+      "Configuring a reverse proxy server."
+    ],
+    "answer": "Implementing responsive design using CSS Media Queries.",
+    "explanation": "Front-end development focuses on everything the user interacts with directly, including layout, style, and client-side logic."
+  },
+  {
+    "question": "A 'Challenging' scenario: Your system needs to handle millions of simultaneous users and must remain available even if several data centers fail. Which architecture is most appropriate?",
+    "options": [
+      "A single-tier Monolithic application.",
+      "A centralized Client-Server model on a powerful mainframe.",
+      "A simple three-tier architecture in a single local data center."
+    ],
+    "answer": "A distributed, multi-region Microservices architecture with global load balancing.",
+    "explanation": "For extreme scale and fault tolerance, distributing services across regions and using microservices to isolate failures is the industry standard."
+  },
+  {
+    "question": "In UML, what is the difference between a 'Sequence Diagram' and a 'State Transition Diagram'?",
+    "options": [
+      "Sequence diagrams show data types; State diagrams show data flow.",
+      "They are two names for the same diagram.",
+      "Sequence diagrams are only used for databases."
+    ],
+    "answer": "Sequence diagrams focus on the timing and order of messages; State diagrams focus on the lifecycle and changes of a single object.",
+    "explanation": "Sequence diagrams model interactions between multiple objects; State diagrams model the internal states and transitions of a specific object over its lifetime."
+  },
+  {
+    "question": "Why is 'Microservices' considered a 'Distributed' architecture?",
+    "options": [
+      "Because the developers are distributed across different time zones.",
+      "Because the code is distributed for free on the internet.",
+      "It isn't; it is actually a centralized architecture."
+    ],
+    "answer": "Because the application is broken into smaller services that are often hosted on separate servers or containers.",
+    "explanation": "Distributed systems consist of multiple components located on different networked computers, which communicate and coordinate their actions by passing messages."
+  },
+  {
+    "question": "What does the 'make' build tool use to determine which parts of a program need to be recompiled?",
+    "options": [
+      "The length of the source code files.",
+      "The alphabetical order of the file names.",
+      "Random selection to ensure thoroughness."
+    ],
+    "answer": "The modification timestamps of files relative to their targets.",
+    "explanation": "Makefiles define dependencies; if a source file is newer than the compiled output (target), 'make' knows it must recompile that specific part."
+  },
+  {
+    "question": "A 'Challenging' conceptual question: If a language is 'Interpreted', does it ever involve a compiler?",
+    "options": [
+      "No, compilers and interpreters are mutually exclusive.",
+      "Only if the developer explicitly installs a compiler.",
+      "Compilers are only for assembly language."
+    ],
+    "answer": "Yes, many interpreted languages (like Python) first compile source code into bytecode before the interpreter runs it.",
+    "explanation": "The line between 'compiled' and 'interpreted' is often blurred; languages like Python and Java use an internal compilation step to create bytecode for efficiency."
+  }
+]

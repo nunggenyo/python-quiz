@@ -1,0 +1,502 @@
+[
+  {
+    "question": "In the context of software execution, what occurs during the 'Linking' phase of a compiled language?",
+    "options": [
+      "The source code is checked for syntax errors.",
+      "The code is translated into intermediate bytecode.",
+      "The program is loaded into RAM for immediate execution."
+    ],
+    "answer": "Multiple object files and libraries are combined into a single executable file.",
+    "explanation": "After compilation, the linker resolves references to external functions and combines various machine code modules into one final executable."
+  },
+  {
+    "question": "Which of the following best describes the 'Data-Oriented' programming paradigm?",
+    "options": [
+      "It treats all software components as objects with internal state.",
+      "It relies exclusively on SQL for all application logic.",
+      "It is another name for Procedural Programming."
+    ],
+    "answer": "It focuses on the organization of data in memory to maximize CPU cache efficiency.",
+    "explanation": "Data-oriented design (DOD) prioritizes the data layout to optimize performance, often used in high-performance game engines, contrasting with the 'data-hiding' focus of OOP."
+  },
+  {
+    "question": "In a 3-tier architecture, where does the 'Business Logic' typically reside?",
+    "options": [
+      "Presentation Tier",
+      "Data Tier",
+      "Network Tier"
+    ],
+    "answer": "Application Tier",
+    "explanation": "The Application Tier (Middle Tier) is responsible for processing functional requirements and business rules, separating the UI from the database."
+  },
+  {
+    "question": "What is the primary purpose of a 'Static Analysis' tool like Pylint or FindBugs?",
+    "options": [
+      "To measure the execution time of a specific function.",
+      "To automatically generate UML diagrams from existing source code.",
+      "To monitor server health in a production environment."
+    ],
+    "answer": "To find potential bugs, coding standard violations, and complexity issues without running the code.",
+    "explanation": "Static analysis analyzes the source code at rest to detect issues like unreachable code, variable shadowing, or security vulnerabilities."
+  },
+  {
+    "question": "Which Unix command is used to change the permissions of a file?",
+    "options": [
+      "chown",
+      "chperm",
+      "sudo"
+    ],
+    "answer": "chmod",
+    "explanation": "'chmod' (change mode) is used to define read, write, and execute permissions for the owner, group, and others."
+  },
+  {
+    "question": "In Git, what is the 'Staging Area' (Index)?",
+    "options": [
+      "A remote server where code is backed up.",
+      "A place where deleted files are kept for 30 days.",
+      "The directory containing the final compiled executable."
+    ],
+    "answer": "A temporary area where changes are formatted before being committed to the repository.",
+    "explanation": "The staging area allows developers to selectively choose which changes should be included in the next commit snapshot."
+  },
+  {
+    "question": "Which software development methodology is characterized by a 'Heavyweight' process with distinct phases that do not overlap?",
+    "options": [
+      "Agile",
+      "RAD",
+      "Prototyping"
+    ],
+    "answer": "Waterfall",
+    "explanation": "Waterfall is a linear-sequential model where the output of one phase becomes the input for the next; it is rigid and 'heavy' due to extensive documentation."
+  },
+  {
+    "question": "What does 'Full-Stack Development' encompass in modern web applications?",
+    "options": [
+      "Working exclusively on database optimization.",
+      "Creating only the visual mock-ups for an application.",
+      "Managing the physical hardware of a data center."
+    ],
+    "answer": "Developing both the user-facing interface and the server-side infrastructure.",
+    "explanation": "Full-stack developers handle the 'full stack' of technologies, from HTML/CSS (Front-end) to API logic and Databases (Back-end)."
+  },
+  {
+    "question": "In a UML Class Diagram, what does a dashed line with an open arrowhead represent?",
+    "options": [
+      "Inheritance",
+      "Association",
+      "Realization"
+    ],
+    "answer": "Dependency",
+    "explanation": "A dependency indicates that one class uses another class, but does not necessarily own it or maintain a long-term relationship."
+  },
+  {
+    "question": "What is the primary function of a 'Build Tool' such as Apache Maven?",
+    "options": [
+      "To edit source code files.",
+      "To host the application's website.",
+      "To act as a version control system."
+    ],
+    "answer": "To automate the process of downloading dependencies and compiling code.",
+    "explanation": "Build tools like Maven or Gradle manage project lifecycles, including dependency resolution and automated testing."
+  },
+  {
+    "question": "Which of the following is a key characteristic of the 'Microservices' architecture?",
+    "options": [
+      "All application components share a single, massive database.",
+      "The application is a single, indivisible unit of deployment.",
+      "It requires all services to be written in the same programming language."
+    ],
+    "answer": "Services are small, independent, and communicate over a network via APIs.",
+    "explanation": "Microservices decompose an application into modular services that can be scaled and updated independently."
+  },
+  {
+    "question": "In a web request workflow, what is the role of the 'Load Balancer'?",
+    "options": [
+      "To encrypt the data sent between the client and the server.",
+      "To store the static images and CSS files of a website.",
+      "To translate the URL into an IP address."
+    ],
+    "answer": "To distribute incoming network traffic across multiple servers to prevent any one server from being overloaded.",
+    "explanation": "Load balancers sit between the client and the servers, ensuring high availability and reliability by spreading the workload."
+  },
+  {
+    "question": "What is the specific goal of 'Requirements Capturing'?",
+    "options": [
+      "To write the first 1,000 lines of code.",
+      "To design the database schema.",
+      "To choose the colors for the user interface."
+    ],
+    "answer": "To identify the needs and constraints of the stakeholders.",
+    "explanation": "Requirements capturing (or elicitation) focuses on understanding what the system must do from the perspective of the users and the business."
+  },
+  {
+    "question": "Which of the following is an example of an 'Interpreted' language?",
+    "options": [
+      "C++",
+      "Rust",
+      "Go"
+    ],
+    "answer": "Python",
+    "explanation": "While Python uses bytecode, it is primarily executed by an interpreter (the Python Virtual Machine) at runtime, unlike C++ which is compiled to native machine code."
+  },
+  {
+    "question": "What does a 'Use-case Diagram' primarily illustrate?",
+    "options": [
+      "The internal logic of a function.",
+      "The physical hardware layout of a system.",
+      "The chronological order of messages between objects."
+    ],
+    "answer": "The interactions between external actors and the system to achieve a goal.",
+    "explanation": "Use-case diagrams represent the high-level functional requirements of a system and how users (actors) interact with those functions."
+  },
+  {
+    "question": "Which Git command is used to retrieve the latest changes from a remote repository and immediately merge them into your local branch?",
+    "options": [
+      "git fetch",
+      "git push",
+      "git checkout"
+    ],
+    "answer": "git pull",
+    "explanation": "'git pull' is essentially a combination of 'git fetch' (getting the data) and 'git merge' (incorporating it)."
+  },
+  {
+    "question": "In software maintenance, what is 'Refactoring' specifically used for?",
+    "options": [
+      "To add a new feature requested by a client.",
+      "To fix a bug that was discovered in production.",
+      "To migrate the database from SQL to NoSQL."
+    ],
+    "answer": "To improve the internal structure of the code without changing its external behavior.",
+    "explanation": "Refactoring improves readability and reduces complexity, making the code easier to maintain in the future."
+  },
+  {
+    "question": "What is a 'Mock-up' in the design phase?",
+    "options": [
+      "A working version of the database.",
+      "A test script that fails automatically.",
+      "A UML diagram showing class inheritance."
+    ],
+    "answer": "A static visual representation of the user interface.",
+    "explanation": "Mock-ups help stakeholders visualize the final product's layout and appearance before development begins."
+  },
+  {
+    "question": "Which methodology encourages 'Pair Programming' and frequent 'Releases'?",
+    "options": [
+      "Waterfall",
+      "Code-and-fix",
+      "Prototyping"
+    ],
+    "answer": "Agile (e.g., Extreme Programming)",
+    "explanation": "Agile methodologies promote collaborative practices like pair programming and iterative delivery."
+  },
+  {
+    "question": "In a UML Sequence Diagram, what does the vertical dashed line extending from an object represent?",
+    "options": [
+      "A message",
+      "An activation bar",
+      "A return value"
+    ],
+    "answer": "A lifeline",
+    "explanation": "The lifeline represents the existence of an object over a period of time during the interaction."
+  },
+  {
+    "question": "What is the primary disadvantage of the 'Code-and-fix' approach?",
+    "options": [
+      "It is too slow for simple tasks.",
+      "It requires too much up-front design documentation.",
+      "It requires specialized IDEs to function."
+    ],
+    "answer": "It leads to poor quality and high maintenance costs as the project scales.",
+    "explanation": "Code-and-fix lacks a formal design phase, often resulting in 'spaghetti code' that is difficult to debug or extend later."
+  },
+  {
+    "question": "Which of the following is a characteristic of a 'Peer-to-Peer' (P2P) architecture?",
+    "options": [
+      "A central server controls all communication.",
+      "Clients cannot communicate with each other.",
+      "Data is stored in a single centralized database."
+    ],
+    "answer": "Resources and tasks are distributed among decentralized nodes with equal privilege.",
+    "explanation": "In P2P, nodes act as both suppliers and consumers of resources, unlike the client-server model."
+  },
+  {
+    "question": "What is 'SaaS' (Software as a Service)?",
+    "options": [
+      "Software that is purchased on a CD and installed locally.",
+      "A tool for writing assembly code.",
+      "A system for managing physical server hardware."
+    ],
+    "answer": "A cloud-based software delivery model where applications are hosted by a provider and accessed via the internet.",
+    "explanation": "SaaS removes the need for users to install and run applications on their own computers or data centers."
+  },
+  {
+    "question": "Which programming paradigm is built around the concept of 'Procedures' or 'Subroutines'?",
+    "options": [
+      "Object-Oriented",
+      "Functional",
+      "Data-Oriented"
+    ],
+    "answer": "Procedural",
+    "explanation": "Procedural programming (like C or Fortran) organizes code into a sequence of steps or procedures to be followed."
+  },
+  {
+    "question": "In the Unix command line, what does the 'pipe' operator (`|`) do?",
+    "options": [
+      "It deletes the output of a command.",
+      "It compares two files for differences.",
+      "It creates a new directory."
+    ],
+    "answer": "It sends the output of one command to the input of another command.",
+    "explanation": "Piping is a core Unix philosophy that allows small, specialized tools to be chained together to perform complex tasks."
+  },
+  {
+    "question": "What is the 'Execution' phase of software creation?",
+    "options": [
+      "The act of writing code in an editor.",
+      "The phase where the customer signs the contract.",
+      "The act of deleting old code."
+    ],
+    "answer": "The process of the CPU performing the instructions of a program.",
+    "explanation": "Execution is the actual running of the program's machine-readable instructions by the hardware."
+  },
+  {
+    "question": "Which UML diagram is best suited for modeling the internal states of a single object and the events that cause it to change?",
+    "options": [
+      "Class Diagram",
+      "Sequence Diagram",
+      "Use-case Diagram"
+    ],
+    "answer": "State Transition Diagram",
+    "explanation": "State transition diagrams show the lifecycle of an object as it moves through different states (e.g., 'Pending' to 'Paid')."
+  },
+  {
+    "question": "What is 'Debugging' in the context of the SDLC?",
+    "options": [
+      "The process of finding requirements.",
+      "The process of deploying code to a server.",
+      "The process of writing comments."
+    ],
+    "answer": "The process of identifying, tracing, and fixing defects in code.",
+    "explanation": "Debugging is the troubleshooting phase that follows testing when a failure is discovered."
+  },
+  {
+    "question": "Which of the following describes 'Rapid Application Development' (RAD)?",
+    "options": [
+      "A methodology that prioritizes extensive planning and documentation.",
+      "Writing code as fast as possible without any testing.",
+      "Using multiple compilers at the same time."
+    ],
+    "answer": "A methodology that emphasizes rapid prototyping and iterative feedback over long-term planning.",
+    "explanation": "RAD uses prototyping to get quick user feedback and refine requirements on the fly."
+  },
+  {
+    "question": "What is the primary role of an 'IDE' (Integrated Development Environment)?",
+    "options": [
+      "To act as a web server for the application.",
+      "To store the user's password securely.",
+      "To replace the need for a compiler."
+    ],
+    "answer": "To provide a comprehensive set of tools (editor, debugger, build automation) in one application.",
+    "explanation": "IDEs like PyCharm or VS Code integrate various development activities into a single interface to improve productivity."
+  },
+  {
+    "question": "In GitHub, what is an 'Issue' used for?",
+    "options": [
+      "To write the source code for a new feature.",
+      "To compile the project.",
+      "To manage the project's financial budget."
+    ],
+    "answer": "To track bugs, tasks, or feature requests within a project.",
+    "explanation": "GitHub Issues are a project management tool for discussing and tracking work within a repository."
+  },
+  {
+    "question": "Which of these is a typical 'Back-end' responsibility?",
+    "options": [
+      "Creating the CSS layout of a website.",
+      "Ensuring the website is accessible on mobile devices.",
+      "Animating a button click in the browser."
+    ],
+    "answer": "Handling database queries and API routing.",
+    "explanation": "The back-end focuses on data processing, storage, and server-side logic."
+  },
+  {
+    "question": "In a UML Class Diagram, what does a solid line with a filled diamond represent?",
+    "options": [
+      "Aggregation",
+      "Generalization",
+      "Association"
+    ],
+    "answer": "Composition",
+    "explanation": "Composition is a strong 'has-a' relationship where the child object cannot exist if the parent object is destroyed."
+  },
+  {
+    "question": "What is the difference between 'Code' and a 'Program'?",
+    "options": [
+      "There is no difference.",
+      "Code is for computers; a Program is for humans.",
+      "A Program is written in English; Code is written in binary."
+    ],
+    "answer": "Code is the written instructions; a Program is the collection of code that performs a specific task.",
+    "explanation": "Code refers to the text written in a programming language, while a program is the functional unit created from that code."
+  },
+  {
+    "question": "Which of the following is a 'Scripting' language characteristic?",
+    "options": [
+      "It must be compiled into a standalone .exe file before any part of it can run.",
+      "It cannot interact with the operating system.",
+      "It is only used for high-frequency trading."
+    ],
+    "answer": "It is often used to automate tasks and is usually interpreted.",
+    "explanation": "Scripting languages (like Bash or Python) are designed for ease of use and rapid task automation, often executed by an interpreter."
+  },
+  {
+    "question": "What is 'Technical Debt'?",
+    "options": [
+      "The money owed to a software vendor.",
+      "The cost of upgrading server hardware.",
+      "The salary of the development team."
+    ],
+    "answer": "The long-term cost of choosing an easy, short-term solution over a better, long-term approach.",
+    "explanation": "Technical debt accumulates when 'shortcuts' are taken in design or code, necessitating future rework."
+  },
+  {
+    "question": "In a web request, what is 'HTTPS'?",
+    "options": [
+      "A programming language.",
+      "A type of database.",
+      "A hardware component in a router."
+    ],
+    "answer": "A secure version of HTTP that uses encryption (TLS/SSL).",
+    "explanation": "HTTPS ensures that the data transferred between the client and server is encrypted and secure from eavesdropping."
+  },
+  {
+    "question": "Which tool is used for 'Version Control'?",
+    "options": [
+      "Maven",
+      "FindBugs",
+      "Jupyter"
+    ],
+    "answer": "Git",
+    "explanation": "Git is the industry standard for tracking changes in source code during software development."
+  },
+  {
+    "question": "What is 'Code Optimization'?",
+    "options": [
+      "Making the code as long as possible.",
+      "Changing the variable names to be shorter.",
+      "Adding more comments to every line."
+    ],
+    "answer": "Modifying the code to make it more efficient in terms of speed or memory usage.",
+    "explanation": "Optimization aims to improve performance while maintaining the same logical output."
+  },
+  {
+    "question": "Which of the following best defines 'Software Architecture'?",
+    "options": [
+      "The process of typing code into an editor.",
+      "The specific font used in a GUI.",
+      "The manual written for the end-user."
+    ],
+    "answer": "The high-level structure of a software system and the way its components interact.",
+    "explanation": "Architecture involves the big-picture decisions about how the system is organized (e.g., Client-Server vs Microservices)."
+  },
+  {
+    "question": "What is the primary purpose of a 'GUI Designer'?",
+    "options": [
+      "To write the back-end database queries.",
+      "To compile the application for different operating systems.",
+      "To manage Git branches."
+    ],
+    "answer": "To visually layout user interface elements like buttons and menus.",
+    "explanation": "GUI designers provide a visual interface for creating the 'look and feel' of an application."
+  },
+  {
+    "question": "In Agile, what is a 'User Story'?",
+    "options": [
+      "A technical manual for developers.",
+      "A bug report from a customer.",
+      "A legal contract between the company and the user."
+    ],
+    "answer": "A short, simple description of a feature from the perspective of the end user.",
+    "explanation": "User stories help keep the focus on the value provided to the user rather than just technical specifications."
+  },
+  {
+    "question": "Which Unix command allows you to view the contents of a file in the terminal?",
+    "options": [
+      "ls",
+      "cd",
+      "mkdir"
+    ],
+    "answer": "cat",
+    "explanation": "'cat' (concatenate) prints the content of a file to the standard output."
+  },
+  {
+    "question": "What is 'Software Maintenance'?",
+    "options": [
+      "The phase before the project starts.",
+      "The act of buying new computers for the office.",
+      "The phase where the code is first written."
+    ],
+    "answer": "The process of modifying software after delivery to correct faults or improve performance.",
+    "explanation": "Maintenance ensures the software continues to meet user needs throughout its lifecycle."
+  },
+  {
+    "question": "Which architecture is most likely used by a large-scale application like Netflix or Amazon?",
+    "options": [
+      "Single-tier Monolith",
+      "Code-and-fix",
+      "P2P only"
+    ],
+    "answer": "Microservices",
+    "explanation": "Large-scale applications use microservices to handle complexity, allow independent scaling, and improve fault tolerance."
+  },
+  {
+    "question": "Very Challenging: In a Git-based workflow, what is the fundamental difference between 'merging' and 'rebasing'?",
+    "options": [
+      "Merging is for local changes; rebasing is for remote changes.",
+      "Merging is only for the master branch; rebasing is for feature branches.",
+      "There is no difference; they are functionally identical."
+    ],
+    "answer": "Merging creates a new commit that joins two histories; rebasing rewrites history by moving a sequence of commits to a new base commit.",
+    "explanation": "Merging preserves the historical context of when branches were joined, while rebasing creates a cleaner, linear history by reapplying commits."
+  },
+  {
+    "question": "Very Challenging: A developer notices that a web application is slow. Profiling shows that the 'Application Tier' is waiting on the 'Data Tier'. Which architectural change would most likely address this bottleneck?",
+    "options": [
+      "Adding more CSS files to the Presentation Tier.",
+      "Switching from a compiled to an interpreted language in the back-end.",
+      "Increasing the speed of the user's internet connection."
+    ],
+    "answer": "Implementing a caching layer (like Redis) between the Application and Data Tiers.",
+    "explanation": "Caching frequently accessed data in memory reduces the load on the database (Data Tier) and speeds up response times."
+  },
+  {
+    "question": "Very Challenging: In the context of a compiler, what is 'Dead Code Elimination'?",
+    "options": [
+      "Deleting files that are no longer used in the project.",
+      "A way to fix bugs in a program.",
+      "A security feature that prevents unauthorized access."
+    ],
+    "answer": "An optimization where the compiler removes code that does not affect the program results.",
+    "explanation": "Dead code elimination reduces the size and increases the speed of the executable by removing instructions that have no reachable path or effect."
+  },
+  {
+    "question": "Very Challenging: Which of the following best describes 'Realization' in a UML Class Diagram?",
+    "options": [
+      "A relationship where one class is a parent of another class.",
+      "A relationship where one class contains another class.",
+      "A relationship where two classes are completely unrelated."
+    ],
+    "answer": "A relationship where a class implements the behavior specified by an interface.",
+    "explanation": "Realization (represented by a dashed line with a hollow arrowhead) signifies that the 'realizing' class fulfills the contract of the interface."
+  },
+  {
+    "question": "Very Challenging: If a project uses 'Agile' methodology, but 'Requirements Capturing' is only done once at the very beginning with no further updates, which core Agile principle is being violated?",
+    "options": [
+      "Working software over comprehensive documentation.",
+      "Individuals and interactions over processes and tools.",
+      "Customer collaboration over contract negotiation."
+    ],
+    "answer": "Responding to change over following a plan.",
+    "explanation": "Agile requires continuous requirement refinement; 'freezing' requirements at the start is a Waterfall characteristic that prevents the team from responding to change."
+  }
+]

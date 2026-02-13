@@ -1,0 +1,482 @@
+[
+  {
+    "question": "A developer models a \"Library\" system where a Library has Books, but Books can exist independently of a Library. Which relationship best describes this design?",
+    "options": [
+      "Association",
+      "Composition",
+      "Inheritance"
+    ],
+    "answer": "Aggregation",
+    "explanation": "Aggregation represents a whole–part relationship where the part can exist independently. Composition would imply the Book cannot exist without the Library, which is not the case. Association is weaker and does not express ownership, and inheritance is unrelated."
+  },
+  {
+    "question": "Consider the following code:\n\nclass Counter:\n    count = 0\n\n    def __init__(self):\n        Counter.count += 1\n\nc1 = Counter()\nc2 = Counter()\nprint(c1.count, c2.count)\n\nWhat is the output and why?",
+    "options": [
+      "1 1 because each instance has its own count",
+      "1 2 because c2 updates the class variable after c1",
+      "AttributeError because count is not defined on instances"
+    ],
+    "answer": "2 2 because count is a class variable shared by all instances",
+    "explanation": "Class variables are shared across all instances. Both c1.count and c2.count refer to Counter.count, which has been incremented twice."
+  },
+  {
+    "question": "A function receives a list and appends an element to it. The caller observes the change. What aspect of Python's object model explains this behavior?",
+    "options": [
+      "Python uses pass-by-reference",
+      "Python uses pass-by-value",
+      "Lists are immutable objects"
+    ],
+    "answer": "Python passes object references by value",
+    "explanation": "Python passes references to objects by value. The reference points to the same mutable list, so mutations are visible to the caller. Python is not purely pass-by-reference."
+  },
+  {
+    "question": "Which design decision best demonstrates encapsulation?",
+    "options": [
+      "Using global variables to store shared state",
+      "Using multiple inheritance for code reuse",
+      "Avoiding classes in favor of functions"
+    ],
+    "answer": "Providing getter and setter methods for internal state",
+    "explanation": "Encapsulation hides internal state and controls access through well-defined interfaces. Getters and setters allow validation and abstraction of internal data."
+  },
+  {
+    "question": "Given the code:\n\nclass User:\n    def __init__(self, name):\n        self.__name = name\n\nclass Admin(User):\n    def get_name(self):\n        return self.__name\n\nWhat happens when calling Admin('Alice').get_name()?",
+    "options": [
+      "Returns 'Alice'",
+      "Returns None",
+      "Raises TypeError due to private access"
+    ],
+    "answer": "Raises AttributeError due to name mangling",
+    "explanation": "Double underscore attributes are name-mangled to _ClassName__attribute. Admin does not have _Admin__name, so accessing __name raises AttributeError."
+  },
+  {
+    "question": "Which scenario most benefits from using an abstract base class (ABC)?",
+    "options": [
+      "When sharing data between unrelated classes",
+      "When optimizing performance-critical code",
+      "When avoiding inheritance entirely"
+    ],
+    "answer": "When enforcing a common interface across subclasses",
+    "explanation": "ABCs define required methods, ensuring subclasses implement a consistent interface. They are not for data sharing or performance optimization."
+  },
+  {
+    "question": "Consider the following:\n\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Square(Shape):\n    pass\n\nWhat happens when instantiating Square()?",
+    "options": [
+      "It succeeds because Square inherits area",
+      "It succeeds but area returns None",
+      "It fails only when area is called"
+    ],
+    "answer": "It fails because area is not implemented",
+    "explanation": "Concrete subclasses of an ABC must implement all abstract methods. Square does not implement area, so instantiation fails."
+  },
+  {
+    "question": "Which statement best describes object-oriented thinking?",
+    "options": [
+      "Breaking problems into functions and procedures",
+      "Optimizing code by minimizing memory usage",
+      "Avoiding mutable state entirely"
+    ],
+    "answer": "Modeling software as interacting objects with state and behavior",
+    "explanation": "Object-oriented thinking focuses on modeling real-world entities as objects that encapsulate state and behavior, interacting with each other."
+  },
+  {
+    "question": "A developer wants to ensure an object cannot be modified after creation. Which approach best enforces immutability?",
+    "options": [
+      "Using private attributes only",
+      "Relying on developer discipline",
+      "Using class variables instead of instance variables"
+    ],
+    "answer": "Overriding __setattr__ to prevent changes",
+    "explanation": "Preventing attribute assignment after initialization enforces immutability. Private attributes alone do not prevent modification."
+  },
+  {
+    "question": "What is the primary advantage of immutability in object-oriented design?",
+    "options": [
+      "Improved runtime performance",
+      "Reduced memory usage",
+      "Easier inheritance hierarchies"
+    ],
+    "answer": "Simpler reasoning and thread safety",
+    "explanation": "Immutable objects cannot change state, making them safer in concurrent contexts and easier to reason about."
+  },
+  {
+    "question": "Consider the following code:\n\ndef modify(x):\n    x += [4]\n\nlst = [1, 2, 3]\nmodify(lst)\nprint(lst)\n\nWhat is the output?",
+    "options": [
+      "[1, 2, 3]",
+      "TypeError",
+      "None"
+    ],
+    "answer": "[1, 2, 3, 4]",
+    "explanation": "The list is mutable, and x refers to the same object as lst. Using += mutates the list in place."
+  },
+  {
+    "question": "Which situation is an example of composition?",
+    "options": [
+      "A Teacher teaches a Student",
+      "A Company employs Employees who can leave",
+      "A Manager inherits from Employee"
+    ],
+    "answer": "A Car has an Engine that cannot exist independently",
+    "explanation": "Composition implies strong ownership and lifecycle dependency. If the Car is destroyed, its Engine is too."
+  },
+  {
+    "question": "What does the call stack primarily store during program execution?",
+    "options": [
+      "Objects allocated on the heap",
+      "Class definitions",
+      "Global module imports"
+    ],
+    "answer": "Local variables and function call frames",
+    "explanation": "The call stack stores function invocation frames, including local variables and return addresses."
+  },
+  {
+    "question": "A recursive function without a base case will most likely result in:",
+    "options": [
+      "A syntax error",
+      "A memory leak on the heap",
+      "Silent termination"
+    ],
+    "answer": "A RecursionError due to stack overflow",
+    "explanation": "Without a base case, recursion continues indefinitely until Python raises RecursionError."
+  },
+  {
+    "question": "Which statement about shadowing in inheritance is correct?",
+    "options": [
+      "Shadowing replaces the parent class entirely",
+      "Shadowing is identical to method overloading",
+      "Shadowing is not allowed in Python"
+    ],
+    "answer": "Shadowing occurs when a subclass defines an attribute with the same name as in the parent",
+    "explanation": "Shadowing hides the parent attribute by redefining it in the subclass."
+  },
+  {
+    "question": "Consider:\n\nclass A:\n    def greet(self):\n        return \"Hello\"\n\nclass B(A):\n    def greet(self):\n        return \"Hi\"\n\nobj = B()\nprint(obj.greet())\n\nWhich OOP concept is demonstrated?",
+    "options": [
+      "Overloading",
+      "Shadowing",
+      "Encapsulation"
+    ],
+    "answer": "Overriding",
+    "explanation": "B provides its own implementation of greet, replacing the inherited version."
+  },
+  {
+    "question": "Which technique best supports polymorphism in Python?",
+    "options": [
+      "Using isinstance checks everywhere",
+      "Avoiding inheritance",
+      "Using global functions only"
+    ],
+    "answer": "Relying on duck typing",
+    "explanation": "Duck typing allows objects to be used interchangeably based on behavior rather than explicit type checks."
+  },
+  {
+    "question": "A function expects any object with a write() method. Which design principle is being applied?",
+    "options": [
+      "Law of Demeter",
+      "Stability principle",
+      "Composition over inheritance"
+    ],
+    "answer": "Duck typing",
+    "explanation": "The function depends on behavior (write method), not on concrete types."
+  },
+  {
+    "question": "Which module is used to formally define interfaces in Python 3.11?",
+    "options": [
+      "typing",
+      "interfaces",
+      "protocols"
+    ],
+    "answer": "abc",
+    "explanation": "The abc module provides Abstract Base Classes used as interfaces."
+  },
+  {
+    "question": "What is the Law of Demeter primarily concerned with?",
+    "options": [
+      "Reducing inheritance depth",
+      "Maximizing code reuse",
+      "Preventing method overriding"
+    ],
+    "answer": "Minimizing coupling between objects",
+    "explanation": "The Law of Demeter encourages objects to interact only with close collaborators, reducing tight coupling."
+  },
+  {
+    "question": "Which scenario violates the Law of Demeter?",
+    "options": [
+      "obj.method()",
+      "Passing an object as a parameter",
+      "Calling a method on self"
+    ],
+    "answer": "obj.get_a().get_b().do_something()",
+    "explanation": "Chained calls expose internal structure and increase coupling, violating the Law of Demeter."
+  },
+  {
+    "question": "What problem does multiple inheritance most commonly introduce?",
+    "options": [
+      "Reduced flexibility",
+      "Lack of polymorphism",
+      "Inability to override methods"
+    ],
+    "answer": "Diamond problem and MRO complexity",
+    "explanation": "Multiple inheritance can create ambiguity in method resolution order, known as the diamond problem."
+  },
+  {
+    "question": "Which Python feature resolves method lookup order in multiple inheritance?",
+    "options": [
+      "Depth-first search",
+      "Breadth-first search",
+      "Manual method dispatch"
+    ],
+    "answer": "C3 linearization (MRO)",
+    "explanation": "Python uses C3 linearization to compute a consistent method resolution order."
+  },
+  {
+    "question": "Consider:\n\nclass A:\n    pass\n\nclass B(A):\n    pass\n\nobj = B()\n\nWhich check best supports polymorphic behavior?",
+    "options": [
+      "type(obj) == A",
+      "type(obj) == B",
+      "obj.__class__ is A"
+    ],
+    "answer": "isinstance(obj, A)",
+    "explanation": "isinstance respects inheritance and supports polymorphism, unlike strict type equality checks."
+  },
+  {
+    "question": "Why is using isinstance excessively considered a design smell?",
+    "options": [
+      "It reduces performance significantly",
+      "It causes syntax errors",
+      "It prevents inheritance"
+    ],
+    "answer": "It breaks polymorphism and extensibility",
+    "explanation": "Frequent type checks often indicate missed opportunities to use polymorphism."
+  },
+  {
+    "question": "What is the primary purpose of typing.Generic?",
+    "options": [
+      "To enforce runtime type checking",
+      "To improve execution speed",
+      "To replace inheritance"
+    ],
+    "answer": "To define parameterized types for static analysis",
+    "explanation": "Generic types allow type-safe abstractions checked by static type checkers."
+  },
+  {
+    "question": "Which statement about static methods is correct?",
+    "options": [
+      "They can access instance variables",
+      "They receive self automatically",
+      "They must be overridden in subclasses"
+    ],
+    "answer": "They belong to the class namespace but do not access instance or class state",
+    "explanation": "Static methods do not receive self or cls and act like namespaced functions."
+  },
+  {
+    "question": "In object-oriented design, what does hierarchy primarily represent?",
+    "options": [
+      "Module dependency order",
+      "Memory allocation order",
+      "Package import sequence"
+    ],
+    "answer": "Class inheritance structure",
+    "explanation": "Hierarchy refers to the parent–child relationships between classes."
+  },
+  {
+    "question": "Which design principle suggests that classes should be open for extension but closed for modification?",
+    "options": [
+      "Stability principle",
+      "Law of Demeter",
+      "Single Responsibility principle"
+    ],
+    "answer": "Open/Closed principle",
+    "explanation": "The Open/Closed principle encourages extending behavior without modifying existing code."
+  },
+  {
+    "question": "What is the main benefit of modularization in OOP?",
+    "options": [
+      "Improved runtime speed",
+      "Elimination of bugs",
+      "Avoidance of classes"
+    ],
+    "answer": "Separation of concerns and maintainability",
+    "explanation": "Modularization divides systems into manageable, independent components."
+  },
+  {
+    "question": "Which scenario best demonstrates association rather than aggregation or composition?",
+    "options": [
+      "A Player belongs to a Team and cannot leave",
+      "A Department owns its Employees permanently",
+      "A House contains Rooms that cannot exist alone"
+    ],
+    "answer": "A Doctor treats a Patient",
+    "explanation": "Association represents a loose relationship without ownership or lifecycle dependency."
+  },
+  {
+    "question": "Why are objects in Python considered reference types?",
+    "options": [
+      "They are stored only on the stack",
+      "They cannot be garbage collected",
+      "They are immutable by default"
+    ],
+    "answer": "Variables hold references to objects, not the objects themselves",
+    "explanation": "Names in Python refer to objects, which is why assignment and parameter passing behave as they do."
+  },
+  {
+    "question": "Which coding practice best supports the stability principle?",
+    "options": [
+      "Depending on concrete implementations",
+      "Using global variables",
+      "Avoiding interfaces"
+    ],
+    "answer": "Depending on abstractions rather than details",
+    "explanation": "Stable systems depend on abstractions, reducing the impact of change."
+  },
+  {
+    "question": "What happens if a subclass does not call super().__init__()?",
+    "options": [
+      "The program fails to run",
+      "The parent class is automatically initialized",
+      "Python raises a warning"
+    ],
+    "answer": "Parent initialization logic is skipped",
+    "explanation": "If super().__init__() is not called, the parent class constructor is not executed."
+  },
+  {
+    "question": "Which mechanism best enforces interface compliance without inheritance?",
+    "options": [
+      "Abstract base classes",
+      "Multiple inheritance",
+      "Monkey patching"
+    ],
+    "answer": "typing.Protocol",
+    "explanation": "Protocols enable structural subtyping, allowing interface-like behavior without inheritance."
+  },
+  {
+    "question": "What is the primary role of the heap in Python's memory model?",
+    "options": [
+      "Storing function call frames",
+      "Storing bytecode",
+      "Storing local variables only"
+    ],
+    "answer": "Storing objects and dynamic data",
+    "explanation": "Objects are allocated on the heap, while the call stack manages execution frames."
+  },
+  {
+    "question": "Which feature allows Python to simulate method overloading?",
+    "options": [
+      "Multiple inheritance",
+      "Function decorators only",
+      "Static methods"
+    ],
+    "answer": "Default arguments and variable-length parameters",
+    "explanation": "Python does not support true method overloading but simulates it using flexible parameters."
+  },
+  {
+    "question": "Why is deep inheritance hierarchies often discouraged?",
+    "options": [
+      "They are slower at runtime",
+      "Python does not support them",
+      "They prevent polymorphism"
+    ],
+    "answer": "They increase coupling and reduce clarity",
+    "explanation": "Deep hierarchies make systems harder to understand, modify, and maintain."
+  },
+  {
+    "question": "What does casting typically mean in Python?",
+    "options": [
+      "Forcing an object to change its class",
+      "Reassigning object references",
+      "Modifying the method resolution order"
+    ],
+    "answer": "Checking or converting types using functions like isinstance",
+    "explanation": "Casting in Python usually refers to type checking or conversion, not changing an object's class."
+  },
+  {
+    "question": "Which design choice best reduces coupling between classes?",
+    "options": [
+      "Direct attribute access",
+      "Global shared state",
+      "Tight inheritance chains"
+    ],
+    "answer": "Using interfaces or abstractions",
+    "explanation": "Abstractions decouple implementation details, making systems more flexible."
+  },
+  {
+    "question": "Why is composition often preferred over inheritance?",
+    "options": [
+      "It eliminates the need for classes",
+      "It improves execution speed",
+      "It enforces polymorphism automatically"
+    ],
+    "answer": "It provides greater flexibility and avoids tight coupling",
+    "explanation": "Composition allows behavior to be changed dynamically and avoids rigid inheritance hierarchies."
+  },
+  {
+    "question": "What happens when an immutable object is 'modified'?",
+    "options": [
+      "The object changes state internally",
+      "Python raises an exception",
+      "The change is ignored"
+    ],
+    "answer": "A new object is created and the reference is updated",
+    "explanation": "Immutability means state cannot change; operations create new objects instead."
+  },
+  {
+    "question": "Which scenario best illustrates polymorphism?",
+    "options": [
+      "A class has multiple constructors",
+      "A method has many parameters",
+      "A variable changes its value"
+    ],
+    "answer": "A function behaves differently based on object behavior, not type",
+    "explanation": "Polymorphism allows the same interface to be used for different underlying behaviors."
+  },
+  {
+    "question": "Why should private attributes in Python be treated as a convention rather than enforcement?",
+    "options": [
+      "Python enforces strict access control",
+      "They are truly inaccessible outside the class",
+      "They only exist at runtime"
+    ],
+    "answer": "Name mangling can be bypassed intentionally",
+    "explanation": "Private attributes use name mangling but can still be accessed if needed, emphasizing convention."
+  },
+  {
+    "question": "What is the main goal of abstraction?",
+    "options": [
+      "Improving performance",
+      "Reducing memory usage",
+      "Avoiding inheritance"
+    ],
+    "answer": "Hiding unnecessary details while exposing essential behavior",
+    "explanation": "Abstraction focuses on what an object does, not how it does it."
+  },
+  {
+    "question": "Which example best demonstrates modularity?",
+    "options": [
+      "A single file containing all application logic",
+      "Using only built-in functions",
+      "Avoiding reuse of code"
+    ],
+    "answer": "Separating code into well-defined modules and packages",
+    "explanation": "Modularity improves organization, reuse, and maintainability by separating concerns."
+  },
+  {
+    "question": "Why is recursion sometimes less preferred than iteration in Python?",
+    "options": [
+      "Recursion is syntactically invalid",
+      "Python optimizes recursion automatically",
+      "Iteration cannot handle complex logic"
+    ],
+    "answer": "Recursion can lead to stack overflow and overhead",
+    "explanation": "Python does not optimize tail calls, so deep recursion risks RecursionError."
+  },
+  {
+    "question": "Which design approach best aligns with Pythonic OOP?",
+    "options": [
+      "Heavy use of getters and setters for all attributes",
+      "Strict enforcement of private members",
+      "Deep inheritance hierarchies"
+    ],
+    "answer": "Favoring readability, duck typing, and simple abstractions",
+    "explanation": "Pythonic design emphasizes simplicity, readability, and behavior-based interfaces."
+  }
+]

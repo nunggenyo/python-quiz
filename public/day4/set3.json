@@ -1,0 +1,502 @@
+[
+  {
+    "question": "An architect is designing a system where a 'Document' can contain multiple 'Pages'. If the 'Document' is closed and its object is deleted, the 'Pages' must also be purged from memory. Which relationship is strictly required here?",
+    "options": [
+      "Aggregation",
+      "Realization",
+      "Association"
+    ],
+    "answer": "Composition",
+    "explanation": "Composition implies a ownership where the parts (Pages) have no lifecycle independent of the whole (Document). In Python, this is usually implemented by instantiating the child objects inside the parent's constructor."
+  },
+  {
+    "question": "Which of the following occurs in the Python memory model when a recursive function is called without a base case until it crashes?",
+    "options": [
+      "The heap is gradually exhausted until a MemoryError occurs.",
+      "The global interpreter lock (GIL) is released to prevent system hang.",
+      "The interpreter automatically caches previous results (memoization) to save space."
+    ],
+    "answer": "The call stack grows with new frames until it hits the limit defined by sys.getrecursionlimit().",
+    "explanation": "Every recursive call creates a new frame on the call stack to store local variables and return addresses. Python imposes a limit to prevent a C-level stack overflow."
+  },
+  {
+    "question": "Given the code:\n\nclass Secure:\n    def __init__(self):\n        self.__key = '1234'\n\ns = Secure()\n\nWhich statement is true regarding the accessibility of '__key'?",
+    "options": [
+      "It is physically impossible to access '__key' from outside the class.",
+      "The attribute is converted to a read-only constant.",
+      "It can be accessed directly using s.__key."
+    ],
+    "answer": "It is accessible via s._Secure__key due to name mangling.",
+    "explanation": "Python's 'private' attributes (double underscore) are not truly private; the interpreter transforms the name to include the class name as a prefix."
+  },
+  {
+    "question": "A developer wants to implement a 'Shape' interface using a Protocol. Which of the following allows for 'isinstance()' checks at runtime without explicit inheritance?",
+    "options": [
+      "The @abstractmethod decorator.",
+      "The typing.Generic class.",
+      "The __slots__ attribute."
+    ],
+    "answer": "The @typing.runtime_checkable decorator.",
+    "explanation": "By default, Protocols are used only for static type checking. Decorating a Protocol with @runtime_checkable allows isinstance() to verify if an object structurally matches the protocol at runtime."
+  },
+  {
+    "question": "In the context of the 'Stability Principle', which of the following is considered the most stable component?",
+    "options": [
+      "A concrete class that changes frequently to meet UI requirements.",
+      "A module with many dependencies on external libraries.",
+      "A class that is inherited by many other classes but inherits from none."
+    ],
+    "answer": "An Abstract Base Class (ABC) that defines a core interface with no dependencies.",
+    "explanation": "Stability in OO design relates to how difficult a component is to change. A core interface that many depend on but which itself depends on nothing is highly stable."
+  },
+  {
+    "question": "Consider: `a = [1, 2, 3]; b = a; b += [4]`. What are the final values of `a` and `b`?",
+    "options": [
+      "a: [1, 2, 3], b: [1, 2, 3, 4]",
+      "a: [1, 2, 3, 4], b: [1, 2, 3]",
+      "A TypeError is raised because lists are immutable."
+    ],
+    "answer": "a: [1, 2, 3, 4], b: [1, 2, 3, 4]",
+    "explanation": "The `+=` operator on a list performs an in-place modification. Since `a` and `b` refer to the same object on the heap, both variables reflect the change."
+  },
+  {
+    "question": "Which design pattern or principle is most closely associated with 'Dependency Inversion'?",
+    "options": [
+      "Encapsulation",
+      "Multiple Inheritance",
+      "Shadowing"
+    ],
+    "answer": "Abstraction",
+    "explanation": "Dependency Inversion states that high-level modules should depend on abstractions (interfaces/ABCs), not on concrete implementations."
+  },
+  {
+    "question": "What is the primary drawback of using '__slots__' in a Python class?",
+    "options": [
+      "It makes the class take up significantly more memory.",
+      "It prevents the use of the @property decorator.",
+      "It causes all instance variables to become static/class variables."
+    ],
+    "answer": "It prevents the creation of a dynamic __dict__, meaning no new attributes can be added at runtime.",
+    "explanation": "__slots__ is a memory optimization that restricts attribute names to a fixed set, disabling the flexible but memory-heavy dictionary."
+  },
+  {
+    "question": "In Multiple Inheritance, what is the 'Diamond Problem' resolving algorithm used by Python?",
+    "options": [
+      "Depth-First Search (DFS)",
+      "Breadth-First Search (BFS)",
+      "Last-In-First-Out (LIFO)"
+    ],
+    "answer": "C3 Linearization",
+    "explanation": "Python uses C3 Linearization to determine the Method Resolution Order (MRO), ensuring a consistent and monotonic search path."
+  },
+  {
+    "question": "Which of the following describes 'Structural Subtyping' in Python?",
+    "options": [
+      "A class is a subtype only if it explicitly inherits from a parent.",
+      "A class is a subtype if it is defined in the same module.",
+      "A class is a subtype if it shares the same memory address."
+    ],
+    "answer": "A class is a subtype if it implements the same methods and attributes as defined in a Protocol.",
+    "explanation": "Structural subtyping (Duck Typing via Protocols) cares about the 'structure' of the object rather than its explicit inheritance lineage."
+  },
+  {
+    "question": "What is the behavior of a static method decorated with @staticmethod when called from a subclass?",
+    "options": [
+      "It receives the subclass as its first argument.",
+      "It is automatically overridden by the subclass's constructor.",
+      "It cannot be called from a subclass."
+    ],
+    "answer": "It remains a plain function bound to the namespace and does not receive a 'self' or 'cls' argument.",
+    "explanation": "Static methods do not participate in polymorphism in the sense that they don't receive context about which class/instance called them."
+  },
+  {
+    "question": "Which 'Access Modifier' convention in Python suggests that a member is intended for internal use by the class and its subclasses, but not for public API consumption?",
+    "options": [
+      "__member (Double underscore)",
+      "member__ (Trailing double underscore)",
+      "MEMBER (All caps)"
+    ],
+    "answer": "_member (Single underscore)",
+    "explanation": "A single leading underscore is the Pythonic convention for 'protected'—it signals that it is an internal implementation detail."
+  },
+  {
+    "question": "What is the 'Law of Demeter' intended to minimize?",
+    "options": [
+      "The number of classes in a project.",
+      "The use of inheritance.",
+      "The execution time of recursive functions."
+    ],
+    "answer": "Coupling between unrelated objects.",
+    "explanation": "By preventing 'chained' method calls (a.b.c.do_something()), the Law of Demeter ensures objects don't rely on the internal structure of other objects."
+  },
+  {
+    "question": "What happens if a concrete subclass fails to implement one of the @abstractmethod-decorated methods of its parent?",
+    "options": [
+      "The missing method is replaced by a pass statement automatically.",
+      "The program runs but raises a RuntimeWarning.",
+      "The parent's method is called instead."
+    ],
+    "answer": "A TypeError is raised when attempting to instantiate the subclass.",
+    "explanation": "Python prevents the instantiation of any class that has 'abstract' methods that haven't been overridden with concrete implementations."
+  },
+  {
+    "question": "Why is 'Immutability' preferred for keys in a Python dictionary?",
+    "options": [
+      "Immutable objects are stored in the stack, making them faster to find.",
+      "Mutable objects do not have a __str__ representation.",
+      "It prevents the dictionary from growing too large."
+    ],
+    "answer": "The hash value of the key must remain constant throughout its lifetime to maintain the dictionary's integrity.",
+    "explanation": "Dictionaries use hash maps. If a key's value (and thus its hash) changes, the dictionary would look for it in the wrong bucket."
+  },
+  {
+    "question": "In the context of 'Generic Types', what is a 'TypeVar'?",
+    "options": [
+      "A variable that stores the size of a type in bytes.",
+      "A way to cast an object to another type at runtime.",
+      "A decorator that makes a class static."
+    ],
+    "answer": "A factory for creating type variables that can represent any type in static analysis.",
+    "explanation": "TypeVar is used with Generic to indicate that a specific (though currently unknown) type will be used consistently."
+  },
+  {
+    "question": "When using `super()` in a method, what is the 'first' class searched for the method implementation?",
+    "options": [
+      "The base class 'object'.",
+      "The current class itself.",
+      "The parent class defined last in the inheritance list."
+    ],
+    "answer": "The next class after the current class in the instance's MRO.",
+    "explanation": "super() doesn't necessarily call the parent; it calls the next in line according to the MRO of the object it was called on."
+  },
+  {
+    "question": "What is 'Shadowing' in Python?",
+    "options": [
+      "Creating a copy of an object in the heap.",
+      "Using a subclass to delete a parent's method.",
+      "The process of passing an object by reference."
+    ],
+    "answer": "When a name in a local scope (like a method) is identical to a name in an outer scope (like a class or global), making the outer name inaccessible.",
+    "explanation": "Shadowing occurs when a closer scope 'hides' a variable of the same name from a more distant scope."
+  },
+  {
+    "question": "Which of the following is true regarding 'Primitive Types' in Python?",
+    "options": [
+      "Integers and floats are stored as raw bits on the stack for performance.",
+      "Python 3.12 introduced true primitives to compete with Java.",
+      "Only booleans are considered primitives."
+    ],
+    "answer": "Python does not have primitive types; everything is an object inheriting from 'object'.",
+    "explanation": "In Python, even a simple integer is a full-blown object with methods and metadata."
+  },
+  {
+    "question": "What is the 'Stability Principle' in the context of OO packages?",
+    "options": [
+      "Packages should never be updated once published.",
+      "A package should be either completely abstract or completely concrete.",
+      "Dependencies should only point in the direction of increasing stability."
+    ],
+    "answer": "The dependencies of a package should be towards packages that are more stable than itself.",
+    "explanation": "Stable packages (those that many others depend on) should be hard to change to avoid breaking the ecosystem."
+  },
+  {
+    "question": "Scenario: Class B inherits from Class A. Class A has a method `do_work()`. Class B also has a method `do_work()` which calls `super().do_work()`. This is an example of:",
+    "options": [
+      "Overloading",
+      "Shadowing",
+      "Aggregation"
+    ],
+    "answer": "Overriding with Extension",
+    "explanation": "By redefining the method but calling the parent's version, the subclass overrides the behavior while extending the original functionality."
+  },
+  {
+    "question": "How does the 'Pass-by-Object-Reference' model behave when passing an immutable string to a function?",
+    "options": [
+      "The function receives a pointer to the string and can change its characters.",
+      "A copy of the string is made and placed on the stack.",
+      "The string is converted to a list of characters automatically."
+    ],
+    "answer": "A reference is passed, but since strings are immutable, any 'modification' creates a new string object locally.",
+    "explanation": "You cannot change the original string because it is immutable. Reassigning the variable inside the function just changes what the local reference points to."
+  },
+  {
+    "question": "Which of the following is an example of 'Aggregation'?",
+    "options": [
+      "A 'Brain' object inside a 'Human' object.",
+      "A 'User' class inheriting from 'Admin'.",
+      "A 'Square' class implementing the 'Area' interface."
+    ],
+    "answer": "A 'Professor' object assigned to a 'University' object's faculty list.",
+    "explanation": "The Professor can exist independently of the University. If the University closes, the Professor is still an object in the system."
+  },
+  {
+    "question": "In OO design, 'Modularization' helps primarily with:",
+    "options": [
+      "Increasing the speed of mathematical calculations.",
+      "Reducing the number of CPU cycles used.",
+      "Forcing the use of private variables."
+    ],
+    "answer": "Separation of concerns and easier maintenance.",
+    "explanation": "By breaking a system into modules, you limit the scope of changes and make parts of the system easier to understand in isolation."
+  },
+  {
+    "question": "What does the `typing.Generic[T]` syntax achieve when defining a class?",
+    "options": [
+      "It allows the class to inherit from any base class dynamically.",
+      "It makes the class compatible with all Python versions.",
+      "It automatically generates getter and setter methods."
+    ],
+    "answer": "It informs the type checker that the class is a container for a specific type 'T'.",
+    "explanation": "Generic allows the class to be used as `MyClass[int]` or `MyClass[str]`, providing type safety for the internal contents."
+  },
+  {
+    "question": "What is 'Casting' in Python's dynamic type system?",
+    "options": [
+      "Strictly changing the bits of an object in memory.",
+      "A compile-time instruction to change an object's class.",
+      "Creating a new object of a different type using a constructor."
+    ],
+    "answer": "The process of wrapping or converting an object to be treated as another type (e.g., int('5')).",
+    "explanation": "Python 'casting' is actually calling the constructor of a different type to create a new object from the old one's data."
+  },
+  {
+    "question": "What is 'Polymorphism' through 'Duck Typing'?",
+    "options": [
+      "When a subclass uses the same __init__ as its parent.",
+      "When a method name is mangled to avoid collisions.",
+      "When multiple inheritance is used to solve the Diamond Problem."
+    ],
+    "answer": "When a function can accept any object that has a specific method, regardless of its class hierarchy.",
+    "explanation": "Duck typing is 'Polymorphism without Inheritance'. If it has the method, it can be used."
+  },
+  {
+    "question": "Which statement correctly describes 'Class Variables'?",
+    "options": [
+      "They are stored on the call stack within a method.",
+      "They are created fresh every time a new instance is made.",
+      "They cannot be accessed by instance methods."
+    ],
+    "answer": "They are shared by all instances of the class and the class itself.",
+    "explanation": "Class variables reside in the class object namespace. Changing a class variable affects all instances that haven't shadowed it."
+  },
+  {
+    "question": "Which of the following defines a 'Protocol' in Python?",
+    "options": [
+      "A class that must be inherited using 'from' syntax.",
+      "A method that is called automatically by the interpreter.",
+      "A way to define a static class that cannot have instances."
+    ],
+    "answer": "A class that defines a structural interface for static type checking.",
+    "explanation": "Protocols (PEP 544) allow for static duck typing."
+  },
+  {
+    "question": "What is the benefit of 'Modularization' in a large Python project?",
+    "options": [
+      "It allows the code to be run without a Python interpreter.",
+      "It converts all objects to primitive types for speed.",
+      "It allows the use of global variables across all files safely."
+    ],
+    "answer": "It restricts the scope of errors and allows for independent testing of components.",
+    "explanation": "Modules create boundaries that make code more manageable and reusable."
+  },
+  {
+    "question": "How does the 'Heap' differ from the 'Call Stack' in Python?",
+    "options": [
+      "The heap is used for function calls; the stack is for objects.",
+      "The heap is temporary; the stack is persistent.",
+      "The heap has a fixed size; the stack grows indefinitely."
+    ],
+    "answer": "The heap stores objects and their data; the stack stores local variables and the flow of execution.",
+    "explanation": "The stack is LIFO (Last-In-First-Out) and manages the 'where are we' in the code. The heap is the large pool of memory where objects live."
+  },
+  {
+    "question": "In the context of inheritance, what is 'Overloading' in standard Python?",
+    "options": [
+      "Defining two methods with the same name and different signatures in one class.",
+      "When a subclass has more methods than its parent.",
+      "A way to speed up method lookup in the MRO."
+    ],
+    "answer": "Achieved via default arguments or variable arguments, as Python doesn't support traditional method overloading.",
+    "explanation": "Unlike Java, Python only allows one method definition per name. Overloading is simulated using optional parameters or @overload hints."
+  },
+  {
+    "question": "What is the primary role of the 'abc' module in Python?",
+    "options": [
+      "To provide alphabetical sorting for class attributes.",
+      "To manage memory pointers for class objects.",
+      "To allow for private inheritance."
+    ],
+    "answer": "To provide the infrastructure for defining Abstract Base Classes.",
+    "explanation": "The abc module allows you to define methods that subclasses must implement, and prevents the ABC from being instantiated."
+  },
+  {
+    "question": "Which of the following best describes 'Abstraction'?",
+    "options": [
+      "Making sure all code is in one single file.",
+      "Allowing an object to inherit from multiple parents.",
+      "Using double underscores to hide data."
+    ],
+    "answer": "Focusing on what an object does rather than how it does it.",
+    "explanation": "Abstraction is about simplifying complex reality by modeling classes appropriate to the problem."
+  },
+  {
+    "question": "What is the effect of the following code?\n\nclass A:\n    pass\n\na = A()\na.new_attr = 10",
+    "options": [
+      "A TypeError is raised because 'new_attr' wasn't defined in the class.",
+      "The attribute is added to the class A, affecting all instances.",
+      "The program crashes because A has no __init__."
+    ],
+    "answer": "The attribute 'new_attr' is added only to the instance 'a'.",
+    "explanation": "Python objects are dynamic; you can add attributes to instances at runtime unless __slots__ is used."
+  },
+  {
+    "question": "Which principle is represented by: 'A user should only have to know about the top-level interface, not the complex sub-systems behind it'?",
+    "options": [
+      "Polymorphism",
+      "Inheritance",
+      "Hierarchy"
+    ],
+    "answer": "Abstraction",
+    "explanation": "Abstraction provides a simplified view of a system, hiding the 'how' behind a 'what'."
+  },
+  {
+    "question": "What is the MRO of class D in: `class A: pass; class B(A): pass; class C(A): pass; class D(B, C): pass`?",
+    "options": [
+      "D, B, A, C, object",
+      "D, B, C, object",
+      "D, B, A, C, A, object"
+    ],
+    "answer": "D, B, C, A, object",
+    "explanation": "Following C3 Linearization: search the current class, then the parents in order (B, C), then their shared parent (A), then object."
+  },
+  {
+    "question": "What does 'Encapsulation' protect against?",
+    "options": [
+      "The program running out of memory.",
+      "The use of multiple inheritance.",
+      "The need to write unit tests."
+    ],
+    "answer": "Direct external access to an object's internal state, preventing invalid data entry.",
+    "explanation": "Encapsulation bundles data and methods, using 'gates' (getters/setters) to ensure data integrity."
+  },
+  {
+    "question": "Which relationship describes a 'has-a' link where the child can be shared between multiple parents?",
+    "options": [
+      "Composition",
+      "Generalization",
+      "Realization"
+    ],
+    "answer": "Aggregation",
+    "explanation": "Aggregation is a weak ownership where the child is independent and can be associated with many parents."
+  },
+  {
+    "question": "What is the purpose of `@classmethod` in a factory pattern?",
+    "options": [
+      "To prevent the class from being instantiated.",
+      "To ensure the method can only access private data.",
+      "To make the method run faster by bypassing the MRO."
+    ],
+    "answer": "To provide an alternative constructor that receives the class itself as an argument.",
+    "explanation": "Class methods are ideal for factory methods because they can create instances of the class (or its subclasses) correctly."
+  },
+  {
+    "question": "What is 'Object-Oriented thinking' primarily about?",
+    "options": [
+      "Optimizing code for the CPU.",
+      "Writing as many classes as possible.",
+      "Using global variables to manage state."
+    ],
+    "answer": "Modeling a problem as a system of interacting objects with state and behavior.",
+    "explanation": "OO thinking focuses on identifying objects, their responsibilities, and how they collaborate."
+  },
+  {
+    "question": "How can you implement an 'Immutable' class in Python?",
+    "options": [
+      "By using the `const` keyword.",
+      "By inheriting from `abc.ABC`.",
+      "By making all variables global."
+    ],
+    "answer": "By overriding __setattr__ to raise an error and using __slots__ to prevent new attributes.",
+    "explanation": "True immutability in Python requires active prevention of attribute modification and addition."
+  },
+  {
+    "question": "What does 'Modularization' through packages prevent in large systems?",
+    "options": [
+      "The use of classes.",
+      "The need for recursion.",
+      "The use of private variables."
+    ],
+    "answer": "Namespace collisions and bloated, unmanageable files.",
+    "explanation": "Packages allow developers to use common names (like 'utils') without clashing with other parts of the system."
+  },
+  {
+    "question": "What is a 'TypeVar' with 'covariant=True' used for?",
+    "options": [
+      "To allow a function to return any type.",
+      "To prevent a variable from being changed.",
+      "To speed up class instantiation."
+    ],
+    "answer": "To allow a generic type to be used where its supertype is expected.",
+    "explanation": "Covariance allows `List[Circle]` to be treated as `List[Shape]` (in certain contexts), aligning with OO substitution rules."
+  },
+  {
+    "question": "Which statement is true about 'Iteration' vs 'Recursion' in Python?",
+    "options": [
+      "Recursion is always faster because it uses the call stack.",
+      "Iteration is only possible with primitive types.",
+      "Python automatically converts recursion to iteration at runtime."
+    ],
+    "answer": "Iteration is generally safer for deep operations to avoid RecursionError.",
+    "explanation": "Because Python doesn't perform Tail Call Optimization (TCO), deep recursion is limited by the stack size, whereas iteration is not."
+  },
+  {
+    "question": "What does the 'is' operator check?",
+    "options": [
+      "Value equality.",
+      "Class inheritance.",
+      "Presence of a method."
+    ],
+    "answer": "Object identity (memory address).",
+    "explanation": "is checks if `id(a) == id(b)`."
+  },
+  {
+    "question": "What is the 'Interface' of a class?",
+    "options": [
+      "The internal code inside the methods.",
+      "The memory address of the class.",
+      "The private variables of the class."
+    ],
+    "answer": "The set of public methods and attributes an object exposes to the world.",
+    "explanation": "The interface is the 'contract' that tells other objects how to interact with this one."
+  },
+  {
+    "question": "Why is 'Multiple Inheritance' more complex in Python than in languages like Java?",
+    "options": [
+      "Python doesn't have an 'object' base class.",
+      "Java doesn't allow any form of polymorphism.",
+      "Python doesn't support interfaces."
+    ],
+    "answer": "Python allows inheriting implementation from multiple classes, creating MRO and Diamond Problem issues.",
+    "explanation": "Java only allows multiple inheritance of 'type' (interfaces), not 'implementation' (actual method code), which avoids many OO pitfalls."
+  },
+  {
+    "question": "Which of the following describes 'Encapsulation of behavior'?",
+    "options": [
+      "Writing a function that takes an object as an argument.",
+      "Using a global list to store all function names.",
+      "Inheriting a method from a parent class."
+    ],
+    "answer": "Defining methods within a class that operate on that class's data.",
+    "explanation": "Encapsulation means keeping the data (state) and the functions that use it (behavior) together in one unit (object)."
+  },
+  {
+    "question": "In a system where 'Engine' is an attribute of 'Car', and 'Engine' is instantiated within 'Car.__init__', what is the relationship?",
+    "options": [
+      "Aggregation",
+      "Association",
+      "Generalization"
+    ],
+    "answer": "Composition",
+    "explanation": "Since the Car creates its own Engine and 'owns' it, the Engine's lifecycle is tied to the Car."
+  }
+]

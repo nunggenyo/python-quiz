@@ -14,9 +14,11 @@ export default function Quiz() {
   const [finished, setFinished] = useState(false);
 
   const dayConfigs = {
-    day1: { sets: [1, 2, 3], title: "Day 1", subtitle: "Software Design and Development" },
+    day1: { sets: [1, 2, 3, 4, 5], title: "Day 1", subtitle: "Software Design and Development" },
     day2: { sets: [1, 2, 3, 4, 5], title: "Day 2", subtitle: "Programming Basics - 1 (Python)" },
-    day3: { sets: [1, 2, 3, 4, 5], title: "Day 3", subtitle: "Programming Basics - 2 (Python)" }
+    day3: { sets: [1, 2, 3, 4, 5], title: "Day 3", subtitle: "Programming Basics - 2 (Python)" },
+    day4: { sets: [1, 2, 3, 4, 5], title: "Day 4", subtitle: "Object Oriented Programming - 1 (Python)" },
+    day5: { sets: [1, 2, 3, 4, 5], title: "Day 5", subtitle: "Object Oriented Programming - 1 (Python)" },
   };
 
   // Utility to shuffle array

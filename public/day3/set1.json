@@ -36,7 +36,7 @@
       "a.append(b)",
       "a.extend(b)"
     ],
-    "answer": "Both 0 and 2",
+    "answer": "Both 'a + b' and 'a.extend(b)'",
     "explanation": "Both '+' (creates a new list) and '.extend()' (modifies in place) are standard ways to combine lists."
   },
   {

@@ -3,7 +3,7 @@
     "question": "A developer is tasked with creating a complex flight booking system. They begin by breaking the system down into smaller, manageable components like \"Search Flights,\" \"Select Seat,\" and \"Process Payment.\" Which pillar of computational thinking is being applied here?",
     "options": [
       "Abstraction",
-      "Pattern Recognition",
+      "Pattern \\nRecognition",
       "Generalization"
     ],
     "answer": "Decomposition",
@@ -312,11 +312,11 @@
   {
     "question": "Which of the following pairs correctly maps a Design Activity to its resulting Design Product?",
     "options": [
-      "Architectural Design â€“ Interface Specification",
-      "Component Design â€“ System Architecture",
-      "Interface Design â€“ Component Specification"
+      "Architectural Design – Interface Specification",
+      "Component Design – System Architecture",
+      "Interface Design – Component Specification"
     ],
-    "answer": "Data Structure Design â€“ Data Structure Specification",
+    "answer": "Data Structure Design – Data Structure Specification",
     "explanation": "The output of designing data structures is the specification that describes how that data is organized and stored[."
   }
 ]

@@ -1,0 +1,502 @@
+[
+  {
+    "question": "A developer creates a 'Car' class that contains an 'Engine' object. If the 'Car' is deleted, the 'Engine' is also destroyed because it cannot exist independently. Which relationship does this best describe?",
+    "options": [
+      "Association",
+      "Aggregation",
+      "Generalization"
+    ],
+    "answer": "Composition",
+    "explanation": "Composition is a 'strong' form of aggregation where the child object cannot exist independently of the parent. If the parent is destroyed, the child is also destroyed."
+  },
+  {
+    "question": "In Python, when you assign an existing list to a new variable (e.g., `b = a`), what is actually happening in memory?",
+    "options": [
+      "A deep copy of the list is created on the heap.",
+      "The list values are pushed onto the call stack.",
+      "A new pointer is created pointing to a new memory address."
+    ],
+    "answer": "The new variable stores a reference to the same memory address on the heap.",
+    "explanation": "Python uses a pass-by-object-reference model. Variables are labels (references) pointing to objects stored in the heap memory."
+  },
+  {
+    "question": "Consider the following code:\n\nclass Data:\n    def __init__(self, values):\n        self.__values = values\n\nd = Data([1, 2, 3])\nd._Data__values.append(4)\n\nWhat principle is primarily being bypassed here?",
+    "options": [
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism"
+    ],
+    "answer": "Encapsulation",
+    "explanation": "The double underscore triggers name mangling in Python, which is a mechanism for encapsulation (private members). Accessing it via `_ClassName__variable` bypasses this protection."
+  },
+  {
+    "question": "Which of the following best describes the 'Law of Demeter' in the context of Python OOP?",
+    "options": [
+      "A class should have only one reason to change.",
+      "Subclasses should be replaceable by their base classes.",
+      "Classes should be open for extension but closed for modification."
+    ],
+    "answer": "An object should only communicate with its immediate friends and not 'reach through' them to strangers.",
+    "explanation": "The Law of Demeter (Principle of Least Knowledge) suggests that an object should avoid calling methods on objects returned by another method (e.g., avoid `a.getB().getC().doSomething()`)."
+  },
+  {
+    "question": "You need to define a class that cannot be instantiated and requires subclasses to implement a specific method `calculate()`. Which approach is most appropriate?",
+    "options": [
+      "Use a regular class and raise `NotImplementedError` in `__init__`.",
+      "Use the `typing.Protocol` class.",
+      "Define `calculate()` as a static method."
+    ],
+    "answer": "Inherit from `abc.ABC` and decorate `calculate()` with `@abstractmethod`.",
+    "explanation": "The `abc` module (Abstract Base Classes) is the standard way in Python to define interfaces that prevent instantiation and enforce method implementation in subclasses."
+  },
+  {
+    "question": "What happens to the call stack during a deep recursive function call that lacks a proper base case?",
+    "options": [
+      "The heap memory is exhausted first.",
+      "The Python interpreter automatically switches to iteration.",
+      "The program enters an infinite loop without crashing."
+    ],
+    "answer": "A `RecursionError` is raised once the maximum stack depth is reached.",
+    "explanation": "Each recursive call adds a new frame to the call stack. Without a base case, it exceeds the limit set by `sys.setrecursionlimit()`, causing a stack overflow error."
+  },
+  {
+    "question": "Which statement accurately describes 'Duck Typing' in Python?",
+    "options": [
+      "It requires explicit inheritance from a base class to ensure type safety.",
+      "It is a form of static typing checked at compile time.",
+      "It relies on the `isinstance()` function to verify object types."
+    ],
+    "answer": "It focuses on whether an object has the required methods/attributes rather than its actual type.",
+    "explanation": "Duck typing follows the philosophy: 'If it walks like a duck and quacks like a duck, it's a duck.' Python checks for the presence of methods at runtime."
+  },
+  {
+    "question": "In the context of Multiple Inheritance, what does Method Resolution Order (MRO) determine?",
+    "options": [
+      "The order in which attributes are deleted during garbage collection.",
+      "The priority of static methods over instance methods.",
+      "The sequence in which the `__init__` methods of all classes are called simultaneously."
+    ],
+    "answer": "The order in which Python searches for a method or attribute in a class hierarchy.",
+    "explanation": "MRO (using the C3 Linearization algorithm) determines the path Python takes through the inheritance graph to find a method."
+  },
+  {
+    "question": "You want to create a generic container class that can hold any type but provides type hinting for that specific type. How should you define it?",
+    "options": [
+      "class Container(Generic[Any]):",
+      "class Container(type):",
+      "class Container(object):"
+    ],
+    "answer": "from typing import TypeVar, Generic; T = TypeVar('T'); class Container(Generic[T]):",
+    "explanation": "Using `TypeVar` and `Generic` allows for the creation of generic types that maintain type information for static analysis tools like mypy."
+  },
+  {
+    "question": "Which of the following is a key advantage of using 'Immutable' objects in a multi-threaded Python application?",
+    "options": [
+      "They consume significantly less memory on the heap.",
+      "They allow for faster attribute access via `__slots__`.",
+      "They can be modified without using the `global` keyword."
+    ],
+    "answer": "They are inherently thread-safe because their state cannot change after creation.",
+    "explanation": "Immutable objects (like strings or tuples) cannot be modified, eliminating race conditions related to state changes in concurrent environments."
+  },
+  {
+    "question": "What is the difference between `is` and `==` in Python?",
+    "options": [
+      "`is` checks for value equality, while `==` checks for identity.",
+      "There is no difference; they are interchangeable.",
+      "`is` is used for strings, while `==` is used for integers."
+    ],
+    "answer": "`is` checks if two variables point to the same object in memory; `==` checks if the values are equal.",
+    "explanation": "Identity (`is`) vs Equality (`==`). Two different list objects `[1,2]` and `[1,2]` are equal but not identical."
+  },
+  {
+    "question": "Given the code:\n\nclass A:\n    x = 1\n\nobj1 = A()\nobj2 = A()\nobj1.x = 2\n\nWhat are the values of `obj1.x`, `obj2.x`, and `A.x`?",
+    "options": [
+      "2, 2, 2",
+      "1, 1, 1",
+      "2, 1, 2"
+    ],
+    "answer": "2, 1, 1",
+    "explanation": "`x` is a class variable. `obj1.x = 2` creates an instance variable for `obj1` that shadows the class variable. `obj2.x` still references the class variable."
+  },
+  {
+    "question": "Which design principle suggests that a class should be open for extension but closed for modification?",
+    "options": [
+      "Single Responsibility Principle",
+      "Liskov Substitution Principle",
+      "Dependency Inversion Principle"
+    ],
+    "answer": "Open/Closed Principle",
+    "explanation": "The Open/Closed Principle (OCP) states that software entities should be extendable (e.g., through inheritance or composition) without modifying their existing source code."
+  },
+  {
+    "question": "What is 'Shadowing' in the context of Python inheritance?",
+    "options": [
+      "Creating a copy of a parent class method in a child class.",
+      "Using the `super()` function to call a hidden method.",
+      "The process of deleting a parent attribute to save memory."
+    ],
+    "answer": "When a subclass defines an attribute or method with the same name as one in the superclass, making the superclass version harder to access directly.",
+    "explanation": "Shadowing occurs when a local or subclass scope name takes precedence over a name in a broader/parent scope."
+  },
+  {
+    "question": "Which of the following describes an 'Aggregation' relationship?",
+    "options": [
+      "A 'is-a' relationship where one class inherits from another.",
+      "A 'has-a' relationship where the child cannot exist without the parent.",
+      "A relationship where two classes are completely independent."
+    ],
+    "answer": "A 'has-a' relationship where the child can exist independently of the parent (e.g., a Department and Professors).",
+    "explanation": "Aggregation is a weak 'has-a' relationship. If the Department is closed, the Professors still exist."
+  },
+  {
+    "question": "How does Python handle 'Pass-by-value' for primitive-like types like integers?",
+    "options": [
+      "It copies the integer value onto the stack.",
+      "Integers are mutable, so they are passed by reference.",
+      "It uses a pointer to a pointer."
+    ],
+    "answer": "It passes a reference to the immutable integer object; the reference is passed by value.",
+    "explanation": "Everything in Python is an object. When passing an integer, you pass a reference to that object. Since integers are immutable, you cannot change the original object, mimicking pass-by-value behavior."
+  },
+  {
+    "question": "Which of the following is a characteristic of 'Modularization'?",
+    "options": [
+      "Combining all code into a single large file for performance.",
+      "Encapsulating all data within a single class.",
+      "Using global variables to share state across the application."
+    ],
+    "answer": "Breaking a system into self-contained, independent units (modules) to reduce complexity.",
+    "explanation": "Modularization improves maintainability and readability by separating concerns into different files and packages."
+  },
+  {
+    "question": "What is the primary purpose of the `@property` decorator in Python?",
+    "options": [
+      "To make a method run faster by caching its result.",
+      "To turn a class into a static utility class.",
+      "To allow a method to be called without parentheses, mimicking an attribute while maintaining encapsulation."
+    ],
+    "answer": "To define getters, setters, and deleters for an attribute, allowing for managed access.",
+    "explanation": "Properties allow you to add logic (like validation) to attribute access without changing the public API of the class."
+  },
+  {
+    "question": "When using `typing.Protocol`, what type of subtyping is being utilized?",
+    "options": [
+      "Nominal Subtyping",
+      "Explicit Subtyping",
+      "Virtual Subtyping"
+    ],
+    "answer": "Structural Subtyping",
+    "explanation": "Protocols (PEP 544) implement structural subtyping, where a class is considered a subtype of a Protocol if it implements the required members, regardless of explicit inheritance."
+  },
+  {
+    "question": "What is the result of attempting to modify a tuple that contains a list: `t = ([1, 2], 3); t[0].append(3)`?",
+    "options": [
+      "A `TypeError` is raised because tuples are immutable.",
+      "The operation is ignored silently.",
+      "A new tuple is created with the updated list."
+    ],
+    "answer": "The list inside the tuple is updated to `[1, 2, 3]`, and no error is raised.",
+    "explanation": "While the tuple itself is immutable (its references cannot change), the objects it references (like a list) can still be mutable."
+  },
+  {
+    "question": "In Multiple Inheritance, what is the 'Diamond Problem'?",
+    "options": [
+      "When a class has too many attributes to manage.",
+      "When a subclass inherits from four different classes.",
+      "When a method is defined in two unrelated classes."
+    ],
+    "answer": "When a subclass inherits from two classes that both inherit from a single common base class, causing ambiguity in method resolution.",
+    "explanation": "The Diamond Problem occurs when the MRO must decide which version of a shared base class method to call."
+  },
+  {
+    "question": "Which method is used to customize the creation of a new class instance (before `__init__`)?",
+    "options": [
+      "`__init__`",
+      "`__call__`",
+      "`__prepare__`"
+    ],
+    "answer": "`__new__`",
+    "explanation": "`__new__` is the static method responsible for creating the instance, while `__init__` is the instance method responsible for initializing it."
+  },
+  {
+    "question": "What does the 'Stability Principle' in OO design imply?",
+    "options": [
+      "Code should never be changed once it is deployed.",
+      "Private methods are more stable than public methods.",
+      "The system should not crash when invalid data is provided."
+    ],
+    "answer": "Classes that are frequently depended upon should be more stable (change less often) than classes that depend on them.",
+    "explanation": "The Stable Dependencies Principle (SDP) states that the dependencies of a component should be more stable than the component itself."
+  },
+  {
+    "question": "Which of the following is true regarding 'Protected' members in Python (e.g., `_variable`)?",
+    "options": [
+      "The Python interpreter strictly prevents access from outside the class.",
+      "They are stored in a separate area of memory called the 'Protected Heap'.",
+      "They are only accessible by the class and its subclasses through hardware-level locking."
+    ],
+    "answer": "They are a naming convention indicating the member is intended for internal use; Python does not enforce access restrictions.",
+    "explanation": "A single underscore is a signal to other programmers, but the interpreter treats it like any other public attribute."
+  },
+  {
+    "question": "How can you prevent any further attributes from being added to a class instance at runtime?",
+    "options": [
+      "Use the `@final` decorator.",
+      "Make all attributes private using `__`.",
+      "Inherit from `abc.ABC`."
+    ],
+    "answer": "Define `__slots__` in the class definition.",
+    "explanation": "`__slots__` tells Python not to use a dynamic dictionary (`__dict__`) for instances, which prevents the addition of new attributes and saves memory."
+  },
+  {
+    "question": "In the following snippet, which concept is demonstrated?\n\ndef process(items: list):\n    for item in items:\n        item.draw()\n\n# works for Circle, Square, and Line objects that have a draw() method.",
+    "options": [
+      "Encapsulation",
+      "Static Binding",
+      "Multiple Inheritance"
+    ],
+    "answer": "Polymorphism",
+    "explanation": "Polymorphism allows the `process` function to treat different objects (Circle, Square) uniformly as long as they implement the `draw()` interface."
+  },
+  {
+    "question": "What is the purpose of the `@classmethod` decorator?",
+    "options": [
+      "To mark a method as private.",
+      "To ensure a method can only be called on an instance.",
+      "To create a method that cannot access any class data."
+    ],
+    "answer": "To define a method that receives the class itself as the first argument instead of an instance.",
+    "explanation": "Class methods are often used as factory methods to create instances of the class using different parameters."
+  },
+  {
+    "question": "Which of the following describes 'Association'?",
+    "options": [
+      "A class that inherits from another class.",
+      "A class that contains another class as a private member.",
+      "A class that is an abstract interface."
+    ],
+    "answer": "A general relationship between two independent classes where one uses the other (e.g., a Teacher and a Student).",
+    "explanation": "Association is a loose relationship where objects have their own lifecycle and there is no owner."
+  },
+  {
+    "question": "In Python 3, what is the default base class for any class defined without explicit inheritance?",
+    "options": [
+      "`type`",
+      "`Base`",
+      "`None`"
+    ],
+    "answer": "`object`",
+    "explanation": "In Python 3, all classes implicitly inherit from the `object` class, making it the root of the inheritance hierarchy."
+  },
+  {
+    "question": "Scenario: You have a `Shape` class and a `Circle` class. `Circle` inherits from `Shape`. If you have a variable `s = Circle()`, what will `type(s) == Shape` return?",
+    "options": [
+      "True",
+      "An error",
+      "None"
+    ],
+    "answer": "False",
+    "explanation": "`type(s)` returns the exact class of the object (`Circle`). To check for inheritance, you should use `isinstance(s, Shape)`, which would return True."
+  },
+  {
+    "question": "What is the primary difference between a 'Static Method' and a 'Class Method' in Python?",
+    "options": [
+      "Static methods can access instance data, class methods cannot.",
+      "Class methods are faster than static methods.",
+      "There is no functional difference; they are aliases."
+    ],
+    "answer": "Class methods receive the class (cls) as an argument, while static methods receive no implicit first argument.",
+    "explanation": "Static methods behave like regular functions defined inside a class namespace, whereas class methods are bound to the class."
+  },
+  {
+    "question": "What does the `super()` function return in a multiple inheritance scenario?",
+    "options": [
+      "The first parent listed in the class definition.",
+      "All parent classes as a list.",
+      "A proxy object that delegates calls to the parent class with the highest priority."
+    ],
+    "answer": "A proxy object that delegates method calls based on the Method Resolution Order (MRO).",
+    "explanation": "`super()` does not just call the parent; it follows the MRO to find the next class in the hierarchy."
+  },
+  {
+    "question": "Which of the following is a drawback of Multiple Inheritance?",
+    "options": [
+      "It prevents the use of polymorphism.",
+      "It makes the code run slower due to heap fragmentation.",
+      "It is not supported in Python 3."
+    ],
+    "answer": "It can lead to complex and ambiguous hierarchies (e.g., the Diamond Problem).",
+    "explanation": "Multiple inheritance increases complexity in tracing method calls and can lead to bugs if not managed carefully via MRO."
+  },
+  {
+    "question": "You define `__add__` in a class. What OOP concept are you implementing?",
+    "options": [
+      "Method Shadowing",
+      "Encapsulation",
+      "Abstraction"
+    ],
+    "answer": "Operator Overloading",
+    "explanation": "Operator overloading allows you to define how standard operators (like `+`) behave with custom objects."
+  },
+  {
+    "question": "If you want to ensure a subclass cannot override a specific method, what should you use (as per PEP 591)?",
+    "options": [
+      "The `@abstractmethod` decorator.",
+      "The `__slots__` attribute.",
+      "Double underscores `__`."
+    ],
+    "answer": "The `@final` decorator from the `typing` module.",
+    "explanation": "`@final` is used to indicate that a method should not be overridden or a class should not be inherited from."
+  },
+  {
+    "question": "In Python's object model, which of the following is stored on the Call Stack?",
+    "options": [
+      "The actual content of a large list.",
+      "Class definitions and method code.",
+      "Global variables."
+    ],
+    "answer": "Local variables and references to objects.",
+    "explanation": "The call stack stores stack frames containing local variables and references (pointers). The actual objects themselves reside on the heap."
+  },
+  {
+    "question": "Which statement is true about the `typing.Any` type?",
+    "options": [
+      "It is the same as the `object` type.",
+      "It forces the type checker to strictly validate the variable.",
+      "It is a primitive type in Python."
+    ],
+    "answer": "It is a special type that is compatible with every other type; it effectively disables static type checking for that variable.",
+    "explanation": "`Any` allows any operation and can be assigned to any type, unlike `object` which only allows operations common to all objects."
+  },
+  {
+    "question": "A class `PaymentProcessor` has a method `pay(amount)`. Two subclasses `CreditCard` and `PayPal` implement this method differently. This is an example of:",
+    "options": [
+      "Method Overloading",
+      "Aggregation",
+      "Modularization"
+    ],
+    "answer": "Method Overriding",
+    "explanation": "Overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass."
+  },
+  {
+    "question": "Which of the following is NOT a property of Object-Orientation?",
+    "options": [
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction"
+    ],
+    "answer": "Linearity",
+    "explanation": "The four pillars of OOP are Abstraction, Encapsulation, Inheritance, and Polymorphism. Linearity is not a standard OOP property."
+  },
+  {
+    "question": "What is the primary purpose of the `__init__.py` file in a directory?",
+    "options": [
+      "To mark the directory as a temporary cache.",
+      "To store the class definitions for the package.",
+      "To speed up the execution of Python scripts."
+    ],
+    "answer": "To treat the directory as a Python package.",
+    "explanation": "`__init__.py` is required (in older Python versions) or used to initialize a package and define what is exported via `__all__`."
+  },
+  {
+    "question": "Scenario: A variable `x = [1, 2]`. A function `def func(y): y.append(3)`. After calling `func(x)`, what is the value of `x`?",
+    "options": [
+      "[1, 2]",
+      "A `NameError` is raised",
+      "None"
+    ],
+    "answer": "[1, 2, 3]",
+    "explanation": "Since a list is mutable and passed by reference, the modification inside the function affects the original object."
+  },
+  {
+    "question": "How does Python achieve 'Method Overloading'? ",
+    "options": [
+      "By defining multiple methods with the same name but different signatures.",
+      "By using the `overload` keyword from the core language.",
+      "It is not supported at all in Python."
+    ],
+    "answer": "By using default arguments or the `@typing.overload` decorator for type hinting.",
+    "explanation": "Python does not support traditional method overloading (same name, different signature) in the way Java does. It uses default arguments or variable-length arguments to handle different inputs."
+  },
+  {
+    "question": "Which relationship is represented by the phrase 'is-a-part-of'?",
+    "options": [
+      "Inheritance",
+      "Association",
+      "Generalization"
+    ],
+    "answer": "Composition",
+    "explanation": "Composition represents a whole-part relationship where the part is strictly bound to the whole."
+  },
+  {
+    "question": "What is the result of `isinstance(True, int)`?",
+    "options": [
+      "False",
+      "TypeError",
+      "None"
+    ],
+    "answer": "True",
+    "explanation": "In Python, `bool` is a subclass of `int`. `True` has an integer value of 1, and `False` has 0."
+  },
+  {
+    "question": "What is 'Hierarchy' in OO Design?",
+    "options": [
+      "The order of execution in a loop.",
+      "The way modules are stored in the file system.",
+      "The process of hiding data behind private methods."
+    ],
+    "answer": "The organization of classes into a tree-like structure via inheritance.",
+    "explanation": "Hierarchy allows for the classification of objects from general to specific (Superclass to Subclass)."
+  },
+  {
+    "question": "What does the 'typing.TypeVar' do?",
+    "options": [
+      "It converts a string to a type.",
+      "It creates a new class at runtime.",
+      "It is used to define private variables."
+    ],
+    "answer": "It acts as a placeholder for a generic type that will be specified later.",
+    "explanation": "`TypeVar` is used in generic programming to represent a type that remains consistent across a function or class (e.g., the input type is the same as the output type)."
+  },
+  {
+    "question": "In a scenario where a 'User' class uses a 'Database' class to save data, but the 'Database' can exist without the 'User', this is:",
+    "options": [
+      "Composition",
+      "Inheritance",
+      "Polymorphism"
+    ],
+    "answer": "Association",
+    "explanation": "This is a simple usage relationship where both objects have independent lifecycles."
+  },
+  {
+    "question": "What is an 'Abstract Method'?",
+    "options": [
+      "A method that has no name.",
+      "A method that is defined in a subclass but not in the parent.",
+      "A method that can only be called by the class itself."
+    ],
+    "answer": "A method declared in a base class but has no implementation, forcing subclasses to provide one.",
+    "explanation": "Abstract methods define an interface that all concrete subclasses must follow."
+  },
+  {
+    "question": "Which of the following is a primitive type in Python?",
+    "options": [
+      "int",
+      "str",
+      "float"
+    ],
+    "answer": "None of the above; all types in Python are objects.",
+    "explanation": "Unlike C++ or Java, Python does not have true primitive types. Even integers and booleans are objects (instances of a class)."
+  },
+  {
+    "question": "What is the effect of using `from module import *`?",
+    "options": [
+      "It imports only the private members of the module.",
+      "It creates a new namespace for the module.",
+      "It is the recommended way to import modules in professional code."
+    ],
+    "answer": "It imports all public names defined in the module into the current namespace, potentially causing name clashes.",
+    "explanation": "Wildcard imports are generally discouraged because they clutter the local namespace and make it unclear where names originated."
+  }
+]

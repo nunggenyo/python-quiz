@@ -1,0 +1,502 @@
+[
+  {
+    "question": "You are designing a 'SmartHome' system where multiple 'Device' objects share a single 'Config' dictionary. You use `copy.copy()` to duplicate a 'Device'. What happens to the 'Config' dictionary in the cloned device?",
+    "options": [
+      "A new, independent Config dictionary is created for the clone.",
+      "The clone receives a None value for the Config attribute.",
+      "The clone receives a string representation of the Config dictionary."
+    ],
+    "answer": "The clone and the original share the exact same Config dictionary object.",
+    "explanation": "A shallow copy (copy.copy) creates a new object but inserts references into it to the objects found in the original. Since the Config dictionary is a nested mutable object, both devices will point to the same instance."
+  },
+  {
+    "question": "A junior developer presents the following code to you for review:\n\nclass Logger:\n    def __init__(self, log_file):\n        self.file = open(log_file, 'w')\n    def __del__(self):\n        self.file.close()\n\nWhy might this implementation be problematic in a high-scale production environment?",
+    "options": [
+      "The __del__ method cannot access instance attributes like self.file.",
+      "The __del__ method will only execute if the file is larger than 1MB.",
+      "Python 3 has deprecated the use of __del__ for file operations."
+    ],
+    "answer": "The timing of __del__ is non-deterministic; the file handle may remain open longer than expected, leading to resource exhaustion.",
+    "explanation": "Python's garbage collector doesn't guarantee exactly when __del__ will be called. For critical resources like file handles or network sockets, using a Context Manager (with statement) is the professional standard."
+  },
+  {
+    "question": "In a custom class 'EnterpriseUser', you want to ensure that `user_a == user_b` returns True if their 'employee_id' matches, regardless of other attributes. Which implementation is correct?",
+    "options": [
+      "def __equals__(self, other): return self.employee_id == other.employee_id",
+      "def __cmp__(self, other): return self.employee_id == other.employee_id",
+      "def __is__(self, other): return self.employee_id == other.employee_id"
+    ],
+    "answer": "def __eq__(self, other): return isinstance(other, EnterpriseUser) and self.employee_id == other.employee_id",
+    "explanation": "The __eq__ method is the standard way to overload the equality operator. It is best practice to check if the 'other' object is of the same type before accessing its attributes."
+  },
+  {
+    "question": "You are implementing a Binary Search algorithm. What is the state of the list requirement, and what is the Big-O time complexity for a list of size $n$?",
+    "options": [
+      "The list must be unsorted; $O(n)$",
+      "The list must be sorted; $O(n)$",
+      "The list must be unsorted; $O(\\log n)$"
+    ],
+    "answer": "The list must be sorted; $O(\\log n)$",
+    "explanation": "Binary search works by repeatedly halving the search space, which requires the data to be ordered. This logarithmic approach is highly efficient for large datasets."
+  },
+  {
+    "question": "When connecting to a PostgreSQL database using the `psycopg2` driver, which code snippet correctly handles a transaction to ensure atomicity?",
+    "options": [
+      "cursor.execute(sql); conn.save()",
+      "cursor.execute(sql); conn.update()",
+      "cursor.execute(sql); cursor.commit()"
+    ],
+    "answer": "try:\n    cursor.execute(sql)\n    conn.commit()\nexcept:\n    conn.rollback()",
+    "explanation": "To ensure atomicity, you must commit the transaction if successful or rollback if an error occurs. In many DB-API drivers, commit() is a method of the connection object, not the cursor."
+  },
+  {
+    "question": "You have a class 'Vehicle' and a subclass 'ElectricCar'. 'ElectricCar' defines its own `__init__`. How do you ensure the 'Vehicle' initialization logic also runs?",
+    "options": [
+      "Vehicle.__init__(self)",
+      "this.super().__init__()",
+      "ElectricCar.parent.__init__()"
+    ],
+    "answer": "super().__init__()",
+    "explanation": "super() returns a proxy object that delegates method calls to a parent or sibling class. This is the standard way to perform constructor chaining in Python."
+  },
+  {
+    "question": "Consider the following code:\n\ndef find_item(data, target):\n    for i in range(len(data)):\n        if data[i] == target:\n            return i\n    return -1\n\nWhich algorithm is implemented here, and what is the best-case complexity?",
+    "options": [
+      "Binary Search; $O(1)$",
+      "Linear Search; $O(n)$",
+      "Selection Search; $O(1)$"
+    ],
+    "answer": "Linear Search; $O(1)$",
+    "explanation": "This is a Linear Search because it checks every index sequentially. The best case is $O(1)$ when the target is at the very first index."
+  },
+  {
+    "question": "A production script crashes with a `RecursionError: maximum recursion depth exceeded`. Which refactoring technique would directly address this issue without increasing system memory?",
+    "options": [
+      "Extract Class",
+      "Rename Variable",
+      "Replace Constructor with Factory Method"
+    ],
+    "answer": "Replace Recursion with Iteration",
+    "explanation": "Iterative solutions (using while or for loops) use a constant amount of stack space, avoiding the stack depth limits associated with recursive calls."
+  },
+  {
+    "question": "You need to store a set of unique IP addresses in a way that allows for $O(1)$ average time complexity for lookups. Which collection type should you use?",
+    "options": [
+      "list",
+      "tuple",
+      "dict_values"
+    ],
+    "answer": "set",
+    "explanation": "A 'set' in Python is implemented using a hash table, providing highly efficient $O(1)$ average time complexity for membership testing and ensuring uniqueness."
+  },
+  {
+    "question": "What is the output of the following code snippet?\n\nclass Test:\n    def __init__(self):\n        self.data = [1, 2]\n\nt1 = Test()\nt2 = t1\nt2.data.append(3)\nprint(t1.data)",
+    "options": [
+      "[1, 2]",
+      "[1, 2, 3, 3]",
+      "AttributeError"
+    ],
+    "answer": "[1, 2, 3]",
+    "explanation": "The variable 't2' is simply an alias (reference) to the same object as 't1'. Modifying 't2' is exactly the same as modifying 't1'."
+  },
+  {
+    "question": "You are writing a custom exception for a banking API to handle insufficient funds. What is the most maintainable way to structure this?",
+    "options": [
+      "InsufficientFunds = Exception('Funds Error')",
+      "class InsufficientFunds(BaseException): pass",
+      "def InsufficientFunds(): raise Exception('Error')"
+    ],
+    "answer": "class InsufficientFundsError(Exception): pass",
+    "explanation": "Creating a class that inherits from 'Exception' allows the API user to catch this specific error type without catching all other system-level exceptions."
+  },
+  {
+    "question": "Which of the following describes the behavior of a 'Deep Copy' on a nested list `A = [[1], [2]]`?",
+    "options": [
+      "It creates a new list object but the inner lists [1] and [2] are the same objects as in A.",
+      "It makes a reference to A.",
+      "It converts the list into a tuple for safety."
+    ],
+    "answer": "It creates a new outer list and new, independent copies of the inner lists [1] and [2].",
+    "explanation": "Deep copy recursively duplicates every object it finds, ensuring that changes to the original nested structures do not affect the copy."
+  },
+  {
+    "question": "While refactoring a module, you find a function that performs three distinct tasks: calculating tax, updating a database, and generating a PDF report. This violates which 'Clean Code' principle?",
+    "options": [
+      "Dry (Don't Repeat Yourself)",
+      "KISS (Keep It Simple, Stupid)",
+      "Open/Closed Principle"
+    ],
+    "answer": "Single Responsibility Principle",
+    "explanation": "A function or class should have one, and only one, reason to change. Combining unrelated tasks makes the code harder to test and maintain."
+  },
+  {
+    "question": "In the Python `sqlite3` module, what is the purpose of the `placeholder` syntax (e.g., `?` or `:name`) in a query?",
+    "options": [
+      "To speed up the execution of the query by caching it.",
+      "To allow the query to run on different RDBMS types without changes.",
+      "To format the output as a dictionary."
+    ],
+    "answer": "To prevent SQL injection by separating the SQL logic from the data.",
+    "explanation": "Placeholders ensure that user input is treated as literal data and not as executable SQL code, a fundamental security practice."
+  },
+  {
+    "question": "You have an object `obj` of a class that implements `__iter__`. Which of the following is true about `iter(obj)`?",
+    "options": [
+      "It will return the length of the object.",
+      "It will raise a StopIteration exception immediately.",
+      "It will create a deep copy of the object."
+    ],
+    "answer": "It will call the object's __iter__ method and return an iterator.",
+    "explanation": "The built-in iter() function is the gateway to the iteration protocol, invoking the __iter__ magic method."
+  },
+  {
+    "question": "What is the primary role of the Garbage Collector's 'Generational' approach in Python?",
+    "options": [
+      "To ensure that objects are deleted in the order they were created.",
+      "To allow the programmer to manually assign memory priorities.",
+      "To prevent the use of global variables."
+    ],
+    "answer": "To improve performance by scanning newer objects more frequently than older ones.",
+    "explanation": "Most objects die young. By focusing collection efforts on the youngest generation (Gen 0), the GC minimizes the overhead of scanning long-lived objects."
+  },
+  {
+    "question": "Scenario: You are comparing two large 'Report' objects using the `>` operator. Which magic method must be implemented in the 'Report' class to define this behavior?",
+    "options": [
+      "__greater__",
+      "__comparison__",
+      "__le__"
+    ],
+    "answer": "__gt__",
+    "explanation": "__gt__ stands for 'greater than' and is used to overload the > operator."
+  },
+  {
+    "question": "Why would you choose to use `cursor.fetchmany(size=50)` instead of `cursor.fetchall()`?",
+    "options": [
+      "fetchmany() is the only way to retrieve data in SQLite.",
+      "fetchmany() automatically sorts the data before returning it.",
+      "fetchall() is deprecated in modern Python database drivers."
+    ],
+    "answer": "To balance memory usage and performance by fetching results in manageable chunks.",
+    "explanation": "fetchall() loads the entire result set into memory, which can cause a crash if the dataset is massive. fetchmany() allows for controlled, incremental processing."
+  },
+  {
+    "question": "What happens if a `try` block contains a `return` statement, but there is also a `finally` block?",
+    "options": [
+      "The return statement is ignored.",
+      "The finally block is skipped.",
+      "The program raises a RuntimeError."
+    ],
+    "answer": "The finally block executes after the return value is evaluated but before the function actually exits.",
+    "explanation": "Python guarantees that the 'finally' block will run even if the function is in the process of returning, ensuring cleanup always happens."
+  },
+  {
+    "question": "You are refactoring code and want to replace a long series of `if-elif` statements that check a string value with something cleaner. Which Python 3.10+ feature is most appropriate?",
+    "options": [
+      "lambda functions",
+      "Dictionary mapping",
+      "Try-Except blocks"
+    ],
+    "answer": "Structural Pattern Matching (match-case)",
+    "explanation": "The match-case statement is designed precisely to replace complex conditional chains with a more readable and powerful pattern-matching syntax."
+  },
+  {
+    "question": "Which of the following is the most significant limitation of relying solely on 'Return Values' for error handling in a complex data processing pipeline?",
+    "options": [
+      "Return values cannot be integers.",
+      "Return values are automatically deleted by the Garbage Collector.",
+      "Return values are slower than raising exceptions."
+    ],
+    "answer": "It is difficult to distinguish between a valid result (like 0 or False) and an error code.",
+    "explanation": "This is known as the 'Semantics Problem.' Exceptions provide a separate channel for error information, keeping the return channel clean for data."
+  },
+  {
+    "question": "If you implement `__eq__` but not `__ne__` (not equal), what is the behavior in Python 3?",
+    "options": [
+      "The != operator will raise a NotImplementedError.",
+      "The != operator will always return True.",
+      "The != operator will use the object IDs for comparison."
+    ],
+    "answer": "Python automatically delegates != to the negation of __eq__.",
+    "explanation": "In Python 3, if __eq__ is defined, != automatically works by inverting the result of == unless __ne__ is explicitly overridden."
+  },
+  {
+    "question": "Predict the output:\n\nmy_list = [1, 2, 3]\nmy_iter = iter(my_list)\nnext(my_iter)\nnext(my_iter)\nprint(next(my_iter))",
+    "options": [
+      "1",
+      "2",
+      "StopIteration"
+    ],
+    "answer": "3",
+    "explanation": "Each call to next() advances the iterator. The third call retrieves the third element (3)."
+  },
+  {
+    "question": "In the context of 'Writing Maintainable Code,' what is 'Dead Code'?",
+    "options": [
+      "Code that is used to handle fatal system errors.",
+      "Code that has a bug and causes a crash.",
+      "Code that is written in a language other than Python."
+    ],
+    "answer": "Code that is never executed and serves no purpose in the current application.",
+    "explanation": "Dead code should be removed to reduce complexity and avoid confusion during future maintenance."
+  },
+  {
+    "question": "How do you manually delete an object `x` so that its reference count decreases immediately?",
+    "options": [
+      "x.dispose()",
+      "x.clear()",
+      "gc.remove(x)"
+    ],
+    "answer": "del x",
+    "explanation": "The 'del' keyword removes the binding of the name 'x' from the local or global namespace, which decrements the reference count of the object it pointed to."
+  },
+  {
+    "question": "Which SQL keyword is used to retrieve only unique values from a column?",
+    "options": [
+      "UNIQUE",
+      "GROUP BY",
+      "SINGLE"
+    ],
+    "answer": "DISTINCT",
+    "explanation": "SELECT DISTINCT is the standard SQL syntax for filtering out duplicate rows in a result set."
+  },
+  {
+    "question": "When implementing a 'Clone' method for a class that contains a list of sub-objects, why is `copy.deepcopy(self)` safer than `self.__class__(self.data)`?",
+    "options": [
+      "Deepcopy is faster than a constructor call.",
+      "Deepcopy ignores private attributes.",
+      "Deepcopy automatically connects to the database."
+    ],
+    "answer": "Deepcopy handles circular references and nested structures correctly without manual logic.",
+    "explanation": "Manually creating a clone via a constructor requires you to manually copy every attribute, which is error-prone and doesn't handle objects that reference themselves."
+  },
+  {
+    "question": "What is the purpose of the `else` clause in a `try...except` block?",
+    "options": [
+      "To provide code that runs only if an exception was raised.",
+      "To provide code that runs regardless of an exception.",
+      "To provide a default exception handler."
+    ],
+    "answer": "To run code that should only execute if the 'try' block was successful (no exceptions raised).",
+    "explanation": "This allows you to separate the 'risky' code (in the try block) from the logic that depends on its success, improving readability."
+  },
+  {
+    "question": "In a Linear Search of a list containing $n$ elements, what is the worst-case time complexity if the element is not in the list?",
+    "options": [
+      "$O(1)$",
+      "$O(\\log n)$",
+      "$O(n^2)$"
+    ],
+    "answer": "$O(n)$",
+    "explanation": "If the element is missing, Linear Search must check every single element in the list before concluding it is not there."
+  },
+  {
+    "question": "Which of the following is a symptom of 'Fragile Code'?",
+    "options": [
+      "The code is too fast to debug.",
+      "The code uses too many comments.",
+      "The code is written in a modular way."
+    ],
+    "answer": "A small change in one part of the system causes unrelated parts to break.",
+    "explanation": "Fragile code often results from high coupling and a lack of proper encapsulation or automated tests."
+  },
+  {
+    "question": "What is the 'Collections' interface method used to check if a specific key exists in a dictionary?",
+    "options": [
+      "dict.has_key(key)",
+      "dict.exists(key)",
+      "dict.contains(key)"
+    ],
+    "answer": "key in dict",
+    "explanation": "The 'in' operator (which calls __contains__) is the standard and most efficient way to check for key existence in a Python dictionary."
+  },
+  {
+    "question": "You implement a `__del__` method that prints 'Cleanup'. You create an object, then the program ends. The message is never printed. Why?",
+    "options": [
+      "__del__ is only for classes that inherit from 'Object'.",
+      "The object was too small for the GC to notice.",
+      "You didn't call super().__del__()."
+    ],
+    "answer": "Python does not guarantee that __del__ methods are called for objects that still exist when the interpreter exits.",
+    "explanation": "During interpreter shutdown, the order of object destruction is not guaranteed, and some __del__ methods may be skipped to prevent errors."
+  },
+  {
+    "question": "To allow your custom class to be used with the `len()` function, which method should you implement?",
+    "options": [
+      "__length__",
+      "__size__",
+      "__count__"
+    ],
+    "answer": "__len__",
+    "explanation": "The built-in len() function calls the __len__ magic method of the object passed to it."
+  },
+  {
+    "question": "Which refactoring technique is used to improve code where several functions are passed the same group of parameters over and over?",
+    "options": [
+      "Inline Class",
+      "Remove Parameter",
+      "Encapsulate Field"
+    ],
+    "answer": "Introduce Parameter Object",
+    "explanation": "By grouping related parameters into a single object (or dataclass), you simplify function signatures and make the code easier to maintain."
+  },
+  {
+    "question": "What happens if you try to use `+` on two objects of a class that does NOT implement `__add__`?",
+    "options": [
+      "It concatenates their string representations.",
+      "It returns a tuple of the two objects.",
+      "It performs a bitwise addition of their memory addresses."
+    ],
+    "answer": "It raises a TypeError.",
+    "explanation": "Operators in Python are mapped to magic methods. If the method isn't implemented, the operation is not supported."
+  },
+  {
+    "question": "In a database application, what is a 'Connection Pool'?",
+    "options": [
+      "A set of SQL queries stored in a list.",
+      "A way to share a single cursor across multiple threads.",
+      "A database table that stores user sessions."
+    ],
+    "answer": "A cache of database connections maintained so that connections can be reused.",
+    "explanation": "Opening and closing DB connections is expensive. A pool keeps a set of open connections ready to be 'rented' out, significantly improving performance."
+  },
+  {
+    "question": "You are debugging a list copy issue:\n\noriginal = [1, [2, 3]]\nclone = original[:]\nclone[1][0] = 99\n\nWhat is the value of original[1][0]?",
+    "options": [
+      "2",
+      "1",
+      "AttributeError"
+    ],
+    "answer": "99",
+    "explanation": "List slicing [:] creates a shallow copy. The nested list [2, 3] is not copied; both lists point to the same nested object."
+  },
+  {
+    "question": "Which of the following is an example of a 'Primitive Type' comparison in Python (conceptual level)?",
+    "options": [
+      "Comparing two custom class instances.",
+      "Comparing a list to a tuple.",
+      "Comparing two dictionary objects."
+    ],
+    "answer": "Comparing two integers using ==.",
+    "explanation": "While everything in Python is an object, integers and floats are often treated as 'primitive-like' because they are immutable and compared by value."
+  },
+  {
+    "question": "Which error handling approach is generally preferred in Python?",
+    "options": [
+      "LBYL (Look Before You Leap) - Checking if a file exists before opening it.",
+      "Ignoring all errors until the program crashes.",
+      "Using 'if' statements to check for null values."
+    ],
+    "answer": "EAFP (Easier to Ask Forgiveness than Permission) - Using try/except to handle errors as they occur.",
+    "explanation": "EAFP is the Pythonic standard. It is often faster and avoids 'race conditions' (e.g., a file being deleted between checking for it and opening it)."
+  },
+  {
+    "question": "What is the result of `1.0 == 1` and `1.0 is 1`?",
+    "options": [
+      "True, True",
+      "False, False",
+      "False, True"
+    ],
+    "answer": "True, False",
+    "explanation": "1.0 and 1 have the same value (True), but they are different types (float vs int) and thus different objects in memory (False)."
+  },
+  {
+    "question": "If a Binary Search is performed on the list `[10, 20, 30, 40, 50]` searching for `15`, how many comparisons occur before the algorithm determines it is missing?",
+    "options": [
+      "1",
+      "5",
+      "0"
+    ],
+    "answer": "2 or 3 (depending on implementation)",
+    "explanation": "It checks the middle (30), then the middle of the lower half (20), then (10), narrowing the range until it is empty. This is far fewer than the 5 checks a linear search would need."
+  },
+  {
+    "question": "Which of the following is true about 'Modular' code?",
+    "options": [
+      "It must all be contained in a single large .py file.",
+      "It cannot use any external libraries.",
+      "It is code that is designed to run only on one specific operating system."
+    ],
+    "answer": "It is composed of independent, interchangeable parts that each handle a specific piece of functionality.",
+    "explanation": "Modularity allows for easier testing, debugging, and collaborative development."
+  },
+  {
+    "question": "What does `cursor.description` provide after a SELECT query?",
+    "options": [
+      "A text summary of the rows returned.",
+      "The full SQL query that was executed.",
+      "The error message if the query failed."
+    ],
+    "answer": "Metadata about the columns (name, type, etc.) of the result set.",
+    "explanation": "The description attribute is useful for identifying column names programmatically when the query is dynamic."
+  },
+  {
+    "question": "In Python, which built-in function is used to trigger the Garbage Collector's manual cleanup immediately?",
+    "options": [
+      "sys.gc()",
+      "os.cleanup()",
+      "builtins.collect()"
+    ],
+    "answer": "gc.collect()",
+    "explanation": "The 'gc' module's 'collect' function forces a collection of all generations."
+  },
+  {
+    "question": "When defining a custom iterator, what must the `__next__` method do when there are no more items to return?",
+    "options": [
+      "Return None.",
+      "Return False.",
+      "Delete the iterator."
+    ],
+    "answer": "Raise the StopIteration exception.",
+    "explanation": "The iteration protocol uses the StopIteration exception to signal the end of the data stream to the 'for' loop or other consumers."
+  },
+  {
+    "question": "What is the purpose of 'Refactoring' in a CI/CD pipeline?",
+    "options": [
+      "To change the API endpoints of the application.",
+      "To update the database schema.",
+      "To increase the version number of the software."
+    ],
+    "answer": "To maintain code quality and reduce technical debt as the codebase evolves.",
+    "explanation": "Regular refactoring ensures that the code remains understandable and flexible as new features are added."
+  },
+  {
+    "question": "A class has many attributes. You want to provide a way to create a copy with only one attribute changed. What is a clean way to implement this?",
+    "options": [
+      "Write a loop that copies everything manually.",
+      "Use 'del' on the original object after copying it.",
+      "Always use global variables so you don't need to copy."
+    ],
+    "answer": "Implement a 'clone' method that uses copy.deepcopy and then modifies the specific attribute.",
+    "explanation": "This encapsulates the logic of 'cloning with modification' inside the class, following OOP principles."
+  },
+  {
+    "question": "Which collection type is 'unhashable' and thus cannot be used as a dictionary key?",
+    "options": [
+      "frozenset",
+      "str",
+      "int"
+    ],
+    "answer": "list",
+    "explanation": "Mutable objects (like lists) cannot be hashed because their contents can change, which would break the hash table lookup logic."
+  },
+  {
+    "question": "What is 'Code Smell'?",
+    "options": [
+      "An error that prevents the code from running.",
+      "A comment that contains offensive language.",
+      "A security vulnerability that allows hacking."
+    ],
+    "answer": "A surface-level indicator that there may be a deeper problem in the code's design or structure.",
+    "explanation": "Examples include duplicated code, long parameter lists, or large classes. They aren't necessarily bugs, but they make bugs more likely."
+  },
+  {
+    "question": "Which method is called when an object is used in a 'with' statement?",
+    "options": [
+      "__start__",
+      "__open__",
+      "__with__"
+    ],
+    "answer": "__enter__",
+    "explanation": "The context management protocol requires __enter__ (called at the start) and __exit__ (called at the end)."
+  }
+]
