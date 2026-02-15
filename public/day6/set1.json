@@ -1,1 +1,503 @@
+[
+  {
+    "question": "Apakah maksud akronim HTTP dalam konteks pembangunan web?",
+    "options": [
+      "Hyper Text Transfer Protocol",
+      "High Tech Transfer Process",
+      "Hyper Tool Text Protocol"
+    ],
+    "answer": "Hyper Text Transfer Protocol",
+    [span_2](start_span)"explanation": "HTTP (Hyper Text Transfer Protocol) adalah protokol asas yang digunakan untuk menghantar data di World Wide Web[span_2](end_span)."
+  },
+  {
+    "question": "Antara berikut, yang manakah merupakan komponen utama dalam 'URL'?",
+    "options": [
+      "User Resource Locator",
+      "Uniform Resource Locator",
+      "Universal Road Location"
+    ],
+    "answer": "Uniform Resource Locator",
+    [span_3](start_span)"explanation": "URL (Uniform Resource Locator) berfungsi sebagai alamat unik untuk mengenal pasti sumber di internet[span_3](end_span)."
+  },
+  {
+    "question": "Tag HTML manakah yang digunakan untuk menentukan struktur dokumen yang paling luar?",
+    "options": [
+      "<html>",
+      "<body>",
+      "<head>"
+    ],
+    "answer": "<html>",
+    [span_4](start_span)"explanation": "Elemen <html> merupakan akar (root) bagi sesuatu dokumen HTML yang merangkumi keseluruhan kandungan halaman[span_4](end_span)."
+  },
+  {
+    "question": "Apakah kegunaan elemen <head> dalam dokumen HTML?",
+    "options": [
+      "Memaparkan tajuk utama di dalam halaman web.",
+      "Mengandungi metadata dan pautan ke fail CSS atau skrip.",
+      "Menyimpan kandungan visual utama halaman."
+    ],
+    "answer": "Mengandungi metadata dan pautan ke fail CSS atau skrip.",
+    [span_5](start_span)"explanation": "Bahagian <head> mengandungi maklumat tentang dokumen (metadata) yang tidak dipaparkan secara langsung kepada pengguna[span_5](end_span)."
+  },
+  {
+    "question": "Elemen HTML manakah yang digunakan untuk membuat perenggan?",
+    "options": [
+      "<para>",
+      "<pg>",
+      "<p>"
+    ],
+    "answer": "<p>",
+    [span_6](start_span)"explanation": "Tag <p> digunakan untuk mendefinisikan perenggan teks dalam HTML[span_6](end_span)."
+  },
+  {
+    "question": "Berapakah bilangan tahap 'Heading' yang tersedia dalam HTML secara standard?",
+    "options": [
+      "3 (h1 hingga h3)",
+      "6 (h1 hingga h6)",
+      "5 (h1 hingga h5)"
+    ],
+    "answer": "6 (h1 hingga h6)",
+    [span_7](start_span)"explanation": "HTML menyediakan enam tahap tajuk, dari <h1> yang paling penting hingga <h6> yang paling kecil[span_7](end_span)."
+  },
+  {
+    "question": "Antara berikut, yang manakah merupakan 'Empty Element' dalam HTML?",
+    "options": [
+      "<br>",
+      "<div>",
+      "<ul>"
+    ],
+    "answer": "<br>",
+    [span_8](start_span)"explanation": "Empty elements adalah tag yang tidak mempunyai kandungan atau tag penutup, seperti <br> (line break)[span_8](end_span)."
+  },
+  {
+    "question": "Tag manakah yang digunakan untuk mencipta senarai tidak berurut (bullet points)?",
+    "options": [
+      "<ol>",
+      "<li>",
+      "<ul>"
+    ],
+    "answer": "<ul>",
+    [span_9](start_span)"explanation": "<ul> (Unordered List) digunakan untuk membuat senarai dengan simbol peluru (bullets)[span_9](end_span)."
+  },
+  {
+    "question": "Apakah atribut yang wajib digunakan dalam tag <a> untuk menentukan destinasi pautan?",
+    "options": [
+      "src",
+      "href",
+      "link"
+    ],
+    "answer": "href",
+    [span_10](start_span)"explanation": "Atribut 'href' (hypertext reference) menyatakan URL halaman atau sumber yang dituju oleh pautan tersebut[span_10](end_span)."
+  },
+  {
+    "question": "Tag HTML manakah yang digunakan untuk memasukkan imej ke dalam halaman?",
+    "options": [
+      "<image>",
+      "<img>",
+      "<pic>"
+    ],
+    "answer": "<img>",
+    [span_11](start_span)"explanation": "Tag <img> digunakan untuk memaparkan imej dan memerlukan atribut 'src' untuk menentukan laluan fail imej[span_11](end_span)."
+  },
+  {
+    "question": "Apakah perbezaan utama antara elemen 'Block-level' dan 'Inline'?",
+    "options": [
+      "Block-level bermula di baris baru dan mengambil lebar penuh, manakala Inline hanya mengambil lebar mengikut kandungan.",
+      "Inline bermula di baris baru, manakala Block-level tidak.",
+      "Tiada perbezaan nyata antara keduanya."
+    ],
+    "answer": "Block-level bermula di baris baru dan mengambil lebar penuh, manakala Inline hanya mengambil lebar mengikut kandungan.",
+    [span_12](start_span)"explanation": "Elemen block-level seperti <div> sentiasa bermula di baris baru, manakala elemen inline seperti <span> berada dalam aliran teks[span_12](end_span)."
+  },
+  {
+    "question": "Tag manakah yang digunakan sebagai bekas (container) generik untuk elemen block-level?",
+    "options": [
+      "<span>",
+      "<div>",
+      "<section>"
+    ],
+    "answer": "<div>",
+    [span_13](start_span)"explanation": "<div> adalah elemen pembahagi yang digunakan untuk mengelompokkan elemen lain dalam kategori block-level[span_13](end_span)."
+  },
+  {
+    "question": "Elemen HTML5 manakah yang digunakan secara khusus untuk navigasi laman web?",
+    "options": [
+      "<header>",
+      "<nav>",
+      "<footer"
+    ],
+    "answer": "<nav>",
+    [span_14](start_span)"explanation": "<nav> adalah elemen semantik HTML5 yang direka khusus untuk mengandungi pautan navigasi[span_14](end_span)."
+  },
+  {
+    "question": "Dalam jadual HTML (Table), tag manakah yang digunakan untuk mendefinisikan baris?",
+    "options": [
+      "<td>",
+      "<th>",
+      "<tr>"
+    ],
+    "answer": "<tr>",
+    [span_15](start_span)"explanation": "<tr> bermaksud 'table row' dan digunakan untuk mencipta baris dalam jadual[span_15](end_span)."
+  },
+  {
+    "question": "Apakah kegunaan atribut 'alt' pada tag <img>?",
+    "options": [
+      "Menentukan saiz imej.",
+      "Menyediakan teks alternatif jika imej gagal dipaparkan.",
+      "Menukar format fail imej."
+    ],
+    "answer": "Menyediakan teks alternatif jika imej gagal dipaparkan.",
+    [span_16](start_span)"explanation": "Atribut 'alt' sangat penting untuk aksesibiliti dan dipaparkan jika imej tidak dapat dimuatkan[span_16](end_span)."
+  },
+  {
+    "question": "Apakah fungsi utama Cascading Style Sheets (CSS)?",
+    "options": [
+      "Menentukan struktur logik data.",
+      "Mengawal gaya visual dan susun atur halaman web.",
+      "Menyimpan data pengguna dalam pangkalan data."
+    ],
+    "answer": "Mengawal gaya visual dan susun atur halaman web.",
+    [span_17](start_span)"explanation": "CSS digunakan untuk menentukan rupa bentuk halaman, termasuk warna, fon, dan kedudukan elemen[span_17](end_span)."
+  },
+  {
+    "question": "Manakah antara berikut adalah cara untuk memasukkan CSS secara 'Inline'?",
+    "options": [
+      "Menggunakan tag <style> di dalam <head>.",
+      "Menggunakan fail .css luaran.",
+      "Menggunakan atribut style langsung pada tag HTML."
+    ],
+    "answer": "Menggunakan atribut style langsung pada tag HTML.",
+    [span_18](start_span)"explanation": "Inline style digunakan dengan menambah atribut 'style' terus ke dalam elemen HTML tertentu[span_18](end_span)."
+  },
+  {
+    "question": "Apakah kelebihan utama menggunakan 'Linked Stylesheet' (Fail CSS luaran)?",
+    "options": [
+      "Ia menjadikan kod HTML lebih panjang.",
+      "Membolehkan perubahan gaya dilakukan pada banyak halaman serentak dengan menukar satu fail sahaja.",
+      "Ia hanya boleh digunakan untuk satu elemen sahaja."
+    ],
+    "answer": "Membolehkan perubahan gaya dilakukan pada banyak halaman serentak dengan menukar satu fail sahaja.",
+    [span_19](start_span)"explanation": "Fail CSS luaran memisahkan kandungan (HTML) daripada reka bentuk (CSS), memudahkan pengurusan laman web yang besar[span_19](end_span)."
+  },
+  {
+    "question": "Dalam CSS, simbol '#' digunakan untuk memilih elemen berdasarkan apa?",
+    "options": [
+      "Class",
+      "ID",
+      "Tag Name"
+    ],
+    "answer": "ID",
+    [span_20](start_span)"explanation": "Selector ID menggunakan simbol '#' (hash) untuk memilih elemen unik pada halaman[span_20](end_span)."
+  },
+  {
+    "question": "Manakah antara berikut merupakan selector untuk 'Class' dalam CSS?",
+    "options": [
+      ".",
+      "#",
+      "*"
+    ],
+    "answer": ".",
+    [span_21](start_span)"explanation": "Selector Class menggunakan simbol titik (.) diikuti dengan nama kelas[span_21](end_span)."
+  },
+  {
+    "question": "Apakah harta (property) CSS yang digunakan untuk menukar warna latar belakang sesuatu elemen?",
+    "options": [
+      "color",
+      "bg-color",
+      "background-color"
+    ],
+    "answer": "background-color",
+    [span_22](start_span)"explanation": "Property 'background-color' digunakan untuk menetapkan warna latar belakang elemen[span_22](end_span)."
+  },
+  {
+    "question": "Apakah itu Bootstrap?",
+    "options": [
+      "Satu bahasa pengaturcaraan baru.",
+      "Framework front-end untuk pembangunan web responsif dan pantas.",
+      "Satu jenis pelayar web (browser)."
+    ],
+    "answer": "Framework front-end untuk pembangunan web responsif dan pantas.",
+    [span_23](start_span)[span_24](start_span)"explanation": "Bootstrap adalah framework CSS yang popular untuk membina laman web yang mesra peranti mudah alih[span_23](end_span)[span_24](end_span)."
+  },
+  {
+    "question": "Dalam konteks Bootstrap, apakah maksud 'Responsive Design'?",
+    "options": [
+      "Laman web yang memberi maklum balas pantas kepada klik tetikus.",
+      "Reka bentuk yang menyesuaikan susun aturnya mengikut saiz skrin peranti.",
+      "Laman web yang hanya berfungsi di komputer meja."
+    ],
+    "answer": "Reka bentuk yang menyesuaikan susun aturnya mengikut saiz skrin peranti.",
+    [span_25](start_span)"explanation": "Responsive design membolehkan laman web kelihatan baik pada semua saiz skrin (telefon, tablet, desktop)[span_25](end_span)."
+  },
+  {
+    "question": "Elemen input HTML manakah yang digunakan untuk membolehkan pengguna memilih satu pilihan sahaja daripada senarai?",
+    "options": [
+      "Checkbox",
+      "Radio button",
+      "Text area"
+    ],
+    "answer": "Radio button",
+    [span_26](start_span)"explanation": "Radio button digunakan apabila pengguna hanya boleh memilih satu nilai daripada kumpulan pilihan[span_26](end_span)."
+  },
+  {
+    "question": "Apakah fungsi tag <form> dalam HTML?",
+    "options": [
+      "Untuk membuat susun atur grid.",
+      "Untuk mengumpul input pengguna dan menghantarnya ke pelayan.",
+      "Hanya untuk memaparkan teks statik."
+    ],
+    "answer": "Untuk mengumpul input pengguna dan menghantarnya ke pelayan.",
+    [span_27](start_span)"explanation": "Tag <form> bertindak sebagai bekas untuk pelbagai elemen input yang membolehkan interaksi pengguna[span_27](end_span)."
+  },
+  {
+    "question": "Antara berikut, yang manakah merupakan komponen halaman (Page Components) dalam Bootstrap?",
+    "options": [
+      "Navbars, Buttons, dan Alerts.",
+      "Hanya imej JPEG.",
+      "Hanya pautan teks sahaja."
+    ],
+    "answer": "Navbars, Buttons, dan Alerts.",
+    [span_28](start_span)"explanation": "Bootstrap menyediakan pelbagai komponen siap pakai seperti navigasi, butang, dan kotak amaran untuk mempercepatkan pembangunan[span_28](end_span)."
+  },
+  {
+    "question": "Apakah yang dimaksudkan dengan 'Progressive Enhancement'?",
+    "options": [
+      "Memastikan laman web hanya berfungsi pada pelayar yang paling moden.",
+      "Strategi membina fungsi asas dahulu, kemudian menambah ciri canggih untuk pelayar yang lebih baik.",
+      "Menghapuskan sokongan untuk pelayar lama secara total."
+    ],
+    "answer": "Strategi membina fungsi asas dahulu, kemudian menambah ciri canggih untuk pelayar yang lebih baik.",
+    [span_29](start_span)"explanation": "Progressive enhancement memastikan kandungan dapat dicapai oleh semua, sambil memberikan pengalaman terbaik kepada pelayar moden[span_29](end_span)."
+  },
+  {
+    "question": "Mengapa pengesanan pelayar (detecting browsers) penting dalam Quality Assurance web?",
+    "options": [
+      "Untuk menghalang pengguna tertentu daripada melayari web.",
+      "Untuk memastikan pengalaman pengguna yang konsisten merentas pelbagai pelayar.",
+      "Untuk meningkatkan kelajuan internet pengguna."
+    ],
+    "answer": "Untuk memastikan pengalaman pengguna yang konsisten merentas pelbagai pelayar.",
+    [span_30](start_span)"explanation": "Cross-browser testing dilakukan untuk memastikan kod HTML/CSS berfungsi dengan betul di Chrome, Safari, Firefox, dsb[span_30](end_span)."
+  },
+  {
+    "question": "Apakah tag yang digunakan untuk memasukkan komen dalam kod HTML?",
+    "options": [
+      "// Ini komen",
+      "/* Ini komen */",
+      ""
+    ],
+    "answer": "",
+    [span_31](start_span)"explanation": "Komen HTML bermula dengan untuk nota pembangun[span_31](end_span)."
+  },
+  {
+    "question": "Manakah antara berikut adalah elemen 'Structural' dalam HTML5?",
+    "options": [
+      "<b>",
+      "<header>",
+      "<i>"
+    ],
+    "answer": "<header>",
+    [span_32](start_span)"explanation": "<header> adalah elemen struktur yang mendefinisikan bahagian pengenalan halaman[span_32](end_span)."
+  },
+  {
+    "question": "Apakah kegunaan tag <span>?",
+    "options": [
+      "Untuk mengelompokkan elemen dalam baris yang sama (inline container).",
+      "Untuk membuat baris baru secara automatik.",
+      "Untuk membuat tajuk besar."
+    ],
+    "answer": "Untuk mengelompokkan elemen dalam baris yang sama (inline container).",
+    [span_33](start_span)"explanation": "<span> digunakan untuk memberi gaya kepada sebahagian kecil teks atau elemen dalam satu baris tanpa memulakan baris baru[span_33](end_span)."
+  },
+  {
+    "question": "Atribut HTML manakah yang digunakan untuk membuka pautan dalam tab baru?",
+    "options": [
+      "target='_blank'",
+      "target='_new'",
+      "open='tab'"
+    ],
+    "answer": "target='_blank'",
+    [span_34](start_span)"explanation": "Nilai '_blank' pada atribut target mengarahkan pelayar untuk membuka pautan di tab atau tetingkap baru[span_34](end_span)."
+  },
+  {
+    "question": "Bagaimanakah cara menulis komen dalam CSS?",
+    "options": [
+      "// komen",
+      "/* komen */",
+      "# komen"
+    ],
+    "answer": "/* komen */",
+    [span_35](start_span)"explanation": "Komen CSS diletakkan di antara /* dan */[span_35](end_span)."
+  },
+  {
+    "question": "Apakah tujuan menggunakan elemen <label> dalam borang HTML?",
+    "options": [
+      "Untuk menghiasi butang.",
+      "Meningkatkan aksesibiliti dengan mengaitkan teks penerangan dengan elemen input.",
+      "Untuk menyimpan kata laluan."
+    ],
+    "answer": "Meningkatkan aksesibiliti dengan mengaitkan teks penerangan dengan elemen input.",
+    [span_36](start_span)"explanation": "Elemen <label> membolehkan pengguna klik pada teks untuk memfokuskan kepada input berkaitan[span_36](end_span)."
+  },
+  {
+    "question": "Tag HTML manakah yang digunakan untuk mendefinisikan senarai berurut (nombor)?",
+    "options": [
+      "<ul>",
+      "<list>",
+      "<ol>"
+    ],
+    "answer": "<ol>",
+    [span_37](start_span)"explanation": "<ol> bermaksud Ordered List yang secara automatik menomborkan setiap item senarai[span_37](end_span)."
+  },
+  {
+    "question": "Dalam CSS, apakah perbezaan antara selector 'p' dan '.p'?",
+    "options": [
+      "'p' memilih semua elemen perenggan, manakala '.p' memilih elemen dengan class bernama 'p'.",
+      "Tiada perbezaan.",
+      "'p' memilih ID, '.p' memilih tag."
+    ],
+    "answer": "'p' memilih semua elemen perenggan, manakala '.p' memilih elemen dengan class bernama 'p'.",
+    [span_38](start_span)"explanation": "Tanpa titik adalah selector elemen; dengan titik adalah selector kelas[span_38](end_span)."
+  },
+  {
+    "question": "Atribut input HTML5 manakah yang digunakan untuk memastikan medan tidak dibiarkan kosong sebelum dihantar?",
+    "options": [
+      "validate",
+      "required",
+      "not-null"
+    ],
+    "answer": "required",
+    [span_39](start_span)"explanation": "Atribut 'required' melakukan pengesahan automatik di pihak pelayar (client-side validation)[span_39](end_span)."
+  },
+  {
+    "question": "Antara berikut, yang manakah merupakan alat (tool) pembangunan web yang disebut dalam panduan?",
+    "options": [
+      "Web development editors",
+      "Photoshop",
+      "Microsoft Word"
+    ],
+    "answer": "Web development editors",
+    [span_40](start_span)"explanation": "Pembangun menggunakan editor khusus (seperti VS Code) untuk menulis kod HTML dan CSS[span_40](end_span)."
+  },
+  {
+    "question": "Apakah peranan utama 'Browsers' (Pelayar Web)?",
+    "options": [
+      "Untuk mencipta fail gambar.",
+      "Untuk menterjemah kod HTML/CSS dan memaparkannya kepada pengguna.",
+      "Untuk menyimpan pangkalan data secara kekal."
+    ],
+    "answer": "Untuk menterjemah kod HTML/CSS dan memaparkannya kepada pengguna.",
+    [span_41](start_span)"explanation": "Pelayar seperti Chrome atau Firefox membaca kod web dan merendernya menjadi visual yang kita lihat[span_41](end_span)."
+  },
+  {
+    "question": "Tag manakah yang digunakan untuk membuat teks menjadi tebal (bold) mengikut elemen pemformatan?",
+    "options": [
+      "<bold>",
+      "<b>",
+      "<thick>"
+    ],
+    "answer": "<b>",
+    [span_42](start_span)"explanation": "Tag <b> digunakan untuk menebalkan teks tanpa memberi kepentingan tambahan[span_42](end_span)."
+  },
+  {
+    "question": "Apakah elemen HTML yang digunakan untuk membuat baris baru (line break)?",
+    "options": [
+      "<lb>",
+      "<break>",
+      "<br>"
+    ],
+    "answer": "<br>",
+    [span_43](start_span)"explanation": "Tag <br> memasukkan satu baris putus tanpa memulakan perenggan baru[span_43](end_span)."
+  },
+  {
+    "question": "Dalam Bootstrap, komponen 'Navbar' digunakan untuk apa?",
+    "options": [
+      "Navigasi laman web.",
+      "Memaparkan video.",
+      "Menghantar borang."
+    ],
+    "answer": "Navigasi laman web.",
+    [span_44](start_span)"explanation": "Navbar adalah bar navigasi responsif yang biasanya terletak di bahagian atas halaman[span_44](end_span)."
+  },
+  {
+    "question": "Manakah yang benar tentang HTML5?",
+    "options": [
+      "Ia tidak menyokong elemen video.",
+      "Ia memperkenalkan elemen semantik baru seperti <article> dan <section>.",
+      "Ia memerlukan plugin tambahan untuk berfungsi."
+    ],
+    "answer": "Ia memperkenalkan elemen semantik baru seperti <article> dan <section>.",
+    [span_45](start_span)"explanation": "HTML5 direka untuk memberikan makna yang lebih jelas kepada struktur dokumen melalui elemen semantik[span_45](end_span)."
+  },
+  {
+    "question": "Apakah yang dimaksudkan dengan 'Design Concept' dalam pembangunan web?",
+    "options": [
+      "Menulis kod tanpa perancangan.",
+      "Idea atau tema utama yang membimbing reka bentuk visual dan fungsi laman web.",
+      "Hanya tentang memilih warna kegemaran."
+    ],
+    "answer": "Idea atau tema utama yang membimbing reka bentuk visual dan fungsi laman web.",
+    [span_46](start_span)"explanation": "Konsep reka bentuk adalah langkah awal dalam menentukan hala tuju visual sesuatu projek web[span_46](end_span)."
+  },
+  {
+    "question": "Antara berikut, yang manakah merupakan input element dalam HTML5?",
+    "options": [
+      "<input type='date'>",
+      "<input type='link'>",
+      "<input type='image-file'>"
+    ],
+    "answer": "<input type='date'>",
+    [span_47](start_span)"explanation": "HTML5 memperkenalkan pelbagai jenis input baru seperti 'date', 'email', dan 'range'[span_47](end_span)."
+  },
+  {
+    "question": "Apakah peranan 'Quality Assurance' dalam pembangunan web?",
+    "options": [
+      "Memastikan laman web bebas daripada pepijat (bugs) dan berfungsi dengan baik.",
+      "Hanya untuk menukar warna teks.",
+      "Menulis kandungan artikel sahaja."
+    ],
+    "answer": "Memastikan laman web bebas daripada pepijat (bugs) dan berfungsi dengan baik.",
+    [span_48](start_span)"explanation": "QA melibatkan pengujian untuk memastikan produk memenuhi standard kualiti dan berfungsi mengikut spesifikasi[span_48](end_span)."
+  },
+  {
+    "question": "Tag HTML manakah yang digunakan untuk membuat pautan (hyperlink)?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>"
+    ],
+    "answer": "<a>",
+    [span_49](start_span)"explanation": "Tag <a> (anchor) digunakan untuk menghubungkan satu halaman ke halaman yang lain[span_49](end_span)."
+  },
+  {
+    "question": "Dalam CSS, 'Embedded Stylesheet' diletakkan di mana?",
+    "options": [
+      "Dalam fail .js yang berasingan.",
+      "Dalam tag <style> di dalam bahagian <head> dokumen HTML.",
+      "Terus di dalam tag <body> tanpa sebarang tag pembungkus."
+    ],
+    "answer": "Dalam tag <style> di dalam bahagian <head> dokumen HTML.",
+    [span_50](start_span)"explanation": "Embedded atau Internal CSS digunakan untuk menetapkan gaya bagi satu halaman dokumen tertentu[span_50](end_span)."
+  },
+  {
+    "question": "Apakah simbol yang digunakan untuk menyatakan 'Special Characters' (Entities) dalam HTML?",
+    "options": [
+      "&",
+      "$",
+      "%"
+    ],
+    "answer": "&",
+    [span_51](start_span)"explanation": "Entiti HTML bermula dengan simbol ampersand (&) dan diakhiri dengan semicolon (;), contohnya &amp;[span_51](end_span)."
+  },
+  {
+    "question": "Dalam pembangunan web, apakah tujuan utama 'Home page layout'?",
+    "options": [
+      "Hanya untuk memaparkan iklan.",
+      "Menyediakan panduan visual dan navigasi utama bagi pelawat laman web.",
+      "Menyimpan maklumat sulit pentadbir."
+    ],
+    "answer": "Menyediakan panduan visual dan navigasi utama bagi pelawat laman web.",
+    [span_52](start_span)"explanation": "Susun atur halaman utama sangat kritikal kerana ia merupakan tanggapan pertama pengguna terhadap laman web tersebut[span_52](end_span)."
+  }
+]
 
