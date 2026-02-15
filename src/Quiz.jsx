@@ -19,6 +19,7 @@ export default function Quiz() {
     day3: { sets: [1, 2, 3, 4, 5], title: "Day 3", subtitle: "Programming Basics - 2 (Python)" },
     day4: { sets: [1, 2, 3, 4, 5], title: "Day 4", subtitle: "Object Oriented Programming - 1 (Python)" },
     day5: { sets: [1, 2, 3, 4, 5], title: "Day 5", subtitle: "Object Oriented Programming - 1 (Python)" },
+    day6: { sets: [1], title: "Day 6", subtitle: "Web Design & Development Fundamentals (Front-End) - 1" }
   };
 
   // Utility to shuffle array
