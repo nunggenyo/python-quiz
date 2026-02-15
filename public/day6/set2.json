@@ -1,32 +1,503 @@
 [
   {
-    "question": "Which protocol is primarily used by web browsers to communicate with web servers?",
-    "options": ["FTP (File Transfer Protocol)", "SMTP (Simple Mail Transfer Protocol)", "POP3 (Post Office Protocol)"],
-    "answer": "HTTP (Hyper Text Transfer Protocol)",
-    "explanation": "HTTP is the standard protocol for communication between browsers and servers. FTP is used for file transfers, SMTP for sending emails, and POP3 for retrieving emails."
+    "question": "Which organization defines the standards for the World Wide Web, including HTML and CSS?",
+    "options": [
+      "Google",
+      "Mozilla Foundation",
+      "Microsoft"
+    ],
+    "answer": "W3C (World Wide Web Consortium)",
+    "explanation": "The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web."
   },
   {
-    "question": "In HTML, which element is used to create a hyperlink?",
-    "options": ["<link>", "<nav>", "<span>"],
-    "answer": "<a>",
-    "explanation": "The <a> (anchor) tag is used to create hyperlinks. <link> is used for linking external resources like stylesheets, <nav> defines navigation sections, and <span> is used for inline grouping."
+    "question": "In the URL 'http://www.example.com/index.html', what does 'http' represent?",
+    "options": [
+      "The domain",
+      "The file path",
+      "The top-level domain"
+    ],
+    "answer": "The protocol",
+    "explanation": "HTTP is the protocol used to access the resource on the internet."
   },
   {
-    "question": "Which CSS property is used to change the text color of an element?",
-    "options": ["background-color", "font-style", "border-color"],
-    "answer": "color",
-    "explanation": "The 'color' property in CSS changes the text color. 'background-color' changes the background, 'font-style' modifies text style (italic, normal), and 'border-color' changes the border color."
+    "question": "Which HTML tag is used to create a definition list?",
+    "options": [
+      "<ul>",
+      "<list>",
+      "<dd>"
+    ],
+    "answer": "<dl>",
+    "explanation": "The <dl> tag defines a description list (or definition list), which contains terms (<dt>) and descriptions (<dd>)."
   },
   {
-    "question": "Which Bootstrap class is used to make a navigation bar responsive?",
-    "options": ["navbar-fixed", "navbar-static", "navbar-inline"],
-    "answer": "navbar-expand",
-    "explanation": "Bootstrap uses 'navbar-expand' classes (like navbar-expand-lg) to make navigation bars responsive. The other options are not valid Bootstrap classes for responsive navbars."
+    "question": "How do you open a link in a new browser tab or window using HTML?",
+    "options": [
+      "new='tab'",
+      "window='new'",
+      "target='new'"
+    ],
+    "answer": "target='_blank'",
+    "explanation": "The target='_blank' attribute in an anchor tag specifies that the linked document should open in a new tab or window."
   },
   {
-    "question": "What is the purpose of progressive enhancement in web design?",
-    "options": ["To remove advanced features for modern browsers", "To ensure websites only work on the latest browsers", "To simplify design by avoiding CSS and JavaScript"],
-    "answer": "To enhance content and functionality for capable browsers while maintaining basic access for all",
-    "explanation": "Progressive enhancement ensures that all users can access core content, while advanced browsers receive enhanced styles and features. It does not remove features or avoid CSS/JavaScript."
+    "question": "Which HTML element is used to create a multi-line text input?",
+    "options": [
+      "<input type='text' multiline>",
+      "<textfield>",
+      "<text>"
+    ],
+    "answer": "<textarea>",
+    "explanation": "The <textarea> element defines a multi-line text input control, often used for comments or longer messages."
+  },
+  {
+    "question": "What is the purpose of the 'colspan' attribute in an HTML table cell?",
+    "options": [
+      "To span multiple rows",
+      "To merge two tables",
+      "To color the span of the cell"
+    ],
+    "answer": "To make a cell span across multiple columns",
+    "explanation": "The 'colspan' attribute defines the number of columns a cell should span."
+  },
+  {
+    "question": "Which input type hides the characters typed by the user (appearing as dots or asterisks)?",
+    "options": [
+      "secure",
+      "hidden",
+      "text"
+    ],
+    "answer": "password",
+    "explanation": "<input type='password'> masks the characters for security, commonly used for password fields."
+  },
+  {
+    "question": "Which CSS property controls the type of cursor to be displayed when pointing over an element?",
+    "options": [
+      "pointer",
+      "mouse-style",
+      "hand"
+    ],
+    "answer": "cursor",
+    "explanation": "The 'cursor' property specifies the mouse cursor to be displayed when pointing over an element (e.g., cursor: pointer;)."
+  },
+  {
+    "question": "What does the CSS property 'display: none;' do?",
+    "options": [
+      "Makes the element transparent but keeps its space",
+      "Moves the element to the background",
+      "Minimizes the element"
+    ],
+    "answer": "Removes the element from the document flow and hides it",
+    "explanation": "'display: none' completely removes the element from the page layout, as if it were not there. It takes up no space."
+  },
+  {
+    "question": "Which CSS selector targets an element only when the mouse is over it?",
+    "options": [
+      ":mouse",
+      ":active",
+      ":focus"
+    ],
+    "answer":":hover",
+    "explanation": "The :hover pseudo-class adds a style to an element when the user mouses over it."
+  },
+  {
+    "question": "In the CSS Box Model, what is the transparent area outside the border?",
+    "options": [
+      "Padding",
+      "Content",
+      "Outline"
+    ],
+    "answer": "Margin",
+    "explanation": "The margin is the outermost layer of the box model, creating space outside the border between the element and its neighbors."
+  },
+  {
+    "question": "Which CSS property is used to make text bold?",
+    "options": [
+      "text-style",
+      "font-decoration",
+      "text-bold"
+    ],
+    "answer": "font-weight",
+    "explanation": "The 'font-weight' property sets how thick or thin characters in text should be displayed (e.g., bold, normal, 700)."
+  },
+  {
+    "question": "How do you indicate an 'important' style in CSS that overrides other specific rules?",
+    "options": [
+      "*important",
+      "override",
+      "priority"
+    ],
+    "answer": "!important",
+    "explanation": "The !important rule overrides normal cascading and specificity rules, ensuring that a specific style is applied."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a row in the grid system?",
+    "options": [
+      ".line",
+      ".grid-row",
+      ".container-row"
+    ],
+    "answer": ".row",
+    "explanation": "The .row class is used to create a horizontal group of columns in the Bootstrap grid system."
+  },
+  {
+    "question": "In Bootstrap, what does the class 'col-md-6' imply?",
+    "options": [
+      "A column taking up 6 pixels on medium devices",
+      "A column taking up 60% width on medium devices",
+      "A column with 6 rows on medium devices"
+    ],
+    "answer": "A column spanning 6 out of 12 grid units on medium-sized devices and up",
+    "explanation": "It specifies a column width of 6/12 (50%) for viewports that are at least 'medium' size (≥768px)."
+  },
+  {
+    "question": "Which Bootstrap utility class adds a margin to the top of an element?",
+    "options": [
+      "margin-top",
+      "m-top",
+      "mt-auto"
+    ],
+    "answer": "mt-* (e.g., mt-3)",
+    "explanation": "Bootstrap uses 'm' for margin and 't' for top, followed by a number (0-5) to define the size (e.g., mt-3)."
+  },
+  {
+    "question": "What is the primary purpose of a 'reset CSS' or 'normalize CSS' file?",
+    "options": [
+      "To add advanced animations to the page",
+      "To clear the browser's cache",
+      "To compress the CSS file size"
+    ],
+    "answer": "To reduce browser inconsistencies by setting default styles to a baseline",
+    "explanation": "Reset or Normalize CSS aims to make built-in browser styling consistent across different browsers (e.g., removing default margins)."
+  },
+  {
+    "question": "Which HTML element is used to embed another HTML page within the current page?",
+    "options": [
+      "<window>",
+      "<embed>",
+      "<frame>"
+    ],
+    "answer": "<iframe>",
+    "explanation": "The <iframe> tag specifies an inline frame, which is used to embed another document within the current HTML document."
+  },
+  {
+    "question": "What does the 'value' attribute define in an input field?",
+    "options": [
+      "The name of the input",
+      "The hint text",
+      "The maximum length of text"
+    ],
+    "answer": "The initial content or data of the input field",
+    "explanation": "The 'value' attribute specifies the default value that appears in the input field when the page loads."
+  },
+  {
+    "question": "Which character is used to separate multiple CSS properties within a declaration block?",
+    "options": [
+      ",",
+      ":",
+      "|"
+    ],
+    "answer": ";",
+    "explanation": "A semicolon (;) is used to separate each CSS property declaration."
+  },
+  {
+    "question": "Which hexadecimal color code represents pure white?",
+    "options": [
+      "#000000",
+      "#111111",
+      "#FF0000"
+    ],
+    "answer": "#FFFFFF",
+    "explanation": "#FFFFFF represents full intensity for Red, Green, and Blue, resulting in white."
+  },
+  {
+    "question": "Which HTML tag creates a drop-down list?",
+    "options": [
+      "<dropdown>",
+      "<list>",
+      "<input type='dropdown'>"
+    ],
+    "answer": "<select>",
+    "explanation": "The <select> element is used to create a drop-down list, containing <option> elements."
+  },
+  {
+    "question": "What is the function of the <meta charset='UTF-8'> tag?",
+    "options": [
+      "To set the language to English",
+      "To link a font file",
+      "To set the page background color"
+    ],
+    "answer": "To specify the character encoding for the HTML document",
+    "explanation": "It ensures the browser correctly interprets and displays characters, covering almost all characters and symbols in the world."
+  },
+  {
+    "question": "Which CSS position value positions an element relative to the browser window (viewport)?",
+    "options": [
+      "absolute",
+      "relative",
+      "static"
+    ],
+    "answer": "fixed",
+    "explanation": "An element with 'position: fixed;' is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled."
+  },
+  {
+    "question": "What is the HTML5 semantic element for main navigation links?",
+    "options": [
+      "<menu>",
+      "<links>",
+      "<header>"
+    ],
+    "answer": "<nav>",
+    "explanation": "The <nav> element defines a set of navigation links, intended for major blocks of navigation links."
+  },
+  {
+    "question": "Which CSS property specifies the transparency of an element?",
+    "options": [
+      "visibility",
+      "filter",
+      "transparent"
+    ],
+    "answer": "opacity",
+    "explanation": "The 'opacity' property sets the opacity level for an element, where 1 is opaque and 0 is fully transparent."
+  },
+  {
+    "question": "In a URL, what symbol typically separates the domain name from the path to the resource?",
+    "options": [
+      "@",
+      ":",
+      "#"
+    ],
+    "answer": "/",
+    "explanation": "Forward slashes (/) are used to separate the domain from the directory and file paths."
+  },
+  {
+    "question": "Which is a valid way to represent a color in CSS using RGB?",
+    "options": [
+      "color: rgb(255, 0, 0);",
+      "color: #rgb(255, 0, 0);",
+      "color: rgb{255, 0, 0};"
+    ],
+    "answer": "color: rgb(255, 0, 0);",
+    "explanation": "The syntax for RGB colors in CSS is rgb(red, green, blue), where each parameter defines the intensity of the color between 0 and 255."
+  },
+  {
+    "question": "Which Bootstrap class makes a table have striped rows?",
+    "options": [
+      ".table-zebra",
+      ".table-lines",
+      ".table-bordered"
+    ],
+    "answer": ".table-striped",
+    "explanation": "The .table-striped class adds zebra-striping to any table row within the <tbody>."
+  },
+  {
+    "question": "What does the 'method' attribute in a form tag specify?",
+    "options": [
+      "The input types allowed",
+      "The encryption type",
+      "The visual layout of the form"
+    ],
+    "answer": "How to send the form-data (GET or POST)",
+    "explanation": "The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data."
+  },
+  {
+    "question": "Which HTML tag is used to define emphasized text (typically displayed in italics)?",
+    "options": [
+      "<strong>",
+      "<bold>",
+      "<italic>"
+    ],
+    "answer": "<em>",
+    "explanation": "The <em> tag is used to define emphasized text, and the content inside is typically displayed in italic."
+  },
+  {
+    "question": "What is the default positioning of HTML elements?",
+    "options": [
+      "relative",
+      "fixed",
+      "absolute"
+    ],
+    "answer": "static",
+    "explanation": "HTML elements are positioned static by default, meaning they are positioned according to the normal flow of the page."
+  },
+  {
+    "question": "Which CSS property is used to align text horizontally?",
+    "options": [
+      "vertical-align",
+      "text-position",
+      "align-items"
+    ],
+    "answer": "text-align",
+    "explanation": "The 'text-align' property specifies the horizontal alignment of text in an element (e.g., center, left, right)."
+  },
+  {
+    "question": "Which HTML attribute specifies that an input field is read-only?",
+    "options": [
+      "locked",
+      "disabled",
+      "static"
+    ],
+    "answer": "readonly",
+    "explanation": "The 'readonly' attribute specifies that an input field cannot be modified (however, a user can tab to it, highlight it, and copy the text)."
+  },
+  {
+    "question": "In Bootstrap, which class creates a blue 'primary' button?",
+    "options": [
+      "btn-blue",
+      "btn-info",
+      "btn-default"
+    ],
+    "answer": "btn-primary",
+    "explanation": "Bootstrap uses semantic class names; 'btn-primary' typically styles the button with the theme's primary color (usually blue)."
+  },
+  {
+    "question": "What is the purpose of the <aside> element in HTML5?",
+    "options": [
+      "To display the main title",
+      "To create a footer",
+      "To create a navigation bar"
+    ],
+    "answer": "To define content aside from the page content (like a sidebar)",
+    "explanation": "The <aside> tag defines some content aside from the content it is placed in (like a sidebar), related to the surrounding content."
+  },
+  {
+    "question": "Which CSS property is used to create rounded corners?",
+    "options": [
+      "corner-radius",
+      "border-style",
+      "box-radius"
+    ],
+    "answer": "border-radius",
+    "explanation": "The 'border-radius' property defines the radius of the element's corners."
+  },
+  {
+    "question": "What does the 'target' attribute '_self' do?",
+    "options": [
+      "Opens the link in a new tab",
+      "Opens the link in a new window",
+      "Downloads the link"
+    ],
+    "answer": "Opens the linked document in the same frame/window as it was clicked",
+    "explanation": "This is the default behavior for links. It loads the new page in the current window."
+  },
+  {
+    "question": "Which HTML tag is used to define a list item?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<list>"
+    ],
+    "answer": "<li>",
+    "explanation": "The <li> tag defines a list item and is used inside both ordered (<ol>) and unordered (<ul>) lists."
+  },
+  {
+    "question": "What is the main benefit of using a 'class' selector over an 'id' selector in CSS?",
+    "options": [
+      "Classes have higher specificity",
+      "Classes are processed faster by the browser",
+      "Classes must be unique per page"
+    ],
+    "answer": "Classes can be reused on multiple elements",
+    "explanation": "Classes allow you to apply the same style rules to multiple elements on a single page, whereas an ID is unique to one element."
+  },
+  {
+    "question": "Which HTML5 input type is best for entering a website address?",
+    "options": [
+      "text",
+      "link",
+      "address"
+    ],
+    "answer": "url",
+    "explanation": "<input type='url'> is used for input fields that should contain a URL address and can provide automatic validation."
+  },
+  {
+    "question": "Which pseudo-class would you use to style a visited link?",
+    "options": [
+      ":active",
+      ":link",
+      ":hover"
+    ],
+    "answer": ":visited",
+    "explanation": "The :visited pseudo-class is used to select and style visited links."
+  },
+  {
+    "question": "What is the purpose of the HTML <main> element?",
+    "options": [
+      "To contain the site's logo",
+      "To contain the footer information",
+      "To contain the navigation"
+    ],
+    "answer": "To specify the main content of the document",
+    "explanation": "The <main> tag specifies the main content of a document, which should be unique to that document."
+  },
+  {
+    "question": "Which unit of measurement in CSS is relative to the size of the viewport width?",
+    "options": [
+      "px",
+      "em",
+      "vh"
+    ],
+    "answer": "vw",
+    "explanation": "The 'vw' unit stands for viewport width. 1vw is equal to 1% of the width of the viewport."
+  },
+  {
+    "question": "In web development, what is 'Client-Side Scripting'?",
+    "options": [
+      "Scripts that run on the web server",
+      "Scripts that manage the database",
+      "Scripts that configure the server hardware"
+    ],
+    "answer": "Scripts that run in the user's web browser",
+    "explanation": "Client-side scripting (like JavaScript) is executed by the browser on the user's computer, rather than on the web server."
+  },
+  {
+    "question": "Which Bootstrap class hides an element on all devices?",
+    "options": [
+      ".hidden",
+      ".invisible",
+      ".display-none"
+    ],
+    "answer": ".d-none",
+    "explanation": "The utility class .d-none sets the display property to none, hiding the element."
+  },
+  {
+    "question": "What is the semantic meaning of the <time> element?",
+    "options": [
+      "To set a timer on the page",
+      "To display a clock",
+      "To schedule a refresh"
+    ],
+    "answer": "To represent a specific period in time or a date",
+    "explanation": "The <time> element defines a specific time (24-hour clock) or a date in the Gregorian calendar, making it machine-readable."
+  },
+  {
+    "question": "Which attribute is used to combine two or more adjacent rows in a table?",
+    "options": [
+      "colspan",
+      "spanrow",
+      "mergerow"
+    ],
+    "answer": "rowspan",
+    "explanation": "The 'rowspan' attribute specifies the number of rows a cell should span."
+  },
+  {
+    "question": "What is the correct HTML to link an external JavaScript file?",
+    "options": [
+      "<script href='script.js'>",
+      "<link src='script.js'>",
+      "<js file='script.js'>"
+    ],
+    "answer": "<script src='script.js'></script>",
+    "explanation": "The <script> tag with the 'src' attribute is used to link to an external JavaScript file."
+  },
+  {
+    "question": "Which CSS property is used to change the font of an element?",
+    "options": [
+      "font-style",
+      "text-font",
+      "font-weight"
+    ],
+    "answer": "font-family",
+    "explanation": "The 'font-family' property specifies the font for an element (e.g., Arial, Times New Roman)."
   }
 ]
+
