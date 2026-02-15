@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What does the acronym HTTP stand for in the context of web communication?",
+    "options": [
+      "Hyper Text Transfer Protocol",
+      "Hyper Text Transmission Process",
+      "High Transfer Text Protocol"
+    ],
+    "answer": "Hyper Text Transfer Protocol",
+    "explanation": "HTTP stands for Hyper Text Transfer Protocol. It is the foundation of data communication on the World Wide Web, defining how messages are formatted and transmitted."
+  },
+  {
+    "question": "Which language is primarily used to structure content on a web page, such as defining headings, paragraphs, and lists?",
+    "options": [
+      "Cascading Style Sheets (CSS)",
+      "JavaScript (JS)",
+      "PHP: Hypertext Preprocessor"
+    ],
+    "answer": "Hyper Text Markup Language (HTML)",
+    "explanation": "HTML, or Hyper Text Markup Language, is the standard markup language used to create the structure and content of web pages. CSS handles styling, and JavaScript handles interactivity."
+  },
+  {
+    "question": "In a web browser's address bar, what is the part 'https://example.com' called?",
+    "options": [
+      "An IP Address",
+      "A Web Server Name",
+      "A Domain Name System (DNS) record"
+    ],
+    "answer": "A Uniform Resource Locator (URL)",
+    "explanation": "A URL, or Uniform Resource Locator, is the address of a resource on the internet. 'https://example.com' is a complete URL, specifying the protocol and domain name."
+  },
+  {
+    "question": "Which tool is a web development editor primarily used for?",
+    "options": [
+      "Compiling binary code",
+      "Rendering the final webpage design automatically",
+      "Managing database queries"
+    ],
+    "answer": "Writing and editing source code for websites",
+    "explanation": "A web development editor, also known as a code editor, is a text editor designed specifically for writing and editing code for websites, such as HTML, CSS, and JavaScript."
+  },
+  {
+    "question": "The principle of 'progressive enhancement' in web design suggests that you should:",
+    "options": [
+      "Build the most complex version first and then strip it down for older browsers",
+      "Use only the latest HTML5 and CSS3 features to ensure a modern look",
+      "Ignore older browsers to save development time"
+    ],
+    "answer": "Start with a solid, basic foundation of content and functionality, then add advanced layers for browsers that can handle them",
+    "explanation": "Progressive enhancement is a strategy that focuses on creating a basic, functional experience for all users, then adding enhanced features for browsers with more capabilities, ensuring broader accessibility."
+  },
+  {
+    "question": "What is the primary purpose of a website's navigation bar?",
+    "options": [
+      "To display the company's copyright information",
+      "To contain all the images on the website",
+      "To show the main heading of the current page"
+    ],
+    "answer": "To provide links to the main sections or pages of the website, allowing users to move around",
+    "explanation": "A navigation bar (or nav bar) is a set of links that helps users navigate through a website's different sections or pages, forming a key part of the site's user interface and information architecture."
+  },
+  {
+    "question": "Which HTML element is used to define the largest, most important heading?",
+    "options": [
+      "<heading>",
+      "<h6>",
+      "<head>"
+    ],
+    "answer": "<h1>",
+    "explanation": "The <h1> tag defines the most important heading in HTML. There are six levels of headings, from <h1> (most important) to <h6> (least important)."
+  },
+  {
+    "question": "In HTML, which tag is used to create a line break within a paragraph?",
+    "options": [
+      "<break>",
+      "<lb>",
+      "<brk>"
+    ],
+    "answer": "<br>",
+    "explanation": "The <br> tag (line break element) is an empty HTML element used to insert a single line break in text, such as within an address or a poem, without starting a new paragraph."
+  },
+  {
+    "question": "Which HTML element is used to display text in bold, primarily for stylistic purposes?",
+    "options": [
+      "<strong>",
+      "<em>",
+      "<mark>"
+    ],
+    "answer": "<b>",
+    "explanation": "The <b> tag is used to draw attention to text for purely stylistic purposes, making it bold without adding any extra importance. <strong> also makes text bold but indicates strong importance semantically."
+  },
+  {
+    "question": "What is the correct HTML syntax for adding a comment that will not be displayed in the browser?",
+    "options": [
+      "// This is a comment",
+      "/* This is a comment */",
+      "<! This is a comment >"
+    ],
+    "answer": "<!-- This is a comment -->",
+    "explanation": "In HTML, comments are enclosed within <!-- and -->. Anything between these markers is ignored by the browser and is not rendered on the webpage."
+  },
+  {
+    "question": "To display the copyright symbol (©) on an HTML page, you would use:",
+    "options": [
+      "&copy;",
+      "<copy>",
+      "#169;"
+    ],
+    "answer": "&copy;",
+    "explanation": "&copy; is an HTML entity used to display the copyright symbol (©). HTML entities are special codes used to display reserved or special characters."
+  },
+  {
+    "question": "Which type of HTML list would be best for creating a numbered list of steps in a recipe?",
+    "options": [
+      "Unordered List (<ul>)",
+      "Definition List (<dl>)",
+      "Menu List (<menu>)"
+    ],
+    "answer": "Ordered List (<ol>)",
+    "explanation": "An ordered list, defined by the <ol> tag, is used for lists where the order of items matters, and they are typically displayed with numbers or letters."
+  },
+  {
+    "question": "What is the purpose of the 'src' attribute in an HTML <img> tag?",
+    "options": [
+      "To provide a text description of the image for accessibility",
+      "To specify the alignment of the image on the page",
+      "To define the source of an image if the primary one fails"
+    ],
+    "answer": "To specify the URL or path to the image file",
+    "explanation": "The 'src' (source) attribute is required for the <img> tag. It tells the browser where to find the image file that should be displayed."
+  },
+  {
+    "question": "Which HTML attribute is used to define an anchor (a hyperlink) that users can click to navigate to another page?",
+    "options": [
+      "src",
+      "link",
+      "target"
+    ],
+    "answer": "href",
+    "explanation": "The 'href' (hypertext reference) attribute in an <a> (anchor) tag specifies the URL of the page the link goes to."
+  },
+  {
+    "question": "Which set of HTML tags is used to create a table?",
+    "options": [
+      "<thead>, <tbody>, <tfoot>",
+      "<tr>, <td>, <th>",
+      "<table>, <row>, <column>"
+    ],
+    "answer": "<table>, <tr>, <td>",
+    "explanation": "A table in HTML is built with the <table> tag as the container. Inside, <tr> defines a table row, and <td> defines a table cell (data) within that row. <th> is used for header cells."
+  },
+  {
+    "question": "What is the fundamental difference between block-level and inline elements in HTML?",
+    "options": [
+      "Block-level elements can only contain text, while inline elements can contain other elements",
+      "Inline elements start on a new line and take the full width, while block-level elements do not",
+      "Block-level elements are only used in the <body>, while inline elements are only used in the <head>"
+    ],
+    "answer": "Block-level elements typically start on a new line and take up the full width available, while inline elements only take up as much width as necessary and do not force line breaks",
+    "explanation": "Block-level elements (like <div>, <p>, <h1>) create a 'block' in the page layout, stacking vertically. Inline elements (like <span>, <a>, <img>) sit within a block of text and flow horizontally."
+  },
+  {
+    "question": "Why is the <div> element often described as a 'generic container'?",
+    "options": [
+      "It is used to group block-level and inline elements for styling or layout purposes, without any inherent semantic meaning",
+      "It is the only element that can contain interactive elements like buttons",
+      "It automatically creates a new row in the layout"
+    ],
+    "answer": "It is used to group block-level and inline elements for styling or layout purposes, without any inherent semantic meaning",
+    "explanation": "The <div> tag is a pure container that has no impact on content or layout unless styled with CSS. It is used to divide the document into sections for organizational or design reasons."
+  },
+  {
+    "question": "Which HTML form element allows users to select multiple options from a predefined list displayed in a box?",
+    "options": [
+      "Radio buttons (type='radio')",
+      "Dropdown list (<select>)",
+      "Checkboxes (type='checkbox')"
+    ],
+    "answer": "Dropdown list (<select>)",
+    "explanation": "A dropdown list, created with the <select> element, presents a list of options in a compact, drop-down menu. It can be configured to allow single or multiple selections."
+  },
+  {
+    "question": "What is the purpose of the HTML5 <article> element?",
+    "options": [
+      "To define a section of a page that contains navigation links",
+      "To define a self-contained, independent piece of content that could be syndicated or reused, like a forum post or news story",
+      "To define a thematic grouping of content, typically with a heading, like chapters or tabbed content"
+    ],
+    "answer": "To define a self-contained, independent piece of content that could be syndicated or reused, like a forum post or news story",
+    "explanation": "The <article> element is a semantic HTML5 tag used for content that makes sense on its own, such as a blog post, a news article, or a comment."
+  },
+  {
+    "question": "Which HTML5 input type is specifically designed for entering email addresses and provides basic validation on supporting browsers?",
+    "options": [
+      "type='text'",
+      "type='url'",
+      "type='tel'"
+    ],
+    "answer": "type='email'",
+    "explanation": "The input type 'email' is an HTML5 form control that tells the browser to expect an email address. Browsers that support it may provide built-in validation and show a customized keyboard on mobile devices."
+  },
+  {
+    "question": "What is the primary advantage of using an external CSS stylesheet over inline styles?",
+    "options": [
+      "External stylesheets load faster for the first page only",
+      "External stylesheets allow for more complex selectors",
+      "External stylesheets can only be used with JavaScript"
+    ],
+    "answer": "External stylesheets allow you to control the styling of an entire website from a single file, promoting consistency and easier maintenance",
+    "explanation": "By linking multiple HTML pages to one external .css file, any change made to that one file updates the appearance of all linked pages. This is a major advantage for site-wide styling and maintainability."
+  },
+  {
+    "question": "In CSS, what does a comment look like?",
+    "options": [
+      "// This is a CSS comment",
+      "<!-- This is a CSS comment -->",
+      "# This is a CSS comment"
+    ],
+    "answer": "/* This is a CSS comment */",
+    "explanation": "In CSS, comments are enclosed within /* and */. They can span multiple lines and are used to explain code, which is ignored by the browser."
+  },
+  {
+    "question": "Which CSS selector has the highest specificity, and thus its styles are most likely to be applied?",
+    "options": [
+      "Type Selector (e.g., p)",
+      "Class Selector (e.g., .example)",
+      "Universal Selector (*)"
+    ],
+    "answer": "ID Selector (e.g., #example)",
+    "explanation": "In CSS specificity hierarchy, ID selectors are more specific than class, attribute, and type selectors. Inline styles (not a selector) are even more specific, and the !important rule overrides all."
+  },
+  {
+    "question": "Which part of a CSS rule indicates which HTML elements the style should be applied to?",
+    "options": [
+      "Declaration",
+      "Property",
+      "Value"
+    ],
+    "answer": "Selector",
+    "explanation": "The CSS rule structure is: selector { property: value; }. The selector targets the HTML element(s) to be styled. The declaration block (inside {}) contains one or more property:value pairs."
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": [
+      "Computer Style Sheets",
+      "Creative Style Syntax",
+      "Cascading Style Syntax"
+    ],
+    "answer": "Cascading Style Sheets",
+    "explanation": "CSS stands for Cascading Style Sheets. It is a language used to describe the presentation and visual styling of a document written in a markup language like HTML."
+  },
+  {
+    "question": "What is the primary goal of responsive web design?",
+    "options": [
+      "To make a website load faster on all devices",
+      "To create a separate mobile version of the website",
+      "To use only the latest CSS features for a modern look"
+    ],
+    "answer": "To ensure a website's layout and content adapt smoothly and effectively to different screen sizes and devices (desktops, tablets, phones)",
+    "explanation": "Responsive web design uses flexible grids, flexible images, and CSS media queries to create a single website that provides an optimal viewing experience across a wide range of devices."
+  },
+  {
+    "question": "Which CSS feature is fundamental to Bootstrap's responsive grid system?",
+    "options": [
+      "CSS Animations",
+      "CSS Transforms",
+      "CSS Float"
+    ],
+    "answer": "CSS Media Queries",
+    "explanation": "Bootstrap's grid system uses media queries to apply different column widths and layout rules based on the viewport size (breakpoints), allowing content to rearrange and stack on different devices."
+  },
+  {
+    "question": "In Bootstrap, which class is used to create a responsive, fixed-width container that centers your content and has proper padding?",
+    "options": [
+      ".container-fluid",
+      ".row",
+      ".col"
+    ],
+    "answer": ".container",
+    "explanation": "The .container class is a fundamental Bootstrap layout component. It provides a responsive fixed-width container, setting appropriate margins and padding to center and contain your content."
+  },
+  {
+    "question": "In Bootstrap 4/5, to create a row with three equal-width columns on a medium screen and above, which set of classes would you apply to the columns?",
+    "options": [
+      "col-4 col-md-4",
+      "col-sm-4",
+      "col-4"
+    ],
+    "answer": "col-md-4",
+    "explanation": "The class 'col-md-4' applies a column width of 4 out of 12 grid columns (33.33%) on medium-sized screens (md) and up. For three columns, 4+4+4 = 12, filling the row."
+  },
+  {
+    "question": "Which Bootstrap component is often used to provide primary navigation items and can collapse behind a 'hamburger' menu on smaller screens?",
+    "options": [
+      "Cards",
+      "Alerts",
+      "Badges"
+    ],
+    "answer": "Navbar",
+    "explanation": "Bootstrap's Navbar component is designed for site navigation. It includes built-in support for branding, navigation links, forms, and toggling/collapsing content on smaller viewports."
+  },
+  {
+    "question": "In Bootstrap, which classes are used to style a button to look like a primary action, typically colored blue?",
+    "options": [
+      "btn .btn-secondary",
+      "btn .btn-success",
+      "btn .btn-danger"
+    ],
+    "answer": "btn .btn-primary",
+    "explanation": "The base .btn class provides button styling. Contextual classes like .btn-primary (blue), .btn-secondary (grey), .btn-success (green) add specific meaning and color. .btn-primary is for the main action."
+  },
+  {
+    "question": "How would you create a Bootstrap form where the labels are placed on the same line as their input fields?",
+    "options": [
+      "By using the default form group structure",
+      "By adding the .form-inline class to the <form> element",
+      "By setting all inputs to type='inline'"
+    ],
+    "answer": "By adding the .form-inline class to the <form> element",
+    "explanation": "Applying the .form-inline class to a <form> changes the layout so that form elements are displayed in a horizontal row (inline-block) with labels alongside, instead of stacking vertically."
+  },
+  {
+    "question": "What is the purpose of the 'for' attribute in an HTML <label> element?",
+    "options": [
+      "It specifies which form the label belongs to",
+      "It defines the looping behavior of the label",
+      "It styles the associated input field"
+    ],
+    "answer": "It binds the label to a specific form element by matching the element's 'id' attribute, improving accessibility and usability",
+    "explanation": "The 'for' attribute of a <label> tag should equal the 'id' attribute of the related form element. This creates an explicit association, so clicking the label focuses/activates the input, which is especially helpful for checkboxes and radio buttons."
+  },
+  {
+    "question": "What does 'progressive enhancement' aim to achieve in terms of cross-browser experiences?",
+    "options": [
+      "It ensures all users, regardless of browser, get the exact same visual experience and JavaScript functionality",
+      "It encourages developers to only support the latest version of Google Chrome",
+      "It automatically detects browser bugs and fixes the user's browser"
+    ],
+    "answer": "It ensures a baseline level of content and functionality is available to everyone, while providing an enhanced experience for users with modern, capable browsers",
+    "explanation": "Progressive enhancement is about building a solid foundation that works everywhere, then layering on advanced CSS and JavaScript for browsers that can handle them, ensuring no user is left without core content."
+  },
+  {
+    "question": "What is the function of the <!DOCTYPE html> declaration at the very beginning of an HTML document?",
+    "options": [
+      "It is an HTML tag that defines the document title",
+      "It instructs the browser to load a specific CSS file",
+      "It declares the character encoding for the HTML document"
+    ],
+    "answer": "It tells the web browser which version of HTML the page is written in, so it can render correctly",
+    "explanation": "<!DOCTYPE html> is a declaration, not an HTML tag. It informs the browser to render the page in standards mode according to modern HTML5 specifications, preventing quirks mode."
+  },
+  {
+    "question": "In an HTML document structure, which element contains the meta-information about the document, such as its title and links to stylesheets?",
+    "options": [
+      "<body>",
+      "<html>",
+      "<h1>"
+    ],
+    "answer": "<head>",
+    "explanation": "The <head> element is a container for metadata (data about data). It is placed between the <html> tag and the <body> tag and typically contains <title>, <meta>, <link>, and <style> elements."
+  },
+  {
+    "question": "Which HTML element is used to define a paragraph?",
+    "options": [
+      "<p1>",
+      "<paragraph>",
+      "<para>"
+    ],
+    "answer": "<p>",
+    "explanation": "The <p> tag defines a paragraph in HTML. Browsers automatically add some margin or space before and after a <p> element to separate it from other content."
+  },
+  {
+    "question": "What is an 'empty element' in HTML?",
+    "options": [
+      "An element that has no attributes",
+      "An element that is not visible on the page",
+      "An element that contains only text"
+    ],
+    "answer": "An element that cannot have any content, such as text or child elements, and typically does not have a closing tag",
+    "explanation": "Empty or 'void' elements in HTML have no content. Examples include <br>, <img>, <input>, and <hr>. They are self-closing, meaning they are written with just one tag."
+  },
+  {
+    "question": "Which HTML tag is used to insert a horizontal rule (a thematic break), often displayed as a line?",
+    "options": [
+      "<line>",
+      "<br>",
+      "<hr>"
+    ],
+    "answer": "<hr>",
+    "explanation": "The <hr> tag stands for 'horizontal rule' and is used to create a thematic break between paragraph-level elements, typically displayed as a horizontal line."
+  },
+  {
+    "question": "An HTML 'attribute' is best described as:",
+    "options": [
+      "The content displayed inside an HTML element",
+      "A piece of markup that defines a new HTML tag",
+      "The closing part of an HTML element, like </p>"
+    ],
+    "answer": "Additional information provided inside the opening tag of an element to configure or modify its behavior",
+    "explanation": "Attributes are always included in the opening tag and usually come in name/value pairs like name='value'. For example, href='https://example.com' in an <a> tag."
+  },
+  {
+    "question": "In HTML, how do you create a link that opens in a new browser tab or window?",
+    "options": [
+      "Add target='blank' to the <a> tag",
+      "Add target='_new' to the <a> tag",
+      "Add target='_self' to the <a> tag"
+    ],
+    "answer": "Add target='_blank' to the <a> tag",
+    "explanation": "The 'target' attribute in an <a> tag specifies where to open the linked document. target='_blank' instructs the browser to open the link in a new tab or window."
+  },
+  {
+    "question": "Which element is an example of an inline element in HTML?",
+    "options": [
+      "<div>",
+      "<p>",
+      "<h2>"
+    ],
+    "answer": "<span>",
+    "explanation": "The <span> element is a generic inline container. Unlike block-level elements, it does not start on a new line and only takes up as much width as necessary."
+  },
+  {
+    "question": "What is the main purpose of the HTML <span> element?",
+    "options": [
+      "To create a new line of text",
+      "To define a section in a document, such as a chapter",
+      "To create a large heading"
+    ],
+    "answer": "To group inline-elements for styling purposes",
+    "explanation": "The <span> tag is used as a hook for CSS or JavaScript. It allows you to apply styles or behavior to a specific part of text or a group of inline elements without changing the document's structure."
+  },
+  {
+    "question": "Which HTML form input type is typically used to collect a user's password and masks the input?",
+    "options": [
+      "type='text'",
+      "type='masked'",
+      "type='secure'"
+    ],
+    "answer": "type='password'",
+    "explanation": "The input element with type='password' creates a text field where the entered characters are obscured (usually shown as bullets or asterisks) to prevent them from being read on-screen."
+  },
+  {
+    "question": "What is the purpose of the HTML5 <header> element?",
+    "options": [
+      "To contain the main content of a webpage that is unique to that document",
+      "To define a set of navigation links",
+      "To define a footer for a document or section"
+    ],
+    "answer": "To represent introductory content, typically a group of introductory or navigational aids, and may contain heading elements, a logo, or a search form",
+    "explanation": "The <header> element is a semantic container for introductory content. It can be used for the whole page or for a specific section like an <article>. It should not be confused with the <head> element."
+  },
+  {
+    "question": "What is the difference between embedded (internal) and linked (external) stylesheets?",
+    "options": [
+      "Embedded styles are written within the HTML file using the <style> tag, while linked styles are in a separate .css file connected via the <link> tag",
+      "Embedded styles have higher precedence than linked styles in all cases",
+      "Linked styles can only contain CSS for layout, while embedded styles are for fonts and colors"
+    ],
+    "answer": "Embedded styles are written within the HTML file using the <style> tag, while linked styles are in a separate .css file connected via the <link> tag",
+    "explanation": "Embedded (or internal) CSS is placed inside the <style> element, usually in the HTML document's <head>. External CSS is written in a separate file and linked to the HTML using the <link> element."
+  },
+  {
+    "question": "How can you apply a style to an HTML element that should only affect that single, specific element, overriding other styles?",
+    "options": [
+      "By using a class selector in an external stylesheet",
+      "By using a universal selector (*) in the document head",
+      "By using an ID selector in an embedded stylesheet"
+    ],
+    "answer": "By using the 'style' attribute directly within the HTML element's opening tag (inline style)",
+    "explanation": "Inline styles are applied directly to an element via the 'style' attribute. They have the highest specificity (except for !important) and will override styles defined in embedded or external stylesheets."
+  },
+  {
+    "question": "In CSS, which property is used to change the text color of an element?",
+    "options": [
+      "background-color",
+      "font-color",
+      "text-color"
+    ],
+    "answer": "color",
+    "explanation": "The 'color' property in CSS is used to set the foreground color of an element's text content. 'background-color' sets the color behind the element."
+  },
+  {
+    "question": "What is the primary purpose of Bootstrap's grid system?",
+    "options": [
+      "To create complex CSS animations easily",
+      "To provide pre-built icons for web applications",
+      "To style form elements consistently across browsers"
+    ],
+    "answer": "To create responsive page layouts by dividing the page into rows and columns",
+    "explanation": "Bootstrap's grid system is a powerful, mobile-first flexbox-based structure used to build layouts of all shapes and sizes. It uses a series of containers, rows, and columns to layout and align content."
+  },
+  {
+    "question": "Which of the following is a key principle of web development that involves testing a website on different browsers (like Chrome, Firefox, Safari) to ensure it works correctly?",
+    "options": [
+      "Progressive Enhancement",
+      "Responsive Design",
+      "Separation of Concerns"
+    ],
+    "answer": "Cross-browser Compatibility",
+    "explanation": "Cross-browser compatibility is the practice of making sure your website functions and appears correctly across different web browsers, versions, and operating systems. It involves testing and fixing inconsistencies."
+  }
+]
