@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Which protocol is primarily used by web browsers to communicate with web servers?",
+    "options": ["FTP (File Transfer Protocol)", "SMTP (Simple Mail Transfer Protocol)", "POP3 (Post Office Protocol)"],
+    "answer": "HTTP (Hyper Text Transfer Protocol)",
+    "explanation": "HTTP is the standard protocol for communication between browsers and servers. FTP is used for file transfers, SMTP for sending emails, and POP3 for retrieving emails."
+  },
+  {
+    "question": "In HTML, which element is used to create a hyperlink?",
+    "options": ["<link>", "<nav>", "<span>"],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag is used to create hyperlinks. <link> is used for linking external resources like stylesheets, <nav> defines navigation sections, and <span> is used for inline grouping."
+  },
+  {
+    "question": "Which CSS property is used to change the text color of an element?",
+    "options": ["background-color", "font-style", "border-color"],
+    "answer": "color",
+    "explanation": "The 'color' property in CSS changes the text color. 'background-color' changes the background, 'font-style' modifies text style (italic, normal), and 'border-color' changes the border color."
+  },
+  {
+    "question": "Which Bootstrap class is used to make a navigation bar responsive?",
+    "options": ["navbar-fixed", "navbar-static", "navbar-inline"],
+    "answer": "navbar-expand",
+    "explanation": "Bootstrap uses 'navbar-expand' classes (like navbar-expand-lg) to make navigation bars responsive. The other options are not valid Bootstrap classes for responsive navbars."
+  },
+  {
+    "question": "What is the purpose of progressive enhancement in web design?",
+    "options": ["To remove advanced features for modern browsers", "To ensure websites only work on the latest browsers", "To simplify design by avoiding CSS and JavaScript"],
+    "answer": "To enhance content and functionality for capable browsers while maintaining basic access for all",
+    "explanation": "Progressive enhancement ensures that all users can access core content, while advanced browsers receive enhanced styles and features. It does not remove features or avoid CSS/JavaScript."
+  }
+]
