@@ -391,6 +391,7 @@ body {
 
   /* Support multi-line text outside <pre> as well */
   white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 /* Style the code block */
