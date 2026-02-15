@@ -40,6 +40,9 @@ body {
   padding: 20px;
   position: relative;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
 }
 
 /* Floating Orbs Background */
