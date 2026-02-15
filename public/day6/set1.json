@@ -1,32 +1,504 @@
+Here is a set of 50 Multiple Choice Questions (MCQs) covering the Web Design and Development Fundamentals subtopics you provided, formatted as a JSON array.
 [
   {
-    "question": "Which protocol is primarily used by web browsers to communicate with web servers?",
-    "options": ["FTP (File Transfer Protocol)", "SMTP (Simple Mail Transfer Protocol)", "POP3 (Post Office Protocol)"],
-    "answer": "HTTP (Hyper Text Transfer Protocol)",
-    "explanation": "HTTP is the standard protocol for communication between browsers and servers. FTP is used for file transfers, SMTP for sending emails, and POP3 for retrieving emails."
+    "question": "What is the primary function of HTTP in web development?",
+    "options": [
+      "To style the layout of web pages",
+      "To structure the content of a web page",
+      "To execute client-side scripts"
+    ],
+    "answer": "To transfer data between a web browser and a web server",
+    "explanation": "HTTP (Hypertext Transfer Protocol) is the application-layer protocol for transmitting hypermedia documents, such as HTML, between the client (browser) and the server."
   },
   {
-    "question": "In HTML, which element is used to create a hyperlink?",
-    "options": ["<link>", "<nav>", "<span>"],
-    "answer": "<a>",
-    "explanation": "The <a> (anchor) tag is used to create hyperlinks. <link> is used for linking external resources like stylesheets, <nav> defines navigation sections, and <span> is used for inline grouping."
+    "question": "Which of the following best describes the role of a web browser?",
+    "options": [
+      "To store website databases",
+      "To compile C++ code into machine language",
+      "To manage server-side logic"
+    ],
+    "answer": "To render HTML, CSS, and JavaScript into a visible webpage",
+    "explanation": "A web browser is a software application responsible for retrieving, presenting, and traversing information resources on the World Wide Web."
+  },
+  {
+    "question": "In the context of a URL, what does the 'domain name' represent?",
+    "options": [
+      "The specific file path on the server",
+      "The protocol used to access the resource",
+      "The specific port number for the connection"
+    ],
+    "answer": "The human-readable address of the web server",
+    "explanation": "The domain name (e.g., example.com) is the address where Internet users can access the website, translating the IP address into a readable format."
+  },
+  {
+    "question": "Which design principle refers to the arrangement of elements on a page to lead the user's eye to the most important information?",
+    "options": [
+      "Color Theory",
+      "Typography",
+      "Responsiveness"
+    ],
+    "answer": "Visual Hierarchy",
+    "explanation": "Visual hierarchy is the arrangement and presentation of elements in a way that implies importance, guiding the user's attention through the content."
+  },
+  {
+    "question": "What is the main purpose of a navigation bar on a website?",
+    "options": [
+      "To display advertisements",
+      "To show the footer information",
+      "To list all the external links aimed at SEO"
+    ],
+    "answer": "To help users find other pages within the website",
+    "explanation": "A navigation bar provides links to the main sections of a website, allowing users to easily move between pages."
+  },
+  {
+    "question": "Which HTML tag is used to define the main heading of a page?",
+    "options": [
+      "<header>",
+      "<title>",
+      "<h6>"
+    ],
+    "answer": "<h1>",
+    "explanation": "The <h1> tag defines the most important heading on an HTML page, usually reserved for the main title."
+  },
+  {
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": [
+      "<lb>",
+      "<break>",
+      "<hr>"
+    ],
+    "answer": "<br>",
+    "explanation": "The <br> tag inserts a single line break and is an empty element, meaning it does not have a closing tag."
+  },
+  {
+    "question": "Which attribute is used to provide an alternative text for an image?",
+    "options": [
+      "title",
+      "src",
+      "href"
+    ],
+    "answer": "alt",
+    "explanation": "The 'alt' attribute specifies an alternate text for an image if the image cannot be displayed, and is crucial for accessibility."
+  },
+  {
+    "question": "Which HTML tag is used to define an unordered list?",
+    "options": [
+      "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "answer": "<ul>",
+    "explanation": "The <ul> tag defines an unordered list, typically rendered with bullet points."
+  },
+  {
+    "question": "What does the 'href' attribute specify in an anchor (<a>) tag?",
+    "options": [
+      "The text of the link",
+      "The name of the link",
+      "The target window of the link"
+    ],
+    "answer": "The URL of the page the link goes to",
+    "explanation": "The 'href' (Hypertext Reference) attribute specifies the destination URL of the link."
+  },
+  {
+    "question": "Which HTML element is a block-level element used to group other elements?",
+    "options": [
+      "<span>",
+      "<a>",
+      "<img>"
+    ],
+    "answer": "<div>",
+    "explanation": "The <div> tag is a block-level container used to group various other HTML elements together for styling or layout purposes."
+  },
+  {
+    "question": "How do you define a table row in HTML?",
+    "options": [
+      "<td>",
+      "<table>",
+      "<th>"
+    ],
+    "answer": "<tr>",
+    "explanation": "The <tr> tag defines a row in an HTML table, which then contains <th> or <td> cells."
+  },
+  {
+    "question": "Which input type is best used for allowing a user to select only one option from a predefined set?",
+    "options": [
+      "checkbox",
+      "text",
+      "textarea"
+    ],
+    "answer": "radio",
+    "explanation": "<input type='radio'> defines a radio button, which allows a user to select only one of a limited number of choices."
+  },
+  {
+    "question": "Which HTML5 element is used to specify a footer for a document or section?",
+    "options": [
+      "<bottom>",
+      "<section>",
+      "<end>"
+    ],
+    "answer": "<footer>",
+    "explanation": "The <footer> element represents a footer for its nearest sectioning content or sectioning root element."
+  },
+  {
+    "question": "What is the purpose of the HTML5 <article> element?",
+    "options": [
+      "To define a navigation link",
+      "To insert a video",
+      "To highlight text"
+    ],
+    "answer": "To specify self-contained, independent content",
+    "explanation": "The <article> element specifies independent, self-contained content that should make sense on its own, like a blog post or news story."
   },
   {
     "question": "Which CSS property is used to change the text color of an element?",
-    "options": ["background-color", "font-style", "border-color"],
+    "options": [
+      "text-color",
+      "font-color",
+      "background-color"
+    ],
     "answer": "color",
-    "explanation": "The 'color' property in CSS changes the text color. 'background-color' changes the background, 'font-style' modifies text style (italic, normal), and 'border-color' changes the border color."
+    "explanation": "The 'color' property in CSS specifies the color of the text content within an element."
   },
   {
-    "question": "Which Bootstrap class is used to make a navigation bar responsive?",
-    "options": ["navbar-fixed", "navbar-static", "navbar-inline"],
-    "answer": "navbar-expand",
-    "explanation": "Bootstrap uses 'navbar-expand' classes (like navbar-expand-lg) to make navigation bars responsive. The other options are not valid Bootstrap classes for responsive navbars."
+    "question": "How do you select an element with a specific id in CSS?",
+    "options": [
+      ".id",
+      "*id",
+      "id{}"
+    ],
+    "answer": "#id",
+    "explanation": "In CSS, the hash character (#) is followed by the id name to select a specific element with that unique id."
   },
   {
-    "question": "What is the purpose of progressive enhancement in web design?",
-    "options": ["To remove advanced features for modern browsers", "To ensure websites only work on the latest browsers", "To simplify design by avoiding CSS and JavaScript"],
-    "answer": "To enhance content and functionality for capable browsers while maintaining basic access for all",
-    "explanation": "Progressive enhancement ensures that all users can access core content, while advanced browsers receive enhanced styles and features. It does not remove features or avoid CSS/JavaScript."
+    "question": "Which CSS property controls the space between the content and the border of an element?",
+    "options": [
+      "margin",
+      "border-spacing",
+      "gap"
+    ],
+    "answer": "padding",
+    "explanation": "Padding is the space inside the border, between the border and the actual content of the element."
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": [
+      "Computer Style Sheets",
+      "Creative Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "answer": "Cascading Style Sheets",
+    "explanation": "CSS stands for Cascading Style Sheets, describing how HTML elements are to be displayed on screen, paper, or in other media."
+  },
+  {
+    "question": "Which method of adding CSS uses a <link> tag in the HTML head?",
+    "options": [
+      "Inline Style",
+      "Internal Style",
+      "Embedded Style"
+    ],
+    "answer": "External Style Sheet",
+    "explanation": "Linking to an external .css file using the <link> tag is known as using an External Style Sheet."
+  },
+  {
+    "question": "In Bootstrap, how many columns make up the grid system?",
+    "options": [
+      "10",
+      "6",
+      "8"
+    ],
+    "answer": "12",
+    "explanation": "Bootstrap's grid system is based on a 12-column layout, allowing developers to span content across various widths."
+  },
+  {
+    "question": "Which Bootstrap class indicates a button with a 'danger' or error styling (usually red)?",
+    "options": [
+      "btn-alert",
+      "btn-warning",
+      "btn-error"
+    ],
+    "answer": "btn-danger",
+    "explanation": "The 'btn-danger' class provides a standard red styling to indicate dangerous or negative actions."
+  },
+  {
+    "question": "What is the primary purpose of Bootstrap's 'container' class?",
+    "options": [
+      "To change the background color",
+      "To create a navigation bar",
+      "To create a modal window"
+    ],
+    "answer": "To pad and align content within the viewport",
+    "explanation": "Containers are the most basic layout element in Bootstrap and are required when using the grid system to wrap site contents."
+  },
+  {
+    "question": "Which concept ensures a website looks good on all devices (desktops, tablets, and phones)?",
+    "options": [
+      "Static Design",
+      "Fixed Design",
+      "Fluid Design"
+    ],
+    "answer": "Responsive Web Design",
+    "explanation": "Responsive Web Design uses HTML and CSS to automatically resize, hide, shrink, or enlarge a website to make it look good on all devices."
+  },
+  {
+    "question": "In Bootstrap, which class makes an image responsive so it scales with the parent element?",
+    "options": [
+      "img-resize",
+      "img-responsive",
+      "img-scale"
+    ],
+    "answer": "img-fluid",
+    "explanation": "In Bootstrap 4 and 5, .img-fluid applies 'max-width: 100%;' and 'height: auto;' to the image."
+  },
+  {
+    "question": "What is 'Progressive Enhancement'?",
+    "options": [
+      "Building a site for the most advanced browser first",
+      "Designing only for mobile devices",
+      "Using only the latest CSS features"
+    ],
+    "answer": "Starting with a basic functional experience and adding features for advanced browsers",
+    "explanation": "Progressive enhancement is a strategy that emphasizes core webpage content first, then adds more nuanced and technically rigorous layers of presentation and features."
+  },
+  {
+    "question": "Which attribute is essential for HTML form accessibility for screen readers?",
+    "options": [
+      "placeholder",
+      "name",
+      "value"
+    ],
+    "answer": "label (via 'for' attribute or wrapping)",
+    "explanation": "Labels explicitly associate a text description with a form control, which is essential for accessibility tools."
+  },
+  {
+    "question": "What is the purpose of the <!DOCTYPE html> declaration?",
+    "options": [
+      "To link the CSS file",
+      "To start the HTML body",
+      "To define the page title"
+    ],
+    "answer": "To instruct the browser about the version of HTML being used",
+    "explanation": "The DOCTYPE declaration ensures the browser parses the document in the correct mode (Standards Mode) rather than Quirks Mode."
+  },
+  {
+    "question": "Which CSS selector targets all elements of a specific type?",
+    "options": [
+      "Class selector",
+      "ID selector",
+      "Universal selector"
+    ],
+    "answer": "Element (Tag) selector",
+    "explanation": "An element selector (e.g., p {}) targets all instances of that HTML tag in the document."
+  },
+  {
+    "question": "What is the correct syntax for a CSS comment?",
+    "options": [
+      "// This is a comment",
+      "",
+      "# This is a comment"
+    ],
+    "answer": "/* This is a comment */",
+    "explanation": "CSS comments start with /* and end with */."
+  },
+  {
+    "question": "Which HTML element is used to define a client-side script?",
+    "options": [
+      "<code>",
+      "<link>",
+      "<style>"
+    ],
+    "answer": "<script>",
+    "explanation": "The <script> tag is used to embed or reference executable code, typically JavaScript."
+  },
+  {
+    "question": "What is the default display value of a <span> element?",
+    "options": [
+      "block",
+      "flex",
+      "grid"
+    ],
+    "answer": "inline",
+    "explanation": "Spans are inline elements, meaning they do not start on a new line and only take up as much width as necessary."
+  },
+  {
+    "question": "Which CSS property specifies the stack order of an element?",
+    "options": [
+      "position",
+      "display",
+      "overflow"
+    ],
+    "answer": "z-index",
+    "explanation": "The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order."
+  },
+  {
+    "question": "Which Bootstrap component is used to cycle through elements like a slideshow?",
+    "options": [
+      "Jumbotron",
+      "Modal",
+      "Scrollspy"
+    ],
+    "answer": "Carousel",
+    "explanation": "The Carousel is a slideshow component for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript."
+  },
+  {
+    "question": "Which specific meta tag is crucial for responsive design on mobile devices?",
+    "options": [
+      "<meta charset='UTF-8'>",
+      "<meta name='author' content='Name'>",
+      "<meta name='description' content='Site'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "The viewport meta tag gives the browser instructions on how to control the page's dimensions and scaling."
+  },
+  {
+    "question": "What is the purpose of the 'placeholder' attribute in an input field?",
+    "options": [
+      "To set the default value of the field",
+      "To validate the input data",
+      "To label the field for screen readers"
+    ],
+    "answer": "To specify a short hint that describes the expected value",
+    "explanation": "The placeholder attribute specifies a short hint that describes the expected value of an input field (e.g., a sample value)."
+  },
+  {
+    "question": "Which CSS unit is relative to the font-size of the root element (html)?",
+    "options": [
+      "em",
+      "px",
+      "%"
+    ],
+    "answer": "rem",
+    "explanation": "The 'rem' unit stands for 'root em' and is relative to the font-size of the root element (<html>)."
+  },
+  {
+    "question": "Which HTML5 input type allows the user to select a date?",
+    "options": [
+      "datetime",
+      "calendar",
+      "day"
+    ],
+    "answer": "date",
+    "explanation": "<input type='date'> defines a date picker control."
+  },
+  {
+    "question": "What does the 'required' attribute do in a form element?",
+    "options": [
+      "encrypts the data",
+      "hides the input",
+      "automatically fills the input"
+    ],
+    "answer": "Specifies that an input field must be filled out before submitting",
+    "explanation": "The required attribute is a boolean attribute that ensures the user cannot submit the form without filling in that specific field."
+  },
+  {
+    "question": "In CSS, how do you make a list not display bullet points?",
+    "options": [
+      "text-decoration: none;",
+      "list-style-type: none;",
+      "bullet-style: none;"
+    ],
+    "answer": "list-style-type: none;",
+    "explanation": "Setting 'list-style-type' to 'none' removes the default marker (bullet or number) from list items."
+  },
+  {
+    "question": "Which tag is used to define a cell header in a table?",
+    "options": [
+      "<head>",
+      "<thead>",
+      "<td>"
+    ],
+    "answer": "<th>",
+    "explanation": "The <th> tag defines a header cell in an HTML table, which is usually bold and centered by default."
+  },
+  {
+    "question": "Which of these is a semantic HTML5 element?",
+    "options": [
+      "<div>",
+      "<span>",
+      "<b>"
+    ],
+    "answer": "<nav>",
+    "explanation": "Semantic elements like <nav>, <header>, and <footer> clearly describe their meaning to both the browser and the developer."
+  },
+  {
+    "question": "What implies that a design is 'Cross-Browser Compatible'?",
+    "options": [
+      "It looks exactly the same pixel-for-pixel on all browsers",
+      "It only works on Chrome and Firefox",
+      "It uses no CSS or JavaScript"
+    ],
+    "answer": "The website functions and displays correctly across different web browsers",
+    "explanation": "Cross-browser compatibility ensures that a website works correctly and provides a consistent experience across different browsers (Chrome, Safari, Edge, etc.)."
+  },
+  {
+    "question": "Which CSS property is used to change the background color?",
+    "options": [
+      "color",
+      "bgcolor",
+      "background-style"
+    ],
+    "answer": "background-color",
+    "explanation": "The 'background-color' property sets the background color of an element."
+  },
+  {
+    "question": "What is the difference between class and ID selectors?",
+    "options": [
+      "Classes are for CSS, IDs are for JavaScript",
+      "IDs can be used multiple times, Classes are unique",
+      "There is no difference"
+    ],
+    "answer": "IDs are unique to one element, Classes can be used on multiple elements",
+    "explanation": "An ID (#) must be unique within a page, while a Class (.) can be applied to any number of elements."
+  },
+  {
+    "question": "Which HTML character entity represents the copyright symbol?",
+    "options": [
+      "&copy;",
+      "&copyright;",
+      "&cr;"
+    ],
+    "answer": "&copy;",
+    "explanation": "&copy; is the character entity reference used to display the © symbol."
+  },
+  {
+    "question": "What is the purpose of the <head> element in HTML?",
+    "options": [
+      "To contain the main content of the page",
+      "To display the header banner",
+      "To create a footer"
+    ],
+    "answer": "To contain metadata and links to scripts and stylesheets",
+    "explanation": "The <head> element contains machine-readable information (metadata) about the document, like the title, scripts, and style sheets."
+  },
+  {
+    "question": "In a form, what does the 'action' attribute define?",
+    "options": [
+      "The method of HTTP request (GET/POST)",
+      "The name of the form",
+      "The validation rules"
+    ],
+    "answer": "Where to send the form data when submitted",
+    "explanation": "The 'action' attribute specifies the URL of the file that will process the data submitted by the form."
+  },
+  {
+    "question": "Which Bootstrap class would you use to create a responsive fixed-width container?",
+    "options": [
+      ".container-fluid",
+      ".box",
+      ".wrapper"
+    ],
+    "answer": ".container",
+    "explanation": "The .container class provides a responsive fixed width container, whereas .container-fluid is full width."
+  },
+  {
+    "question": "Which file extension is standard for an external Cascading Style Sheet?",
+    "options": [
+      ".html",
+      ".xml",
+      ".style"
+    ],
+    "answer": ".css",
+    "explanation": "External style sheets are saved with the .css file extension."
   }
 ]
+
