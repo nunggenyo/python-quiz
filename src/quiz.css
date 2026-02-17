@@ -820,3 +820,185 @@ body {
   }
 }
 
+
+/* ─── Resume Banner ──────────────────────────────────────────────────────── */
+.resume-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.12) 0%, rgba(129,140,248,0.06) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin-bottom: 28px;
+  animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.resume-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.resume-icon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.resume-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-light);
+  margin-bottom: 3px;
+}
+
+.resume-detail {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}
+
+.resume-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.resume-btn {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 9px 22px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.resume-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+}
+
+.resume-discard {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 7px 22px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.resume-discard:hover {
+  border-color: var(--error);
+  color: var(--error);
+}
+
+/* ─── Resume Pill (on set button) ────────────────────────────────────────── */
+.resume-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  color: var(--primary-light);
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 20px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+
+/* ─── Score Badge (on completed set button) ──────────────────────────────── */
+.score-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.score-badge.perfect {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #10b981;
+}
+
+.score-badge.good {
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  color: #60a5fa;
+}
+
+.score-badge.okay {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #f59e0b;
+}
+
+/* ─── Completed set button tint ──────────────────────────────────────────── */
+.quiz-select-btn.set-completed {
+  background: linear-gradient(135deg, rgba(16,185,129,0.06) 0%, rgba(99,102,241,0.05) 100%);
+}
+
+.quiz-select-btn.set-completed:hover {
+  background: linear-gradient(135deg, rgba(16,185,129,0.12) 0%, rgba(99,102,241,0.08) 100%);
+  border-color: #10b981;
+}
+
+/* ─── Day progress badge (on day button) ─────────────────────────────────── */
+.day-progress-badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+
+/* ─── btn-right wrapper (arrow + badge) ──────────────────────────────────── */
+.btn-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* ─── Responsive additions ───────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .resume-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-actions {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .resume-btn,
+  .resume-discard {
+    flex: 1;
+    text-align: center;
+  }
+}
