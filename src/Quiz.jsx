@@ -135,6 +135,13 @@ export default function Quiz() {
       .catch(err => console.error("Failed to load quiz:", err));
   }, [selectedDay, selectedSet]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 0);
+  }, [currentQuestion]);
+
+
   // ── Navigation helpers ──────────────────────────────────────────────────────
   const selectDay = (day) => {
     setSelectedDay(day);
@@ -205,6 +212,7 @@ export default function Quiz() {
   };
 
   const nextQuestion = () => {
+
     if (currentQuestion + 1 === processedQuestions.length) {
       const finalPct = Math.round((correctCount / processedQuestions.length) * 100);
       const key = `${selectedDay}-set${selectedSet}`;
