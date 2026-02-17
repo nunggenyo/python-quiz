@@ -272,7 +272,7 @@
   {
     "question": "Which is a valid way to represent a color in CSS using RGB?",
     "options": [
-      "color: rgb(255, 0, 0);",
+      "color: rgb255,0,0;",
       "color: #rgb(255, 0, 0);",
       "color: rgb{255, 0, 0};"
     ],

@@ -393,7 +393,7 @@
     "question": "In CSS, how do you make a list not display bullet points?",
     "options": [
       "text-decoration: none;",
-      "list-style-type: none;",
+      "display: inline-block;",
       "bullet-style: none;"
     ],
     "answer": "list-style-type: none;",
@@ -452,7 +452,7 @@
   {
     "question": "Which HTML character entity represents the copyright symbol?",
     "options": [
-      "&copy;",
+      "&cpr;",
       "&copyright;",
       "&cr;"
     ],

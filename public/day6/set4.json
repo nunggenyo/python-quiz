@@ -1,492 +1,302 @@
 [
   {
-    "question": "What is the primary function of a web browser in the context of web development?",
-    "options": [
-      "To edit and save HTML files",
-      "To host and serve websites to users",
-      "To manage database connections"
-    ],
-    "answer": "To request, interpret, and render HTML, CSS, and JavaScript code into a visual webpage",
-    "explanation": "A web browser's core job is to act as a user agent. It sends HTTP requests for resources (like web pages) and then parses the received HTML, CSS, and JavaScript to display the content visually."
+    "question": "Which HTTP status code is returned by a server to indicate that a requested resource could not be found?",
+    "options": ["200 OK", "500 Internal Server Error", "302 Found"],
+    "answer": "404 Not Found",
+    "explanation": "The 404 status code specifically means the server can't find the requested page or file."
   },
   {
-    "question": "What does the 'S' in 'HTTPS' stand for, indicating a more secure version of HTTP?",
-    "options": [
-      "Simple",
-      "Server",
-      "System"
-    ],
-    "answer": "Secure",
-    "explanation": "HTTPS stands for Hypertext Transfer Protocol Secure. The 'S' indicates that the communication is encrypted using TLS/SSL, providing a secure connection over the internet."
+    "question": "In a URL, which symbol is used to separate the domain name from the query string parameters?",
+    "options": ["#", "&", "@"],
+    "answer": "?",
+    "explanation": "The question mark (?) marks the beginning of query parameters in a URL."
   },
   {
-    "question": "What is the role of CSS in front-end web development?",
-    "options": [
-      "To define the structure and content of a webpage",
-      "To add interactive behavior and dynamic features to a webpage",
-      "To define the structure of a database"
-    ],
-    "answer": "To control the presentation, formatting, and layout of a webpage",
-    "explanation": "CSS (Cascading Style Sheets) is the language used to describe the look and formatting of a document written in HTML. It controls aspects like colors, fonts, spacing, and responsive layout."
+    "question": "Which HTML element is used to define the title of a document, which appears in the browser's title bar or a page's tab?",
+    "options": ["<header>", "<h1>", "<meta>"],
+    "answer": "<title>",
+    "explanation": "The <title> tag is required in all HTML documents and defines the name shown in the browser tab."
   },
   {
-    "question": "Which principle of web development involves separating the structure (HTML), presentation (CSS), and behavior (JavaScript) layers?",
-    "options": [
-      "Progressive Enhancement",
-      "Responsive Web Design",
-      "Mobile-First Design"
-    ],
-    "answer": "Separation of Concerns",
-    "explanation": "Separation of Concerns is a design principle that involves breaking a program into distinct sections, each addressing a separate concern. In web dev, this often means separating content (HTML), style (CSS), and behavior (JavaScript) for better maintainability."
+    "question": "Which attribute is used with the <a> tag to open a linked document in a new browser window or tab?",
+    "options": ["href='_new'", "rel='external'", "mode='blank'"],
+    "answer": "target='_blank'",
+    "explanation": "The target='_blank' attribute instructs the browser to open the link in a new tab."
   },
   {
-    "question": "What is the main purpose of the homepage layout of a website?",
-    "options": [
-      "To contain the site's privacy policy and terms of service",
-      "To list all pages in a sitemap format",
-      "To serve as the primary contact page"
-    ],
-    "answer": "To provide an overview of the site's purpose and guide users to key content and sections",
-    "explanation": "The homepage is typically the first page a user sees. Its layout should quickly communicate the site's value, establish its brand, and effectively guide visitors deeper into the site's content."
-  },
-  {
-    "question": "In HTML, which tag is used to define the smallest, least important heading?",
-    "options": [
-      "<h1>",
-      "<heading>",
-      "<h7>"
-    ],
-    "answer": "<h6>",
-    "explanation": "HTML provides six levels of headings, from <h1> (most important) down to <h6> (least important). <h6> defines the smallest and least significant heading."
-  },
-  {
-    "question": "Which HTML element is used to emphasize text, typically rendering it in italics, with semantic meaning?",
-    "options": [
-      "<i>",
-      "<mark>",
-      "<b>"
-    ],
-    "answer": "<em>",
-    "explanation": "The <em> tag is used to define emphasized text. It has semantic meaning, indicating stress emphasis, and browsers typically render it in italics. The <i> tag is often used for technical terms or thoughts, without the emphasis meaning."
-  },
-  {
-    "question": "Which HTML element creates a line break, but is an empty element, meaning it has no closing tag?",
-    "options": [
-      "<break>",
-      "<p>",
-      "<hr>"
-    ],
-    "answer": "<br>",
-    "explanation": "The <br> tag inserts a single line break. It is an empty or void element, meaning it doesn't require a closing tag. <hr> creates a horizontal rule, not a line break."
-  },
-  {
-    "question": "How are special characters, like the ampersand (&), typically displayed in an HTML document without being interpreted as code?",
-    "options": [
-      "By using a <special> tag",
-      "By enclosing them in square brackets [&]",
-      "By typing them directly as '&'"
-    ],
-    "answer": "By using HTML entities, like &amp;",
-    "explanation": "HTML entities are used to display reserved characters (like <, >, &) and other special characters. For example, to display an ampersand, you use '&amp;'."
-  },
-  {
-    "question": "What is the correct HTML for creating an unordered list (with bullet points)?",
-    "options": [
-      "<list>",
-      "<ol>",
-      "<dl>"
-    ],
-    "answer": "<ul>",
-    "explanation": "The <ul> tag defines an unordered (bulleted) list. Each item within the list is defined by the <li> (list item) tag. <ol> creates an ordered list."
-  },
-  {
-    "question": "In HTML, what is the purpose of the 'alt' attribute within an <img> tag?",
-    "options": [
-      "To specify the title of the image that appears on hover",
-      "To set the height of the image",
-      "To link to a higher-resolution version of the image"
-    ],
-    "answer": "To provide alternative text that describes the image if it cannot be displayed or for screen reader users",
-    "explanation": "The 'alt' attribute provides a text description of the image. It is crucial for accessibility (used by screen readers) and SEO, and it is displayed if the image fails to load."
-  },
-  {
-    "question": "Which attribute is used to specify the destination URL for an HTML link?",
-    "options": [
-      "src",
-      "link",
-      "url"
-    ],
-    "answer": "href",
-    "explanation": "The href (hypertext reference) attribute is used with the <a> (anchor) tag to specify the URL of the page or resource the link goes to."
-  },
-  {
-    "question": "Which HTML tag is used to define a table header cell, which is typically bold and centered?",
-    "options": [
-      "<td>",
-      "<tr>",
-      "<header>"
-    ],
-    "answer": "<th>",
-    "explanation": "The <th> tag defines a header cell in an HTML table. It is used within a <tr> (table row) and its content is usually displayed in bold and centered by default, signifying a label for a row or column."
-  },
-  {
-    "question": "Which of the following is a block-level element in HTML?",
-    "options": [
-      "<span>",
-      "<a>",
-      "<img>"
-    ],
-    "answer": "<p>",
-    "explanation": "Block-level elements, like the paragraph <p>, always start on a new line and take up the full width available. <span>, <a>, and <img> are typically inline elements."
-  },
-  {
-    "question": "Why is the <span> element considered an inline element?",
-    "options": [
-      "It always starts on a new line and pushes following content down",
-      "It can only contain text and no other HTML elements",
-      "It is used exclusively for creating line breaks"
-    ],
-    "answer": "It does not start on a new line and only takes up as much width as necessary, flowing with the surrounding text",
-    "explanation": "Inline elements like <span> sit within the flow of text. They do not force a new line and only occupy the space bounded by the tags, which is defined by their content."
-  },
-  {
-    "question": "What is the fundamental purpose of the HTML <form> element?",
-    "options": [
-      "To structure a document with headings and paragraphs",
-      "To embed an external webpage within the current page",
-      "To create a styled box around content"
-    ],
-    "answer": "To create a section that contains interactive controls for submitting information to a web server",
-    "explanation": "The <form> element acts as a container for various input elements (like text fields, checkboxes, buttons) that allow users to enter data, which is then typically sent to a server for processing."
-  },
-  {
-    "question": "Which HTML5 element is used to define a set of navigation links, improving semantic structure?",
-    "options": [
-      "<navigation>",
-      "<nav>",
-      "<navigate>"
-    ],
-    "answer": "<nav>",
-    "explanation": "The HTML5 <nav> element is a semantic tag specifically intended to contain the major navigation blocks for a website, such as a menu of links to other pages or parts of the page."
-  },
-  {
-    "question": "What is the purpose of the HTML5 <footer> element?",
-    "options": [
-      "To define the main content area of a document",
-      "To contain introductory information or headings",
-      "To define a section containing navigation links"
-    ],
-    "answer": "To define a footer for a document or a section, typically containing information about the author, copyright data, or links to related documents",
-    "explanation": "The <footer> element is a semantic HTML5 tag. It represents a footer for its nearest ancestor sectioning content or sectioning root. A page can have multiple footers."
-  },
-  {
-    "question": "Which HTML5 input type is used to create a slider control for selecting a number from a range?",
-    "options": [
-      "type='slider'",
-      "type='number'",
-      "type='select'"
-    ],
-    "answer": "type='range'",
-    "explanation": "The input type 'range' creates a slider control in supporting browsers. It allows the user to select a value from a given range (defined by min, max, and step attributes)."
-  },
-  {
-    "question": "What is the key advantage of using an embedded (<style>) stylesheet compared to inline styles?",
-    "options": [
-      "Embedded styles have higher specificity than inline styles",
-      "Embedded styles allow you to apply styles to multiple elements on a single page without repeating the style attribute",
-      "Embedded styles can be cached by the browser for faster loading on subsequent pages"
-    ],
-    "answer": "Embedded styles allow you to apply styles to multiple elements on a single page without repeating the style attribute",
-    "explanation": "With an embedded stylesheet, you can define styles for multiple elements (e.g., all <p> tags) in one place within the <style> block. This is more efficient than adding inline 'style' attributes to each individual element."
-  },
-  {
-    "question": "In CSS, which selector would you use to target all elements with the class name 'highlight'?",
-    "options": [
-      "highlight",
-      "#highlight",
-      "*highlight"
-    ],
-    "answer": ".highlight",
-    "explanation": "In CSS, a class selector is denoted by a period (.) followed by the class name. So, to target all elements with class='highlight', you would use .highlight."
-  },
-  {
-    "question": "What is the purpose of CSS comments?",
-    "options": [
-      "To provide instructions to the web browser",
-      "To hide code from the browser's developer tools",
-      "To make the HTML document validate correctly"
-    ],
-    "answer": "To leave notes and explanations within the CSS code for developers, which are ignored by the browser",
-    "explanation": "CSS comments, written as /* comment */, are used to document the code, explain complex sections, or temporarily disable parts of the stylesheet. They are purely for human readability and do not affect how the browser renders the page."
-  },
-  {
-    "question": "Which CSS property would you use to change the background color of an element?",
-    "options": [
-      "color",
-      "background",
-      "bgcolor"
-    ],
-    "answer": "background-color",
-    "explanation": "The 'background-color' property sets the background color of an element. The shorthand 'background' property can also set the color, along with other background properties like images and position."
-  },
-  {
-    "question": "What is the main advantage of using Bootstrap for web development?",
-    "options": [
-      "It eliminates the need to write any HTML",
-      "It provides a collection of pre-built, responsive components and a powerful grid system, speeding up development",
-      "It automatically generates SEO-friendly content"
-    ],
-    "answer": "It provides a collection of pre-built, responsive components and a powerful grid system, speeding up development",
-    "explanation": "Bootstrap is a popular front-end framework that offers pre-designed CSS and JavaScript components (like navbars, cards, modals) and a responsive grid system, allowing developers to quickly build consistent, mobile-friendly websites."
-  },
-  {
-    "question": "In responsive design, what is a 'breakpoint'?",
-    "options": [
-      "A point in the HTML code where the layout is forced to reset",
-      "A CSS property that breaks long words onto a new line",
-      "A JavaScript function that pauses execution"
-    ],
-    "answer": "A specific viewport width defined in a media query where the page's layout adjusts to provide an optimal display",
-    "explanation": "Breakpoints are the cornerstones of responsive design. They are conditions, usually based on screen width, that trigger changes in the CSS layout via media queries (e.g., switching from a single-column to a multi-column layout)."
-  },
-  {
-    "question": "In Bootstrap, which class creates a container that spans the entire width of the viewport?",
-    "options": [
-      ".container",
-      ".container-wide",
-      ".container-full"
-    ],
-    "answer": ".container-fluid",
-    "explanation": "In Bootstrap, .container-fluid creates a container that is always 100% wide, spanning the full width of the viewport. In contrast, .container has fixed widths at different breakpoints."
-  },
-  {
-    "question": "In Bootstrap's 12-column grid system, which class would you use to make a column take up half the width of its row on small devices and above?",
-    "options": [
-      "col-6",
-      "col-sm-12",
-      "col-md-6"
-    ],
-    "answer": "col-sm-6",
-    "explanation": "The class 'col-sm-6' applies a width of 6 columns (50%) on small (sm) devices and up. On extra small screens (xs, where no class is defined), it would default to full width (12 columns)."
-  },
-  {
-    "question": "Which Bootstrap component is used to display content in a flexible, extensible content container, often with options for headers, footers, and images?",
-    "options": [
-      "Jumbotron",
-      "Modal",
-      "Alerts"
-    ],
-    "answer": "Card",
-    "explanation": "Bootstrap's Card component is a versatile content container. It can include headers, footers, images, and text blocks, and is commonly used for things like blog posts, products, or user profiles."
-  },
-  {
-    "question": "How would you create a Bootstrap button that uses a success (green) style?",
-    "options": [
-      "<button class='btn btn-green'>",
-      "<button class='button btn-success'>",
-      "<button class='btn success'>"
-    ],
-    "answer": "<button class='btn btn-success'>",
-    "explanation": "All Bootstrap buttons use the base class 'btn'. A modifier class like 'btn-success' applies the specific green styling associated with a 'success' or positive action."
-  },
-  {
-    "question": "In a Bootstrap form, what is the purpose of the 'form-group' class?",
-    "options": [
-      "To create a horizontal layout for a single form field and its label",
-      "To group a set of related checkboxes or radio buttons",
-      "To apply a global border to the entire form"
-    ],
-    "answer": "To add structure and optimal spacing between form elements, typically wrapping a label and its associated input",
-    "explanation": "The .form-group class is the easiest way to add some structure to forms. It provides a flexible class that encourages proper grouping of labels, controls, optional help text, and form feedback messaging."
-  },
-  {
-    "question": "What is the main concept behind 'graceful degradation' as a cross-browser strategy?",
-    "options": [
-      "Building the experience for the most advanced browsers first, then adding fallbacks for older ones",
-      "Building a basic experience first, then adding advanced features for modern browsers",
-      "Degrading the performance of a website on slow networks"
-    ],
-    "answer": "Building the experience for the most advanced browsers first, then adding fallbacks for older ones",
-    "explanation": "Graceful degradation starts with creating a feature-rich, modern experience. It then involves adding layers of fallbacks and polyfills so that the site still functions, albeit in a simpler form, on older or less capable browsers."
-  },
-  {
-    "question": "Which part of the HTML document structure contains the actual visible content of the webpage?",
-    "options": [
-      "<head>",
-      "<html>",
-      "<title>"
-    ],
+    "question": "Which tag is the correct container for all the visible content of an HTML document, such as headings and paragraphs?",
+    "options": ["<head>", "<html>", "<section>"],
     "answer": "<body>",
-    "explanation": "The <body> element defines the document's body. It contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc., that are displayed in the browser window."
+    "explanation": "Everything visible to the user on a webpage is contained within the <body> tags."
   },
   {
-    "question": "What is the purpose of the HTML <title> element?",
-    "options": [
-      "To create a large heading at the top of the page",
-      "To provide a tooltip when the user hovers over the page",
-      "To store metadata about the HTML document"
-    ],
-    "answer": "To define the title of the document, which is shown in the browser's title bar or tab",
-    "explanation": "The <title> element is placed within the <head> section. Its content is not displayed within the page itself but is used as the page name in the browser tab, search engine results, and bookmarks."
+    "question": "In the CSS box model, which property creates space 'inside' an element, between the content and the border?",
+    "options": ["Margin", "Outline", "Spacing"],
+    "answer": "Padding",
+    "explanation": "Padding is the inner space of an element, while margin is the outer space."
   },
   {
-    "question": "Which HTML formatting element is used to mark text that has been inserted into a document, often shown with an underline?",
-    "options": [
-      "<del>",
-      "<u>",
-      "<mark>"
-    ],
-    "answer": "<ins>",
-    "explanation": "The <ins> tag defines text that has been inserted into a document. Brows will often underline inserted text. The <del> tag is used for deleted text, often shown with a strikethrough."
+    "question": "Which CSS selector is used to target an element with a specific, unique ID attribute?",
+    "options": [".classname", "elementname", "*"],
+    "answer": "#idname",
+    "explanation": "The hash (#) symbol is used in CSS to select elements based on their unique ID."
   },
   {
-    "question": "Which character is used to indicate the start of an HTML tag?",
-    "options": [
-      "/",
-      ">",
-      "="
-    ],
-    "answer": "<",
-    "explanation": "All HTML tags begin with the less-than sign (<) and end with the greater-than sign (>). For example, <p> and </p>. The forward slash (/) indicates a closing tag."
-  },
-  {
-    "question": "What does an 'empty element' like <img> or <input> consist of?",
-    "options": [
-      "An opening tag, content, and a closing tag",
-      "Only a closing tag",
-      "An opening tag and a closing tag with no content"
-    ],
-    "answer": "Typically just a single tag (opening tag) that may contain attributes, as it cannot have any child content",
-    "explanation": "Empty or void elements have no content and no closing tag. They are self-contained, like <img src='...'> or <input type='text'>."
-  },
-  {
-    "question": "To create a hyperlink that, when clicked, starts composing an email to a specific address, what should the href attribute value start with?",
-    "options": [
-      "mailto:",
-      "email:",
-      "send:"
-    ],
-    "answer": "mailto:",
-    "explanation": "The 'mailto:' scheme is used in the href attribute of an <a> tag to create a link that opens the user's default email client with a new message to the address specified after the colon."
-  },
-  {
-    "question": "Which HTML tags are used to define a table row and a table data cell, respectively?",
-    "options": [
-      "<row> and <data>",
-      "<tr> and <td>",
-      "<th> and <tr>"
-    ],
-    "answer": "<tr> and <td>",
-    "explanation": "<tr> stands for 'table row' and defines a row. Inside a row, <td> stands for 'table data' and defines the individual cells containing the data."
-  },
-  {
-    "question": "What is the behavior of a block-level element concerning line breaks?",
-    "options": [
-      "It always stays on the same line as the content before it",
-      "It never starts on a new line",
-      "Its line break behavior is determined by the 'display' property only"
-    ],
-    "answer": "It always starts on a new line, pushing subsequent content to a new line as well",
-    "explanation": "A key characteristic of block-level elements (when CSS hasn't changed their display property) is that they create a 'block' by starting on a new line and occupying the full width available, causing elements after them to appear on a new line."
-  },
-  {
-    "question": "What is the main difference between the <div> and <span> elements?",
-    "options": [
-      "<div> is for grouping block-level content and is a block-level element, while <span> is for grouping inline content and is an inline element",
-      "<div> can only be used once per page, while <span> can be used multiple times",
-      "<div> has semantic meaning, while <span> is purely presentational"
-    ],
-    "answer": "<div> is for grouping block-level content and is a block-level element, while <span> is for grouping inline content and is an inline element",
-    "explanation": "This is the core distinction. A <div> is a block-level container perfect for larger structural sections. A <span> is an inline container used to style or manipulate a small part of text or a group of inline elements."
-  },
-  {
-    "question": "Which form element is most appropriate for allowing a user to select a single option from a short list of visible options (like yes or no)?",
-    "options": [
-      "Checkboxes",
-      "A dropdown list (<select>)",
-      "A text input"
-    ],
-    "answer": "Radio buttons",
-    "explanation": "Radio buttons are used when you want the user to select exactly one option from a set. They are ideal for small, mutually exclusive choices. Checkboxes allow multiple selections."
-  },
-  {
-    "question": "Which HTML5 structural element defines content that is tangentially related to the content around it, and could be considered separate from that content?",
-    "options": [
-      "<aside>",
-      "<section>",
-      "<article>"
-    ],
+    "question": "Which HTML5 semantic element is most appropriate for a sidebar or content that is tangentially related to the main content?",
+    "options": ["<section>", "<article>", "<footer>"],
     "answer": "<aside>",
-    "explanation": "The <aside> element represents a portion of a document whose content is only indirectly related to the document's main content. It is frequently used for sidebars, pull quotes, or advertising."
+    "explanation": "The <aside> element is intended for content like sidebars or call-out boxes."
   },
   {
-    "question": "What is the 'cascade' in Cascading Style Sheets?",
-    "options": [
-      "The process of combining multiple stylesheets into one",
-      "The order in which CSS properties are listed within a rule",
-      "A CSS framework for creating complex animations"
-    ],
-    "answer": "The algorithm that determines which styles are applied to an element when multiple rules conflict, based on factors like importance, specificity, and source order",
-    "explanation": "The cascade is a fundamental part of CSS. It resolves conflicts when multiple style rules target the same element. It considers rule importance (e.g., !important), selector specificity, and the order in which rules appear."
+    "question": "What is the Bootstrap class used to create a basic, flexible navigation bar?",
+    "options": [".nav-group", ".menu-bar", ".header-nav"],
+    "answer": ".navbar",
+    "explanation": "The .navbar class is the base class for all navigation components in Bootstrap."
   },
   {
-    "question": "Which CSS selector would you use to target a specific, unique element with the id 'main-title'?",
-    "options": [
-      ".main-title",
-      "main-title",
-      "*main-title"
-    ],
-    "answer": "#main-title",
-    "explanation": "An ID selector is denoted by a hash symbol (#) followed by the element's id attribute value. IDs must be unique within a page, so this selector targets a single, specific element."
+    "question": "Which CSS property is used to change the text color of an element?",
+    "options": ["font-color", "text-style", "background-color"],
+    "answer": "color",
+    "explanation": "In CSS, the 'color' property specifically handles the foreground color of the text."
   },
   {
-    "question": "Which CSS property would you use to change the font of an element to Arial?",
-    "options": [
-      "font",
-      "font-family",
-      "typeface"
-    ],
+    "question": "Which HTML tag is used to create an unordered (bulleted) list?",
+    "options": ["<ol>", "<li>", "<dl>"],
+    "answer": "<ul>",
+    "explanation": "The <ul> (Unordered List) tag creates a list with bullet points by default."
+  },
+  {
+    "question": "Which Bootstrap class provides a responsive fixed-width container that changes its max-width at each breakpoint?",
+    "options": [".container-fluid", ".wrapper", ".box-layout"],
+    "answer": ".container",
+    "explanation": "The .container class has a fixed max-width for each screen size (sm, md, lg, etc.)."
+  },
+  {
+    "question": "What does the 'alt' attribute in an <img> tag provide?",
+    "options": ["A link to a high-res version", "The image's dimensions", "The image's filter effects"],
+    "answer": "Alternative text for accessibility",
+    "explanation": "The alt attribute describes the image for screen readers or if the image fails to load."
+  },
+  {
+    "question": "Which CSS property controls the stack order of elements that overlap?",
+    "options": ["float", "position", "display"],
+    "answer": "z-index",
+    "explanation": "The z-index property determines which element appears 'on top' along the z-axis."
+  },
+  {
+    "question": "Which HTML5 input type provides a slider control for selecting a value within a range?",
+    "options": ["type='slider'", "type='number'", "type='scroll'"],
+    "answer": "type='range'",
+    "explanation": "The range input type renders as a slider control on most browsers."
+  },
+  {
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": ["<lb>", "<break>", "<hr>"],
+    "answer": "<br>",
+    "explanation": "The <br> tag is an empty element used to force a line break in text."
+  },
+  {
+    "question": "In CSS, which property is used to make the text bold?",
+    "options": ["font-style", "text-decoration", "font-variant"],
+    "answer": "font-weight",
+    "explanation": "The font-weight property is used to set the thickness of characters, such as 'bold'."
+  },
+  {
+    "question": "Which Bootstrap utility class is used to center an element horizontally by setting margins to auto?",
+    "options": [".center-block", ".align-center", ".justify-content-center"],
+    "answer": ".mx-auto",
+    "explanation": "The .mx-auto class sets both left and right margins to auto to center block elements."
+  },
+  {
+    "question": "Which HTML tag is used to define a table header cell?",
+    "options": ["<td>", "<tr>", "<thead>"],
+    "answer": "<th>",
+    "explanation": "The <th> tag defines a header cell, which is typically bold and centered by default."
+  },
+  {
+    "question": "What is the purpose of the <meta charset='UTF-8'> tag?",
+    "options": ["To link a CSS file", "To set the page language", "To define the viewport width"],
+    "answer": "To specify the character encoding",
+    "explanation": "This tag ensures the browser interprets characters correctly using the UTF-8 standard."
+  },
+  {
+    "question": "Which CSS value for the 'display' property will remove an element from the page layout entirely?",
+    "options": ["hidden", "invisible", "collapse"],
+    "answer": "none",
+    "explanation": "Setting display to 'none' removes the element from the document flow; it takes up no space."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a button that looks like a link while maintaining button behavior?",
+    "options": [".btn-ghost", ".btn-outline", ".btn-text"],
+    "answer": ".btn-link",
+    "explanation": "The .btn-link class styles a button to look like a standard hyperlink."
+  },
+  {
+    "question": "In HTML forms, which attribute specifies where to send the form-data when a form is submitted?",
+    "options": ["method", "target", "name"],
+    "answer": "action",
+    "explanation": "The action attribute contains the URL of the server-side script that processes the form."
+  },
+  {
+    "question": "Which CSS unit is relative to the font-size of the element itself (or the parent)?",
+    "options": ["px", "vh", "%"],
+    "answer": "em",
+    "explanation": "The 'em' unit is relative to the font-size; 2em means twice the size of the current font."
+  },
+  {
+    "question": "Which tag is used in HTML5 to wrap the main navigation links of a website?",
+    "options": ["<header>", "<links>", "<menu>"],
+    "answer": "<nav>",
+    "explanation": "The <nav> element is a semantic tag designated specifically for primary navigation blocks."
+  },
+  {
+    "question": "What is the Bootstrap class for a large, high-visibility 'hero' box used for key marketing content?",
+    "options": [".hero-unit", ".big-box", ".banner"],
+    "answer": ".jumbotron",
+    "explanation": "In older Bootstrap versions, .jumbotron was the standard; in newer ones, it is often a custom utility."
+  },
+  {
+    "question": "Which CSS property is used to add shadows to text?",
+    "options": ["box-shadow", "font-shadow", "shadow-effect"],
+    "answer": "text-shadow",
+    "explanation": "The text-shadow property adds one or more shadows to the text of an element."
+  },
+  {
+    "question": "Which HTML attribute is used to uniquely identify an element across the entire document?",
+    "options": ["class", "name", "type"],
+    "answer": "id",
+    "explanation": "The id attribute must be unique within an HTML document."
+  },
+  {
+    "question": "In CSS, how do you select all <p> elements inside a <div> element?",
+    "options": ["div.p", "div + p", "div > p"],
+    "answer": "div p",
+    "explanation": "The descendant selector (space) selects all <p> elements inside <div> regardless of nesting depth."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a set of buttons joined together on a single line?",
+    "options": [".btn-list", ".btn-row", ".btn-collection"],
+    "answer": ".btn-group",
+    "explanation": "The .btn-group class wraps a series of buttons into a single unified component."
+  },
+  {
+    "question": "What is the primary goal of 'Progressive Enhancement' in web development?",
+    "options": ["To make sites load faster", "To use the latest JavaScript features", "To design for mobile first only"],
+    "answer": "To ensure basic content accessibility for all",
+    "explanation": "Progressive enhancement focuses on building a functional core that works for everyone, then adding features."
+  },
+  {
+    "question": "Which HTML element is used to define an important text that is typically displayed in bold?",
+    "options": ["<i>", "<bold>", "<mark>"],
+    "answer": "<strong>",
+    "explanation": "The <strong> tag indicates that the text has strong importance and is usually rendered bold."
+  },
+  {
+    "question": "Which CSS property is used to change the background color of an element?",
+    "options": ["color", "bgcolor", "fill-color"],
+    "answer": "background-color",
+    "explanation": "The background-color property sets the color of the background of an element."
+  },
+  {
+    "question": "Which Bootstrap class is used to make an image responsive, ensuring it scales with the parent element?",
+    "options": [".img-responsive", ".img-scale", ".img-fit"],
+    "answer": ".img-fluid",
+    "explanation": "In Bootstrap 4 and 5, .img-fluid applies max-width: 100% and height: auto to the image."
+  },
+  {
+    "question": "In a form, which input 'type' should be used for sensitive information like passwords so characters are masked?",
+    "options": ["type='hidden'", "type='mask'", "type='secret'"],
+    "answer": "type='password'",
+    "explanation": "The password input type obscures the characters entered by the user."
+  },
+  {
+    "question": "Which CSS property is used to change the font of an element?",
+    "options": ["font-style", "font-weight", "text-font"],
     "answer": "font-family",
-    "explanation": "The 'font-family' property specifies the font for an element. It can hold several font names as a fallback system. If the browser doesn't support the first font, it tries the next one."
+    "explanation": "The font-family property specifies a prioritized list of one or more font family names."
   },
   {
-    "question": "What does it mean that Bootstrap is 'mobile-first'?",
-    "options": [
-      "It can only be used to design websites for mobile phones",
-      "The CSS is written to target smaller screens first, then uses media queries to add styles for larger screens",
-      "It includes pre-built mobile app components"
-    ],
-    "answer": "The CSS is written to target smaller screens first, then uses media queries to add styles for larger screens",
-    "explanation": "A 'mobile-first' approach means the base styles are for small screens (e.g., phones). Then, media queries are used to progressively enhance the layout for larger screens (tablets, desktops), leading to a more efficient and robust responsive design."
+    "question": "Which HTML element is used to define a footer for a document or a section?",
+    "options": ["<bottom>", "<end>", "<base>"],
+    "answer": "<footer>",
+    "explanation": "The <footer> element typically contains authorship, copyright, or contact information."
   },
   {
-    "question": "In Bootstrap, what is the purpose of the 'justify-content-center' class when applied to a row?",
-    "options": [
-      "To center the text content inside each column",
-      "To align the row itself to the center of the container",
-      "To center the columns horizontally within the row on the page"
-    ],
-    "answer": "To center the columns horizontally within the row on the page",
-    "explanation": "Bootstrap rows use flexbox. The 'justify-content-center' class is a flexbox utility that aligns the flex items (the columns) along the main axis (horizontally, by default) to the center of the row."
+    "question": "Which Bootstrap class is used to create a rounded, pill-shaped badge?",
+    "options": [".badge-circle", ".badge-round", ".badge-oval"],
+    "answer": ".rounded-pill",
+    "explanation": "The .rounded-pill utility class creates a pill shape with large border-radius."
   },
   {
-    "question": "Which Bootstrap component is a lightweight, flexible JavaScript popup that can be used to display alerts, videos, or any other HTML content?",
-    "options": [
-      "Tooltips",
-      "Carousel",
-      "Navbar"
-    ],
-    "answer": "Modal",
-    "explanation": "A Modal is a dialog box/popup window that is displayed on top of the current page. It is a common component for things like image galleries, forms, or confirmation messages without navigating away from the current context."
+    "question": "In the CSS box model, which property creates space 'outside' the border of an element?",
+    "options": ["Padding", "Border-width", "Gutter"],
+    "answer": "Margin",
+    "explanation": "Margin is the outermost space of the CSS box model, separating the element from its neighbors."
   },
   {
-    "question": "Which practice is essential for achieving cross-browser compatibility?",
-    "options": [
-      "Using only the newest CSS features",
-      "Testing the website on various browsers and devices during development",
-      "Writing all styles inline to ensure they are applied"
-    ],
-    "answer": "Testing the website on various browsers and devices during development",
-    "explanation": "The most reliable way to ensure cross-browser compatibility is to test your website on the browsers and devices your target audience uses. This helps identify and fix rendering or functional issues early."
+    "question": "Which HTML tag is used to create a numbered list?",
+    "options": ["<ul>", "<li>", "<list>"],
+    "answer": "<ol>",
+    "explanation": "The <ol> (Ordered List) tag creates a list where items are numbered sequentially."
+  },
+  {
+    "question": "What is the purpose of the <label> element in an HTML form?",
+    "options": ["To act as a placeholder", "To validate the input data", "To group multiple inputs"],
+    "answer": "To provide a caption for an input",
+    "explanation": "The <label> element improves accessibility and provides a clickable area for the associated input."
+  },
+  {
+    "question": "Which CSS property is used to align text to the center of its container?",
+    "options": ["align-items", "vertical-align", "justify-content"],
+    "answer": "text-align",
+    "explanation": "The text-align property sets the horizontal alignment of inline content like text."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a row of columns?",
+    "options": [".container", ".column-group", ".flex-row"],
+    "answer": ".row",
+    "explanation": "The .row class is a wrapper for columns (.col) in Bootstrap’s grid system."
+  },
+  {
+    "question": "Which HTML5 tag is used to specify self-contained content, like a blog post or news story?",
+    "options": ["<section>", "<main>", "<div>"],
+    "answer": "<article>",
+    "explanation": "The <article> tag is used for independent, distributable content that makes sense on its own."
+  },
+  {
+    "question": "Which CSS pseudo-class is used to style an element when a user moves their mouse over it?",
+    "options": [":active", ":visited", ":focus"],
+    "answer": ":hover",
+    "explanation": "The :hover pseudo-class triggers when the user's pointer enters the element's area."
+  },
+  {
+    "question": "Which Bootstrap class would you use to create a red-colored alert box to show an error?",
+    "options": [".alert-error", ".alert-red", ".alert-warning"],
+    "answer": ".alert-danger",
+    "explanation": "Bootstrap uses 'danger' to represent critical errors or negative actions, styled in red."
+  },
+  {
+    "question": "What is the correct syntax for an HTML comment?",
+    "options": ["// comment", "/* comment */", "# comment"],
+    "answer": "<!-- comment -->",
+    "explanation": "HTML comments start with ."
+  },
+  {
+    "question": "Which CSS property is used to set the width of an element's border?",
+    "options": ["border-style", "border-color", "outline-width"],
+    "answer": "border-width",
+    "explanation": "The border-width property specifically controls the thickness of the border."
+  },
+  {
+    "question": "Which HTML element is used to group inline-elements for styling purposes without providing any semantic meaning?",
+    "options": ["<div>", "<section>", "<group>"],
+    "answer": "<span>",
+    "explanation": "The <span> tag is an inline container used to mark up a part of a text or a document."
+  },
+  {
+    "question": "Which Bootstrap class is used to make a table have alternating background colors for rows?",
+    "options": [".table-zebra", ".table-hover", ".table-bordered"],
+    "answer": ".table-striped",
+    "explanation": "The .table-striped class adds zebra-striping to any table row within the <tbody>."
   }
 ]

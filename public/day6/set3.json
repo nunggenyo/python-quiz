@@ -2,7 +2,7 @@
   {
     "question": "What does the acronym HTTP stand for in the context of web communication?",
     "options": [
-      "Hyper Text Transfer Protocol",
+      "Hyperlink Text Transfer Procedure",
       "Hyper Text Transmission Process",
       "High Transfer Text Protocol"
     ],
@@ -102,7 +102,7 @@
   {
     "question": "To display the copyright symbol (©) on an HTML page, you would use:",
     "options": [
-      "&copy;",
+      "&cpr;",
       "<copy>",
       "#169;"
     ],
@@ -162,7 +162,7 @@
   {
     "question": "Why is the <div> element often described as a 'generic container'?",
     "options": [
-      "It is used to group block-level and inline elements for styling or layout purposes, without any inherent semantic meaning",
+      "It adds semantic meaning to the content it wraps",
       "It is the only element that can contain interactive elements like buttons",
       "It automatically creates a new row in the layout"
     ],
@@ -173,7 +173,7 @@
     "question": "Which HTML form element allows users to select multiple options from a predefined list displayed in a box?",
     "options": [
       "Radio buttons (type='radio')",
-      "Dropdown list (<select>)",
+      "Input type='text'",
       "Checkboxes (type='checkbox')"
     ],
     "answer": "Dropdown list (<select>)",
@@ -183,7 +183,7 @@
     "question": "What is the purpose of the HTML5 <article> element?",
     "options": [
       "To define a section of a page that contains navigation links",
-      "To define a self-contained, independent piece of content that could be syndicated or reused, like a forum post or news story",
+      "To define a container for styling multiple elements without semantic meaning",
       "To define a thematic grouping of content, typically with a heading, like chapters or tabbed content"
     ],
     "answer": "To define a self-contained, independent piece of content that could be syndicated or reused, like a forum post or news story",
@@ -313,7 +313,7 @@
     "question": "How would you create a Bootstrap form where the labels are placed on the same line as their input fields?",
     "options": [
       "By using the default form group structure",
-      "By adding the .form-inline class to the <form> element",
+      "By wrapping inputs in a <div class='row'>",
       "By setting all inputs to type='inline'"
     ],
     "answer": "By adding the .form-inline class to the <form> element",
@@ -384,7 +384,7 @@
     "options": [
       "<line>",
       "<br>",
-      "<hr>"
+      "<break>"
     ],
     "answer": "<hr>",
     "explanation": "The <hr> tag stands for 'horizontal rule' and is used to create a thematic break between paragraph-level elements, typically displayed as a horizontal line."
@@ -452,7 +452,7 @@
   {
     "question": "What is the difference between embedded (internal) and linked (external) stylesheets?",
     "options": [
-      "Embedded styles are written within the HTML file using the <style> tag, while linked styles are in a separate .css file connected via the <link> tag",
+      "Embedded styles must always be placed at the end of the HTML document",
       "Embedded styles have higher precedence than linked styles in all cases",
       "Linked styles can only contain CSS for layout, while embedded styles are for fonts and colors"
     ],

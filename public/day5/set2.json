@@ -312,7 +312,7 @@
   {
     "question": "Which refactoring technique involves replacing a complex conditional with a call to a method that clearly describes the intent?",
     "options": [
-      "Decompose Conditional",
+      "Introduce Parameter Object",
       "Extract Class",
       "Substitute Algorithm"
     ],
