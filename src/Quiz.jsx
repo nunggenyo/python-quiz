@@ -137,7 +137,7 @@ export default function Quiz() {
 
   useEffect(() => {
     setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "instant" });
+      window.scrollTo({ top: 150, behavior: "instant" });
     }, 0);
   }, [currentQuestion]);
 
