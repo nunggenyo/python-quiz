@@ -1002,3 +1002,21 @@ body {
     text-align: center;
   }
 }
+
+/* ─── Quiz context label (day + set) ─────────────────────────────────────── */
+.quiz-context-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  margin-bottom: 14px;
+}
+
+.quiz-context-divider {
+  color: var(--border);
+}

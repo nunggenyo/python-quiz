@@ -488,6 +488,12 @@ export default function Quiz() {
             </button>
           </div>
 
+          <div className="quiz-context-label">
+            <span>{dayConfigs[selectedDay]?.title}</span>
+            <span className="quiz-context-divider">·</span>
+            <span>Set {selectedSet}</span>
+          </div>
+
           <div className="progress-bar">
             <div className="progress-fill" style={{ width: `${progress}%` }}></div>
           </div>
