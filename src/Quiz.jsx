@@ -117,7 +117,7 @@ export default function Quiz() {
         ) {
           // Restore exactly where the user left off
           setProcessedQuestions(saved.processedQuestions);
-          setCurrentQuestion(saved.currentQuestion);
+          setCurrentQuestion(saved.correctCount + saved.wrongCount);
           setCorrectCount(saved.correctCount);
           setWrongCount(saved.wrongCount);
         } else {
@@ -170,7 +170,6 @@ export default function Quiz() {
     setData(null);
     setProcessedQuestions([]);
     setFinished(false);
-    // Refresh completed sets from storage (in case just finished)
     setCompletedSets(loadCompleted());
   };
 
@@ -180,14 +179,13 @@ export default function Quiz() {
     const { selectedDay: d, selectedSet: s, processedQuestions: pq,
             currentQuestion: cq, correctCount: cc, wrongCount: wc } = resumeData;
 
-    // Pre-load everything without triggering the useEffect re-fetch path
     setSelectedDay(d);
     setSelectedSet(s);
     setProcessedQuestions(pq);
-    setCurrentQuestion(cq);
+    setCurrentQuestion(cc + wc);
     setCorrectCount(cc);
     setWrongCount(wc);
-    setData(pq); // just needs to be truthy
+    setData(pq);
     setFinished(false);
     setSelected(null);
     setShowAnswer(false);
@@ -208,10 +206,6 @@ export default function Quiz() {
 
   const nextQuestion = () => {
     if (currentQuestion + 1 === processedQuestions.length) {
-      // Quiz finished – persist score, clear in-progress save
-      const pct = Math.round(((correctCount + (processedQuestions[currentQuestion].answer === processedQuestions[currentQuestion].displayOptions[selected] ? 1 : 0)) / processedQuestions.length) * 100);
-      const finalCorrect = correctCount + (processedQuestions[currentQuestion]?.answer === processedQuestions[currentQuestion]?.displayOptions?.[selected] ? 0 : 0);
-      // Use the already-updated correctCount (state update is batched, use local calc)
       const finalPct = Math.round((correctCount / processedQuestions.length) * 100);
       const key = `${selectedDay}-set${selectedSet}`;
       const updated = { ...loadCompleted(), [key]: `${finalPct}%` };
@@ -263,7 +257,7 @@ export default function Quiz() {
                 <div>
                   <p className="resume-label">You have an unfinished quiz</p>
                   <p className="resume-detail">
-                    {dayConfigs[resumeData.selectedDay]?.title} · Set {resumeData.selectedSet} · Q{resumeData.currentQuestion + 1}/{resumeData.processedQuestions?.length}
+                    {dayConfigs[resumeData.selectedDay]?.title} · Set {resumeData.selectedSet} · Q{resumeData.correctCount + resumeData.wrongCount + 1}/{resumeData.processedQuestions?.length}
                   </p>
                 </div>
               </div>
@@ -276,7 +270,6 @@ export default function Quiz() {
 
           <div className="quiz-options">
             {Object.entries(dayConfigs).map(([dayKey, config], index) => {
-              const best = getDayBestScore(dayKey);
               const setsCompleted = config.sets.filter(s => completedSets[`${dayKey}-set${s}`]).length;
               return (
                 <button
@@ -357,7 +350,7 @@ export default function Quiz() {
                       <span className="btn-title">Set {setNum}</span>
                       <span className="btn-subtitle">
                         {isResumable
-                          ? `Resume · Q${resumeData.currentQuestion + 1}/${resumeData.processedQuestions?.length}`
+                          ? `Resume · Q${resumeData.correctCount + resumeData.wrongCount + 1}/${resumeData.processedQuestions?.length}`
                           : score
                           ? 'Completed · Tap to retry'
                           : 'Practice Questions'}
