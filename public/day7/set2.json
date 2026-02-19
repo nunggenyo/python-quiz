@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Which keyword is used to declare a block-scoped variable in modern JavaScript?",
+    "options": [
+      "var",
+      "function",
+      "static"
+    ],
+    "answer": "let",
+    "explanation": "The 'let' keyword declares block-scoped local variables, unlike 'var' which is function-scoped."
+  },
+  {
+    "question": "What symbol is used to define an arrow function in JavaScript?",
+    "options": [
+      "=>",
+      "==>",
+      "->"
+    ],
+    "answer": "=>",
+    "explanation": "Arrow functions use the fat arrow syntax (=>) to provide a shorter way to write function expressions."
+  },
+  {
+    "question": "Which jQuery method is used to hide an selected element?",
+    "options": [
+      "display()",
+      "visible()",
+      "remove()"
+    ],
+    "answer": "hide()",
+    "explanation": "The .hide() method in jQuery hides the matched elements by setting their CSS display property to none."
+  },
+  {
+    "question": "In JavaScript, which loop iterates over the enumerable properties of an object?",
+    "options": [
+      "for",
+      "while",
+      "do...while"
+    ],
+    "answer": "for...in",
+    "explanation": "The for...in loop iterates over all enumerable properties of an object, including inherited enumerable properties."
+  },
+  {
+    "question": "What is the primary purpose of jQuery UI?",
+    "options": [
+      "Server-side validation",
+      "Database management",
+      "XML parsing"
+    ],
+    "answer": "Widget interactions and animations",
+    "explanation": "jQuery UI provides abstracted interactions, effects, widgets, and themes built on top of the jQuery library."
+  },
+  {
+    "question": "Which concept ensures JavaScript does not interfere with HTML markup directly?",
+    "options": [
+      "Inline scripting",
+      "Embedded styling",
+      "Server-side rendering"
+    ],
+    "answer": "Unobtrusive JavaScript",
+    "explanation": "Unobtrusive JavaScript is a practice that separates behavior (JS) from content (HTML) and presentation (CSS)."
+  },
+  {
+    "question": "Which statement is used to exit a loop prematurely in JavaScript?",
+    "options": [
+      "stop",
+      "return",
+      "continue"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the current loop, switch, or label statement and transfers control to the statement following the terminated statement."
+  },
+  {
+    "question": "What is the correct syntax to select an element with id 'header' in jQuery?",
+    "options": [
+      "$('header')",
+      "$('.header')",
+      "$[id=header]"
+    ],
+    "answer": "$('#header')",
+    "explanation": "In jQuery, the hash symbol (#) is used to select elements by their ID attribute."
+  },
+  {
+    "question": "Which JavaScript data type is used to store true or false values?",
+    "options": [
+      "String",
+      "Number",
+      "Object"
+    ],
+    "answer": "Boolean",
+    "explanation": "The Boolean data type represents a logical entity and can have only two values: true or false."
+  },
+  {
+    "question": "What does the jQuery .val() method do?",
+    "options": [
+      "Sets the HTML content",
+      "Changes the CSS style",
+      "Deletes the element"
+    ],
+    "answer": "Gets or sets the value of form elements",
+    "explanation": "The .val() method is primarily used to get the current value of the first element in the set of matched elements or set the value of every matched element."
+  },
+  {
+    "question": "Which operator is used for strict equality comparison in JavaScript?",
+    "options": [
+      "=",
+      "==",
+      "!="
+    ],
+    "answer": "===",
+    "explanation": "The strict equality operator (===) checks both the value and the type of the operands without type coercion."
+  },
+  {
+    "question": "In jQuery, what is the purpose of the $(document).ready() function?",
+    "options": [
+      "To load external scripts",
+      "To submit a form",
+      "To close the browser window"
+    ],
+    "answer": "To ensure the DOM is fully loaded",
+    "explanation": "It executes code only after the DOM is fully loaded, preventing errors from accessing elements before they exist."
+  },
+  {
+    "question": "Which keyword defines a constant in JavaScript that cannot be reassigned?",
+    "options": [
+      "var",
+      "let",
+      "static"
+    ],
+    "answer": "const",
+    "explanation": "The 'const' keyword declares a block-scoped variable that cannot be reassigned after its initial declaration."
+  },
+  {
+    "question": "What is the result of using jQuery templates?",
+    "options": [
+      "Compiled binary code",
+      "Server-side database queries",
+      "Encrypted security keys"
+    ],
+    "answer": "Dynamic HTML generation",
+    "explanation": "jQuery templates allow you to declare HTML markup with placeholders that are filled with data to generate dynamic content."
+  },
+  {
+    "question": "Which method is used to add an event handler in modern JavaScript without overwriting existing ones?",
+    "options": [
+      "element.onclick",
+      "element.event",
+      "element.bind"
+    ],
+    "answer": "addEventListener",
+    "explanation": "addEventListener allows you to attach multiple event listeners to the same element without overriding previous ones."
+  },
+  {
+    "question": "What must every XML document have exactly one of?",
+    "options": [
+      "Attribute",
+      "Comment",
+      "Namespace"
+    ],
+    "answer": "Root element",
+    "explanation": "XML documents must have a single root element that contains all other elements in the document."
+  },
+  {
+    "question": "How are XML tags treated regarding case sensitivity?",
+    "options": [
+      "Case-insensitive",
+      "Only lowercase allowed",
+      "Only uppercase allowed"
+    ],
+    "answer": "Case-sensitive",
+    "explanation": "In XML, tags are case-sensitive, meaning <Tag> and <tag> are considered different elements."
+  },
+  {
+    "question": "Which character is used to start an XML declaration?",
+    "options": [
+      "<!",
+      "#",
+      "//"
+    ],
+    "answer": "<?",
+    "explanation": "An XML declaration typically starts with <?xml version=\"1.0\"?> to define the version and encoding."
+  },
+  {
+    "question": "What is the primary difference between XML and HTML?",
+    "options": [
+      "XML is for display, HTML is for data",
+      "XML is older than HTML",
+      "HTML requires a server, XML does not"
+    ],
+    "answer": "XML is for storing data, HTML is for displaying data",
+    "explanation": "XML was designed to store and transport data, whereas HTML was designed to display data."
+  },
+  {
+    "question": "In XML, how must empty elements be handled?",
+    "options": [
+      "They must be ignored",
+      "They must have a closing tag on a new line",
+      "They cannot exist"
+    ],
+    "answer": "They must be closed immediately",
+    "explanation": "Empty elements in XML must be closed immediately, either with a separate closing tag or using a trailing slash (e.g., <br/>)."
+  },
+  {
+    "question": "What is event bubbling in DOM event handling?",
+    "options": [
+      "Event moves from parent to child",
+      "Event is cancelled immediately",
+      "Event is stored in a queue"
+    ],
+    "answer": "Event moves from child to parent",
+    "explanation": "Event bubbling is a phase where an event starts at the target element and propagates up to the root of the DOM."
+  },
+  {
+    "question": "Which method prevents the default action of an event from occurring?",
+    "options": [
+      "event.stop()",
+      "event.cancel()",
+      "event.block()"
+    ],
+    "answer": "event.preventDefault()",
+    "explanation": "The preventDefault() method tells the user agent that if the event does not get explicitly handled, its default action should not be taken."
+  },
+  {
+    "question": "What is event delegation useful for?",
+    "options": [
+      "Reducing server load",
+      "Encrypting user data",
+      "Compiling CSS"
+    ],
+    "answer": "Managing events on dynamic content",
+    "explanation": "Event delegation allows you to attach a single event listener to a parent element to manage events for current and future child elements."
+  },
+  {
+    "question": "In event capturing, which direction does the event flow?",
+    "options": [
+      "Target to Root",
+      "Random order",
+      "Sibling to Sibling"
+    ],
+    "answer": "Root to Target",
+    "explanation": "Event capturing is the phase where the event travels from the root of the DOM down to the target element."
+  },
+  {
+    "question": "Which property identifies the element that triggered the event?",
+    "options": [
+      "event.parent",
+      "event.source",
+      "event.origin"
+    ],
+    "answer": "event.target",
+    "explanation": "The target property of the event interface is a reference to the object onto which the event was dispatched."
+  },
+  {
+    "question": "What does the HTTP status code 200 indicate?",
+    "options": [
+      "Not Found",
+      "Server Error",
+      "Forbidden"
+    ],
+    "answer": "OK",
+    "explanation": "HTTP status code 200 means the request has succeeded and the server has returned the requested data."
+  },
+  {
+    "question": "Which protocol is used to secure communication over a computer network?",
+    "options": [
+      "FTP",
+      "HTTP",
+      "SMTP"
+    ],
+    "answer": "HTTPS",
+    "explanation": "HTTPS (HTTP Secure) is an extension of HTTP used for secure communication over a computer network, widely used on the Internet."
+  },
+  {
+    "question": "What is the role of a Web Server?",
+    "options": [
+      "To render pages on the client side",
+      "To write CSS code",
+      "To design user interfaces"
+    ],
+    "answer": "To process requests and deliver web pages",
+    "explanation": "A web server stores, processes, and delivers web pages to clients (browsers) upon request."
+  },
+  {
+    "question": "What does CI stand for in Web Publishing?",
+    "options": [
+      "Continuous Integration",
+      "Client Interface",
+      "Code Inspection"
+    ],
+    "answer": "Continuous Integration",
+    "explanation": "Continuous Integration is a development practice where developers regularly merge code changes into a central repository, followed by automated builds and tests."
+  },
+  {
+    "question": "Which file is used to configure Apache Tomcat web applications?",
+    "options": [
+      "config.ini",
+      "settings.json",
+      "apache.conf"
+    ],
+    "answer": "web.xml",
+    "explanation": "The web.xml file is the deployment descriptor for a Java web application, configuring servlets, filters, and listeners in Tomcat."
+  },
+  {
+    "question": "What is the primary function of an SSL Certificate?",
+    "options": [
+      "To speed up website loading",
+      "To design the website layout",
+      "To store database records"
+    ],
+    "answer": "To encrypt data between client and server",
+    "explanation": "SSL certificates enable encrypted links between a web server and a browser, ensuring data privacy and integrity."
+  },
+  {
+    "question": "Which hosting option provides an entire physical server to one customer?",
+    "options": [
+      "Shared Hosting",
+      "Cloud Hosting",
+      "VPS Hosting"
+    ],
+    "answer": "Dedicated Hosting",
+    "explanation": "Dedicated hosting provides the customer with their own physical server, offering maximum control and resources."
+  },
+  {
+    "question": "What does the HTTP status code 404 represent?",
+    "options": [
+      "Internal Server Error",
+      "Unauthorized Access",
+      "Bad Request"
+    ],
+    "answer": "Not Found",
+    "explanation": "The 404 status code indicates that the server cannot find the requested resource."
+  },
+  {
+    "question": "In web publishing, what is the purpose of a domain name?",
+    "options": [
+      "To write JavaScript code",
+      "To style the webpage",
+      "To compile the database"
+    ],
+    "answer": "To identify the website address",
+    "explanation": "A domain name is a human-readable address used to access websites, translating to an IP address."
+  },
+  {
+    "question": "Which tool is commonly used for version control in web development?",
+    "options": [
+      "Photoshop",
+      "MySQL",
+      "Notepad"
+    ],
+    "answer": "Git",
+    "explanation": "Git is a distributed version control system used to track changes in source code during software development."
+  },
+  {
+    "question": "What is the standard port number for HTTP traffic?",
+    "options": [
+      "21",
+      "25",
+      "443"
+    ],
+    "answer": "80",
+    "explanation": "Port 80 is the default network port for sending and receiving unencrypted web pages (HTTP)."
+  },
+  {
+    "question": "What is the standard port number for HTTPS traffic?",
+    "options": [
+      "80",
+      "21",
+      "3306"
+    ],
+    "answer": "443",
+    "explanation": "Port 443 is the default network port for secure web communication (HTTPS)."
+  },
+  {
+    "question": "Which component runs in the user's browser?",
+    "options": [
+      "Web Server",
+      "Database Server",
+      "Back-end Logic"
+    ],
+    "answer": "Web Client",
+    "explanation": "The web client (usually a browser) runs on the user's device and requests resources from the web server."
+  },
+  {
+    "question": "What is the purpose of the <title> tag in a website structure?",
+    "options": [
+      "To define the main heading visible on the page",
+      "To link CSS files",
+      "To import JavaScript"
+    ],
+    "answer": "To set the text shown in the browser tab",
+    "explanation": "The <title> element defines the title of the document, shown in the browser's title bar or a page's tab."
+  },
+  {
+    "question": "Which hosting type shares server resources among multiple users?",
+    "options": [
+      "Dedicated Hosting",
+      "Colocation",
+      "Private Cloud"
+    ],
+    "answer": "Shared Hosting",
+    "explanation": "Shared hosting is a service where many websites reside on one web server connected to the Internet, sharing resources."
+  },
+  {
+    "question": "What does API stand for?",
+    "options": [
+      "Application Process Interface",
+      "Advanced Program Integration",
+      "Automated Protocol Interaction"
+    ],
+    "answer": "Application Programming Interface",
+    "explanation": "An API is a set of definitions and protocols for building and integrating application software."
+  },
+  {
+    "question": "Which data format is most commonly used in modern web APIs?",
+    "options": [
+      "XML",
+      "CSV",
+      "Binary"
+    ],
+    "answer": "JSON",
+    "explanation": "JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse."
+  },
+  {
+    "question": "What is an API Endpoint?",
+    "options": [
+      "The server hardware",
+      "The database schema",
+      "The user interface design"
+    ],
+    "answer": "A specific URL where an API can be accessed",
+    "explanation": "An endpoint is a digital communication channel where the API receives requests about a specific resource on its server."
+  },
+  {
+    "question": "Which HTTP method is typically used to retrieve data from an API?",
+    "options": [
+      "POST",
+      "DELETE",
+      "PUT"
+    ],
+    "answer": "GET",
+    "explanation": "The GET method requests a representation of the specified resource and should only retrieve data."
+  },
+  {
+    "question": "Why is API authentication important?",
+    "options": [
+      "To make the API faster",
+      "To change the data format",
+      "To reduce server costs"
+    ],
+    "answer": "To secure access to resources",
+    "explanation": "Authentication ensures that only authorized users or applications can access the API and its data."
+  },
+  {
+    "question": "Which HTML5 tag is used to define navigation links?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<header>"
+    ],
+    "answer": "<nav>",
+    "explanation": "The <nav> HTML element represents a section of a page whose purpose is to provide navigation links."
+  },
+  {
+    "question": "In the CSS Box Model, what is the outermost layer?",
+    "options": [
+      "Padding",
+      "Border",
+      "Content"
+    ],
+    "answer": "Margin",
+    "explanation": "The margin is the outermost layer of the box model, creating space around the border."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a responsive grid container?",
+    "options": [
+      ".box",
+      ".grid",
+      ".wrap"
+    ],
+    "answer": ".container",
+    "explanation": "The .container class in Bootstrap provides a responsive fixed width container for centering page content."
+  },
+  {
+    "question": "Which CSS property is used to create flexible layouts?",
+    "options": [
+      "display: block",
+      "position: absolute",
+      "float: left"
+    ],
+    "answer": "display: flex",
+    "explanation": "The Flexbox layout module (display: flex) is designed to lay out elements in one-dimensional rows or columns efficiently."
+  },
+  {
+    "question": "Which HTML attribute is used to specify where to send form data upon submission?",
+    "options": [
+      "method",
+      "name",
+      "type"
+    ],
+    "answer": "action",
+    "explanation": "The action attribute specifies the URL where the form data should be submitted when the user clicks the submit button."
+  }
+]

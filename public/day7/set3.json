@@ -1,0 +1,522 @@
+[
+  {
+    "question": "Which JavaScript method is used to add one or more elements to the end of an array and returns the new length of the array?",
+    "options": [
+      "The `unshift()` method",
+      "The `concat()` method",
+      "The `splice()` method"
+    ],
+    "answer": "The `push()` method",
+    "explanation": "The `push()` method in JavaScript is used to append new elements to an array. It modifies the original array by adding the specified items to its end and returns the updated length of the array."
+  },
+  {
+    "question": "In jQuery, what does the `$(document).ready()` function ensure before executing its enclosed code?",
+    "options": [
+      "That all images on the page have finished loading",
+      "That the user has interacted with the page",
+      "That external CSS files have been parsed"
+    ],
+    "answer": "That the DOM (Document Object Model) is fully loaded and safe to manipulate.",
+    "explanation": "The `$(document).ready()` function in jQuery waits for the DOM tree to be fully constructed before running any JavaScript code that interacts with page elements. This prevents errors that could occur if scripts attempt to manipulate elements that haven't yet been created by the browser parser."
+  },
+  {
+    "question": "What is the result of the following JavaScript expression: `typeof null`?",
+    "options": [
+      "`\"null\"`",
+      "`\"undefined\"`",
+      "`\"object\"`"
+    ],
+    "answer": "`\"object\"`",
+    "explanation": "Due to a historical bug in JavaScript that has been retained for backward compatibility, `typeof null` returns `\"object\"`. This is a well-known quirk of the language, even though `null` is actually a primitive value representing the intentional absence of any object value."
+  },
+  {
+    "question": "Which jQuery method is used to perform an asynchronous HTTP request to fetch data from a server?",
+    "options": [
+      "The `getJSON()` method",
+      "The `load()` method",
+      "The `post()` method"
+    ],
+    "answer": "The `ajax()` method",
+    "explanation": "jQuery's `ajax()` method is the core method for performing asynchronous HTTP requests. It provides a flexible and configurable way to communicate with servers, supporting various data types and request types (GET, POST, etc.), and handling success and error callbacks."
+  },
+  {
+    "question": "What is the purpose of the JavaScript `this` keyword inside an object method?",
+    "options": [
+      "It creates a new instance of the object",
+      "It refers to the global window object only",
+      "It points to the object's prototype"
+    ],
+    "answer": "It refers to the current object that the method is being called on.",
+    "explanation": "Inside a method (a function that belongs to an object), `this` refers to the object itself that is executing the current function. This allows methods to access and manipulate other properties and methods of the same object, enabling object-oriented behavior in JavaScript."
+  },
+  {
+    "question": "Which of the following correctly demonstrates a JavaScript `switch` statement structure?",
+    "options": [
+      "switch (x) { case 1: break; }",
+      "switch x { case 1: break; }",
+      "switch [x] { case 1: break; }"
+    ],
+    "answer": "switch(x) { case 1: break; default: break; }",
+    "explanation": "The correct syntax for a JavaScript switch statement includes parentheses around the expression `switch(x)`, curly braces containing the cases, a colon after each case label, and optional `break` statements to prevent fall-through. A `default` case is also common for handling unmatched values."
+  },
+  {
+    "question": "What is the purpose of using the `data-` attribute in HTML5 when combined with jQuery?",
+    "options": [
+      "To store inline CSS styles",
+      "To define JavaScript functions",
+      "To create database connections"
+    ],
+    "answer": "To store custom data private to the page or application within HTML elements.",
+    "explanation": "HTML5 `data-*` attributes allow developers to embed custom data attributes in HTML elements. jQuery provides the `.data()` method to read these values and store associated data in memory, making it easy to attach metadata to elements for dynamic interactions and client-side state management."
+  },
+  {
+    "question": "Which XML declaration is correct and properly formed?",
+    "options": [
+      "`<?xml encoding=\"UTF-8\" version=\"1.0\"?>`",
+      "`<xml version=\"1.0\" encoding=\"UTF-8\">`",
+      "`<?xml version=1.0 encoding=UTF-8?>`"
+    ],
+    "answer": "`<?xml version=\"1.0\" encoding=\"UTF-8\"?>`",
+    "explanation": "A well-formed XML declaration must begin with `<?xml` and end with `?>`. It must include the `version` attribute, and attribute values must be enclosed in quotes (single or double). The `encoding` attribute is optional but recommended. The order of attributes doesn't matter as long as `version` appears first."
+  },
+  {
+    "question": "In XML, what is a CDATA section used for?",
+    "options": [
+      "To define a new element type",
+      "To compress the XML data",
+      "To encode binary data like images"
+    ],
+    "answer": "To mark blocks of text containing characters that would otherwise be interpreted as markup.",
+    "explanation": "A CDATA (Character Data) section, denoted by `<![CDATA[ ... ]]>`, tells an XML parser to treat the enclosed content as plain text rather than markup. This is particularly useful when including content with characters like `<`, `>`, or `&` that would normally trigger parsing rules."
+  },
+  {
+    "question": "What is an XML namespace and why is it important?",
+    "options": [
+      "It defines the file path to the XML document",
+      "It specifies the character encoding of the document",
+      "It limits access to certain parts of the XML"
+    ],
+    "answer": "It provides a way to avoid element name conflicts by qualifying element and attribute names with a URI.",
+    "explanation": "XML namespaces, declared using `xmlns` attributes, allow developers to differentiate between elements and attributes that might have the same name but come from different vocabularies. This prevents ambiguity when combining XML from multiple sources and ensures that elements are correctly interpreted and processed."
+  },
+  {
+    "question": "What does the JavaScript `addEventListener` method return when attached to an element?",
+    "options": [
+      "A boolean value indicating success",
+      "The event object that was created",
+      "A reference to the newly created event"
+    ],
+    "answer": "The method returns `undefined` and does not provide a return value.",
+    "explanation": "The `addEventListener` method in JavaScript is used to register an event handler on a target element. It doesn't return anything useful (returns `undefined`). Its purpose is purely to set up the event listener, not to provide immediate feedback or a value back to the calling code."
+  },
+  {
+    "question": "In event-driven programming for web applications, what is event propagation?",
+    "options": [
+      "The process of broadcasting events to multiple servers",
+      "The speed at which events are processed",
+      "The storage of events in a database"
+    ],
+    "answer": "The mechanism that determines the order in which elements receive events, involving capturing and bubbling phases.",
+    "explanation": "Event propagation describes how events travel through the DOM tree. In the capturing phase, the event travels from the root down to the target element. In the bubbling phase, it travels back up from the target to the root. This allows parent elements to respond to events triggered on their children."
+  },
+  {
+    "question": "What is the purpose of a `web.xml` deployment descriptor in a Java web application?",
+    "options": [
+      "To store user login credentials",
+      "To define the database schema",
+      "To host the main HTML content"
+    ],
+    "answer": "To configure servlet mappings, welcome files, security constraints, and other settings for the web application.",
+    "explanation": "The `web.xml` file is a configuration file that tells the servlet container (like Apache Tomcat) how to deploy and run a web application. It defines which servlets handle which URL patterns, sets up session timeouts, declares security roles, specifies welcome pages (like index.html), and configures filters and listeners."
+  },
+  {
+    "question": "How can you configure Apache Tomcat to use a port other than the default 8080?",
+    "options": [
+      "By creating a new web application",
+      "By modifying the `web.xml` file",
+      "By changing the `catalina.properties` file"
+    ],
+    "answer": "By editing the `Connector` port attribute in the `server.xml` configuration file.",
+    "explanation": "The main configuration file for Tomcat is `server.xml`. Inside this file, you'll find `Connector` elements that define how Tomcat accepts connections. To change the port, you locate the HTTP connector (usually with `protocol=\"HTTP/1.1\"`) and modify its `port` attribute from `8080` to your desired port number, then restart the server."
+  },
+  {
+    "question": "What is the difference between a `GET` and `POST` request in terms of data visibility and security?",
+    "options": [
+      "POST requests are faster than GET requests",
+      "GET requests can send files, POST cannot",
+      "GET is encrypted, POST is not"
+    ],
+    "answer": "GET appends data to the URL where it's visible, while POST sends data in the request body, offering better privacy.",
+    "explanation": "GET requests include form data in the URL as query parameters, which can be bookmarked and appear in browser history and server logs. POST requests send data in the HTTP message body, making it not directly visible in the URL. While POST offers better privacy for sensitive data, both are unencrypted unless used with HTTPS."
+  },
+  {
+    "question": "What is an HTTP status code in the 200 range indicating?",
+    "options": [
+      "Client-side error",
+      "Server-side error",
+      "Redirection"
+    ],
+    "answer": "Successful response indicating the request was received, understood, and accepted.",
+    "explanation": "HTTP status codes in the 200-299 range indicate successful responses. The most common is 200 OK, meaning the request succeeded and the response contains the requested data. Other 2xx codes include 201 Created (for POST requests creating resources) and 204 No Content (successful but no content to return)."
+  },
+  {
+    "question": "What does a 404 HTTP status code indicate to a web client?",
+    "options": [
+      "The server is temporarily unavailable",
+      "The request requires authentication",
+      "The server understood the request but refuses to authorize it"
+    ],
+    "answer": "The requested resource could not be found on the server.",
+    "explanation": "A 404 Not Found status code is a client error response indicating that the server couldn't find the requested resource. This typically happens when a URL is mistyped, a page has been moved without proper redirection, or a link points to content that no longer exists on the server."
+  },
+  {
+    "question": "What is the purpose of using descriptive and unique page titles in HTML?",
+    "options": [
+      "To increase the file size of the page",
+      "To display tooltips on hover",
+      "To create automatic navigation menus"
+    ],
+    "answer": "To improve search engine optimization and provide context in browser tabs and bookmarks.",
+    "explanation": "The HTML `<title>` element serves multiple purposes: it appears in browser tabs, is used as the default name for bookmarks, and is a crucial factor for search engines to understand page content. Unique, descriptive titles help users identify pages and improve the site's visibility in search results."
+  },
+  {
+    "question": "When creating a website structure, what is the purpose of a sitemap?",
+    "options": [
+      "To display geographical locations",
+      "To create visual effects on hover",
+      "To store user session data"
+    ],
+    "answer": "To provide a hierarchical list of pages that helps users and search engines navigate the site.",
+    "explanation": "A sitemap is a file (typically `sitemap.xml` for search engines or an HTML page for users) that lists all important pages on a website. For search engines, it helps discover and index content more efficiently. For users, it provides an overview of available content and aids navigation when other methods fail."
+  },
+  {
+    "question": "What is the purpose of a reverse proxy in web server architecture?",
+    "options": [
+      "To store website backups",
+      "To write server logs",
+      "To compile JavaScript code"
+    ],
+    "answer": "To receive client requests and forward them to appropriate backend servers, providing load balancing and security.",
+    "explanation": "A reverse proxy sits between clients and backend servers, intercepting requests and forwarding them to the appropriate server. It provides benefits like load balancing (distributing traffic across multiple servers), caching (storing static content), SSL termination (handling HTTPS encryption), and security (hiding backend server details)."
+  },
+  {
+    "question": "What does the term 'shared hosting' imply about server resources?",
+    "options": [
+      "You have exclusive access to all server resources",
+      "Resources are unlimited and always available",
+      "You share a virtualized private server with guaranteed resources"
+    ],
+    "answer": "Multiple websites share the same server and its resources including CPU, RAM, and disk space.",
+    "explanation": "In shared hosting, many websites reside on a single physical server and share all its resources. This makes it economical but means that if one website experiences high traffic or uses excessive resources, it can negatively impact the performance of other sites on the same server. Resource limits are typically enforced to prevent abuse."
+  },
+  {
+    "question": "What is a key advantage of dedicated hosting over shared or VPS hosting?",
+    "options": [
+      "Lower cost for small websites",
+      "Built-in website builder tools",
+      "No technical knowledge required"
+    ],
+    "answer": "Complete control over the entire server with dedicated resources not shared with anyone else.",
+    "explanation": "With dedicated hosting, you lease an entire physical server exclusively for your use. This provides maximum performance, security, and flexibility. You have root access, can customize the server configuration, choose your operating system, install any software, and don't have to worry about other sites affecting your performance."
+  },
+  {
+    "question": "What is a REST API and what architectural constraint defines it?",
+    "options": [
+      "It requires SOAP protocol for communication",
+      "It uses UDP instead of TCP",
+      "It mandates binary data formats"
+    ],
+    "answer": "An API that follows representational state transfer principles, using stateless operations and standard HTTP methods.",
+    "explanation": "REST (Representational State Transfer) APIs are designed around resources that are accessed via standard HTTP methods (GET, POST, PUT, DELETE). They are stateless, meaning each request contains all necessary information, and typically return data in JSON or XML format. REST APIs are widely used for web services due to their simplicity and scalability."
+  },
+  {
+    "question": "What is an API key and why is it used in web APIs?",
+    "options": [
+      "To encrypt all API communication",
+      "To compress API responses",
+      "To increase API response speed"
+    ],
+    "answer": "A unique identifier used to authenticate and authorize access to an API, tracking usage and applying rate limits.",
+    "explanation": "API keys are secret tokens passed with API requests to identify the calling application or user. They allow API providers to monitor usage, enforce rate limits (preventing excessive requests), control access, and sometimes bill for usage. Keys help protect APIs from unauthorized access and abuse while allowing legitimate developers to use the service."
+  },
+  {
+    "question": "What is a JavaScript callback function?",
+    "options": [
+      "A function that runs at the start of the program",
+      "A function that returns another function",
+      "A function that modifies the DOM directly"
+    ],
+    "answer": "A function passed as an argument to another function, to be executed later after some operation completes.",
+    "explanation": "Callbacks are fundamental to asynchronous programming in JavaScript. Instead of waiting for an operation (like a network request or file read) to complete, you provide a callback function that will be called when the operation finishes. This allows other code to continue running while waiting for the asynchronous result."
+  },
+  {
+    "question": "What does the JavaScript `map()` method do when applied to an array?",
+    "options": [
+      "It filters elements based on a condition",
+      "It sorts the array in ascending order",
+      "It reduces the array to a single value"
+    ],
+    "answer": "It creates a new array populated with the results of calling a provided function on every element.",
+    "explanation": "The `map()` method iterates through each element of an array, applies a transformation function to it, and returns a new array containing the transformed values. The original array remains unchanged. This is useful for converting data formats, extracting properties, or applying calculations to each element without mutating the original."
+  },
+  {
+    "question": "Which loop in JavaScript is specifically designed to iterate over the enumerable properties of an object?",
+    "options": [
+      "`for...of` loop",
+      "`while` loop",
+      "`do...while` loop"
+    ],
+    "answer": "`for...in` loop",
+    "explanation": "The `for...in` loop iterates over all enumerable property names of an object. For each property, it executes a block of code. This is useful for working with objects when you need to access both keys and values. Note that `for...in` also iterates over inherited enumerable properties, so `hasOwnProperty()` checks are often used to filter."
+  },
+  {
+    "question": "What is the purpose of jQuery's `fadeIn()` and `fadeOut()` methods?",
+    "options": [
+      "To change the text color of elements",
+      "To permanently remove elements from the DOM",
+      "To change element positions on the page"
+    ],
+    "answer": "To gradually change the opacity of elements, creating smooth show/hide visual effects.",
+    "explanation": "jQuery provides animation methods like `fadeIn()` and `fadeOut()` that adjust an element's opacity over time. `fadeIn()` gradually increases opacity from 0 to fully visible, while `fadeOut()` does the opposite. These methods enhance user experience by providing visual feedback during interface changes, making transitions feel smoother and more polished."
+  },
+  {
+    "question": "In jQuery UI, what is a Datepicker widget commonly used for?",
+    "options": [
+      "To display server logs",
+      "To create animated graphs",
+      "To validate email addresses"
+    ],
+    "answer": "To provide an interactive calendar interface for selecting dates in form input fields.",
+    "explanation": "The jQuery UI Datepicker widget transforms a standard text input into a date selection tool. Users can click on the field to open a calendar, navigate between months, and select a date, which then populates the field in a configurable format. This improves usability by preventing format errors and providing a consistent date selection experience."
+  },
+  {
+    "question": "What is unobtrusive validation in the context of jQuery and ASP.NET MVC?",
+    "options": [
+      "Validation that runs only on page load",
+      "Validation that requires no JavaScript",
+      "Validation that only checks numeric inputs"
+    ],
+    "answer": "Validation rules are defined using HTML5 data attributes and enabled via separate JavaScript, keeping markup clean.",
+    "explanation": "Unobtrusive validation separates validation rules from validation logic. Model validation attributes (like `[Required]` or `[StringLength]`) are rendered as HTML5 `data-*` attributes in the markup. A separate jQuery validation library reads these attributes and applies client-side validation, keeping the HTML clean and the validation logic maintainable and reusable."
+  },
+  {
+    "question": "In XML, what is the purpose of a Document Type Definition (DTD)?",
+    "options": [
+      "To style XML for display in browsers",
+      "To compress XML files for storage",
+      "To encrypt sensitive XML data"
+    ],
+    "answer": "To define the legal structure, elements, and attributes of an XML document.",
+    "explanation": "A DTD defines the rules for an XML document, specifying which elements can appear, in what order, how many times, and what attributes they can have. It can be declared internally within the XML document or referenced externally. Validating parsers use DTDs to check if an XML document conforms to its specified structure."
+  },
+  {
+    "question": "What is an XML Schema (XSD) and how does it differ from DTD?",
+    "options": [
+      "XSD is used for HTML, DTD for XML",
+      "XSD is written in a proprietary format",
+      "XSD has fewer features than DTD"
+    ],
+    "answer": "XSD is an XML-based schema language that offers more powerful data typing and namespace support than DTD.",
+    "explanation": "XML Schema Definition (XSD) is a more advanced alternative to DTD. Unlike DTDs which have their own syntax, XSDs are written in XML, making them parseable and editable with standard XML tools. XSD supports strong data typing (integers, dates, etc.), namespaces, and more precise constraints, making it better suited for complex data validation."
+  },
+  {
+    "question": "What is event bubbling in the context of DOM event handling?",
+    "options": [
+      "Events rise to the surface of the browser window",
+      "Events create visual bubble effects",
+      "Events are stored in a queue for later processing"
+    ],
+    "answer": "After an event fires on an element, it propagates upward through its ancestors in the DOM tree.",
+    "explanation": "Event bubbling is a type of event propagation where an event triggered on a nested element first runs its handlers on that element, then on its parent, then all the way up to the document root. This allows parent elements to respond to events occurring on their children, which is useful for implementing patterns like event delegation."
+  },
+  {
+    "question": "What is the purpose of calling `event.preventDefault()` inside an event handler?",
+    "options": [
+      "To remove all other event handlers",
+      "To immediately stop all JavaScript execution",
+      "To permanently delete the event from memory"
+    ],
+    "answer": "To prevent the default action associated with the event from occurring.",
+    "explanation": "`preventDefault()` cancels the browser's default behavior for an event. Common uses include preventing form submission (to handle it with AJAX instead), stopping links from navigating to their `href` target, or preventing keypresses from typing characters into input fields. This allows developers to implement custom behaviors while suppressing the native ones."
+  },
+  {
+    "question": "What is Continuous Deployment and how does it extend Continuous Delivery?",
+    "options": [
+      "It requires manual approval for all releases",
+      "It only works for mobile applications",
+      "It focuses only on security testing"
+    ],
+    "answer": "It automatically deploys every change that passes the automated testing pipeline directly to production.",
+    "explanation": "Continuous Delivery means code changes are automatically prepared for release to production but require manual approval for deployment. Continuous Deployment takes this further by automatically deploying every change that passes all stages of the production pipeline to customers with no human intervention, resulting in many daily deployments."
+  },
+  {
+    "question": "What is a build server in the context of Continuous Integration?",
+    "options": [
+      "A server that hosts the live website",
+      "A server that stores user uploads",
+      "A server that manages domain names"
+    ],
+    "answer": "An automated system that regularly pulls code from repositories, compiles it, and runs tests.",
+    "explanation": "A build server (like Jenkins, Travis CI, or GitHub Actions) is central to CI/CD pipelines. It monitors repositories for changes, automatically checks out new code, compiles/builds the application, runs unit and integration tests, and reports results. This automation ensures code quality issues are detected quickly and consistently."
+  },
+  {
+    "question": "What is the role of a web server in hosting a static website?",
+    "options": [
+      "To execute server-side scripts and generate dynamic content",
+      "To manage user authentication and sessions",
+      "To connect directly to databases"
+    ],
+    "answer": "To receive HTTP requests and serve pre-existing HTML, CSS, JavaScript, and image files to clients.",
+    "explanation": "For static websites, a web server's role is straightforward: it listens for incoming HTTP requests, maps the requested URL to files on the filesystem, and sends those files back with appropriate HTTP headers. No server-side processing, database queries, or dynamic content generation is required, making static hosting simple and fast."
+  },
+  {
+    "question": "What is a self-signed SSL certificate and when might it be used?",
+    "options": [
+      "It is issued by a trusted Certificate Authority for production",
+      "It is automatically renewed by browsers",
+      "It provides the highest level of encryption available"
+    ],
+    "answer": "A certificate signed by its own creator rather than a trusted CA, used for testing and development environments.",
+    "explanation": "A self-signed certificate is encrypted with its own private key and not signed by a recognized Certificate Authority (CA). Browsers will show security warnings for these certificates because they cannot verify the identity of the site owner. They're useful for development and internal testing but not suitable for public production websites."
+  },
+  {
+    "question": "What is a wildcard SSL certificate?",
+    "options": [
+      "A certificate that never expires",
+      "A certificate that encrypts all internet traffic",
+      "A certificate that works on any server type"
+    ],
+    "answer": "A certificate that secures a domain and all its subdomains using a single certificate.",
+    "explanation": "A wildcard SSL certificate is issued for `*.example.com` and can secure any subdomain (like `mail.example.com`, `shop.example.com`, `blog.example.com`) with the same certificate. This is more convenient and cost-effective than managing separate certificates for each subdomain, while providing the same level of encryption."
+  },
+  {
+    "question": "What is managed WordPress hosting?",
+    "options": [
+      "Hosting where users manage everything themselves",
+      "The cheapest form of hosting available",
+      "Hosting designed for static HTML sites"
+    ],
+    "answer": "A specialized hosting service optimized for WordPress with automatic updates, backups, and enhanced security.",
+    "explanation": "Managed WordPress hosting is tailored specifically for WordPress sites. The provider handles technical aspects including automatic WordPress core and plugin updates, daily backups, specialized caching for WordPress performance, staging environments, and WordPress-specific security monitoring. This allows site owners to focus on content rather than server management."
+  },
+  {
+    "question": "What is a webhook in the context of APIs?",
+    "options": [
+      "A tool for debugging API calls",
+      "A method for encrypting API traffic",
+      "A standard format for API responses"
+    ],
+    "answer": "An HTTP callback that occurs when something happens, sending data to a specified URL automatically.",
+    "explanation": "Webhooks are user-defined HTTP callbacks triggered by specific events. Instead of polling an API for updates, you provide a URL that the service will send data to when an event occurs (like a payment completion, code push, or form submission). This enables real-time notifications and integration between different services without continuous polling."
+  },
+  {
+    "question": "What is rate limiting in API design?",
+    "options": [
+      "Limiting the speed of API response delivery",
+      "Restricting which HTTP methods can be used",
+      "Charging different prices for API access"
+    ],
+    "answer": "Controlling the number of API requests a client can make within a specific time window.",
+    "explanation": "Rate limiting protects APIs from abuse and ensures fair usage. By tracking request counts per client (using API keys or IP addresses), servers can reject or throttle requests that exceed defined limits, returning status codes like 429 Too Many Requests. This prevents any single client from overwhelming the service and ensures availability for all users."
+  },
+  {
+    "question": "What is an HTTP header and what purpose does it serve?",
+    "options": [
+      "It contains only the HTML content of the page",
+      "It appears in the visible page content",
+      "It's used only for images and media"
+    ],
+    "answer": "It provides metadata about the request or response, such as content type, caching rules, and authentication info.",
+    "explanation": "HTTP headers are key-value pairs sent before the actual content in both requests and responses. Request headers include information like the browser type, accepted content formats, and cookies. Response headers convey details like the content type (HTML, JSON, image), server information, caching directives, and security policies like CORS."
+  },
+  {
+    "question": "What does the `Access-Control-Allow-Origin` header do in HTTP responses?",
+    "options": [
+      "It compresses the response data",
+      "It encrypts the communication channel",
+      "It specifies the server's IP address"
+    ],
+    "answer": "It tells browsers whether a resource can be shared with requesting code from a different origin.",
+    "explanation": "This header is part of Cross-Origin Resource Sharing (CORS), a security mechanism that controls whether web pages from one domain can request resources from another domain. The header value can be a specific domain or `*` (allowing any domain), giving developers control over which external sites can access their APIs."
+  },
+  {
+    "question": "What is a staging environment in web development and deployment?",
+    "options": [
+      "The live production website",
+      "The developer's local computer",
+      "The database backup server"
+    ],
+    "answer": "A pre-production environment that mirrors production for final testing before deployment.",
+    "explanation": "A staging environment is a replica of the production environment used for final testing before releasing code to users. It should match production as closely as possible in terms of configuration, data, and infrastructure. This allows teams to catch deployment issues, test migrations, and validate features in realistic conditions without affecting real users."
+  },
+  {
+    "question": "What is a 301 redirect and when should it be used?",
+    "options": [
+      "A temporary redirect for maintenance",
+      "A redirect that only works for images",
+      "A redirect that is ignored by search engines"
+    ],
+    "answer": "A permanent redirect indicating that a resource has moved to a new URL, transferring search engine rankings.",
+    "explanation": "A 301 Moved Permanently redirect tells browsers and search engines that the requested resource has permanently moved to a new location. It passes most of the original page's search engine ranking power to the new URL. This is essential when restructuring websites, changing domains, or permanently moving content to preserve SEO value and user bookmarks."
+  },
+  {
+    "question": "What is the purpose of a robots.txt file on a website?",
+    "options": [
+      "To create backup copies of the site",
+      "To display robot-themed content",
+      "To authenticate human users"
+    ],
+    "answer": "To instruct web crawlers which parts of the site should not be accessed or indexed.",
+    "explanation": "The robots.txt file, placed in a website's root directory, is part of the Robots Exclusion Protocol. It tells search engine crawlers (like Googlebot) which URLs they are allowed or disallowed to crawl. This helps prevent indexing of duplicate content, private areas, or resource-intensive pages, and manages crawler traffic on the site."
+  },
+  {
+    "question": "What is the same-origin policy and why is it important for web security?",
+    "options": [
+      "It allows unrestricted access between all websites",
+      "It prevents websites from loading any images",
+      "It blocks all JavaScript execution"
+    ],
+    "answer": "A security mechanism that restricts how documents from one origin can interact with resources from another origin.",
+    "explanation": "The same-origin policy is a critical browser security feature that prevents malicious sites from reading data from other sites. Two pages have the same origin if they share the same protocol (HTTP/HTTPS), host (domain), and port. This policy stops scripts from one site from accessing sensitive data on another, such as reading emails, bank statements, or personal information."
+  },
+  {
+    "question": "What does the `async` attribute do when added to a `<script>` tag?",
+    "options": [
+      "It makes the script run synchronously",
+      "It disables the script completely",
+      "It loads the script before HTML parsing begins"
+    ],
+    "answer": "It downloads the script in parallel and executes it as soon as it's available, pausing HTML parsing.",
+    "explanation": "The `async` attribute enables asynchronous script loading. The browser downloads the script in the background while continuing to parse HTML. However, once the download completes, HTML parsing pauses while the script executes. This is useful for independent scripts that don't rely on the DOM being fully built or on other scripts."
+  },
+  {
+    "question": "What is the purpose of a Content Delivery Network (CDN) in web publishing?",
+    "options": [
+      "To write website content automatically",
+      "To replace the need for web hosting",
+      "To compress website images"
+    ],
+    "answer": "To distribute website content across multiple geographically distributed servers for faster delivery.",
+    "explanation": "A CDN is a network of servers located around the world that cache and deliver website content from the location closest to each user. This reduces latency, speeds up page loads, decreases bandwidth costs on the origin server, and provides DDoS protection. CDNs are especially effective for serving static assets like images, CSS, and JavaScript files."
+  },
+  {
+    "question": "What is a GraphQL API and how does it differ from REST?",
+    "options": [
+      "It only supports POST requests",
+      "It requires XML for all data exchange",
+      "It cannot handle real-time data"
+    ],
+    "answer": "A query language that allows clients to request exactly the data they need from multiple resources in one request.",
+    "explanation": "GraphQL is an API query language that lets clients specify exactly what data they need, avoiding over-fetching and under-fetching common in REST. Instead of multiple endpoints for different resources, GraphQL has a single endpoint. Clients can request nested related data in one round trip, and the server returns precisely the fields requested, improving efficiency for complex applications."
+  },
+  {
+    "question": "What is OAuth and why is it used in web applications?",
+    "options": [
+      "A programming language for APIs",
+      "A database query language",
+      "A method for caching API responses"
+    ],
+    "answer": "An open standard for token-based authentication and authorization, allowing secure delegated access.",
+    "explanation": "OAuth enables users to grant third-party applications access to their resources (like social media profiles or Google Drive) without sharing passwords. It works by issuing access tokens that represent specific permissions. This is what allows 'Login with Google' buttons to work safely, giving apps limited access to user data while keeping credentials secure."
+  }
+]

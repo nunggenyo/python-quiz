@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Which JavaScript method creates a new array with all elements that pass a test implemented by a provided function?",
+    "options": [
+      "The `map()` method",
+      "The `forEach()` method",
+      "The `reduce()` method"
+    ],
+    "answer": "The `filter()` method",
+    "explanation": "The `filter()` method in JavaScript creates a new array containing only the elements from the original array that meet a condition specified in a callback function. It's commonly used for data filtering operations, such as extracting all even numbers from an array or finding active users from a list."
+  },
+  {
+    "question": "What is the purpose of the jQuery `each()` function?",
+    "options": [
+      "To create a new jQuery object",
+      "To select elements by their class name",
+      "To bind multiple event handlers at once"
+    ],
+    "answer": "To iterate over both jQuery objects and arrays, executing a function for each matched element or item.",
+    "explanation": "jQuery's `each()` method provides a通用 way to loop through collections. When used on a jQuery object, it iterates over each DOM element in the collection. It can also iterate over standard arrays and objects. The callback function receives the index and the current item as parameters, making it useful for applying operations to every element."
+  },
+  {
+    "question": "What is hoisting in JavaScript?",
+    "options": [
+      "A method for moving DOM elements",
+      "A way to create animations",
+      "A technique for debugging code"
+    ],
+    "answer": "A behavior where variable and function declarations are moved to the top of their containing scope during compilation.",
+    "explanation": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. This means variables declared with `var` and function declarations can be used before they appear in the code. However, only the declarations are hoisted, not initializations. Variables declared with `let` and `const` are also hoisted but not initialized, creating a temporal dead zone."
+  },
+  {
+    "question": "Which jQuery method is used to get or set the HTML content of an element?",
+    "options": [
+      "The `text()` method",
+      "The `val()` method",
+      "The `attr()` method"
+    ],
+    "answer": "The `html()` method",
+    "explanation": "jQuery's `html()` method gets the HTML contents of the first matched element or sets the HTML contents of every matched element. Unlike `text()`, which deals with plain text and escapes HTML tags, `html()` allows you to work with and insert actual HTML markup, making it useful for creating rich content dynamically."
+  },
+  {
+    "question": "What is a JavaScript promise and what problem does it solve?",
+    "options": [
+      "It guarantees code execution speed",
+      "It prevents all runtime errors",
+      "It automatically optimizes memory usage"
+    ],
+    "answer": "An object representing the eventual completion or failure of an asynchronous operation, solving callback hell.",
+    "explanation": "Promises provide a cleaner way to handle asynchronous operations compared to traditional nested callbacks. A promise can be in pending, fulfilled, or rejected states. It allows chaining with `.then()` and `.catch()` methods, making asynchronous code more readable and maintainable by flattening nested structures and providing better error handling."
+  },
+  {
+    "question": "In JavaScript, what is the difference between `==` and `===` operators?",
+    "options": [
+      "`==` compares values after type conversion, while `===` compares both value and type without conversion.",
+      "`==` is used for assignment, `===` for comparison",
+      "`==` compares objects, `===` compares primitives"
+    ],
+    "answer": "`==` compares values after type conversion, while `===` compares both value and type without conversion.",
+    "explanation": "The equality operator `==` performs type coercion if the operands are of different types, attempting to convert them to the same type before comparison. The strict equality operator `===` returns true only if both the value and the type are identical. Using `===` is generally recommended to avoid unexpected behavior from automatic type conversion."
+  },
+  {
+    "question": "What is the purpose of jQuery's `animate()` method?",
+    "options": [
+      "To create CSS animations automatically",
+      "To pause JavaScript execution",
+      "To detect user movements"
+    ],
+    "answer": "To perform custom animations on CSS properties by gradually changing values over time.",
+    "explanation": "The `animate()` method allows developers to create smooth, custom animations by transitioning CSS properties from one value to another. You can animate properties like width, height, opacity, position, and many others. It provides control over duration, easing functions, and completion callbacks, enabling complex visual effects without requiring CSS3 animations or external libraries."
+  },
+  {
+    "question": "What does an XML parser do when it encounters an invalid character in an XML document?",
+    "options": [
+      "It automatically corrects the character",
+      "It continues processing silently",
+      "It logs a warning but continues"
+    ],
+    "answer": "It typically stops processing and throws a fatal error, as XML requires strict well-formedness.",
+    "explanation": "Unlike HTML which is forgiving, XML parsers are required to stop processing (throw a fatal error) when they encounter well-formedness errors, including invalid characters. Characters like unescaped `<` or `&` in text content, or illegal Unicode characters, cause the parser to halt. This strictness ensures XML data is always reliably structured."
+  },
+  {
+    "question": "What is an XML element's content model?",
+    "options": [
+      "The visual styling of the element",
+      "The file encoding of the document",
+      "The element's position in the document"
+    ],
+    "answer": "The definition of what type of content an element can contain, such as other elements, text, or nothing.",
+    "explanation": "An element's content model, typically defined in a DTD or Schema, specifies what can appear inside that element. Options include element content (only child elements), mixed content (both text and elements), simple content (only text), or empty content (no content at all). This defines the valid structure of an XML document."
+  },
+  {
+    "question": "What is XPath and what is its primary use?",
+    "options": [
+      "A path for XML file storage",
+      "A protocol for XML transmission",
+      "A styling language for XML"
+    ],
+    "answer": "A query language for selecting nodes from an XML document based on path expressions.",
+    "explanation": "XPath (XML Path Language) uses path expressions to navigate through elements and attributes in an XML document. It provides a syntax for addressing parts of an XML document, similar to how file paths work in operating systems. XPath is widely used in XSLT transformations, XQuery, and for extracting specific data from XML documents programmatically."
+  },
+  {
+    "question": "What is an XML processor or parser?",
+    "options": [
+      "A tool that creates XML documents",
+      "A program that validates XML against schemas",
+      "An editor for writing XML"
+    ],
+    "answer": "A software module that reads XML documents and provides access to their content and structure.",
+    "explanation": "An XML parser reads an XML document, checks it for well-formedness, and makes the document's content available to applications. It can be validating (checking against DTD/schema) or non-validating. Parsers provide APIs like DOM (building a tree structure in memory) or SAX (event-based streaming) for applications to work with the XML data."
+  },
+  {
+    "question": "In event-based application design, what is event delegation?",
+    "options": [
+      "Assigning events to multiple developers",
+      "Storing events in a database",
+      "Scheduling events for later execution"
+    ],
+    "answer": "A technique where a parent element handles events triggered on its children using event bubbling.",
+    "explanation": "Event delegation leverages event bubbling to handle events efficiently. Instead of attaching event listeners to many individual child elements, you attach a single listener to a parent element. When an event occurs on a child, it bubbles up to the parent, which can check the event target and respond accordingly. This improves performance and handles dynamically added elements automatically."
+  },
+  {
+    "question": "What is the difference between `event.preventDefault()` and `event.stopPropagation()`?",
+    "options": [
+      "Both do exactly the same thing",
+      "`stopPropagation()` prevents default browser actions",
+      "`preventDefault()` stops event bubbling"
+    ],
+    "answer": "`preventDefault()` stops default browser behavior, while `stopPropagation()` prevents event bubbling to parent elements.",
+    "explanation": "These two event methods serve different purposes. `preventDefault()` cancels the browser's default action for an event (like following a link or submitting a form). `stopPropagation()` prevents the event from traveling further through the DOM tree (stopping bubbling or capturing). They can be used independently or together depending on the required behavior."
+  },
+  {
+    "question": "What is the purpose of a context parameter in the `web.xml` file?",
+    "options": [
+      "To define database connection details",
+      "To specify the server's IP address",
+      "To configure logging levels"
+    ],
+    "answer": "To provide configuration data to the entire web application through initialization parameters.",
+    "explanation": "Context parameters, defined using `<context-param>` elements in `web.xml`, are name-value pairs available to all servlets and JSPs in a web application through the `ServletContext` object. They're useful for setting application-wide configuration like admin email addresses, environment settings, or external service URLs that shouldn't be hardcoded."
+  },
+  {
+    "question": "What is session management in web applications and how is it typically implemented?",
+    "options": [
+      "Storing user passwords in plain text",
+      "Keeping database connections open permanently",
+      "Logging all user activities"
+    ],
+    "answer": "Maintaining state information about a user across multiple HTTP requests, often using cookies or URL rewriting.",
+    "explanation": "HTTP is stateless, so session management creates the illusion of continuity. When a user visits a site, the server creates a unique session ID and sends it to the browser (usually via a cookie). The browser sends this ID with each subsequent request, allowing the server to retrieve stored session data (like login status or shopping cart contents) and maintain user context."
+  },
+  {
+    "question": "What does HTTP response status code 500 indicate?",
+    "options": [
+      "The request was successful",
+      "The page was not found",
+      "The request requires authentication"
+    ],
+    "answer": "Internal Server Error, meaning the server encountered an unexpected condition that prevented it from fulfilling the request.",
+    "explanation": "A 500 Internal Server Error is a generic error message indicating that something went wrong on the server side. Unlike client errors (4xx), which indicate issues with the request, 5xx errors point to problems with the server, such as application crashes, configuration errors, or database connection failures. It often requires checking server logs to diagnose the specific cause."
+  },
+  {
+    "question": "What is the difference between HTTP and HTTPS?",
+    "options": [
+      "HTTPS is faster than HTTP",
+      "HTTPS uses UDP, HTTP uses TCP",
+      "HTTP is for websites, HTTPS is for APIs only"
+    ],
+    "answer": "HTTPS adds a layer of encryption (SSL/TLS) to HTTP, securing data transmission between client and server.",
+    "explanation": "HTTPS (HTTP Secure) wraps HTTP communications in SSL/TLS encryption. This provides three key protections: encryption (preventing eavesdropping), data integrity (preventing tampering), and authentication (verifying the server's identity). When you see the padlock icon in browsers, it means the connection is using HTTPS, protecting sensitive data like passwords and credit card numbers."
+  },
+  {
+    "question": "What is a URL rewrite and why might it be used?",
+    "options": [
+      "To shorten URLs for sharing",
+      "To automatically back up web pages",
+      "To spell-check URLs"
+    ],
+    "answer": "A technique for modifying URLs on the fly, often to create cleaner, more readable addresses or to redirect traffic.",
+    "explanation": "URL rewriting transforms incoming request URLs before they're processed by the web application. Common uses include creating search-engine-friendly URLs (like `/products/123` instead of `/product.php?id=123`), implementing permanent redirects, enforcing canonical URLs, and blocking malicious requests. Apache's `mod_rewrite` and IIS's URL Rewrite module are popular tools for this."
+  },
+  {
+    "question": "What is a favicon and where is it typically placed on a website?",
+    "options": [
+      "A database optimization tool",
+      "A server-side script for caching",
+      "A type of CSS framework"
+    ],
+    "answer": "A small icon associated with a website, displayed in browser tabs, bookmarks, and address bars.",
+    "explanation": "A favicon (favorites icon) is a small, typically 16x16 or 32x32 pixel image that represents a website. Browsers display it in the tab next to the page title, in bookmark lists, and sometimes in the address bar. It's usually named `favicon.ico` and placed in the website's root directory, though it can also be specified with `<link>` tags in the HTML head."
+  },
+  {
+    "question": "What is the purpose of a canonical tag in HTML?",
+    "options": [
+      "To encrypt page content",
+      "To create site navigation",
+      "To validate HTML syntax"
+    ],
+    "answer": "To tell search engines which version of a URL is the master copy when duplicate content exists.",
+    "explanation": "The canonical tag (`<link rel=\"canonical\" href=\"...\">`) addresses duplicate content issues. If the same content is accessible via multiple URLs (like with tracking parameters, printer-friendly versions, or www vs non-www), the canonical tag specifies the preferred URL. This consolidates ranking signals to the canonical version and prevents search engines from penalizing duplicate content."
+  },
+  {
+    "question": "What is colocation hosting and what type of organization typically uses it?",
+    "options": [
+      "Hosting where you share space on a public server",
+      "Free hosting with advertisements",
+      "Cloud-based virtual servers"
+    ],
+    "answer": "Hosting where you place your own server hardware in a third-party data center with power, cooling, and bandwidth.",
+    "explanation": "Colocation (colo) involves owning your server hardware but housing it in a professional data center facility. The facility provides physical security, reliable power, cooling, and high-bandwidth internet connectivity. This model suits organizations needing maximum control over hardware, specific compliance requirements, or those with predictable, high-volume traffic where cloud costs would be prohibitive."
+  },
+  {
+    "question": "What is a Platform as a Service (PaaS) offering in cloud computing?",
+    "options": [
+      "A service providing only virtual machines",
+      "A backup service for websites",
+      "A domain registration service"
+    ],
+    "answer": "A cloud computing model that provides a platform allowing customers to develop, run, and manage applications without infrastructure complexity.",
+    "explanation": "PaaS delivers a framework for developers to build and deploy custom applications. The provider manages the underlying infrastructure (servers, storage, networking, OS), while developers focus on writing code. Examples include Heroku, Google App Engine, and AWS Elastic Beanstalk. PaaS abstracts server management, enabling faster development and deployment with automatic scaling and maintenance."
+  },
+  {
+    "question": "What is an API endpoint?",
+    "options": [
+      "The final step in API development",
+      "A tool for testing APIs",
+      "The API documentation"
+    ],
+    "answer": "A specific URL where an API can be accessed by a client application to perform operations.",
+    "explanation": "An API endpoint is a URL that represents a specific resource or collection in an API. For example, in a REST API, `https://api.example.com/users` might be an endpoint for accessing user data. Each endpoint corresponds to a specific functionality and supports certain HTTP methods (GET, POST, etc.). Endpoints are the entry points through which clients interact with the API."
+  },
+  {
+    "question": "What is API versioning and why is it important?",
+    "options": [
+      "Changing API endpoints daily",
+      "Using different programming languages",
+      "Encrypting all API traffic"
+    ],
+    "answer": "The practice of managing changes to an API by creating distinct versions to maintain backward compatibility.",
+    "explanation": "API versioning allows providers to introduce changes, improvements, or new features without breaking existing client applications. Common approaches include URI versioning (`/v1/users`, `/v2/users`), header versioning, or query parameter versioning. When breaking changes are necessary, a new version ensures that clients can migrate at their own pace while older versions continue working for existing applications."
+  },
+  {
+    "question": "What is the difference between SOAP and REST APIs?",
+    "options": [
+      "SOAP is older and more complex, using XML exclusively, while REST is newer, simpler, and uses multiple formats.",
+      "REST is older than SOAP",
+      "SOAP can only be used with Java"
+    ],
+    "answer": "SOAP is a protocol with strict standards and XML-only messages, while REST is an architectural style using standard HTTP methods and multiple data formats.",
+    "explanation": "SOAP (Simple Object Access Protocol) is a protocol with formal specifications, requiring XML message formats and often WS-* standards for security and transactions. REST (Representational State Transfer) is an architectural style leveraging HTTP's native capabilities. REST APIs typically use JSON (lighter than XML) and are simpler to implement, making them more popular for modern web and mobile applications."
+  },
+  {
+    "question": "What is API throttling?",
+    "options": [
+      "Making APIs run faster",
+      "Encrypting API responses",
+      "Automatically scaling API servers"
+    ],
+    "answer": "Controlling the rate of API requests to prevent overuse and ensure fair access for all users.",
+    "explanation": "API throttling limits the number of requests a client can make in a given time period, but unlike rate limiting (which typically rejects excess requests), throttling may slow down responses or queue requests. It protects backend systems from overload, ensures quality of service for all users, and can be implemented at different levels (user, IP, or API key level)."
+  },
+  {
+    "question": "What is a JavaScript IIFE (Immediately Invoked Function Expression)?",
+    "options": [
+      "A function that is called by user interaction",
+      "A function that never executes",
+      "A function that runs only in strict mode"
+    ],
+    "answer": "A function that is defined and executed immediately after creation, creating a private scope.",
+    "explanation": "An IIFE is a JavaScript pattern where a function is defined and immediately called. Syntax: `(function(){ ... })();` This creates a new scope, preventing variable leakage to the global scope. IIFEs are useful for initialization code, creating private variables and methods, and avoiding naming conflicts, especially before `let` and `const` block scoping was widely available."
+  },
+  {
+    "question": "What is the purpose of jQuery's `ajaxSetup()` method?",
+    "options": [
+      "To cancel all AJAX requests",
+      "To test AJAX responses",
+      "To create new AJAX methods"
+    ],
+    "answer": "To set default values for future AJAX requests, reducing code duplication.",
+    "explanation": "`ajaxSetup()` allows you to define default options that will be applied to all subsequent AJAX requests. For example, you can set a default timeout, headers (like authentication tokens), or data type. This centralizes configuration, making code cleaner and ensuring consistency across requests. However, care is needed as it affects all AJAX calls globally."
+  },
+  {
+    "question": "What is a JavaScript prototype?",
+    "options": [
+      "A function that never executes",
+      "A variable that cannot be changed",
+      "A built-in debugging tool"
+    ],
+    "answer": "An object from which other objects inherit properties, forming the basis of JavaScript's inheritance system.",
+    "explanation": "In JavaScript, every object has a prototype (an internal reference to another object). When accessing a property, JavaScript first checks the object itself, then its prototype, then the prototype's prototype, and so on (the prototype chain). This enables prototypal inheritance where objects can share behavior without classes (though ES6 classes are syntactic sugar over prototypes)."
+  },
+  {
+    "question": "What is the jQuery `noConflict()` method used for?",
+    "options": [
+      "To stop all jQuery animations",
+      "To disable jQuery temporarily",
+      "To prevent jQuery from loading"
+    ],
+    "answer": "To relinquish jQuery's control of the `$` variable, avoiding conflicts with other libraries.",
+    "explanation": "Many JavaScript libraries use `$` as a shorthand. If multiple libraries are used, conflicts can arise. `jQuery.noConflict()` restores the original meaning of `$` (whatever it was before jQuery loaded) while still allowing jQuery functionality through the `jQuery` variable. This is essential when combining jQuery with Prototype, MooTools, or other libraries that also use `$`."
+  },
+  {
+    "question": "What is an XML schema language and why would you use one beyond DTD?",
+    "options": [
+      "To make XML files smaller",
+      "To encrypt XML data",
+      "To convert XML to HTML"
+    ],
+    "answer": "To define complex data types, patterns, and constraints that DTD cannot express.",
+    "explanation": "Modern schema languages like W3C XML Schema (XSD) and RELAX NG provide capabilities beyond DTD. They allow specifying data types (integers, dates, URLs), patterns (regular expressions), uniqueness constraints, and namespace support. They're also written in XML themselves, making them machine-processable. This enables stronger validation and better integration with programming languages for data binding."
+  },
+  {
+    "question": "What does XML namespace `xmlns` declaration do?",
+    "options": [
+      "It defines the document encoding",
+      "It creates a new XML element",
+      "It specifies the XML version"
+    ],
+    "answer": "It declares a namespace to uniquely identify element types and avoid naming conflicts.",
+    "explanation": "The `xmlns` attribute (XML namespace) associates a prefix or default namespace with a URI. For example, `xmlns:html=\"http://www.w3.org/1999/xhtml\"` means elements with the `html:` prefix belong to that XHTML vocabulary. This allows mixing different XML vocabularies in one document without confusion, as elements from different namespaces can have the same local name but different meanings."
+  },
+  {
+    "question": "What is the purpose of the `load` event in JavaScript?",
+    "options": [
+      "To load external scripts dynamically",
+      "To trigger when the user clicks",
+      "To execute code when an element gains focus"
+    ],
+    "answer": "To fire when a resource and its dependent resources have finished loading.",
+    "explanation": "The `load` event fires on the `window` object when the entire page (including all images, scripts, stylesheets) has loaded. It can also fire on specific elements like images or scripts. This event is useful for running code that depends on everything being fully loaded, such as measuring element dimensions, initializing complex UI components, or hiding loading spinners."
+  },
+  {
+    "question": "What is the difference between server-side and client-side validation?",
+    "options": [
+      "Client-side is more secure than server-side",
+      "Server-side is faster than client-side",
+      "They both validate the same way"
+    ],
+    "answer": "Client-side validation provides immediate feedback without server round-trips, while server-side validation is essential for security.",
+    "explanation": "Client-side validation (usually JavaScript) happens in the browser, offering quick feedback and better user experience. However, it can be bypassed. Server-side validation is mandatory for security, as it validates data after submission, protecting against malicious users or requests that circumvent the client. A robust approach uses both: client-side for UX, server-side for security and data integrity."
+  },
+  {
+    "question": "What is a 302 redirect and when should it be used?",
+    "options": [
+      "A permanent redirect for SEO",
+      "A redirect that only works for logged-in users",
+      "A redirect that caches forever"
+    ],
+    "answer": "A temporary redirect indicating that a resource is temporarily located at a different URL.",
+    "explanation": "A 302 Found (previously Moved Temporarily) redirect tells browsers and search engines that the move is temporary. Unlike 301 permanent redirects, 302s don't pass full SEO value to the new URL. They're appropriate for temporary situations like site maintenance, A/B testing, or when content is temporarily moved but expected to return to the original URL."
+  },
+  {
+    "question": "What is an A record in DNS and what does it do?",
+    "options": [
+      "It authenticates email servers",
+      "It stores website content",
+      "It encrypts DNS queries"
+    ],
+    "answer": "An Address record that maps a domain name to an IPv4 address.",
+    "explanation": "DNS A records are fundamental to web hosting. They point a domain name (like example.com) to the IP address of the server where the website is hosted (like 192.0.2.1). When someone types your domain, DNS resolves it to this IP address so browsers can connect to your server. A records are the most common DNS record type for website hosting."
+  },
+  {
+    "question": "What is a CNAME record in DNS?",
+    "options": [
+      "A record for encrypted connections",
+      "A record for backup servers",
+      "A record for email routing"
+    ],
+    "answer": "A Canonical Name record that aliases one domain name to another, pointing to an A record.",
+    "explanation": "CNAME records create aliases. For example, you might point `www.example.com` to `example.com` using a CNAME. The DNS resolver then looks up the A record for `example.com` to get the IP. CNAMEs are useful for pointing subdomains to services like content delivery networks or for setting up common subdomains like `www` or `mail` without duplicating IP configurations."
+  },
+  {
+    "question": "What is the purpose of a staging site in web development?",
+    "options": [
+      "To serve live traffic",
+      "To store database backups",
+      "To handle user registrations"
+    ],
+    "answer": "To test changes, updates, and new features in an environment that mirrors production before going live.",
+    "explanation": "A staging environment replicates the production setup as closely as possible but isn't accessible to regular users. It's where developers and QA teams test code changes, content updates, theme modifications, and plugin updates. This catches issues like compatibility problems, broken layouts, or performance degradation before deploying to production, reducing risks and downtime."
+  },
+  {
+    "question": "What is continuous integration and why is it beneficial?",
+    "options": [
+      "A manual code review process",
+      "A method for designing user interfaces",
+      "A way to write documentation"
+    ],
+    "answer": "A development practice where team members frequently integrate their code changes into a shared repository, triggering automated builds and tests.",
+    "explanation": "CI involves automatically building and testing code whenever changes are pushed to version control. This early and frequent integration catches bugs quickly, reduces integration problems, and ensures the codebase remains in a deployable state. Developers get rapid feedback on their changes, making it easier to fix issues while they're still fresh in memory."
+  },
+  {
+    "question": "What is a web application firewall (WAF) and what does it protect against?",
+    "options": [
+      "Physical server theft",
+      "Hardware failures",
+      "Power outages"
+    ],
+    "answer": "A security system that filters and monitors HTTP traffic between a web application and the internet, protecting against attacks like SQL injection and XSS.",
+    "explanation": "A WAF sits between users and web servers, analyzing incoming HTTP requests and blocking malicious traffic. It protects against common web vulnerabilities like SQL injection (where attackers try to manipulate database queries), cross-site scripting (XSS, injecting malicious scripts), and DDoS attacks. WAFs use rule sets, often based on OWASP guidelines, to identify and block attack patterns."
+  },
+  {
+    "question": "What is JSON Web Token (JWT) and how is it used in API authentication?",
+    "options": [
+      "A session storage mechanism",
+      "A database query language",
+      "A CSS framework"
+    ],
+    "answer": "A compact, URL-safe token format for securely transmitting information between parties as JSON objects.",
+    "explanation": "JWT is an open standard for creating tokens that assert claims (like user identity). A JWT consists of three parts (header, payload, signature) encoded as Base64Url strings. In API authentication, the server creates a signed JWT upon login, and the client includes it in subsequent request headers. The server verifies the signature, enabling stateless authentication without storing session data."
+  },
+  {
+    "question": "What is CORS and why is it needed?",
+    "options": [
+      "A database optimization tool",
+      "A JavaScript framework",
+      "A CSS preprocessor"
+    ],
+    "answer": "Cross-Origin Resource Sharing, a browser mechanism that controls access to resources from different origins.",
+    "explanation": "CORS is a security feature implemented by browsers. By default, the same-origin policy blocks web pages from making requests to different domains. CORS allows servers to specify who can access their resources by sending special HTTP headers (like `Access-Control-Allow-Origin`). This enables legitimate cross-origin requests (like APIs serving web apps on different domains) while maintaining security."
+  },
+  {
+    "question": "What is an API gateway?",
+    "options": [
+      "A tool for writing API documentation",
+      "A programming language for APIs",
+      "A database for storing API requests"
+    ],
+    "answer": "A server that acts as an entry point for API requests, handling routing, composition, rate limiting, and authentication.",
+    "explanation": "An API gateway sits between clients and backend services. It receives all API requests and routes them to appropriate microservices, aggregating responses when needed. It handles cross-cutting concerns like authentication, SSL termination, rate limiting, logging, and request transformation. This simplifies client interactions (single endpoint) and centralizes management of API policies."
+  },
+  {
+    "question": "What is the difference between XML and HTML?",
+    "options": [
+      "XML is for data structure, HTML is for presentation, and XML is strict while HTML is forgiving.",
+      "XML is newer than HTML",
+      "XML can't have attributes"
+    ],
+    "answer": "XML is for data structure, HTML is for presentation, and XML is strict while HTML is forgiving.",
+    "explanation": "HTML (HyperText Markup Language) is designed for displaying documents with predefined tags for web browsers. It's forgiving of errors. XML (eXtensible Markup Language) is designed for storing and transporting data with user-defined tags. XML requires strict well-formedness (all tags closed, proper nesting). HTML focuses on how data looks, XML focuses on what data is."
+  },
+  {
+    "question": "What is a reverse proxy and how does it differ from a forward proxy?",
+    "options": [
+      "A reverse proxy protects clients, a forward proxy protects servers",
+      "They are identical in function",
+      "Reverse proxies are slower"
+    ],
+    "answer": "A reverse proxy sits in front of servers, protecting them, while a forward proxy sits in front of clients, protecting them.",
+    "explanation": "A forward proxy acts on behalf of clients, fetching resources from the internet while hiding client identities. A reverse proxy acts on behalf of servers, receiving client requests and forwarding them to backend servers. Reverse proxies provide load balancing, SSL termination, caching, and security by hiding server details. Forward proxies provide anonymity, content filtering, and access control for clients."
+  },
+  {
+    "question": "What is the purpose of HTTP cookies?",
+    "options": [
+      "To store server configuration",
+      "To execute server-side scripts",
+      "To cache database queries"
+    ],
+    "answer": "To maintain state information across HTTP requests, such as session IDs, preferences, or tracking data.",
+    "explanation": "Cookies are small pieces of data sent from a server and stored in the browser. They're sent back with every request to the same domain, enabling stateful interactions over stateless HTTP. Common uses include session management (keeping users logged in), personalization (storing preferences), and tracking (monitoring user behavior). Cookies have size limits and can be secured with flags like HttpOnly and Secure."
+  },
+  {
+    "question": "What is the difference between localStorage and sessionStorage in web browsers?",
+    "options": [
+      "localStorage is faster",
+      "sessionStorage has larger capacity",
+      "localStorage is more secure"
+    ],
+    "answer": "localStorage persists until explicitly cleared, while sessionStorage is cleared when the browser tab is closed.",
+    "explanation": "Both localStorage and sessionStorage are web storage APIs for storing key-value pairs in the browser. localStorage has no expiration time; data survives browser restarts until manually removed. sessionStorage is limited to the current tab or window session; data is cleared when the tab closes. Both have larger storage limits than cookies (typically 5-10MB) and data isn't sent to servers automatically."
+  },
+  {
+    "question": "What is a single-page application (SPA) and how does it differ from traditional multi-page applications?",
+    "options": [
+      "SPAs have more pages",
+      "SPAs are always slower",
+      "SPAs cannot use APIs"
+    ],
+    "answer": "An SPA loads a single HTML page and dynamically updates content as the user interacts, without full page reloads.",
+    "explanation": "SPAs like Gmail or Trello load once, then use JavaScript to rewrite the current page as users interact. This creates a fluid, app-like experience. Navigation happens without full page reloads, with content fetched via AJAX and DOM updates. Traditional multi-page applications reload entire pages from the server for each navigation. SPAs improve perceived performance but can have SEO challenges and initial load considerations."
+  },
+  {
+    "question": "What is the purpose of the `alt` attribute in HTML `<img>` tags?",
+    "options": [
+      "To align the image",
+      "To set image dimensions",
+      "To add hover effects"
+    ],
+    "answer": "To provide alternative text for screen readers and when images fail to load, improving accessibility.",
+    "explanation": "The `alt` attribute serves multiple purposes: screen readers use it to describe images to visually impaired users; it displays when images don't load; and search engines use it to understand image content. Good `alt` text should be descriptive and convey the image's purpose. It's essential for web accessibility (WCAG compliance) and helps with SEO."
+  },
+  {
+    "question": "What is the box model in CSS?",
+    "options": [
+      "A JavaScript animation technique",
+      "A server configuration file",
+      "A database design pattern"
+    ],
+    "answer": "A fundamental concept describing how elements are structured with content, padding, border, and margin layers.",
+    "explanation": "The CSS box model represents every HTML element as a rectangular box with four layers: content (actual text or images), padding (space around content), border (line around padding), and margin (space outside border). Understanding the box model is essential for layout, spacing calculations, and debugging design issues. `box-sizing` property controls how total width/height is calculated."
+  }
+]

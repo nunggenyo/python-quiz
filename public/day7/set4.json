@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What does the typeof operator return when used on an array in JavaScript?",
+    "options": [
+      "array",
+      "list",
+      "collection"
+    ],
+    "answer": "object",
+    "explanation": "In JavaScript, arrays are technically specialized objects, so the typeof operator returns 'object'."
+  },
+  {
+    "question": "Which JavaScript method creates a new array by calling a function on every element?",
+    "options": [
+      "forEach()",
+      "filter()",
+      "reduce()"
+    ],
+    "answer": "map()",
+    "explanation": "The map() method creates a new array populated with the results of calling a provided function on every element."
+  },
+  {
+    "question": "What is the default value of a declared variable that has not been assigned a value?",
+    "options": [
+      "null",
+      "0",
+      "empty string"
+    ],
+    "answer": "undefined",
+    "explanation": "Variables declared without an initial value are automatically assigned the value undefined."
+  },
+  {
+    "question": "Which syntax is used for template literals in JavaScript?",
+    "options": [
+      "Single quotes",
+      "Double quotes",
+      "Parentheses"
+    ],
+    "answer": "Backticks",
+    "explanation": "Template literals are enclosed by the backtick character (`) instead of single or double quotes."
+  },
+  {
+    "question": "Which web storage object persists data even after the browser is closed?",
+    "options": [
+      "sessionStorage",
+      "cookies",
+      "cacheStorage"
+    ],
+    "answer": "localStorage",
+    "explanation": "localStorage stores data with no expiration date, unlike sessionStorage which clears when the page session ends."
+  },
+  {
+    "question": "Which function executes a callback function after a specified delay?",
+    "options": [
+      "setInterval()",
+      "requestAnimationFrame()",
+      "clearTimeout()"
+    ],
+    "answer": "setTimeout()",
+    "explanation": "setTimeout() calls a function or evaluates an expression after a specified number of milliseconds."
+  },
+  {
+    "question": "Which block is used to handle errors in JavaScript code?",
+    "options": [
+      "try...finally",
+      "if...else",
+      "switch...case"
+    ],
+    "answer": "try...catch",
+    "explanation": "The try...catch statement marks a block of statements to try, and specifies a response should an exception be thrown."
+  },
+  {
+    "question": "What object represents the eventual completion or failure of an asynchronous operation?",
+    "options": [
+      "Callback",
+      "Event",
+      "Observer"
+    ],
+    "answer": "Promise",
+    "explanation": "A Promise is an object representing the eventual completion or failure of an asynchronous operation and its resulting value."
+  },
+  {
+    "question": "Which property is used to get or set the HTML content of an element?",
+    "options": [
+      "innerText",
+      "textContent",
+      "nodeValue"
+    ],
+    "answer": "innerHTML",
+    "explanation": "The innerHTML property gets or sets the HTML syntax describing the element's descendants."
+  },
+  {
+    "question": "What is the term for moving declarations to the top of the scope in JavaScript?",
+    "options": [
+      "Scoping",
+      "Closing",
+      "Binding"
+    ],
+    "answer": "Hoisting",
+    "explanation": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope."
+  },
+  {
+    "question": "Which jQuery method gradually changes the opacity of an element to visible?",
+    "options": [
+      "show()",
+      "slideDown()",
+      "animate()"
+    ],
+    "answer": "fadeIn()",
+    "explanation": "The fadeIn() method fades in a hidden element by gradually changing its opacity from 0 to 1."
+  },
+  {
+    "question": "Which jQuery method is used to perform asynchronous HTTP requests?",
+    "options": [
+      "getHTML()",
+      "sendRequest()",
+      "fetchData()"
+    ],
+    "answer": "ajax()",
+    "explanation": "The $.ajax() method performs an asynchronous HTTP (Ajax) request to load data from the server."
+  },
+  {
+    "question": "Which jQuery method adds one or more class names to selected elements?",
+    "options": [
+      "classAdd()",
+      "toggleClass()",
+      "removeClass()"
+    ],
+    "answer": "addClass()",
+    "explanation": "The addClass() method adds one or more class names to the selected elements."
+  },
+  {
+    "question": "Which jQuery traversing method gets the first ancestor element matching a selector?",
+    "options": [
+      "parent()",
+      "children()",
+      "siblings()"
+    ],
+    "answer": "closest()",
+    "explanation": "The closest() method returns the first ancestor of the selected element that matches the specified selector."
+  },
+  {
+    "question": "Which jQuery method attaches handlers for both mouseenter and mouseleave events?",
+    "options": [
+      "click()",
+      "bind()",
+      "toggle()"
+    ],
+    "answer": "hover()",
+    "explanation": "The hover() method binds handlers for both mouseenter and mouseleave events to the selected elements."
+  },
+  {
+    "question": "Which HTML attribute provides alternative text for an image if it cannot be displayed?",
+    "options": [
+      "title",
+      "src",
+      "longdesc"
+    ],
+    "answer": "alt",
+    "explanation": "The alt attribute specifies an alternate text for an image, used for accessibility and when the image fails to load."
+  },
+  {
+    "question": "Which input type validates that the user enters a valid email address?",
+    "options": [
+      "text",
+      "string",
+      "contact"
+    ],
+    "answer": "email",
+    "explanation": "The <input type=\"email\"> defines a field for an e-mail address with built-in validation."
+  },
+  {
+    "question": "Which declaration tells the browser which version of HTML the page is written in?",
+    "options": [
+      "<html>",
+      "<head>",
+      "<xml>"
+    ],
+    "answer": "<!DOCTYPE>",
+    "explanation": "The <!DOCTYPE> declaration defines the document type and version of HTML being used."
+  },
+  {
+    "question": "Which HTML element is used to embed another document within the current HTML document?",
+    "options": [
+      "<embed>",
+      "<object>",
+      "<link>"
+    ],
+    "answer": "<iframe>",
+    "explanation": "The <iframe> tag specifies an inline frame, used to embed another document within the current HTML document."
+  },
+  {
+    "question": "Which meta tag is crucial for responsive web design on mobile devices?",
+    "options": [
+      "charset",
+      "description",
+      "keywords"
+    ],
+    "answer": "viewport",
+    "explanation": "The viewport meta tag gives the browser instructions on how to control the page's dimensions and scaling."
+  },
+  {
+    "question": "Which CSS property controls the stack order of positioned elements?",
+    "options": [
+      "opacity",
+      "visibility",
+      "display"
+    ],
+    "answer": "z-index",
+    "explanation": "The z-index property specifies the stack order of an element, determining which element appears in front."
+  },
+  {
+    "question": "Which CSS position value keeps an element in place relative to the browser window?",
+    "options": [
+      "absolute",
+      "relative",
+      "static"
+    ],
+    "answer": "fixed",
+    "explanation": "position: fixed keeps an element in the same place even when the page is scrolled."
+  },
+  {
+    "question": "Which CSS pseudo-class applies styles when a user moves their mouse over an element?",
+    "options": [
+      ":active",
+      ":focus",
+      ":visited"
+    ],
+    "answer": ":hover",
+    "explanation": "The :hover pseudo-class selects elements when the user mouses over them."
+  },
+  {
+    "question": "Which CSS rule allows applying styles based on device characteristics like screen width?",
+    "options": [
+      "@import",
+      "@keyframes",
+      "@font-face"
+    ],
+    "answer": "@media",
+    "explanation": "The @media rule allows different styles for different media types or device conditions."
+  },
+  {
+    "question": "Which CSS unit is relative to the font-size of the root element?",
+    "options": [
+      "em",
+      "px",
+      "%"
+    ],
+    "answer": "rem",
+    "explanation": "The rem unit is relative to the font-size of the root (html) element."
+  },
+  {
+    "question": "What determines which CSS rule applies when multiple rules target the same element?",
+    "options": [
+      "Priority",
+      "Hierarchy",
+      "Ordering"
+    ],
+    "answer": "Specificity",
+    "explanation": "Specificity is the algorithm used by browsers to determine which CSS declaration applies to an element."
+  },
+  {
+    "question": "In Bootstrap, which class must wrap columns to create a horizontal group?",
+    "options": [
+      ".group",
+      ".wrap",
+      ".section"
+    ],
+    "answer": ".row",
+    "explanation": "Columns in Bootstrap must be placed inside a .row class to ensure proper alignment and padding."
+  },
+  {
+    "question": "Which Bootstrap breakpoint prefix corresponds to tablets in landscape mode?",
+    "options": [
+      "sm",
+      "lg",
+      "xl"
+    ],
+    "answer": "md",
+    "explanation": "The 'md' (medium) breakpoint is typically used for tablets in landscape mode (>=768px)."
+  },
+  {
+    "question": "Which Bootstrap class creates a standard blue button?",
+    "options": [
+      ".btn-success",
+      ".btn-danger",
+      ".btn-secondary"
+    ],
+    "answer": ".btn-primary",
+    "explanation": "The .btn-primary class provides the standard primary action button style, usually blue."
+  },
+  {
+    "question": "Which Bootstrap component provides a responsive navigation header?",
+    "options": [
+      ".breadcrumb",
+      ".pagination",
+      ".sidebar"
+    ],
+    "answer": ".navbar",
+    "explanation": "The .navbar component is used to create a responsive navigation header for the website."
+  },
+  {
+    "question": "Which XML section is used to escape blocks of text containing characters that are otherwise illegal?",
+    "options": [
+      "<!-- -->",
+      "<!ENTITY>",
+      "<!ELEMENT>"
+    ],
+    "answer": "<![CDATA[]]>",
+    "explanation": "CDATA sections are used to escape blocks of text containing characters that would otherwise be recognized as markup."
+  },
+  {
+    "question": "What describes an XML document that follows all syntax rules but may not adhere to a DTD?",
+    "options": [
+      "Valid",
+      "Parsed",
+      "Compiled"
+    ],
+    "answer": "Well-formed",
+    "explanation": "A well-formed XML document follows all syntax rules, whereas a valid document also conforms to a DTD or schema."
+  },
+  {
+    "question": "What is used in XML to avoid naming conflicts between elements?",
+    "options": [
+      "Attributes",
+      "Comments",
+      "Entities"
+    ],
+    "answer": "Namespaces",
+    "explanation": "XML namespaces provide a method to avoid element name conflicts by using unique identifiers."
+  },
+  {
+    "question": "Which language is used to transform XML documents into other formats like HTML?",
+    "options": [
+      "XPath",
+      "XSD",
+      "XQuery"
+    ],
+    "answer": "XSLT",
+    "explanation": "XSLT (Extensible Stylesheet Language Transformations) is used to transform XML documents into other formats."
+  },
+  {
+    "question": "Which component reads an XML document and provides access to its data?",
+    "options": [
+      "Compiler",
+      "Interpreter",
+      "Validator"
+    ],
+    "answer": "XML Parser",
+    "explanation": "An XML parser is a software library or package that provides interfaces for client applications to work with XML documents."
+  },
+  {
+    "question": "Which system translates domain names into IP addresses?",
+    "options": [
+      "FTP",
+      "HTTP",
+      "SMTP"
+    ],
+    "answer": "DNS",
+    "explanation": "The Domain Name System (DNS) translates human-readable domain names into numerical IP addresses."
+  },
+  {
+    "question": "Which protocol is standard for transferring files between a client and a server?",
+    "options": [
+      "SSH",
+      "TCP",
+      "UDP"
+    ],
+    "answer": "FTP",
+    "explanation": "File Transfer Protocol (FTP) is used for the transfer of computer files between a client and server."
+  },
+  {
+    "question": "What metric measures the percentage of time a website is operational?",
+    "options": [
+      "Latency",
+      "Bandwidth",
+      "Throughput"
+    ],
+    "answer": "Uptime",
+    "explanation": "Uptime is the amount of time a system remains operational and accessible to users."
+  },
+  {
+    "question": "Which environment is used to test changes before deploying to production?",
+    "options": [
+      "Live",
+      "Archive",
+      "Local"
+    ],
+    "answer": "Staging",
+    "explanation": "A staging environment is an exact replica of the production environment used for final testing."
+  },
+  {
+    "question": "What is the process of returning a website to a previous version called?",
+    "options": [
+      "Forwarding",
+      "Migrating",
+      "Cloning"
+    ],
+    "answer": "Rollback",
+    "explanation": "A rollback is the process of reverting software or a website to a previous stable state."
+  },
+  {
+    "question": "Which HTTP method is typically used to submit data to be processed to a specified resource?",
+    "options": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ],
+    "answer": "POST",
+    "explanation": "The POST method submits an entity to the specified resource, often causing a change in state on the server."
+  },
+  {
+    "question": "Which HTTP status code indicates an internal server error?",
+    "options": [
+      "302",
+      "403",
+      "503"
+    ],
+    "answer": "500",
+    "explanation": "The 500 Internal Server Error status code indicates that the server encountered an unexpected condition."
+  },
+  {
+    "question": "Which HTTP status code indicates that a resource has been permanently moved?",
+    "options": [
+      "200",
+      "404",
+      "500"
+    ],
+    "answer": "301",
+    "explanation": "The 301 Moved Permanently status code means the resource has been assigned a new permanent URI."
+  },
+  {
+    "question": "Which HTTP header indicates the media type of the resource?",
+    "options": [
+      "Authorization",
+      "User-Agent",
+      "Host"
+    ],
+    "answer": "Content-Type",
+    "explanation": "The Content-Type header indicates the media type of the resource prior to any content encoding."
+  },
+  {
+    "question": "Which architectural style uses standard HTTP methods for API communication?",
+    "options": [
+      "SOAP",
+      "RPC",
+      "GraphQL"
+    ],
+    "answer": "REST",
+    "explanation": "REST (Representational State Transfer) is an architectural style that uses standard HTTP methods like GET and POST."
+  },
+  {
+    "question": "Which protocol relies heavily on XML for messaging in web services?",
+    "options": [
+      "REST",
+      "JSON-RPC",
+      "gRPC"
+    ],
+    "answer": "SOAP",
+    "explanation": "SOAP (Simple Object Access Protocol) is a protocol specification for exchanging structured information using XML."
+  },
+  {
+    "question": "What is a common method for authenticating API requests?",
+    "options": [
+      "HTML Tag",
+      "CSS Class",
+      "Database ID"
+    ],
+    "answer": "API Key",
+    "explanation": "An API Key is a unique identifier used to authenticate a user, developer, or calling program to an API."
+  },
+  {
+    "question": "Which JavaScript method converts a JSON string into a JavaScript object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toString()",
+      "JSON.convert()"
+    ],
+    "answer": "JSON.parse()",
+    "explanation": "JSON.parse() parses a JSON string, constructing the JavaScript value or object described by the string."
+  },
+  {
+    "question": "Which query language for APIs allows clients to request exactly the data they need?",
+    "options": [
+      "SQL",
+      "XPath",
+      "NoSQL"
+    ],
+    "answer": "GraphQL",
+    "explanation": "GraphQL is a query language for APIs that allows clients to request specific data structures."
+  },
+  {
+    "question": "Which security vulnerability involves injecting malicious scripts into web pages?",
+    "options": [
+      "SQL Injection",
+      "DDoS",
+      "Phishing"
+    ],
+    "answer": "XSS",
+    "explanation": "Cross-Site Scripting (XSS) attacks involve injecting malicious scripts into otherwise trusted websites."
+  }
+]

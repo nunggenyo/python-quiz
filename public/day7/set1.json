@@ -1,0 +1,512 @@
+[
+  {
+    "question": "Which jQuery method is commonly used to attach a function to an event, such as 'click', and can also support binding multiple events to the same object?",
+    "options": [
+      "The `on()` method",
+      "The `bind()` method",
+      "The `click()` method"
+    ],
+    "answer": "The `addEventListener()` method",
+    "explanation": "While jQuery provides high-level methods like `on()`, `bind()`, and `click()` for event handling, the underlying low-level implementation in vanilla JavaScript uses the `addEventListener()` method (or `attachEvent()` for older versions of IE) to allow multiple events to be registered to the same object [citation:1]."
+  },
+  {
+    "question": "In JavaScript, what is the primary purpose of using 'strict mode'?",
+    "options": [
+      "To enable new ECMAScript features",
+      "To make debugging harder",
+      "To increase the speed of execution"
+    ],
+    "answer": "To enforce a stricter set of rules for writing JavaScript, catching common errors and preventing the use of certain unsafe features.",
+    "explanation": "The `\"use strict\";` directive in JavaScript enforces a stricter parsing and error handling model at runtime. It catches common coding mistakes (like using undeclared variables) and prevents the use of potentially problematic syntax, making the code more secure and robust [citation:1]."
+  },
+  {
+    "question": "What is the fundamental role of a web template engine like Handlebars or Mustache in web development?",
+    "options": [
+      "To manage server-side databases",
+      "To create CSS animations",
+      "To handle user authentication"
+    ],
+    "answer": "To separate the user interface (HTML structure) from the business data (content) by merging a template with a data model.",
+    "explanation": "Template engines like Mustache and Handlebars are designed to separate the presentation layer from the data logic. They allow developers to define static HTML structures with placeholders, which are then filled with dynamic data, simplifying the process of generating dynamic web content [citation:1]."
+  },
+  {
+    "question": "When working with event handling in JavaScript, how does the event object differ between Internet Explorer (older versions) and Firefox?",
+    "options": [
+      "Firefox does not use an event object",
+      "IE uses a different event type system",
+      "The event object is not available in Firefox"
+    ],
+    "answer": "In Firefox, the event object is passed as an argument to the event handler function, whereas in older IE, it is accessed via the global `window.event` object.",
+    "explanation": "This is a classic cross-browser compatibility issue. Modern standards pass the event object directly to the handler function. Older versions of Internet Explorer treated the event object as a global property (`window.event`), requiring developers to use conditional code to handle events consistently [citation:1]."
+  },
+  {
+    "question": "What is the outcome of using the `eval()` function in JavaScript?",
+    "options": [
+      "It encodes a string for URL use",
+      "It evaluates a mathematical expression",
+      "It creates a new variable scope"
+    ],
+    "answer": "It executes a string of text as if it were JavaScript code.",
+    "explanation": "The `eval()` function takes a string as an argument and executes its content as JavaScript code. It is generally avoided because it poses significant security risks by running arbitrary code and is a performance bottleneck, as the engine cannot optimize the code in advance [citation:1]."
+  },
+  {
+    "question": "Which keyword in JavaScript is used to declare a variable that is intended to be constant and cannot be reassigned?",
+    "options": [
+      "`let`",
+      "`var`",
+      "`function`"
+    ],
+    "answer": "`const`",
+    "explanation": "`const` is used to declare constants whose value cannot be changed through reassignment. While `let` and `var` are for variables that can be updated, `const` ensures the identifier remains bound to the same value for its lifetime."
+  },
+  {
+    "question": "What is the correct way to write a conditional statement in JavaScript that executes code if 'x' is greater than 10?",
+    "options": [
+      "if x > 10 then { }",
+      "if (x > 10) then { }",
+      "switch (x) { case >10: }"
+    ],
+    "answer": "if (x > 10) { }",
+    "explanation": "The standard JavaScript syntax for an 'if' statement uses parentheses `()` around the condition and curly braces `{}` around the block of code to be executed. The condition `x > 10` correctly checks if the variable 'x' is greater than 10."
+  },
+  {
+    "question": "What is the defining characteristic of a well-formed XML document?",
+    "options": [
+      "It contains a Document Type Definition (DTD)",
+      "It is validated against an XML Schema",
+      "It uses only standard XML tags"
+    ],
+    "answer": "It adheres to the basic syntax rules of XML, such as having a single root element and properly closed tags.",
+    "explanation": "A well-formed XML document follows the fundamental syntax rules defined by the XML specification. This includes having one root element, all tags properly closed, attribute values in quotes, and correct nesting. It does not need to be validated against a DTD or schema, which would make it a 'valid' XML document [citation:2]."
+  },
+  {
+    "question": "In a well-formed XML document, how must tags be structured?",
+    "options": [
+      "Tags are case-insensitive",
+      "All tags must be empty",
+      "Tags can overlap"
+    ],
+    "answer": "All tags must be properly nested and closed.",
+    "explanation": "One of the core syntax rules for XML is that elements must be properly nested. If an element starts inside another, it must also end inside that same parent element. Additionally, every opening tag must have a corresponding closing tag (unless it is a self-closing tag) [citation:2]."
+  },
+  {
+    "question": "In an event-based application design, what does the 'event level' typically determine in a web application framework?",
+    "options": [
+      "The priority of the event in a queue",
+      "The security level of the event",
+      "The logging level for the event"
+    ],
+    "answer": "Whether the event operates on a specific row/item of data or on the page as a whole.",
+    "explanation": "In many web application development environments, setting the 'Event Level' specifies the scope of the event. A 'Row' level event passes information about the specific data row to the event handler, while a 'Page' level event does not pass row-specific data and is often used for global actions like toolbar buttons [citation:3]."
+  },
+  {
+    "question": "When designing an event for a large or long-running process on a web server, what is the recommended process type to ensure a good user experience?",
+    "options": [
+      "Batch Event",
+      "Immediate Event",
+      "User-level Event"
+    ],
+    "answer": "Background Event",
+    "explanation": "Events that take more than a few seconds to run should be processed in the background. This prevents the web server from keeping a connection open and the user waiting. Background events can notify the user when queued, allowing them to continue working while the process completes [citation:3]."
+  },
+  {
+    "question": "What is Continuous Integration (CI) primarily used for in web publishing and hosting?",
+    "options": [
+      "To manually deploy code to a server",
+      "To design the user interface",
+      "To register a domain name"
+    ],
+    "answer": "To automatically test code changes whenever they are committed to a shared repository.",
+    "explanation": "Continuous Integration (CI) is a development practice where developers regularly merge their code changes into a central repository. This is followed by automated builds and tests to detect integration errors early, improving software quality and reducing the time to deliver updates [citation:4]."
+  },
+  {
+    "question": "Which protocol is the foundation of data communication for the World Wide Web, defining how messages are formatted and transmitted between web clients and servers?",
+    "options": [
+      "File Transfer Protocol (FTP)",
+      "Simple Mail Transfer Protocol (SMTP)",
+      "Transmission Control Protocol (TCP)"
+    ],
+    "answer": "Hypertext Transfer Protocol (HTTP)",
+    "explanation": "HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the web. It is an application layer protocol that defines the rules for requests and responses between a client (like a web browser) and a server, enabling the transfer of hypertext documents [citation:5]."
+  },
+  {
+    "question": "What is the primary difference between a GET request and a POST request when submitting a web form?",
+    "options": [
+      "GET is for images, POST is for text",
+      "GET is more secure than POST",
+      "POST has a URL length limit, GET does not"
+    ],
+    "answer": "GET appends form data to the URL, while POST sends it in the body of the HTTP request.",
+    "explanation": "When a form is sent via GET, the data is appended to the URL as query parameters. This makes it visible in the browser's address bar and is suitable for non-sensitive, idempotent requests. POST sends the data in the body of the HTTP message, allowing for larger and more sensitive data transfers, as the data is not directly exposed in the URL [citation:5]."
+  },
+  {
+    "question": "What is the role of the root element in an HTML document?",
+    "options": [
+      "It contains the main content of the page",
+      "It defines the page's title",
+      "It holds the CSS styles"
+    ],
+    "answer": "It is the top-level element that wraps the entire content of the HTML document.",
+    "explanation": "In an HTML document, the `<html>` tag is the root element. It is the container for all other HTML elements (except the `<!DOCTYPE>` declaration) and signifies the beginning and end of the HTML document, with the `<head>` and `<body>` elements as its direct children."
+  },
+  {
+    "question": "In the context of website structure, what is the purpose of using semantic HTML elements like `<header>`, `<nav>`, `<main>`, and `<footer>`?",
+    "options": [
+      "To directly apply CSS styles",
+      "To improve page load speed",
+      "To embed multimedia content"
+    ],
+    "answer": "To clearly define the different structural parts of a web page for browsers, developers, and assistive technologies.",
+    "explanation": "Semantic HTML elements provide meaning and structure to web content. Using elements like `<header>`, `<nav>`, `<main>`, and `<footer>` helps define the distinct sections of a page layout, making it more accessible for screen readers, easier for search engines to index, and more maintainable for developers [citation:6]."
+  },
+  {
+    "question": "Which file in an Apache Tomcat server is commonly used to configure deployment parameters, such as the welcome page list or servlet settings, for a specific web application?",
+    "options": [
+      "server.xml",
+      "catalina.properties",
+      "tomcat-users.xml"
+    ],
+    "answer": "web.xml",
+    "explanation": "The `web.xml` file (deployment descriptor) is located in the `WEB-INF/` directory of a web application. It is used to configure various aspects of the application, including servlet mappings, welcome file lists (e.g., showing `index.jsp` instead of `index.html`), and security constraints [citation:7]."
+  },
+  {
+    "question": "How can directory listings be enabled or disabled for a specific web application in Apache Tomcat?",
+    "options": [
+      "By modifying the server's environment variables",
+      "By creating a file named `index.html` in the root folder",
+      "By changing settings in the Tomcat Manager application"
+    ],
+    "answer": "By configuring the `listings` parameter for the default servlet in the web application's `web.xml` file.",
+    "explanation": "To control whether users can see a directory listing when no welcome file is present, you must configure the `DefaultServlet` in the `web.xml` file. By setting an `<init-param>` with `<param-name>listings</param-name>` and `<param-value>true</param-value>`, you can enable directory listings for that application [citation:7]."
+  },
+  {
+    "question": "When installing a web server like Apache and configuring it for HTTPS, what is the first step after installing the `mod_ssl` module?",
+    "options": [
+      "Restart the web server",
+      "Create an HTML file to serve",
+      "Edit the firewall rules"
+    ],
+    "answer": "Generate a private key and a Certificate Signing Request (CSR).",
+    "explanation": "To enable HTTPS, a server needs an SSL/TLS certificate. The initial step is to use a tool like OpenSSL to generate a private key and a Certificate Signing Request (CSR). The CSR is then used to get a signed certificate from a Certificate Authority (CA) or to create a self-signed certificate for testing [citation:8]."
+  },
+  {
+    "question": "In an Apache server configuration for HTTPS, where are the paths to the SSL certificate and private key files typically specified?",
+    "options": [
+      "In the `.htaccess` file",
+      "In the `httpd.conf` main configuration file",
+      "In the `ports.conf` file"
+    ],
+    "answer": "In the `ssl.conf` file (or the virtual host configuration for port 443).",
+    "explanation": "The directives for SSL/TLS configuration, such as `SSLCertificateFile` (pointing to the server certificate) and `SSLCertificateKeyFile` (pointing to the private key), are typically located in a dedicated SSL configuration file (e.g., `ssl.conf` on many Linux distributions) or within the virtual host block that is set to listen on port 443 for HTTPS traffic [citation:8]."
+  },
+  {
+    "question": "Which web hosting option is best described as renting a private, partitioned space on a physical server where you have your own operating system and dedicated resources, even though you share the underlying hardware?",
+    "options": [
+      "Dedicated Hosting",
+      "Cloud Hosting",
+      "Shared Hosting"
+    ],
+    "answer": "Virtual Private Server (VPS) Hosting",
+    "explanation": "VPS hosting uses virtualization technology to partition a single physical server into multiple virtual machines. Each VPS acts like a dedicated server with its own operating system and allocated resources, offering more control and better performance than shared hosting, but at a lower cost than a dedicated server [citation:9]."
+  },
+  {
+    "question": "What is a key advantage of Cloud Hosting over traditional VPS or Shared Hosting?",
+    "options": [
+      "It is always the cheapest option",
+      "The user has complete control over the physical hardware",
+      "It is located in a single, highly secure data center"
+    ],
+    "answer": "It offers high scalability, allowing resources like memory and processing power to be added on-demand.",
+    "explanation": "Cloud hosting utilizes a network of virtual servers in a cloud environment. This distributed nature means that if a website needs more resources to handle traffic spikes, they can be allocated almost instantly without needing to purchase and set up new physical hardware, making it highly scalable and reliable [citation:9]."
+  },
+  {
+    "question": "What is the primary security risk associated with Shared Hosting compared to VPS or Cloud hosting?",
+    "options": [
+      "Lack of SSL certificate support",
+      "Frequent hardware failures",
+      "Difficulty in uploading files"
+    ],
+    "answer": "Your website's security can be compromised by the actions or vulnerabilities of other websites on the same server.",
+    "explanation": "In a shared hosting environment, multiple websites reside on the same server and share its resources. If one website has a security flaw and is compromised, it could potentially be used to attack other sites on the same server, or if a neighbor uses excessive resources, it can affect your site's performance. Security controls are also shared [citation:9]."
+  },
+  {
+    "question": "In the client-server model, what is the primary role of the web client (e.g., a browser)?",
+    "options": [
+      "To store the website's database",
+      "To host the website files",
+      "To manage domain names"
+    ],
+    "answer": "To send HTTP requests to a server and render the received resources (like HTML, CSS, and images) into a viewable web page.",
+    "explanation": "A web client, most commonly a web browser, initiates communication with a web server. It sends an HTTP request for a specific resource (like a web page) and, upon receiving the server's HTTP response, interprets the code (HTML, CSS, JavaScript) to display the content to the user [citation:5]."
+  },
+  {
+    "question": "What is an Application Programming Interface (API) in the context of web development?",
+    "options": [
+      "A programming language used for styling web pages",
+      "A type of database for storing user data",
+      "A new HTML element for embedding external content"
+    ],
+    "answer": "A set of defined rules and tools that allows one software application to interact with and use the features or data of another application, service, or operating system.",
+    "explanation": "APIs act as intermediaries that enable different software systems to communicate. In web development, client-side JavaScript uses APIs (like the DOM API, Fetch API, or Geolocation API) to interact with the browser and operating system. Third-party APIs (like Google Maps or Twitter) allow developers to integrate external services and data into their applications [citation:10]."
+  },
+  {
+    "question": "How does the `apply()` method in JavaScript differ from the `call()` method?",
+    "options": [
+      "`apply()` is used for event handling, `call()` is not",
+      "`call()` is deprecated, `apply()` is the modern standard",
+      "They are exactly the same and can be used interchangeably"
+    ],
+    "answer": "`apply()` accepts arguments for the function as a single array, while `call()` accepts them as a list of individual arguments.",
+    "explanation": "Both `call()` and `apply()` are used to invoke a function with a specific `this` value. The only functional difference is in how arguments are passed to the function: `apply()` takes an array-like object of arguments, whereas `call()` takes an argument list separated by commas [citation:1]."
+  },
+  {
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A way to close a browser window",
+      "A method for ending a loop prematurely",
+      "A special object for handling errors"
+    ],
+    "answer": "A function that has access to variables from its outer (enclosing) function's scope even after the outer function has finished executing.",
+    "explanation": "A closure is created when a function is defined inside another function and has access to the parent function's variables. This allows for data privacy and the creation of functions with persistent, encapsulated state [citation:1]."
+  },
+  {
+    "question": "Which statement correctly describes the syntax for a 'for' loop in JavaScript that iterates 5 times?",
+    "options": [
+      "for (i = 0 to 5) { }",
+      "for (i = 0; i <= 5; i++) { }",
+      "for each (i in 5) { }"
+    ],
+    "answer": "for (let i = 0; i < 5; i++) { }",
+    "explanation": "The correct syntax for a for loop includes three parts: the initializer (`let i = 0`), the condition (`i < 5`), and the final expression (`i++`). The loop runs as long as the condition evaluates to true. To run exactly 5 times with i starting at 0, the condition should be `i < 5`."
+  },
+  {
+    "question": "What is a jQuery plugin primarily used for?",
+    "options": [
+      "To compress jQuery files",
+      "To convert jQuery code to vanilla JavaScript",
+      "To debug jQuery applications"
+    ],
+    "answer": "To extend the functionality of jQuery by adding new methods and features.",
+    "explanation": "jQuery plugins are pieces of code written to perform specific functions that are not part of the core jQuery library. They allow developers to easily add complex features (like image sliders, lightboxes, or form validators) to their projects by leveraging pre-built, reusable components."
+  },
+  {
+    "question": "In the context of jQuery UI, what is a common use case?",
+    "options": [
+      "Managing server-side code",
+      "Creating CSS animations only",
+      "Optimizing database queries"
+    ],
+    "answer": "To provide a set of user interface interactions, effects, widgets, and themes built on top of the jQuery library.",
+    "explanation": "jQuery UI is a curated set of user interface interactions (like draggable and droppable), effects (like animations), and widgets (like datepickers, accordions, and dialog boxes). It helps developers build interactive and feature-rich web applications more quickly."
+  },
+  {
+    "question": "What is the purpose of jQuery templates?",
+    "options": [
+      "To create HTML templates for server-side rendering",
+      "To format JavaScript code automatically",
+      "To replace CSS stylesheets"
+    ],
+    "answer": "To define HTML fragments with placeholders that can be filled with data from a JavaScript object.",
+    "explanation": "jQuery templates (like those from the jQuery Template plugin) allowed developers to specify a block of HTML markup containing binding expressions. This template could then be rendered against a JavaScript data object, generating the final HTML to be inserted into the DOM, thus separating design from data. (Note: jQuery templates are no longer actively developed but illustrate the concept)."
+  },
+  {
+    "question": "What does 'unobtrusive client validation' mean in the context of web development?",
+    "options": [
+      "Validation that only runs on the server",
+      "Validation that is invisible to the user",
+      "Validation that requires no JavaScript"
+    ],
+    "answer": "Validation rules are defined using data attributes in HTML, and JavaScript is used separately to enforce these rules without mixing logic directly into the markup.",
+    "explanation": "Unobtrusive client validation (popularized by ASP.NET MVC) uses HTML5 data-* attributes to store validation rules (like required fields or string lengths) in the markup. A separate JavaScript library then reads these attributes and performs the validation. This keeps the JavaScript logic clean and unobtrusive, separate from the HTML structure."
+  },
+  {
+    "question": "Which of the following is a key characteristic of a valid XML document, as opposed to a merely well-formed one?",
+    "options": [
+      "It has a root element",
+      "All tags are closed",
+      "It is written in English"
+    ],
+    "answer": "It conforms to a predefined Document Type Definition (DTD) or XML Schema (XSD).",
+    "explanation": "While a well-formed XML document follows basic syntax rules, a valid XML document goes a step further. It must also adhere to the structure, order, and data type constraints defined in an associated Document Type Definition (DTD) or XML Schema Definition (XSD) [citation:2]."
+  },
+  {
+    "question": "In an XML DTD, what does the declaration `<!ELEMENT author (name, nationality)>` signify?",
+    "options": [
+      "The 'author' element must be empty",
+      "The 'author' element can contain either 'name' or 'nationality'",
+      "The 'author' element can contain any content"
+    ],
+    "answer": "The 'author' element must contain a 'name' element followed by a 'nationality' element.",
+    "explanation": "In a DTD, the element type declaration defines what children an element can have. In this case, `(name, nationality)` means the `<author>` element must have exactly one `<name>` element, immediately followed by exactly one `<nationality>` element, in that precise order [citation:2]."
+  },
+  {
+    "question": "Which system call in an Apache server setup is used to create a Certificate Signing Request (CSR) and a new private key simultaneously?",
+    "options": [
+      "`apachectl -k start`",
+      "`mod_ssl enable`",
+      "`systemctl restart httpd`"
+    ],
+    "answer": "`openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr`",
+    "explanation": "The OpenSSL `req` command is used to generate and process certificate requests. The `-newkey` parameter tells it to generate a new private key (`server.key`) and a new CSR (`server.csr`) in one step. The `rsa:2048` specifies the key type and length [citation:8]."
+  },
+  {
+    "question": "What is a key distinction between Foreground and Background events in a web application?",
+    "options": [
+      "Background events are more secure",
+      "Foreground events cannot access user data",
+      "Background events run faster"
+    ],
+    "answer": "Foreground events provide immediate feedback to the user, while Background events are queued for processing and notify the user only when the job is queued.",
+    "explanation": "Foreground events are synchronous and often tied to user actions, providing instant feedback like reloading a page. Background events are designed for long-running processes; they are queued and the user can continue working while the server processes the task in the background [citation:3]."
+  },
+  {
+    "question": "In the context of HTTP commands, which of the following is a valid and commonly used HTTP method?",
+    "options": [
+      "`FETCH`",
+      "`SEND`",
+      "`RETRIEVE`"
+    ],
+    "answer": "`HEAD`",
+    "explanation": "`HEAD` is a standard HTTP method. It is identical to `GET`, but the server must not return a message-body in the response. It is used to retrieve metadata about a resource (e.g., checking if a file exists or its last-modified date) without transferring the entire content [citation:5]."
+  },
+  {
+    "question": "What is a primary difference between stateful and stateless protocols, using HTTP as an example of a stateless protocol?",
+    "options": [
+      "Stateless protocols are faster",
+      "Stateful protocols use more bandwidth",
+      "Stateless protocols require encryption"
+    ],
+    "answer": "A stateless protocol like HTTP does not require the server to retain session information or status about each communication partner across multiple requests.",
+    "explanation": "HTTP is a stateless protocol, meaning that each request from a client to a server is treated as an independent transaction that is unrelated to any previous request. Stateful protocols, like FTP with its control connection, maintain a session state and remember information about the client between interactions [citation:5]."
+  },
+  {
+    "question": "Which web hosting type involves sharing a physical server and its resources (like CPU and RAM) with other customers, often leading to the most affordable plans?",
+    "options": [
+      "Dedicated Hosting",
+      "VPS Hosting",
+      "Cloud Hosting"
+    ],
+    "answer": "Shared Hosting",
+    "explanation": "Shared hosting is the most basic and cost-effective type of hosting, where multiple websites reside on a single physical server. All users share the server's resources, which can lead to performance issues if one site consumes too many resources, but it is an ideal starting point for small websites and beginners [citation:9]."
+  },
+  {
+    "question": "What is the function of the Document Object Model (DOM) API in a web browser?",
+    "options": [
+      "To handle network requests",
+      "To manage browser storage",
+      "To draw graphics on a canvas"
+    ],
+    "answer": "To allow JavaScript to access and manipulate the structure, style, and content of the HTML document.",
+    "explanation": "The DOM API represents an HTML document as a tree of objects. It provides a way for JavaScript (and other scripting languages) to interact with and dynamically modify the document's elements, attributes, and text. This is essential for creating interactive and dynamic web pages [citation:10]."
+  },
+  {
+    "question": "Which built-in browser API would you use to make an asynchronous HTTP request from a web page to fetch data from a server without reloading the page?",
+    "options": [
+      "The Geolocation API",
+      "The Canvas API",
+      "The DOM API"
+    ],
+    "answer": "The Fetch API (or the older XMLHttpRequest API).",
+    "explanation": "The Fetch API provides a modern, powerful, and flexible way to make network requests. It is commonly used to retrieve data from a server (GET) or send data to it (POST) asynchronously, enabling the creation of single-page applications and dynamic content updates [citation:10]."
+  },
+  {
+    "question": "What is a third-party API, as opposed to a browser's built-in web API?",
+    "options": [
+      "An API that requires a paid subscription",
+      "An API that only works on mobile devices",
+      "An API that is written in a different programming language"
+    ],
+    "answer": "An API provided by an external service (like Google, Twitter, or Facebook) to allow developers to interact with their platform and access their data.",
+    "explanation": "Built-in APIs are part of the web browser itself. Third-party APIs are hosted on external servers and are used to integrate external services into a web application, such as displaying a Google Map on a page, using PayPal for payments, or showing a Twitter feed [citation:10]."
+  },
+  {
+    "question": "What does the `new` keyword do when used before a function call in JavaScript?",
+    "options": [
+      "It declares a new variable",
+      "It imports a new module",
+      "It deletes the previous instance"
+    ],
+    "answer": "It creates a new empty object, sets its prototype to the function's prototype, and calls the function with `this` bound to the new object.",
+    "explanation": "The `new` operator is used to create an instance of a user-defined object type or one of the built-in object types. It creates a blank JavaScript object, links the prototype of that object to the function's prototype property, and then executes the constructor function with the newly created object set as the `this` context [citation:1]."
+  },
+  {
+    "question": "Which of the following is a method for delaying the loading of JavaScript files to improve initial page load time?",
+    "options": [
+      "Placing all `<script>` tags in the `<head>`",
+      "Using the `type='module'` attribute",
+      "Minifying the JavaScript code"
+    ],
+    "answer": "Using the `async` or `defer` attributes in the `<script>` tag.",
+    "explanation": "The `async` and `defer` attributes provide control over when external scripts are executed. `async` downloads the script during HTML parsing and pauses parsing to execute it as soon as it's available. `defer` also downloads during parsing but waits to execute until after the HTML is fully parsed. Both prevent scripts from blocking the initial rendering of the page [citation:1]."
+  },
+  {
+    "question": "Which JavaScript method can be used to remove duplicate values from an array?",
+    "options": [
+      "The `unique()` method",
+      "The `filter()` method",
+      "The `concat()` method"
+    ],
+    "answer": "Using a `Set` object, or a combination of `reduce()` and `includes()`, or an object to track seen values.",
+    "explanation": "While there are many ways, a common and modern approach is to use `[...new Set(array)]`, which leverages the `Set` object's property that only stores unique values. Another classic approach involves iterating through the array and building a new one, using an object to keep track of values that have already been added [citation:1]."
+  },
+  {
+    "question": "In Apache Tomcat, what is the purpose of the `enablePooling` initialization parameter for the JSP servlet?",
+    "options": [
+      "It enables connection pooling for the database",
+      "It pools memory for faster JSP compilation",
+      "It pools user sessions"
+    ],
+    "answer": "It enables or disables tag pooling, which reuses tag handler instances to improve performance.",
+    "explanation": "In the Tomcat `web.xml` file, the JspServlet can be configured with an `enablePooling` parameter. Setting it to `false` disables tag pooling, which means a new tag handler instance is created for each use of a custom tag. This can be useful for debugging lifecycle issues but may have performance implications [citation:7]."
+  },
+  {
+    "question": "What is the primary purpose of using the `Content-Disposition` header in an HTTP response from a servlet?",
+    "options": [
+      "To set the content type of the response",
+      "To compress the response data",
+      "To cache the response on the client"
+    ],
+    "answer": "To indicate that the content should be displayed as a downloadable file and to suggest a default filename.",
+    "explanation": "The `Content-Disposition` header with the value `attachment` forces the browser to present the content as a file download instead of displaying it inline. By adding a `filename` parameter, you can specify the default name of the file in the 'Save As' dialog box [citation:7]."
+  },
+  {
+    "question": "What is the difference between continuous delivery (CD) and continuous integration (CI)?",
+    "options": [
+      "CD is for front-end code, CI is for back-end code",
+      "CI automates builds, CD automates security testing",
+      "They are the same process with different names"
+    ],
+    "answer": "CI automates the merging and testing of code changes, while CD automates the release of that validated code to staging or production environments.",
+    "explanation": "Continuous Integration (CI) focuses on the build and testing stage, ensuring that new code integrates well with the existing codebase. Continuous Delivery (CD) takes over after CI, automating the deployment of the successfully built and tested application to various environments, making releases faster and more reliable [citation:4]."
+  },
+  {
+    "question": "When saving a website's structure, what is the conventional name for the main page that a web server sends by default when a directory is requested?",
+    "options": [
+      "main.html",
+      "homepage.html",
+      "default.aspx"
+    ],
+    "answer": "index.html (or index.php, index.jsp, etc.)",
+    "explanation": "By default, most web servers are configured to look for a specific file, traditionally named `index.html` (or language-specific variants like `index.php`), when a user requests the root directory of a website. This file serves as the default or 'welcome' page [citation:7]."
+  },
+  {
+    "question": "In event-based design, what is the purpose of a 'Pre Message'?",
+    "options": [
+      "To log the event before it starts",
+      "To display an error message after the event fails",
+      "To confirm that the event has completed"
+    ],
+    "answer": "To warn the user before executing an event, especially if the action is not easily reversible.",
+    "explanation": "A Pre Message is a user interface prompt that appears after an event is triggered but before it is executed. It typically asks the user to confirm (e.g., with an OK or Cancel option) that they want to proceed, helping to prevent accidental data loss or disruption from unintended actions [citation:3]."
+  },
+  {
+    "question": "Which tool is a popular example of a module loader and dependency manager for JavaScript in a browser environment, helping structure code and manage script loading?",
+    "options": [
+      "Node.js",
+      "Gulp",
+      "Webpack"
+    ],
+    "answer": "RequireJS",
+    "explanation": "RequireJS is an implementation of the Asynchronous Module Definition (AMD) API. It is used to load JavaScript files and modules in the browser asynchronously, managing dependencies so that code is executed only after all its dependencies are loaded [citation:1]."
+  }
+]
