@@ -63,7 +63,8 @@ export default function Quiz() {
     day4: { sets: [1, 2, 3, 4, 5], title: "Day 4", subtitle: "Object Oriented Programming - 1 (Python)" },
     day5: { sets: [1, 2, 3, 4, 5], title: "Day 5", subtitle: "Object Oriented Programming - 1 (Python)" },
     day6: { sets: [1, 2, 3, 4, 5], title: "Day 6", subtitle: "Web Design & Development Fundamentals (Front-End) - 1" },
-    day7: { sets: [1, 2, 3, 4, 5], title: "Day 7", subtitle: "Web Design & Development Fundamentals (Front-End) - 2" }
+    day7: { sets: [1, 2, 3, 4, 5], title: "Day 7", subtitle: "Web Design & Development Fundamentals (Front-End) - 2" },
+    day8: { sets: [1, 2, 3, 4, 5], title: "Day 8", subtitle: "Relational Database" }
   };
 
   // Sync resumeData and completedSets from localStorage whenever the main menu is shown

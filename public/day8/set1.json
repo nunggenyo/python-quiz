@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Which of the following best describes the data layer in a web application?",
+    "options": [
+      "The user interface components",
+      "The business logic that processes user input",
+      "The part that handles HTTP requests and responses"
+    ],
+    "answer": "The storage and management of application data",
+    "explanation": "The data layer is responsible for storing and retrieving data, often using databases or file systems. It is distinct from presentation, business logic, and network layers."
+  },
+  {
+    "question": "What is a primary disadvantage of using file-based storage over a relational database for managing application data?",
+    "options": [
+      "Faster data retrieval",
+      "Built-in support for concurrent access",
+      "Automatic data encryption"
+    ],
+    "answer": "Data redundancy and inconsistency",
+    "explanation": "File systems often lead to duplicate data and lack integrity constraints, whereas relational databases reduce redundancy through normalization and enforce consistency."
+  },
+  {
+    "question": "What does RDBMS stand for?",
+    "options": [
+      "Random Database Management System",
+      "Relational Data Binding Model System",
+      "Remote Database Management Service"
+    ],
+    "answer": "Relational Database Management System",
+    "explanation": "RDBMS is software that manages relational databases, storing data in tables with relationships."
+  },
+  {
+    "question": "Which of the following is an example of an RDBMS?",
+    "options": [
+      "MongoDB",
+      "Redis",
+      "Cassandra"
+    ],
+    "answer": "MySQL",
+    "explanation": "MySQL is a relational database management system, while MongoDB, Redis, and Cassandra are NoSQL databases."
+  },
+  {
+    "question": "In a relational database, what is a 'row' also known as?",
+    "options": [
+      "A field",
+      "A column",
+      "A relation"
+    ],
+    "answer": "A record",
+    "explanation": "In database terminology, a row represents a single record, while a column represents a field. A relation is another term for table."
+  },
+  {
+    "question": "Which data type would you use to store a whole number in a database table?",
+    "options": [
+      "VARCHAR",
+      "DATE",
+      "DECIMAL"
+    ],
+    "answer": "INT",
+    "explanation": "INT is used for integers. VARCHAR for strings, DATE for dates, DECIMAL for precise numbers."
+  },
+  {
+    "question": "What is the primary role of SQL in relational databases?",
+    "options": [
+      "To design user interfaces",
+      "To handle network communication",
+      "To manage hardware resources"
+    ],
+    "answer": "To define and manipulate data",
+    "explanation": "SQL (Structured Query Language) is used to query, insert, update, and delete data, as well as define schema."
+  },
+  {
+    "question": "In database programming, what is a cursor?",
+    "options": [
+      "A type of index used for fast searching",
+      "A constraint that ensures data integrity",
+      "A backup of the database"
+    ],
+    "answer": "A pointer that allows row-by-row processing of a query result",
+    "explanation": "Cursors enable iterating over result sets, often used in stored procedures."
+  },
+  {
+    "question": "What is a database schema?",
+    "options": [
+      "The physical storage location of data files",
+      "A user account with administrative privileges",
+      "A backup copy of the database"
+    ],
+    "answer": "A logical container that defines the structure of tables, views, and relationships",
+    "explanation": "Schema defines the organization of data, including tables, columns, data types, and relationships."
+  },
+  {
+    "question": "Which SQL command is used to create a relationship between two tables?",
+    "options": [
+      "CREATE RELATION",
+      "CREATE INDEX",
+      "JOIN"
+    ],
+    "answer": "ALTER TABLE ADD CONSTRAINT",
+    "explanation": "Relationships are defined using foreign key constraints, added via ALTER TABLE ADD CONSTRAINT. JOIN is for querying."
+  },
+  {
+    "question": "To delete a relationship between two tables, you would typically:",
+    "options": [
+      "DELETE FROM the tables",
+      "TRUNCATE the tables",
+      "REMOVE RELATIONSHIP"
+    ],
+    "answer": "DROP the foreign key constraint",
+    "explanation": "Relationships are enforced by foreign keys; dropping the constraint removes the relationship."
+  },
+  {
+    "question": "What does an ER diagram represent?",
+    "options": [
+      "The physical storage layout of a database",
+      "The network topology of a database system",
+      "The user interface flow of an application"
+    ],
+    "answer": "The logical structure of a database showing entities and their relationships",
+    "explanation": "ER diagrams (Entity-Relationship) visually represent entities, attributes, and relationships."
+  },
+  {
+    "question": "In an ER diagram, how is a relationship between two entities typically represented?",
+    "options": [
+      "A rectangle",
+      "An ellipse",
+      "A line with an arrow"
+    ],
+    "answer": "A diamond",
+    "explanation": "In Chen notation, diamonds denote relationships; rectangles are entities, ellipses are attributes."
+  },
+  {
+    "question": "What is logical-to-physical mapping in database design?",
+    "options": [
+      "Converting an ER diagram into actual database tables",
+      "Mapping user requests to physical disk addresses",
+      "Creating indexes on tables"
+    ],
+    "answer": "Translating a conceptual model into a specific DBMS implementation",
+    "explanation": "Logical design (like ER) is mapped to physical schema (tables, columns, data types) for a particular RDBMS."
+  },
+  {
+    "question": "Which of the following is a characteristic of a primary key?",
+    "options": [
+      "It can contain NULL values",
+      "It can be changed frequently",
+      "It is always a single column"
+    ],
+    "answer": "It must be unique for each row",
+    "explanation": "Primary key uniquely identifies each row, cannot be NULL, and should be stable."
+  },
+  {
+    "question": "What is the difference between a primary key and a foreign key?",
+    "options": [
+      "Primary key links tables, foreign key identifies a row",
+      "Primary key can be NULL; foreign key cannot",
+      "They are the same concept"
+    ],
+    "answer": "Primary key identifies a row in its own table; foreign key references a primary key in another table",
+    "explanation": "Primary key enforces entity integrity; foreign key enforces referential integrity."
+  },
+  {
+    "question": "What is a NOT NULL constraint used for?",
+    "options": [
+      "To ensure that a column contains only unique values",
+      "To create a relationship between tables",
+      "To speed up queries"
+    ],
+    "answer": "To ensure that a column does not accept NULL values",
+    "explanation": "NOT NULL requires a value in that column for every row."
+  },
+  {
+    "question": "What is the purpose of database normalization?",
+    "options": [
+      "To increase data redundancy",
+      "To make queries run faster",
+      "To encrypt sensitive data"
+    ],
+    "answer": "To reduce data redundancy and improve data integrity",
+    "explanation": "Normalization organizes data to minimize duplication and avoid anomalies."
+  },
+  {
+    "question": "Which normal form eliminates transitive dependencies?",
+    "options": [
+      "First Normal Form (1NF)",
+      "Second Normal Form (2NF)",
+      "Boyce-Codd Normal Form (BCNF)"
+    ],
+    "answer": "Third Normal Form (3NF)",
+    "explanation": "3NF removes transitive dependencies where non-key attributes depend on other non-key attributes."
+  },
+  {
+    "question": "A table is in 1NF if:",
+    "options": [
+      "All non-key columns are fully functionally dependent on the primary key",
+      "There are no transitive dependencies",
+      "It has a composite key"
+    ],
+    "answer": "It has no repeating groups and each column contains atomic values",
+    "explanation": "First normal form requires atomic values and no repeating groups."
+  },
+  {
+    "question": "SQL is a language used for:",
+    "options": [
+      "Styling web pages",
+      "Programming user interfaces",
+      "Creating animations"
+    ],
+    "answer": "Managing and querying relational databases",
+    "explanation": "SQL stands for Structured Query Language."
+  },
+  {
+    "question": "Which SQL statement is used to retrieve data from a database?",
+    "options": [
+      "GET",
+      "FETCH",
+      "RETRIEVE"
+    ],
+    "answer": "SELECT",
+    "explanation": "SELECT queries data from tables."
+  },
+  {
+    "question": "What does the following SQL query return? SELECT * FROM employees WHERE department = 'Sales';",
+    "options": [
+      "All rows from the employees table",
+      "Only the department column from employees",
+      "An error because * is not allowed"
+    ],
+    "answer": "All columns from the employees table for employees in the Sales department",
+    "explanation": "* selects all columns, WHERE filters rows."
+  },
+  {
+    "question": "Which SQL command is used to add new rows to a table?",
+    "options": [
+      "ADD",
+      "UPDATE",
+      "CREATE"
+    ],
+    "answer": "INSERT",
+    "explanation": "INSERT INTO adds new records."
+  },
+  {
+    "question": "What is the correct syntax to insert a new employee with name 'John' and age 30 into a table called 'employees'?",
+    "options": [
+      "INSERT employees (name, age) VALUES ('John', 30);",
+      "ADD INTO employees VALUES ('John', 30);",
+      "INSERT (name, age) INTO employees VALUES ('John', 30);"
+    ],
+    "answer": "INSERT INTO employees (name, age) VALUES ('John', 30);",
+    "explanation": "Standard INSERT syntax specifies table, optional columns, and VALUES."
+  },
+  {
+    "question": "Which SQL command is used to remove rows from a table?",
+    "options": [
+      "REMOVE",
+      "DROP",
+      "TRUNCATE"
+    ],
+    "answer": "DELETE",
+    "explanation": "DELETE removes rows based on condition; DROP removes table; TRUNCATE removes all rows quickly."
+  },
+  {
+    "question": "What happens if you run DELETE FROM employees without a WHERE clause?",
+    "options": [
+      "It deletes the employees table",
+      "It returns an error",
+      "It deletes only the first row"
+    ],
+    "answer": "It deletes all rows from the employees table",
+    "explanation": "Without WHERE, DELETE removes all rows, but the table structure remains."
+  },
+  {
+    "question": "Which SQL operator is used to match a pattern in a string?",
+    "options": [
+      "IN",
+      "BETWEEN",
+      "IS"
+    ],
+    "answer": "LIKE",
+    "explanation": "LIKE is used with wildcards (%) for pattern matching."
+  },
+  {
+    "question": "What does the SQL operator 'BETWEEN' do?",
+    "options": [
+      "Checks if a value exists in a list",
+      "Checks if a value is NULL",
+      "Performs a logical AND"
+    ],
+    "answer": "Checks if a value is within a range inclusive",
+    "explanation": "BETWEEN ... AND ... selects values in a given range."
+  },
+  {
+    "question": "Which type of JOIN returns all rows from the left table and matching rows from the right table, with NULLs if no match?",
+    "options": [
+      "INNER JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "answer": "LEFT JOIN",
+    "explanation": "LEFT JOIN (or LEFT OUTER JOIN) returns all left table rows."
+  },
+  {
+    "question": "What is the difference between INNER JOIN and OUTER JOIN?",
+    "options": [
+      "INNER JOIN is faster than OUTER JOIN",
+      "OUTER JOIN only works with two tables",
+      "INNER JOIN requires a primary key"
+    ],
+    "answer": "INNER JOIN returns only matching rows; OUTER JOIN returns unmatched rows as well",
+    "explanation": "INNER JOIN returns rows where there is a match in both tables; OUTER JOIN includes non-matching rows with NULLs."
+  },
+  {
+    "question": "Which SQL clause is used to combine rows from two or more tables based on a related column?",
+    "options": [
+      "MERGE",
+      "COMBINE",
+      "UNION"
+    ],
+    "answer": "JOIN",
+    "explanation": "JOIN is used to combine tables based on a related column."
+  },
+  {
+    "question": "Which of the following is a DDL (Data Definition Language) command?",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "UPDATE"
+    ],
+    "answer": "CREATE",
+    "explanation": "DDL includes CREATE, ALTER, DROP; DML includes SELECT, INSERT, UPDATE, DELETE."
+  },
+  {
+    "question": "What does DCL stand for in SQL?",
+    "options": [
+      "Data Combination Language",
+      "Database Creation Language",
+      "Data Command Language"
+    ],
+    "answer": "Data Control Language",
+    "explanation": "DCL includes GRANT and REVOKE for permissions."
+  },
+  {
+    "question": "Which SQL command is used to give a user permission to access a database?",
+    "options": [
+      "ALLOW",
+      "PERMIT",
+      "AUTHORIZE"
+    ],
+    "answer": "GRANT",
+    "explanation": "GRANT is the DCL command for privileges."
+  },
+  {
+    "question": "Which of the following is a popular open-source RDBMS?",
+    "options": [
+      "MongoDB",
+      "Redis",
+      "Cassandra"
+    ],
+    "answer": "MySQL",
+    "explanation": "MySQL is open-source RDBMS; others are NoSQL."
+  },
+  {
+    "question": "Before installing an RDBMS, what is an important consideration?",
+    "options": [
+      "The color of the logo",
+      "The number of tables you plan to create",
+      "The font size of the documentation"
+    ],
+    "answer": "The operating system compatibility",
+    "explanation": "You must ensure the RDBMS supports your OS."
+  },
+  {
+    "question": "What is the first step in creating a simple database schema?",
+    "options": [
+      "Write SQL queries",
+      "Insert sample data",
+      "Create indexes"
+    ],
+    "answer": "Define tables, columns, and relationships",
+    "explanation": "Schema design involves planning structure before data insertion."
+  },
+  {
+    "question": "Which SQL command is used to create a new database?",
+    "options": [
+      "NEW DATABASE",
+      "MAKE DATABASE",
+      "ADD DATABASE"
+    ],
+    "answer": "CREATE DATABASE",
+    "explanation": "CREATE DATABASE is standard SQL."
+  },
+  {
+    "question": "How can you manually execute an SQL query in MySQL?",
+    "options": [
+      "By writing it in a text file and double-clicking",
+      "By sending an HTTP request to the database",
+      "By compiling the query into a binary"
+    ],
+    "answer": "Using the MySQL command-line client",
+    "explanation": "Manual execution is typically via command-line or GUI tools."
+  },
+  {
+    "question": "What tool is commonly used to execute SQL queries manually in a graphical environment?",
+    "options": [
+      "Notepad",
+      "Microsoft Word",
+      "Photoshop"
+    ],
+    "answer": "phpMyAdmin",
+    "explanation": "phpMyAdmin is a web-based GUI for MySQL."
+  },
+  {
+    "question": "Which command is used to export data from a MySQL database to a file?",
+    "options": [
+      "EXPORT",
+      "BACKUP",
+      "SAVE"
+    ],
+    "answer": "mysqldump",
+    "explanation": "mysqldump is a utility to export databases."
+  },
+  {
+    "question": "To import data from a SQL file into a database, you might use:",
+    "options": [
+      "import data.sql",
+      "restore data.sql",
+      "load data.sql"
+    ],
+    "answer": "mysql < data.sql",
+    "explanation": "The mysql command-line tool can redirect input from a file."
+  },
+  {
+    "question": "What is a database trigger?",
+    "options": [
+      "A tool to debug SQL queries",
+      "A type of index",
+      "A backup schedule"
+    ],
+    "answer": "A stored program that automatically executes in response to certain events on a table",
+    "explanation": "Triggers run before/after insert, update, delete."
+  },
+  {
+    "question": "What is a stored procedure?",
+    "options": [
+      "A function that returns a single value",
+      "A view that is materialized",
+      "A trigger that fires on select"
+    ],
+    "answer": "A pre-compiled collection of SQL statements stored on the database server",
+    "explanation": "Stored procedures encapsulate logic for reuse."
+  },
+  {
+    "question": "What is a database view?",
+    "options": [
+      "A physical copy of a table",
+      "A backup of the database",
+      "A diagram of table relationships"
+    ],
+    "answer": "A virtual table based on the result of a SELECT query",
+    "explanation": "Views are stored queries that act like tables but don't store data themselves."
+  },
+  {
+    "question": "In data warehousing, what is a data cube?",
+    "options": [
+      "A 3D visualization of tables",
+      "A type of index",
+      "A backup format"
+    ],
+    "answer": "A multidimensional array of data for OLAP",
+    "explanation": "Data cubes allow analysis across multiple dimensions like time, product, region."
+  },
+  {
+    "question": "What is a dimension in the context of a data cube?",
+    "options": [
+      "A measure like sales amount",
+      "a table join",
+      "a primary key"
+    ],
+    "answer": "An attribute that categorizes data, such as time or location",
+    "explanation": "Dimensions are perspectives for analyzing facts."
+  },
+  {
+    "question": "What does aggregation in a database refer to?",
+    "options": [
+      "Adding new rows to a table",
+      "Deleting duplicate rows",
+      "Encrypting data"
+    ],
+    "answer": "Combining multiple rows into a single summary value using functions like SUM, AVG",
+    "explanation": "Aggregation groups data to produce summaries."
+  },
+  {
+    "question": "What is filtering in the context of database queries?",
+    "options": [
+      "Sorting data alphabetically",
+      "Joining tables",
+      "Creating indexes"
+    ],
+    "answer": "Removing unwanted rows based on conditions using WHERE or HAVING",
+    "explanation": "Filtering restricts rows returned."
+  }
+]

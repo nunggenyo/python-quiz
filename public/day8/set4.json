@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is the primary advantage of using a relational database over a traditional file-based system?",
+    "options": [
+      "It stores all information in a single, unstructured text file for easy reading.",
+      "It does not require any specialized query language to retrieve information.",
+      "It inherently consumes less disk space due to a lack of metadata."
+    ],
+    "answer": "It reduces data redundancy and ensures structural consistency through relationships.",
+    "explanation": "Relational databases use normalized tables to prevent duplicate data and maintain data integrity, solving the redundancy and update anomaly issues common in flat file systems."
+  },
+  {
+    "question": "Which of the following best defines a Relational Database Management System (RDBMS)?",
+    "options": [
+      "A graphical interface used exclusively for drawing Entity-Relationship diagrams.",
+      "A hardware component that physically stores binary files on a server.",
+      "A scripting language used to style the front-end of a web application."
+    ],
+    "answer": "A software system used to maintain, query, and manage relational databases.",
+    "explanation": "An RDBMS is the software application (like MySQL, PostgreSQL, or Oracle) that interacts with end-users, applications, and the database itself to capture and analyze data."
+  },
+  {
+    "question": "In the context of a relational database table, what does a 'row' represent?",
+    "options": [
+      "A set of rules defining the data types allowed in the table.",
+      "A single attribute or characteristic of an entity.",
+      "The structural schema of the entire database."
+    ],
+    "answer": "A single, distinct record or instance of the entity the table represents.",
+    "explanation": "A row (or tuple) represents a complete single record in a table, containing data for all the columns defined in that table."
+  },
+  {
+    "question": "What is the purpose of defining a 'data type' for a column in a database?",
+    "options": [
+      "To automatically generate primary keys for new records.",
+      "To link the column to a foreign key in another table.",
+      "To determine the visual color of the text when displayed in an application."
+    ],
+    "answer": "To specify the kind of data the column can hold and the operations that can be performed on it.",
+    "explanation": "Data types (like INT, VARCHAR, DATE) restrict the format of data entered into a column, ensuring data validity and optimizing storage."
+  },
+  {
+    "question": "What is the primary role of SQL in relational databases?",
+    "options": [
+      "To design the user interface and frontend components.",
+      "To manage the physical hardware and server memory allocation.",
+      "To compile the database schema into a standalone executable file."
+    ],
+    "answer": "To communicate with the database for querying, updating, and managing data.",
+    "explanation": "Structured Query Language (SQL) is the standard language for managing data held in a relational database management system."
+  },
+  {
+    "question": "What is the function of a database cursor?",
+    "options": [
+      "It visually points to the current active window in the database GUI.",
+      "It automatically repairs corrupted data files within the storage drive.",
+      "It acts as a primary key constraint for temporary tables."
+    ],
+    "answer": "It enables row-by-row processing of the result set returned by a query.",
+    "explanation": "A cursor is a database object used by applications to manipulate data in a set on a row-by-row basis, rather than operating on the entire set at once."
+  },
+  {
+    "question": "Which statement accurately describes a database schema?",
+    "options": [
+      "A specific row of data stored within a relational table.",
+      "A backup file used to restore the database in case of failure.",
+      "The physical storage mechanism used by the hard drive."
+    ],
+    "answer": "The logical structure or blueprint that defines objects like tables, views, and relationships.",
+    "explanation": "The schema is the organizational blueprint of a database that dictates how data is structured, including tables, columns, constraints, and relationships."
+  },
+  {
+    "question": "When designing database relationships, what does a 'one-to-many' relationship imply?",
+    "options": [
+      "One table can have multiple primary keys assigned to it.",
+      "A single column can hold multiple comma-separated values.",
+      "Multiple users can access a single table simultaneously."
+    ],
+    "answer": "A single record in one table can be associated with multiple records in another table.",
+    "explanation": "In a one-to-many relationship, a parent row can have multiple child rows, such as one customer having multiple orders."
+  },
+  {
+    "question": "How is a 'many-to-many' relationship typically resolved in a physical database design?",
+    "options": [
+      "By placing all foreign keys into a single, comma-separated column.",
+      "By merging the two tables into one large table.",
+      "By deleting one of the tables to simplify the schema."
+    ],
+    "answer": "By creating a third junction (or associative) table to link the original two tables.",
+    "explanation": "Relational databases cannot directly implement many-to-many relationships, so an intermediate junction table containing foreign keys from both tables is used."
+  },
+  {
+    "question": "What does 'CASCADE' mean when applied to modifying or deleting database relationships?",
+    "options": [
+      "It encrypts the linked data to prevent unauthorized access.",
+      "It randomly scrambles the foreign keys to test data integrity.",
+      "It temporarily disables the relationship until manually re-enabled."
+    ],
+    "answer": "Changes to a parent record automatically apply to all related child records.",
+    "explanation": "An ON DELETE CASCADE or ON UPDATE CASCADE constraint ensures that if a referenced primary key is changed or deleted, the linked foreign keys are automatically updated or deleted to maintain referential integrity."
+  },
+  {
+    "question": "What does an Entity-Relationship (ER) Diagram primarily represent?",
+    "options": [
+      "The physical hardware topology of the database servers.",
+      "The exact SQL syntax required to generate the database.",
+      "The user interface flow of the web application interacting with the DB."
+    ],
+    "answer": "The conceptual design of a database, showing entities, attributes, and their relationships.",
+    "explanation": "An ER diagram is a visual tool used during database design to model the logical view of the system's data and how different entities relate to one another."
+  },
+  {
+    "question": "In a standard ER-Diagram, what does a diamond shape typically represent?",
+    "options": [
+      "A physical database server.",
+      "An entity or main object.",
+      "An attribute or property of an entity."
+    ],
+    "answer": "A relationship between entities.",
+    "explanation": "In classic Chen notation for ER diagrams, rectangles represent entities, ovals represent attributes, and diamonds represent relationships."
+  },
+  {
+    "question": "What is the process of 'logical-to-physical mapping' in database design?",
+    "options": [
+      "Converting the database files into a compressed physical zip archive.",
+      "Moving data from RAM to the physical hard drive.",
+      "Migrating a database from an on-premise server to the cloud."
+    ],
+    "answer": "Translating the conceptual ER diagram into actual SQL tables, columns, and constraints.",
+    "explanation": "Logical-to-physical mapping takes the abstract business model (logical schema) and implements it using the specific technical syntax of a chosen RDBMS (physical schema)."
+  },
+  {
+    "question": "Which of the following is a defining characteristic of a Primary Key?",
+    "options": [
+      "It must be of a string or text data type.",
+      "It can contain NULL values if the record is incomplete.",
+      "It is used to restrict the data type of adjacent columns."
+    ],
+    "answer": "It uniquely identifies each record in a table and cannot contain NULL values.",
+    "explanation": "A primary key guarantees record uniqueness and entity integrity within a table, meaning no two rows can share the same key and it cannot be empty (NULL)."
+  },
+  {
+    "question": "What is the primary function of a Foreign Key?",
+    "options": [
+      "To automatically generate unique numeric IDs for new rows.",
+      "To encrypt data fields containing sensitive information.",
+      "To index a table for faster text-based searching."
+    ],
+    "answer": "To establish a link between the data in two tables to enforce referential integrity.",
+    "explanation": "A foreign key is a column or group of columns in one table that references the primary key of another table, ensuring that the relationship between records is valid."
+  },
+  {
+    "question": "Which database design constraint ensures that a column cannot be left empty?",
+    "options": [
+      "The UNIQUE constraint.",
+      "The CHECK constraint.",
+      "The DEFAULT constraint."
+    ],
+    "answer": "The NOT NULL constraint.",
+    "explanation": "The NOT NULL constraint forces a column to always contain a value, preventing the insertion of rows where that specific column is empty."
+  },
+  {
+    "question": "What is the purpose of the CHECK constraint in database design?",
+    "options": [
+      "To verify that the database connection is secure.",
+      "To confirm that a foreign key matches a primary key.",
+      "To ensure that all columns in a table have a defined data type."
+    ],
+    "answer": "To limit the value range or condition that can be placed in a column.",
+    "explanation": "A CHECK constraint ensures that all values in a column satisfy a specific Boolean expression, such as ensuring an 'Age' column only accepts values greater than 0."
+  },
+  {
+    "question": "What is the main goal of database normalization?",
+    "options": [
+      "To increase data redundancy for better backup security.",
+      "To combine all data into a single, massive table for easier querying.",
+      "To encrypt all user passwords stored in the database."
+    ],
+    "answer": "To organize the database to minimize redundancy and dependency anomalies.",
+    "explanation": "Normalization involves dividing larger tables into smaller ones and linking them using relationships to eliminate duplicate data and ensure data modifications are consistent."
+  },
+  {
+    "question": "A table is considered to be in First Normal Form (1NF) when:",
+    "options": [
+      "It contains no foreign keys.",
+      "All non-key attributes are strictly dependent on the primary key.",
+      "It has been fully migrated to a physical RDBMS server."
+    ],
+    "answer": "It contains only atomic (indivisible) values and no repeating groups.",
+    "explanation": "1NF dictates that each column must hold a single, atomic value, and there should be no repeating groups or arrays within a column."
+  },
+  {
+    "question": "To achieve Second Normal Form (2NF), a table must first be in 1NF and:",
+    "options": [
+      "Have a composite primary key made of at least three columns.",
+      "Eliminate all foreign key relationships.",
+      "Contain no transitive dependencies between non-key columns."
+    ],
+    "answer": "Have no partial dependencies; all non-key attributes must depend on the whole primary key.",
+    "explanation": "2NF applies to tables with composite primary keys, requiring that no non-key attribute depends on only a portion of the composite key."
+  },
+  {
+    "question": "What does SQL stand for?",
+    "options": [
+      "Standard Query Language",
+      "Sequential Query Language",
+      "Systematic Query Language"
+    ],
+    "answer": "Structured Query Language",
+    "explanation": "SQL stands for Structured Query Language, the standard domain-specific language used to manage and query relational databases."
+  },
+  {
+    "question": "Which SQL statement is used to retrieve data from a database?",
+    "options": [
+      "FETCH",
+      "PULL",
+      "GET"
+    ],
+    "answer": "SELECT",
+    "explanation": "The SELECT statement is the foundational DML command used to query and extract data from one or more database tables."
+  },
+  {
+    "question": "Which keyword is used in a SELECT query to filter the records returned?",
+    "options": [
+      "FILTER",
+      "HAVING",
+      "SORT BY"
+    ],
+    "answer": "WHERE",
+    "explanation": "The WHERE clause is used to specify a condition and filter the records so that only those fulfilling the specified condition are retrieved."
+  },
+  {
+    "question": "Which SQL query correctly inserts a new record into a table named 'Users'?",
+    "options": [
+      "ADD INTO Users (name, age) VALUES ('Alice', 30);",
+      "INSERT Users SET name='Alice', age=30;",
+      "PUT INTO Users (name, age) DATA ('Alice', 30);"
+    ],
+    "answer": "INSERT INTO Users (name, age) VALUES ('Alice', 30);",
+    "explanation": "The correct standard syntax for adding a record is INSERT INTO followed by the table name, columns in parentheses, and the VALUES keyword with the corresponding data."
+  },
+  {
+    "question": "What happens if you execute a DELETE FROM table_name; query without a WHERE clause?",
+    "options": [
+      "The query will fail and return a syntax error.",
+      "The database will automatically drop the table structure.",
+      "Only the most recently added row will be deleted."
+    ],
+    "answer": "All records in the table will be permanently deleted.",
+    "explanation": "Without a WHERE clause to specify which rows to delete, the DELETE command removes all rows from the specified table, though the table structure remains."
+  },
+  {
+    "question": "Which SQL operator is used to search for a specified pattern in a column?",
+    "options": [
+      "MATCH",
+      "REGEX",
+      "HAS"
+    ],
+    "answer": "LIKE",
+    "explanation": "The LIKE operator is used in a WHERE clause along with wildcards (such as % and _) to search for specific string patterns."
+  },
+  {
+    "question": "What is the purpose of the SQL IN operator?",
+    "options": [
+      "To insert data from one table directly into another.",
+      "To check if an integer is within a specific numerical range.",
+      "To perform an inner join between two identically named columns."
+    ],
+    "answer": "To specify multiple possible values for a column in a WHERE clause.",
+    "explanation": "The IN operator acts as shorthand for multiple OR conditions, allowing you to check if a value matches any value in a specified list."
+  },
+  {
+    "question": "How does an INNER JOIN combine tables?",
+    "options": [
+      "It returns all records from the left table and matching records from the right.",
+      "It returns all records from both tables regardless of matches.",
+      "It concatenates the rows of two tables vertically."
+    ],
+    "answer": "It returns only the records that have matching values in both tables.",
+    "explanation": "An INNER JOIN filters out any rows that do not have a match based on the specified join condition, keeping only the intersection of the two tables."
+  },
+  {
+    "question": "What is the result of a LEFT OUTER JOIN?",
+    "options": [
+      "It only returns records that are unique to the left table and ignores matches.",
+      "It returns all records from the right table and the matched records from the left.",
+      "It throws an error if there are no matching records in the right table."
+    ],
+    "answer": "It returns all records from the left table, and the matched records from the right table, showing NULLs where there is no match.",
+    "explanation": "A LEFT JOIN guarantees all rows from the left-hand table are included in the result set. If the right table lacks a matching row, the result will contain NULLs for the right table's columns."
+  },
+  {
+    "question": "Which category of SQL commands includes CREATE, ALTER, and DROP?",
+    "options": [
+      "Data Manipulation Language (DML)",
+      "Data Control Language (DCL)",
+      "Transaction Control Language (TCL)"
+    ],
+    "answer": "Data Definition Language (DDL)",
+    "explanation": "DDL commands are used to define, modify, and remove database structures and schema objects rather than manipulating the data within them."
+  },
+  {
+    "question": "Which of the following is considered a Data Manipulation Language (DML) command?",
+    "options": [
+      "GRANT",
+      "TRUNCATE",
+      "REVOKE"
+    ],
+    "answer": "UPDATE",
+    "explanation": "UPDATE is a DML command because it is used to modify existing data records within a table, along with INSERT and DELETE."
+  },
+  {
+    "question": "What is the main function of Data Control Language (DCL) commands like GRANT and REVOKE?",
+    "options": [
+      "To control the execution flow of stored procedures.",
+      "To manage concurrent data access and prevent database locks.",
+      "To define the physical storage parameters of the database."
+    ],
+    "answer": "To manage user access permissions and security for database objects.",
+    "explanation": "DCL handles the security aspect of the database by assigning or removing access rights for users to perform specific operations on database structures."
+  },
+  {
+    "question": "What is the primary difference between the TRUNCATE and DELETE commands?",
+    "options": [
+      "DELETE removes the table structure, while TRUNCATE only removes data.",
+      "TRUNCATE is a DML command, while DELETE is a DDL command.",
+      "DELETE cannot be used with a WHERE clause, while TRUNCATE requires one."
+    ],
+    "answer": "TRUNCATE is a DDL command that resets the table by removing all rows instantly, whereas DELETE is a DML command that removes rows one by one.",
+    "explanation": "TRUNCATE is generally faster and uses fewer system and transaction log resources than DELETE because it deallocates the data pages instead of logging individual row deletions."
+  },
+  {
+    "question": "What is typically the first step when installing a new RDBMS?",
+    "options": [
+      "Writing a SELECT query to test the system.",
+      "Executing an ER diagram compiler.",
+      "Normalizing the operating system's file directory."
+    ],
+    "answer": "Configuring the server environment and setting up root/admin credentials.",
+    "explanation": "During RDBMS installation, setting up the administrative user (like 'root' in MySQL or 'postgres' in PostgreSQL) and basic server configurations is the critical first step before any schemas are built."
+  },
+  {
+    "question": "Which SQL statement is used to create a new database schema?",
+    "options": [
+      "BUILD DATABASE",
+      "MAKE DATABASE",
+      "INIT DATABASE"
+    ],
+    "answer": "CREATE DATABASE",
+    "explanation": "The CREATE DATABASE (or CREATE SCHEMA in some dialects) statement is the DDL command used to instantiate a new, empty database on the server."
+  },
+  {
+    "question": "When executing an SQL query manually, what tool is most commonly used by developers?",
+    "options": [
+      "A standard word processor like Microsoft Word.",
+      "The operating system's task manager.",
+      "A frontend web browser rendering HTML."
+    ],
+    "answer": "A Command Line Interface (CLI) or a graphical database client.",
+    "explanation": "Developers execute queries manually using clients provided by the RDBMS (like psql or mysql CLI) or visual tools like MySQL Workbench, DBeaver, or pgAdmin."
+  },
+  {
+    "question": "What is a common method for importing or exporting data from an RDBMS?",
+    "options": [
+      "Taking a screenshot of the table data.",
+      "Converting the database into an MP4 file.",
+      "Using CSS stylesheets to export visual tables."
+    ],
+    "answer": "Using dump files (.sql) or CSV files for bulk data transfer.",
+    "explanation": "RDBMS platforms support utilities like mysqldump or pg_dump to export schemas and data into .sql files, and frequently support importing/exporting raw data via Comma-Separated Values (CSV)."
+  },
+  {
+    "question": "What is a database trigger?",
+    "options": [
+      "A button in a database UI used to launch a query.",
+      "An error thrown when a foreign key constraint is violated.",
+      "A scheduled task that runs only at midnight."
+    ],
+    "answer": "A special type of stored procedure that automatically executes when an event occurs in the database server.",
+    "explanation": "Triggers are bound to a table and execute automatically in response to specific DML events (INSERT, UPDATE, DELETE) happening to that table."
+  },
+  {
+    "question": "Which of the following describes a Stored Procedure?",
+    "options": [
+      "A physical backup copy of a database.",
+      "A method of compressing data to save storage space.",
+      "A virtual table based on the result set of an SQL statement."
+    ],
+    "answer": "A prepared SQL code that you can save, so the code can be reused over and over again.",
+    "explanation": "Stored procedures are batches of SQL statements and optional control-flow logic that are stored on the database server, allowing for code reuse and potential performance improvements."
+  },
+  {
+    "question": "What is a Database View?",
+    "options": [
+      "A graphical representation of the database schema.",
+      "A pre-compiled binary execution plan.",
+      "The physical storage location of the database."
+    ],
+    "answer": "A virtual table based on the result set of a saved SQL query.",
+    "explanation": "A view does not store data itself (unless materialized); it acts as a virtual table that pulls data from one or more underlying tables whenever it is queried."
+  },
+  {
+    "question": "What is one major advantage of using Database Views?",
+    "options": [
+      "They automatically normalize an unnormalized database.",
+      "They eliminate the need for primary and foreign keys.",
+      "They physically backup the data faster than a standard dump."
+    ],
+    "answer": "They can simplify complex queries and restrict data access for better security.",
+    "explanation": "Views allow administrators to expose only specific rows or columns to users, hiding the complexity of underlying joins and preventing access to sensitive data."
+  },
+  {
+    "question": "In the context of database triggers, what do the terms 'BEFORE' and 'AFTER' specify?",
+    "options": [
+      "The order in which columns are evaluated in a SELECT statement.",
+      "The chronological versioning of a database schema.",
+      "The sorting direction of the trigger output (ascending or descending)."
+    ],
+    "answer": "The timing of when the trigger action executes relative to the triggering DML event.",
+    "explanation": "A BEFORE trigger runs prior to the data modification being committed to the table (useful for validation), while an AFTER trigger runs right after the modification (useful for logging)."
+  },
+  {
+    "question": "In Advanced Database Topics, what is a 'data cube' (OLAP cube)?",
+    "options": [
+      "A hardware server shaped like a cube for maximum cooling efficiency.",
+      "A three-dimensional visualization of ER diagrams.",
+      "A strict naming convention for database tables."
+    ],
+    "answer": "A multi-dimensional array of data used for rapid analytical querying and reporting.",
+    "explanation": "An OLAP (Online Analytical Processing) cube structures data in multiple dimensions (like time, geography, product) to allow for very fast complex queries and aggregations."
+  },
+  {
+    "question": "What does a 'dimension' represent in a data cube?",
+    "options": [
+      "The physical file size of the database on disk.",
+      "The numerical metric being calculated, like total sales.",
+      "The exact execution time of a specific query."
+    ],
+    "answer": "A perspective or category by which data is viewed, such as time, location, or product.",
+    "explanation": "Dimensions provide context to the facts (metrics). For example, total sales (fact) can be analyzed across the dimensions of year, store location, and product type."
+  },
+  {
+    "question": "What is 'aggregation' in the context of data cubes and advanced databases?",
+    "options": [
+      "The process of permanently deleting old, unused data.",
+      "Encrypting multiple columns using a single cryptographic key.",
+      "Splitting a large table into smaller, individual tables."
+    ],
+    "answer": "The process of computing summary data, such as sums, averages, or counts, across dimensions.",
+    "explanation": "Aggregation involves mathematically summarizing granular data (e.g., individual daily sales) into higher-level views (e.g., total monthly sales) to facilitate data analysis."
+  },
+  {
+    "question": "What does 'filtering' (or slicing and dicing) refer to in an OLAP cube?",
+    "options": [
+      "Removing viruses or malicious SQL injection attempts from queries.",
+      "Compressing the cube's file size to save storage.",
+      "Changing the data types of the cube's underlying tables."
+    ],
+    "answer": "Isolating a specific subset of the data cube by fixing one or more dimensions to specific values.",
+    "explanation": "Slicing and dicing are operations that filter the cube's data, allowing a user to focus only on a specific intersection of dimensions, like viewing sales solely for 'Q1' and 'Region A'."
+  },
+  {
+    "question": "Which mathematical property is essential for a Foreign Key constraint to work?",
+    "options": [
+      "The foreign key must have an auto-increment property.",
+      "The foreign key data type must be an integer.",
+      "The foreign key must be a composite of at least two columns."
+    ],
+    "answer": "The values in the foreign key column must strictly match existing values in the referenced primary key column, or be NULL.",
+    "explanation": "Referential integrity requires that every non-null foreign key value must have a corresponding primary key value in the referenced table."
+  },
+  {
+    "question": "If a developer wants to combine records from two tables vertically, appending one result set to another, which SQL operator should they use?",
+    "options": [
+      "INNER JOIN",
+      "CONCAT",
+      "MERGE"
+    ],
+    "answer": "UNION",
+    "explanation": "The UNION operator combines the result sets of two or more SELECT statements into a single column-matched result set, unlike JOINs which append horizontally."
+  },
+  {
+    "question": "Which normal form specifically addresses the removal of transitive dependencies?",
+    "options": [
+      "First Normal Form (1NF)",
+      "Second Normal Form (2NF)",
+      "Boyce-Codd Normal Form (BCNF)"
+    ],
+    "answer": "Third Normal Form (3NF)",
+    "explanation": "3NF requires that a table is in 2NF and that all its non-key attributes are directly dependent on the primary key, and not dependent on other non-key attributes (transitive dependency)."
+  },
+  {
+    "question": "What is a 'stored procedure' most analogous to in standard programming languages?",
+    "options": [
+      "A global variable.",
+      "A compiler.",
+      "A while-loop."
+    ],
+    "answer": "A function or method.",
+    "explanation": "Like a function in programming, a stored procedure encapsulates logic, can accept input parameters, execute a series of operations, and return results or status codes."
+  }
+]

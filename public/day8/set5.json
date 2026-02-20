@@ -1,0 +1,483 @@
+[
+  {
+    "question": "Which term describes the structured collection of data organized into tables, columns, and rows?",
+    "options": [
+      "Spreadsheet",
+      "File system",
+      "Document"
+    ],
+    "answer": "Relational Database",
+    "explanation": "A relational database organizes data into tables with rows and columns, enabling relationships between datasets."
+  },
+  {
+    "question": "What does RDBMS stand for?",
+    "options": [
+      "Relational Data Backup Management System",
+      "Random Database Management Software",
+      "Rapid Data Base Modeling Service"
+    ],
+    "answer": "Relational Database Management System",
+    "explanation": "RDBMS stands for Relational Database Management System, software that manages relational databases."
+  },
+  {
+    "question": "In a relational database, what is a column also known as?",
+    "options": [
+      "Tuple",
+      "Record",
+      "Index"
+    ],
+    "answer": "Field",
+    "explanation": "Columns are also called fields, representing attributes of the data stored in a table."
+  },
+  {
+    "question": "Which SQL statement is used to retrieve data from a database?",
+    "options": [
+      "INSERT",
+      "DELETE",
+      "UPDATE"
+    ],
+    "answer": "SELECT",
+    "explanation": "The SELECT statement is used to query and retrieve data from one or more tables."
+  },
+  {
+    "question": "What is the purpose of a cursor in SQL?",
+    "options": [
+      "To define table schema",
+      "To create indexes",
+      "To enforce constraints"
+    ],
+    "answer": "To iterate through query results row by row",
+    "explanation": "A cursor allows row-by-row processing of query results in SQL."
+  },
+  {
+    "question": "What defines the structure of a database including tables, columns, and relationships?",
+    "options": [
+      "Trigger",
+      "Stored Procedure",
+      "View"
+    ],
+    "answer": "Database Schema",
+    "explanation": "A database schema is the blueprint that defines the structure of the database."
+  },
+  {
+    "question": "Which diagram visually represents entities and their relationships?",
+    "options": [
+      "Flowchart",
+      "Gantt Chart",
+      "Pie Chart"
+    ],
+    "answer": "ER Diagram",
+    "explanation": "An Entity-Relationship (ER) Diagram shows entities and their relationships in a database."
+  },
+  {
+    "question": "Which key uniquely identifies each row in a table?",
+    "options": [
+      "Foreign Key",
+      "Composite Key",
+      "Candidate Key"
+    ],
+    "answer": "Primary Key",
+    "explanation": "A primary key uniquely identifies each record in a table."
+  },
+  {
+    "question": "Which key establishes a relationship between two tables?",
+    "options": [
+      "Primary Key",
+      "Unique Key",
+      "Index Key"
+    ],
+    "answer": "Foreign Key",
+    "explanation": "A foreign key links one table to another by referencing the primary key of the related table."
+  },
+  {
+    "question": "Which process reduces redundancy and improves data integrity in database design?",
+    "options": [
+      "Denormalization",
+      "Indexing",
+      "Partitioning"
+    ],
+    "answer": "Normalization",
+    "explanation": "Normalization organizes data to minimize redundancy and ensure consistency."
+  },
+  {
+    "question": "Which SQL statement is used to add new records to a table?",
+    "options": [
+      "SELECT",
+      "DELETE",
+      "UPDATE"
+    ],
+    "answer": "INSERT",
+    "explanation": "The INSERT statement adds new rows of data into a table."
+  },
+  {
+    "question": "Which SQL statement removes records from a table?",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "UPDATE"
+    ],
+    "answer": "DELETE",
+    "explanation": "The DELETE statement removes rows from a table based on a condition."
+  },
+  {
+    "question": "Which SQL operator is used to combine conditions?",
+    "options": [
+      "BETWEEN",
+      "LIKE",
+      "IN"
+    ],
+    "answer": "AND/OR",
+    "explanation": "AND and OR operators combine multiple conditions in SQL queries."
+  },
+  {
+    "question": "Which SQL join returns only matching rows from both tables?",
+    "options": [
+      "Outer Join",
+      "Cross Join",
+      "Self Join"
+    ],
+    "answer": "Inner Join",
+    "explanation": "An inner join returns rows that have matching values in both tables."
+  },
+  {
+    "question": "Which SQL join returns all rows from one table and matching rows from another?",
+    "options": [
+      "Inner Join",
+      "Cross Join",
+      "Self Join"
+    ],
+    "answer": "Outer Join",
+    "explanation": "An outer join returns all rows from one table and matches from the other, filling with NULLs if no match."
+  },
+  {
+    "question": "Which category of SQL commands deals with defining database structures?",
+    "options": [
+      "DML",
+      "DCL",
+      "TCL"
+    ],
+    "answer": "DDL",
+    "explanation": "Data Definition Language (DDL) commands define and modify database structures."
+  },
+  {
+    "question": "Which category of SQL commands deals with manipulating data?",
+    "options": [
+      "DDL",
+      "DCL",
+      "TCL"
+    ],
+    "answer": "DML",
+    "explanation": "Data Manipulation Language (DML) commands handle inserting, updating, and deleting data."
+  },
+  {
+    "question": "Which category of SQL commands deals with controlling access to data?",
+    "options": [
+      "DDL",
+      "DML",
+      "TCL"
+    ],
+    "answer": "DCL",
+    "explanation": "Data Control Language (DCL) commands manage permissions and access control."
+  },
+  {
+    "question": "Which tool must be installed to manage relational databases?",
+    "options": [
+      "Spreadsheet Software",
+      "Text Editor",
+      "Web Browser"
+    ],
+    "answer": "RDBMS",
+    "explanation": "An RDBMS must be installed to create, manage, and query relational databases."
+  },
+  {
+    "question": "What is the purpose of a trigger in a database?",
+    "options": [
+      "To define schema",
+      "To create indexes",
+      "To normalize data"
+    ],
+    "answer": "To automatically execute actions in response to events",
+    "explanation": "Triggers automatically perform actions when specific events occur in the database."
+  },
+  {
+    "question": "Which database object stores reusable SQL code?",
+    "options": [
+      "Trigger",
+      "View",
+      "Index"
+    ],
+    "answer": "Stored Procedure",
+    "explanation": "Stored procedures are precompiled SQL code that can be executed repeatedly."
+  },
+  {
+    "question": "Which database object presents query results as a virtual table?",
+    "options": [
+      "Trigger",
+      "Stored Procedure",
+      "Index"
+    ],
+    "answer": "View",
+    "explanation": "A view is a virtual table based on the result of a SQL query."
+  },
+  {
+    "question": "Which process imports or exports data between systems?",
+    "options": [
+      "Normalization",
+      "Indexing",
+      "Partitioning"
+    ],
+    "answer": "Data Import/Export",
+    "explanation": "Import/export operations move data between databases or external files."
+  },
+  {
+    "question": "In OLAP, what is a cube used for?",
+    "options": [
+      "Storing triggers",
+      "Defining schemas",
+      "Creating indexes"
+    ],
+    "answer": "Representing multidimensional data",
+    "explanation": "A cube represents multidimensional data for analysis in OLAP systems."
+  },
+  {
+    "question": "Which concept in OLAP refers to categories of data?",
+    "options": [
+      "Measures",
+      "Indexes",
+      "Constraints"
+    ],
+    "answer": "Dimensions",
+    "explanation": "Dimensions categorize data in OLAP cubes, such as time or geography."
+  },
+  {
+    "question": "Which process in OLAP summarizes data?",
+    "options": [
+      "Filtering",
+      "Indexing",
+      "Partitioning"
+    ],
+    "answer": "Aggregation",
+    "explanation": "Aggregation summarizes data values, such as totals or averages."
+  },
+  {
+    "question": "Which SQL clause filters query results?",
+    "options": [
+      "GROUP BY",
+      "ORDER BY",
+      "JOIN"
+    ],
+    "answer": "WHERE",
+    "explanation": "The WHERE clause filters rows based on specified conditions."
+  },
+  {
+    "question": "Which SQL clause groups rows for aggregate functions?",
+    "options": [
+      "WHERE",
+      "ORDER BY",
+      "JOIN"
+    ],
+    "answer": "GROUP BY",
+    "explanation": "GROUP BY groups rows to apply aggregate functions like COUNT or SUM."
+  },
+    {
+    "question": "Which SQL clause sorts query results?",
+    "options": [
+      "WHERE",
+      "GROUP BY",
+      "JOIN"
+    ],
+    "answer": "ORDER BY",
+    "explanation": "The ORDER BY clause sorts query results in ascending or descending order based on specified columns."
+  },
+  {
+    "question": "Which SQL keyword is used to remove duplicate rows from a query result?",
+    "options": [
+      "UNIQUE",
+      "FILTER",
+      "REMOVE"
+    ],
+    "answer": "DISTINCT",
+    "explanation": "DISTINCT eliminates duplicate rows from the result set of a SELECT query."
+  },
+  {
+    "question": "Which SQL aggregate function counts the number of rows?",
+    "options": [
+      "SUM",
+      "AVG",
+      "MAX"
+    ],
+    "answer": "COUNT",
+    "explanation": "COUNT returns the number of rows that match a specified condition."
+  },
+  {
+    "question": "Which SQL aggregate function returns the average value of a column?",
+    "options": [
+      "SUM",
+      "COUNT",
+      "MAX"
+    ],
+    "answer": "AVG",
+    "explanation": "AVG calculates the average of numeric values in a column."
+  },
+  {
+    "question": "Which SQL aggregate function returns the largest value in a column?",
+    "options": [
+      "MIN",
+      "SUM",
+      "AVG"
+    ],
+    "answer": "MAX",
+    "explanation": "MAX returns the highest value in a specified column."
+  },
+  {
+    "question": "Which SQL aggregate function returns the smallest value in a column?",
+    "options": [
+      "MAX",
+      "SUM",
+      "AVG"
+    ],
+    "answer": "MIN",
+    "explanation": "MIN returns the lowest value in a specified column."
+  },
+  {
+    "question": "Which SQL statement modifies existing records in a table?",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "DELETE"
+    ],
+    "answer": "UPDATE",
+    "explanation": "UPDATE changes existing values in table rows based on conditions."
+  },
+  {
+    "question": "Which SQL keyword is used to rename a column or table in a query result?",
+    "options": [
+      "RENAME",
+      "CHANGE",
+      "MODIFY"
+    ],
+    "answer": "AS",
+    "explanation": "The AS keyword creates an alias for columns or tables in SQL queries."
+  },
+  {
+    "question": "Which SQL clause restricts the number of rows returned?",
+    "options": [
+      "WHERE",
+      "ORDER BY",
+      "GROUP BY"
+    ],
+    "answer": "LIMIT",
+    "explanation": "LIMIT specifies the maximum number of rows returned by a query."
+  },
+  {
+    "question": "Which SQL operator checks if a value matches a pattern?",
+    "options": [
+      "IN",
+      "BETWEEN",
+      "EXISTS"
+    ],
+    "answer": "LIKE",
+    "explanation": "LIKE is used with wildcards to match patterns in string data."
+  },
+  {
+    "question": "Which SQL operator checks if a value is within a range?",
+    "options": [
+      "LIKE",
+      "IN",
+      "EXISTS"
+    ],
+    "answer": "BETWEEN",
+    "explanation": "BETWEEN checks if a value falls within a specified range."
+  },
+  {
+    "question": "Which SQL operator checks if a value exists in a list?",
+    "options": [
+      "LIKE",
+      "BETWEEN",
+      "EXISTS"
+    ],
+    "answer": "IN",
+    "explanation": "IN tests whether a value matches any value in a list."
+  },
+  {
+    "question": "Which SQL operator checks if a subquery returns any rows?",
+    "options": [
+      "LIKE",
+      "BETWEEN",
+      "IN"
+    ],
+    "answer": "EXISTS",
+    "explanation": "EXISTS returns true if a subquery produces any rows."
+  },
+  {
+    "question": "Which SQL command creates a new table?",
+    "options": [
+      "ALTER TABLE",
+      "DROP TABLE",
+      "TRUNCATE TABLE"
+    ],
+    "answer": "CREATE TABLE",
+    "explanation": "CREATE TABLE defines a new table structure in the database."
+  },
+  {
+    "question": "Which SQL command removes a table permanently?",
+    "options": [
+      "ALTER TABLE",
+      "TRUNCATE TABLE",
+      "DELETE"
+    ],
+    "answer": "DROP TABLE",
+    "explanation": "DROP TABLE deletes the table and its data permanently."
+  },
+  {
+    "question": "Which SQL command removes all rows from a table but keeps its structure?",
+    "options": [
+      "DROP TABLE",
+      "DELETE",
+      "ALTER TABLE"
+    ],
+    "answer": "TRUNCATE TABLE",
+    "explanation": "TRUNCATE TABLE removes all rows quickly but preserves the table definition."
+  },
+  {
+    "question": "Which SQL command modifies the structure of an existing table?",
+    "options": [
+      "CREATE TABLE",
+      "DROP TABLE",
+      "TRUNCATE TABLE"
+    ],
+    "answer": "ALTER TABLE",
+    "explanation": "ALTER TABLE changes the structure of a table, such as adding or removing columns."
+  },
+  {
+    "question": "Which SQL keyword ensures that a column cannot have NULL values?",
+    "options": [
+      "DEFAULT",
+      "UNIQUE",
+      "INDEX"
+    ],
+    "answer": "NOT NULL",
+    "explanation": "NOT NULL constraint ensures that a column must always contain a value."
+  },
+  {
+    "question": "Which SQL keyword ensures that all values in a column are different?",
+    "options": [
+      "NOT NULL",
+      "DEFAULT",
+      "INDEX"
+    ],
+    "answer": "UNIQUE",
+    "explanation": "UNIQUE constraint ensures that no duplicate values are allowed in a column."
+  },
+  {
+    "question": "Which SQL keyword defines a default value for a column?",
+    "options": [
+      "NOT NULL",
+      "UNIQUE",
+      "INDEX"
+    ],
+    "answer": "DEFAULT",
+    "explanation": "DEFAULT specifies a value automatically assigned if none is provided."
+  }
+]
+

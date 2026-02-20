@@ -1,0 +1,512 @@
+[
+  {
+    "question": "What is the primary difference between storing data in files versus a relational database?",
+    "options": [
+      "Files are always faster than relational databases for all operations",
+      "Relational databases cannot store text data, only numbers",
+      "Files do not support any form of data querying or relationships"
+    ],
+    "answer": "Relational databases provide structured storage with support for relationships, integrity constraints, and powerful querying, while files store raw data without enforced structure or relationships.",
+    "explanation": "The data layer in a relational database enforces structure, relationships, and constraints, whereas flat files simply store data without any built-in mechanism for querying, integrity, or relationships between datasets."
+  },
+  {
+    "question": "Which of the following best defines an RDBMS?",
+    "options": [
+      "A programming language used to build web applications",
+      "A tool exclusively used for generating reports from spreadsheets",
+      "A type of NoSQL database that stores data in documents"
+    ],
+    "answer": "An RDBMS (Relational Database Management System) is software that manages relational databases, allowing users to create, read, update, and delete data using structured tables and SQL.",
+    "explanation": "An RDBMS organizes data into tables with defined relationships, enforces data integrity, and provides SQL as the standard language for data manipulation and querying. Examples include MySQL, PostgreSQL, and Oracle."
+  },
+  {
+    "question": "In a relational database, what does a 'row' represent?",
+    "options": [
+      "A category of data, such as a product type",
+      "The name given to a database connection",
+      "A constraint that prevents duplicate entries in a column"
+    ],
+    "answer": "A row (also called a record or tuple) represents a single, complete instance of the entity described by the table — for example, one specific customer or one specific order.",
+    "explanation": "A table is made up of columns (attributes/fields) and rows (records). Each row holds a complete set of related data values for one instance of the entity that the table represents."
+  },
+  {
+    "question": "What is a 'field' in the context of a relational database?",
+    "options": [
+      "The entire set of rows in a table",
+      "A stored procedure that validates input data",
+      "A named collection of tables in a database"
+    ],
+    "answer": "A field is the intersection of a specific row and a specific column — it is a single data value stored in a table at a particular row/column position.",
+    "explanation": "While a column defines the type and name of an attribute, and a row is a complete record, a field is the actual value stored at the crossing point of a particular row and column."
+  },
+  {
+    "question": "Which SQL data type would be most appropriate for storing a person's age?",
+    "options": [
+      "VARCHAR",
+      "BLOB",
+      "DATE"
+    ],
+    "answer": "INT (or INTEGER), because age is a whole number and does not require decimal precision or character storage.",
+    "explanation": "INT stores whole numbers efficiently, making it ideal for age. VARCHAR is for variable-length character strings, BLOB for binary large objects, and DATE for calendar dates."
+  },
+  {
+    "question": "What is the primary role of SQL in a relational database system?",
+    "options": [
+      "To compile and execute application source code",
+      "To provide a graphical user interface for database administration",
+      "To physically store binary data on disk"
+    ],
+    "answer": "SQL (Structured Query Language) is the standard language used to communicate with a relational database — enabling users to create structures, insert, query, update, and delete data.",
+    "explanation": "SQL is the universal language for interacting with relational databases. It covers data definition (DDL), data manipulation (DML), and data control (DCL), making it central to all database operations."
+  },
+  {
+    "question": "What is a database cursor used for?",
+    "options": [
+      "Visually highlighting selected rows in a GUI tool",
+      "Encrypting query results before returning them to the user",
+      "Defining the primary key of a result set"
+    ],
+    "answer": "A cursor is a database object that allows row-by-row processing of the result set returned by a query, enabling iterative operations on each record.",
+    "explanation": "Cursors are used when you need to process query results one row at a time rather than as a set. They are commonly used in stored procedures and programmatic database access."
+  },
+  {
+    "question": "What does a database schema define?",
+    "options": [
+      "The physical location of database files on the server's hard drive",
+      "The user interface layout for a database management application",
+      "The number of concurrent users allowed to access the database"
+    ],
+    "answer": "A database schema defines the logical structure of the database, including tables, columns, data types, relationships, and constraints — essentially the blueprint of the database.",
+    "explanation": "The schema is the blueprint that describes how data is organized. It specifies table names, column definitions, data types, primary and foreign keys, and any integrity constraints."
+  },
+  {
+    "question": "Which SQL command is used to remove an entire table and its structure from a database?",
+    "options": [
+      "DELETE TABLE employees",
+      "REMOVE TABLE employees",
+      "TRUNCATE TABLE employees"
+    ],
+    "answer": "DROP TABLE employees — this command permanently removes the table definition and all its data from the database.",
+    "explanation": "DROP TABLE removes the table entirely (structure + data). DELETE removes rows but keeps the table. TRUNCATE removes all rows but keeps the structure. REMOVE is not a valid SQL command."
+  },
+  {
+    "question": "What is an Entity-Relationship (ER) Diagram used for?",
+    "options": [
+      "Displaying the network topology of database servers",
+      "Showing the step-by-step execution plan of a SQL query",
+      "Illustrating how tables in a database are physically partitioned"
+    ],
+    "answer": "An ER Diagram is a visual tool used to model the entities in a system, their attributes, and the relationships between them, serving as a blueprint for database design.",
+    "explanation": "ER Diagrams help designers conceptualize the data model before implementation. Entities become tables, attributes become columns, and relationships define foreign key connections."
+  },
+  {
+    "question": "In an ER Diagram, what does a diamond shape typically represent?",
+    "options": [
+      "An entity (a person, place, or thing)",
+      "An attribute (a property of an entity)",
+      "A primary key of a table"
+    ],
+    "answer": "A diamond shape in an ER Diagram represents a relationship — it shows how two or more entities are associated with each other.",
+    "explanation": "In standard ER notation, rectangles represent entities, ellipses represent attributes, and diamonds represent relationships between entities."
+  },
+  {
+    "question": "What is logical-to-physical mapping in database design?",
+    "options": [
+      "Converting SQL queries into machine-readable binary instructions",
+      "Translating the visual ER Diagram into network diagrams for server setup",
+      "Mapping user interface wireframes to backend API endpoints"
+    ],
+    "answer": "Logical-to-physical mapping is the process of converting the logical database model (ER Diagram with entities and relationships) into a physical database schema with actual tables, columns, keys, and constraints.",
+    "explanation": "In this process, entities become tables, attributes become columns, relationships become foreign keys, and cardinalities inform key placement. This bridges the conceptual design and the actual database implementation."
+  },
+  {
+    "question": "What is a PRIMARY KEY in a relational database?",
+    "options": [
+      "A column that stores encrypted passwords for user authentication",
+      "A key that references a column in another table",
+      "An index that speeds up JOIN operations but allows NULL values"
+    ],
+    "answer": "A PRIMARY KEY is a column (or combination of columns) that uniquely identifies each row in a table. It cannot contain NULL values and must be unique across all rows.",
+    "explanation": "Primary keys ensure that every record in a table can be uniquely identified. They are the cornerstone of relational integrity and are often used as reference points for foreign keys in other tables."
+  },
+  {
+    "question": "What is a FOREIGN KEY used for in a relational database?",
+    "options": [
+      "Encrypting data in a column to prevent unauthorized access",
+      "Speeding up SELECT queries by creating a secondary index",
+      "Storing large binary objects like images or files"
+    ],
+    "answer": "A FOREIGN KEY is a column in one table that references the PRIMARY KEY of another table, establishing a link between the two tables and enforcing referential integrity.",
+    "explanation": "Foreign keys enforce referential integrity by ensuring that a value in the foreign key column must match an existing value in the referenced primary key column, preventing orphaned records."
+  },
+  {
+    "question": "Which of the following is a database design constraint?",
+    "options": [
+      "A CSS rule that formats how data is displayed in a web browser",
+      "A server configuration that limits the size of the database file",
+      "A network policy that restricts remote database connections"
+    ],
+    "answer": "A NOT NULL constraint is a database design constraint that ensures a column cannot store NULL values, enforcing that every row must have a value for that column.",
+    "explanation": "Database constraints enforce data integrity rules at the database level. Common constraints include NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY, and FOREIGN KEY."
+  },
+  {
+    "question": "What is the goal of database normalization?",
+    "options": [
+      "To increase the number of tables to improve read performance",
+      "To compress data storage by removing all duplicate rows",
+      "To back up database data in a normalized binary format"
+    ],
+    "answer": "Database normalization is the process of organizing a database to reduce data redundancy and improve data integrity by decomposing tables and defining proper relationships.",
+    "explanation": "Normalization eliminates redundancy and dependency anomalies through a series of normal forms (1NF, 2NF, 3NF, BCNF), resulting in a cleaner, more maintainable database design."
+  },
+  {
+    "question": "A table is in First Normal Form (1NF) when:",
+    "options": [
+      "It has no foreign keys and all columns store numeric values",
+      "Every non-key column is fully dependent on a composite primary key",
+      "It contains no transitive dependencies between non-key columns"
+    ],
+    "answer": "A table is in 1NF when all column values are atomic (indivisible), there are no repeating groups, and each column contains values of a single type.",
+    "explanation": "1NF requires that each cell contains a single value (atomic), that there are no arrays or sets in columns, and that rows can be uniquely identified. This is the foundation of all higher normal forms."
+  },
+  {
+    "question": "Which normal form eliminates partial dependencies on a composite primary key?",
+    "options": [
+      "First Normal Form (1NF)",
+      "Third Normal Form (3NF)",
+      "Boyce-Codd Normal Form (BCNF)"
+    ],
+    "answer": "Second Normal Form (2NF) eliminates partial dependencies, ensuring that every non-key attribute is fully functionally dependent on the entire composite primary key, not just part of it.",
+    "explanation": "2NF builds on 1NF by requiring that all non-key columns depend on the whole primary key. This is only relevant when the primary key consists of multiple columns (composite key)."
+  },
+  {
+    "question": "What does SQL stand for?",
+    "options": [
+      "Sequential Query Lexicon",
+      "System Query Logic",
+      "Structured Question Language"
+    ],
+    "answer": "SQL stands for Structured Query Language — the standard language used to interact with relational database management systems.",
+    "explanation": "SQL (Structured Query Language) was developed in the 1970s and has become the standard for querying and managing relational databases. It is supported by virtually all RDBMS platforms."
+  },
+  {
+    "question": "Which SQL statement correctly retrieves all columns from a table named 'products'?",
+    "options": [
+      "FETCH ALL FROM products",
+      "GET * FROM products",
+      "RETRIEVE ALL COLUMNS IN products"
+    ],
+    "answer": "SELECT * FROM products; — the asterisk (*) is a wildcard that selects all columns, and FROM specifies the source table.",
+    "explanation": "SELECT is the SQL command for querying data. The * wildcard means 'all columns.' FROM specifies the table. This is the most basic form of a SELECT statement."
+  },
+  {
+    "question": "What does the WHERE clause do in a SQL SELECT statement?",
+    "options": [
+      "Specifies which columns to display in the result set",
+      "Sorts the result set in ascending or descending order",
+      "Groups rows with the same value in a specified column"
+    ],
+    "answer": "The WHERE clause filters rows from the result set, returning only those rows that satisfy the specified condition.",
+    "explanation": "WHERE acts as a filter. For example, SELECT * FROM employees WHERE salary > 50000 returns only employees with a salary greater than 50,000."
+  },
+  {
+    "question": "Which SQL statement would correctly insert a new record into the 'students' table?",
+    "options": [
+      "ADD INTO students (name, age) VALUES ('Alice', 21)",
+      "APPEND students SET name='Alice', age=21",
+      "PUT INTO students (name, age) VALUES ('Alice', 21)"
+    ],
+    "answer": "INSERT INTO students (name, age) VALUES ('Alice', 21); — INSERT INTO specifies the target table and columns, and VALUES provides the data to be inserted.",
+    "explanation": "The INSERT INTO statement adds new rows to a table. You specify the table name, optionally list the columns, and then provide corresponding values in the VALUES clause."
+  },
+  {
+    "question": "What is the correct SQL syntax to delete all employees in department 5?",
+    "options": [
+      "REMOVE FROM employees WHERE department_id = 5",
+      "TRUNCATE employees WHERE department_id = 5",
+      "ERASE employees WHERE department_id = 5"
+    ],
+    "answer": "DELETE FROM employees WHERE department_id = 5; — DELETE FROM removes specific rows matching the condition in the WHERE clause.",
+    "explanation": "DELETE FROM with a WHERE clause removes only the rows that meet the condition. Without a WHERE clause, all rows would be deleted. TRUNCATE removes all rows but cannot use WHERE."
+  },
+  {
+    "question": "Which SQL operator is used to search for a specified pattern in a column?",
+    "options": [
+      "MATCH",
+      "CONTAINS",
+      "SIMILAR"
+    ],
+    "answer": "The LIKE operator is used in SQL to search for a specified pattern in a column, typically combined with wildcards % (any sequence) and _ (single character).",
+    "explanation": "LIKE allows pattern matching in WHERE clauses. For example: WHERE name LIKE 'A%' returns all names starting with 'A'. The % wildcard matches any number of characters."
+  },
+  {
+    "question": "What does the BETWEEN operator do in SQL?",
+    "options": [
+      "Checks if a value exists in a subquery result set",
+      "Compares two columns from different tables",
+      "Tests whether a column value is NULL or NOT NULL"
+    ],
+    "answer": "The BETWEEN operator selects values within a given inclusive range. For example, WHERE age BETWEEN 18 AND 30 returns all rows where age is from 18 to 30, inclusive.",
+    "explanation": "BETWEEN is a shorthand for >= AND <=. It works with numbers, text, and dates. The range boundaries are included in the result set."
+  },
+  {
+    "question": "What is an INNER JOIN in SQL?",
+    "options": [
+      "A join that returns all rows from the left table and NULL for non-matching right table rows",
+      "A join that returns all rows from both tables regardless of matching",
+      "A join that returns only rows from the right table that have a match in the left table"
+    ],
+    "answer": "An INNER JOIN returns only the rows where there is a matching value in both joined tables based on the specified join condition.",
+    "explanation": "INNER JOIN is the most common type of join. It returns the intersection of two tables — only records that have corresponding matches in both tables are included in the result."
+  },
+  {
+    "question": "What does a LEFT OUTER JOIN return?",
+    "options": [
+      "Only the rows that exist in both the left and right tables",
+      "All rows from the right table plus matching rows from the left table",
+      "Only unmatched rows from the left table"
+    ],
+    "answer": "A LEFT OUTER JOIN returns all rows from the left table, and the matched rows from the right table. Where there is no match, NULL values are returned for the right table's columns.",
+    "explanation": "LEFT JOIN ensures every row from the left (first) table appears in the result. For rows with no matching record in the right table, NULL fills the right table's columns."
+  },
+  {
+    "question": "Which SQL category does the CREATE TABLE statement belong to?",
+    "options": [
+      "DML (Data Manipulation Language)",
+      "DCL (Data Control Language)",
+      "TCL (Transaction Control Language)"
+    ],
+    "answer": "CREATE TABLE belongs to DDL (Data Definition Language), which includes commands that define and modify the structure of database objects like tables, indexes, and views.",
+    "explanation": "DDL commands (CREATE, ALTER, DROP, TRUNCATE) define database structure. DML commands (SELECT, INSERT, UPDATE, DELETE) manipulate data. DCL (GRANT, REVOKE) controls access."
+  },
+  {
+    "question": "Which SQL command is used to grant a user permission to SELECT data from a table?",
+    "options": [
+      "ALLOW SELECT ON employees TO user1",
+      "PERMIT user1 TO SELECT employees",
+      "ENABLE SELECT FOR user1 ON employees"
+    ],
+    "answer": "GRANT SELECT ON employees TO user1; — GRANT is the DCL command used to give specific database privileges to users or roles.",
+    "explanation": "GRANT is part of DCL (Data Control Language). It assigns privileges such as SELECT, INSERT, UPDATE, DELETE to database users. REVOKE removes those privileges."
+  },
+  {
+    "question": "Which of the following is a DML (Data Manipulation Language) command?",
+    "options": [
+      "CREATE",
+      "DROP",
+      "ALTER"
+    ],
+    "answer": "UPDATE is a DML command. DML commands (SELECT, INSERT, UPDATE, DELETE) are used to manipulate the data stored within database tables.",
+    "explanation": "DML deals with data operations: SELECT retrieves, INSERT adds, UPDATE modifies, and DELETE removes data. CREATE, DROP, and ALTER are DDL commands that deal with the database structure."
+  },
+  {
+    "question": "What is the purpose of the ORDER BY clause in a SQL query?",
+    "options": [
+      "To filter rows based on a specified condition",
+      "To combine rows from two or more tables",
+      "To limit the number of rows returned in the result set"
+    ],
+    "answer": "ORDER BY sorts the result set of a query by one or more columns, either in ascending (ASC) or descending (DESC) order.",
+    "explanation": "ORDER BY is placed at the end of a SELECT statement. By default, sorting is ascending. Example: SELECT * FROM products ORDER BY price DESC sorts products from most expensive to least."
+  },
+  {
+    "question": "Which SQL aggregate function returns the total sum of a numeric column?",
+    "options": [
+      "COUNT()",
+      "AVG()",
+      "MAX()"
+    ],
+    "answer": "SUM() is the SQL aggregate function that calculates the total of all values in a specified numeric column.",
+    "explanation": "SUM() adds up all values in a column. Other aggregate functions include COUNT() (number of rows), AVG() (average value), MIN() (minimum), and MAX() (maximum)."
+  },
+  {
+    "question": "What does the GROUP BY clause do in SQL?",
+    "options": [
+      "Joins two tables based on a common column",
+      "Filters groups of rows based on a condition",
+      "Sorts rows in the result set alphabetically"
+    ],
+    "answer": "GROUP BY groups rows that have the same values in specified columns into summary rows, typically used with aggregate functions like COUNT(), SUM(), or AVG().",
+    "explanation": "GROUP BY collapses multiple rows with the same value into one summary row. For example, SELECT department, COUNT(*) FROM employees GROUP BY department counts employees per department."
+  },
+  {
+    "question": "What is the difference between WHERE and HAVING in SQL?",
+    "options": [
+      "WHERE is used with JOINs, HAVING is used with subqueries",
+      "WHERE filters columns, HAVING filters rows",
+      "WHERE is only used in DELETE statements, HAVING in SELECT statements"
+    ],
+    "answer": "WHERE filters rows before grouping occurs, while HAVING filters groups after the GROUP BY clause has been applied, typically used with aggregate functions.",
+    "explanation": "WHERE cannot reference aggregate function results (like SUM or COUNT) because it operates before aggregation. HAVING is applied after GROUP BY and can filter based on aggregate results."
+  },
+  {
+    "question": "After installing an RDBMS like MySQL, which tool is commonly used to interact with the database via command line?",
+    "options": [
+      "phpMyAdmin",
+      "Visual Studio Code",
+      "Apache Tomcat"
+    ],
+    "answer": "The MySQL Command Line Client (mysql CLI) is the built-in command-line tool used to connect to and execute SQL commands against a MySQL database after installation.",
+    "explanation": "The mysql CLI is installed alongside MySQL and allows direct command-line interaction. phpMyAdmin is a web-based GUI tool, and VS Code is a code editor, not a database CLI."
+  },
+  {
+    "question": "What SQL statement is used to create a new database in MySQL?",
+    "options": [
+      "BUILD DATABASE school",
+      "MAKE DATABASE school",
+      "INIT DATABASE school"
+    ],
+    "answer": "CREATE DATABASE school; — this DDL command creates a new database named 'school' in the RDBMS.",
+    "explanation": "CREATE DATABASE is the SQL command for creating a new database. After creation, you select it with USE school; before creating tables or running queries within it."
+  },
+  {
+    "question": "Which SQL command is used to execute a query that was saved in a .sql file in MySQL's command-line client?",
+    "options": [
+      "LOAD 'script.sql'",
+      "RUN FILE 'script.sql'",
+      "EXECUTE 'script.sql'"
+    ],
+    "answer": "SOURCE script.sql; (or \\. script.sql) is the MySQL CLI command used to execute all SQL statements contained in an external .sql file.",
+    "explanation": "The SOURCE command in MySQL's CLI reads and executes SQL commands from a file, useful for running migration scripts or loading pre-written schemas and data."
+  },
+  {
+    "question": "Which of the following tools can be used to import data from a CSV file into a MySQL database table?",
+    "options": [
+      "CSS preprocessors like SASS",
+      "JavaScript runtime environments like Node.js",
+      "PHP scripting language without any database library"
+    ],
+    "answer": "The LOAD DATA INFILE SQL statement or MySQL Workbench's import wizard can be used to import CSV data directly into a MySQL table.",
+    "explanation": "MySQL supports LOAD DATA INFILE for high-performance CSV imports. Tools like phpMyAdmin and MySQL Workbench also provide GUI-based import/export functionality for various file formats."
+  },
+  {
+    "question": "What is a database VIEW?",
+    "options": [
+      "A physical copy of a table stored in a separate file",
+      "A security role that restricts which rows a user can access",
+      "A backup snapshot of a table taken at a specific point in time"
+    ],
+    "answer": "A VIEW is a virtual table based on the result of a stored SQL SELECT query. It doesn't store data itself but presents data from one or more underlying tables through the defined query.",
+    "explanation": "Views simplify complex queries, enhance security by exposing only specific columns/rows, and provide a consistent interface to underlying data. They behave like tables in SELECT queries but don't store data."
+  },
+  {
+    "question": "What is a stored procedure in a relational database?",
+    "options": [
+      "A database file that stores table backup data",
+      "An automatic index built by the RDBMS for performance",
+      "A log file that records all database transactions"
+    ],
+    "answer": "A stored procedure is a precompiled set of one or more SQL statements saved in the database that can be executed by name, often accepting parameters and returning results.",
+    "explanation": "Stored procedures encapsulate business logic at the database level, improve performance through precompilation, reduce network traffic, and can be reused across applications."
+  },
+  {
+    "question": "What is a database trigger?",
+    "options": [
+      "A scheduled task that runs SQL queries at fixed time intervals",
+      "A data type used to store boolean values (true/false)",
+      "A SQL command used to initiate a database transaction"
+    ],
+    "answer": "A trigger is a special stored procedure that automatically executes in response to specific events (INSERT, UPDATE, DELETE) on a table or view.",
+    "explanation": "Triggers fire automatically when defined DML events occur. They are used for enforcing business rules, maintaining audit logs, and synchronizing tables — without requiring explicit calls."
+  },
+  {
+    "question": "Which SQL statement creates a trigger that fires after a new row is inserted into the 'orders' table?",
+    "options": [
+      "CREATE EVENT ON INSERT INTO orders ...",
+      "SET TRIGGER AFTER INSERT orders ...",
+      "DEFINE TRIGGER orders AFTER INSERT ..."
+    ],
+    "answer": "CREATE TRIGGER trigger_name AFTER INSERT ON orders FOR EACH ROW BEGIN ... END; is the correct syntax for creating an AFTER INSERT trigger.",
+    "explanation": "SQL triggers use CREATE TRIGGER syntax, specifying the timing (BEFORE/AFTER), event (INSERT/UPDATE/DELETE), table, and the action to take per row or per statement."
+  },
+  {
+    "question": "In the context of advanced databases, what is an OLAP cube?",
+    "options": [
+      "A three-dimensional physical database server configuration",
+      "A type of normalized relational table with exactly three columns",
+      "A backup format that stores database data in compressed blocks"
+    ],
+    "answer": "An OLAP (Online Analytical Processing) cube is a multi-dimensional data structure that organizes data by dimensions and measures, enabling fast analytical queries with aggregations and filters across multiple perspectives.",
+    "explanation": "OLAP cubes pre-aggregate data across dimensions (like time, geography, product) to support fast analytical reporting. They are the foundation of business intelligence and data warehousing."
+  },
+  {
+    "question": "What is a 'dimension' in the context of an OLAP cube?",
+    "options": [
+      "A numeric value being analyzed such as total sales or profit",
+      "The physical size of the database file on disk",
+      "A stored procedure that calculates statistical summaries"
+    ],
+    "answer": "A dimension is a categorical attribute used to slice and analyze data in an OLAP cube — examples include Time, Geography, Product Category, and Customer Segment.",
+    "explanation": "Dimensions provide the context for measures. In a sales cube, dimensions might be Time (year/quarter/month), Region, and Product, while measures are the numeric values like Revenue or Units Sold."
+  },
+  {
+    "question": "What does 'aggregation' mean in the context of an OLAP cube?",
+    "options": [
+      "Splitting a large table into smaller partitioned tables",
+      "Encrypting data values across multiple cube dimensions",
+      "Merging rows from different tables using a JOIN operation"
+    ],
+    "answer": "Aggregation is the process of computing summary values (such as SUM, COUNT, AVG) across one or more dimensions of an OLAP cube, allowing data to be analyzed at different levels of granularity.",
+    "explanation": "Aggregation in OLAP cubes pre-computes totals at multiple levels (e.g., daily → monthly → yearly) so that analytical queries return results instantly without scanning raw data."
+  },
+  {
+    "question": "What is referential integrity in a relational database?",
+    "options": [
+      "A rule that ensures all columns have unique names within a table",
+      "A performance feature that caches frequently accessed query results",
+      "A constraint that prevents storing NULL values in primary key columns"
+    ],
+    "answer": "Referential integrity is a database constraint that ensures values in a foreign key column always correspond to an existing value in the referenced primary key column, preventing orphaned records.",
+    "explanation": "Referential integrity maintains consistent relationships between tables. It ensures you cannot insert a foreign key value that doesn't exist in the parent table, nor delete a parent record that has dependent child records."
+  },
+  {
+    "question": "What is a composite primary key?",
+    "options": [
+      "A primary key that is automatically generated by the RDBMS",
+      "A primary key stored across multiple database files for redundancy",
+      "A primary key defined on a single column that references two tables"
+    ],
+    "answer": "A composite primary key is a primary key that consists of two or more columns combined, where the combination of values must be unique across all rows in the table.",
+    "explanation": "Composite primary keys are used when no single column can uniquely identify a row. For example, in an enrollment table, a combination of student_id and course_id together forms a unique identifier."
+  },
+  {
+    "question": "What is the purpose of the ALTER TABLE statement in SQL?",
+    "options": [
+      "To move a table to a different database schema",
+      "To create a backup copy of an existing table with a new name",
+      "To duplicate all rows from one table into another"
+    ],
+    "answer": "ALTER TABLE is a DDL command used to modify the structure of an existing table — such as adding, dropping, or modifying columns, or adding/removing constraints.",
+    "explanation": "ALTER TABLE allows schema changes without recreating the table. For example: ALTER TABLE employees ADD COLUMN salary DECIMAL(10,2); adds a new salary column to an existing table."
+  },
+  {
+    "question": "Which type of relationship in an ER Diagram indicates that one record in Table A can be associated with many records in Table B, and one record in Table B can be associated with many records in Table A?",
+    "options": [
+      "One-to-One (1:1) relationship",
+      "One-to-Many (1:N) relationship",
+      "Mandatory-Optional relationship"
+    ],
+    "answer": "A Many-to-Many (M:N) relationship means a single record in either table can relate to multiple records in the other table, and is typically implemented using a junction (bridge) table.",
+    "explanation": "Many-to-many relationships cannot be directly implemented in a relational database — they require a junction table with foreign keys to both parent tables. Example: students and courses (a student takes many courses, a course has many students)."
+  },
+  {
+    "question": "What does the DISTINCT keyword do in a SQL SELECT statement?",
+    "options": [
+      "Returns only the first occurrence of each row regardless of duplicates",
+      "Sorts the result set in a unique random order",
+      "Joins tables and eliminates matching rows from the result"
+    ],
+    "answer": "DISTINCT removes duplicate rows from the result set, returning only unique values for the specified columns.",
+    "explanation": "SELECT DISTINCT column_name FROM table_name returns each unique value of that column only once. Without DISTINCT, all rows including duplicates are returned."
+  },
+  {
+    "question": "What does the SQL IN operator do?",
+    "options": [
+      "Checks if a value falls within a numeric range using two boundaries",
+      "Tests whether two columns from different tables share the same value",
+      "Validates whether a column value matches a specified text pattern"
+    ],
+    "answer": "The IN operator allows you to specify multiple values in a WHERE clause, returning rows where the column value matches any value in the provided list.",
+    "explanation": "IN is shorthand for multiple OR conditions. For example: WHERE country IN ('US', 'UK', 'CA') returns rows where country is any of those three values, equivalent to country='US' OR country='UK' OR country='CA'."
+  }
+]

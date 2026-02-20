@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What distinguishes a relational database from a flat file system regarding data organization?",
+    "options": [
+      "Flat files enforce strict schema constraints automatically",
+      "Relational databases store data in unrelated text lines",
+      "Flat files support complex joins natively without indexing"
+    ],
+    "answer": "Relational databases organize data into tables with defined relationships",
+    "explanation": "Relational databases use tables and relationships to structure data, whereas flat files are typically unstructured or semi-structured text without inherent relationships."
+  },
+  {
+    "question": "What does the acronym RDBMS stand for?",
+    "options": [
+      "Random Data Binary Management System",
+      "Relational Digital Base Memory Store",
+      "Real Database Management Service"
+    ],
+    "answer": "Relational Database Management System",
+    "explanation": "RDBMS stands for Relational Database Management System, which is software used to manage and interact with relational databases."
+  },
+  {
+    "question": "In a relational database, what is the term for a single horizontal entry in a table?",
+    "options": [
+      "Column",
+      "Field",
+      "Schema"
+    ],
+    "answer": "Row",
+    "explanation": "A row represents a single record or horizontal entry in a table, while columns represent vertical attributes."
+  },
+  {
+    "question": "What is the primary role of SQL in an RDBMS?",
+    "options": [
+      "To design the physical hardware of the server",
+      "To compile programming languages like Java or Python",
+      "To manage operating system resources"
+    ],
+    "answer": "To communicate with and manipulate the database",
+    "explanation": "SQL (Structured Query Language) is the standard language used to communicate with, query, and manage data in an RDBMS."
+  },
+  {
+    "question": "What is the notion of a cursor in database processing?",
+    "options": [
+      "A physical pointer on the screen",
+      "A type of database index",
+      "A graphical user interface element"
+    ],
+    "answer": "A control structure that enables traversal over records in a result set",
+    "explanation": "A cursor is a database object used to retrieve, manipulate, and navigate through a set of rows returned by a query one at a time."
+  },
+  {
+    "question": "What is a database schema?",
+    "options": [
+      "The physical hardware configuration of the server",
+      "The backup file of the database",
+      "The user interface design of the application"
+    ],
+    "answer": "The logical structure or blueprint of the database",
+    "explanation": "A database schema defines the logical structure, including tables, fields, relationships, and constraints, acting as a blueprint for the database."
+  },
+  {
+    "question": "Which action modifies an existing relationship between two tables?",
+    "options": [
+      "Deleting the entire database",
+      "Creating a new user account",
+      "Installing a new operating system"
+    ],
+    "answer": "Altering the foreign key constraint",
+    "explanation": "Relationships are typically enforced via foreign keys; modifying the relationship involves altering these constraints."
+  },
+  {
+    "question": "What does an ER-Diagram represent?",
+    "options": [
+      "Employee Revenue Diagram",
+      "External Resource Directory",
+      "Electronic Runtime Data"
+    ],
+    "answer": "Entity-Relationship Diagram",
+    "explanation": "An ER-Diagram (Entity-Relationship Diagram) is a visual representation of the entities in a database and the relationships between them."
+  },
+  {
+    "question": "When designing an ER-Diagram, what shape is commonly used to represent an entity?",
+    "options": [
+      "Circle",
+      "Triangle",
+      "Diamond"
+    ],
+    "answer": "Rectangle",
+    "explanation": "In standard ER-Diagram notation, rectangles are used to represent entities, while diamonds represent relationships."
+  },
+  {
+    "question": "What is logical-to-physical mapping in database design?",
+    "options": [
+      "Connecting the database to the internet",
+      "Mapping user passwords to email addresses",
+      "Converting code from Python to Java"
+    ],
+    "answer": "Translating the logical model into physical storage structures",
+    "explanation": "Logical-to-physical mapping involves converting the conceptual design (tables, relationships) into actual physical storage structures (files, indexes) on the disk."
+  },
+  {
+    "question": "What is the primary purpose of a Primary Key?",
+    "options": [
+      "To encrypt the data in the row",
+      "To link to a table in another database",
+      "To store large binary objects"
+    ],
+    "answer": "To uniquely identify each record in a table",
+    "explanation": "A Primary Key uniquely identifies each record in a table and cannot contain null values."
+  },
+  {
+    "question": "How does a Foreign Key differ from a Primary Key?",
+    "options": [
+      "A Foreign Key must be unique across all tables",
+      "A Foreign Key cannot contain null values ever",
+      "A Foreign Key is used to sort data alphabetically"
+    ],
+    "answer": "A Foreign Key establishes a link between data in two tables",
+    "explanation": "A Foreign Key references the Primary Key of another table to establish a relationship, whereas a Primary Key uniquely identifies records within its own table."
+  },
+  {
+    "question": "Which constraint ensures that a column cannot have a NULL value?",
+    "options": [
+      "UNIQUE",
+      "DEFAULT",
+      "CHECK"
+    ],
+    "answer": "NOT NULL",
+    "explanation": "The NOT NULL constraint enforces that a column must always contain a value and cannot be left empty."
+  },
+  {
+    "question": "What is the goal of database normalization?",
+    "options": [
+      "To increase data redundancy for speed",
+      "To encrypt all sensitive data automatically",
+      "To merge all tables into one single file"
+    ],
+    "answer": "To reduce data redundancy and improve data integrity",
+    "explanation": "Normalization organizes data to minimize redundancy and dependency, ensuring data integrity and efficient storage."
+  },
+  {
+    "question": "Which normal form requires that every column contains atomic values?",
+    "options": [
+      "Second Normal Form (2NF)",
+      "Third Normal Form (3NF)",
+      "Boyce-Codd Normal Form (BCNF)"
+    ],
+    "answer": "First Normal Form (1NF)",
+    "explanation": "1NF requires that each column contains only atomic (indivisible) values and each record is unique."
+  },
+  {
+    "question": "What type of relationship exists when one record in Table A relates to many records in Table B?",
+    "options": [
+      "One-to-One",
+      "Many-to-Many",
+      "Self-Referencing"
+    ],
+    "answer": "One-to-Many",
+    "explanation": "A One-to-Many relationship occurs when a single record in one table is associated with multiple records in another table."
+  },
+  {
+    "question": "How is a Many-to-Many relationship typically implemented in a relational database?",
+    "options": [
+      "By using a single foreign key in one table",
+      "By duplicating data in both tables",
+      "By storing data in a flat file"
+    ],
+    "answer": "By using a junction table with two foreign keys",
+    "explanation": "A junction (or bridge) table is used to resolve many-to-many relationships by holding foreign keys from both related tables."
+  },
+  {
+    "question": "What is a database constraint?",
+    "options": [
+      "A limit on the number of users accessing the DB",
+      "A physical lock on the server room",
+      "A compression algorithm for data"
+    ],
+    "answer": "A rule enforced on data columns to ensure accuracy and reliability",
+    "explanation": "Constraints are rules applied to columns or tables to limit the type of data that can go into them, ensuring data integrity."
+  },
+  {
+    "question": "Which key is used to uniquely identify a row but is not the primary key?",
+    "options": [
+      "Foreign Key",
+      "Composite Key",
+      "Candidate Key"
+    ],
+    "answer": "Alternate Key",
+    "explanation": "An Alternate Key is a candidate key that was not chosen as the primary key but still uniquely identifies records."
+  },
+  {
+    "question": "What happens if you try to delete a record that is referenced by a foreign key with ON DELETE RESTRICT?",
+    "options": [
+      "The record is deleted silently",
+      "The referencing records are also deleted",
+      "The database shuts down"
+    ],
+    "answer": "The deletion operation is prevented",
+    "explanation": "ON DELETE RESTRICT prevents the deletion of a parent record if child records exist that reference it."
+  },
+  {
+    "question": "What does SQL stand for?",
+    "options": [
+      "Simple Question List",
+      "System Query Logic",
+      "Standard Queue Language"
+    ],
+    "answer": "Structured Query Language",
+    "explanation": "SQL stands for Structured Query Language, the standard language for managing relational databases."
+  },
+  {
+    "question": "Which SQL statement is used to retrieve data from a database?",
+    "options": [
+      "GET",
+      "EXTRACT",
+      "OPEN"
+    ],
+    "answer": "SELECT",
+    "explanation": "The SELECT statement is used to query and retrieve data from one or more tables."
+  },
+  {
+    "question": "Which SQL command is used to add new records to a table?",
+    "options": [
+      "ADD RECORD",
+      "CREATE ROW",
+      "UPDATE"
+    ],
+    "answer": "INSERT INTO",
+    "explanation": "The INSERT INTO statement is used to insert new rows of data into a table."
+  },
+  {
+    "question": "Which SQL statement is used to remove records from a table?",
+    "options": [
+      "REMOVE",
+      "DROP",
+      "CLEAR"
+    ],
+    "answer": "DELETE",
+    "explanation": "The DELETE statement is used to remove existing records from a table."
+  },
+  {
+    "question": "Which SQL operator is used to filter records based on a range of values?",
+    "options": [
+      "WITHIN",
+      "RANGE",
+      "IN"
+    ],
+    "answer": "BETWEEN",
+    "explanation": "The BETWEEN operator selects values within a given range, inclusive of the boundary values."
+  },
+  {
+    "question": "What does an INNER JOIN return?",
+    "options": [
+      "All records from the left table only",
+      "All records from both tables regardless of match",
+      "All records from the right table only"
+    ],
+    "answer": "Records that have matching values in both tables",
+    "explanation": "INNER JOIN returns only the rows where there is a match in both the left and right tables."
+  },
+  {
+    "question": "Which JOIN returns all records from the left table and matched records from the right?",
+    "options": [
+      "INNER JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN"
+    ],
+    "answer": "LEFT JOIN",
+    "explanation": "A LEFT JOIN returns all records from the left table and the matched records from the right table, with NULLs for non-matches."
+  },
+  {
+    "question": "Which category of SQL commands includes CREATE, ALTER, and DROP?",
+    "options": [
+      "DML (Data Manipulation Language)",
+      "DCL (Data Control Language)",
+      "TCL (Transaction Control Language)"
+    ],
+    "answer": "DDL (Data Definition Language)",
+    "explanation": "DDL commands are used to define and modify the structure of database objects like tables and schemas."
+  },
+  {
+    "question": "Which category of SQL commands includes INSERT, UPDATE, and DELETE?",
+    "options": [
+      "DDL (Data Definition Language)",
+      "DCL (Data Control Language)",
+      "DDL (Data Description Language)"
+    ],
+    "answer": "DML (Data Manipulation Language)",
+    "explanation": "DML commands are used for managing data within schema objects, such as inserting, updating, or deleting records."
+  },
+  {
+    "question": "What is the purpose of the GRANT command in SQL?",
+    "options": [
+      "To delete a user account",
+      "To create a new table",
+      "To rollback a transaction"
+    ],
+    "answer": "To give user access privileges to database objects",
+    "explanation": "The GRANT command is part of DCL and is used to provide specific privileges to users or roles."
+  },
+  {
+    "question": "Which SQL function is used to count the number of rows in a result set?",
+    "options": [
+      "SUM()",
+      "TOTAL()",
+      "NUMBER()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() is an aggregate function that returns the number of rows that match a specified criterion."
+  },
+  {
+    "question": "Which clause is used to group rows that have the same values into summary rows?",
+    "options": [
+      "ORDER BY",
+      "WHERE",
+      "SORT"
+    ],
+    "answer": "GROUP BY",
+    "explanation": "The GROUP BY statement groups rows that have the same values into summary rows, often used with aggregate functions."
+  },
+  {
+    "question": "What is the difference between WHERE and HAVING clauses?",
+    "options": [
+      "WHERE is used for sorting, HAVING is for filtering",
+      "WHERE is used after grouping, HAVING is before",
+      "There is no difference"
+    ],
+    "answer": "WHERE filters rows before grouping, HAVING filters after grouping",
+    "explanation": "WHERE applies conditions to individual rows before aggregation, while HAVING applies conditions to grouped results."
+  },
+  {
+    "question": "Which SQL keyword is used to sort the result set?",
+    "options": [
+      "SORT BY",
+      "ALIGN",
+      "ORDER"
+    ],
+    "answer": "ORDER BY",
+    "explanation": "The ORDER BY keyword is used to sort the result set in ascending or descending order."
+  },
+  {
+    "question": "What does the DISTINCT keyword do in a SELECT statement?",
+    "options": [
+      "It deletes duplicate rows from the table",
+      "It encrypts the selected data",
+      "It sorts the data alphabetically"
+    ],
+    "answer": "It returns only unique values in the result set",
+    "explanation": "DISTINCT ensures that the result set contains only unique records, removing duplicates."
+  },
+  {
+    "question": "What is the first step in utilizing an RDBMS for a project?",
+    "options": [
+      "Writing complex stored procedures",
+      "Exporting data to CSV",
+      "Designing the user interface"
+    ],
+    "answer": "Installing and configuring the RDBMS software",
+    "explanation": "Before creating schemas or queries, the RDBMS software must be installed and properly configured on the server."
+  },
+  {
+    "question": "Which command is used to create a new database schema?",
+    "options": [
+      "MAKE DATABASE",
+      "NEW SCHEMA",
+      "ADD DB"
+    ],
+    "answer": "CREATE DATABASE",
+    "explanation": "The CREATE DATABASE statement is used to create a new database container within the RDBMS."
+  },
+  {
+    "question": "How can you execute an SQL query manually?",
+    "options": [
+      "By editing the system registry",
+      "By restarting the server",
+      "By modifying the hardware configuration"
+    ],
+    "answer": "By using a query tool or command line interface",
+    "explanation": "Queries are manually executed using client tools like SQL Server Management Studio, MySQL Workbench, or command line interfaces."
+  },
+  {
+    "question": "What is the purpose of importing data into an RDBMS?",
+    "options": [
+      "To delete existing records",
+      "To change the database password",
+      "To uninstall the database software"
+    ],
+    "answer": "To load external data into the database tables",
+    "explanation": "Importing allows users to bring data from external sources (like CSV or other DBs) into the RDBMS for storage and querying."
+  },
+  {
+    "question": "What is a database trigger?",
+    "options": [
+      "A physical button on the server",
+      "A type of user account",
+      "A backup schedule"
+    ],
+    "answer": "A procedure that automatically executes in response to certain events",
+    "explanation": "A trigger is a stored procedure that automatically runs when an event (like INSERT, UPDATE, DELETE) occurs in the database."
+  },
+  {
+    "question": "What is a Stored Procedure?",
+    "options": [
+      "A hardware component of the server",
+      "A type of database index",
+      "A graphical report generator"
+    ],
+    "answer": "A prepared SQL code that you can save and reuse",
+    "explanation": "A Stored Procedure is a function containing one or more SQL statements that are stored in the database and can be called by applications."
+  },
+  {
+    "question": "What is a Database View?",
+    "options": [
+      "A physical copy of the table",
+      "A backup of the database",
+      "A user permission level"
+    ],
+    "answer": "A virtual table based on the result-set of an SQL statement",
+    "explanation": "A View is a virtual table that does not store data itself but displays data from one or more tables based on a query."
+  },
+  {
+    "question": "What does ACID stand for in the context of database transactions?",
+    "options": [
+      "Automatic, Constant, Integrated, Durable",
+      "Access, Control, Identity, Data",
+      "Atomic, Consistent, Independent, Direct"
+    ],
+    "answer": "Atomicity, Consistency, Isolation, Durability",
+    "explanation": "ACID properties ensure reliable processing of database transactions."
+  },
+  {
+    "question": "Which command confirms a transaction and saves changes permanently?",
+    "options": [
+      "SAVE",
+      "PUSH",
+      "STORE"
+    ],
+    "answer": "COMMIT",
+    "explanation": "The COMMIT command saves all changes made during the current transaction to the database."
+  },
+  {
+    "question": "Which command undo changes made during a transaction?",
+    "options": [
+      "UNDO",
+      "REVERT",
+      "CANCEL"
+    ],
+    "answer": "ROLLBACK",
+    "explanation": "The ROLLBACK command undoes transactions that have not been saved to the database yet."
+  },
+  {
+    "question": "What is an OLAP Cube used for?",
+    "options": [
+      "Storing binary images",
+      "Managing user passwords",
+      "Hosting web pages"
+    ],
+    "answer": "Multi-dimensional analysis of data",
+    "explanation": "An OLAP Cube is a data structure that allows for fast analysis of data across multiple dimensions."
+  },
+  {
+    "question": "In the context of data cubes, what is a Dimension?",
+    "options": [
+      "A physical measurement of the server",
+      "A type of encryption key",
+      "A network bandwidth limit"
+    ],
+    "answer": "A category used to organize and group data",
+    "explanation": "Dimensions are categories (like Time, Product, Location) used to analyze measures in a data cube."
+  },
+  {
+    "question": "What is Aggregation in advanced database topics?",
+    "options": [
+      "Combining multiple servers into one",
+      "Deleting old data automatically",
+      "Splitting tables into smaller files"
+    ],
+    "answer": "The process of summarizing data",
+    "explanation": "Aggregation involves combining multiple rows of data into a single summary value, such as sum or average."
+  },
+  {
+    "question": "What is Filtering in the context of data cubes?",
+    "options": [
+      "Cleaning the physical hardware",
+      "Removing the database software",
+      "Encrypting the network traffic"
+    ],
+    "answer": "Selecting a subset of data based on criteria",
+    "explanation": "Filtering allows users to view only the data that meets specific conditions within the cube."
+  },
+  {
+    "question": "Why is indexing important in advanced RDBMS usage?",
+    "options": [
+      "It reduces the storage space required",
+      "It automatically backs up data",
+      "It prevents users from deleting data"
+    ],
+    "answer": "It speeds up data retrieval operations",
+    "explanation": "Indexes create data structures that allow the database engine to find and retrieve specific rows much faster."
+  }
+]
