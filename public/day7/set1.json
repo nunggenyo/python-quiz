@@ -2,12 +2,12 @@
   {
     "question": "Which jQuery method is commonly used to attach a function to an event, such as 'click', and can also support binding multiple events to the same object?",
     "options": [
-      "The `on()` method",
       "The `bind()` method",
-      "The `click()` method"
+      "The `click()` method",
+      "The `delegate()` method"
     ],
-    "answer": "The `addEventListener()` method",
-    "explanation": "While jQuery provides high-level methods like `on()`, `bind()`, and `click()` for event handling, the underlying low-level implementation in vanilla JavaScript uses the `addEventListener()` method (or `attachEvent()` for older versions of IE) to allow multiple events to be registered to the same object [citation:1]."
+    "answer": "The `on()` method",
+    "explanation": "In jQuery, the `on()` method is the recommended way to attach event handlers. It can handle multiple events on the same element and replaces older methods like `bind()`. While `click()` can attach a handler for click events specifically, it is not as flexible as `on()` for multiple or delegated events."
   },
   {
     "question": "In JavaScript, what is the primary purpose of using 'strict mode'?",
