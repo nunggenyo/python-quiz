@@ -52,7 +52,7 @@
   {
     "question": "In JavaScript, what is the difference between `==` and `===` operators?",
     "options": [
-      "`==` compares values after type conversion, while `===` compares both value and type without conversion.",
+      "`==` ignores null and undefined, `===` treats them as equal",
       "`==` is used for assignment, `===` for comparison",
       "`==` compares objects, `===` compares primitives"
     ],
@@ -432,7 +432,7 @@
   {
     "question": "What is the difference between XML and HTML?",
     "options": [
-      "XML is for data structure, HTML is for presentation, and XML is strict while HTML is forgiving.",
+      "HTML requires strict closing of all tags",
       "XML is newer than HTML",
       "XML can't have attributes"
     ],

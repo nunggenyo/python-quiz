@@ -24,7 +24,7 @@
     "options": [
       "`\"null\"`",
       "`\"undefined\"`",
-      "`\"object\"`"
+      "`\"boolean\"`"
     ],
     "answer": "`\"object\"`",
     "explanation": "Due to a historical bug in JavaScript that has been retained for backward compatibility, `typeof null` returns `\"object\"`. This is a well-known quirk of the language, even though `null` is actually a primitive value representing the intentional absence of any object value."

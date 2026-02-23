@@ -12,7 +12,7 @@
   {
     "question": "What symbol is used to define an arrow function in JavaScript?",
     "options": [
-      "=>",
+      "->>",
       "==>",
       "->"
     ],
@@ -282,7 +282,7 @@
   {
     "question": "What does CI stand for in Web Publishing?",
     "options": [
-      "Continuous Integration",
+      "Customer Interaction",
       "Client Interface",
       "Code Inspection"
     ],

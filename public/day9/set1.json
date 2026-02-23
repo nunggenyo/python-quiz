@@ -1,0 +1,502 @@
+[
+  {
+    "question": "In the MVC (Model-View-Controller) architecture, which component is primarily responsible for managing the data and business logic?",
+    "options": [
+      "View",
+      "Controller",
+      "Middleware"
+    ],
+    "answer": "Model",
+    "explanation": "The Model represents the data and the rules that govern updates and access to that data."
+  },
+  {
+    "question": "What is the primary function of the 'Controller' in an MVC server-side framework?",
+    "options": [
+      "To store persistent data in the database",
+      "To define the visual layout of the application",
+      "To provide CSS styling to the HTML"
+    ],
+    "answer": "To process incoming requests and mediate between Model and View",
+    "explanation": "The Controller accepts input and converts it to commands for the Model or View."
+  },
+  {
+    "question": "Which of the following is a key characteristic of a dynamic web application compared to a static one?",
+    "options": [
+      "It displays the exact same content to every user",
+      "It consists only of HTML and CSS files",
+      "It does not require a web server to function"
+    ],
+    "answer": "It generates content in real-time based on user requests or data",
+    "explanation": "Dynamic applications use server-side processing to deliver personalized or changing content."
+  },
+  {
+    "question": "In the context of client-side application frameworks like React or Angular, what is the 'Virtual DOM' used for?",
+    "options": [
+      "To store user passwords securely",
+      "To manage server-side database connections",
+      "To replace the need for CSS"
+    ],
+    "answer": "To optimize UI updates by minimizing direct manipulation of the actual DOM",
+    "explanation": "The Virtual DOM allows frameworks to calculate the most efficient way to update the browser UI."
+  },
+  {
+    "question": "Which HTTP method is most commonly used in RESTful APIs to retrieve a specific resource without modifying it?",
+    "options": [
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "answer": "GET",
+    "explanation": "The GET method is intended only to retrieve data and should have no side effects on the server."
+  },
+  {
+    "question": "What does an Object-Relational Mapper (ORM) like Django's ORM or Hibernate allow developers to do?",
+    "options": [
+      "Directly edit the browser's render engine",
+      "Automatically generate CSS from HTML tags",
+      "Convert JavaScript code into Python code"
+    ],
+    "answer": "Interact with a database using object-oriented code instead of raw SQL",
+    "explanation": "ORMs bridge the gap between object-oriented programming languages and relational databases."
+  },
+  {
+    "question": "Which term describes the ability of a database layer to ensure data remains available even after a system restart?",
+    "options": [
+      "Volatilization",
+      "Encapsulation",
+      "Abstraction"
+    ],
+    "answer": "Persistency",
+    "explanation": "Persistency layers ensure that data is saved to non-volatile storage like a hard drive."
+  },
+  {
+    "question": "In web development, what is the main purpose of 'Session Management'?",
+    "options": [
+      "To speed up the loading of images",
+      "To encrypt the source code of the website",
+      "To compile JavaScript into machine code"
+    ],
+    "answer": "To maintain user state and data across multiple requests",
+    "explanation": "Since HTTP is stateless, sessions are used to remember users as they move from page to page."
+  },
+  {
+    "question": "What is the main goal of 'Design Thinking' in the UI/UX process?",
+    "options": [
+      "To make the code run as fast as possible",
+      "To reduce the number of lines of CSS used",
+      "To automate the deployment of web servers"
+    ],
+    "answer": "To solve complex problems by prioritizing the user's needs and experiences",
+    "explanation": "Design thinking is a human-centered approach to innovation and problem-solving."
+  },
+  {
+    "question": "Which of the following is a core principle of 'Accessibility Compliance' (WCAG) in web design?",
+    "options": [
+      "Using the most expensive fonts available",
+      "Requiring the latest hardware to run a site",
+      "Ensuring all code is written in a single file"
+    ],
+    "answer": "Ensuring content is perceivable and operable for people with disabilities",
+    "explanation": "Accessibility focuses on making web content usable for everyone, including those with visual or motor impairments."
+  },
+  {
+    "question": "In Bootstrap, which class is used to create a responsive, fixed-width container?",
+    "options": [
+      ".container-fluid",
+      ".container-responsive",
+      ".box-container"
+    ],
+    "answer": ".container",
+    "explanation": "The .container class provides a responsive fixed-width container that changes based on screen size."
+  },
+  {
+    "question": "What is 'Paper Prototyping' primarily used for during the design process?",
+    "options": [
+      "Generating final production-ready HTML",
+      "Testing server-side database performance",
+      "Calculating the total cost of a project"
+    ],
+    "answer": "Quickly testing and iterating user interface ideas at a low cost",
+    "explanation": "Paper prototypes are hand-drawn sketches used to simulate the interface for early usability testing."
+  },
+  {
+    "question": "In software testing, what is the purpose of 'Visual (GUI) Testing'?",
+    "options": [
+      "To check the speed of SQL queries",
+      "To ensure the server's RAM usage is low",
+      "To verify the encryption of user passwords"
+    ],
+    "answer": "To ensure the user interface appears and functions correctly for the end-user",
+    "explanation": "GUI testing focuses on the elements of the application that the user actually sees and interacts with."
+  },
+  {
+    "question": "What is the function of a 'Breakpoint' when using an IDE debugger?",
+    "options": [
+      "To permanently delete a section of code",
+      "To automatically fix syntax errors",
+      "To speed up the execution of a loop"
+    ],
+    "answer": "To pause program execution at a specific line to inspect its state",
+    "explanation": "Breakpoints allow developers to stop execution and examine variables and program flow."
+  },
+  {
+    "question": "Which of these is a widely used IT Service Management (ITSM) framework that developers might encounter?",
+    "options": [
+      "REST",
+      "JSON",
+      "SASS"
+    ],
+    "answer": "ITIL",
+    "explanation": "ITIL (Information Technology Infrastructure Library) is a standard framework for managing IT services."
+  },
+  {
+    "question": "Why is 'Time Management' considered a critical soft skill for software developers?",
+    "options": [
+      "It allows developers to write code without testing it",
+      "It removes the need for team meetings",
+      "It ensures that the server never goes offline"
+    ],
+    "answer": "It helps prioritize tasks and meet project deadlines effectively",
+    "explanation": "Effective time management ensures that developers can deliver high-quality work within the allotted schedule."
+  },
+  {
+    "question": "In the context of 'Presentation Skills', what is a best practice for a developer explaining a technical feature to stakeholders?",
+    "options": [
+      "Using as much complex jargon as possible",
+      "Reading every word directly from the slides",
+      "Avoiding any visual aids or diagrams"
+    ],
+    "answer": "Translating technical details into clear benefits for the user or business",
+    "explanation": "Effective communication requires tailoring the message to the audience's level of technical understanding."
+  },
+  {
+    "question": "What is a 'Prototype' in the UI design process?",
+    "options": [
+      "The final version of the software ready for sale",
+      "A script that manages database migrations",
+      "A legal document outlining project ownership"
+    ],
+    "answer": "An early sample or model built to test a concept or process",
+    "explanation": "Prototypes are used to visualize and test the functionality of a design before full development."
+  },
+  {
+    "question": "In Django, which file is typically used to define the structure of your database tables?",
+    "options": [
+      "views.py",
+      "urls.py",
+      "settings.py"
+    ],
+    "answer": "models.py",
+    "explanation": "The models.py file defines the data schema using Python classes."
+  },
+  {
+    "question": "What does 'Statelessness' mean in the context of REST architecture?",
+    "options": [
+      "The server stores the user's history in its memory",
+      "The client does not need to send any headers",
+      "The server is allowed to go offline at any time"
+    ],
+    "answer": "Each request from a client contains all the information needed to process it",
+    "explanation": "REST requires that the server does not store session state; every request must be self-contained."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a navigation bar?",
+    "options": [
+      ".nav-group",
+      ".menu-bar",
+      ".header-nav"
+    ],
+    "answer": ".navbar",
+    "explanation": "The .navbar class is the base class for creating navigation components in Bootstrap."
+  },
+  {
+    "question": "What is 'Server-Side Rendering' (SSR) in modern JS frameworks like React?",
+    "options": [
+      "Storing the entire website on the user's hard drive",
+      "Writing CSS that only works on the server",
+      "Processing the database on the client's browser"
+    ],
+    "answer": "Converting JavaScript components into HTML on the server before sending them to the client",
+    "explanation": "SSR improves initial load time and SEO by providing fully rendered HTML from the server."
+  },
+  {
+    "question": "In a web form, which attribute in the <form> tag specifies where to send the form-data?",
+    "options": [
+      "method",
+      "target",
+      "id"
+    ],
+    "answer": "action",
+    "explanation": "The action attribute defines the URL where the form data should be submitted."
+  },
+  {
+    "question": "What is 'Usability Testing'?",
+    "options": [
+      "Checking if the server can handle 1 million users",
+      "Scanning the code for security vulnerabilities",
+      "Measuring the speed of the internet connection"
+    ],
+    "answer": "Evaluating a product by testing it with representative users",
+    "explanation": "Usability testing helps identify areas where users struggle with the interface."
+  },
+  {
+    "question": "What is the purpose of 'Validation' in server-side form handling?",
+    "options": [
+      "To change the color of the submit button",
+      "To ensure the user is using a modern browser",
+      "To translate the form into different languages"
+    ],
+    "answer": "To ensure the submitted data meets required formats and security standards",
+    "explanation": "Server-side validation protects the database and ensures data integrity."
+  },
+  {
+    "question": "Which of these is a benefit of using a 'Client-Side Framework'?",
+    "options": [
+      "It eliminates the need for a backend server",
+      "It makes the website impossible to hack",
+      "It reduces the size of the server's database"
+    ],
+    "answer": "It provides a more responsive and 'app-like' user experience",
+    "explanation": "Client-side frameworks handle UI updates without requiring a full page reload."
+  },
+  {
+    "question": "What is 'Control Flow' in server-side programming?",
+    "options": [
+      "The way the CSS styles are applied to the page",
+      "The method used to encrypt data in transit",
+      "The speed at which the user scrolls the page"
+    ],
+    "answer": "The order in which individual statements or instructions are executed",
+    "explanation": "Control flow involves using loops, conditionals, and functions to direct program execution."
+  },
+  {
+    "question": "In the context of database management, what does 'LINQ' stand for in the .NET ecosystem?",
+    "options": [
+      "Local Integrated Network Queue",
+      "List Interface and Navigation Query",
+      "Logical Internal Node Quantifier"
+    ],
+    "answer": "Language Integrated Query",
+    "explanation": "LINQ allows developers to write queries directly in C# or VB.NET code."
+  },
+  {
+    "question": "Which CSS property is used to change the text color of an element?",
+    "options": [
+      "font-color",
+      "text-style",
+      "background-color"
+    ],
+    "answer": "color",
+    "explanation": "The 'color' property in CSS defines the foreground color (text) of an element."
+  },
+  {
+    "question": "What is the primary role of 'IT Service Management' (ITSM) for a developer?",
+    "options": [
+      "To learn how to type faster",
+      "To design new logos for the company",
+      "To write the legal terms of service"
+    ],
+    "answer": "To align IT service delivery with the needs of the business and users",
+    "explanation": "ITSM focuses on the structured delivery and management of IT services."
+  },
+  {
+    "question": "In Bootstrap's grid system, how many columns make up a single row?",
+    "options": [
+      "10",
+      "8",
+      "16"
+    ],
+    "answer": "12",
+    "explanation": "Bootstrap uses a 12-column grid system for creating responsive layouts."
+  },
+  {
+    "question": "What is an example of a 'Server-Side MVC Framework'?",
+    "options": [
+      "React",
+      "Vue.js",
+      "Bootstrap"
+    ],
+    "answer": "Django",
+    "explanation": "Django is a high-level Python web framework that follows the Model-Template-View pattern (a variation of MVC)."
+  },
+  {
+    "question": "Which HTML tag is used to define an unordered list?",
+    "options": [
+      "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "answer": "<ul>",
+    "explanation": "The <ul> tag defines an unordered (bulleted) list."
+  },
+  {
+    "question": "What is the purpose of the 'alt' attribute in an <img> tag?",
+    "options": [
+      "To provide a link to a high-resolution version",
+      "To define the width of the image",
+      "To apply a filter to the image"
+    ],
+    "answer": "To provide alternative text if the image cannot be displayed",
+    "explanation": "The alt attribute is essential for accessibility and for when images fail to load."
+  },
+  {
+    "question": "Which of the following is a key phase in the 'Design Process'?",
+    "options": [
+      "Compiling",
+      "Refactoring",
+      "Minifying"
+    ],
+    "answer": "Ideation",
+    "explanation": "Ideation is the stage where designers generate a broad range of ideas and solutions."
+  },
+  {
+    "question": "What does the 'V' in MVC stand for?",
+    "options": [
+      "Variable",
+      "Virtual",
+      "Validator"
+    ],
+    "answer": "View",
+    "explanation": "The View is responsible for the presentation layer (what the user sees)."
+  },
+  {
+    "question": "Which tool is commonly used for 'Time Management' by developers?",
+    "options": [
+      "Chrome DevTools",
+      "Git",
+      "Postman"
+    ],
+    "answer": "Trello",
+    "explanation": "Trello is a popular project management tool used to track tasks and time."
+  },
+  {
+    "question": "In CSS, how do you select an element with a specific 'id'?",
+    "options": [
+      ".id-name",
+      "id-name",
+      "*id-name"
+    ],
+    "answer": "#id-name",
+    "explanation": "The '#' symbol is used in CSS to target an element by its unique ID."
+  },
+  {
+    "question": "What is 'Rapid Prototyping'?",
+    "options": [
+      "Writing the fastest possible backend code",
+      "Deploying updates to a server every hour",
+      "Automatically generating documentation from code"
+    ],
+    "answer": "Quickly creating a scale model of a part or assembly",
+    "explanation": "In software, it refers to quickly mocking up an interface to gather feedback."
+  },
+  {
+    "question": "Which of the following is a common 'Soft Skill' for developers?",
+    "options": [
+      "Asymptotic Analysis",
+      "SQL Querying",
+      "Memory Management"
+    ],
+    "answer": "Empathy",
+    "explanation": "Empathy is a soft skill that helps developers understand user needs and collaborate with teammates."
+  },
+  {
+    "question": "In a RESTful API, which status code indicates that a resource was 'Not Found'?",
+    "options": [
+      "200",
+      "500",
+      "403"
+    ],
+    "answer": "404",
+    "explanation": "The 404 Not Found error code means the server could not find the requested resource."
+  },
+  {
+    "question": "What is 'ActiveRecord' in the context of ORMs?",
+    "options": [
+      "A database that only stores audio files",
+      "A JavaScript library for animations",
+      "A networking protocol for high-speed transfers"
+    ],
+    "answer": "A design pattern where a class represents a table and an instance represents a row",
+    "explanation": "ActiveRecord is an ORM pattern used by frameworks like Ruby on Rails."
+  },
+  {
+    "question": "In React, what are 'Props' used for?",
+    "options": [
+      "To store private data that cannot be shared",
+      "To style elements using CSS-in-JS",
+      "To connect to the backend database"
+    ],
+    "answer": "To pass data from a parent component to a child component",
+    "explanation": "Props (short for properties) allow components to be dynamic and reusable."
+  },
+  {
+    "question": "What does the 'Cascading' in CSS refer to?",
+    "options": [
+      "The way images fall down a page",
+      "The speed of the network request",
+      "The process of deleting old code"
+    ],
+    "answer": "The order of priority used to determine which styles apply to an element",
+    "explanation": "Cascading refers to the logic used to resolve conflicts between different style rules."
+  },
+  {
+    "question": "What is the primary benefit of 'Debugging' software?",
+    "options": [
+      "To add new features to the application",
+      "To improve the visual design of the UI",
+      "To increase the cost of the software"
+    ],
+    "answer": "To identify and remove errors or bugs from the code",
+    "explanation": "Debugging is the process of finding and fixing issues that cause software to behave unexpectedly."
+  },
+  {
+    "question": "Which HTML element is used for the largest heading?",
+    "options": [
+      "<heading>",
+      "<h6>",
+      "<head>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> is the standard HTML tag for the most important, top-level heading."
+  },
+  {
+    "question": "In Bootstrap, which class is used to create a button with a blue background (primary color)?",
+    "options": [
+      ".btn-blue",
+      ".btn-main",
+      ".btn-info"
+    ],
+    "answer": ".btn-primary",
+    "explanation": "The .btn-primary class applies the theme's primary branding color (usually blue) to a button."
+  },
+  {
+    "question": "What is a 'Dynamic HTML' content generation?",
+    "options": [
+      "Manually typing HTML code into a text editor",
+      "Creating a PDF document from a website",
+      "Using CSS to animate a static box"
+    ],
+    "answer": "Using a script to create or change HTML elements at runtime",
+    "explanation": "Dynamic HTML involves using languages like JavaScript or Python to generate content on the fly."
+  },
+  {
+    "question": "What is the purpose of 'Unit Testing'?",
+    "options": [
+      "Testing the entire application at once",
+      "Testing how the application looks on a phone",
+      "Testing the server's hardware capacity"
+    ],
+    "answer": "Testing individual components or functions in isolation",
+    "explanation": "Unit tests ensure that small, specific parts of the code work correctly on their own."
+  },
+  {
+    "question": "In the context of soft skills, what does 'Active Listening' involve?",
+    "options": [
+      "Listening to music while coding",
+      "Correcting the speaker every time they make a mistake",
+      "Recording a meeting to listen to it later"
+    ],
+    "answer": "Fully concentrating, understanding, and responding to a speaker",
+    "explanation": "Active listening is crucial for effective teamwork and understanding project requirements."
+  }
+]

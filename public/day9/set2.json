@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Which component of the MVC architecture is primarily responsible for rendering the data to the user interface?",
+    "options": [
+      "Model",
+      "Controller",
+      "Router"
+    ],
+    "answer": "View",
+    "explanation": "The View is responsible for the presentation logic and displaying data provided by the model to the end user."
+  },
+  {
+    "question": "In dynamic web application development, what is the main advantage of using a 'Client-Side Framework' like Vue or React?",
+    "options": [
+      "It eliminates the need for any backend server entirely",
+      "It makes the application's source code invisible to users",
+      "It reduces the security risks associated with SQL injection"
+    ],
+    "answer": "It allows for high interactivity by updating the UI without full page reloads",
+    "explanation": "Client-side frameworks manage state in the browser, providing a smoother, app-like experience."
+  },
+  {
+    "question": "When building a web application with Django, which file is used to map URL patterns to specific Python functions?",
+    "options": [
+      "models.py",
+      "views.py",
+      "settings.py"
+    ],
+    "answer": "urls.py",
+    "explanation": "The urls.py file acts as the router, directing incoming web requests to the appropriate view logic."
+  },
+  {
+    "question": "Why is 'Server-Side Validation' considered mandatory even if client-side validation is already implemented?",
+    "options": [
+      "Server-side validation is faster for the user to see",
+      "Client-side validation cannot check for empty fields",
+      "Server-side validation is only required for CSS styling"
+    ],
+    "answer": "Client-side validation can be bypassed by malicious users or disabled in the browser",
+    "explanation": "Server-side validation is the final line of defense to ensure data integrity and security."
+  },
+  {
+    "question": "In the context of database persistency, what is the primary role of an 'Entity Framework' or 'Hibernate'?",
+    "options": [
+      "To compress the database to save disk space",
+      "To encrypt the entire database server",
+      "To automatically generate CSS files from database tables"
+    ],
+    "answer": "To map database tables to objects in an object-oriented programming language",
+    "explanation": "These ORM (Object-Relational Mapping) tools allow developers to work with data as objects rather than writing raw SQL."
+  },
+  {
+    "question": "What does 'LINQ' (Language Integrated Query) enable a developer to do in a .NET environment?",
+    "options": [
+      "Translate HTML into JavaScript automatically",
+      "Create responsive grid layouts without CSS",
+      "Debug network latency in real-time"
+    ],
+    "answer": "Write structured queries for data directly within the C# or VB.NET language",
+    "explanation": "LINQ provides a consistent syntax for querying different types of data sources like SQL databases or XML."
+  },
+  {
+    "question": "Which of the following is a key constraint of the REST (Representational State Transfer) architecture?",
+    "options": [
+      "The server must maintain a persistent connection with the client",
+      "The client must be written in the same language as the server",
+      "Every request must be sent via a POST method"
+    ],
+    "answer": "Statelessness: each request must contain all information needed to understand it",
+    "explanation": "Statelessness ensures that the server does not need to store user session context between requests."
+  },
+  {
+    "question": "What is the primary SEO (Search Engine Optimization) benefit of 'Server-Side Rendering' (SSR) in JavaScript frameworks?",
+    "options": [
+      "It makes the JavaScript files smaller",
+      "It prevents the website from being indexed by bots",
+      "It automatically generates meta tags for every image"
+    ],
+    "answer": "It provides fully rendered HTML content that search engine crawlers can easily read",
+    "explanation": "SSR ensures that the content is available immediately in the HTML source, which is better for web crawlers."
+  },
+  {
+    "question": "In software testing, what is 'Visual (GUI) Testing' primarily concerned with?",
+    "options": [
+      "Checking the performance of the CPU under heavy load",
+      "Verifying the logic of internal math functions",
+      "Ensuring the database has the correct table relationships"
+    ],
+    "answer": "Ensuring the visual elements of the application appear correctly and in the right place",
+    "explanation": "GUI testing focuses on the layout, colors, fonts, and interactive elements seen by the user."
+  },
+  {
+    "question": "When using an IDE debugger, what does 'Stepping Over' a line of code mean?",
+    "options": [
+      "Deleting the line of code temporarily",
+      "Entering inside the function called on that line to debug it",
+      "Terminating the debugging session immediately"
+    ],
+    "answer": "Executing the current line and moving to the next line without entering into functions",
+    "explanation": "Stepping over allows you to stay in the current function context while executing the next instruction."
+  },
+  {
+    "question": "Which phase of 'Design Thinking' involves creating a range of potential solutions without judgment?",
+    "options": [
+      "Empathize",
+      "Define",
+      "Prototype"
+    ],
+    "answer": "Ideate",
+    "explanation": "The Ideate phase is about brainstorming and generating as many ideas as possible to solve the defined problem."
+  },
+  {
+    "question": "How does 'Accessibility Compliance' (like WCAG) help users with visual impairments?",
+    "options": [
+      "By increasing the number of images on the page",
+      "By forcing all text to be written in capital letters",
+      "By removing all JavaScript from the application"
+    ],
+    "answer": "By ensuring compatibility with screen readers through semantic HTML and ARIA labels",
+    "explanation": "Accessible design ensures that assistive technologies can interpret and navigate the content correctly."
+  },
+  {
+    "question": "What is the main purpose of a 'Low-Fidelity Prototype' in UI/UX design?",
+    "options": [
+      "To present the final visual branding to the client",
+      "To test the speed of the production database",
+      "To create the final CSS code for the project"
+    ],
+    "answer": "To quickly test the flow and basic layout of an application at low cost",
+    "explanation": "Low-fidelity prototypes (like sketches) help validate concepts before investing time in detailed design."
+  },
+  {
+    "question": "Which 'Time Management' tool involves breaking work into 25-minute focused intervals followed by short breaks?",
+    "options": [
+      "Eisenhower Matrix",
+      "Kanban Board",
+      "Gantt Chart"
+    ],
+    "answer": "Pomodoro Technique",
+    "explanation": "The Pomodoro Technique helps maintain focus and prevent burnout by using timed work blocks."
+  },
+  {
+    "question": "In IT Service Management (ITSM), what is the difference between an 'Incident' and a 'Problem'?",
+    "options": [
+      "An incident is a feature request, while a problem is a bug",
+      "They are exactly the same thing in all frameworks",
+      "A problem is a visual error, while an incident is a backend error"
+    ],
+    "answer": "An incident is an unplanned interruption, while a problem is the underlying cause of one or more incidents",
+    "explanation": "Incident management restores service quickly; problem management identifies and resolves the root cause."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a flexible 'grid' layout container?",
+    "options": [
+      ".flexbox",
+      ".layout-grid",
+      ".group"
+    ],
+    "answer": ".row",
+    "explanation": "In Bootstrap, columns (.col) must be placed inside a .row to function correctly within the grid system."
+  },
+  {
+    "question": "What is the purpose of the 'Session' object in server-side web development?",
+    "options": [
+      "To store global variables accessible by all users simultaneously",
+      "To permanentely store the user's password in the database",
+      "To speed up the rendering of CSS animations"
+    ],
+    "answer": "To store information about a specific user across multiple requests",
+    "explanation": "Sessions allow the server to 'remember' a user as they navigate between different pages of the site."
+  },
+  {
+    "question": "Which HTTP method is used in a REST API to update an existing resource completely?",
+    "options": [
+      "GET",
+      "POST",
+      "DELETE"
+    ],
+    "answer": "PUT",
+    "explanation": "The PUT method is used to replace an existing resource or create it if it doesn't exist."
+  },
+  {
+    "question": "In a Django view, what is the 'request' parameter?",
+    "options": [
+      "The URL of the database server",
+      "The HTML template being rendered",
+      "A dictionary containing only the user's CSS preferences"
+    ],
+    "answer": "An object containing metadata about the incoming HTTP request",
+    "explanation": "The request object holds data like GET/POST parameters, headers, and user session information."
+  },
+  {
+    "question": "What is the primary function of a 'Database Migration' in a framework like Django or Entity Framework?",
+    "options": [
+      "To move the database from one server to another",
+      "To backup the data to an external hard drive",
+      "To translate SQL queries into a different human language"
+    ],
+    "answer": "To propagate changes made to models into the database schema",
+    "explanation": "Migrations keep your database tables in sync with your code-defined models."
+  },
+  {
+    "question": "What does the 'Cascading' part of CSS (Cascading Style Sheets) prioritize when styles conflict?",
+    "options": [
+      "The longest line of code",
+      "The style that uses the most colors",
+      "The style written in the oldest file"
+    ],
+    "answer": "Specificity, importance, and source order",
+    "explanation": "The cascade determines which rule wins based on how specific the selector is and where it appears."
+  },
+  {
+    "question": "Which of these is a 'Soft Skill' that is crucial for a developer working in an Agile team?",
+    "options": [
+      "Algorithm Complexity Analysis",
+      "Database Normalization",
+      "Binary Search Implementation"
+    ],
+    "answer": "Constructive Feedback",
+    "explanation": "Being able to give and receive helpful feedback is essential for team growth and project quality."
+  },
+  {
+    "question": "What is 'Usability Testing' in the UI/UX process?",
+    "options": [
+      "Checking if the code compiles without errors",
+      "Verifying that the server can handle 5000 requests per second",
+      "Ensuring the database is using the latest encryption"
+    ],
+    "answer": "Observing real users as they attempt to complete tasks with the product",
+    "explanation": "Usability testing identifies friction points and areas where the interface is confusing to users."
+  },
+  {
+    "question": "In the context of REST, what does it mean for an operation to be 'Idempotent'?",
+    "options": [
+      "It can only be executed by an administrator",
+      "It requires a password every time it is called",
+      "It always results in a 404 error"
+    ],
+    "answer": "Making the same request multiple times has the same effect as making it once",
+    "explanation": "GET, PUT, and DELETE are idempotent; calling them multiple times doesn't change the state further."
+  },
+  {
+    "question": "Which Bootstrap class is used to make an image responsive so it scales with its parent element?",
+    "options": [
+      ".img-responsive",
+      ".img-scale",
+      ".img-auto"
+    ],
+    "answer": ".img-fluid",
+    "explanation": "The .img-fluid class applies 'max-width: 100%' and 'height: auto' to the image."
+  },
+  {
+    "question": "What is 'Visual Design Basics' primarily concerned with in web development?",
+    "options": [
+      "Optimizing the backend database queries",
+      "Securing the server's firewall settings",
+      "Minifying JavaScript files for faster loading"
+    ],
+    "answer": "Principles like contrast, alignment, repetition, and proximity",
+    "explanation": "Visual design focuses on the aesthetics and usability of the interface layout."
+  },
+  {
+    "question": "In JavaScript frameworks, what is a 'Component'?",
+    "options": [
+      "A hardware part of the web server",
+      "A single line of CSS code",
+      "A database table row"
+    ],
+    "answer": "An independent, reusable piece of the UI",
+    "explanation": "Components allow developers to build complex interfaces by combining smaller, isolated parts."
+  },
+  {
+    "question": "Why is 'Presentation Skills' important for a developer's career?",
+    "options": [
+      "It allows them to avoid writing documentation",
+      "It helps them code faster in front of an audience",
+      "It is required for installing software on a server"
+    ],
+    "answer": "It enables them to effectively communicate technical ideas to non-technical stakeholders",
+    "explanation": "Developers must often pitch ideas or explain project status to managers or clients."
+  },
+  {
+    "question": "What is the function of the 'alt' attribute in an HTML <img> tag?",
+    "options": [
+      "To set the alignment of the image",
+      "To provide a link to the image source",
+      "To define the border style of the image"
+    ],
+    "answer": "To provide a text description for screen readers and if the image fails to load",
+    "explanation": "The 'alt' attribute is vital for web accessibility and SEO."
+  },
+  {
+    "question": "In a Django template, how do you display a variable named 'username' passed from the view?",
+    "options": [
+      "{ username }",
+      "<% username %>",
+      "[username]"
+    ],
+    "answer": "{{ username }}",
+    "explanation": "Django uses double curly braces to output variable content into the HTML template."
+  },
+  {
+    "question": "Which tool would a developer use to manage and track IT service requests and incidents?",
+    "options": [
+      "Photoshop",
+      "Visual Studio Code",
+      "Postman"
+    ],
+    "answer": "ServiceNow or Jira Service Management",
+    "explanation": "These ITSM tools are designed to track and manage support tickets and service delivery."
+  },
+  {
+    "question": "In CSS, what does the 'z-index' property control?",
+    "options": [
+      "The horizontal position of an element",
+      "The transparency of an element",
+      "The zoom level of the browser"
+    ],
+    "answer": "The stack order of elements along the z-axis (depth)",
+    "explanation": "A higher z-index means the element will appear on top of elements with a lower z-index."
+  },
+  {
+    "question": "What is a 'User Journey Map' in UI/UX design?",
+    "options": [
+      "A map of the physical location of users",
+      "A diagram of the server infrastructure",
+      "A list of all the JavaScript files used in a project"
+    ],
+    "answer": "A visualization of the process a person goes through to accomplish a goal",
+    "explanation": "Journey maps help designers understand the user's emotions and pain points at each step."
+  },
+  {
+    "question": "What is 'Regression Testing'?",
+    "options": [
+      "Testing the application only on older browsers",
+      "Testing if the database can be deleted",
+      "Testing the speed of the user's internet"
+    ],
+    "answer": "Re-running tests to ensure that new changes haven't broken existing functionality",
+    "explanation": "Regression testing ensures that 'fixed' bugs don't reappear and new code doesn't break old code."
+  },
+  {
+    "question": "Which of the following is a key aspect of 'Time Management' for developers?",
+    "options": [
+      "Multi-tasking on five projects at once",
+      "Working 24 hours straight to finish a task",
+      "Refusing to help teammates to save time"
+    ],
+    "answer": "Prioritizing tasks based on urgency and importance",
+    "explanation": "Effective prioritization ensures that the most critical work is completed first."
+  },
+  {
+    "question": "In Bootstrap, how do you create a column that takes up half the width on medium-sized screens?",
+    "options": [
+      ".col-6",
+      ".col-half",
+      ".col-md-50"
+    ],
+    "answer": ".col-md-6",
+    "explanation": "Bootstrap uses a 12-column grid; thus, 6 columns represent 50% width."
+  },
+  {
+    "question": "What is the purpose of 'Form Data Validation' on the server?",
+    "options": [
+      "To automatically fill in the user's name",
+      "To change the font of the input text",
+      "To send an email to the user immediately"
+    ],
+    "answer": "To ensure the data is safe and in the correct format before saving it to the database",
+    "explanation": "Validation prevents invalid data entry and protects against security threats like XSS."
+  },
+  {
+    "question": "What is 'Angular Server Rendering' (Universal) mainly used for?",
+    "options": [
+      "Running Angular without any HTML",
+      "Storing Angular code in a SQL database",
+      "Connecting Angular to a printer"
+    ],
+    "answer": "Rendering Angular applications on the server side for better performance and SEO",
+    "explanation": "Angular Universal allows the server to send a pre-rendered page to the browser."
+  },
+  {
+    "question": "In a REST API, what does a '201 Created' status code signify?",
+    "options": [
+      "The request failed due to a server error",
+      "The resource was deleted successfully",
+      "The server is still processing the request"
+    ],
+    "answer": "A new resource has been successfully created as a result of the request",
+    "explanation": "This is the standard response for a successful POST request that creates a resource."
+  },
+  {
+    "question": "What is the 'Watch' window used for in an IDE debugger?",
+    "options": [
+      "To see the time remaining until the project deadline",
+      "To watch videos on how to code",
+      "To monitor the temperature of the CPU"
+    ],
+    "answer": "To monitor the values of specific variables or expressions as the code runs",
+    "explanation": "The Watch window allows you to track how data changes during program execution."
+  },
+  {
+    "question": "Which of the following describes 'Design Thinking'?",
+    "options": [
+      "A way to write code that only uses graphics",
+      "A method for choosing the best server hardware",
+      "A technique for optimizing SQL queries"
+    ],
+    "answer": "A human-centered approach to innovation and problem-solving",
+    "explanation": "Design thinking focuses on understanding user needs and iterating on solutions."
+  },
+  {
+    "question": "In IT Service Management, what is an 'SLA' (Service Level Agreement)?",
+    "options": [
+      "A type of software license for developers",
+      "A security protocol for encrypted databases",
+      "A tool for minifying JavaScript files"
+    ],
+    "answer": "A contract between a service provider and a customer defining service standards",
+    "explanation": "The SLA specifies the expected level of service, such as uptime or response time."
+  },
+  {
+    "question": "Which CSS property is used to make a layout using 'Flexbox'?",
+    "options": [
+      "float: flex;",
+      "layout: flexible;",
+      "type: flex;"
+    ],
+    "answer": "display: flex;",
+    "explanation": "The 'display: flex' property turns an element into a flex container."
+  },
+  {
+    "question": "What is the benefit of using 'Semantic HTML' tags like <article> or <nav>?",
+    "options": [
+      "They make the text color blue automatically",
+      "They speed up the internet connection",
+      "They hide the content from users"
+    ],
+    "answer": "They provide meaning to the web page structure for both browsers and developers",
+    "explanation": "Semantic tags improve accessibility and SEO by defining the role of the content."
+  },
+  {
+    "question": "In Django, what is the purpose of 'Middleware'?",
+    "options": [
+      "To design the database tables",
+      "To create the CSS for the frontend",
+      "To store user uploaded images"
+    ],
+    "answer": "A framework of hooks into Django's request/response processing",
+    "explanation": "Middleware processes requests before they reach the view or responses before they leave."
+  },
+  {
+    "question": "What is a 'Wireframe' in the design process?",
+    "options": [
+      "The final high-resolution version of a UI",
+      "A 3D model of a computer case",
+      "A script that generates HTML code"
+    ],
+    "answer": "A basic blueprint that shows the skeletal framework of a website",
+    "explanation": "Wireframes focus on space allocation and functionality rather than color or graphics."
+  },
+  {
+    "question": "In the context of 'Presentation Skills', what is the 'Rule of Three'?",
+    "options": [
+      "Using only three colors on every slide",
+      "Speaking for exactly three minutes",
+      "Having three people present at once"
+    ],
+    "answer": "Organizing information into three main points to make it more memorable",
+    "explanation": "The brain processes information more effectively when it is grouped in threes."
+  },
+  {
+    "question": "What is 'Control Flow' in a server-side script?",
+    "options": [
+      "The speed at which the server sends data",
+      "The way the mouse moves on the screen",
+      "The visual design of the navigation bar"
+    ],
+    "answer": "The use of loops and conditionals to determine the path of execution",
+    "explanation": "Control flow uses 'if' statements and loops to decide which code runs when."
+  },
+  {
+    "question": "Which of these is a 'Visual Design Principle'?",
+    "options": [
+      "Encryption",
+      "Concurrency",
+      "Polymorphism"
+    ],
+    "answer": "Hierarchy",
+    "explanation": "Hierarchy uses size and color to guide the user's eye to the most important elements."
+  },
+  {
+    "question": "What is the primary objective of 'Software Debugging'?",
+    "options": [
+      "To make the application look better",
+      "To add new features to the software",
+      "To translate the code into another language"
+    ],
+    "answer": "To locate and fix the root cause of an error in the code",
+    "explanation": "Debugging is the systematic process of identifying and resolving bugs."
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "question": "In a server-side MVC framework, which component is responsible for retrieving a specific user record from the database using an ID?",
+    "options": [
+      "View",
+      "Controller",
+      "Router"
+    ],
+    "answer": "Model",
+    "explanation": "The Model handles the data logic and interacts with the database to perform CRUD operations."
+  },
+  {
+    "question": "Which HTTP status code is most appropriate when a REST API endpoint successfully processes a request to delete a resource?",
+    "options": [
+      "200 OK",
+      "201 Created",
+      "404 Not Found"
+    ],
+    "answer": "204 No Content",
+    "explanation": "204 No Content is standard for successful deletions where no further information needs to be sent back to the client."
+  },
+  {
+    "question": "What is the primary purpose of 'Cleaned Data' in Django’s form processing?",
+    "options": [
+      "To compress the data for faster database storage",
+      "To translate the data into different languages",
+      "To style the data for the HTML template"
+    ],
+    "answer": "To provide a dictionary of validated and sanitized form data",
+    "explanation": "Once form.is_valid() is called, cleaned_data ensures the input is converted into Python types and is safe to use."
+  },
+  {
+    "question": "Which of the following describes 'Client-Side Rendering' (CSR)?",
+    "options": [
+      "The server prepares the full HTML page before sending it",
+      "The database sends SQL queries directly to the browser",
+      "The browser is used only to display static images"
+    ],
+    "answer": "The browser downloads a minimal HTML page and uses JavaScript to render content",
+    "explanation": "In CSR, the heavy lifting of rendering the UI is done on the user's device rather than the server."
+  },
+  {
+    "question": "In the context of 'Visual (GUI) Software Testing', what is a 'Smoke Test'?",
+    "options": [
+      "Testing the server hardware for overheating",
+      "Checking the code for hidden comments",
+      "Testing the application's performance under 1 million users"
+    ],
+    "answer": "A quick test to ensure the most critical functions of the UI work",
+    "explanation": "Smoke testing verifies that the build is stable enough for further, more detailed testing."
+  },
+  {
+    "question": "When debugging code, what does 'Watching' a variable allow you to do?",
+    "options": [
+      "Change the variable's name automatically",
+      "Hide the variable from other developers",
+      "Delete the variable if it causes an error"
+    ],
+    "answer": "Track the value of the variable in real-time as the program executes",
+    "explanation": "The Watch window in an IDE displays the current value of selected variables at every step of execution."
+  },
+  {
+    "question": "What is the 'Double Diamond' model often used for in UI/UX design?",
+    "options": [
+      "To encrypt user data twice for extra security",
+      "To organize database tables into two separate clusters",
+      "To speed up the loading time of CSS files"
+    ],
+    "answer": "To represent the process of exploring an issue and then taking focused action",
+    "explanation": "The Double Diamond maps the design process through four stages: Discover, Define, Develop, and Deliver."
+  },
+  {
+    "question": "Which aspect of 'Visual Design Basics' refers to the visual weight of elements on a page?",
+    "options": [
+      "Typography",
+      "Proximity",
+      "Contrast"
+    ],
+    "answer": "Balance",
+    "explanation": "Balance ensures that no single part of a design overpowers the others, creating a sense of stability."
+  },
+  {
+    "question": "What is the main goal of 'IT Service Management' (ITSM) for a development team?",
+    "options": [
+      "To minimize the amount of code written",
+      "To maximize the physical size of the server room",
+      "To ensure that only senior developers write logic"
+    ],
+    "answer": "To align the delivery of IT services with the needs of the business",
+    "explanation": "ITSM focuses on efficient service delivery, including incident, change, and problem management."
+  },
+  {
+    "question": "Which 'Soft Skill' involves the ability to adjust to new technologies and changing project requirements?",
+    "options": [
+      "Integrity",
+      "Public Speaking",
+      "Empathy"
+    ],
+    "answer": "Adaptability",
+    "explanation": "Adaptability is critical in tech because requirements and tools evolve rapidly."
+  },
+  {
+    "question": "In Bootstrap, which class is used to create a modal (pop-up) window?",
+    "options": [
+      ".pop-up",
+      ".dialog-box",
+      ".window-overlay"
+    ],
+    "answer": ".modal",
+    "explanation": "The .modal class is the base for creating dialog prompts and custom content overlays in Bootstrap."
+  },
+  {
+    "question": "Which HTTP method is 'Idempotent' but NOT 'Safe'?",
+    "options": [
+      "GET",
+      "POST",
+      "HEAD"
+    ],
+    "answer": "PUT",
+    "explanation": "PUT is idempotent (multiple calls have the same result), but not safe because it modifies the server's state."
+  },
+  {
+    "question": "In a Django view, how do you redirect a user to a different URL after a successful form submission?",
+    "options": [
+      "return render('success.html')",
+      "return Response('success')",
+      "return send_file('success.html')"
+    ],
+    "answer": "return redirect('url_name')",
+    "explanation": "Using a redirect prevents duplicate form submissions if the user refreshes the page."
+  },
+  {
+    "question": "What is the primary benefit of 'Session Management' in a shopping cart application?",
+    "options": [
+      "It makes the product images load faster",
+      "It encrypts the customer's credit card locally",
+      "It allows the website to run without a database"
+    ],
+    "answer": "It remembers what items the user added as they browse different pages",
+    "explanation": "Sessions store temporary data for specific users to maintain continuity across stateless HTTP requests."
+  },
+  {
+    "question": "Which type of prototype is best for testing the navigation flow of an app without any visual distractions?",
+    "options": [
+      "High-fidelity prototype",
+      "Finished production build",
+      "Video demo"
+    ],
+    "answer": "Low-fidelity wireframe",
+    "explanation": "Low-fidelity prototypes focus on structure and flow, helping users provide feedback on usability rather than aesthetics."
+  },
+  {
+    "question": "What does 'Accessibility' (A11y) mean in web development?",
+    "options": [
+      "Ensuring the server is reachable via Ping",
+      "Allowing developers to access the code from anywhere",
+      "Making sure the website is free to use"
+    ],
+    "answer": "Designing sites so people with disabilities can perceive and interact with them",
+    "explanation": "This includes screen reader support, keyboard navigation, and high color contrast."
+  },
+  {
+    "question": "In the context of 'Time Management', what is 'Context Switching'?",
+    "options": [
+      "Changing the CSS theme from dark mode to light mode",
+      "Switching between two different database engines",
+      "The process of saving code to a cloud repository"
+    ],
+    "answer": "The mental cost of shifting focus from one task to a completely different one",
+    "explanation": "Context switching reduces productivity because it takes time for a developer to 'get back in the zone' after an interruption."
+  },
+  {
+    "question": "What is the purpose of the 'Inspect Element' tool in modern browsers?",
+    "options": [
+      "To permanently edit the website for all users",
+      "To download the entire database of the website",
+      "To hide the website from search engines"
+    ],
+    "answer": "To view and temporarily modify the HTML and CSS of a page in real-time",
+    "explanation": "Browser DevTools are essential for debugging layouts and testing styles on the fly."
+  },
+  {
+    "question": "In MVC, where should the 'Validation Logic' for a database field typically reside?",
+    "options": [
+      "In the View",
+      "In the Browser",
+      "In the Router"
+    ],
+    "answer": "In the Model",
+    "explanation": "Placing validation in the Model ensures data integrity regardless of which Controller or View is accessing it."
+  },
+  {
+    "question": "Which Bootstrap class adds a rounded border to an image?",
+    "options": [
+      ".img-circle",
+      ".img-border",
+      ".img-curve"
+    ],
+    "answer": ".rounded",
+    "explanation": "The .rounded class applies a small border-radius to an element."
+  },
+  {
+    "question": "What is 'State Management' in a JavaScript framework like React or Angular?",
+    "options": [
+      "Managing the physical location of the web server",
+      "Deciding which country the app is allowed to run in",
+      "Ensuring the database is always online"
+    ],
+    "answer": "The process of managing the data that changes over time in the UI",
+    "explanation": "State management tracks user inputs, API results, and UI toggles to keep the view in sync with data."
+  },
+  {
+    "question": "What is the 'Eisenhower Matrix' used for in Developer Soft Skills?",
+    "options": [
+      "To calculate the efficiency of a sorting algorithm",
+      "To determine the best coding language for a project",
+      "To organize files in a Git repository"
+    ],
+    "answer": "To prioritize tasks by urgency and importance",
+    "explanation": "It helps developers distinguish between tasks that need immediate action and those that contribute to long-term goals."
+  },
+  {
+    "question": "In REST, what does 'Resource-Oriented' mean?",
+    "options": [
+      "Every user must pay a fee to access the API",
+      "The API only works with physical hardware resources",
+      "The code is written to use as little RAM as possible"
+    ],
+    "answer": "The API is designed around 'things' (nouns) rather than 'actions' (verbs)",
+    "explanation": "RESTful URIs should identify objects (e.g., /users/1) rather than procedures (e.g., /getUserData)."
+  },
+  {
+    "question": "What is 'Unit Testing' in software development?",
+    "options": [
+      "Testing the whole application as a single unit",
+      "Testing how the app works on a mobile phone",
+      "Testing the application's electrical power usage"
+    ],
+    "answer": "Testing the smallest testable parts of an application in isolation",
+    "explanation": "Unit tests focus on individual functions or methods to ensure they return the expected output for a given input."
+  },
+  {
+    "question": "Which of the following is a key principle of 'ITIL' (Information Technology Infrastructure Library)?",
+    "options": [
+      "Code should never be updated more than once a year",
+      "All developers must use the same operating system",
+      "Software should be written without using any libraries"
+    ],
+    "answer": "Continual Service Improvement (CSI)",
+    "explanation": "CSI is a core ITIL concept focused on constantly identifying and implementing improvements to IT services."
+  },
+  {
+    "question": "In UI design, what does 'Hierarchy' help the user understand?",
+    "options": [
+      "The password of the admin user",
+      "The total size of the website's database",
+      "The history of the company that built the app"
+    ],
+    "answer": "The relative importance of different elements on the screen",
+    "explanation": "Visual hierarchy uses size, color, and placement to guide the user's attention to the most important content first."
+  },
+  {
+    "question": "In Django, what is the 'Context' dictionary used for in the render() function?",
+    "options": [
+      "To store the user's login credentials safely",
+      "To define the database connection settings",
+      "To list the CSS files used by the template"
+    ],
+    "answer": "To pass data from the Python view to the HTML template",
+    "explanation": "The context allows dynamic data (like a list of items) to be displayed within the static HTML structure."
+  },
+  {
+    "question": "What is a 'Breadcrumb' navigation used for in UX?",
+    "options": [
+      "To track the user's mouse movements",
+      "To show a history of all items the user has deleted",
+      "To provide a link to the user's social media profile"
+    ],
+    "answer": "To show the user's current location within the site's folder structure",
+    "explanation": "Breadcrumbs help users navigate back to parent categories or the homepage easily."
+  },
+  {
+    "question": "Which tool is commonly used by developers for 'IT Service Management' and issue tracking?",
+    "options": [
+      "Photoshop",
+      "Excel",
+      "Sublime Text"
+    ],
+    "answer": "Jira",
+    "explanation": "Jira is a standard tool for managing tasks, bugs, and agile workflows in software development."
+  },
+  {
+    "question": "What is the primary role of the 'Controller' in an MVC application?",
+    "options": [
+      "To store and retrieve data from the hard drive",
+      "To define the colors and fonts of the webpage",
+      "To physically control the server hardware"
+    ],
+    "answer": "To handle user input and decide which Model or View to use",
+    "explanation": "The Controller acts as a coordinator, receiving requests and delegating tasks to other parts of the system."
+  },
+  {
+    "question": "Which CSS property is used to change the space between characters in a word?",
+    "options": [
+      "word-spacing",
+      "line-height",
+      "text-indent"
+    ],
+    "answer": "letter-spacing",
+    "explanation": "Letter-spacing controls the tracking (the space between characters) in a block of text."
+  },
+  {
+    "question": "In 'Software Debugging', what is a 'Step Out' command used for?",
+    "options": [
+      "To close the IDE and stop coding for the day",
+      "To delete the current line of code being debugged",
+      "To enter inside the next function call"
+    ],
+    "answer": "To finish the current function and return to the caller",
+    "explanation": "Step Out executes the remainder of the current function and pauses at the line following the function call."
+  },
+  {
+    "question": "What is 'Semantic HTML'?",
+    "options": [
+      "HTML that is written in a language other than English",
+      "HTML that includes only CSS styles",
+      "HTML that is generated by a robot"
+    ],
+    "answer": "HTML tags that describe the meaning of the content they contain",
+    "explanation": "Tags like <header>, <footer>, and <article> tell the browser and search engines what the content actually is."
+  },
+  {
+    "question": "In Bootstrap, which class creates a responsive navigation toggle button for mobile views?",
+    "options": [
+      ".nav-button",
+      ".menu-icon",
+      ".toggle-box"
+    ],
+    "answer": ".navbar-toggler",
+    "explanation": "The .navbar-toggler class is used for the 'hamburger' menu button that appears on small screens."
+  },
+  {
+    "question": "What is 'Regression Testing'?",
+    "options": [
+      "Testing the application on a very old computer",
+      "Testing the application by deleting random files",
+      "Testing only the visual colors of the website"
+    ],
+    "answer": "Testing to ensure that recent code changes haven't broken existing features",
+    "explanation": "Regression tests are run after updates to verify that the software still behaves correctly."
+  },
+  {
+    "question": "Which of the following is a 'UX Design' principle for accessibility?",
+    "options": [
+      "Using as many animations as possible",
+      "Hiding the navigation menu to save space",
+      "Making sure all buttons are exactly 10 pixels wide"
+    ],
+    "answer": "Providing sufficient color contrast between text and background",
+    "explanation": "High contrast is essential for users with low vision to read content effectively."
+  },
+  {
+    "question": "In the context of 'Presentation Skills', what is the purpose of a 'Call to Action' (CTA)?",
+    "options": [
+      "To tell the audience to be quiet",
+      "To explain the history of the internet",
+      "To list all the bugs currently in the code"
+    ],
+    "answer": "To clearly state what you want the audience to do next",
+    "explanation": "A CTA at the end of a presentation (e.g., 'Approve this budget' or 'Try the demo') gives the talk a clear purpose."
+  },
+  {
+    "question": "What is a 'Database Persistency Layer'?",
+    "options": [
+      "A layer of code that deletes data after 24 hours",
+      "A layer that styles the database tables with CSS",
+      "A layer that speeds up the user's mouse clicks"
+    ],
+    "answer": "A layer that handles saving and retrieving objects from a database",
+    "explanation": "It abstracts the database operations so the developer doesn't have to write raw SQL every time."
+  },
+  {
+    "question": "What is 'Prototyping' in the design process?",
+    "options": [
+      "Writing the final version of the software documentation",
+      "Fixing bugs in the production environment",
+      "Selling the software to the first customer"
+    ],
+    "answer": "Creating a preliminary model of a product to test a concept",
+    "explanation": "Prototyping allows designers to explore ideas and gather feedback before building the final product."
+  },
+  {
+    "question": "In Django, where do you define 'Custom Validation' logic for a specific form field?",
+    "options": [
+      "In the settings.py file",
+      "In the HTML template",
+      "In the urls.py file"
+    ],
+    "answer": "In a clean_<fieldname>() method within the Form class",
+    "explanation": "Django looks for methods starting with 'clean_' to perform field-specific validation."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a large, grey box for calling extra attention to some content?",
+    "options": [
+      ".big-box",
+      ".hero-unit",
+      ".attention-getter"
+    ],
+    "answer": ".jumbotron",
+    "explanation": "Though deprecated in newer versions of Bootstrap in favor of utility classes, .jumbotron was the standard for hero sections."
+  },
+  {
+    "question": "In CSS, what is the default value of the 'position' property?",
+    "options": [
+      "relative",
+      "absolute",
+      "fixed"
+    ],
+    "answer": "static",
+    "explanation": "Static elements are positioned according to the normal flow of the page."
+  },
+  {
+    "question": "What is 'Agile' in the context of software development?",
+    "options": [
+      "A programming language used for high-speed games",
+      "A hardware server that is very small",
+      "A method of writing code without using a keyboard"
+    ],
+    "answer": "An iterative approach to project management and software development",
+    "explanation": "Agile focuses on delivering small pieces of working software frequently and responding to change."
+  },
+  {
+    "question": "Which tool is most likely used for 'Paper Prototyping'?",
+    "options": [
+      "Visual Studio Code",
+      "Docker",
+      "MySQL Workbench"
+    ],
+    "answer": "Pens, paper, and scissors",
+    "explanation": "Paper prototyping is a low-tech way to quickly sketch and test user interface layouts."
+  },
+  {
+    "question": "What is the purpose of 'Error Logging' in server-side development?",
+    "options": [
+      "To show the user the exact line of code that failed",
+      "To automatically fix the code using AI",
+      "To prevent the server from ever crashing"
+    ],
+    "answer": "To record details about issues for developers to analyze later",
+    "explanation": "Logs provide a history of what happened on the server, which is vital for debugging production issues."
+  },
+  {
+    "question": "In a REST API, what does the 'PATCH' method do?",
+    "options": [
+      "It deletes the entire resource",
+      "It creates a new resource from scratch",
+      "It replaces the entire resource with new data"
+    ],
+    "answer": "It applies partial modifications to a resource",
+    "explanation": "Unlike PUT, which replaces a resource, PATCH is used to update only specific fields."
+  },
+  {
+    "question": "What is 'White Space' in UI design?",
+    "options": [
+      "The space where the developer writes the code",
+      "A white background that cannot be changed",
+      "The empty space on a hard drive"
+    ],
+    "answer": "The empty space between elements in a layout",
+    "explanation": "White space (or negative space) helps improve readability and focus by separating content."
+  },
+  {
+    "question": "In Django, what is 'URL Reversing'?",
+    "options": [
+      "Making the website work backwards",
+      "Hiding the URL from the user's browser",
+      "Deleting a URL from the configuration"
+    ],
+    "answer": "Generating a URL based on the name of a view",
+    "explanation": "Reversing allows you to change your URL structure in one place without breaking links throughout your app."
+  },
+  {
+    "question": "What is the primary role of 'UX Research'?",
+    "options": [
+      "To find the cheapest developers to hire",
+      "To study the history of computer science",
+      "To write the terms and conditions for a website"
+    ],
+    "answer": "To understand user behaviors, needs, and motivations",
+    "explanation": "Research ensures that the design is based on actual user data rather than assumptions."
+  },
+  {
+    "question": "Which of these is a 'Visual Design' basic principle?",
+    "options": [
+      "Polymorphism",
+      "Encapsulation",
+      "Inheritance"
+    ],
+    "answer": "Repetition",
+    "explanation": "Repetition involves using consistent elements (colors, fonts, shapes) to create a sense of unity in the design."
+  }
+]

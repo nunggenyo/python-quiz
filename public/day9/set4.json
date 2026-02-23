@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is the primary benefit of a 'Single Page Application' (SPA) architecture?",
+    "options": [
+      "It eliminates the need for any JavaScript",
+      "It requires a complete page reload for every user interaction",
+      "It makes the website incompatible with mobile browsers"
+    ],
+    "answer": "It provides a fluid user experience by updating content dynamically without reloading the page",
+    "explanation": "SPAs load a single HTML page and dynamically update the content as the user interacts with the app, resulting in a faster, smoother feel."
+  },
+  {
+    "question": "In the MVC pattern, which component is responsible for formatting the data and generating the final output for the user?",
+    "options": [
+      "Model",
+      "Controller",
+      "Middleware"
+    ],
+    "answer": "View",
+    "explanation": "The View is the presentation layer; its job is to take data from the Model and present it via the UI."
+  },
+  {
+    "question": "What does 'Hydration' refer to in the context of React or Angular Server-Side Rendering (SSR)?",
+    "options": [
+      "Cleaning the database of old, unused records",
+      "Compiling CSS into a minified format",
+      "The process of deleting the cache on the client's machine"
+    ],
+    "answer": "The process of attaching event listeners to server-rendered HTML to make it interactive",
+    "explanation": "After the server sends static HTML, the client-side JS 'hydrates' it by making the static elements responsive to user input."
+  },
+  {
+    "question": "Which HTTP status code would a REST API return if a user tries to access a resource without providing valid authentication credentials?",
+    "options": [
+      "403 Forbidden",
+      "404 Not Found",
+      "500 Internal Server Error"
+    ],
+    "answer": "401 Unauthorized",
+    "explanation": "A 401 error specifically indicates that the request lacks valid authentication credentials for the target resource."
+  },
+  {
+    "question": "What is the role of a 'Template Engine' (like Django Templates or Jinja2) in web development?",
+    "options": [
+      "To manage the database schema and migrations",
+      "To encrypt user passwords before they reach the server",
+      "To act as a firewall for the web application"
+    ],
+    "answer": "To mix static HTML with dynamic data from the server",
+    "explanation": "Template engines allow developers to define HTML structures that placeholders can fill with real-time data at runtime."
+  },
+  {
+    "question": "In the context of 'Software Testing', what does 'A/B Testing' involve?",
+    "options": [
+      "Testing the backend and frontend at the same time",
+      "Comparing the performance of two different databases",
+      "Checking the code for syntax errors using an automated linter"
+    ],
+    "answer": "Comparing two versions of a webpage to see which one performs better for users",
+    "explanation": "A/B testing is a usability testing method where users are shown different variations of a design to determine which is more effective."
+  },
+  {
+    "question": "Which CSS property is the most essential part of the 'Box Model' for defining the space outside an element's border?",
+    "options": [
+      "Padding",
+      "Content",
+      "Border-radius"
+    ],
+    "answer": "Margin",
+    "explanation": "In the CSS Box Model, the margin creates space around the outside of the element, separating it from other elements."
+  },
+  {
+    "question": "What is 'Parkinson's Law' often cited in Time Management for developers?",
+    "options": [
+      "The cost of a bug increases as the project progresses",
+      "A developer's productivity doubles every two years",
+      "The number of lines of code determines the quality of the software"
+    ],
+    "answer": "Work expands so as to fill the time available for its completion",
+    "explanation": "This principle suggests that if you give yourself a week to complete a two-hour task, the task will psychologically become more complex and take the whole week."
+  },
+  {
+    "question": "What is the function of the 'Call Stack' in an IDE debugger?",
+    "options": [
+      "To list all the global variables used in the project",
+      "To show the physical memory location of the program",
+      "To store the history of all the lines of code ever deleted"
+    ],
+    "answer": "To show the sequence of function calls that led to the current point of execution",
+    "explanation": "The Call Stack helps developers trace back through the functions to see how the program reached its current state."
+  },
+  {
+    "question": "In IT Service Management (ITSM), what is 'Change Management' designed to prevent?",
+    "options": [
+      "Developers from working from home",
+      "Users from requesting new features",
+      "The use of open-source libraries"
+    ],
+    "answer": "Unauthorized or poorly planned changes that could cause service outages",
+    "explanation": "Change Management ensures that modifications to the IT environment are documented, tested, and approved to minimize risk."
+  },
+  {
+    "question": "What is 'White Space' (Negative Space) used for in visual design?",
+    "options": [
+      "To hide elements that are not currently being used",
+      "To reduce the loading time of the images on the page",
+      "To prevent the user from clicking on the wrong buttons"
+    ],
+    "answer": "To reduce clutter and improve the readability of the content",
+    "explanation": "White space provides 'breathing room' for the eye, making the interface less overwhelming and helping the user focus."
+  },
+  {
+    "question": "Which HTML tag is specifically used to link an external CSS stylesheet to a document?",
+    "options": [
+      "<style>",
+      "<script>",
+      "<a>"
+    ],
+    "answer": "<link>",
+    "explanation": "The <link> tag, placed in the <head> section, connects the HTML document to external resources like CSS files."
+  },
+  {
+    "question": "In Django, what is a 'Formset'?",
+    "options": [
+      "A way to group multiple database tables into one",
+      "A CSS class used to style all forms on a page",
+      "A method for encrypting form data during transit"
+    ],
+    "answer": "A layer of abstraction to work with multiple forms on a single page",
+    "explanation": "A Formset allows you to manage multiple instances of a form (e.g., adding multiple authors at once) on one page."
+  },
+  {
+    "question": "What is 'Accessibility' in the context of UX design?",
+    "options": [
+      "Making sure the website is open 24/7",
+      "Ensuring the website can be accessed from any country",
+      "Ensuring the website loads on a very slow internet connection"
+    ],
+    "answer": "Ensuring the website is usable by people with disabilities, such as visual or motor impairments",
+    "explanation": "Accessibility focuses on removing barriers for users with impairments, using tools like ARIA labels and keyboard-friendly navigation."
+  },
+  {
+    "question": "In Bootstrap, what is the purpose of the '.text-center' class?",
+    "options": [
+      "To move an element to the middle of the screen vertically",
+      "To change the font family to a sans-serif style",
+      "To wrap text around an image"
+    ],
+    "answer": "To align the text horizontally in the center of its container",
+    "explanation": "The .text-center utility class is a quick way to center text alignment using CSS."
+  },
+  {
+    "question": "Which of these is a key 'Soft Skill' when presenting a technical demo to a client?",
+    "options": [
+      "Showing the underlying SQL queries on every slide",
+      "Talking as fast as possible to save the client's time",
+      "Using the most technical terms to sound more professional"
+    ],
+    "answer": "Maintaining eye contact and engaging the audience's interests",
+    "explanation": "Soft skills in presentations involve connecting with the audience and ensuring they follow the narrative."
+  },
+  {
+    "question": "What does 'ORM' stand for in database management?",
+    "options": [
+      "Online Resource Manager",
+      "Output Recovery Method",
+      "Ordered Relational Model"
+    ],
+    "answer": "Object-Relational Mapping",
+    "explanation": "ORM is a technique that lets you query and manipulate data from a database using an object-oriented paradigm."
+  },
+  {
+    "question": "In the REST architecture, what does 'HATEOAS' mean?",
+    "options": [
+      "A protocol for encrypting all API headers",
+      "A method for compressing JSON data for faster transfer",
+      "A tool used to test the security of an API"
+    ],
+    "answer": "A constraint where the server provides links to other available actions",
+    "explanation": "HATEOAS (Hypermedia as the Engine of Application State) allows a client to interact with a REST API entirely through responses provided dynamically by the server."
+  },
+  {
+    "question": "Which of the following is a characteristic of 'Good Typography' in UI design?",
+    "options": [
+      "Using at least five different fonts on a single page",
+      "Setting the font size as small as possible to fit more text",
+      "Making sure all text is the same color as the background"
+    ],
+    "answer": "Ensuring proper line height and contrast for readability",
+    "explanation": "Good typography focuses on legibility, ensuring users can read and digest information without strain."
+  },
+  {
+    "question": "What is 'Session Hijacking'?",
+    "options": [
+      "When a user forgets their password and cannot log in",
+      "When a developer deletes the database by mistake",
+      "When the server runs out of memory and closes all sessions"
+    ],
+    "answer": "When an attacker steals a user's session ID to impersonate them",
+    "explanation": "Session hijacking involves intercepting or predicting a session token to gain unauthorized access to a user's account."
+  },
+  {
+    "question": "Which Bootstrap component is used to provide contextual feedback messages for typical user actions?",
+    "options": [
+      ".badge",
+      ".jumbotron",
+      ".breadcrumb"
+    ],
+    "answer": ".alert",
+    "explanation": "The .alert class provides styles for success, danger, warning, or info messages to the user."
+  },
+  {
+    "question": "What is the primary goal of the 'Empathize' stage in Design Thinking?",
+    "options": [
+      "To write the code as quickly as possible",
+      "To find the cheapest hosting service for the project",
+      "To decide on the final color palette of the app"
+    ],
+    "answer": "To gain a deep understanding of the users' challenges and needs",
+    "explanation": "Empathizing involves research and observation to see the world through the users' eyes before solving problems."
+  },
+  {
+    "question": "In the context of 'Software Debugging', what is a 'Heisenbug'?",
+    "options": [
+      "A bug that only appears in the production environment",
+      "A bug that is fixed by restarting the computer",
+      "A bug that is caused by a hardware failure"
+    ],
+    "answer": "A bug that seems to disappear or change behavior when you try to study it",
+    "explanation": "Named after the Uncertainty Principle, these bugs are often related to timing or race conditions that change when a debugger is attached."
+  },
+  {
+    "question": "What does a 'Foreign Key' do in a relational database?",
+    "options": [
+      "It acts as the primary password for the database",
+      "It speeds up the loading time of the entire database",
+      "It allows the database to be accessed from a different country"
+    ],
+    "answer": "It creates a link between data in two different tables",
+    "explanation": "A foreign key is a field in one table that refers to the primary key in another table, ensuring referential integrity."
+  },
+  {
+    "question": "Which of the following describes 'Usability'?",
+    "options": [
+      "The total number of lines of code in the application",
+      "The amount of energy the server uses to run the app",
+      "The security level of the server's firewall"
+    ],
+    "answer": "The ease with which users can achieve their goals using the product",
+    "explanation": "Usability is a measure of how intuitive and efficient a user interface is for its intended audience."
+  },
+  {
+    "question": "In CSS, what is the 'Z-index' property used for?",
+    "options": [
+      "To zoom in on an image when the user hovers over it",
+      "To change the transparency of the text",
+      "To move an element left or right on the screen"
+    ],
+    "answer": "To control the vertical stacking order of elements",
+    "explanation": "The z-index determines which element appears 'in front' or 'behind' others when they overlap."
+  },
+  {
+    "question": "What is the primary function of the 'Model' in a server-side MVC framework?",
+    "options": [
+      "To define the visual style of the application",
+      "To handle the incoming HTTP requests from the browser",
+      "To display the data in a table format"
+    ],
+    "answer": "To interact with the database and manage the data logic",
+    "explanation": "The Model represents the data and the rules for how that data can be changed or accessed."
+  },
+  {
+    "question": "Which Bootstrap class is used to make a navigation bar stay at the top of the screen even while scrolling?",
+    "options": [
+      ".navbar-static",
+      ".navbar-top",
+      ".navbar-sticky"
+    ],
+    "answer": ".fixed-top",
+    "explanation": "The .fixed-top utility class uses CSS 'position: fixed' to keep the navbar at the top of the viewport."
+  },
+  {
+    "question": "In React, what is a 'Hook'?",
+    "options": [
+      "A way to link two different websites together",
+      "A tool used to fish data out of a SQL database",
+      "A security feature that blocks unauthorized users"
+    ],
+    "answer": "A special function that lets you use state and other React features in functional components",
+    "explanation": "Hooks like useState and useEffect allow developers to use React features without writing class components."
+  },
+  {
+    "question": "What is 'White-box Testing'?",
+    "options": [
+      "Testing the application without seeing the user interface",
+      "Testing the application by people who have never used a computer",
+      "Testing the physical hardware of the web server"
+    ],
+    "answer": "Testing where the internal structure or code is known to the tester",
+    "explanation": "In white-box testing, the tester has access to the source code and designs tests based on the internal logic."
+  },
+  {
+    "question": "Why is 'Time Management' important for meeting a 'Sprint' deadline?",
+    "options": [
+      "It allows developers to skip the testing phase",
+      "It makes the code run faster on the user's browser",
+      "It automatically fixes any merge conflicts in Git"
+    ],
+    "answer": "It helps the team allocate effort to the most valuable tasks first",
+    "explanation": "Good time management in Agile ensuring that the team focuses on the Sprint Goal and high-priority backlog items."
+  },
+  {
+    "question": "In ITSM, what is a 'Service Desk'?",
+    "options": [
+      "A physical desk where developers write code",
+      "A database table that stores all user passwords",
+      "A tool used to minify CSS and JS files"
+    ],
+    "answer": "The single point of contact between the service provider and the users",
+    "explanation": "The Service Desk handles incidents and service requests, providing a central communication channel."
+  },
+  {
+    "question": "What is a 'Breadcrumb' in UI design?",
+    "options": [
+      "A small piece of code used to track user location",
+      "A type of button used to submit a form",
+      "A background image that looks like a pattern"
+    ],
+    "answer": "A navigation aid that shows the user's location in a website's hierarchy",
+    "explanation": "Breadcrumbs help users understand where they are (e.g., Home > Products > Electronics) and how to go back."
+  },
+  {
+    "question": "In Django, what does the 'render()' function do?",
+    "options": [
+      "It deletes all data from the database",
+      "It compiles Python code into machine code",
+      "It starts the local development server"
+    ],
+    "answer": "It combines a given template with a data dictionary and returns an HttpResponse",
+    "explanation": "Render is a shortcut function that makes it easy to return a completed HTML page to the browser."
+  },
+  {
+    "question": "What is the purpose of 'Responsive Web Design'?",
+    "options": [
+      "To make the website respond faster to user clicks",
+      "To ensure the website is accessible only to mobile users",
+      "To prevent the website from being copied by others"
+    ],
+    "answer": "To make web pages look good on all devices (desktops, tablets, and phones)",
+    "explanation": "Responsive design uses flexible layouts and CSS media queries to adapt the UI to different screen sizes."
+  },
+  {
+    "question": "Which HTTP method is considered 'Safe' because it does not change the state of the server?",
+    "options": [
+      "POST",
+      "DELETE",
+      "PUT"
+    ],
+    "answer": "GET",
+    "explanation": "GET is a 'safe' method because it is intended for data retrieval only and should not have side effects on the server."
+  },
+  {
+    "question": "In 'Design Thinking', what happens during the 'Prototype' stage?",
+    "options": [
+      "The project is sold to the final customer",
+      "The backend database is fully optimized for speed",
+      "The developers write the final documentation"
+    ],
+    "answer": "The team produces scaled-down versions of the product to test specific features",
+    "explanation": "Prototyping is about creating experimental versions of a product to validate ideas before full production."
+  },
+  {
+    "question": "In CSS, what is the 'Box-sizing: border-box;' property used for?",
+    "options": [
+      "To make the corners of a box rounded",
+      "To hide the border of an element",
+      "To make the element's width depend on the screen size"
+    ],
+    "answer": "To include padding and border in the element's total width and height",
+    "explanation": "By default, padding and border are added to the width; 'border-box' keeps the width constant by including them inside it."
+  },
+  {
+    "question": "What is the 'MVC' pattern's primary goal?",
+    "options": [
+      "To make the application run faster on the server",
+      "To combine the logic and the presentation into one file",
+      "To replace the need for a database"
+    ],
+    "answer": "To separate the concerns of data, logic, and presentation",
+    "explanation": "Separation of concerns makes the code easier to maintain, test, and scale by keeping components isolated."
+  },
+  {
+    "question": "In Bootstrap, which class is used to create a button that looks like a link?",
+    "options": [
+      ".btn-text",
+      ".btn-outline",
+      ".btn-url"
+    ],
+    "answer": ".btn-link",
+    "explanation": "The .btn-link class styles a button to appear as a simple hyperlink while maintaining button behavior."
+  },
+  {
+    "question": "What is 'Regression Testing'?",
+    "options": [
+      "Testing only the newest features of the software",
+      "Testing the software on older hardware only",
+      "A test to see how many users the server can handle"
+    ],
+    "answer": "Testing existing features to ensure new changes haven't broken them",
+    "explanation": "Regression testing is crucial after updates to ensure that 'fixes' haven't caused new bugs elsewhere."
+  },
+  {
+    "question": "What is the 'Alt' text in HTML used for?",
+    "options": [
+      "To provide a high-resolution version of an image",
+      "To change the size of the image automatically",
+      "To provide a caption that is always visible below the image"
+    ],
+    "answer": "To describe an image for users who cannot see it, such as those using screen readers",
+    "explanation": "Alt text is a fundamental part of web accessibility, allowing visually impaired users to understand image content."
+  },
+  {
+    "question": "Which tool would a developer use to track the time spent on various Jira tasks?",
+    "options": [
+      "Postman",
+      "Git",
+      "Chrome DevTools"
+    ],
+    "answer": "Tempo",
+    "explanation": "Tempo is a popular time-tracking plugin for Jira used by developers to log work hours."
+  },
+  {
+    "question": "In the context of 'Presentation Skills', what does 'Knowing your Audience' mean?",
+    "options": [
+      "Knowing the names and addresses of everyone in the room",
+      "Knowing exactly how much money each audience member makes",
+      "Only presenting to people who already agree with you"
+    ],
+    "answer": "Tailoring the level of technical detail to the expertise of the listeners",
+    "explanation": "A developer should speak differently to fellow engineers than they would to business managers or clients."
+  },
+  {
+    "question": "What does 'Stateless' mean in a RESTful API?",
+    "options": [
+      "The server does not have a database",
+      "The API only works in one country",
+      "The server is turned off after every request"
+    ],
+    "answer": "The server does not store any information about the client between requests",
+    "explanation": "Every request must contain all the information necessary for the server to understand and process it."
+  },
+  {
+    "question": "In CSS, which property is used to change the thickness of a font?",
+    "options": [
+      "font-style",
+      "font-size",
+      "font-family"
+    ],
+    "answer": "font-weight",
+    "explanation": "The 'font-weight' property sets how thick or thin characters in text should be displayed."
+  },
+  {
+    "question": "What is 'Pair Programming'?",
+    "options": [
+      "Two developers writing two different applications at the same time",
+      "A developer writing code with two keyboards",
+      "An automated tool that writes code for the developer"
+    ],
+    "answer": "Two developers working together at one workstation",
+    "explanation": "One developer writes the code (the Driver) while the other reviews each line as it is typed (the Navigator)."
+  },
+  {
+    "question": "What is the function of 'Middleware' in a web framework?",
+    "options": [
+      "To design the user interface components",
+      "To store the user's images in the cloud",
+      "To manage the physical cooling of the server"
+    ],
+    "answer": "To process requests before they reach the view and responses before they leave",
+    "explanation": "Middleware acts as a bridge, handling tasks like authentication, logging, or data compression."
+  },
+  {
+    "question": "In Bootstrap, which class is used to create a responsive, fluid-width container that spans the entire width of the viewport?",
+    "options": [
+      ".container",
+      ".container-full",
+      ".container-responsive"
+    ],
+    "answer": ".container-fluid",
+    "explanation": "The .container-fluid class provides a full-width container that expands to the edges of the screen."
+  },
+  {
+    "question": "What is the 'Box Model' in CSS?",
+    "options": [
+      "A way to organize files in a folder",
+      "A tool used to draw boxes on a screen",
+      "A method for storing data in a database"
+    ],
+    "answer": "A specification that defines how padding, borders, and margins are applied to elements",
+    "explanation": "Everything in CSS is essentially a box, and the Box Model defines the space and boundaries of those boxes."
+  }
+]

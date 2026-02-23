@@ -1,0 +1,502 @@
+[
+  {
+    "question": "In the MVC design pattern, which component is specifically responsible for receiving user input and updating the state of the system?",
+    "options": [
+      "View",
+      "Model",
+      "Database"
+    ],
+    "answer": "Controller",
+    "explanation": "The Controller acts as the entry point for user requests, processing input and instructing the Model or View to change accordingly."
+  },
+  {
+    "question": "Which HTTP status code is used in RESTful services to indicate that a request was successful but there is no content to return?",
+    "options": [
+      "200 OK",
+      "201 Created",
+      "404 Not Found"
+    ],
+    "answer": "204 No Content",
+    "explanation": "The 204 status code confirms the server fulfilled the request but does not need to return an entity-body."
+  },
+  {
+    "question": "In the context of server-side validation, why is validating data on the server considered more secure than validating on the client side?",
+    "options": [
+      "Server-side validation is faster to execute",
+      "Client-side validation requires a database connection",
+      "Server-side validation only works for CSS errors"
+    ],
+    "answer": "Client-side validation can be bypassed by disabling JavaScript in the browser",
+    "explanation": "Because users can manipulate client-side code, the server must always re-verify data to ensure security and integrity."
+  },
+  {
+    "question": "What is the primary purpose of an Object-Relational Mapping (ORM) tool like Hibernate or ActiveRecord?",
+    "options": [
+      "To convert HTML into SQL queries",
+      "To minify JavaScript and CSS files",
+      "To manage the visual layout of a website"
+    ],
+    "answer": "To allow developers to interact with a database using the programming language's objects",
+    "explanation": "ORMs bridge the gap between object-oriented code and relational database tables, reducing the need for manual SQL."
+  },
+  {
+    "question": "Which of the following is a core principle of 'Design Thinking' in UI/UX?",
+    "options": [
+      "Maximizing the number of features",
+      "Reducing the development cost to zero",
+      "Writing the backend code before the design"
+    ],
+    "answer": "Empathizing with the user to understand their needs",
+    "explanation": "Design Thinking starts with a deep understanding of the people for whom the product is being designed."
+  },
+  {
+    "question": "When using a debugger, what does 'Stepping Into' a function allow a developer to do?",
+    "options": [
+      "Skip the function and move to the next line",
+      "Run the entire program to the end",
+      "Automatically fix the bug inside that function"
+    ],
+    "answer": "Move the execution point inside the called function to examine it line-by-line",
+    "explanation": "'Step Into' dives into the code of the function being called rather than just executing it as a single step."
+  },
+  {
+    "question": "In Bootstrap, which utility class is used to hide an element on all screen sizes except for extra-large devices?",
+    "options": [
+      ".hidden-xs",
+      ".display-none",
+      ".invisible"
+    ],
+    "answer": ".d-none .d-xl-block",
+    "explanation": "Bootstrap uses display utility classes where '.d-none' hides it initially and '.d-xl-block' makes it visible at the extra-large breakpoint."
+  },
+  {
+    "question": "What is 'Session Management' used for in dynamic web applications?",
+    "options": [
+      "To track the server's CPU temperature",
+      "To limit the number of images a user can see",
+      "To encrypt the source code of the webpage"
+    ],
+    "answer": "To store user-specific data across multiple page requests",
+    "explanation": "Since HTTP is stateless, sessions allow the server to remember who a user is as they move through the site."
+  },
+  {
+    "question": "In React, what is the primary benefit of 'Server-Side Rendering' (SSR)?",
+    "options": [
+      "It makes the application work without an internet connection",
+      "It allows the app to run on older versions of Windows",
+      "It removes the need for any CSS styling"
+    ],
+    "answer": "It improves initial load speed and Search Engine Optimization (SEO)",
+    "explanation": "SSR sends a fully rendered page to the browser, making it immediately visible to users and easier for search engines to crawl."
+  },
+  {
+    "question": "Which of these is a key 'Soft Skill' for developers working in a team environment?",
+    "options": [
+      "Advanced Calculus",
+      "Typing speed above 100 WPM",
+      "Knowledge of Assembly language"
+    ],
+    "answer": "Effective Communication",
+    "explanation": "Clear communication ensures that team members understand requirements, constraints, and progress."
+  },
+  {
+    "question": "In the MVC architecture, which component represents the 'Blueprints' or the data structure of the application?",
+    "options": [
+      "View",
+      "Controller",
+      "Router"
+    ],
+    "answer": "Model",
+    "explanation": "The Model manages the data, logic, and rules of the application."
+  },
+  {
+    "question": "What is the role of 'Visual (GUI) Testing'?",
+    "options": [
+      "Testing the server's hard drive speed",
+      "Checking the logic of database triggers",
+      "Testing the encryption level of the SSL certificate"
+    ],
+    "answer": "Ensuring that the interface elements are correctly placed and styled",
+    "explanation": "Visual testing verifies that the UI looks as intended across different devices and screen resolutions."
+  },
+  {
+    "question": "Which 'Time Management' method involves categorizing tasks into four quadrants based on urgency and importance?",
+    "options": [
+      "Pomodoro Technique",
+      "Agile Scrum",
+      "Waterfall Model"
+    ],
+    "answer": "Eisenhower Matrix",
+    "explanation": "The Eisenhower Matrix helps developers prioritize tasks that are truly important over those that are merely urgent."
+  },
+  {
+    "question": "What does a 'RESTful' architecture use as the primary way to identify resources?",
+    "options": [
+      "Function names",
+      "IP addresses",
+      "Cookie IDs"
+    ],
+    "answer": "URIs (Uniform Resource Identifiers)",
+    "explanation": "In REST, every resource (like a user or a post) is identified by a unique URL/URI."
+  },
+  {
+    "question": "In web development, what is 'Accessibility Compliance' (WCAG)?",
+    "options": [
+      "Ensuring the website loads in under 1 second",
+      "Protecting the website from hackers",
+      "Making sure the website works on all browsers"
+    ],
+    "answer": "Ensuring the website is usable by people with various disabilities",
+    "explanation": "Compliance involves following standards like providing alt-text for images and keyboard navigation for users with impairments."
+  },
+  {
+    "question": "Which Bootstrap class would you use to create a 'Card' component?",
+    "options": [
+      ".box",
+      ".panel",
+      ".container-card"
+    ],
+    "answer": ".card",
+    "explanation": "The '.card' class is the base class in Bootstrap for creating flexible and extensible content containers."
+  },
+  {
+    "question": "What is 'Paper Prototyping' in the design process?",
+    "options": [
+      "Printing the final code on paper for review",
+      "A method of recycling old office documents",
+      "Using high-fidelity digital tools to mimic paper"
+    ],
+    "answer": "Using hand-drawn sketches to simulate a user interface",
+    "explanation": "It is a fast, low-cost way to test interface ideas and user flows before writing any code."
+  },
+  {
+    "question": "In Django, which command is used to apply changes to the database schema based on your models?",
+    "options": [
+      "python manage.py runserver",
+      "python manage.py createsuperuser",
+      "python manage.py test"
+    ],
+    "answer": "python manage.py migrate",
+    "explanation": "The 'migrate' command synchronizes the database state with the current set of models and migrations."
+  },
+  {
+    "question": "What is the primary function of an 'IDE Debugger'?",
+    "options": [
+      "To automatically write code for the developer",
+      "To host the website on a remote server",
+      "To convert Python code into JavaScript"
+    ],
+    "answer": "To allow the developer to pause execution and inspect variables",
+    "explanation": "Debuggers provide tools like breakpoints and variable watches to find and fix errors in logic."
+  },
+  {
+    "question": "Which of these is an example of a 'Client-Side Framework'?",
+    "options": [
+      "Django",
+      "Laravel",
+      "Ruby on Rails"
+    ],
+    "answer": "React",
+    "explanation": "React is a JavaScript library/framework that runs in the user's browser to manage the UI."
+  },
+  {
+    "question": "In IT Service Management (ITSM), what is the goal of 'Incident Management'?",
+    "options": [
+      "To build new features for a product",
+      "To permanently delete old user accounts",
+      "To train new employees on how to code"
+    ],
+    "answer": "To restore normal service operation as quickly as possible",
+    "explanation": "Incident management focuses on minimizing the impact of service interruptions on business operations."
+  },
+  {
+    "question": "In the MVC pattern, which part is typically associated with HTML and CSS files?",
+    "options": [
+      "Model",
+      "Controller",
+      "Middleware"
+    ],
+    "answer": "View",
+    "explanation": "The View is the presentation layer that defines how the data is displayed to the user."
+  },
+  {
+    "question": "Which CSS property is used to create space between the content of an element and its border?",
+    "options": [
+      "margin",
+      "border-spacing",
+      "gap"
+    ],
+    "answer": "padding",
+    "explanation": "Padding creates internal space within an element, whereas margin creates space outside the border."
+  },
+  {
+    "question": "What is a 'Dynamic Web Application'?",
+    "options": [
+      "A website that has moving animations",
+      "A website that only works on mobile phones",
+      "A website built using only HTML and CSS"
+    ],
+    "answer": "An application that generates content on the fly based on data or user input",
+    "explanation": "Dynamic apps use server-side or client-side logic to provide a personalized experience for each user."
+  },
+  {
+    "question": "In REST, which HTTP method is typically used to delete a resource?",
+    "options": [
+      "REMOVE",
+      "POST",
+      "GET"
+    ],
+    "answer": "DELETE",
+    "explanation": "The DELETE method is specifically designed to remove the resource identified by the URI."
+  },
+  {
+    "question": "What is the purpose of 'Usability Testing'?",
+    "options": [
+      "To check if the server is physically secure",
+      "To ensure the code is formatted correctly",
+      "To see how much traffic the website can handle"
+    ],
+    "answer": "To evaluate a product by testing it with real users",
+    "explanation": "Usability testing helps identify if users can navigate and use the application effectively."
+  },
+  {
+    "question": "Which Bootstrap class is used to create a responsive grid column that spans 4 out of 12 units on a small screen?",
+    "options": [
+      ".col-4-sm",
+      ".column-sm-4",
+      ".span-4"
+    ],
+    "answer": ".col-sm-4",
+    "explanation": "Bootstrap uses the format .col-{breakpoint}-{size} to define responsive grid behavior."
+  },
+  {
+    "question": "In server-side programming, what is 'Control Flow'?",
+    "options": [
+      "The style of the user interface",
+      "The method of saving files to the cloud",
+      "The way users move through the website"
+    ],
+    "answer": "The use of loops and conditionals to direct how code executes",
+    "explanation": "Control flow determines the path of execution (e.g., if/else statements, for loops)."
+  },
+  {
+    "question": "What is the 'Model' in a Django application?",
+    "options": [
+      "The visual design of the website",
+      "The function that handles the URL request",
+      "The CSS file that styles the buttons"
+    ],
+    "answer": "A Python class that defines the structure of a database table",
+    "explanation": "Django Models act as an abstraction layer for the database, allowing you to manage data using Python objects."
+  },
+  {
+    "question": "Which of these is a key benefit of 'Presentation Skills' for a developer?",
+    "options": [
+      "It makes the code run faster",
+      "It helps in finding bugs in the database",
+      "It allows the developer to work alone"
+    ],
+    "answer": "It helps in gaining buy-in from stakeholders for a technical solution",
+    "explanation": "Being able to present clearly helps persuade managers and clients to support a project or architectural choice."
+  },
+  {
+    "question": "In CSS, what does the property 'display: none;' do?",
+    "options": [
+      "Makes the element transparent but keeps its space",
+      "Changes the element's color to white",
+      "Moves the element to the bottom of the page"
+    ],
+    "answer": "Removes the element from the page layout entirely",
+    "explanation": "'display: none;' hides the element and ensures it takes up no space in the document flow."
+  },
+  {
+    "question": "What is the 'LINQ' query interface used for in .NET development?",
+    "options": [
+      "To create animations in the browser",
+      "To manage the server's file system",
+      "To design high-fidelity prototypes"
+    ],
+    "answer": "To provide a standard way to query data from different sources",
+    "explanation": "Language Integrated Query (LINQ) allows developers to write SQL-like queries directly in C# code."
+  },
+  {
+    "question": "In the UI design process, what does 'Contrast' help achieve?",
+    "options": [
+      "Decreasing the size of the image files",
+      "Making the website load faster on mobile",
+      "Removing the need for a navigation menu"
+    ],
+    "answer": "Making important elements stand out from the background",
+    "explanation": "Contrast (in color, size, or shape) directs the user's attention to key parts of the interface."
+  },
+  {
+    "question": "What is a 'Breakpoint' in the context of debugging?",
+    "options": [
+      "A point where the internet connection fails",
+      "A bug that causes the server to crash",
+      "The end of a work shift for a developer"
+    ],
+    "answer": "An intentional stopping point in the code for inspection",
+    "explanation": "Developers set breakpoints to pause the program and check the state of variables at that specific line."
+  },
+  {
+    "question": "Which HTTP method is most appropriate for sending sensitive data like a password in a form?",
+    "options": [
+      "GET",
+      "PUT",
+      "DELETE"
+    ],
+    "answer": "POST",
+    "explanation": "POST sends data in the request body rather than the URL, making it more secure and appropriate for sensitive information."
+  },
+  {
+    "question": "What is 'Angular Server Rendering' (Angular Universal)?",
+    "options": [
+      "A tool to run Angular without JavaScript",
+      "A way to store Angular code in a database",
+      "A method to speed up CSS animations"
+    ],
+    "answer": "A technology that renders Angular pages on the server before sending them to the client",
+    "explanation": "This improves SEO and perceived performance by serving a pre-rendered HTML page."
+  },
+  {
+    "question": "In ITSM, what does 'SLA' stand for?",
+    "options": [
+      "System Level Automation",
+      "Software Logic Analysis",
+      "Server Loading Agreement"
+    ],
+    "answer": "Service Level Agreement",
+    "explanation": "An SLA is a commitment between a service provider and a client regarding service standards like uptime."
+  },
+  {
+    "question": "Which of these is a visual design basic principle?",
+    "options": [
+      "Encapsulation",
+      "Recursion",
+      "Inheritance"
+    ],
+    "answer": "Proximity",
+    "explanation": "Proximity refers to grouping related items together to create a visual relationship."
+  },
+  {
+    "question": "What is the goal of 'Rapid Prototyping'?",
+    "options": [
+      "To write the final version of the code quickly",
+      "To hire new developers as fast as possible",
+      "To automate the server backup process"
+    ],
+    "answer": "To quickly build and iterate on designs to gather feedback",
+    "explanation": "Rapid prototyping focuses on speed of learning rather than building a production-ready product."
+  },
+  {
+    "question": "In a web application, where does 'Server-Side Code' execute?",
+    "options": [
+      "In the user's web browser",
+      "On the user's mobile device",
+      "On a CDN (Content Delivery Network)"
+    ],
+    "answer": "On the web server",
+    "explanation": "Server-side code (like Python, PHP, or Node.js) runs on the server to process logic before sending HTML to the client."
+  },
+  {
+    "question": "Which of the following is a common time management tool used by developers?",
+    "options": [
+      "Photoshop",
+      "Postman",
+      "Wireshark"
+    ],
+    "answer": "Jira",
+    "explanation": "Jira is widely used for task tracking, project management, and time allocation in software teams."
+  },
+  {
+    "question": "What is 'Database Persistency'?",
+    "options": [
+      "The speed at which data is deleted",
+      "The ability to encrypt data in the cloud",
+      "The method of sharing data between two users"
+    ],
+    "answer": "The characteristic of data outliving the process that created it",
+    "explanation": "Persistency ensures that data is saved (e.g., in a database) and remains available after the application is closed."
+  },
+  {
+    "question": "In the design process, what is a 'Persona'?",
+    "options": [
+      "The lead developer of the project",
+      "A security profile for a hacker",
+      "A set of CSS rules for a specific page"
+    ],
+    "answer": "A fictional character representing a user type",
+    "explanation": "Personas help designers keep the needs and goals of specific user groups in mind."
+  },
+  {
+    "question": "What is 'Software Debugging'?",
+    "options": [
+      "Writing the documentation for a project",
+      "Adding new graphics to the user interface",
+      "Selling the software to a customer"
+    ],
+    "answer": "Finding and resolving defects in the code",
+    "explanation": "Debugging is the process of identifying why a program isn't working as expected and fixing it."
+  },
+  {
+    "question": "Which Bootstrap class makes a table more compact by cutting cell padding in half?",
+    "options": [
+      ".table-small",
+      ".table-condensed",
+      ".table-mini"
+    ],
+    "answer": ".table-sm",
+    "explanation": "The '.table-sm' class in Bootstrap 4 and 5 makes tables more compact."
+  },
+  {
+    "question": "In the context of soft skills, what is 'Empathy' useful for in development?",
+    "options": [
+      "Writing faster SQL queries",
+      "Calculating the time complexity of an algorithm",
+      "Configuring a web server's firewall"
+    ],
+    "answer": "Understanding the user's frustrations and needs",
+    "explanation": "Empathy allows developers to build more user-friendly products by seeing things from the user's perspective."
+  },
+  {
+    "question": "What is the primary function of a 'Database Connection Pool'?",
+    "options": [
+      "To store user profile pictures",
+      "To encrypt all traffic to the database",
+      "To allow users to chat with each other"
+    ],
+    "answer": "To reuse existing database connections to improve performance",
+    "explanation": "Opening new database connections is expensive; a pool keeps them open to be shared by different requests."
+  },
+  {
+    "question": "In CSS, which value for the 'position' property keeps an element in the same place even when the page is scrolled?",
+    "options": [
+      "relative",
+      "absolute",
+      "static"
+    ],
+    "answer": "fixed",
+    "explanation": "A fixed element is positioned relative to the browser window and stays in place during scrolling."
+  },
+  {
+    "question": "Which term describes a system where the server does NOT store any record of the client's previous requests?",
+    "options": [
+      "Stateful",
+      "Persistent",
+      "Cacheable"
+    ],
+    "answer": "Stateless",
+    "explanation": "Statelessness is a core constraint of REST, where each request must contain all the information necessary for the server to fulfill it."
+  },
+  {
+    "question": "What is 'Dynamic HTML content' runtime generation?",
+    "options": [
+      "Typing HTML directly into the browser's console",
+      "Creating an HTML file and saving it to the desktop",
+      "Printing a webpage to a physical printer"
+    ],
+    "answer": "Generating HTML code using a script while the application is running",
+    "explanation": "This allows pages to change based on user actions or data fetched from a server without a full page reload."
+  }
+]
