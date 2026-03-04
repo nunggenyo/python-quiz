@@ -1,7 +1,7 @@
 import os
 import json
 
-folder_path = r"public/day7/"
+folder_path = r"add/day1/"
 json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
 
 for filename in json_files:

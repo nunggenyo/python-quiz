@@ -90,12 +90,16 @@ body {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
+
   33% {
     transform: translate(30px, -30px) scale(1.1);
   }
+
   66% {
     transform: translate(-20px, 20px) scale(0.9);
   }
@@ -120,6 +124,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -399,15 +404,18 @@ body {
   background: rgba(255, 255, 255, 0.05);
   padding: 12px 16px;
   border-radius: 8px;
-  overflow-x: auto;       /* horizontal scroll if code is long */
+  overflow-x: auto;
+  /* horizontal scroll if code is long */
   font-family: 'Fira Code', monospace;
   font-size: 20px;
   margin-top: 16px;
-  white-space: pre-wrap;   /* wrap long lines inside pre */
+  white-space: pre-wrap;
+  /* wrap long lines inside pre */
 }
 
 .question-title code {
-  color: #f0f0f0;          /* code text color */
+  color: #f0f0f0;
+  /* code text color */
   font-weight: 500;
 }
 
@@ -523,6 +531,7 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -601,9 +610,12 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
@@ -772,6 +784,7 @@ body {
 
 /* Responsive */
 @media (max-width: 640px) {
+
   .menu-card,
   .quiz-card,
   .result-card {
@@ -827,7 +840,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  background: linear-gradient(135deg, rgba(99,102,241,0.12) 0%, rgba(129,140,248,0.06) 100%);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(129, 140, 248, 0.06) 100%);
   border: 1px solid rgba(99, 102, 241, 0.35);
   border-radius: 16px;
   padding: 18px 22px;
@@ -954,11 +967,11 @@ body {
 
 /* ─── Completed set button tint ──────────────────────────────────────────── */
 .quiz-select-btn.set-completed {
-  background: linear-gradient(135deg, rgba(16,185,129,0.06) 0%, rgba(99,102,241,0.05) 100%);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(99, 102, 241, 0.05) 100%);
 }
 
 .quiz-select-btn.set-completed:hover {
-  background: linear-gradient(135deg, rgba(16,185,129,0.12) 0%, rgba(99,102,241,0.08) 100%);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%);
   border-color: #10b981;
 }
 
@@ -969,7 +982,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.5px;
   color: var(--text-secondary);
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 3px 9px;
@@ -1019,4 +1032,224 @@ body {
 
 .quiz-context-divider {
   color: var(--border);
+}
+
+/* ─── Category Selection Grid ────────────────────────────────────────────── */
+.category-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px 24px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--cat-gradient);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: inherit;
+}
+
+.category-card::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  background: var(--cat-gradient);
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.category-card:hover {
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px var(--cat-glow);
+}
+
+.category-card:hover::before {
+  opacity: 0.1;
+}
+
+.category-card:hover::after {
+  opacity: 0.6;
+}
+
+.category-card:hover .category-emoji {
+  transform: scale(1.15) rotate(-4deg);
+}
+
+.category-card:hover .btn-arrow {
+  transform: translateX(5px);
+  color: white;
+}
+
+.category-emoji {
+  font-size: 52px;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.category-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.category-label {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.category-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.category-meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--primary-light);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.category-card .btn-arrow {
+  width: 28px;
+  height: 28px;
+  color: var(--primary-light);
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .category-emoji {
+    font-size: 40px;
+  }
+
+  .category-label {
+    font-size: 20px;
+  }
+}
+
+/* ─── Coming Soon State ───────────────────────────────────────────────────── */
+.category-card.category-coming-soon {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(0.6);
+}
+
+.category-card.category-coming-soon:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--border);
+}
+
+.category-card.category-coming-soon:hover::before,
+.category-card.category-coming-soon:hover::after {
+  opacity: 0;
+}
+
+.category-card.category-coming-soon:hover .category-emoji {
+  transform: none;
+}
+
+.coming-soon-badge {
+  flex-shrink: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+
+/* ─── Reset Progress Button ───────────────────────────────────────────────── */
+.reset-progress-area {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+}
+
+.reset-progress-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.reset-progress-btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.reset-progress-btn:hover {
+  border-color: var(--error);
+  color: var(--error);
+  background: rgba(239, 68, 68, 0.06);
+}
+
+.reset-progress-btn.confirming {
+  border-color: var(--error);
+  color: var(--error);
+  background: rgba(239, 68, 68, 0.1);
+  animation: pulse-red 0.8s ease infinite alternate;
+}
+
+@keyframes pulse-red {
+  from {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+
+  to {
+    box-shadow: 0 0 0 6px rgba(239, 68, 68, 0.15);
+  }
 }

@@ -4,26 +4,31 @@ import "./quiz.css";
 const STORAGE_KEY = "quiz_progress";
 const COMPLETED_KEY = "quiz_completed";
 
-// ─── LocalStorage helpers ────────────────────────────────────────────────────
-const loadProgress = () => {
+// ─── LocalStorage helpers (per-set map) ────────────────────────────────────
+// Structure: { "day1-set2": { processedQuestions, correctCount, wrongCount } }
+const loadAllProgress = () => {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : null;
+    return raw ? JSON.parse(raw) : {};
   } catch {
-    return null;
+    return {};
   }
 };
 
-const saveProgress = (data) => {
+const saveSetProgress = (day, set, data) => {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-  } catch {}
+    const all = loadAllProgress();
+    all[`${day}-set${set}`] = data;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+  } catch { }
 };
 
-const clearProgress = () => {
+const clearSetProgress = (day, set) => {
   try {
-    localStorage.removeItem(STORAGE_KEY);
-  } catch {}
+    const all = loadAllProgress();
+    delete all[`${day}-set${set}`];
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+  } catch { }
 };
 
 const loadCompleted = () => {
@@ -38,11 +43,34 @@ const loadCompleted = () => {
 const saveCompleted = (completedMap) => {
   try {
     localStorage.setItem(COMPLETED_KEY, JSON.stringify(completedMap));
-  } catch {}
+  } catch { }
 };
 // ─────────────────────────────────────────────────────────────────────────────
 
+// Category → Day mapping
+const categoryConfigs = {
+  foundation: {
+    label: "Foundation",
+    emoji: "🧱",
+    description: "Software Design, Python Basics & OOP",
+    days: ["day1", "day2", "day3", "day4", "day5", "day6", "day7", "day8", "day9"],
+    gradient: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+    glowColor: "rgba(99, 102, 241, 0.35)",
+    comingSoon: false,
+  },
+  advanced: {
+    label: "Advanced",
+    emoji: "🚀",
+    description: "Coming soon — stay tuned!",
+    days: [],
+    gradient: "linear-gradient(135deg, #06b6d4 0%, #0ea5e9 100%)",
+    glowColor: "rgba(6, 182, 212, 0.35)",
+    comingSoon: true,
+  },
+};
+
 export default function Quiz() {
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedDay, setSelectedDay] = useState(null);
   const [selectedSet, setSelectedSet] = useState(null);
   const [data, setData] = useState(null);
@@ -53,8 +81,9 @@ export default function Quiz() {
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
   const [finished, setFinished] = useState(false);
-  const [resumeData, setResumeData] = useState(null);      // pending resume info
-  const [completedSets, setCompletedSets] = useState({});  // { "day1-set2": "95%" }
+  const [savedProgress, setSavedProgress] = useState({});  // { "day1-set2": { processedQuestions, correctCount, wrongCount } }
+  const [completedSets, setCompletedSets] = useState({});   // { "day1-set2": "95%" }
+  const [confirmReset, setConfirmReset] = useState(false);
 
   const dayConfigs = {
     day1: { sets: [1, 2, 3, 4, 5], title: "Day 1", subtitle: "Software Design and Development" },
@@ -68,14 +97,13 @@ export default function Quiz() {
     day9: { sets: [1, 2, 3, 4, 5], title: "Day 9", subtitle: "Web Application Development" }
   };
 
-  // Sync resumeData and completedSets from localStorage whenever the main menu is shown
+  // Sync savedProgress and completedSets from localStorage whenever the category screen is shown
   useEffect(() => {
-    if (selectedDay === null) {
+    if (selectedCategory === null) {
       setCompletedSets(loadCompleted());
-      const saved = loadProgress();
-      setResumeData(saved || null);
+      setSavedProgress(loadAllProgress());
     }
-  }, [selectedDay]);
+  }, [selectedCategory]);
 
   // Shuffle utility
   const shuffleArray = (array) => {
@@ -87,13 +115,11 @@ export default function Quiz() {
     return newArr;
   };
 
-  // Persist progress whenever quiz state changes (only while a quiz is active)
+  // Persist progress per-set whenever quiz state changes (only while a quiz is active)
   useEffect(() => {
     if (!selectedDay || !selectedSet || processedQuestions.length === 0 || finished) return;
 
-    saveProgress({
-      selectedDay,
-      selectedSet,
+    saveSetProgress(selectedDay, selectedSet, {
       processedQuestions,
       currentQuestion,
       correctCount,
@@ -101,7 +127,7 @@ export default function Quiz() {
     });
   }, [selectedDay, selectedSet, processedQuestions, currentQuestion, correctCount, wrongCount, finished]);
 
-  // Load JSON and optionally restore saved progress
+  // Load JSON and optionally restore saved progress for this specific set
   useEffect(() => {
     if (!selectedDay || !selectedSet) return;
 
@@ -110,14 +136,9 @@ export default function Quiz() {
       .then(json => {
         setData(json);
 
-        // Check if we should restore saved progress for this exact day+set
-        const saved = loadProgress();
-        if (
-          saved &&
-          saved.selectedDay === selectedDay &&
-          saved.selectedSet === selectedSet &&
-          saved.processedQuestions?.length > 0
-        ) {
+        // Check if this specific set has saved progress
+        const saved = loadAllProgress()[`${selectedDay}-set${selectedSet}`];
+        if (saved && saved.processedQuestions?.length > 0) {
           // Restore exactly where the user left off
           setProcessedQuestions(saved.processedQuestions);
           setCurrentQuestion(saved.correctCount + saved.wrongCount);
@@ -140,6 +161,12 @@ export default function Quiz() {
 
 
   // ── Navigation helpers ──────────────────────────────────────────────────────
+  const selectCategory = (cat) => {
+    setSelectedCategory(cat);
+    setSelectedDay(null);
+    resetQuizState();
+  };
+
   const selectDay = (day) => {
     setSelectedDay(day);
     resetQuizState();
@@ -162,6 +189,7 @@ export default function Quiz() {
   };
 
   const backToSets = () => {
+    setSavedProgress(loadAllProgress());
     setSelectedSet(null);
     setData(null);
     setProcessedQuestions([]);
@@ -169,6 +197,7 @@ export default function Quiz() {
   };
 
   const backToDays = () => {
+    setSavedProgress(loadAllProgress());
     setSelectedDay(null);
     setSelectedSet(null);
     setData(null);
@@ -177,26 +206,33 @@ export default function Quiz() {
     setCompletedSets(loadCompleted());
   };
 
-  // ── Resume from main menu ───────────────────────────────────────────────────
-  const handleResume = () => {
-    if (!resumeData) return;
-    const { selectedDay: d, selectedSet: s, processedQuestions: pq,
-            currentQuestion: cq, correctCount: cc, wrongCount: wc } = resumeData;
-
-    setSelectedDay(d);
-    setSelectedSet(s);
-    setProcessedQuestions(pq);
-    setCurrentQuestion(cc + wc);
-    setCorrectCount(cc);
-    setWrongCount(wc);
-    setData(pq);
+  const backToCategories = () => {
+    setSavedProgress(loadAllProgress());
+    setSelectedCategory(null);
+    setSelectedDay(null);
+    setSelectedSet(null);
+    setData(null);
+    setProcessedQuestions([]);
     setFinished(false);
-    setSelected(null);
-    setShowAnswer(false);
+    setCompletedSets(loadCompleted());
+  };
 
-    setTimeout(() => {
-      window.scrollTo({ top: 150, behavior: "instant" });
-    }, 0);
+  // (Resume is now automatic: clicking any set with saved progress restores it via the load useEffect)
+
+  // ── Reset all progress ───────────────────────────────────────────────────
+  const handleResetProgress = () => {
+    if (!confirmReset) {
+      setConfirmReset(true);
+      // Auto-cancel after 3 s if user does nothing
+      setTimeout(() => setConfirmReset(false), 3000);
+      return;
+    }
+    // Confirmed — wipe everything
+    try { localStorage.removeItem(STORAGE_KEY); } catch { }
+    try { localStorage.removeItem(COMPLETED_KEY); } catch { }
+    setSavedProgress({});
+    setCompletedSets({});
+    setConfirmReset(false);
   };
 
   // ── Answer handling ─────────────────────────────────────────────────────────
@@ -223,8 +259,9 @@ export default function Quiz() {
       const updated = { ...loadCompleted(), [key]: `${finalPct}%` };
       saveCompleted(updated);
       setCompletedSets(updated);
-      clearProgress();
-      setResumeData(null);
+      // Clear only this set's progress entry
+      clearSetProgress(selectedDay, selectedSet);
+      setSavedProgress(loadAllProgress());
       setFinished(true);
       return;
     }
@@ -244,8 +281,8 @@ export default function Quiz() {
     return Math.max(...scores);
   };
 
-  // ── MENU SCREEN – SELECT DAY ────────────────────────────────────────────────
-  if (!selectedDay) {
+  // ── CATEGORY SELECTION SCREEN ───────────────────────────────────────────────
+  if (!selectedCategory) {
     return (
       <div className="quiz-container">
         <div className="floating-orbs">
@@ -258,30 +295,119 @@ export default function Quiz() {
           <div className="menu-header">
             <div className="quiz-badge">QUIZ</div>
             <h1 className="menu-title">Choose Your Challenge</h1>
-            <p className="menu-subtitle">Select a day to begin</p>
+            <p className="menu-subtitle">Select a category to begin</p>
           </div>
 
-          {/* Resume banner */}
-          {resumeData && (
+          {/* Unfinished sets banner */}
+          {Object.keys(savedProgress).length > 0 && (
             <div className="resume-banner">
               <div className="resume-info">
                 <span className="resume-icon">⏸</span>
                 <div>
-                  <p className="resume-label">You have an unfinished quiz</p>
-                  <p className="resume-detail">
-                    {dayConfigs[resumeData.selectedDay]?.title} · Set {resumeData.selectedSet} · Q{resumeData.correctCount + resumeData.wrongCount + 1}/{resumeData.processedQuestions?.length}
+                  <p className="resume-label">
+                    {Object.keys(savedProgress).length} unfinished set{Object.keys(savedProgress).length > 1 ? 's' : ''}
                   </p>
+                  <p className="resume-detail">Navigate to a day to continue where you left off</p>
                 </div>
-              </div>
-              <div className="resume-actions">
-                <button className="resume-btn" onClick={handleResume}>Resume</button>
-                <button className="resume-discard" onClick={() => { clearProgress(); setResumeData(null); }}>Discard</button>
               </div>
             </div>
           )}
 
+          <div className="category-grid">
+            {Object.entries(categoryConfigs).map(([catKey, cat]) => {
+              const totalSets = cat.days.reduce((acc, d) => acc + (dayConfigs[d]?.sets.length || 0), 0);
+              const completedCount = cat.days.reduce((acc, d) => {
+                return acc + (dayConfigs[d]?.sets.filter(s => completedSets[`${d}-set${s}`]).length || 0);
+              }, 0);
+              return (
+                <button
+                  key={catKey}
+                  className={`category-card${cat.comingSoon ? ' category-coming-soon' : ''}`}
+                  style={{ "--cat-gradient": cat.gradient, "--cat-glow": cat.glowColor }}
+                  onClick={() => !cat.comingSoon && selectCategory(catKey)}
+                  disabled={cat.comingSoon}
+                >
+                  <div className="category-emoji">{cat.emoji}</div>
+                  <div className="category-info">
+                    <span className="category-label">{cat.label}</span>
+                    <span className="category-desc">{cat.description}</span>
+                    {!cat.comingSoon && (
+                      <span className="category-meta">
+                        {cat.days.length} days · {totalSets} sets
+                        {completedCount > 0 && ` · ${completedCount}/${totalSets} done`}
+                      </span>
+                    )}
+                  </div>
+                  {cat.comingSoon ? (
+                    <span className="coming-soon-badge">Coming Soon</span>
+                  ) : (
+                    <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Reset progress */}
+          <div className="reset-progress-area">
+            <button
+              className={`reset-progress-btn${confirmReset ? ' confirming' : ''}`}
+              onClick={handleResetProgress}
+            >
+              {confirmReset ? (
+                <>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  Confirm? This clears all scores &amp; progress
+                </>
+              ) : (
+                <>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  Reset All Progress
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── MENU SCREEN – SELECT DAY ────────────────────────────────────────────────
+  if (!selectedDay) {
+    const catConfig = categoryConfigs[selectedCategory];
+    const daysInCategory = catConfig.days;
+
+    return (
+      <div className="quiz-container">
+        <div className="floating-orbs">
+          <div className="orb orb-1"></div>
+          <div className="orb orb-2"></div>
+          <div className="orb orb-3"></div>
+        </div>
+
+        <div className="menu-card">
+          <button className="back-link" onClick={backToCategories}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            Back to Categories
+          </button>
+
+          <div className="menu-header">
+            <div className="quiz-badge">{catConfig.emoji} {catConfig.label.toUpperCase()}</div>
+            <h1 className="menu-title">Choose Your Day</h1>
+            <p className="menu-subtitle">Select a day to begin</p>
+          </div>
+
           <div className="quiz-options">
-            {Object.entries(dayConfigs).map(([dayKey, config], index) => {
+            {daysInCategory.map((dayKey, index) => {
+              const config = dayConfigs[dayKey];
               const setsCompleted = config.sets.filter(s => completedSets[`${dayKey}-set${s}`]).length;
               return (
                 <button
@@ -303,7 +429,7 @@ export default function Quiz() {
                       </span>
                     )}
                     <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                 </button>
@@ -331,7 +457,7 @@ export default function Quiz() {
         <div className="menu-card">
           <button className="back-link" onClick={backToDays}>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             Back to Days
           </button>
@@ -345,10 +471,10 @@ export default function Quiz() {
           <div className="quiz-options">
             {availableSets.map((setNum) => {
               const score = getSetScore(selectedDay, setNum);
-              const isResumable =
-                resumeData &&
-                resumeData.selectedDay === selectedDay &&
-                resumeData.selectedSet === setNum;
+              const setKey = `${selectedDay}-set${setNum}`;
+              const savedForSet = savedProgress[setKey];
+              // Resumable only if there is saved mid-progress AND it is not already completed
+              const isResumable = !!savedForSet && !score;
 
               return (
                 <button
@@ -362,15 +488,15 @@ export default function Quiz() {
                       <span className="btn-title">Set {setNum}</span>
                       <span className="btn-subtitle">
                         {isResumable
-                          ? `Resume · Q${resumeData.correctCount + resumeData.wrongCount + 1}/${resumeData.processedQuestions?.length}`
+                          ? `Resume · Q${savedForSet.correctCount + savedForSet.wrongCount + 1}/${savedForSet.processedQuestions?.length}`
                           : score
-                          ? 'Completed · Tap to retry'
-                          : 'Practice Questions'}
+                            ? 'Completed · Tap to retry'
+                            : 'Practice Questions'}
                       </span>
                     </div>
                   </div>
                   <div className="btn-right">
-                    {isResumable && !score && (
+                    {isResumable && (
                       <span className="resume-pill">▶ Resume</span>
                     )}
                     {score && (
@@ -379,7 +505,7 @@ export default function Quiz() {
                       </span>
                     )}
                     <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                 </button>
@@ -464,13 +590,19 @@ export default function Quiz() {
           <div className="result-actions">
             <button className="back-btn secondary" onClick={backToSets}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Back to Sets
             </button>
-            <button className="back-btn" onClick={backToDays}>
+            <button className="back-btn secondary" onClick={backToDays}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Back to Days
+            </button>
+            <button className="back-btn" onClick={backToCategories}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Back to Menu
             </button>
@@ -488,13 +620,13 @@ export default function Quiz() {
           <div className="quiz-nav-buttons">
             <button className="quiz-nav-btn" onClick={backToSets} title="Back to Sets">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span>Sets</span>
             </button>
-            <button className="quiz-nav-btn" onClick={backToDays} title="Back to Main Menu">
+            <button className="quiz-nav-btn" onClick={backToCategories} title="Back to Main Menu">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span>Menu</span>
             </button>

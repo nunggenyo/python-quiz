@@ -1,0 +1,1002 @@
+[
+  {
+    "question": "What is the primary function of the 'Control Unit' within a computer's CPU?",
+    "options": [
+      "Performing arithmetic calculations like addition and subtraction",
+      "Storing long-term data on the hard drive",
+      "Rendering graphics for the user interface"
+    ],
+    "answer": "Directing the operation of the processor by telling the memory, arithmetic/logic unit, and input/output devices how to respond to instructions",
+    "explanation": "The Control Unit acts as the 'brain' of the CPU, coordinating how data moves and how other components execute instructions."
+  },
+  {
+    "question": "Which Unix command is used to 'print the current working directory'?",
+    "options": [
+      "ls",
+      "cd",
+      "mkdir"
+    ],
+    "answer": "pwd",
+    "explanation": "The 'pwd' command stands for 'print working directory' and shows the full path of the directory you are currently in."
+  },
+  {
+    "question": "In the context of Git, what does the 'commit' command do?",
+    "options": [
+      "Downloads a repository from a remote server like GitHub",
+      "Uploads local changes to a shared online repository",
+      "Deletes a branch that is no longer needed"
+    ],
+    "answer": "Captures a snapshot of the project's currently staged changes",
+    "explanation": "A commit records changes to the repository, creating a snapshot that can be referred back to later in the project history."
+  },
+  {
+    "question": "Which software architecture style connects computers directly to each other to share resources without a central server?",
+    "options": [
+      "Client-Server Architecture",
+      "Three-Tier Architecture",
+      "Monolithic Architecture"
+    ],
+    "answer": "Peer-to-Peer (P2P) Architecture",
+    "explanation": "In a P2P network, tasks and workloads are partitioned between equally privileged participants without the need for centralized coordination by a server."
+  },
+  {
+    "question": "What is 'Software Execution'?",
+    "explanation": "Execution is the phase where the computer follows the programmed instructions to perform the intended work.",
+    "options": [
+      "The process of writing code in a text editor",
+      "The process of converting code from Python to Java",
+      "The process of deleting old software from the hard drive"
+    ],
+    "answer": "The process by which a computer or virtual machine performs the instructions of a computer program"
+  },
+  {
+    "question": "Which type of maintenance involves 'modifying software to keep it usable in a changed or changing environment'?",
+    "options": [
+      "Corrective Maintenance",
+      "Perfective Maintenance",
+      "Preventive Maintenance"
+    ],
+    "answer": "Adaptive Maintenance",
+    "explanation": "Adaptive maintenance is performed to make the software work in new environments, such as a new operating system or hardware."
+  },
+  {
+    "question": "What does the 'ls -l' command do in a Unix-like operating system?",
+    "options": [
+      "Lists only the hidden files in a directory",
+      "Deletes all files in the current directory",
+      "Changes the user's password"
+    ],
+    "answer": "Displays a long listing of files, including permissions, owners, and sizes",
+    "explanation": "The '-l' flag stands for 'long', providing detailed information about each file and directory."
+  },
+  {
+    "question": "Which UML diagram is best for showing the 'workflow' or 'procedural logic' of a system?",
+    "options": [
+      "Class Diagram",
+      "Object Diagram",
+      "Deployment Diagram"
+    ],
+    "answer": "Activity Diagram",
+    "explanation": "Activity diagrams are used to model the flow of control from activity to activity, similar to a flowchart."
+  },
+  {
+    "question": "What is the result of the binary addition 1010 + 0101?",
+    "options": [
+      "10000",
+      "11111",
+      "10101"
+    ],
+    "answer": "1111",
+    "explanation": "Adding 1010 (10) and 0101 (5) in binary results in 1111, which is 15 in decimal."
+  },
+  {
+    "question": "What is a 'Merge Conflict' in version control?",
+    "options": [
+      "When the server runs out of storage space for code",
+      "When a programmer forgets their password to GitHub",
+      "When two different programming languages are used in the same file"
+    ],
+    "answer": "An event that occurs when Git is unable to automatically resolve differences in code between two commits",
+    "explanation": "A merge conflict happens when two people change the same line of a file, or one person deletes a file while another is modifying it."
+  },
+  {
+    "question": "Which of these is a benefit of using an 'IDE' (Integrated Development Environment)?",
+    "options": [
+      "It makes the computer's physical hardware run cooler",
+      "It eliminates the need for any software testing",
+      "It provides free hosting for web applications"
+    ],
+    "answer": "It provides features like syntax highlighting, code completion, and integrated debugging",
+    "explanation": "IDEs combine multiple tools into one interface to increase developer productivity and reduce errors."
+  },
+  {
+    "question": "What is 'Static Analysis' in software development?",
+    "options": [
+      "Running the program with many different inputs to see if it crashes",
+      "Interviewing users to see if they like the software's colors",
+      "Checking the physical temperature of the server while it runs code"
+    ],
+    "answer": "The analysis of computer software that is performed without actually executing programs",
+    "explanation": "Static analysis tools examine the source code for potential bugs, security vulnerabilities, or violations of coding standards before the code is run."
+  },
+  {
+    "question": "Which software development model is best suited for 'large, expensive, and complicated' projects where risk management is critical?",
+    "options": [
+      "Waterfall Model",
+      "Agile Development",
+      "Rapid Application Development (RAD)"
+    ],
+    "answer": "Spiral Model",
+    "explanation": "The Spiral model includes a specific phase for risk analysis in every iteration, making it ideal for high-risk projects."
+  },
+  {
+    "question": "In a 3-tier architecture, where would you typically find the 'SQL' queries and database drivers?",
+    "options": [
+      "Presentation Tier",
+      "Application Tier",
+      "User Interface Layer"
+    ],
+    "answer": "Data Tier",
+    "explanation": "The Data Tier (or Data Access Layer) is responsible for interacting with the database and managing data persistence."
+  },
+  {
+    "question": "What is 'Requirements Engineering'?",
+    "options": [
+      "The process of building the hardware servers for a system",
+      "The marketing phase where the product is sold to customers",
+      "The task of writing the final user manual for the software"
+    ],
+    "answer": "The process of defining, documenting, and maintaining requirements in the engineering design process",
+    "explanation": "Requirements engineering ensures that the system being built meets the actual needs and constraints of the stakeholders."
+  },
+  {
+    "question": "What is the 'modulus' of 10 % 3 in JavaScript?",
+    "options": [
+      "0",
+      "3",
+      "3.33"
+    ],
+    "answer": "1",
+    "explanation": "10 divided by 3 is 3 with a remainder of 1. The modulus operator (%) returns that remainder."
+  },
+  {
+    "question": "Which of the following is an example of 'Application Software'?",
+    "options": [
+      "Windows 10",
+      "Linux Kernel",
+      "BIOS"
+    ],
+    "answer": "Microsoft Word",
+    "explanation": "Application software is designed to perform specific tasks for the user, whereas systems software manages the computer hardware."
+  },
+  {
+    "question": "What is the purpose of a 'Class Diagram' in UML?",
+    "options": [
+      "To show how the user moves between different web pages",
+      "To describe the sequence of messages between objects",
+      "To list all the hardware requirements for the project"
+    ],
+    "answer": "To describe the structure of a system by showing its classes, attributes, operations, and relationships",
+    "explanation": "Class diagrams are the main building block of object-oriented modeling, showing the static structure of the code."
+  },
+  {
+    "question": "What is 'Code' in the context of computer science?",
+    "options": [
+      "A secret password used to encrypt data",
+      "A physical component inside the hard drive",
+      "A type of binary system used for networking"
+    ],
+    "answer": "A set of instructions or a system of rules written in a particular programming language",
+    "explanation": "Code is the term for the instructions given to a computer to perform tasks, written in languages like Python or Java."
+  },
+  {
+    "question": "What does 'SaaS' stand for?",
+    "options": [
+      "System as a Service",
+      "Software as a Solution",
+      "Secure and Agile Software"
+    ],
+    "answer": "Software as a Service",
+    "explanation": "SaaS is a software distribution model where a third-party provider hosts applications and makes them available to customers over the Internet."
+  },
+  {
+    "question": "Which Git command is used to 'copy' an existing repository from a remote server to your local machine?",
+    "options": [
+      "git push",
+      "git pull",
+      "git commit"
+    ],
+    "answer": "git clone",
+    "explanation": "Cloning creates a local copy of a repository, including all files, history, and branches."
+  },
+  {
+    "question": "What is the 'Client' in a Client-Server model?",
+    "options": [
+      "The powerful computer that stores all the website's data",
+      "The physical cable connecting two computers in a network",
+      "The database management system like MySQL"
+    ],
+    "answer": "The program or computer that requests a service from another program or computer",
+    "explanation": "In web development, the client is typically the user's web browser, which requests pages from a server."
+  },
+  {
+    "question": "Which logic gate outputs 'True' only if both inputs are 'True'?",
+    "options": [
+      "OR Gate",
+      "NOT Gate",
+      "XOR Gate"
+    ],
+    "answer": "AND Gate",
+    "explanation": "The AND operator requires all conditions to be met (True) for the result to be True."
+  },
+  {
+    "question": "What is the 'Mainframe' computer typically used for?",
+    "options": [
+      "Playing video games at home",
+      "A single person's daily office work",
+      "Browsing the internet on a mobile device"
+    ],
+    "answer": "Large-scale computing for bulk data processing and critical applications",
+    "explanation": "Mainframes are high-performance computers used by large organizations for tasks like census data or transaction processing."
+  },
+  {
+    "question": "What is 'Recursion'?",
+    "options": [
+      "A loop that runs exactly ten times then stops",
+      "A method of storing data in a cloud database",
+      "A type of security encryption used for passwords"
+    ],
+    "answer": "The process of a function calling itself as a subroutine",
+    "explanation": "Recursion allows a problem to be solved by breaking it down into smaller versions of the same problem."
+  },
+  {
+    "question": "Which SDLC phase involves 'finding and fixing bugs'?",
+    "options": [
+      "Analysis",
+      "Design",
+      "Maintenance"
+    ],
+    "answer": "Debugging/Testing",
+    "explanation": "During the testing phase, developers and testers identify defects and ensure the software works as intended."
+  },
+  {
+    "question": "What is a 'Flowchart'?",
+    "options": [
+      "A type of spreadsheet used for financial records",
+      "A written document explaining the business rules",
+      "A 3D model of the software's user interface"
+    ],
+    "answer": "A diagram that represents an algorithm, workflow, or process",
+    "explanation": "Flowcharts use various shapes to represent different types of actions or steps in a process."
+  },
+  {
+    "question": "What does 'RAD' stand for in software development?",
+    "options": [
+      "Resource Allocation Design",
+      "Reliable Application Deployment",
+      "Remote Access Development"
+    ],
+    "answer": "Rapid Application Development",
+    "explanation": "RAD is an adaptive software development model that prioritizes rapid prototyping and quick feedback over long planning cycles."
+  },
+  {
+    "question": "In Unix, which command is used to 'create a new directory'?",
+    "options": [
+      "rmdir",
+      "touch",
+      "cd"
+    ],
+    "answer": "mkdir",
+    "explanation": "The 'mkdir' command stands for 'make directory' and is used to create a new folder."
+  },
+  {
+    "question": "What is 'Pattern Recognition'?",
+    "options": [
+      "The ability to remember a user's password automatically",
+      "A software feature that adds filters to photos",
+      "The process of deleting duplicate files on a hard drive"
+    ],
+    "answer": "Identifying shared patterns or repetitions within a complex problem",
+    "explanation": "Pattern recognition helps in computational thinking by finding similarities that make solving complex problems easier."
+  },
+  {
+    "question": "Which component of the 3-tier architecture is the 'End-User' interface?",
+    "options": [
+      "Middle Tier",
+      "Logic Tier",
+      "Database Tier"
+    ],
+    "answer": "Presentation Tier",
+    "explanation": "The presentation tier is the top-most level of the application, which is what the user interacts with (e.g., the browser)."
+  },
+  {
+    "question": "What is the 'Waterfall' model?",
+    "options": [
+      "An agile method that allows for daily changes",
+      "A risk-based approach used for medical software",
+      "A method where all code is written in one day"
+    ],
+    "answer": "A linear, sequential approach where each phase must be finished before the next one starts",
+    "explanation": "Like a waterfall, progress flows steadily downwards through phases like requirements, design, and implementation."
+  },
+  {
+    "question": "What is 'Machine Language'?",
+    "options": [
+      "The language used to program modern web browsers",
+      "A language that uses English words like 'if' and 'else'",
+      "A system for managing team schedules"
+    ],
+    "answer": "A collection of binary digits or bits that the computer reads and interprets",
+    "explanation": "Machine language is the only language a computer can understand directly without translation."
+  },
+  {
+    "question": "Which tool is used for 'Version Control'?",
+    "options": [
+      "Photoshop",
+      "Excel",
+      "Chrome"
+    ],
+    "answer": "Git",
+    "explanation": "Git is the most popular distributed version control system for tracking changes in source code."
+  },
+  {
+    "question": "What is the purpose of 'Requirements Validation'?",
+    "options": [
+      "To ensure the code is written as fast as possible",
+      "To check if the database can store 1 terabyte of data",
+      "To translate the code from Python into JavaScript"
+    ],
+    "answer": "To ensure that the requirements define the system the customer actually wants",
+    "explanation": "Validation confirms that the set of requirements will lead to a product that satisfies the user's needs."
+  },
+  {
+    "question": "Which logic gate outputs 'True' if at least one of its inputs is 'True'?",
+    "options": [
+      "AND Gate",
+      "NAND Gate",
+      "NOT Gate"
+    ],
+    "answer": "OR Gate",
+    "explanation": "The OR operator returns True if any of the conditions are met."
+  },
+  {
+    "question": "What is a 'Byte'?",
+    "options": [
+      "The smallest possible unit of data (0 or 1)",
+      "A collection of four bits",
+      "A unique address in computer memory"
+    ],
+    "answer": "A unit of data that is eight bits long",
+    "explanation": "A byte is the standard unit used to represent a single character, like a letter or a number, in memory."
+  },
+  {
+    "question": "Which software architecture is composed of small, independent services that communicate over a network?",
+    "options": [
+      "Monolithic Architecture",
+      "Three-Tier Architecture",
+      "Peer-to-Peer Architecture"
+    ],
+    "answer": "Microservices Architecture",
+    "explanation": "Microservices break a large application into smaller pieces that can be developed and deployed independently."
+  },
+  {
+    "question": "What is 'Pseudocode'?",
+    "options": [
+      "A high-level language like Python or C#",
+      "The machine code used by a CPU",
+      "A type of encryption used for data security"
+    ],
+    "answer": "An informal way of writing programs for other humans to read",
+    "explanation": "Pseudocode uses structural conventions of normal programming languages but is intended for human reading rather than machine execution."
+  },
+  {
+    "question": "In the Agile manifesto, what is valued over 'Comprehensive Documentation'?",
+    "options": [
+      "Following a strict plan",
+      "Contract negotiation",
+      "Processes and tools"
+    ],
+    "answer": "Working software",
+    "explanation": "Agile prioritizes producing a functional product over creating extensive written documentation."
+  },
+  {
+    "question": "What does a 'Diamond' shape represent in a flowchart?",
+    "options": [
+      "An input operation",
+      "A process or action",
+      "The start of the program"
+    ],
+    "answer": "A decision or branch",
+    "explanation": "Diamonds indicate a point where a choice must be made (e.g., Yes/No), leading to different paths."
+  },
+  {
+    "question": "What is 'Full-Stack Development'?",
+    "options": [
+      "Only developing the back-end database",
+      "Only developing the mobile application",
+      "Designing the physical hardware and server racks"
+    ],
+    "answer": "Developing both the front-end (user interface) and the back-end (server/database)",
+    "explanation": "A full-stack developer has the skills to work on all layers of an application's architecture."
+  },
+  {
+    "question": "What is 'Abstraction' in computational thinking?",
+    "options": [
+      "Adding more details to make the problem more complex",
+      "Breaking a problem into small physical parts",
+      "Creating a copy of the database for security"
+    ],
+    "answer": "Removing unnecessary details to focus on the essential features",
+    "explanation": "Abstraction simplifies a problem by hiding the complex parts that aren't necessary for the current task."
+  },
+  {
+    "question": "Which type of maintenance is used to 'prevent' future problems in software?",
+    "options": [
+      "Corrective Maintenance",
+      "Perfective Maintenance",
+      "Adaptive Maintenance"
+    ],
+    "answer": "Preventive Maintenance",
+    "explanation": "Preventive maintenance involves making changes to keep the software reliable and prevent potential issues from occurring."
+  },
+  {
+    "question": "What is 'Binary'?",
+    "options": [
+      "A programming language like Python",
+      "A system for organizing files in folders",
+      "A way of naming variables in code"
+    ],
+    "answer": "A numbering system that uses only two digits: 0 and 1",
+    "explanation": "Computers use binary because it corresponds to the two electronic states: on and off."
+  },
+  {
+    "question": "What is the 'Middle Tier' in a 3-tier architecture?",
+    "options": [
+      "The layer that displays images to the user",
+      "The database where all records are kept",
+      "The layer that manages network cables"
+    ],
+    "answer": "The layer where the business logic is processed",
+    "explanation": "The middle tier (application tier) contains the rules and calculations that govern how data is used."
+  },
+  {
+    "question": "What is a 'Requirements Elicitation' technique?",
+    "options": [
+      "Writing machine code",
+      "Buying new server hardware",
+      "Performing a security audit"
+    ],
+    "answer": "Interviews and workshops with stakeholders",
+    "explanation": "Elicitation is the process of gathering requirements from users and clients through communication."
+  },
+  {
+    "question": "In Git, what is a 'Branch'?",
+    "options": [
+      "A physical cable in the server room",
+      "A separate folder on your desktop",
+      "A type of programming error"
+    ],
+    "answer": "A parallel version of a repository",
+    "explanation": "Branches allow you to work on new features or bug fixes without affecting the main 'master' code."
+  },
+  {
+    "question": "What is 'Decomposition' in problem-solving?",
+    "options": [
+      "Ignoring the small parts of a problem",
+      "Repeating a task many times automatically",
+      "Combining two different software products into one"
+    ],
+    "answer": "Breaking a complex problem down into smaller, manageable parts",
+    "explanation": "Decomposition makes it easier to solve a big problem by addressing its individual components one by one."
+  },
+  {
+    "question": "Which of the following is a 'Functional Requirement'?",
+    "options": [
+      "The system must be secure",
+      "The system must load in under 2 seconds",
+      "The system must be easy to use"
+    ],
+    "answer": "The system must allow a user to reset their password",
+    "explanation": "Functional requirements describe what the system 'does', whereas non-functional requirements describe how it 'behaves'."
+  },
+  {
+    "question": "What is 'Machine Code'?",
+    "options": [
+      "Instructions written in a human language like English",
+      "A secret code used to unlock a computer",
+      "A type of documentation for developers"
+    ],
+    "answer": "The elemental language of computers, consisting of binary or hexadecimal",
+    "explanation": "Machine code is the lowest-level representation of a program, which is executed directly by the CPU."
+  },
+  {
+    "question": "What is 'Software'?",
+    "options": [
+      "The physical parts of a computer like the monitor",
+      "The electricity that powers the machine",
+      "The desk where the computer is placed"
+    ],
+    "answer": "A collection of instructions and data that tells a computer how to work",
+    "explanation": "Software is the intangible part of the computer system, including programs and operating systems."
+  },
+  {
+    "question": "Which Unix command is used to 'remove a file'?",
+    "options": [
+      "mv",
+      "cp",
+      "ls"
+    ],
+    "answer": "rm",
+    "explanation": "The 'rm' command stands for 'remove' and is used to delete files permanently."
+  },
+  {
+    "question": "In UML, what is a 'Use Case Diagram' used for?",
+    "options": [
+      "To show the internal code of a function",
+      "To display the hardware topology of the network",
+      "To list all the variables in a program"
+    ],
+    "answer": "To represent the interactions between users and the system",
+    "explanation": "Use Case diagrams show the different 'actors' and the tasks they want to perform with the software."
+  },
+  {
+    "question": "What is the purpose of a 'Compiler'?",
+    "options": [
+      "To speed up the computer's internet connection",
+      "To store data on a remote cloud server",
+      "To help users type faster in an editor"
+    ],
+    "answer": "To translate high-level code into machine code that the CPU can execute",
+    "explanation": "Compilers take human-readable source code and turn it into the binary instructions the machine needs."
+  },
+  {
+    "question": "What is 'Lean Software Development' focused on?",
+    "options": [
+      "Hiring the fewest number of developers",
+      "Writing the shortest possible code",
+      "Using the smallest amount of server memory"
+    ],
+    "answer": "Eliminating waste and optimizing the whole process",
+    "explanation": "Lean principles aim to deliver value quickly by removing anything that doesn't benefit the final product."
+  },
+  {
+    "question": "In a 3-tier architecture, what is the 'Presentation Tier' responsible for?",
+    "options": [
+      "Calculating the payroll for employees",
+      "Storing the user's personal information",
+      "Performing data backups"
+    ],
+    "answer": "Displaying information to the user and capturing their input",
+    "explanation": "The presentation tier is the graphical user interface (GUI) that the end-user sees."
+  },
+  {
+    "question": "What does a 'Rectangle' represent in a flowchart?",
+    "options": [
+      "A decision point",
+      "The end of the process",
+      "Data input from a keyboard"
+    ],
+    "answer": "A process, action, or operation",
+    "explanation": "Rectangles are used to show steps where something is being done or calculated."
+  },
+  {
+    "question": "What is 'Configuration Management'?",
+    "options": [
+      "The process of setting up a new computer's hardware",
+      "A marketing strategy for selling software licenses",
+      "The task of writing code in multiple languages"
+    ],
+    "answer": "The process of tracking and controlling changes in software",
+    "explanation": "Configuration management ensures that everyone is working with the right version of the code and that all changes are documented."
+  },
+  {
+    "question": "What is 'Incremental Development'?",
+    "options": [
+      "Writing the entire system and delivering it at once",
+      "Developing a system by adding one line of code at a time",
+      "A method where code is written only on weekends"
+    ],
+    "answer": "Developing a system through a series of small, manageable portions or 'increments'",
+    "explanation": "Each increment adds a piece of functionality, allowing for early feedback and gradual improvement."
+  },
+  {
+    "question": "What is the 'result' of a Boolean expression?",
+    "options": [
+      "Any number between 1 and 100",
+      "A text string describing the error",
+      "A file stored on the hard drive"
+    ],
+    "answer": "Either True or False",
+    "explanation": "Boolean expressions are questions that only have two possible answers: true or false."
+  },
+  {
+    "question": "Which Unix command is used to 'list all files' in the current directory?",
+    "options": [
+      "pwd",
+      "cd",
+      "mkdir"
+    ],
+    "answer": "ls",
+    "explanation": "The 'ls' command lists the contents of a directory."
+  },
+  {
+    "question": "What is a 'Server'?",
+    "options": [
+      "A device used by a waiter in a restaurant",
+      "A program that only runs on a mobile phone",
+      "A physical cable used to connect monitors"
+    ],
+    "answer": "A computer or program that provides services to other computers on a network",
+    "explanation": "Servers 'serve' data or applications to 'client' computers that request them."
+  },
+  {
+    "question": "What is the purpose of 'Debugging'?",
+    "options": [
+      "To add new features to the software",
+      "To design a more beautiful user interface",
+      "To translate the code into a different language"
+    ],
+    "answer": "To find and resolve defects or 'bugs' in the code",
+    "explanation": "Debugging is the process of fixing errors that prevent the program from running correctly."
+  },
+  {
+    "question": "What does 'GUI' stand for?",
+    "options": [
+      "General User Information",
+      "Global Utility Interface",
+      "Group User Integration"
+    ],
+    "answer": "Graphical User Interface",
+    "explanation": "A GUI allows users to interact with software using visual elements like icons and buttons instead of text commands."
+  },
+  {
+    "question": "Which Git command 'sends' your local changes to a remote repository?",
+    "options": [
+      "git pull",
+      "git commit",
+      "git add"
+    ],
+    "answer": "git push",
+    "explanation": "Pushing uploads your local commits to a shared server so others can see them."
+  },
+  {
+    "question": "What is 'Computational Thinking'?",
+    "options": [
+      "The ability to calculate large numbers in your head quickly",
+      "The study of how computers are manufactured in factories",
+      "A type of artificial intelligence used in robotics"
+    ],
+    "answer": "A problem-solving process that includes decomposition, pattern recognition, and abstraction",
+    "explanation": "Computational thinking is a way of looking at problems so that a computer can help solve them."
+  },
+  {
+    "question": "In a flowchart, what represents 'Start' and 'End'?",
+    "options": [
+      "Rectangle",
+      "Diamond",
+      "Parallelogram"
+    ],
+    "answer": "Oval (Terminator)",
+    "explanation": "Oval shapes are used at the beginning and end of a flowchart to show where the process starts and stops."
+  },
+  {
+    "question": "What is the result of the binary conversion for decimal 10?",
+    "options": [
+      "1111",
+      "1001",
+      "1100"
+    ],
+    "answer": "1010",
+    "explanation": "Decimal 10 is represented in binary as 1010 (8 + 2)."
+  },
+  {
+    "question": "What is 'Software Prototyping'?",
+    "options": [
+      "Writing the final, finished code for a customer",
+      "Buying a computer with the software pre-installed",
+      "Deleting old versions of code to save space"
+    ],
+    "answer": "Creating an early, incomplete version of a program to test ideas",
+    "explanation": "Prototyping helps developers and users visualize how the system will work before building the final product."
+  },
+  {
+    "question": "Which layer of a web application is responsible for 'Data Persistence'?",
+    "options": [
+      "Front-end",
+      "Web Server",
+      "Middleware"
+    ],
+    "answer": "Database",
+    "explanation": "The database ensures that information is stored permanently even when the computer is turned off."
+  },
+  {
+    "question": "What is 'Machine Code'?",
+    "options": [
+      "A language that uses English words",
+      "A type of documentation for computers",
+      "A way of naming software products"
+    ],
+    "answer": "Binary instructions that the computer's CPU can execute directly",
+    "explanation": "Every program must be converted into machine code (1s and 0s) before the computer can run it."
+  },
+  {
+    "question": "What does 'SaaS' allow a user to do?",
+    "options": [
+      "Build their own custom hardware",
+      "Avoid paying for software forever",
+      "Use software without an internet connection"
+    ],
+    "answer": "Access software over the internet via a subscription",
+    "explanation": "With SaaS, you don't install the software on your machine; you use it through a browser."
+  },
+  {
+    "question": "In Unix, how do you 'change directories'?",
+    "options": [
+      "ls",
+      "pwd",
+      "mkdir"
+    ],
+    "answer": "cd",
+    "explanation": "The 'cd' command stands for 'change directory'."
+  },
+  {
+    "question": "What is 'Requirements Analysis'?",
+    "options": [
+      "Building the final software product",
+      "Selling the software to a customer",
+      "Writing a review of the software"
+    ],
+    "answer": "Determining the needs and conditions to meet for a software product",
+    "explanation": "Analysis involves studying what the users want to ensure the final product is useful."
+  },
+  {
+    "question": "What is a 'Commit' in Git?",
+    "options": [
+      "A promise to finish the project on time",
+      "A payment made to a software developer",
+      "A type of virus that infects code"
+    ],
+    "answer": "A snapshot of your changes at a specific point in time",
+    "explanation": "Committing saves your progress so you can go back to it later if needed."
+  },
+  {
+    "question": "What is an 'Algorithm'?",
+    "options": [
+      "A type of computer hardware",
+      "A programming language like Python",
+      "A secret code used for security"
+    ],
+    "answer": "A set of step-by-step instructions for solving a problem",
+    "explanation": "Algorithms are the logic behind how programs work to achieve a specific result."
+  },
+  {
+    "question": "What does a 'Parallelogram' represent in a flowchart?",
+    "options": [
+      "A process",
+      "A decision",
+      "Start or End"
+    ],
+    "answer": "Input or Output",
+    "explanation": "Parallelograms are used to show where data is being entered (Input) or displayed (Output)."
+  },
+  {
+    "question": "What is 'Abstraction'?",
+    "options": [
+      "Making a problem more detailed",
+      "Repeating a task many times",
+      "Copying a file to another folder"
+    ],
+    "answer": "Removing irrelevant information to focus on what is important",
+    "explanation": "Abstraction simplifies things by hiding complex details that aren't currently needed."
+  },
+  {
+    "question": "What is 'Decomposition'?",
+    "options": [
+      "Ignoring the difficult parts of a problem",
+      "Combining many small programs into one big one",
+      "Deleting old code from a repository"
+    ],
+    "answer": "Breaking a big problem into smaller, easier pieces",
+    "explanation": "Decomposition makes large tasks manageable by addressing them bit by bit."
+  },
+  {
+    "question": "Which software architecture has 'one big piece' of code for everything?",
+    "options": [
+      "Microservices",
+      "3-tier architecture",
+      "Client-server"
+    ],
+    "answer": "Monolithic Architecture",
+    "explanation": "In a monolithic system, all the functions and services are bundled together into a single application."
+  },
+  {
+    "question": "What is 'Corrective Maintenance'?",
+    "options": [
+      "Adding new features that the user requested",
+      "Updating the software for a new operating system",
+      "Improving the software's performance"
+    ],
+    "answer": "Fixing errors or 'bugs' in the software",
+    "explanation": "Corrective maintenance is performed after a failure has been discovered to restore the software to its correct state."
+  },
+  {
+    "question": "What does 'UTF-8' do?",
+    "options": [
+      "Calculates the speed of the processor",
+      "Stores data on a cloud server",
+      "Connects computers to the internet"
+    ],
+    "answer": "Represents characters from almost all languages in binary",
+    "explanation": "UTF-8 is a common character encoding that allows computers to display text in many different languages."
+  },
+  {
+    "question": "In a 3-tier architecture, what is 'Business Logic'?",
+    "options": [
+      "The design of the company's logo",
+      "The rules for how the office is organized",
+      "The physical location of the server room"
+    ],
+    "answer": "The rules and calculations that define how the application works",
+    "explanation": "Business logic is the 'brain' of the application, usually found in the middle tier."
+  },
+  {
+    "question": "What is a 'Functional Requirement'?",
+    "options": [
+      "The system must be very fast",
+      "The system must be secure",
+      "The system must be easy to learn"
+    ],
+    "answer": "The system must allow a user to print a report",
+    "explanation": "Functional requirements define the specific actions the system must perform."
+  },
+  {
+    "question": "What is the purpose of 'Comments' in code?",
+    "options": [
+      "To tell the computer to run faster",
+      "To store data for the database",
+      "To hide the code from other developers"
+    ],
+    "answer": "To explain the code to humans who read it",
+    "explanation": "Comments are ignored by the computer but help developers understand what the code is doing."
+  },
+  {
+    "question": "What does 'RAD' focus on?",
+    "options": [
+      "Writing very long documents",
+      "Strictly following a plan made at the start",
+      "Building the most expensive software possible"
+    ],
+    "answer": "Quickly building and changing prototypes",
+    "explanation": "Rapid Application Development (RAD) uses speed and feedback to build software quickly."
+  },
+  {
+    "question": "What is a 'State Transition Diagram' used for?",
+    "options": [
+      "Showing the structure of a database",
+      "Listing the names of all the developers",
+      "Calculating the cost of the project"
+    ],
+    "answer": "Showing how a system changes from one state to another",
+    "explanation": "State diagrams show the different 'modes' or 'states' a system can be in (like 'On' or 'Off')."
+  },
+  {
+    "question": "What is 'Software Execution'?",
+    "options": [
+      "The process of deleting a program",
+      "The process of writing code in an editor",
+      "The process of designing a user interface"
+    ],
+    "answer": "The process of the computer actually running the instructions in a program",
+    "explanation": "Execution is when the computer follows the commands in the code to do something."
+  },
+  {
+    "question": "What is 'Full-Stack' development?",
+    "options": [
+      "Only working on the user interface",
+      "Only working on the database",
+      "Working only on the hardware"
+    ],
+    "answer": "Working on all parts of the application, from front-end to back-end",
+    "explanation": "Full-stack developers can build both the part the user sees and the hidden logic and database."
+  },
+  {
+    "question": "Which UML diagram shows the 'objects' and the 'messages' they send to each other over time?",
+    "options": [
+      "Class Diagram",
+      "Use Case Diagram",
+      "Activity Diagram"
+    ],
+    "answer": "Sequence Diagram",
+    "explanation": "Sequence diagrams focus on the timing and order of interactions between different parts of the system."
+  },
+  {
+    "question": "What is 'Requirements Elicitation'?",
+    "options": [
+      "Writing the final code for the system",
+      "Testing the system for bugs",
+      "Buying a new computer for the office"
+    ],
+    "answer": "Finding out what the users and stakeholders need from the system",
+    "explanation": "Elicitation is the process of gathering requirements through talking to people."
+  },
+  {
+    "question": "In Git, what does 'git pull' do?",
+    "options": [
+      "Sends your changes to the server",
+      "Deletes all the code on your computer",
+      "Creates a new branch for testing"
+    ],
+    "answer": "Gets the latest changes from the server and adds them to your computer",
+    "explanation": "Pulling ensures you have the most up-to-date code from your teammates."
+  },
+  {
+    "question": "What is 'Pattern Recognition'?",
+    "options": [
+      "Finding a user's lost password",
+      "Drawing pictures in the user interface",
+      "Calculating the speed of light"
+    ],
+    "answer": "Finding things that are the same or similar in a problem",
+    "explanation": "Pattern recognition helps you see repetitions that make solving a problem easier."
+  },
+  {
+    "question": "What is the 'result' of an AND logic gate if one input is True and the other is False?",
+    "options": [
+      "True",
+      "Maybe",
+      "Error"
+    ],
+    "answer": "False",
+    "explanation": "An AND gate only outputs True if BOTH inputs are True."
+  },
+  {
+    "question": "What is 'Binary' code?",
+    "options": [
+      "A language that uses letters A to Z",
+      "A code that uses numbers 0 to 9",
+      "A type of documentation for developers"
+    ],
+    "answer": "A system of 0s and 1s used by computers",
+    "explanation": "Computers process everything as 1s (on) and 0s (off)."
+  },
+  {
+    "question": "What is 'Debugging'?",
+    "options": [
+      "Adding new features to a program",
+      "Designing a logo for the software",
+      "Translating the code into another language"
+    ],
+    "answer": "Finding and fixing mistakes in the code",
+    "explanation": "Debugging is the process of getting the 'bugs' (mistakes) out of your code."
+  },
+  {
+    "question": "Which Unix command 'makes a new directory'?",
+    "options": [
+      "cd",
+      "ls",
+      "rm"
+    ],
+    "answer": "mkdir",
+    "explanation": "The 'mkdir' command is used to create a new folder."
+  },
+  {
+    "question": "What is a 'Byte'?",
+    "options": [
+      "The smallest piece of data in a computer",
+      "A collection of 4 bits",
+      "A way of naming a software product"
+    ],
+    "answer": "A group of 8 bits",
+    "explanation": "Bytes are used to measure computer memory and storage."
+  },
+  {
+    "question": "What is 'Software'?",
+    "options": [
+      "The physical keyboard and mouse",
+      "The monitor and the screen",
+      "The plastic case of the computer"
+    ],
+    "answer": "The programs and data that tell the computer what to do",
+    "explanation": "Software is the intangible part of a computer that runs the hardware."
+  }
+]

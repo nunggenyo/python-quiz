@@ -63,7 +63,7 @@ def check_answers_in_options(folder_path: Path, file_name: str = None):
 
 
 # =============================
-folder_path = Path("public/day6/")
+folder_path = Path("add/day1/")
 file_name = None
 # =============================
 

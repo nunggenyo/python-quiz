@@ -1,0 +1,992 @@
+[
+  {
+    "question": "What is the primary definition of a 'computer' according to the study guide?",
+    "options": [
+      "A mechanical tool for manual data entry and physical storage",
+      "A device used exclusively for high-speed gaming and entertainment",
+      "A system that requires no user instruction to perform complex logic"
+    ],
+    "answer": "An electronic data processing device which accepts and stores data input, processes it, and generates output in a required format",
+    "explanation": "The guide defines a computer as an electronic data processing device that performs five basic functions: input, storage, processing, output, and control."
+  },
+  {
+    "question": "Which of the following is considered a disadvantage of computers compared to humans?",
+    "options": [
+      "Low storage capability for large amounts of data",
+      "Inability to perform calculations at high speeds",
+      "Frequent need for physical rest and emotional breaks"
+    ],
+    "answer": "No I.Q. and total dependency on user instructions",
+    "explanation": "Computers lack independent intelligence (I.Q.) and are entirely dependent on the instructions provided by a human user."
+  },
+  {
+    "question": "What are the characteristics that define 'Computational Thinking'?",
+    "options": [
+      "Speed, Accuracy, and Reliability",
+      "Input, Storage, Processing, and Output",
+      "Hardware, Software, and Networking"
+    ],
+    "answer": "Decomposition, Pattern recognition, Generalization/abstraction, and Algorithms",
+    "explanation": "Computational thinking is defined by four key characteristics: decomposition, pattern recognition, generalization/abstraction, and algorithms."
+  },
+  {
+    "question": "In the context of computational thinking, what does 'Decomposition' involve?",
+    "options": [
+      "Identifying repeated features or motifs within a fabric",
+      "Formulating common properties of specific instances as general concepts",
+      "Removing physical details to focus on the most important attributes"
+    ],
+    "answer": "Breaking a complex problem or system into parts that are easier to conceive, understand, program, and maintain",
+    "explanation": "Decomposition is the process of breaking down a complex problem into smaller, more manageable parts."
+  },
+  {
+    "question": "Which tier of a 3-tier architecture is responsible for functional business logic?",
+    "options": [
+      "Presentation (Top) Tier",
+      "Data (End) Tier",
+      "Physical (Hardware) Tier"
+    ],
+    "answer": "Application (Middle) Tier",
+    "explanation": "The application (middle) tier contains the functional business logic that drives the application's core capabilities."
+  },
+  {
+    "question": "What is the 'Full Stack Development' metaphor referring to?",
+    "options": [
+      "Only developing the user interface and front-end components",
+      "Focusing exclusively on database management and storage",
+      "Developing hardware components such as CPUs and memory"
+    ],
+    "answer": "Software development covering all the layers of a 3-tier architecture",
+    "explanation": "Full Stack Development refers to development across the presentation, application, and data tiers of a software system."
+  },
+  {
+    "question": "What is the fundamental storage unit in a computer's memory?",
+    "options": [
+      "Bit",
+      "Kilobyte",
+      "Nibble"
+    ],
+    "answer": "Byte",
+    "explanation": "A byte, which consists of eight bits grouped together, is the basic storage unit in memory."
+  },
+  {
+    "question": "In the Waterfall model, what happens after the 'Design' phase is completed and signed off?",
+    "options": [
+      "Requirements Analysis",
+      "System Testing",
+      "Maintenance"
+    ],
+    "answer": "Implementation and Unit Testing",
+    "explanation": "In the linear waterfall sequence, the design phase is followed by implementation (construction) and unit testing."
+  },
+  {
+    "question": "Which software development methodology is specifically characterized by an explicit focus on 'Risk Assessment and Reduction'?",
+    "options": [
+      "Waterfall Model",
+      "Agile Development",
+      "Rapid Application Development (RAD)"
+    ],
+    "answer": "Spiral Development",
+    "explanation": "The spiral model is distinguished from other models by its explicit assessment and resolution of risks in each loop."
+  },
+  {
+    "question": "What does the 'Agile Manifesto' prioritize over 'Following a Plan'?",
+    "options": [
+      "Comprehensive Documentation",
+      "Contract Negotiation",
+      "Processes and Tools"
+    ],
+    "answer": "Responding to Change",
+    "explanation": "The Agile Manifesto values responding to change more than following a rigid, predetermined plan."
+  },
+  {
+    "question": "Which Boolean operator is used to 'Broaden' a search by returning documents containing either or both search terms?",
+    "options": [
+      "AND",
+      "NOT",
+      "XOR"
+    ],
+    "answer": "OR",
+    "explanation": "The 'OR' operator broadens a search by requiring either term to be present in the results."
+  },
+  {
+    "question": "How many bits are in a single Byte?",
+    "options": [
+      "2",
+      "4",
+      "16"
+    ],
+    "answer": "8",
+    "explanation": "A byte is defined as eight bits grouped together as a unit."
+  },
+  {
+    "question": "What is 'Pseudocode' primarily used for?",
+    "options": [
+      "Executing programs directly on the computer's CPU",
+      "Validating the syntax of a specific programming language like Python",
+      "Creating high-resolution graphics for user interfaces"
+    ],
+    "answer": "Informally describing how an algorithm operates for humans to read",
+    "explanation": "Pseudocode is an informal way to describe an algorithm's logic using natural language, intended for human understanding rather than computer execution."
+  },
+  {
+    "question": "In a flowchart, what does the 'Diamond' shape represent?",
+    "options": [
+      "The start or end of the process",
+      "A simple instruction to do something",
+      "Input or output of data"
+    ],
+    "answer": "A decision box with a Yes/No question",
+    "explanation": "Diamond-shaped boxes represent decisions, often containing a question that leads to different paths based on a yes or no answer."
+  },
+  {
+    "question": "Which of these is a typical activity in the creation of a computer program?",
+    "options": [
+      "Hardware Manufacturing",
+      "Marketing Strategy",
+      "Financial Auditing"
+    ],
+    "answer": "Analysis, Design, Programming, and Debugging/Testing",
+    "explanation": "The typical activities include analysis, design, programming, debugging/testing, and maintenance."
+  },
+  {
+    "question": "What is the result of the binary conversion of the decimal number 35?",
+    "options": [
+      "10101011",
+      "00110011",
+      "11000011"
+    ],
+    "answer": "00100011",
+    "explanation": "Decimal 35 is represented in 8-bit binary as 00100011 (32 + 2 + 1)."
+  },
+  {
+    "question": "Which programming language is classified as 'Low-Level' because it provides no abstraction from the hardware?",
+    "options": [
+      "C#",
+      "Python",
+      "Assembly"
+    ],
+    "answer": "Machine Language",
+    "explanation": "Machine language is the native language of the computer, consisting of binary or hexadecimal instructions executed directly by the CPU with no abstraction."
+  },
+  {
+    "question": "What is a 'Function' in programming?",
+    "options": [
+      "A hardware component that increases CPU speed",
+      "A type of data that only stores Boolean values",
+      "A documentation tool used for project management"
+    ],
+    "answer": "A block of code that can be called and run many times in a program",
+    "explanation": "A function is a reusable block of code that can be invoked repeatedly to perform a task or calculation."
+  },
+  {
+    "question": "Which UML diagram is used to show the 'Static Structure' of a system by displaying its classes and their relationships?",
+    "options": [
+      "Use Case Diagram",
+      "Sequence Diagram",
+      "State Transition Diagram"
+    ],
+    "answer": "Class Diagram",
+    "explanation": "A class diagram describes the static structure of a system by showing its classes, attributes, and relationships."
+  },
+  {
+    "question": "What is the purpose of a 'Feasibility Study' in the requirements engineering process?",
+    "options": [
+      "To write the final source code for the application",
+      "To design the database schema and user interface",
+      "To perform integration testing on the finished product"
+    ],
+    "answer": "To decide whether or not the proposed system is worthwhile and can be engineered within budget",
+    "explanation": "A feasibility study is a short, focused check to see if a system contributes to objectives and is technically and financially viable."
+  },
+  {
+    "question": "Which of the following describes 'Software-as-a-Service' (SaaS)?",
+    "options": [
+      "A model where software is purchased once and installed on a local machine",
+      "Hardware components rented out to users on a subscription basis",
+      "A system where only the database is hosted centrally"
+    ],
+    "answer": "A licensing and delivery model where software is licensed on a subscription basis and centrally hosted",
+    "explanation": "SaaS is a cloud computing nomenclature where software is centrally hosted and licensed via subscription."
+  },
+  {
+    "question": "In programming, what does the 'isNaN()' function check for?",
+    "options": [
+      "If a value is a valid integer",
+      "If a variable has been initialized",
+      "If a string is empty"
+    ],
+    "answer": "If a value is an illegal number (Not-a-Number)",
+    "explanation": "The 'isNaN()' function returns true if a value is not a legal number and false otherwise."
+  },
+  {
+    "question": "What is an 'IDE' (Integrated Development Environment)?",
+    "options": [
+      "A type of compiler used exclusively for Python",
+      "A hardware server used to host web applications",
+      "A version control system like Git"
+    ],
+    "answer": "A software application providing facilities like an editor, build tools, and a debugger to programmers",
+    "explanation": "An IDE is a comprehensive tool for software development that typically includes a code editor, build automation, and a debugger."
+  },
+  {
+    "question": "Which principle is a core part of 'Lean Software Development'?",
+    "options": [
+      "Comprehensive Documentation",
+      "Decide as early as possible",
+      "Focus on technical problems rather than business problems"
+    ],
+    "answer": "Eliminate waste",
+    "explanation": "A primary principle of Lean development is to eliminate anything that does not add value to the customer, which is considered waste."
+  },
+  {
+    "question": "What is the binary representation of the decimal number 145?",
+    "options": [
+      "01110001",
+      "10101010",
+      "11001100"
+    ],
+    "answer": "10010001",
+    "explanation": "Decimal 145 converts to binary as 10010001 (128 + 16 + 1)."
+  },
+  {
+    "question": "Which 'Boolean Operator' is read as 'p implies q' and is true when p is false?",
+    "options": [
+      "AND",
+      "OR",
+      "XOR"
+    ],
+    "answer": "Implication (=>)",
+    "explanation": "Material implication (p => q) is a Boolean operator that is true whenever p is false or both p and q are true."
+  },
+  {
+    "question": "What is 'Abstraction' in computer science?",
+    "options": [
+      "The process of making code as complex as possible to prevent hacking",
+      "Breaking a problem into the smallest possible physical pieces",
+      "A method of increasing hardware memory through software"
+    ],
+    "answer": "Removing physical or temporal details to focus on details of greater importance",
+    "explanation": "Abstraction is a conceptual process that simplifies systems by focusing only on relevant information and forgetting irrelevant details."
+  },
+  {
+    "question": "Which software development methodology uses a 'linear sequential' approach where progress flows downwards?",
+    "options": [
+      "Agile",
+      "Spiral",
+      "Prototyping"
+    ],
+    "answer": "Waterfall",
+    "explanation": "The Waterfall model is a breakdown of activities into linear sequential phases where each phase depends on the previous one."
+  },
+  {
+    "question": "In a 3-tier architecture, what does the 'Data (End) Tier' consist of?",
+    "options": [
+      "The user interface and graphical elements",
+      "The business logic written in Java or Python",
+      "The network protocols used for transmission"
+    ],
+    "answer": "The database, data storage system, and data access layer",
+    "explanation": "The data tier comprises the database/storage systems (like MySQL or Oracle) and the layer used to access that data."
+  },
+  {
+    "question": "What is the 'smallest standalone unit of code' that is complete in itself in computer languages?",
+    "options": [
+      "Variable",
+      "Function",
+      "Operator"
+    ],
+    "answer": "Statement",
+    "explanation": "A statement is the smallest standalone unit of code that is complete, such as a 'console.log()' command."
+  },
+  {
+    "question": "What does the 'GitHub' platform provide to developers?",
+    "options": [
+      "A physical hardware laboratory for testing circuits",
+      "A compiler that converts Python code into machine code",
+      "A web browser optimized for running JavaScript"
+    ],
+    "answer": "A web-based Git repository hosting service for version control and collaboration",
+    "explanation": "GitHub is a hosting service for Git repositories that offers version control, task management, and collaboration features."
+  },
+  {
+    "question": "Which type of requirement specifies 'how well' a system must perform its functions (e.g., timeliness or quantity)?",
+    "options": [
+      "Functional Requirements",
+      "Design Requirements",
+      "Derived Requirements"
+    ],
+    "answer": "Performance Requirements",
+    "explanation": "Performance requirements measure the extent to which a function must be executed, often in terms of quality, quantity, or timeliness."
+  },
+  {
+    "question": "In the context of software architecture, what is 'Separation of Concerns'?",
+    "options": [
+      "Keeping developers from different teams in separate buildings",
+      "Ensuring that the database and the user interface use the same programming language",
+      "Making sure that the software only has one stakeholder"
+    ],
+    "answer": "Reducing complexity by separating the different interests or concerns that drive the design",
+    "explanation": "Separation of concerns is a method architects use to manage complexity by isolating different parts of the design."
+  },
+  {
+    "question": "Which of these is a standard 'JavaScript' data type used for positive or negative numbers?",
+    "options": [
+      "Character",
+      "String",
+      "Boolean"
+    ],
+    "answer": "Numerical",
+    "explanation": "The 'Numerical' (or Number) data type represents positive or negative numbers with or without decimal places."
+  },
+  {
+    "question": "What is a 'Recursive Function'?",
+    "options": [
+      "A function that can only be called once per program execution",
+      "A function that does not return any value to the caller",
+      "A function used exclusively to delete data from a database"
+    ],
+    "answer": "A function that calls itself, either directly or indirectly",
+    "explanation": "Recursion is the process where a function calls itself to solve simpler versions of a problem."
+  },
+  {
+    "question": "What does 'RAD' stand for in software development?",
+    "options": [
+      "Random Agile Design",
+      "Rapid Agile Development",
+      "Remote Application Deployment"
+    ],
+    "answer": "Rapid Application Development",
+    "explanation": "RAD stands for Rapid Application Development, an approach that emphasizes adaptability and process over rigid planning."
+  },
+  {
+    "question": "Which UML diagram shows how objects 'operate with one another and in what order' over time?",
+    "options": [
+      "Class Diagram",
+      "Use Case Diagram",
+      "State Transition Diagram"
+    ],
+    "answer": "Sequence Diagram",
+    "explanation": "A sequence diagram is an interaction diagram that shows object operations and their sequence in time."
+  },
+  {
+    "question": "What is the primary goal of 'Configuration Management' according to the guide?",
+    "options": [
+      "To increase the speed of the CPU through overclocking",
+      "To ensure that all stakeholders are paid on time",
+      "To design the initial user interface mock-ups"
+    ],
+    "answer": "To establish and maintain the consistency of a product's performance and functional attributes",
+    "explanation": "Configuration Management is concerned with maintaining product consistency throughout its life cycle."
+  },
+  {
+    "question": "Which of the following is an 'Aggregate Data Type' in JavaScript?",
+    "options": [
+      "Integer",
+      "Float",
+      "Boolean"
+    ],
+    "answer": "Array",
+    "explanation": "Aggregate data types, like arrays and classes, consist of more than one piece of data referenced as a single entity."
+  },
+  {
+    "question": "What is a 'Compiler'?",
+    "options": [
+      "A tool used to write natural language documentation",
+      "A program that executes code line-by-line without translation",
+      "A hardware device that stores binary data"
+    ],
+    "answer": "A program that translates human-readable source code into machine-readable code",
+    "explanation": "A compiler derives machine code from source code in its human-readable form."
+  },
+  {
+    "question": "What does 'Ethnography' involve in requirements engineering?",
+    "options": [
+      "Creating a mathematical proof for software correctness",
+      "Developing a prototype with high-level graphics",
+      "Negotiating contracts with third-party vendors"
+    ],
+    "answer": "Observing and analyzing how people actually work in their social and organizational environment",
+    "explanation": "Ethnography is a social science technique where researchers spend time observing actual work practices to derive requirements."
+  },
+  {
+    "question": "In a 3-tier architecture, what is 'Business Logic'?",
+    "options": [
+      "The set of rules for how to market the software to customers",
+      "The physical hardware requirements for the database server",
+      "The graphical design of the website's buttons and menus"
+    ],
+    "answer": "The logic that drives an application's core functional capabilities",
+    "explanation": "Business logic (or domain logic) is the functional processing that defines how the application works, typically found in the middle tier."
+  },
+  {
+    "question": "Which 'Agile' principle emphasizes the most effective form of communication?",
+    "options": [
+      "Formal written reports and documentation",
+      "Automated email notifications",
+      "Commenting code thoroughly"
+    ],
+    "answer": "Face-to-face conversation (co-location)",
+    "explanation": "The 6th principle of Agile development states that face-to-face conversation is the best form of communication."
+  },
+  {
+    "question": "What is the 'ASCII' coding system used for?",
+    "options": [
+      "Managing database transactions and security",
+      "Providing a subscription model for hosted software",
+      "Controlling the flow of instructions in a loop"
+    ],
+    "answer": "Representing data as binary code for information interchange",
+    "explanation": "ASCII is a popular coding system that converts characters into binary form for computer processing."
+  },
+  {
+    "question": "What happens if a variable is 'uninitialized' in JavaScript?",
+    "options": [
+      "It automatically defaults to the number zero",
+      "The program will skip the line and continue",
+      "The computer will shut down to prevent errors"
+    ],
+    "answer": "The programmer will get an error message if they try to use it",
+    "explanation": "A value must be assigned to a variable (initialization) before it can be used; otherwise, an error occurs."
+  },
+  {
+    "question": "Which term refers to software that 'manages computer hardware resources and runs other programs'?",
+    "options": [
+      "Application Software",
+      "Compiler",
+      "Middleware"
+    ],
+    "answer": "Operating System (OS)",
+    "explanation": "An operating system is the software that manages hardware and provides services for other applications."
+  },
+  {
+    "question": "What is 'Pattern Recognition' in computational thinking?",
+    "options": [
+      "The ability to type code without looking at the keyboard",
+      "Removing all data from a system to simplify the problem",
+      "Designing the user interface to look like a specific motif"
+    ],
+    "answer": "Finding repetitions or shared patterns within complex problems",
+    "explanation": "Pattern recognition involves identifying shared patterns or repetitions among smaller related problems."
+  },
+  {
+    "question": "What is the result of the JavaScript calculation '10 - (6 - 4)'?",
+    "options": [
+      "0",
+      "4",
+      "6"
+    ],
+    "answer": "8",
+    "explanation": "Parentheses matter: first 6 - 4 = 2, then 10 - 2 = 8."
+  },
+  {
+    "question": "In the context of requirement validation, what does 'Consistency' check for?",
+    "options": [
+      "If the system provides functions that support the user's needs",
+      "If the system can be built within the proposed budget",
+      "If all the required functions have been included"
+    ],
+    "answer": "If there are any conflicting requirements",
+    "explanation": "Consistency checking ensures that different requirements do not contradict each other."
+  },
+  {
+    "question": "Which methodology uses 'Joint Application Development (JAD)' and 'CASE tools' in its user design phase?",
+    "options": [
+      "Waterfall",
+      "Spiral",
+      "Lean"
+    ],
+    "answer": "James Martin's RAD",
+    "explanation": "James Martin's approach to Rapid Application Development utilizes JAD techniques and CASE tools to translate user needs into models."
+  },
+  {
+    "question": "What is a 'Statement' in programming?",
+    "options": [
+      "A long document explaining how the software works",
+      "A mathematical formula that is never executed",
+      "A variable that can hold multiple data types at once"
+    ],
+    "answer": "The smallest standalone unit of code that is complete in itself",
+    "explanation": "A statement is the basic executable unit of code, such as an assignment or a print command."
+  },
+  {
+    "question": "Which of the following is a 'Non-Functional Requirement'?",
+    "options": [
+      "The system must allow users to withdraw cash",
+      "The system must calculate interest on a monthly basis",
+      "The system must allow for funds transfer between accounts"
+    ],
+    "answer": "The system must be secure and user-friendly",
+    "explanation": "Non-functional requirements specify criteria for system operation (like security or usability) rather than specific behaviors."
+  },
+  {
+    "question": "What does a 'Sequence' in an algorithm represent?",
+    "options": [
+      "A collection of random instructions that can be done in any order",
+      "A logic test that gives a True or False answer",
+      "A visual diagram of the system's hardware components"
+    ],
+    "answer": "A number of instructions that should be carried out one after the other",
+    "explanation": "A sequence is the fundamental control method where simple instructions are followed in a specific order."
+  },
+  {
+    "question": "What is the approximate size of a 'Gigabyte' (GB)?",
+    "options": [
+      "1 thousand bytes",
+      "1 million bytes",
+      "1 trillion bytes"
+    ],
+    "answer": "1 billion bytes",
+    "explanation": "A Gigabyte is approximately 1 billion bytes."
+  },
+  {
+    "question": "Which of the following is an example of an 'Interpreted' programming language?",
+    "options": [
+      "C++",
+      "Rust",
+      "Go"
+    ],
+    "answer": "JavaScript",
+    "explanation": "JavaScript, along with Python and PHP, is a common interpreted language where code is executed line-by-line."
+  },
+  {
+    "question": "In a 3-tier architecture, what is the 'Presentation Tier'?",
+    "options": [
+      "The layer that manages database transactions",
+      "The functional logic written in Java or C#",
+      "The documentation provided to the client at the end of the project"
+    ],
+    "answer": "The front-end layer consisting of the user interface",
+    "explanation": "The presentation (top) tier is the interface that users interact with directly."
+  },
+  {
+    "question": "What does the 'Material Implication' operator (=>) state?",
+    "options": [
+      "Both p and q must be true for the result to be true",
+      "If p is false, the result is automatically false",
+      "The result is only true if p and q are different"
+    ],
+    "answer": "If p is true, then the value of the result is that of q",
+    "explanation": "Material implication means that if p is true, the result depends on q; if p is false, the result is defined as true."
+  },
+  {
+    "question": "What is 'Software Prototyping'?",
+    "options": [
+      "Creating the final, polished version of a program for delivery",
+      "Writing the technical documentation for the system architecture",
+      "Building a physical model of the computer hardware"
+    ],
+    "answer": "Creating incomplete versions of a software application for review",
+    "explanation": "Prototyping involves creating incomplete simulations of a program to gather early feedback."
+  },
+  {
+    "question": "Which UML diagram describes the 'Dynamic Behavior' of a system by focusing on its finite number of states and transitions?",
+    "options": [
+      "Class Diagram",
+      "Use Case Diagram",
+      "Sequence Diagram"
+    ],
+    "answer": "State Transition Diagram",
+    "explanation": "A state diagram describes the behavior of a system by focusing on its finite number of states and transitions."
+  },
+  {
+    "question": "What is the purpose of 'Comments' in code?",
+    "options": [
+      "To tell the computer which parts of the code to execute faster",
+      "To provide feedback to the end-user during program execution",
+      "To define new variables and data types"
+    ],
+    "answer": "To help humans understand what the code does, while being ignored by the computer",
+    "explanation": "Comments are pieces of text designed to improve code readability for programmers."
+  },
+  {
+    "question": "Which of these is a characteristic of 'High-Level' programming languages?",
+    "options": [
+      "They are comprised entirely of 1s and 0s",
+      "They provide no abstraction from the hardware",
+      "They are the native language of the CPU"
+    ],
+    "answer": "They provide a high level of abstraction from the hardware",
+    "explanation": "High-level languages (like C# or Java) are distinguished by their high level of abstraction from computer hardware."
+  },
+  {
+    "question": "What is 'Requirements Elicitation'?",
+    "options": [
+      "The process of deleting requirements that are too expensive",
+      "The formal signing of a contract between client and developer",
+      "The automated testing of software for bugs"
+    ],
+    "answer": "Finding out about the application domain and the services the system should provide",
+    "explanation": "Elicitation involves technical staff working with stakeholders to discover system needs and constraints."
+  },
+  {
+    "question": "In JavaScript, what does the 'concat()' method do for arrays?",
+    "options": [
+      "Removes an element from the end of the array",
+      "Sorts the array alphabetically",
+      "Reverses the order of elements in the array"
+    ],
+    "answer": "Merges two or more arrays and returns a new array",
+    "explanation": "The 'concat()' method is used to join multiple arrays into one new array."
+  },
+  {
+    "question": "What is the 'Waterfall' model's primary drawback?",
+    "options": [
+      "It is too flexible and changes too often",
+      "It doesn't require any documentation",
+      "It focuses too much on user feedback during development"
+    ],
+    "answer": "It is difficult to accommodate change after the process is underway",
+    "explanation": "The inflexible partitioning of stages in the waterfall model makes it hard to respond to evolving requirements."
+  },
+  {
+    "question": "What is 'Machine Language'?",
+    "options": [
+      "A language that uses English-like commands to control robots",
+      "The specific terminology used by software engineers",
+      "A tool used to manage project deadlines"
+    ],
+    "answer": "A language consisting of binary or hexadecimal instructions executed directly by the CPU",
+    "explanation": "Machine language is the computer's 'native' language, consisting of 1s and 0s."
+  },
+  {
+    "question": "What does 'SaaS' allow businesses to do?",
+    "options": [
+      "Build their own hardware servers from scratch",
+      "Avoid using the internet for software delivery",
+      "Eliminate the need for any software testing"
+    ],
+    "answer": "Use software on a subscription basis without hosting it locally",
+    "explanation": "SaaS provides centrally hosted software that is typically licensed on a subscription basis."
+  },
+  {
+    "question": "What is the 'modulus operator (%)' used for in JavaScript?",
+    "options": [
+      "To calculate the percentage of a number",
+      "To perform high-speed multiplication",
+      "To round a decimal to the nearest integer"
+    ],
+    "answer": "To return the division remainder",
+    "explanation": "The modulus operator returns what is left over after dividing one number by another."
+  },
+  {
+    "question": "Which UML diagram uses 'Actors' to identify interactions with a system?",
+    "options": [
+      "Class Diagram",
+      "Sequence Diagram",
+      "State Transition Diagram"
+    ],
+    "answer": "Use Case Diagram",
+    "explanation": "A use case diagram identifies actors and the various use cases they are involved in."
+  },
+  {
+    "question": "What is 'Static Analysis'?",
+    "options": [
+      "Analyzing a program while it is currently running",
+      "Testing the physical durability of hardware components",
+      "Using a logic test to determine if a variable is true"
+    ],
+    "answer": "Analysis of computer software performed without executing the program",
+    "explanation": "Static analysis is performed on source code or object code without actually running the software."
+  },
+  {
+    "question": "What is a 'Boolean' value?",
+    "options": [
+      "A piece of text used as a descriptive name",
+      "A number with at least two decimal places",
+      "A variable that can hold up to eight bits of data"
+    ],
+    "answer": "A value that is either True or False",
+    "explanation": "Boolean data types represent one of two discrete states: true or false."
+  },
+  {
+    "question": "In the 'Agile' 12 principles, what is the primary measure of progress?",
+    "options": [
+      "The number of hours worked by the team",
+      "The amount of documentation completed",
+      "The number of daily standup meetings held"
+    ],
+    "answer": "Working software",
+    "explanation": "The 7th principle of Agile states that working software is the main measure of progress."
+  },
+  {
+    "question": "What is the role of a 'Web Server' in a typical web application architecture?",
+    "options": [
+      "To manage the database and store information",
+      "To run the business logic and process requests",
+      "To provide the user interface on the client's machine"
+    ],
+    "answer": "To host and present HTML pages to the browser",
+    "explanation": "A web server downloads and presents HTML pages to the client's web browser."
+  },
+  {
+    "question": "What is 'Decomposition' in the task of making a chicken dinner?",
+    "options": [
+      "Identifying that the oven must be pre-heated for most recipes",
+      "Focusing on the taste of the chicken rather than the cooking time",
+      "Formulating 'chicken' as a general concept under 'protein'"
+    ],
+    "answer": "Ensuring the chicken is thawed out as one small part of the larger task",
+    "explanation": "Decomposition involves breaking the main problem into smaller parts, such as thawing the chicken."
+  },
+  {
+    "question": "What is a 'Bit'?",
+    "options": [
+      "A collection of eight binary digits",
+      "A unique location in memory called an address",
+      "The native language used by a computer programmer"
+    ],
+    "answer": "The smallest unit of data a computer can process (0 or 1)",
+    "explanation": "A bit (short for binary digit) is the smallest unit of data, representing states like on/off or 0/1."
+  },
+  {
+    "question": "Which methodology structures an application as a collection of 'loosely coupled services'?",
+    "options": [
+      "Peer-to-Peer",
+      "Monolithic",
+      "Waterfall"
+    ],
+    "answer": "Microservices",
+    "explanation": "Microservices architecture decomposes an application into fine-grained, independent services."
+  },
+  {
+    "question": "What is the 'Construction' phase in James Martin's RAD approach?",
+    "options": [
+      "Planning the project scope and business needs",
+      "Negotiating the contract with the customer",
+      "Developing initial UI-only prototypes"
+    ],
+    "answer": "Programming, application development, and testing tasks",
+    "explanation": "The construction phase focuses on coding, unit-integration, and system testing."
+  },
+  {
+    "question": "In JavaScript, what does the 'unshift()' method do for arrays?",
+    "options": [
+      "Adds elements at the end of the array",
+      "Removes elements from the end of the array",
+      "Removes elements from the front of the array"
+    ],
+    "answer": "Adds elements at the front of the array",
+    "explanation": "The 'unshift()' method is used to insert new elements at the beginning of an array."
+  },
+  {
+    "question": "What is 'Requirements Validation'?",
+    "options": [
+      "The process of gathering initial ideas from stakeholders",
+      "The translation of requirements into a formal language",
+      "Assigning requirements to specific development increments"
+    ],
+    "answer": "Demonstrating that requirements define the system the customer really wants",
+    "explanation": "Validation is concerned with ensuring the requirements are valid, consistent, and complete."
+  },
+  {
+    "question": "Which coding system is capable of 'representing all world's languages'?",
+    "options": [
+      "ASCII",
+      "EBCDIC",
+      "Binary"
+    ],
+    "answer": "Unicode",
+    "explanation": "Unicode is a coding scheme designed to represent characters from all of the world's languages."
+  },
+  {
+    "question": "What does a 'Logic Test' in an 'IF' statement evaluate to?",
+    "options": [
+      "A number between 0 and 10",
+      "A string of characters",
+      "A complex architectural structure"
+    ],
+    "answer": "A True or False (Yes/No) answer",
+    "explanation": "A logic test is a Boolean expression that affects what code runs next based on a true/false result."
+  },
+  {
+    "question": "What is 'Configuration Management' intended to prevent?",
+    "options": [
+      "The use of high-level programming languages",
+      "The creation of multiple-choice questions for exams",
+      "The hiring of too many software architects"
+    ],
+    "answer": "Inconsistency in product performance and attributes",
+    "explanation": "Configuration management establishes and maintains the consistency of a product throughout its life."
+  },
+  {
+    "question": "What is the purpose of 'Indentation' in programming?",
+    "options": [
+      "To tell the computer which variables are the most important",
+      "To increase the speed of the application's business logic",
+      "To save memory by grouping code blocks together"
+    ],
+    "answer": "To make program code easier for humans to read and understand",
+    "explanation": "Indentation is used to define blocks of code and improve overall readability."
+  },
+  {
+    "question": "Which of these is a 'Disadvantage' of using the Waterfall model?",
+    "options": [
+      "It allows for continuous customer feedback during coding",
+      "It doesn't require any planning before starting",
+      "It is too flexibile for large-scale systems"
+    ],
+    "answer": "It is difficult to respond to changing customer requirements",
+    "explanation": "The linear nature of the Waterfall model makes it rigid and hard to adapt to changes."
+  },
+  {
+    "question": "What is a 'Scenario' in requirements elicitation?",
+    "options": [
+      "A mathematical formula for calculating system cost",
+      "A visual diagram of the database schema",
+      "A technical contract signed by the manager"
+    ],
+    "answer": "A description of how a system is used in practice",
+    "explanation": "Scenarios are helpful descriptions of system usage that people can relate to easily."
+  },
+  {
+    "question": "What does the 'prompt()' method do in JavaScript?",
+    "options": [
+      "Displays a simple message to the user",
+      "Logs a message to the developer console",
+      "Automatically updates a variable's value"
+    ],
+    "answer": "Displays a dialog box that prompts the user for input",
+    "explanation": "The 'prompt()' method is used to get input from the visitor before they enter a page."
+  },
+  {
+    "question": "What is 'Software' defined as in the guide?",
+    "options": [
+      "The physical chips and circuits of a computer",
+      "The manual instructions written on paper for a user",
+      "The process of manufacturing computer hardware"
+    ],
+    "answer": "The part of a computer system consisting of encoded information and instructions",
+    "explanation": "Software is the collection of computer programs, libraries, and related data."
+  },
+  {
+    "question": "In computational thinking, what is 'Generalization'?",
+    "options": [
+      "Breaking a complex problem into smaller parts",
+      "Removing all irrelevant information from a system",
+      "Designing a flowchart with no decision boxes"
+    ],
+    "answer": "Formulating common properties of specific instances as general concepts",
+    "explanation": "Generalization identifies common relations between different parts to group them as a whole."
+  },
+  {
+    "question": "Which UML diagram shows 'Object Interactions arranged in time sequence'?",
+    "options": [
+      "Class Diagram",
+      "Use Case Diagram",
+      "State Transition Diagram"
+    ],
+    "answer": "Sequence Diagram",
+    "explanation": "Sequence diagrams depict objects and the sequence of messages exchanged between them over time."
+  },
+  {
+    "question": "What is an 'Iterative Process'?",
+    "options": [
+      "A process that is only performed once and then stopped",
+      "A method of coding where every line is a single instruction",
+      "The physical assembly of hardware components"
+    ],
+    "answer": "A process where stages are reworked or repeated multiple times",
+    "explanation": "Iteration involves cyclical phases where progress and learning lead to reworking earlier stages."
+  },
+  {
+    "question": "What is the result of the binary conversion for the decimal number 174?",
+    "options": [
+      "00100011",
+      "10010001",
+      "11110000"
+    ],
+    "answer": "10101110",
+    "explanation": "Decimal 174 converts to binary as 10101110 (128 + 32 + 8 + 4 + 2)."
+  },
+  {
+    "question": "Which tier of a 3-tier architecture is responsible for 'Data Persistence' and storage?",
+    "options": [
+      "Presentation Tier",
+      "Application Tier",
+      "Physical Tier"
+    ],
+    "answer": "Data (End) Tier",
+    "explanation": "The data tier includes database servers and mechanisms for storing and retrieving data."
+  },
+  {
+    "question": "What is the primary benefit of 'Incremental Development'?",
+    "options": [
+      "It requires no user requirements to be defined",
+      "It delivers the entire system as a single final delivery",
+      "It eliminates the need for software testing"
+    ],
+    "answer": "Customer value can be delivered earlier with each increment",
+    "explanation": "Incremental delivery provides system functionality in stages, reducing the risk of overall failure."
+  },
+  {
+    "question": "In a flowchart, what does the 'Rectangle' shape represent?",
+    "options": [
+      "Start or Stop",
+      "Decision",
+      "Input or Output"
+    ],
+    "answer": "Process",
+    "explanation": "Rectangular boxes represent processes, which are simple instructions to perform an action."
+  },
+  {
+    "question": "What is 'Requirements Capturing'?",
+    "options": [
+      "The process of writing source code in Java or C#",
+      "The physical storage of backup data on a server",
+      "The final testing of an application before release"
+    ],
+    "answer": "Determining the needs and conditions to meet for a new or altered product",
+    "explanation": "Requirements analysis (or capturing) involves finding out what stakeholders need from a system."
+  },
+  {
+    "question": "Which programming paradigm is based on the concept of 'Objects' containing data and methods?",
+    "options": [
+      "Procedural Programming",
+      "Logic Programming",
+      "Machine Programming"
+    ],
+    "answer": "Object-Oriented Programming (OOP)",
+    "explanation": "OOP is a paradigm where programs are designed using objects that interact with each other."
+  },
+  {
+    "question": "What does a 'Kilobyte' (KB) exactly consist of?",
+    "options": [
+      "500 bytes",
+      "1,000 bytes",
+      "2,000 bytes"
+    ],
+    "answer": "1,024 bytes",
+    "explanation": "Exactly, a Kilobyte consists of 1,024 bytes."
+  },
+  {
+    "question": "In JavaScript, what is 'Undefined'?",
+    "options": [
+      "A variable that has been assigned the value zero",
+      "A programming error that causes the CPU to stop",
+      "A mathematical constant used in calculations"
+    ],
+    "answer": "A variable that has been reserved but has no value assigned to it",
+    "explanation": "Undefined means a variable name exists but currently holds no reference or data."
+  },
+  {
+    "question": "Which of these is a 'Structural' UML diagram?",
+    "options": [
+      "Use Case Diagram",
+      "Sequence Diagram",
+      "State Transition Diagram"
+    ],
+    "answer": "Class Diagram",
+    "explanation": "Structural diagrams show static structure; class diagrams are the most popular structural type."
+  },
+  {
+    "question": "What is 'Full Power' and 'Half Power' in a microwave oven's state diagram?",
+    "options": [
+      "Processes",
+      "Events",
+      "Transitions"
+    ],
+    "answer": "States",
+    "explanation": "In a state transition diagram, conditions like 'Full Power' or 'Waiting' represent the different states of the system."
+  }
+]
