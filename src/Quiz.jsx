@@ -15,18 +15,20 @@ const loadAllProgress = () => {
   }
 };
 
-const saveSetProgress = (day, set, data) => {
+const saveSetProgress = (category, day, set, data) => {
   try {
     const all = loadAllProgress();
-    all[`${day}-set${set}`] = data;
+    const key = category === 'foundation' ? `${day}-set${set}` : `${category}-${day}-set${set}`;
+    all[key] = data;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
   } catch { }
 };
 
-const clearSetProgress = (day, set) => {
+const clearSetProgress = (category, day, set) => {
   try {
     const all = loadAllProgress();
-    delete all[`${day}-set${set}`];
+    const key = category === 'foundation' ? `${day}-set${set}` : `${category}-${day}-set${set}`;
+    delete all[key];
     localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
   } catch { }
 };
@@ -52,20 +54,30 @@ const categoryConfigs = {
   foundation: {
     label: "Foundation",
     emoji: "🧱",
-    description: "Software Design, Python Basics & OOP",
-    days: ["day1", "day2", "day3", "day4", "day5", "day6", "day7", "day8", "day9"],
     gradient: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
     glowColor: "rgba(99, 102, 241, 0.35)",
     comingSoon: false,
+    dayConfigs: {
+      day1: { sets: [1, 2, 3, 4, 5], title: "Day 1", subtitle: "Software Design and Development" },
+      day2: { sets: [1, 2, 3, 4, 5], title: "Day 2", subtitle: "Programming Basics - 1 (Python)" },
+      day3: { sets: [1, 2, 3, 4, 5], title: "Day 3", subtitle: "Programming Basics - 2 (Python)" },
+      day4: { sets: [1, 2, 3, 4, 5], title: "Day 4", subtitle: "Object Oriented Programming - 1 (Python)" },
+      day5: { sets: [1, 2, 3, 4, 5], title: "Day 5", subtitle: "Object Oriented Programming - 1 (Python)" },
+      day6: { sets: [1, 2, 3, 4, 5], title: "Day 6", subtitle: "Web Design & Development Fundamentals (Front-End) - 1" },
+      day7: { sets: [1, 2, 3, 4, 5], title: "Day 7", subtitle: "Web Design & Development Fundamentals (Front-End) - 2" },
+      day8: { sets: [1, 2, 3, 4, 5], title: "Day 8", subtitle: "Relational Database" },
+      day9: { sets: [1, 2, 3, 4, 5], title: "Day 9", subtitle: "Web Application Development" }
+    }
   },
   advanced: {
     label: "Advanced",
     emoji: "🚀",
-    description: "Coming soon — stay tuned!",
-    days: [],
     gradient: "linear-gradient(135deg, #06b6d4 0%, #0ea5e9 100%)",
     glowColor: "rgba(6, 182, 212, 0.35)",
-    comingSoon: true,
+    comingSoon: false,
+    dayConfigs: {
+      day1: { sets: [1], title: "Day 1", subtitle: "Software Design and Development" }
+    }
   },
 };
 
@@ -81,21 +93,9 @@ export default function Quiz() {
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
   const [finished, setFinished] = useState(false);
-  const [savedProgress, setSavedProgress] = useState({});  // { "day1-set2": { processedQuestions, correctCount, wrongCount } }
-  const [completedSets, setCompletedSets] = useState({});   // { "day1-set2": "95%" }
+  const [savedProgress, setSavedProgress] = useState({});  // { "foundation-day1-set2": { processedQuestions, correctCount, wrongCount } }
+  const [completedSets, setCompletedSets] = useState({});   // { "foundation-day1-set2": "95%" }
   const [confirmReset, setConfirmReset] = useState(false);
-
-  const dayConfigs = {
-    day1: { sets: [1, 2, 3, 4, 5], title: "Day 1", subtitle: "Software Design and Development" },
-    day2: { sets: [1, 2, 3, 4, 5], title: "Day 2", subtitle: "Programming Basics - 1 (Python)" },
-    day3: { sets: [1, 2, 3, 4, 5], title: "Day 3", subtitle: "Programming Basics - 2 (Python)" },
-    day4: { sets: [1, 2, 3, 4, 5], title: "Day 4", subtitle: "Object Oriented Programming - 1 (Python)" },
-    day5: { sets: [1, 2, 3, 4, 5], title: "Day 5", subtitle: "Object Oriented Programming - 1 (Python)" },
-    day6: { sets: [1, 2, 3, 4, 5], title: "Day 6", subtitle: "Web Design & Development Fundamentals (Front-End) - 1" },
-    day7: { sets: [1, 2, 3, 4, 5], title: "Day 7", subtitle: "Web Design & Development Fundamentals (Front-End) - 2" },
-    day8: { sets: [1, 2, 3, 4, 5], title: "Day 8", subtitle: "Relational Database" },
-    day9: { sets: [1, 2, 3, 4, 5], title: "Day 9", subtitle: "Web Application Development" }
-  };
 
   // Sync savedProgress and completedSets from localStorage whenever the category screen is shown
   useEffect(() => {
@@ -117,27 +117,28 @@ export default function Quiz() {
 
   // Persist progress per-set whenever quiz state changes (only while a quiz is active)
   useEffect(() => {
-    if (!selectedDay || !selectedSet || processedQuestions.length === 0 || finished) return;
+    if (!selectedCategory || !selectedDay || !selectedSet || processedQuestions.length === 0 || finished) return;
 
-    saveSetProgress(selectedDay, selectedSet, {
+    saveSetProgress(selectedCategory, selectedDay, selectedSet, {
       processedQuestions,
       currentQuestion,
       correctCount,
       wrongCount,
     });
-  }, [selectedDay, selectedSet, processedQuestions, currentQuestion, correctCount, wrongCount, finished]);
+  }, [selectedCategory, selectedDay, selectedSet, processedQuestions, currentQuestion, correctCount, wrongCount, finished]);
 
   // Load JSON and optionally restore saved progress for this specific set
   useEffect(() => {
     if (!selectedDay || !selectedSet) return;
 
-    fetch(`/${selectedDay}/set${selectedSet}.json`)
+    fetch(`/${selectedCategory}/${selectedDay}/set${selectedSet}.json`)
       .then(res => res.json())
       .then(json => {
         setData(json);
 
         // Check if this specific set has saved progress
-        const saved = loadAllProgress()[`${selectedDay}-set${selectedSet}`];
+        const savedKey = selectedCategory === 'foundation' ? `${selectedDay}-set${selectedSet}` : `${selectedCategory}-${selectedDay}-set${selectedSet}`;
+        const saved = loadAllProgress()[savedKey];
         if (saved && saved.processedQuestions?.length > 0) {
           // Restore exactly where the user left off
           setProcessedQuestions(saved.processedQuestions);
@@ -255,12 +256,12 @@ export default function Quiz() {
 
     if (currentQuestion + 1 === processedQuestions.length) {
       const finalPct = Math.round((correctCount / processedQuestions.length) * 100);
-      const key = `${selectedDay}-set${selectedSet}`;
+      const key = selectedCategory === 'foundation' ? `${selectedDay}-set${selectedSet}` : `${selectedCategory}-${selectedDay}-set${selectedSet}`;
       const updated = { ...loadCompleted(), [key]: `${finalPct}%` };
       saveCompleted(updated);
       setCompletedSets(updated);
       // Clear only this set's progress entry
-      clearSetProgress(selectedDay, selectedSet);
+      clearSetProgress(selectedCategory, selectedDay, selectedSet);
       setSavedProgress(loadAllProgress());
       setFinished(true);
       return;
@@ -271,13 +272,19 @@ export default function Quiz() {
   };
 
   // Helper: get completed score badge for a day+set combo
-  const getSetScore = (dayKey, setNum) => completedSets[`${dayKey}-set${setNum}`] || null;
-  const getDayBestScore = (dayKey) => {
-    const scores = dayConfigs[dayKey].sets
-      .map(s => completedSets[`${dayKey}-set${s}`])
+  const getSetScore = (catKey, dayKey, setNum) => {
+    const key = catKey === 'foundation' ? `${dayKey}-set${setNum}` : `${catKey}-${dayKey}-set${setNum}`;
+    return completedSets[key] || null;
+  };
+  const getDayBestScore = (catKey, dayKey) => {
+    const scores = categoryConfigs[catKey]?.dayConfigs[dayKey]?.sets
+      .map(s => {
+        const k = catKey === 'foundation' ? `${dayKey}-set${s}` : `${catKey}-${dayKey}-set${s}`;
+        return completedSets[k];
+      })
       .filter(Boolean)
       .map(s => parseInt(s));
-    if (!scores.length) return null;
+    if (!scores?.length) return null;
     return Math.max(...scores);
   };
 
@@ -298,26 +305,15 @@ export default function Quiz() {
             <p className="menu-subtitle">Select a category to begin</p>
           </div>
 
-          {/* Unfinished sets banner */}
-          {Object.keys(savedProgress).length > 0 && (
-            <div className="resume-banner">
-              <div className="resume-info">
-                <span className="resume-icon">⏸</span>
-                <div>
-                  <p className="resume-label">
-                    {Object.keys(savedProgress).length} unfinished set{Object.keys(savedProgress).length > 1 ? 's' : ''}
-                  </p>
-                  <p className="resume-detail">Navigate to a day to continue where you left off</p>
-                </div>
-              </div>
-            </div>
-          )}
-
           <div className="category-grid">
             {Object.entries(categoryConfigs).map(([catKey, cat]) => {
-              const totalSets = cat.days.reduce((acc, d) => acc + (dayConfigs[d]?.sets.length || 0), 0);
-              const completedCount = cat.days.reduce((acc, d) => {
-                return acc + (dayConfigs[d]?.sets.filter(s => completedSets[`${d}-set${s}`]).length || 0);
+              const daysArray = Object.entries(cat.dayConfigs || {});
+              const totalSets = daysArray.reduce((acc, [, config]) => acc + (config.sets.length || 0), 0);
+              const completedCount = daysArray.reduce((acc, [dayKey, config]) => {
+                return acc + (config.sets.filter(s => {
+                  const k = catKey === 'foundation' ? `${dayKey}-set${s}` : `${catKey}-${dayKey}-set${s}`;
+                  return completedSets[k];
+                }).length || 0);
               }, 0);
               return (
                 <button
@@ -330,10 +326,9 @@ export default function Quiz() {
                   <div className="category-emoji">{cat.emoji}</div>
                   <div className="category-info">
                     <span className="category-label">{cat.label}</span>
-                    <span className="category-desc">{cat.description}</span>
                     {!cat.comingSoon && (
                       <span className="category-meta">
-                        {cat.days.length} days · {totalSets} sets
+                        {Object.keys(cat.dayConfigs || {}).length} days · {totalSets} sets
                         {completedCount > 0 && ` · ${completedCount}/${totalSets} done`}
                       </span>
                     )}
@@ -381,7 +376,7 @@ export default function Quiz() {
   // ── MENU SCREEN – SELECT DAY ────────────────────────────────────────────────
   if (!selectedDay) {
     const catConfig = categoryConfigs[selectedCategory];
-    const daysInCategory = catConfig.days;
+    const daysInCategory = catConfig.dayConfigs || {};
 
     return (
       <div className="quiz-container">
@@ -406,9 +401,11 @@ export default function Quiz() {
           </div>
 
           <div className="quiz-options">
-            {daysInCategory.map((dayKey, index) => {
-              const config = dayConfigs[dayKey];
-              const setsCompleted = config.sets.filter(s => completedSets[`${dayKey}-set${s}`]).length;
+            {Object.entries(daysInCategory).map(([dayKey, config], index) => {
+              const setsCompleted = config.sets.filter(s => {
+                const k = selectedCategory === 'foundation' ? `${dayKey}-set${s}` : `${selectedCategory}-${dayKey}-set${s}`;
+                return completedSets[k];
+              }).length;
               return (
                 <button
                   key={dayKey}
@@ -443,8 +440,8 @@ export default function Quiz() {
 
   // ── SET SELECTION SCREEN ────────────────────────────────────────────────────
   if (selectedDay && !selectedSet) {
-    const availableSets = dayConfigs[selectedDay]?.sets || [];
-    const dayConfig = dayConfigs[selectedDay];
+    const dayConfig = categoryConfigs[selectedCategory]?.dayConfigs[selectedDay];
+    const availableSets = dayConfig?.sets || [];
 
     return (
       <div className="quiz-container">
@@ -470,8 +467,8 @@ export default function Quiz() {
 
           <div className="quiz-options">
             {availableSets.map((setNum) => {
-              const score = getSetScore(selectedDay, setNum);
-              const setKey = `${selectedDay}-set${setNum}`;
+              const score = getSetScore(selectedCategory, selectedDay, setNum);
+              const setKey = selectedCategory === 'foundation' ? `${selectedDay}-set${setNum}` : `${selectedCategory}-${selectedDay}-set${setNum}`;
               const savedForSet = savedProgress[setKey];
               // Resumable only if there is saved mid-progress AND it is not already completed
               const isResumable = !!savedForSet && !score;
@@ -633,7 +630,7 @@ export default function Quiz() {
           </div>
 
           <div className="quiz-context-label">
-            <span>{dayConfigs[selectedDay]?.title}</span>
+            <span>{categoryConfigs[selectedCategory]?.dayConfigs[selectedDay]?.title}</span>
             <span className="quiz-context-divider">·</span>
             <span>Set {selectedSet}</span>
           </div>
