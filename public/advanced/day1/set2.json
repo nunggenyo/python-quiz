@@ -1,0 +1,502 @@
+[
+    {
+        "question": "Which layer in a multi-tier architecture is responsible for executing business rules and performing data processing logic?",
+        "options": [
+            "The Presentation Tier which manages user interface rendering",
+            "The Data Tier which handles persistent storage and retrieval",
+            "The Network Tier which facilitates secure packet transmission"
+        ],
+        "answer": "The Logic Tier which serves as the intermediary for data flow",
+        "explanation": "The Logic or Application Tier contains the core business rules and processes that separate the UI from the database."
+    },
+    {
+        "question": "What is the primary objective of 'Automated Unit Testing' within a Continuous Integration pipeline?",
+        "options": [
+            "To provide a final quality audit for the end-user acceptance",
+            "To eliminate the requirement for manual code reviews by peers",
+            "To generate comprehensive user documentation from source code"
+        ],
+        "answer": "To verify that individual code modules function as intended",
+        "explanation": "Unit testing focuses on isolated functions or components to catch regressions early in the development cycle."
+    },
+    {
+        "question": "In the Scrum framework, how is the 'Definition of Done' (DoD) utilized by the Development Team?",
+        "options": [
+            "As a strict deadline for completing all items in the Product Backlog",
+            "As a performance metric to compare the speed of different developers",
+            "As a legal contract signed by stakeholders before each Sprint starts"
+        ],
+        "answer": "As a quality checklist to ensure an increment is truly releasable",
+        "explanation": "The DoD provides a shared understanding of the quality standards required for every completed task."
+    },
+    {
+        "question": "Which practice is fundamental to 'Configuration Management' for maintaining system integrity?",
+        "options": [
+            "Delegating server maintenance to an external cloud provider",
+            "Assigning unique hardware IDs to every developer's workstation",
+            "Focusing exclusively on the visual design of the user interface"
+        ],
+        "answer": "Establishing baselines and tracking changes to all artifacts",
+        "explanation": "Configuration Management ensures that the state of the software is documented and reproducible at any time."
+    },
+    {
+        "question": "What is a 'Merge Conflict' in a distributed version control system like Git?",
+        "options": [
+            "An authentication error when a user lacks permission to push code",
+            "A network timeout occurring during a large file transfer to a server",
+            "A disagreement between developers regarding the choice of language"
+        ],
+        "answer": "A situation where overlapping changes prevent automatic integration",
+        "explanation": "A merge conflict occurs when two branches have different changes on the same line of code."
+    },
+    {
+        "question": "In DevOps, what is the primary purpose of 'Infrastructure as Code' (IaC)?",
+        "options": [
+            "To replace the need for high-level programming languages like Python",
+            "To provide a manual guide for setting up local development environments",
+            "To ensure that all server hardware is purchased from a single vendor"
+        ],
+        "answer": "To automate the provisioning of environments using script files",
+        "explanation": "IaC allows infrastructure to be managed with the same version control and automation as application code."
+    },
+    {
+        "question": "Which characteristic is essential for a 'Microservices' architecture?",
+        "options": [
+            "The use of a single monolithic database for all system modules",
+            "The requirement that all services are written in the same language",
+            "The deployment of the entire application as one executable file"
+        ],
+        "answer": "The ability to scale and deploy each service independently",
+        "explanation": "Microservices are loosely coupled units that communicate over a network, allowing for modular updates."
+    },
+    {
+        "question": "What role does a 'Python Web Framework' (e.g., Flask or Django) play in data management?",
+        "options": [
+            "It provides the physical storage medium for the application's data",
+            "It directly translates SQL queries into raw machine binary code",
+            "It manages the hardware cooling systems of the production server"
+        ],
+        "answer": "It provides tools to map database records to application objects",
+        "explanation": "Web frameworks use Object-Relational Mapping (ORM) to simplify the interaction between code and databases."
+    },
+    {
+        "question": "In Agile methodologies, what is 'Velocity' used to measure?",
+        "options": [
+            "The exact time it takes to compile the source code into a binary",
+            "The speed of the network connection between the client and server",
+            "The number of hours each developer spends at their desk per day"
+        ],
+        "answer": "The amount of work a team completes during a single iteration",
+        "explanation": "Velocity helps teams estimate their capacity for future Sprints based on past performance."
+    },
+    {
+        "question": "What is the primary function of a 'Web Template' in a server-side application?",
+        "options": [
+            "To store sensitive user passwords using advanced encryption",
+            "To provide a static image of what the website should look like",
+            "To act as a firewall against malicious distributed attacks"
+        ],
+        "answer": "To define the structure where dynamic data will be displayed",
+        "explanation": "Templates allow the server to combine HTML structures with dynamic data fetched from a database."
+    },
+    {
+        "question": "How does 'Continuous Deployment' enhance the software release process?",
+        "options": [
+            "By requiring manual approval from stakeholders before every release",
+            "By scheduling all software updates for a single day once per year",
+            "By focusing on the documentation of features rather than the code"
+        ],
+        "answer": "By automatically releasing every validated change to production",
+        "explanation": "Continuous Deployment automates the entire pipeline from code commit to the live environment."
+    },
+    {
+        "question": "What is 'Regression Testing' in the context of software maintenance?",
+        "options": [
+            "Testing the application on hardware that has been decommissioned",
+            "Asking the original developers to explain their logic after a year",
+            "A psychological evaluation of the team after a failed project"
+        ],
+        "answer": "Verifying that new updates have not negatively impacted features",
+        "explanation": "Regression tests ensure that bug fixes or new features do not break existing, stable functionality."
+    },
+    {
+        "question": "In the Scrum framework, who is responsible for removing impediments for the team?",
+        "options": [
+            "The Product Owner, who manages the budget and the requirements",
+            "The Lead Developer, who makes all the technical decisions",
+            "The CEO, who has the authority over all company departments"
+        ],
+        "answer": "The Scrum Master, who facilitates the process and removes blocks",
+        "explanation": "The Scrum Master acts as a servant-leader to help the team remain productive and focused."
+    },
+    {
+        "question": "Which of these is a key principle of 'Software Architecture' for mobile devices?",
+        "options": [
+            "Hardcoding all user data directly into the application's binary",
+            "Ignoring the latency of the network to prioritize visual effects",
+            "Requiring the device to stay awake even when the app is idle"
+        ],
+        "answer": "Optimizing for resource constraints like battery and memory",
+        "explanation": "Mobile architecture must account for limited power, screen real estate, and varying connectivity."
+    },
+    {
+        "question": "What is 'Refactoring' in software engineering?",
+        "options": [
+            "Adding a significant number of new features to attract users",
+            "Switching the production server from one provider to another",
+            "Fixing a security vulnerability that was found by a customer"
+        ],
+        "answer": "Restructuring code to improve quality without changing behavior",
+        "explanation": "Refactoring is done to reduce technical debt and improve maintainability while keeping output the same."
+    },
+    {
+        "question": "In a DevOps culture, what does 'Shift-Left' refer to in the lifecycle?",
+        "options": [
+            "Moving the production deployment date to an earlier time in the year",
+            "Changing the physical layout of the office to improve the workflow",
+            "Delegating all testing responsibilities to a specialized outside team"
+        ],
+        "answer": "Integrating testing and security early in the development phase",
+        "explanation": "Shift-left aims to identify and fix issues as early as possible in the software development lifecycle."
+    },
+    {
+        "question": "What is the function of a 'Load Balancer' in a web architecture?",
+        "options": [
+            "To encrypt all the data that is stored inside the main database",
+            "To check the syntax of the Python code before it is deployed",
+            "To provide a backup of the entire system on an external drive"
+        ],
+        "answer": "To distribute incoming traffic across multiple backend servers",
+        "explanation": "Load balancing ensures that no single server is overwhelmed, improving availability and performance."
+    },
+    {
+        "question": "In Scrum, what is the purpose of the 'Sprint Retrospective'?",
+        "options": [
+            "To demonstrate the working software increment to the customers",
+            "To allow the Product Owner to add new items to the Sprint Backlog",
+            "To conduct a technical audit of the code written during the month"
+        ],
+        "answer": "To identify ways to improve the team's process and efficiency",
+        "explanation": "The retrospective is a private meeting for the team to discuss how to work better together."
+    },
+    {
+        "question": "What is 'Branching' in a version control system?",
+        "options": [
+            "The act of hiring more developers to work on a specific project",
+            "The process of splitting the project into two separate companies",
+            "The method of deleting old code that is no longer being used"
+        ],
+        "answer": "Creating a parallel line of development for new features",
+        "explanation": "Branches allow developers to work on isolated tasks without interfering with the stable main code."
+    },
+    {
+        "question": "What is a 'Database Schema'?",
+        "options": [
+            "A secret plan to gain unauthorized access to the server data",
+            "The total amount of storage space allocated to the database",
+            "The physical hardware layout of the database server racks"
+        ],
+        "answer": "The blueprint that defines the structure and organization",
+        "explanation": "A schema specifies how tables, fields, and relationships are organized in the database."
+    },
+    {
+        "question": "In mobile development, what is an 'API' (Application Programming Interface)?",
+        "options": [
+            "A set of hardware buttons used to navigate the mobile device",
+            "A type of screen protector that reduces glare on the phone",
+            "A legal agreement between the developer and the app store"
+        ],
+        "answer": "A set of rules for communication between software components",
+        "explanation": "APIs allow different services (like a mobile app and a server) to exchange data and instructions."
+    },
+    {
+        "question": "What is 'Black Box Testing'?",
+        "options": [
+            "Testing the computer's motherboard for any physical defects",
+            "Testing only the parts of the code that handle data encryption",
+            "Testing the application while it is running on a dark screen"
+        ],
+        "answer": "Testing the software without access to the internal logic",
+        "explanation": "In black box testing, the focus is on the output generated for a given input, not the code itself."
+    },
+    {
+        "question": "In the context of developer tools, what does 'Debugging' require?",
+        "options": [
+            "A complete rewrite of the software documentation and manuals",
+            "The removal of all third-party libraries from the project",
+            "A formal request to the hardware manufacturer for assistance"
+        ],
+        "answer": "Analyzing the program state to identify the source of errors",
+        "explanation": "Debugging involves using tools like breakpoints and logs to find why code is not behaving as expected."
+    },
+    {
+        "question": "What is the 'Product Backlog' in a Scrum environment?",
+        "options": [
+            "A list of all the bugs that were found in the previous version",
+            "A collection of all the invoices sent to the client for the work",
+            "A technical manual that describes the entire system architecture"
+        ],
+        "answer": "An evolving list of everything needed for the product",
+        "explanation": "The Product Backlog is managed by the Product Owner and contains all desired features and improvements."
+    },
+    {
+        "question": "What is a 'Container' in a DevOps environment?",
+        "options": [
+            "A physical box used to ship computer hardware to the client",
+            "A large database that stores all the user's personal information",
+            "A type of file folder used to organize the project documentation"
+        ],
+        "answer": "A package that includes code and all its dependencies",
+        "explanation": "Containers (like Docker) ensure that software runs consistently across different environments."
+    },
+    {
+        "question": "What is the primary goal of 'User Acceptance Testing' (UAT)?",
+        "options": [
+            "To ensure that the code follows the internal company style guide",
+            "To measure how many lines of code are written per developer",
+            "To find as many small typos in the user interface as possible"
+        ],
+        "answer": "To verify that the software meets the needs of the business",
+        "explanation": "UAT is the final phase of testing where real users confirm the application works for their needs."
+    },
+    {
+        "question": "In mobile architecture, what is 'Offline Synchronization'?",
+        "options": [
+            "The act of turning off the phone when it is not being used",
+            "The process of deleting local data once a task is finished",
+            "The ability to use the app only when connected to the internet"
+        ],
+        "answer": "Syncing local data with a server when a connection is restored",
+        "explanation": "Offline sync allows users to continue working without a network and updates the server later."
+    },
+    {
+        "question": "What is the 'Sprint Goal' in Scrum?",
+        "options": [
+            "The total number of hours the team must work during the month",
+            "The final date for the delivery of the entire project to the client",
+            "The exact amount of money the team should aim to save for the company"
+        ],
+        "answer": "A high-level objective that provide focus for the Sprint",
+        "explanation": "The Sprint Goal is established during planning to give the team a clear purpose for their work."
+    },
+    {
+        "question": "What is 'Version Control' primarily used for in development?",
+        "options": [
+            "To limit the number of users who can download the app at once",
+            "To track the physical location of every developer in the office",
+            "To increase the speed of the internet connection during coding"
+        ],
+        "answer": "To manage and record changes to the source code over time",
+        "explanation": "Version control systems allow teams to collaborate, revert changes, and track the history of the code."
+    },
+    {
+        "question": "What is a 'Thick Client' in a mobile application context?",
+        "options": [
+            "A user who requires a lot of help to use the software",
+            "A device with a very thick screen and heavy hardware",
+            "An app that works only when connected to a massive server"
+        ],
+        "answer": "An app that performs most processing on the local device",
+        "explanation": "Thick clients handle logic and data processing locally rather than relying entirely on a backend."
+    },
+    {
+        "question": "In Python, what is a 'Database Connection String'?",
+        "options": [
+            "A physical wire that connects the computer to the server rack",
+            "A list of all the tables that exist inside the current database",
+            "A sequence of numbers used to encrypt the database files"
+        ],
+        "answer": "A string containing the details needed to access a database",
+        "explanation": "The connection string includes the server address, database name, and login credentials."
+    },
+    {
+        "question": "What is the main benefit of 'Agile' over the 'Waterfall' model?",
+        "options": [
+            "It completely removes the need for any project documentation",
+            "It allows the team to work without any planning or meetings",
+            "It is always cheaper to implement regardless of the project size"
+        ],
+        "answer": "It allows for faster response to changing requirements",
+        "explanation": "Agile's iterative nature allows for feedback and changes at any stage of development."
+    },
+    {
+        "question": "What is 'Pair Programming' in a professional setting?",
+        "options": [
+            "Two different companies working on two different applications",
+            "One developer writing code for two different projects at once",
+            "Using two different computers to run the same application"
+        ],
+        "answer": "Two developers working together at one single computer",
+        "explanation": "Pair programming involves one 'driver' (writing code) and one 'navigator' (reviewing code)."
+    },
+    {
+        "question": "What is 'Static Code Analysis'?",
+        "options": [
+            "Running the application and measuring its memory usage",
+            "Asking a senior manager to approve the final project budget",
+            "Testing the software on a device that is not connected to any network"
+        ],
+        "answer": "Evaluating the source code without executing the program",
+        "explanation": "Static analysis tools check for syntax errors, style issues, and security flaws in the code files."
+    },
+    {
+        "question": "What is the 'Daily Stand-up' in an Agile project?",
+        "options": [
+            "A long meeting where developers present their work to the CEO",
+            "A session where developers exercise together to stay healthy",
+            "A meeting held once a week to discuss the project's budget"
+        ],
+        "answer": "A short daily meeting to sync and identify blockers",
+        "explanation": "The stand-up is limited to 15 minutes for the team to coordinate their tasks for the day."
+    },
+    {
+        "question": "In database management, what is 'Normalization'?",
+        "options": [
+            "The process of making the database work on different systems",
+            "The act of hiring a professional to clean the database records",
+            "The process of updating the database once every month"
+        ],
+        "answer": "Organizing data to reduce redundancy and improve integrity",
+        "explanation": "Normalization involves structuring the database to minimize duplicate data and logical errors."
+    },
+    {
+        "question": "What is a 'Unit' in the context of software testing?",
+        "options": [
+            "A single developer who works alone on a specific feature",
+            "The entire application after it has been fully compiled",
+            "A physical computer used to test the software performance"
+        ],
+        "answer": "The smallest testable part of an application",
+        "explanation": "A unit is typically a single function, method, or class within the code."
+    },
+    {
+        "question": "What does 'S.O.L.I.D.' refer to in software design?",
+        "options": [
+            "The five layers of the physical network architecture",
+            "The five steps of the formal software release process",
+            "The five types of hardware used in a standard server rack"
+        ],
+        "answer": "Five principles for creating maintainable software",
+        "explanation": "SOLID principles help developers build systems that are easy to scale and modify."
+    },
+    {
+        "question": "What is the 'Definition of Ready' in an Agile context?",
+        "options": [
+            "The point at which the software is ready to be sold to users",
+            "The date on which the developers are ready to start a new job",
+            "The agreement that the project is ready to be archived forever"
+        ],
+        "answer": "The criteria an item must meet before being put into a Sprint",
+        "explanation": "Ready means the task is clearly defined and understood enough for the team to start working."
+    },
+    {
+        "question": "What is 'Continuous Delivery'?",
+        "options": [
+            "The continuous delivery of hardware parts to the developers",
+            "The process of sending emails to customers about new updates",
+            "The practice of paying the development team on a daily basis"
+        ],
+        "answer": "Ensuring the code is always in a state ready for release",
+        "explanation": "CD ensures that any version of the code passing the tests can be deployed to production instantly."
+    },
+    {
+        "question": "In mobile architecture, what is 'Responsive Design'?",
+        "options": [
+            "An app that answers user questions using artificial intelligence",
+            "An app that is designed to have a very small file download size",
+            "An app that works only when the user is moving or walking"
+        ],
+        "answer": "A design that adapts to different screen sizes and orientations",
+        "explanation": "Responsive design ensures that a web or mobile app looks and functions well on any device."
+    },
+    {
+        "question": "What is the function of the 'Controller' in the MVC pattern?",
+        "options": [
+            "To store the data and manage the relationships in the database",
+            "To display the data and handle the visual layout on the screen",
+            "To provide a physical hardware remote for the application"
+        ],
+        "answer": "To act as an interface between the View and the Model",
+        "explanation": "The Controller receives user input and updates the Model or View accordingly."
+    },
+    {
+        "question": "What is 'Integration Testing'?",
+        "options": [
+            "Testing the software after it has been integrated into the office",
+            "Testing the speed of the integration between the dev and ops teams",
+            "Testing the application by combining all its features into one file"
+        ],
+        "answer": "Testing the interaction between different software modules",
+        "explanation": "Integration tests ensure that separate components work together correctly."
+    },
+    {
+        "question": "What is 'Version Control History'?",
+        "options": [
+            "A book that describes the history of all programming languages",
+            "A list of all the developers who have worked in the company",
+            "A document that explains the history of the internet technology"
+        ],
+        "answer": "The record of all changes made to the code over time",
+        "explanation": "The history allows developers to see who changed what, when, and why, and to revert if needed."
+    },
+    {
+        "question": "In DevOps, what is 'Deployment'?",
+        "options": [
+            "The act of hiring more people for the development department",
+            "The process of deleting the old code from the developer's computer",
+            "The act of moving the code to a physical storage warehouse"
+        ],
+        "answer": "The process of making the application available for use",
+        "explanation": "Deployment involves moving the software to a production environment where users can access it."
+    },
+    {
+        "question": "What is 'Technical Documentation' primarily for?",
+        "options": [
+            "To persuade the user to buy the software over a competitor's",
+            "To explain the legal rights of the user regarding the software",
+            "To provide a backup of the code on a piece of physical paper"
+        ],
+        "answer": "To explain the code and system architecture to developers",
+        "explanation": "Technical documentation is critical for maintaining and scaling the software in the future."
+    },
+    {
+        "question": "What is a 'Sprint Backlog'?",
+        "options": [
+            "A list of all the features that will be built over the next year",
+            "A record of all the bugs that were found in the previous sprint",
+            "A collection of all the code that was written during the project"
+        ],
+        "answer": "The set of items selected for completion during a Sprint",
+        "explanation": "The Sprint Backlog is the team's plan for the current iteration."
+    },
+    {
+        "question": "What is the purpose of 'Code Reviews'?",
+        "options": [
+            "To measure how many errors a developer makes to justify a firing",
+            "To replace the need for any formal or informal testing phase",
+            "To ensure that the code is written in as few lines as possible"
+        ],
+        "answer": "To improve code quality and share knowledge in the team",
+        "explanation": "Code reviews are a collaborative way to find bugs and learn from each other."
+    },
+    {
+        "question": "What is the 'Definition of Done'?",
+        "options": [
+            "The point at which the developer is finished with their work",
+            "The date on which the project is handed over to the client",
+            "The point at which the team decides to stop working for the day"
+        ],
+        "answer": "The standard quality criteria an increment must meet",
+        "explanation": "DoD ensures that every task completed by the team meets a consistent level of quality."
+    },
+    {
+        "question": "In Python web development, what is 'Routing'?",
+        "options": [
+            "The physical path of the wires connecting the server and the user",
+            "The process of organizing the files inside the main project folder",
+            "The act of choosing which programming language to use for the app"
+        ],
+        "answer": "Connecting a URL to a specific function in the code",
+        "explanation": "Routing ensures that when a user visits a specific link, the correct logic is executed."
+    }
+]

@@ -1,0 +1,552 @@
+[
+    {
+        "question": "Which of the following is a primary objective of 'Complexity Analysis'?",
+        "options": [
+            "Determining the physical size of the source code file in kilobytes.",
+            "Estimating the growth of execution time relative to the input size.",
+            "Calculating the exact number of seconds a script takes to execute.",
+            "Identifying the total number of variables declared within a function."
+        ],
+        "answer": "Estimating the growth of execution time relative to the input size.",
+        "explanation": "Complexity analysis (Big O) focuses on how an algorithm scales as the input size (n) increases, rather than absolute time."
+    },
+    {
+        "question": "In Graph Data Structures, what is the purpose of an 'Adjacency Matrix'?",
+        "options": [
+            "To store all the values of the nodes in a single-dimensional array.",
+            "To represent the connections between vertices using a 2D grid.",
+            "To organize the edges in a linked list based on their total weight.",
+            "To encrypt the graph data to prevent unauthorized access by users."
+        ],
+        "answer": "To represent the connections between vertices using a 2D grid.",
+        "explanation": "An adjacency matrix uses a square matrix to indicate whether pairs of vertices are adjacent or connected."
+    },
+    {
+        "question": "What does the 'Worst-Case' scenario in algorithm development represent?",
+        "options": [
+            "The minimum amount of memory an algorithm needs to run correctly.",
+            "The maximum number of steps an algorithm takes for any input size.",
+            "The average time taken by an algorithm across multiple executions.",
+            "The performance of the algorithm when the computer is overheating."
+        ],
+        "answer": "The maximum number of steps an algorithm takes for any input size.",
+        "explanation": "Worst-case analysis provides a guarantee on the upper bound of resources required for any possible input."
+    },
+    {
+        "question": "Which of these is considered a 'Code Smell' related to software maintainability?",
+        "options": [
+            "Using descriptive variable names that explain their own purpose.",
+            "Writing 'God Classes' that attempt to perform every task alone.",
+            "Applying consistent indentation throughout the entire source file.",
+            "Including error handling blocks to catch unexpected runtime bugs."
+        ],
+        "answer": "Writing 'God Classes' that attempt to perform every task alone.",
+        "explanation": "A God Class is a design smell where a single class does too much, making the code hard to maintain and understand."
+    },
+    {
+        "question": "What is the main advantage of using 'Dijkstra's Algorithm'?",
+        "options": [
+            "Finding the shortest path between nodes in a weighted graph.",
+            "Sorting a large list of strings in alphabetical order quickly.",
+            "Searching for a specific keyword within a massive text document.",
+            "Generating a random sequence of numbers for a security protocol."
+        ],
+        "answer": "Finding the shortest path between nodes in a weighted graph.",
+        "explanation": "Dijkstra's algorithm is specifically designed to find the shortest path from a starting node to others in a graph with weights."
+    },
+    {
+        "question": "What characterizes a 'Depth-First Search' (DFS) traversal?",
+        "options": [
+            "It visits all neighbors at the current level before going deeper.",
+            "It explores as far as possible along a branch before backtracking.",
+            "It selects the next node to visit based on a random number result.",
+            "It only visits nodes that are connected to the central root vertex."
+        ],
+        "answer": "It explores as far as possible along a branch before backtracking.",
+        "explanation": "DFS follows a single path to its end before returning to explore other branches, usually using a stack."
+    },
+    {
+        "question": "When applying 'Code Style Guidelines', what is a developer trying to achieve?",
+        "options": [
+            "Ensuring the program can run on old and outdated hardware systems.",
+            "Improving the readability and consistency of the shared codebase.",
+            "Reducing the total amount of money spent on cloud hosting services.",
+            "Hiding the logic of the program from competitors in the industry."
+        ],
+        "answer": "Improving the readability and consistency of the shared codebase.",
+        "explanation": "Style guidelines ensure that code is uniform, making it easier for any team member to read and maintain it."
+    },
+    {
+        "question": "Which sorting algorithm is known for its $O(n^2)$ worst-case time complexity?",
+        "options": [
+            "Merge Sort",
+            "Quick Sort",
+            "Bubble Sort",
+            "Heap Sort"
+        ],
+        "answer": "Bubble Sort",
+        "explanation": "Bubble Sort uses nested loops to compare adjacent elements, resulting in quadratic complexity."
+    },
+    {
+        "question": "In the context of 'Writing Maintainable Code', what does the DRY principle stand for?",
+        "options": [
+            "Data Recovery Yield",
+            "Don't Repeat Yourself",
+            "Design Reliable Yields",
+            "Debug Remote Yardstick"
+        ],
+        "answer": "Don't Repeat Yourself",
+        "explanation": "DRY is a principle aimed at reducing the repetition of software patterns and logic."
+    },
+    {
+        "question": "What is 'Space Complexity' in the study of algorithms?",
+        "options": [
+            "The total number of physical servers needed to host the application.",
+            "The amount of memory an algorithm requires relative to input size.",
+            "The physical distance between the data centers and the end users.",
+            "The number of blank spaces and tabs used to format the source code."
+        ],
+        "answer": "The amount of memory an algorithm requires relative to input size.",
+        "explanation": "Space complexity measures the total working memory (RAM) used by an algorithm during its execution."
+    },
+    {
+        "question": "Which of these is a symptom of 'Rigid' software design?",
+        "options": [
+            "The system is very easy to update and add new features to.",
+            "A simple change requires many other changes in unrelated parts.",
+            "The code is written in a way that allows it to be reused easily.",
+            "The application runs perfectly on both mobile and desktop units."
+        ],
+        "answer": "A simple change requires many other changes in unrelated parts.",
+        "explanation": "Rigidity makes it difficult to change the software because every modification has a cascade effect."
+    },
+    {
+        "question": "What is a 'Directed Graph'?",
+        "options": [
+            "A graph where all edges are bidirectional and have no arrows.",
+            "A graph where edges have a direction from one vertex to another.",
+            "A graph that contains a circular path returning to the root node.",
+            "A graph that is organized in a perfectly straight horizontal line."
+        ],
+        "answer": "A graph where edges have a direction from one vertex to another.",
+        "explanation": "In a directed graph (digraph), edges have a specific orientation indicating the flow."
+    },
+    {
+        "question": "In Big O notation, what does $O(1)$ represent?",
+        "options": [
+            "Linear time complexity that grows with the size of the input.",
+            "Constant time complexity that is independent of the input size.",
+            "Logarithmic time complexity found in binary search algorithms.",
+            "Quadratic time complexity where time grows by the input square."
+        ],
+        "answer": "Constant time complexity that is independent of the input size.",
+        "explanation": "O(1) means the algorithm takes the same amount of time regardless of how much data is processed."
+    },
+    {
+        "question": "What is the primary goal of a 'Code Review' session?",
+        "options": [
+            "Identifying the developer who made the most mistakes in a week.",
+            "Ensuring high code quality and sharing knowledge among the team.",
+            "Replacing all current functions with automated machine learning.",
+            "Decreasing the total number of comments written in the project."
+        ],
+        "answer": "Ensuring high code quality and sharing knowledge among the team.",
+        "explanation": "Code reviews are collaborative processes to find bugs and ensure standards are met."
+    },
+    {
+        "question": "Which of the following describes 'Merge Sort'?",
+        "options": [
+            "A divide and conquer algorithm that splits and joins sorted lists.",
+            "A simple algorithm that swaps adjacent items until they are sorted.",
+            "A method that finds the smallest item and moves it to the beginning.",
+            "A technique that inserts each new item into its correct final position."
+        ],
+        "answer": "A divide and conquer algorithm that splits and joins sorted lists.",
+        "explanation": "Merge sort recursively divides the array and then merges the sorted halves."
+    },
+    {
+        "question": "What is 'Technical Debt' in a large software project?",
+        "options": [
+            "The amount of money owed to the bank for purchasing new laptops.",
+            "The future cost of rework caused by choosing an easy solution now.",
+            "The total number of hours a team spends on a project every month.",
+            "The monthly fee paid for using professional development software."
+        ],
+        "answer": "The future cost of rework caused by choosing an easy solution now.",
+        "explanation": "Technical debt is the result of prioritizing speed over perfect code, requiring cleanup later."
+    },
+    {
+        "question": "Which data structure is best for 'Last-In-First-Out' (LIFO) operations?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Linked List",
+            "Hash Table"
+        ],
+        "answer": "Stack",
+        "explanation": "A stack follows LIFO logic, where the last item added is the first one to be removed."
+    },
+    {
+        "question": "What is the complexity of a 'Linear Search' algorithm?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n^2)"
+        ],
+        "answer": "O(n)",
+        "explanation": "In linear search, the time taken grows linearly with the number of items being searched."
+    },
+    {
+        "question": "What is 'Modular Programming'?",
+        "options": [
+            "Writing all the program logic in a single, massive source file.",
+            "Breaking a program into independent and interchangeable parts.",
+            "Using a specific brand of computer to write all the project code.",
+            "Preventing other team members from reading certain parts of code."
+        ],
+        "answer": "Breaking a program into independent and interchangeable parts.",
+        "explanation": "Modularity allows for easier testing and maintenance by separating concerns into modules."
+    },
+    {
+        "question": "What characterizes an 'Undirected Graph'?",
+        "options": [
+            "Connections between vertices are bidirectional and have no arrows.",
+            "The graph must always start at a single root and grow downwards.",
+            "Each node can only have a maximum of two connections to others.",
+            "The graph data is automatically deleted after the search is done."
+        ],
+        "answer": "Connections between vertices are bidirectional and have no arrows.",
+        "explanation": "In an undirected graph, the relationship between nodes is mutual and has no specific direction."
+    },
+    {
+        "question": "Why are 'Magic Numbers' considered bad for maintainability?",
+        "options": [
+            "They cause the computer to run out of memory very quickly.",
+            "They make the code harder to understand because they lack context.",
+            "They are only compatible with specific versions of the compiler.",
+            "They require a special license to be used in commercial products."
+        ],
+        "answer": "They make the code harder to understand because they lack context.",
+        "explanation": "Unnamed numerical constants (magic numbers) are hard to decipher; using named constants is better."
+    },
+    {
+        "question": "Which algorithm is most efficient for searching in a sorted array?",
+        "options": [
+            "Linear Search",
+            "Binary Search",
+            "Bubble Search",
+            "Depth Search"
+        ],
+        "answer": "Binary Search",
+        "explanation": "Binary search is $O(\\log n)$, making it much faster than linear search for sorted data."
+    },
+    {
+        "question": "What is a 'Weighted Graph'?",
+        "options": [
+            "A graph where edges have numerical values representing cost or distance.",
+            "A graph that contains more than one thousand different data vertices.",
+            "A graph that is saved in a special format to reduce its storage size.",
+            "A graph where every node is exactly the same distance from the root."
+        ],
+        "answer": "A graph where edges have numerical values representing cost or distance.",
+        "explanation": "Weights represent the magnitude of the relationship between connected nodes."
+    },
+    {
+        "question": "What does 'Cyclomatic Complexity' indicate about a piece of code?",
+        "options": [
+            "The number of times the code has been updated in the repository.",
+            "The number of independent logic paths within the program code.",
+            "The total amount of electricity used by the CPU to run the code.",
+            "The speed of the internet connection required to execute the script."
+        ],
+        "answer": "The number of independent logic paths within the program code.",
+        "explanation": "It measures how complex the logic is based on decision points like 'if' and 'loops'."
+    },
+    {
+        "question": "What is the purpose of 'Refactoring' in software development?",
+        "options": [
+            "Changing the external behavior of the code to add new features.",
+            "Improving the internal structure of code without changing behavior.",
+            "Converting a program from one language to a completely different one.",
+            "Deleting the entire project to start again with a better approach."
+        ],
+        "answer": "Improving the internal structure of code without changing behavior.",
+        "explanation": "Refactoring makes code cleaner and more maintainable while preserving its original function."
+    },
+    {
+        "question": "Which sorting algorithm is an example of an 'In-Place' sort?",
+        "options": [
+            "Merge Sort",
+            "Insertion Sort",
+            "External Sort",
+            "Parallel Sort"
+        ],
+        "answer": "Insertion Sort",
+        "explanation": "Insertion sort requires only a constant amount $O(1)$ of additional memory space to sort."
+    },
+    {
+        "question": "In a Graph, what defines a 'Cycle'?",
+        "options": [
+            "A path that starts and ends at the same vertex with no repeats.",
+            "A process that runs the same code block every twenty-four hours.",
+            "A specific type of node that is connected to all other vertices.",
+            "A software update that is released periodically to fix system bugs."
+        ],
+        "answer": "A path that starts and ends at the same vertex with no repeats.",
+        "explanation": "A cycle is a closed path where the start and end point are the same node."
+    },
+    {
+        "question": "What is 'Code Maintainability'?",
+        "options": [
+            "The speed at which a new user can learn to use the application.",
+            "The ease with which a software system can be modified over time.",
+            "The ability of a program to execute without any internet access.",
+            "The frequency of which a company releases new marketing ads."
+        ],
+        "answer": "The ease with which a software system can be modified over time.",
+        "explanation": "Maintainability is a core quality attribute that defines how easy it is to fix or update code."
+    },
+    {
+        "question": "What is the time complexity of 'Selection Sort' in all cases?",
+        "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n^2)",
+            "O(1)"
+        ],
+        "answer": "O(n^2)",
+        "explanation": "Selection sort always performs a nested scan of the array, leading to quadratic time."
+    },
+    {
+        "question": "Which of these is a recognized 'Design Smell'?",
+        "options": [
+            "Using clear names for functions so they are easy to read.",
+            "Having 'Fragile' code where one change breaks unrelated parts.",
+            "Writing unit tests for every small component of the system.",
+            "Updating the software documentation whenever code changes."
+        ],
+        "answer": "Having 'Fragile' code where one change breaks unrelated parts.",
+        "explanation": "Fragility is a smell that indicates a poorly designed and tightly coupled system."
+    },
+    {
+        "question": "What is an 'Algorithm' in computer science?",
+        "options": [
+            "A set of well-defined instructions for solving a specific task.",
+            "A legal document that protects the rights of the software author.",
+            "A hardware device used to speed up the graphics of a computer.",
+            "A website that allows developers to host their code for free."
+        ],
+        "answer": "A set of well-defined instructions for solving a specific task.",
+        "explanation": "Algorithms are the logic and procedures used by programs to process data."
+    },
+    {
+        "question": "In complexity analysis, what does $n$ usually stand for?",
+        "options": [
+            "The name of the developer who wrote the original code.",
+            "The size of the input data that the algorithm is processing.",
+            "The number of errors found during the initial testing phase.",
+            "The speed of the processor measured in gigahertz units."
+        ],
+        "answer": "The size of the input data that the algorithm is processing.",
+        "explanation": "$n$ is the standard mathematical variable representing the number of items in the input."
+    },
+    {
+        "question": "What is 'Code Reading' specifically helpful for?",
+        "options": [
+            "Helping developers understand existing logic on large projects.",
+            "Measuring the total number of hours a team spends in the office.",
+            "Ensuring that the computer hardware is working at full speed.",
+            "Increasing the physical typing speed of a junior programmer."
+        ],
+        "answer": "Helping developers understand existing logic on large projects.",
+        "explanation": "Reading code is essential for maintenance and for building on top of existing systems."
+    },
+    {
+        "question": "What is a 'Heuristic' in algorithm development?",
+        "options": [
+            "A strict mathematical formula that guarantees the best result.",
+            "A practical approach that finds a 'good enough' solution quickly.",
+            "A type of computer memory that is faster than standard RAM.",
+            "A specific type of bug that only appears on mobile devices."
+        ],
+        "answer": "A practical approach that finds a 'good enough' solution quickly.",
+        "explanation": "Heuristics are used when finding an optimal solution takes too long or is not possible."
+    },
+    {
+        "question": "Which sorting algorithm uses a 'Pivot' element?",
+        "options": [
+            "Bubble Sort",
+            "Selection Sort",
+            "Quick Sort",
+            "Insertion Sort"
+        ],
+        "answer": "Quick Sort",
+        "explanation": "Quick sort partitions the array around a pivot element to sort recursively."
+    },
+    {
+        "question": "What is 'Dead Code'?",
+        "options": [
+            "Code that is written in a language that is no longer used.",
+            "Code that exists in the system but is never actually executed.",
+            "Code that causes the computer to shut down without warning.",
+            "Code that has been encrypted and cannot be read by humans."
+        ],
+        "answer": "Code that exists in the system but is never actually executed.",
+        "explanation": "Dead code should be removed as it makes maintenance harder and adds clutter."
+    },
+    {
+        "question": "What characterizes a 'Self-Documenting' code style?",
+        "options": [
+            "Using clear naming and structure so the code explains itself.",
+            "Writing a separate hundred-page manual for every function.",
+            "Recording a video of the developer explaining the logic used.",
+            "Letting an AI automatically write all the comments in a file."
+        ],
+        "answer": "Using clear naming and structure so the code explains itself.",
+        "explanation": "Clean code with good names reduces the need for external documentation."
+    },
+    {
+        "question": "In a BFS traversal, which data structure is typically used?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Array",
+            "Tree"
+        ],
+        "answer": "Queue",
+        "explanation": "BFS uses a Queue to visit nodes level by level (First-In-First-Out)."
+    },
+    {
+        "question": "What is 'Software Maintainability' primarily about?",
+        "options": [
+            "The ability of code to be easily corrected and improved.",
+            "The amount of money required to buy the software license.",
+            "The number of users who can use the software at one time.",
+            "The color scheme used in the final graphical user interface."
+        ],
+        "answer": "The ability of code to be easily corrected and improved.",
+        "explanation": "It focuses on the long-term viability and flexibility of the source code."
+    },
+    {
+        "question": "Which complexity is faster for large datasets: $O(1)$ or $O(n)$?",
+        "options": [
+            "O(1) because it stays constant regardless of the data size.",
+            "O(n) because it processes more data at the same time.",
+            "They are the same speed when the data size is very large.",
+            "The speed depends on the programming language being used."
+        ],
+        "answer": "O(1) because it stays constant regardless of the data size.",
+        "explanation": "O(1) is always faster than O(n) as $n$ grows, as it does not scale with input size."
+    },
+    {
+        "question": "What is 'Modular Code' designed to be?",
+        "options": [
+            "Hard to read so that other companies cannot steal the logic.",
+            "Easy to test and reuse because it is split into small parts.",
+            "Large and complex so that it looks professional to clients.",
+            "Only compatible with a single type of operating system unit."
+        ],
+        "answer": "Easy to test and reuse because it is split into small parts.",
+        "explanation": "Modularity improves code health by isolating different parts of the logic."
+    },
+    {
+        "question": "What is the worst-case complexity of 'Quick Sort'?",
+        "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n^2)",
+            "O(1)"
+        ],
+        "answer": "O(n^2)",
+        "explanation": "If the pivot selection is poor, Quick Sort can degrade to quadratic complexity."
+    },
+    {
+        "question": "Why should developers follow 'Naming Conventions'?",
+        "options": [
+            "To make the code look identical to code written by others.",
+            "To ensure that the computer can understand the logic faster.",
+            "To decrease the total amount of RAM needed to run the app.",
+            "To prevent other people from being able to edit the files."
+        ],
+        "answer": "To make the code look identical to code written by others.",
+        "explanation": "Naming conventions promote team consistency and easier maintenance."
+    },
+    {
+        "question": "What is a 'Path' in Graph theory?",
+        "options": [
+            "A sequence of vertices connected by edges from one to another.",
+            "The location on the hard drive where the graph is saved.",
+            "A specific type of sorting algorithm for network data nodes.",
+            "A security gate that blocks access to certain parts of a file."
+        ],
+        "answer": "A sequence of vertices connected by edges from one to another.",
+        "explanation": "A path describes how to get from one node to another through connections."
+    },
+    {
+        "question": "What characterizes 'Insertion Sort'?",
+        "options": [
+            "It builds a sorted list one item at a time by placing it correctly.",
+            "It splits the entire list into two halves and merges them later.",
+            "It finds the largest number and moves it to the very last spot.",
+            "It shuffles the list randomly until all items are in the right order."
+        ],
+        "answer": "It builds a sorted list one item at a time by placing it correctly.",
+        "explanation": "Insertion sort takes one element and 'inserts' it into its proper place among sorted items."
+    },
+    {
+        "question": "What does 'Big O Notation' describe?",
+        "options": [
+            "The upper bound of the growth rate of an algorithm.",
+            "The exact number of errors in a software application.",
+            "The name of the company that developed the algorithm.",
+            "The total weight of the computer used for programming."
+        ],
+        "answer": "The upper bound of the growth rate of an algorithm.",
+        "explanation": "It provides a mathematical limit on how resources grow with input size."
+    },
+    {
+        "question": "What is the main goal of 'Maintainable Code'?",
+        "options": [
+            "To be easy for humans to read, understand, and modify later.",
+            "To use the maximum amount of hardware power available to it.",
+            "To be encrypted so that nobody can see how it was written.",
+            "To be written in a single day regardless of the code quality."
+        ],
+        "answer": "To be easy for humans to read, understand, and modify later.",
+        "explanation": "Maintainability is focused on the human aspect of long-term software support."
+    },
+    {
+        "question": "In a graph, what are 'Vertices'?",
+        "options": [
+            "The nodes or points that represent individual data entities.",
+            "The lines that connect different points together in a network.",
+            "The speed at which data travels between two different points.",
+            "The memory addresses used to store a specific integer value."
+        ],
+        "answer": "The nodes or points that represent individual data entities.",
+        "explanation": "Vertices (or nodes) are the primary objects in a graph structure."
+    },
+    {
+        "question": "What is 'Code Complexity'?",
+        "options": [
+            "A measure of how difficult it is to understand and maintain code.",
+            "A count of how many times a user has downloaded the application.",
+            "The total cost of the hardware used by the development team.",
+            "The number of pages in the official software user guide book."
+        ],
+        "answer": "A measure of how difficult it is to understand and maintain code.",
+        "explanation": "Higher complexity makes code prone to bugs and harder to update."
+    },
+    {
+        "question": "Which of these sorting algorithms has a best-case of $O(n)$?",
+        "options": [
+            "Bubble Sort",
+            "Selection Sort",
+            "Quick Sort",
+            "Merge Sort"
+        ],
+        "answer": "Bubble Sort",
+        "explanation": "An optimized Bubble Sort can finish in linear time if the list is already sorted."
+    }
+]

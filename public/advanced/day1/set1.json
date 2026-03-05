@@ -1,322 +1,502 @@
 [
   {
-    "question": "A developer is tasked with creating a complex flight booking system. They begin by breaking the system down into smaller, manageable components like \"Search Flights,\" \"Select Seat,\" and \"Process Payment.\" Which pillar of computational thinking is being applied here?",
+    "question": "In mobile application architecture, what is the primary function of the 'View' component in the MVVM pattern?",
     "options": [
-      "Abstraction",
-      "Pattern Recognition",
-      "Generalization"
+      "To manage the persistence of local data to the device storage",
+      "To execute the business logic and process backend API calls",
+      "To facilitate the direct communication between the Model and Controller"
     ],
-    "answer": "Decomposition",
-    "explanation": "Decomposition involves breaking down a complex problem or system into smaller, more manageable parts."
+    "answer": "To handle user interface events and display data to the screen",
+    "explanation": "The View in MVVM is strictly responsible for the presentation layer and responding to user interactions."
   },
   {
-    "question": "When modeling a \"Vehicle\" in software, a developer decides to include properties like \"Speed\" and \"Direction\" but intentionally excludes \"License Plate Number\" and \"Scratch on Bumper\" to create a general model. This process is best described as:",
+    "question": "Which of the following describes the 'Continuous Integration' (CI) practice within a DevOps environment?",
     "options": [
-      "Algorithm Sequencing",
-      "Pattern Recognition",
-      "Decomposition"
+      "The process of manually deploying code to production servers on weekends",
+      "The practice of writing comprehensive user manuals before any coding begins",
+      "The method of assigning individual tasks to developers via a central manager"
     ],
-    "answer": "Abstraction",
-    "explanation": "Abstraction is the process of filtering out specific details that are not necessary for the model to focus on the essential characteristics."
+    "answer": "The automated merging of code changes into a shared repository frequently",
+    "explanation": "CI focuses on automating the integration of code from multiple contributors to detect conflicts early."
   },
   {
-    "question": "In the context of the Software Development Life Cycle (SDLC), which phase is primarily responsible for bridging the gap between capturing user requirements and the actual construction (coding) of the software?",
+    "question": "What is the main purpose of a 'Daily Scrum' meeting for the Development Team?",
     "options": [
-      "Maintenance",
-      "Deployment",
-      "Testing"
+      "To provide a detailed progress report to the Product Owner and CEO",
+      "To negotiate the scope and deadline of the current project increment",
+      "To allow the Scrum Master to assign specific tasks to individual members"
     ],
-    "answer": "Design",
-    "explanation": "The Design phase transforms requirements into a blueprint that guides the actual coding or construction of the software."
+    "answer": "To synchronize activities and create a plan for the next 24 hours",
+    "explanation": "The Daily Scrum is a short synchronization meeting for the team to inspect progress toward the Sprint Goal."
   },
   {
-    "question": "A programmer is writing an algorithm for a temperature sensor. They write: IF Temp > 180 THEN Wait() ELSE On(). However, the requirement was to turn the light on only if the temperature exceeded 180. This is an example of:",
+    "question": "In software development, what is the primary benefit of conducting regular 'Code Reviews'?",
     "options": [
-      "A syntax error in the programming language.",
-      "A correct sequence but incorrect input.",
-      "A failure in the hardware sensor."
+      "To eliminate the need for any automated or manual software testing",
+      "To measure the exact number of lines of code written by each employee",
+      "To shift the responsibility of bug fixing from developers to managers"
     ],
-    "answer": "An incorrect decision logic (logical error).",
-    "explanation": "The code runs but produces the wrong result based on the requirements, which is a logic error."
+    "answer": "To identify logical errors and ensure adherence to coding standards",
+    "explanation": "Code reviews promote shared ownership and help maintain high quality through peer feedback."
   },
   {
-    "question": "Which of the following best describes the relationship between \"Class\" and \"Object\" using the logic of Generalization?",
+    "question": "What does 'Configuration Management' ensure during the software development lifecycle?",
     "options": [
-      "A \"Bird\" is an instance of the specific concept \"Animal.\"",
-      "\"Animal\" and \"Bird\" are unrelated independent variables.",
-      "A \"Bird\" is a generalization of the concept \"Animal.\""
+      "That the marketing team has access to the internal source code repository",
+      "That the project budget is automatically adjusted based on development speed",
+      "That all developers use the same physical hardware and office furniture"
     ],
-    "answer": "\"Animal\" is a generalization; a \"Bird\" is a specific category within it.",
-    "explanation": "Generalization identifies commonalities; 'Animal' represents the broader category, while 'Bird' is a specific type within that category."
+    "answer": "That changes to software artifacts are systematically tracked and controlled",
+    "explanation": "Configuration management maintains the integrity of the project by managing versions and baselines."
   },
   {
-    "question": "In a standard flowchart, which symbol would you use to represent the specific question \"Is the user logged in?\" which results in a Yes or No path?",
+    "question": "What role does a 'Template Engine' play when connecting a database to HTML via Python?",
     "options": [
-      "An Oval (Start/Stop)",
-      "A Rectangle (Process)",
-      "A Parallelogram (Input/Output)"
+      "It secures the database by encrypting all incoming SQL queries",
+      "It serves as the main operating system for the web server instance",
+      "It converts CSS styles into machine-readable code for the browser"
     ],
-    "answer": "A Diamond (Decision)",
-    "explanation": "A diamond symbol is used in flowcharts to represent a decision point that branches into different paths."
+    "answer": "It injects dynamic data into predefined HTML layouts for rendering",
+    "explanation": "Template engines allow back-end developers to pass variables into HTML to display dynamic content."
   },
   {
-    "question": "Within the software ecosystem, what is the primary function of the Operating System (OS) in relation to Application Software?",
+    "question": "Which DevOps principle focuses on reducing the distance between development and operations teams?",
     "options": [
-      "It performs specific user tasks like word processing.",
-      "It serves as the physical hardware layer for data storage.",
-      "It is primarily responsible for the graphical user interface design."
+      "Maintaining strict hierarchical reporting structures across departments",
+      "Developing software in isolated phases with no cross-team interaction",
+      "Outsourcing all server maintenance tasks to external third-party vendors"
     ],
-    "answer": "It acts as a bridge, managing hardware resources for the App.",
-    "explanation": "The OS manages hardware resources and provides services that allow applications to function."
+    "answer": "Fostering a culture of shared responsibility and collaboration",
+    "explanation": "DevOps aims to break down silos between teams to improve the speed and quality of software delivery."
   },
   {
-    "question": "If a developer notices that the code for \"User Login,\" \"Admin Login,\" and \"Guest Access\" shares 90% of the same validation logic, and they decide to create a single reusable function for validation, they are utilizing:",
+    "question": "In the Scrum framework, what is the primary responsibility of the Product Owner?",
     "options": [
-      "Decomposition",
-      "Algorithm Sequencing",
-      "Hardware Optimization"
+      "To manage the individual schedules and daily tasks of the developers",
+      "To perform technical debugging and code optimization for the team",
+      "To facilitate all Scrum ceremonies and remove technical impediments"
     ],
-    "answer": "Pattern Recognition",
-    "explanation": "Identifying similarities across different parts of a system to simplify or consolidate them is pattern recognition."
+    "answer": "To maximize the value of the product and manage the backlog",
+    "explanation": "The Product Owner represents the business interest and prioritizes the work for the team."
   },
   {
-    "question": "A startup is building a competitive multiplayer game that requires high-end graphics processing and immediate response times, regardless of internet latency. Which client architecture is most appropriate?",
+    "question": "What is a characteristic of a 'Thin Client' architecture in mobile applications?",
     "options": [
-      "Thin Client, relying heavily on the server for processing.",
-      "Static Web Application, delivering pre-written HTML.",
-      "Thin Client, utilizing a standard web browser."
+      "The application performs all data processing locally on the phone",
+      "The application requires no network connectivity to function properly",
+      "The application is primarily written in assembly language for speed"
     ],
-    "answer": "Thick Client, performing substantial processing locally.",
-    "explanation": "A thick client handles heavy processing and graphics locally, which reduces reliance on constant server communication for performance[."
+    "answer": "The application relies on a server to perform most of the processing",
+    "explanation": "Thin clients act as a front-end interface, sending requests to a server for heavy computation."
   },
   {
-    "question": "In a 3-Tier Architecture, if a developer needs to modify the calculation used to determine tax rates without affecting the user interface or the database structure, which tier should they update?",
+    "question": "What is the primary goal of the 'Debugging' process in software development?",
     "options": [
-      "The Presentation Tier",
-      "The Data Tier",
-      "The Network Tier"
+      "To rewrite the entire application from scratch using a new language",
+      "To create new features based on the latest market trends and surveys",
+      "To document the historical evolution of the software requirements"
     ],
-    "answer": "The Application Tier (Business Logic)",
-    "explanation": "The Application Tier contains the business logic and rules, such as calculations, independent of the UI and database"
+    "answer": "To locate, analyze, and resolve the root cause of software errors",
+    "explanation": "Debugging is the systematic approach to finding and fixing flaws that cause incorrect behavior."
   },
   {
-    "question": "Which of the following is a potential risk associated with a centralized Client-Server architecture compared to a distributed Peer-to-Peer (P2P) architecture?",
+    "question": "Which activity is categorized under 'Supporting Activities' in an Agile workflow?",
     "options": [
-      "It is more difficult to manage security updates.",
-      "It cannot support static web pages.",
-      "It requires more complex client-side processing."
+      "Determining the long-term stock market value of the company",
+      "Designing the physical packaging for the retail software version",
+      "Hiring and training new staff for the human resources department"
     ],
-    "answer": "It represents a Single Point of Failure.",
-    "explanation": "In a client-server model, if the central server fails, the entire system becomes unavailable, creating a single point of failure."
+    "answer": "Maintaining project documentation and configuration baselines",
+    "explanation": "Supporting activities include tasks like documentation and management that enable core development."
   },
   {
-    "question": "When a user requests a page from a Dynamic Website, how does the server typically generate the response?",
+    "question": "In version control using GitHub, what is the purpose of a 'Pull Request'?",
     "options": [
-      "It retrieves a pre-written HTML file and sends it immediately.",
-      "It downloads the entire application to the client for local processing.",
-      "It bypasses the web server and connects directly to the database."
+      "To permanently delete a branch that contains faulty or old code",
+      "To download the entire repository to a local development machine",
+      "To request more hardware resources from the cloud service provider"
     ],
-    "answer": "It uses scripts to query a database and builds the page on the fly.",
-    "explanation": "Dynamic sites generate content on the fly by executing server-side scripts that often interact with databases."
+    "answer": "To propose changes and request a review before merging code",
+    "explanation": "Pull requests are a mechanism for code review and collaboration in distributed version control."
   },
   {
-    "question": "In a Software-as-a-Service (SaaS) model, \"Multi-Tenancy\" implies that:",
+    "question": "What defines a 'Sprint' within the Scrum methodology?",
     "options": [
-      "Each customer has their own dedicated server hardware.",
-      "The software is installed locally on every user's device.",
-      "Customers must manage their own database maintenance."
+      "A period where developers work 24/7 to finish a failing project",
+      "A long-term phase lasting several months focused on documentation",
+      "A meeting where stakeholders decide to stop the current project"
     ],
-    "answer": "A single instance of the application serves multiple customers.",
-    "explanation": "Multi-tenancy allows a single software instance to serve multiple clients or 'tenants' simultaneously."
+    "answer": "A time-boxed iteration of one month or less to create an increment",
+    "explanation": "Sprints are fixed-length iterations that provide predictability and focus for the Scrum team."
   },
   {
-    "question": "During the \"Life of a Web Request,\" what immediately follows the client resolving the hostname to an IP address?",
+    "question": "Why is 'Technical Documentation' considered essential for professional practice?",
     "options": [
-      "The browser renders the content.",
-      "The client sends the HTTP request.",
-      "The server processes the logic."
+      "It serves as a legal contract between the developer and the user",
+      "It replaces the need for writing comments inside the source code",
+      "It increases the retail price of the software in the open market"
     ],
-    "answer": "A TCP handshake is established.",
-    "explanation": "After the IP address is found, the client must establish a connection via a TCP handshake before sending data."
+    "answer": "It provides necessary information for future system maintenance",
+    "explanation": "Documentation ensures that other developers can understand and support the system over time."
   },
   {
-    "question": "If a software architect is prioritizing \"Scalability\" and \"Extensibility\" over immediate functionality, they are primarily focusing on:",
+    "question": "In a 3-tier mobile architecture, what is the function of the 'Data Tier'?",
     "options": [
-      "User Interface Design",
-      "Detailed Class Structure",
-      "Database Schema Normalization"
+      "To capture user inputs and render the graphical user interface",
+      "To process application logic and perform complex calculations",
+      "To manage the secure communication between different mobile apps"
     ],
-    "answer": "Quality Attributes",
-    "explanation": "Scalability and extensibility are non-functional characteristics known as quality attributes."
+    "answer": "To store and manage the information required by the application",
+    "explanation": "The Data Tier consists of databases or file systems where the application's data is persisted."
   },
   {
-    "question": "Which diagramming artifact would a software architect uses to define the static structure of objects, such as \"Customer\" and \"Flight,\" and their specific relationships?",
+    "question": "Which of these is a key benefit of 'Automated Testing' in a DevOps pipeline?",
     "options": [
-      "UI Wireframes",
-      "Component Diagrams",
-      "Flowcharts"
+      "It allows the team to skip the design phase of software development",
+      "It guarantees that the software will be 100% free of any bugs",
+      "It ensures that developers no longer need to perform code reviews"
     ],
-    "answer": "Class Diagrams",
-    "explanation": "Class diagrams represent the static structure of a system by showing its classes and the relationships between them."
+    "answer": "It provides rapid feedback on the quality of new code changes",
+    "explanation": "Automation allows tests to run quickly and frequently, enabling faster release cycles."
   },
   {
-    "question": "A development team is working on a safety-critical medical device where requirements are fixed and stability is paramount. Which methodology is most appropriate?",
+    "question": "What is the primary focus of 'IT Service Management' (ITSM) for developers?",
     "options": [
-      "Rapid Application Development (RAD)",
-      "Agile Scrum",
-      "Kanban"
+      "Designing the physical architecture of the office network",
+      "Writing marketing strategies for the upcoming product launch",
+      "Calculating the monthly payroll for the engineering department"
     ],
-    "answer": "The Waterfall Model",
-    "explanation": "Waterfall is best suited for projects with fixed requirements and where high stability is required before moving between phases."
+    "answer": "Delivering value to users through stable and reliable services",
+    "explanation": "ITSM focuses on the processes and policies used to manage and deliver IT services effectively."
   },
   {
-    "question": "What is the defining characteristic of the Spiral Model that distinguishes it from other iterative models?",
+    "question": "In Scrum, what is the 'Definition of Done' (DoD)?",
     "options": [
-      "It focuses heavily on \"User Design\" workshops.",
-      "It requires a finished product at the end of the first loop.",
-      "It eliminates the need for a planning phase."
+      "A deadline set by the management for the end of the fiscal year",
+      "A list of all the bugs that were found during the development phase",
+      "The point at which a developer feels that they are tired of coding"
     ],
-    "answer": "It is explicitly driven by Risk Assessment in every phase.",
-    "explanation": "The Spiral Model uniquely emphasizes risk assessment and management at every iteration."
+    "answer": "A shared standard of quality that an increment must meet",
+    "explanation": "DoD ensures consistency and transparency regarding the quality of work completed."
   },
   {
-    "question": "Which of the following scenarios best illustrates the Agile value of \"Responding to Change over Following a Plan\"?",
+    "question": "How does 'Continuous Deployment' differ from 'Continuous Delivery'?",
     "options": [
-      "The team refuses a client's request for a new feature because the contract was signed months ago.",
-      "The team spends three months documenting the entire system before writing a single line of code.",
-      "The team delivers the exact software specified in the initial requirements document, even though it is now obsolete."
+      "It requires the code to be printed and checked on paper first",
+      "It involves manual testing by the end users before going live",
+      "It focuses on the UI design rather than the backend logic"
     ],
-    "answer": "The team adjusts the current iteration's scope to accommodate a critical market shift discovered yesterday.",
-    "explanation": "Agile prioritizes flexibility and adjusting to new information over strictly adhering to an initial plan."
+    "answer": "It automates the final release of code directly to production",
+    "explanation": "Continuous Deployment releases every passing change automatically, without manual approval."
   },
   {
-    "question": "In the Scrum framework, which practice is primarily used to ensure the team communicates daily and stays aligned on immediate goals?",
+    "question": "What is 'Version Control' in the context of configuration management?",
     "options": [
-      "The Sprint Review",
-      "The Retrospective",
-      "The Design Phase"
+      "Checking the battery level of mobile devices during testing",
+      "Updating the operating system to the latest available version",
+      "Limiting the number of users who can download the software"
     ],
-    "answer": "The Daily Standup",
-    "explanation": "The Daily Standup is a brief daily meeting used to synchronize the team's activities and progress."
+    "answer": "The management of multiple iterations of a specific file or set",
+    "explanation": "Version control allows developers to track changes and revert to previous states of their work."
   },
   {
-    "question": "A major pitfall of Rapid Application Development (RAD) is that:",
+    "question": "Which tool is commonly used by Agile teams to visualize their workflow?",
     "options": [
-      "It does not allow for user feedback until the very end.",
-      "It is too slow for modern business needs.",
-      "It requires excessive documentation before coding begins."
+      "A scientific calculator for estimating the total project cost",
+      "A photo editing software for creating user interface mockups",
+      "A database management system for storing user login credentials"
     ],
-    "answer": "It can lead to \"hack and test\" coding that ignores system architecture.",
-    "explanation": "RAD focuses on speed and prototyping, which can sometimes result in poor long-term architecture or disorganized code."
+    "answer": "A Kanban board for tracking the status of different tasks",
+    "explanation": "Kanban boards help teams visualize work-in-progress and identify bottlenecks in the flow."
   },
   {
-    "question": "What is the primary goal of DevOps?",
+    "question": "In Python web development, what is a 'Route'?",
     "options": [
-      "To separate the development team from the operations team to ensure security.",
-      "To slow down deployment to ensure higher quality code.",
-      "To replace all human operators with AI automation tools."
+      "The physical path of the fiber optic cables in the building",
+      "The algorithm used to sort data inside the primary database",
+      "The sequence of steps taken to install the Python interpreter"
     ],
-    "answer": "To bridge the gap between Development and Operations for continuous delivery.",
-    "explanation": "DevOps aims to unify development and operations to improve the speed and reliability of software delivery."
+    "answer": "The mapping of a URL to a specific function in the code",
+    "explanation": "Routing directs incoming web requests to the correct logic based on the requested URL."
   },
   {
-    "question": "Which Lean Software Development principle advises against making irreversible decisions too early in the process?",
+    "question": "What is 'Regression Testing'?",
     "options": [
-      "Amplify Learning",
-      "Deliver as Fast as Possible",
-      "Empower the Team"
+      "Testing the application on very old hardware to check speed",
+      "Asking the developers to redo the entire coding phase again",
+      "Checking the security of the server room against physical entry"
     ],
-    "answer": "Decide as Late as Possible",
-    "explanation": "This principle suggests delaying commitments until the point where they can be made based on facts rather than assumptions."
+    "answer": "Verifying that new changes have not broken existing features",
+    "explanation": "Regression tests ensure that the software remains stable after updates or bug fixes."
   },
   {
-    "question": "In the context of Incremental Development, what happens to the requirements for the current increment once work begins?",
+    "question": "What is the role of a 'Scrum Master' during a Sprint?",
     "options": [
-      "They are allowed to change daily based on user feedback.",
-      "They are discarded and rewritten by the developers.",
-      "They are merged with the requirements of the next increment."
+      "To decide which features should be added to the product backlog",
+      "To write the majority of the code for the project's core module",
+      "To report the daily performance of each developer to the client"
     ],
-    "answer": "They are frozen to ensure stability for that specific release.",
-    "explanation": "Requirements for a specific increment are usually frozen once development on that increment starts to provide a stable target."
+    "answer": "To help the team follow Scrum theory and remove obstacles",
+    "explanation": "The Scrum Master is a servant-leader who ensures the team is productive and follows the framework."
   },
   {
-    "question": "A requirement states: \"The system shall allow the user to generate a monthly sales report.\" This is an example of a:",
+    "question": "Why is 'Separation of Concerns' important in software architecture?",
     "options": [
-      "Non-Functional Requirement",
-      "Design Constraint",
-      "Performance Requirement"
+      "It allows different departments to work in different buildings",
+      "It ensures that every developer knows how to do every task",
+      "It prevents the software from being copied by other companies"
     ],
-    "answer": "Functional Requirement",
-    "explanation": "Functional requirements define specific behaviors or functions that the system must be able to perform."
+    "answer": "It makes the system easier to maintain, test, and update",
+    "explanation": "By isolating different functions, developers can modify one part without affecting others."
   },
   {
-    "question": "Conversely, a requirement stating \"The sales report must be generated within 3 seconds of the user request\" is a:",
+    "question": "What is an 'Object-Relational Mapper' (ORM) used for in Python?",
     "options": [
-      "Functional Requirement",
-      "User Story",
-      "Feasibility Study"
+      "To create 3D graphical objects for mobile gaming applications",
+      "To map the physical location of servers in a cloud data center",
+      "To translate Python code into machine language for the CPU"
     ],
-    "answer": "Non-Functional Requirement",
-    "explanation": "Non-functional requirements describe how a system should perform a task (e.g., speed, reliability) rather than what it does."
+    "answer": "To interact with databases using Python objects instead of SQL",
+    "explanation": "ORMs simplify database operations by allowing developers to use their native language syntax."
   },
   {
-    "question": "According to the V-Model of development, which testing activity verifies the \"Detailed Design\" phase?",
+    "question": "In an Agile workflow, what is the purpose of a 'User Story'?",
     "options": [
-      "Acceptance Testing",
-      "System Testing",
-      "Integration Testing"
+      "To write a detailed biography of the target market customers",
+      "To provide a technical specification of the database schema",
+      "To document the legal terms and conditions for the application"
     ],
-    "answer": "Unit Testing",
-    "explanation": "In the V-Model, Unit Testing is the activity that validates the smallest components of the detailed design."
+    "answer": "To describe a software feature from an end-user's perspective",
+    "explanation": "User stories capture the 'who, what, and why' of a requirement in a simple format."
   },
   {
-    "question": "In a UML Use Case diagram, what does a \"Stick Figure\" represent?",
+    "question": "What is 'Infrastructure as Code' (IaC) in a DevOps context?",
     "options": [
-      "A specific internal function of the code.",
-      "The boundary of the system.",
-      "A state of waiting or processing."
+      "Writing the source code of the application using a new syntax",
+      "Building a physical server from scratch using manual instructions",
+      "Documenting the network layout on a physical piece of paper"
     ],
-    "answer": "An Actor, which can be a user or another system.",
-    "explanation": "Stick figures represent 'Actors,' which are entities (people or other systems) interacting with the software."
+    "answer": "Managing and provisioning servers via machine-readable files",
+    "explanation": "IaC allows infrastructure to be versioned and deployed automatically, just like software."
   },
   {
-    "question": "Which UML diagram would be best suited to visualize the precise order of messages exchanged between a \"User,\" a \"Login Controller,\" and a \"Database\" over a specific period of time?",
+    "question": "What happens during a 'Sprint Retrospective'?",
     "options": [
-      "Class Diagram",
-      "State Transition Diagram",
-      "Use Case Diagram"
+      "The team reviews the completed features with the stakeholders",
+      "The Product Owner demonstrates the new increment to the client",
+      "The development team updates the estimated cost of the project"
     ],
-    "answer": "Sequence Diagram",
-    "explanation": "Sequence diagrams are used to show the chronological order of interactions between different objects or components."
+    "answer": "The team inspects their process and plans for improvements",
+    "explanation": "The retrospective is focused on the team's efficiency and how they work together."
   },
   {
-    "question": "When prioritizing requirements, \"Ancillary Functionality\" refers to:",
+    "question": "In mobile development, what is a 'Native App'?",
     "options": [
-      "Essential features without which the product fails.",
-      "The underlying operating system requirements.",
-      "Security protocols that must be implemented first."
+      "An app that is designed to work on any operating system easily",
+      "An app that is built using only web technologies like HTML and CSS",
+      "An app that requires a continuous internet connection to launch"
     ],
-    "answer": "Supportive features that improve convenience but are not critical to operation.",
-    "explanation": "Ancillary requirements are 'nice-to-have' features that provide extra value but aren't fundamental to the system's core purpose."
+    "answer": "An app built specifically for a single mobile operating system",
+    "explanation": "Native apps are built using the specific tools and languages of a platform (e.g., Swift for iOS)."
   },
   {
-    "question": "In a State Transition Diagram, what triggers the movement from one state (e.g., \"Waiting\") to another state (e.g., \"Processing\")?",
+    "question": "What is the primary benefit of 'Version Control Branches'?",
     "options": [
-      "A Class Attribute",
-      "A Swimlane",
-      "An Actor"
+      "They allow the team to work on different projects simultaneously",
+      "They provide a way to backup the code to an external hard drive",
+      "They ensure that the code is automatically translated into English"
     ],
-    "answer": "A Transition Event",
-    "explanation": "A transition event is the trigger that causes an object to move from its current state to a different one."
+    "answer": "They allow developers to work on features without affecting the main code",
+    "explanation": "Branching enables parallel development and safe experimentation away from the stable codebase."
   },
   {
-    "question": "Which of the following pairs correctly maps a Design Activity to its resulting Design Product?",
+    "question": "What is 'Unit Testing'?",
     "options": [
-      "Architectural Design � Interface Specification",
-      "Component Design � System Architecture",
-      "Interface Design � Component Specification"
+      "Testing the performance of the entire system under heavy load",
+      "Asking a group of users to try the app and give their opinions",
+      "Checking if the application can be installed on a new device"
     ],
-    "answer": "Data Structure Design � Data Structure Specification",
-    "explanation": "The output of designing data structures is the specification that describes how that data is organized and stored[."
+    "answer": "Testing individual components or functions in isolation",
+    "explanation": "Unit tests ensure that each small part of the code works correctly on its own."
+  },
+  {
+    "question": "In a Scrum team, who is responsible for the 'Sprint Backlog'?",
+    "options": [
+      "The Product Owner, who decides which tasks are the most urgent",
+      "The Scrum Master, who ensures that the backlog is always full",
+      "The Project Manager, who assigns the tasks to the developers"
+    ],
+    "answer": "The Developers, who choose and manage their own work",
+    "explanation": "In Scrum, the development team is self-organizing and owns the Sprint Backlog."
+  },
+  {
+    "question": "What is the 'Backlog Refinement' activity in Scrum?",
+    "options": [
+      "The process of deleting old code that is no longer being used",
+      "A meeting to decide the final release date for the product",
+      "The activity of cleaning the office and organizing the hardware"
+    ],
+    "answer": "Reviewing and detailing items in the Product Backlog",
+    "explanation": "Refinement ensures that backlog items are clear and ready for future sprints."
+  },
+  {
+    "question": "What is 'Static Analysis' in the context of code quality?",
+    "options": [
+      "Running the code to see how much memory it uses during execution",
+      "Asking a senior manager to read the code and approve the design",
+      "Comparing the current code with the version from the previous year"
+    ],
+    "answer": "Examining the code without actually executing the program",
+    "explanation": "Static analysis tools find potential errors and style violations by reading the source code."
+  },
+  {
+    "question": "When connecting to a database in Python, what is a 'Cursor'?",
+    "options": [
+      "The flashing line on the screen where the developer types code",
+      "A graphical icon used to select different tables in the database",
+      "A security key used to log into the database management system"
+    ],
+    "answer": "An object used to execute commands and fetch data from a database",
+    "explanation": "The cursor allows the program to send SQL queries and iterate through the results."
+  },
+  {
+    "question": "What is the primary objective of 'User Acceptance Testing' (UAT)?",
+    "options": [
+      "To check if the code follows the internal company style guide",
+      "To ensure that the application does not have any security leaks",
+      "To verify that the application runs fast on the developer's laptop"
+    ],
+    "answer": "To confirm that the software meets the business requirements",
+    "explanation": "UAT is performed by the end-user or client to validate the solution before deployment."
+  },
+  {
+    "question": "In DevOps, what is 'Continuous Monitoring'?",
+    "options": [
+      "Watching the developers while they are working in the office",
+      "Recording the number of hours spent on each coding task",
+      "Checking the server logs once a month for any major errors"
+    ],
+    "answer": "The real-time tracking of application and system performance",
+    "explanation": "Monitoring ensures that any issues in production are identified and addressed immediately."
+  },
+  {
+    "question": "What is 'Scalability' in software architecture?",
+    "options": [
+      "The ability of the software to be translated into many languages",
+      "The ability of the software to be used on very old computer systems",
+      "The ability of the software to be sold in many different countries"
+    ],
+    "answer": "The ability of a system to handle increased load by adding resources",
+    "explanation": "Scalable systems can grow (vertically or horizontally) to support more users or data."
+  },
+  {
+    "question": "What is a 'Baseline' in configuration management?",
+    "options": [
+      "The minimum salary paid to a junior software developer",
+      "The bottom line of a document where the manager signs",
+      "The physical location where the server is stored in the office"
+    ],
+    "answer": "A stable version of a product used as a basis for further work",
+    "explanation": "Baselines are used to mark significant milestones and manage changes systematically."
+  },
+  {
+    "question": "In mobile app design, what does 'Responsive Design' achieve?",
+    "options": [
+      "It makes the app respond faster to user voice commands",
+      "It ensures the app works even when the internet is slow",
+      "It allows the app to be used by many people at the same time"
+    ],
+    "answer": "It adapts the layout to different screen sizes and orientations",
+    "explanation": "Responsive design provides a consistent experience across phones, tablets, and desktops."
+  },
+  {
+    "question": "Which document describes how to use and maintain a software system?",
+    "options": [
+      "The marketing brochure used to sell the software to clients",
+      "The legal agreement between the company and the developer",
+      "The receipt for the purchase of the development tools"
+    ],
+    "answer": "The technical documentation provided with the software",
+    "explanation": "Technical documentation is the primary resource for understanding and supporting a system."
+  },
+  {
+    "question": "What is 'Black Box Testing'?",
+    "options": [
+      "Testing the application in a room with no lights or windows",
+      "Testing the physical strength of the computer's outer case",
+      "Testing the code while having full access to the source files"
+    ],
+    "answer": "Testing the software without knowledge of its internal workings",
+    "explanation": "In black box testing, the tester only knows the inputs and the expected outputs."
+  },
+  {
+    "question": "In Scrum, what is the 'Product Backlog'?",
+    "options": [
+      "A list of all the employees who are working on the project",
+      "A record of all the money spent on the project so far",
+      "A collection of all the old versions of the software code"
+    ],
+    "answer": "An ordered list of everything that is known to be needed in the product",
+    "explanation": "The Product Backlog is the single source of requirements for any changes to be made to the product."
+  },
+  {
+    "question": "What is 'Pair Programming'?",
+    "options": [
+      "Using two different programming languages to build one application",
+      "Running two versions of the same app on two different servers",
+      "Writing code for two different clients at the same time"
+    ],
+    "answer": "Two developers working together at a single workstation",
+    "explanation": "Pair programming involves a 'driver' (writing code) and a 'navigator' (reviewing code) working together."
+  },
+  {
+    "question": "What is a 'Merge Conflict' in Git?",
+    "options": [
+      "A disagreement between two teams about the project deadline",
+      "When the server refuses to accept a new code upload from a user",
+      "When the database is unable to store any more new information"
+    ],
+    "answer": "When competing changes are made to the same line of code",
+    "explanation": "Git cannot resolve these automatically and requires a developer to manually choose which change to keep."
+  },
+  {
+    "question": "What is the function of 'Middleware' in software architecture?",
+    "options": [
+      "To provide the graphical icons and fonts for the user interface",
+      "To manage the physical cooling systems in the data center",
+      "To allow the user to communicate with other users in real-time"
+    ],
+    "answer": "To act as a bridge between different applications or services",
+    "explanation": "Middleware facilitates communication and data management between disparate software components."
+  },
+  {
+    "question": "What is 'Refactoring' in the context of software quality?",
+    "options": [
+      "Adding several new features to the existing application",
+      "Changing the core programming language of the project",
+      "Fixing a critical security bug that was found in production"
+    ],
+    "answer": "Improving the internal structure of code without changing its behavior",
+    "explanation": "Refactoring makes code cleaner and more maintainable without affecting what the user sees."
+  },
+  {
+    "question": "What is 'Continuous Delivery' (CD)?",
+    "options": [
+      "The process of delivering physical hardware to the customers",
+      "The practice of sending daily email updates to the stakeholders",
+      "The method of hiring new developers on a continuous basis"
+    ],
+    "answer": "Ensuring the code is always in a state that is ready to be released",
+    "explanation": "Continuous Delivery ensures that code changes can be deployed to production at any time."
+  },
+  {
+    "question": "In an Agile project, what is the 'Sprint Goal'?",
+    "options": [
+      "The date on which the entire project must be finished",
+      "The total amount of money that the team is allowed to spend",
+      "The number of lines of code that must be written each day"
+    ],
+    "answer": "An objective set for the Sprint that provides guidance to the team",
+    "explanation": "The Sprint Goal is a high-level objective that the team strives to achieve during the iteration."
   }
 ]

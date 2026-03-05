@@ -14,9 +14,9 @@ export default function Quiz() {
 
   // Manual configuration of sets per day
   const dayConfigs = {
-    day1: { sets: [1, 2, 3], title: "Day 1", subtitle: "Software Design and Development" },
-    day2: { sets: [1, 2, 3, 4, 5], title: "Day 2", subtitle: "Programming Basics - 1 (Python)" },
-    day3: { sets: [1, 2, 3, 4, 5], title: "Day 3", subtitle: "Programming Basics - 2 (Python)" }
+    day1: { sets: 3, title: "Day 1", subtitle: "Software Design and Development" },
+    day2: { sets: 5, title: "Day 2", subtitle: "Programming Basics - 1 (Python)" },
+    day3: { sets: 5, title: "Day 3", subtitle: "Programming Basics - 2 (Python)" }
   };
 
   // Fetch selected quiz file
@@ -72,7 +72,7 @@ export default function Quiz() {
           <div className="orb orb-2"></div>
           <div className="orb orb-3"></div>
         </div>
-        
+
         <div className="menu-card">
           <div className="menu-header">
             <div className="quiz-badge">QUIZ</div>
@@ -82,9 +82,9 @@ export default function Quiz() {
 
           <div className="quiz-options">
             {Object.entries(dayConfigs).map(([dayKey, config], index) => (
-              <button 
+              <button
                 key={dayKey}
-                className="quiz-select-btn" 
+                className="quiz-select-btn"
                 onClick={() => selectDay(dayKey)}
               >
                 <div className="btn-content">
@@ -95,7 +95,7 @@ export default function Quiz() {
                   </div>
                 </div>
                 <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
             ))}
@@ -107,7 +107,7 @@ export default function Quiz() {
 
   // SET SELECTION SCREEN
   if (selectedDay && !selectedSet) {
-    const availableSets = dayConfigs[selectedDay]?.sets || [];
+    const availableSets = Array.from({ length: dayConfigs[selectedDay]?.sets || 0 }, (_, i) => i + 1);
     const dayConfig = dayConfigs[selectedDay];
 
     return (
@@ -117,11 +117,11 @@ export default function Quiz() {
           <div className="orb orb-2"></div>
           <div className="orb orb-3"></div>
         </div>
-        
+
         <div className="menu-card">
           <button className="back-link" onClick={backToDays}>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             Back to Days
           </button>
@@ -134,9 +134,9 @@ export default function Quiz() {
 
           <div className="quiz-options">
             {availableSets.map((setNum) => (
-              <button 
+              <button
                 key={setNum}
-                className="quiz-select-btn" 
+                className="quiz-select-btn"
                 onClick={() => selectSet(setNum)}
               >
                 <div className="btn-content">
@@ -147,7 +147,7 @@ export default function Quiz() {
                   </div>
                 </div>
                 <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
             ))}
@@ -209,23 +209,23 @@ export default function Quiz() {
           <div className="orb orb-2"></div>
           <div className="orb orb-3"></div>
         </div>
-        
+
         <div className="result-card">
           <div className={`result-icon ${isPerfect ? 'perfect' : isGood ? 'good' : 'okay'}`}>
             {isPerfect ? '🏆' : isGood ? '🎉' : '📚'}
           </div>
-          
+
           <h2 className="result-title">
             {isPerfect ? 'Perfect Score!' : isGood ? 'Great Job!' : 'Keep Learning!'}
           </h2>
-          
+
           <div className="score-circle">
             <svg className="score-ring" viewBox="0 0 120 120">
               <circle className="score-ring-bg" cx="60" cy="60" r="54" />
-              <circle 
-                className="score-ring-fill" 
-                cx="60" 
-                cy="60" 
+              <circle
+                className="score-ring-fill"
+                cx="60"
+                cy="60"
                 r="54"
                 style={{
                   strokeDasharray: `${percentage * 3.39} 339`,
@@ -256,13 +256,13 @@ export default function Quiz() {
           <div className="result-actions">
             <button className="back-btn secondary" onClick={backToSets}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Back to Sets
             </button>
             <button className="back-btn" onClick={backToDays}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Back to Menu
             </button>
@@ -280,13 +280,13 @@ export default function Quiz() {
           <div className="quiz-nav-buttons">
             <button className="quiz-nav-btn" onClick={backToSets} title="Back to Sets">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span>Sets</span>
             </button>
             <button className="quiz-nav-btn" onClick={backToDays} title="Back to Main Menu">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span>Menu</span>
             </button>
@@ -295,19 +295,19 @@ export default function Quiz() {
           <div className="progress-bar">
             <div className="progress-fill" style={{ width: `${progress}%` }}></div>
           </div>
-          
+
           <div className="question-meta">
             <span className="question-number">Question {currentQuestion + 1} of {questions.length}</span>
             <div className="score-tracker">
               <span className="score-item correct-score">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                 </svg>
                 {correctCount}
               </span>
               <span className="score-item wrong-score">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
                 </svg>
                 {wrongCount}
               </span>
@@ -327,14 +327,14 @@ export default function Quiz() {
                 className += " correct";
                 icon = (
                   <svg className="option-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                   </svg>
                 );
               } else if (index === selected) {
                 className += " wrong";
                 icon = (
                   <svg className="option-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
                   </svg>
                 );
               }
@@ -358,16 +358,16 @@ export default function Quiz() {
           <div className="explanation-box">
             <div className="explanation-header">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
               </svg>
               <span>Explanation</span>
             </div>
             <p className="explanation-text">{question.explanation}</p>
-            
+
             <button className="next-question-btn" onClick={nextQuestion}>
               {currentQuestion + 1 === questions.length ? 'Finish Quiz' : 'Next Question'}
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
           </div>

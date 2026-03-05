@@ -1,0 +1,552 @@
+[
+    {
+        "question": "Which of the following is a key characteristic of 'Big O Notation' in complexity analysis?",
+        "options": [
+            "It provides the exact execution time of a script in milliseconds.",
+            "It describes the upper bound of an algorithm's growth rate.",
+            "It measures the total number of lines written in a source file.",
+            "It identifies the physical memory location of a specific variable."
+        ],
+        "answer": "It describes the upper bound of an algorithm's growth rate.",
+        "explanation": "Big O notation is used to define the worst-case scenario or the upper limit of an algorithm's time or space complexity."
+    },
+    {
+        "question": "What is the result of using a sorting algorithm on a collection of data?",
+        "options": [
+            "The data is encrypted to prevent unauthorized access by users.",
+            "The data is arranged into a specific meaningful numerical or alphabetical order.",
+            "The data is permanently deleted from the system's primary storage.",
+            "The data is compressed to reduce the overall size of the database file."
+        ],
+        "answer": "The data is arranged into a specific meaningful numerical or alphabetical order.",
+        "explanation": "Sorting refers to the process of organizing elements in a structured sequence, such as ascending or descending."
+    },
+    {
+        "question": "In Object-Oriented Programming, which concept allows a class to inherit properties from another class?",
+        "options": [
+            "Encapsulation",
+            "Inheritance",
+            "Abstraction",
+            "Polymorphism"
+        ],
+        "answer": "Inheritance",
+        "explanation": "Inheritance is a core OOP principle where a child class derives attributes and behaviors from a parent class."
+    },
+    {
+        "question": "Which of the following describes a 'Long Method' code smell?",
+        "options": [
+            "A function that is called too frequently by other parts of the program.",
+            "A function that contains too many lines of code and performs multiple actions.",
+            "A function that uses modern syntax features from the latest Python update.",
+            "A function that is shared across multiple modules in a large project."
+        ],
+        "answer": "A function that contains too many lines of code and performs multiple actions.",
+        "explanation": "A 'Long Method' is a common code smell where a single function becomes difficult to maintain because it does too much."
+    },
+    {
+        "question": "What is the primary purpose of following 'Code Style Guidelines' in a team project?",
+        "options": [
+            "To increase the execution speed of the application on the server.",
+            "To ensure the code is readable and consistent across different developers.",
+            "To prevent the software from being copied by competing companies.",
+            "To automatically generate documentation for the end-users of the app."
+        ],
+        "answer": "To ensure the code is readable and consistent across different developers.",
+        "explanation": "Style guidelines (like PEP 8 for Python) help maintain a uniform codebase that is easier for everyone to read and review."
+    },
+    {
+        "question": "When analyzing an algorithm, what does 'O(1)' represent?",
+        "options": [
+            "Linear Time",
+            "Logarithmic Time",
+            "Constant Time",
+            "Quadratic Time"
+        ],
+        "answer": "Constant Time",
+        "explanation": "O(1) means the execution time remains the same regardless of the size of the input data."
+    },
+    {
+        "question": "Which graph component represents the connection between two nodes?",
+        "options": [
+            "Vertex",
+            "Edge",
+            "Root",
+            "Leaf"
+        ],
+        "answer": "Edge",
+        "explanation": "In graph theory, vertices (or nodes) are connected by edges."
+    },
+    {
+        "question": "What is the main advantage of 'Encapsulation' in software design?",
+        "options": [
+            "It makes the code run faster by bypassing the operating system.",
+            "It hides the internal state of an object and requires interaction through methods.",
+            "It allows anyone to modify any variable from any part of the program.",
+            "It reduces the number of comments needed to explain the logic of the code."
+        ],
+        "answer": "It hides the internal state of an object and requires interaction through methods.",
+        "explanation": "Encapsulation protects data integrity by restricting direct access to an object's internal data."
+    },
+    {
+        "question": "Which of the following is a characteristic of a 'Self-Documenting' code?",
+        "options": [
+            "The code requires a 100-page manual to understand how it works.",
+            "The code uses clear and descriptive names for variables and functions.",
+            "The code is written in a secret language that only the author knows.",
+            "The code contains more comments than actual lines of logical instructions."
+        ],
+        "answer": "The code uses clear and descriptive names for variables and functions.",
+        "explanation": "Self-documenting code is written so clearly that the logic is easy to follow without excessive external comments."
+    },
+    {
+        "question": "What happens during the 'Merge' step of the Merge Sort algorithm?",
+        "options": [
+            "Two sorted sub-arrays are combined into a single sorted array.",
+            "The entire array is randomly shuffled to find a new pivot element.",
+            "Every even-indexed element is deleted to reduce the total size.",
+            "The largest element is moved to the end of the list repeatedly."
+        ],
+        "answer": "Two sorted sub-arrays are combined into a single sorted array.",
+        "explanation": "Merge Sort works by dividing the list into halves and then merging those sorted halves back together."
+    },
+    {
+        "question": "Which of the following sorting algorithms has the best-case time complexity of O(n) when the input array is already sorted?",
+        "options": [
+            "Selection Sort",
+            "Insertion Sort",
+            "Quick Sort",
+            "Merge Sort"
+        ],
+        "answer": "Insertion Sort",
+        "explanation": "Insertion Sort only requires one pass through the data if it is already sorted, resulting in a linear time complexity of O(n)."
+    },
+    {
+        "question": "What is the primary difference between an Adjacency Matrix and an Adjacency List in graph representation?",
+        "options": [
+            "The matrix uses more memory for sparse graphs while the list is more space-efficient.",
+            "The matrix allows for faster insertion of nodes while the list allows faster deletion.",
+            "The matrix can only represent directed graphs while the list represents undirected ones.",
+            "The matrix is used for weighted graphs while the list is used for unweighted graphs."
+        ],
+        "answer": "The matrix uses more memory for sparse graphs while the list is more space-efficient.",
+        "explanation": "An Adjacency Matrix uses O(V^2) space, which is inefficient for sparse graphs compared to the O(V+E) space used by an Adjacency List."
+    },
+    {
+        "question": "In the context of algorithm development, what does the 'Divide and Conquer' paradigm involve?",
+        "options": [
+            "Breaking a problem into smaller sub-problems, solving them, and combining the results.",
+            "Executing every possible instruction simultaneously to reduce the total processing time.",
+            "Storing all previous results in a global table to avoid recalculating the same values.",
+            "Converting all recursive functions into iterative loops to save memory on the stack."
+        ],
+        "answer": "Breaking a problem into smaller sub-problems, solving them, and combining the results.",
+        "explanation": "Divide and Conquer (used in Merge Sort and Quick Sort) splits a problem into independent sub-problems to simplify the solution."
+    },
+    {
+        "question": "Which 'Code Smell' is characterized by a set of data items that are always passed together in multiple parts of a program?",
+        "options": [
+            "Feature Envy",
+            "Data Clumps",
+            "Message Chains",
+            "Middle Man"
+        ],
+        "answer": "Data Clumps",
+        "explanation": "Data Clumps occur when the same group of variables (like start_date and end_date) frequently appear together, suggesting they should be an object."
+    },
+    {
+        "question": "What is the purpose of a 'Constructor' in Object-Oriented Programming?",
+        "options": [
+            "To destroy an object and free up the memory it occupied in the system.",
+            "To initialize the attributes of a new object at the moment it is created.",
+            "To convert a class into a script that can be executed by the operating system.",
+            "To prevent other classes from inheriting the methods of the current class."
+        ],
+        "answer": "To initialize the attributes of a new object at the moment it is created.",
+        "explanation": "A constructor is a special method called automatically when an object is instantiated to set up its initial state."
+    },
+    {
+        "question": "In a Depth-First Search (DFS) traversal of a graph, which data structure is typically used to keep track of the path?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Priority Queue",
+            "Hash Table"
+        ],
+        "answer": "Stack",
+        "explanation": "DFS explores as far as possible along each branch before backtracking, which is naturally implemented using a Stack (LIFO)."
+    },
+    {
+        "question": "Which of the following is a symptom of 'Technical Debt' in a software project?",
+        "options": [
+            "Increasing the number of developers to speed up the delivery of new features.",
+            "Choosing a quick, messy solution now that will require extra work to fix later.",
+            "Investing time in writing comprehensive automated tests for every new module.",
+            "Migrating the database to a modern cloud provider to improve system reliability."
+        ],
+        "answer": "Choosing a quick, messy solution now that will require extra work to fix later.",
+        "explanation": "Technical debt is the implied cost of additional rework caused by choosing an easy but limited solution instead of a better approach."
+    },
+    {
+        "question": "What does 'Polymorphism' allow a programmer to do in an OOP environment?",
+        "options": [
+            "Hide the complex logic of a function behind a simple and clean interface.",
+            "Define multiple methods with the same name but different implementations.",
+            "Restrict the modification of internal variables by external script modules.",
+            "Bundle data and methods into a single unit called a class for better security."
+        ],
+        "answer": "Define multiple methods with the same name but different implementations.",
+        "explanation": "Polymorphism (meaning 'many forms') allows different classes to be treated as instances of the same parent class through a uniform interface."
+    },
+    {
+        "question": "Consider this Python code. What will be the output?\n\n```python\ndef calculate(n):\n    if n <= 1:\n        return n\n    return n + calculate(n - 1)\n\nprint(calculate(3))\n```",
+        "options": [
+            "3",
+            "4",
+            "6",
+            "9"
+        ],
+        "answer": "6",
+        "explanation": "This is a recursive function. calculate(3) returns 3 + calculate(2), which is 3 + (2 + calculate(1)), resulting in 3 + 2 + 1 = 6."
+    },
+    {
+        "question": "Which principle is violated if a developer copies and pastes the same block of code into five different files?",
+        "options": [
+            "Keep It Simple, Stupid (KISS)",
+            "You Am Not Gonna Need It (YAGNI)",
+            "Don't Repeat Yourself (DRY)",
+            "Separation of Concerns (SoC)"
+        ],
+        "answer": "Don't Repeat Yourself (DRY)",
+        "explanation": "The DRY principle aims to reduce repetition of information of all kinds, making the system easier to maintain."
+    },
+    {
+        "question": "What is the worst-case time complexity of the Bubble Sort algorithm?",
+        "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n^2)",
+            "O(2^n)"
+        ],
+        "answer": "O(n^2)",
+        "explanation": "Bubble Sort uses nested loops to compare and swap elements, leading to quadratic time complexity in the worst case."
+    },
+    {
+        "question": "In graph theory, what is a 'Weighted Graph'?",
+        "options": [
+            "A graph where each edge has a numerical value or cost associated with it.",
+            "A graph that contains a large number of vertices compared to the edges.",
+            "A graph where every node is connected to exactly two other neighbor nodes.",
+            "A graph that is too large to be stored in the primary memory of the computer."
+        ],
+        "answer": "A graph where each edge has a numerical value or cost associated with it.",
+        "explanation": "Weighted graphs assign 'weights' to edges, which can represent distance, cost, or time between nodes."
+    },
+    {
+        "question": "What is the primary goal of 'Refactoring' in software maintenance?",
+        "options": [
+            "To add new features to the software without changing the existing logic.",
+            "To improve the internal structure of the code without changing its behavior.",
+            "To translate the code from an old language like C++ to a newer one like Python.",
+            "To remove all the comments and documentation to make the file size smaller."
+        ],
+        "answer": "To improve the internal structure of the code without changing its behavior.",
+        "explanation": "Refactoring makes code cleaner and more maintainable while ensuring the output remains identical to the original version."
+    },
+    {
+        "question": "Which of the following is an example of a 'Design Smell'?",
+        "options": [
+            "Rigidity: The software is difficult to change because every change causes a cascade of failures.",
+            "Efficiency: The software runs extremely fast and uses very little processing power or memory.",
+            "Modularity: The software is divided into small, independent pieces that are easy to test.",
+            "Consistency: The software uses the same naming conventions and file structures everywhere."
+        ],
+        "answer": "Rigidity: The software is difficult to change because every change causes a cascade of failures.",
+        "explanation": "Rigidity is a design smell where the system is so interconnected that a small change requires many other changes."
+    },
+    {
+        "question": "What is the function of an 'Abstract Class' in Object-Oriented Programming?",
+        "options": [
+            "To create objects that can be used directly by the main script of the application.",
+            "To act as a blueprint for other classes and cannot be instantiated on its own.",
+            "To store the secret passwords and encryption keys used by the software system.",
+            "To automatically optimize the mathematical calculations performed by the CPU."
+        ],
+        "answer": "To act as a blueprint for other classes and cannot be instantiated on its own.",
+        "explanation": "Abstract classes define a common interface for subclasses but do not allow direct object creation."
+    },
+    {
+        "question": "Which sorting algorithm works by repeatedly finding the minimum element from the unsorted part and putting it at the beginning?",
+        "options": [
+            "Selection Sort",
+            "Merge Sort",
+            "Quick Sort",
+            "Bubble Sort"
+        ],
+        "answer": "Selection Sort",
+        "explanation": "Selection Sort divides the list into sorted and unsorted parts, selecting the smallest element from the unsorted part in each step."
+    },
+    {
+        "question": "What does the 'Big O' notation O(log n) usually imply about an algorithm?",
+        "options": [
+            "The time taken increases linearly as the size of the input data increases.",
+            "The time taken remains constant regardless of how much data is processed.",
+            "The time taken increases very slowly as the input size grows significantly.",
+            "The time taken doubles every time a new element is added to the input list."
+        ],
+        "answer": "The time taken increases very slowly as the input size grows significantly.",
+        "explanation": "Logarithmic time complexity (like Binary Search) is highly efficient because the problem size is halved in each step."
+    },
+    {
+        "question": "In a Graph, what is a 'Cycle'?",
+        "options": [
+            "A path that starts and ends at the same vertex without repeating any edges.",
+            "A node that is not connected to any other nodes in the entire graph network.",
+            "A specific edge that connects a node to the root of the data structure tree.",
+            "A method used to visit every single node in the graph exactly one time."
+        ],
+        "answer": "A path that starts and ends at the same vertex without repeating any edges.",
+        "explanation": "A cycle is a closed path in a graph where you can return to the starting point."
+    },
+    {
+        "question": "Why is 'Code Reading' considered a vital skill for working on large projects?",
+        "options": [
+            "Because developers spend more time reading existing code than writing new code.",
+            "Because it is the only way to find out which developer wrote a specific bug.",
+            "Because reading code aloud helps the computer understand the logic faster.",
+            "Because modern compilers require developers to read the code before building."
+        ],
+        "answer": "Because developers spend more time reading existing code than writing new code.",
+        "explanation": "In large-scale software development, understanding the existing codebase is essential for integration and debugging."
+    },
+    {
+        "question": "What is 'Dead Code' in the context of maintainable software?",
+        "options": [
+            "Code that has been encrypted so that it can no longer be edited by others.",
+            "Code that is part of the system but is never executed or used by the program.",
+            "Code that causes the entire computer system to crash when it is executed.",
+            "Code that was written in a programming language that is no longer supported."
+        ],
+        "answer": "Code that is part of the system but is never executed or used by the program.",
+        "explanation": "Dead code increases complexity and maintenance overhead without providing any functional value."
+    },
+    {
+        "question": "Which of the following describes the 'KISS' principle?",
+        "options": [
+            "Keep the code as simple as possible and avoid unnecessary complexity.",
+            "Keep the code highly secret to prevent other teams from stealing ideas.",
+            "Keep the code integrated with as many third-party libraries as possible.",
+            "Keep the code stored on a local machine rather than on a cloud server."
+        ],
+        "answer": "Keep the code as simple as possible and avoid unnecessary complexity.",
+        "explanation": "'Keep It Simple, Stupid' (KISS) advocates for simplicity in design to ensure reliability and ease of maintenance."
+    },
+    {
+        "question": "What is an 'Object' in the context of Object-Oriented Programming?",
+        "options": [
+            "A blueprint that defines the data and behavior for a specific type of data.",
+            "A specific instance of a class that contains real data and can perform actions.",
+            "A reserved keyword in Python used to start the execution of a main script.",
+            "A physical hardware component used to store the binary data of the program."
+        ],
+        "answer": "A specific instance of a class that contains real data and can perform actions.",
+        "explanation": "While a class is a blueprint, an object is the actual entity created from that blueprint."
+    },
+    {
+        "question": "Which sorting algorithm is often implemented using a recursive 'Pivot' selection technique?",
+        "options": [
+            "Bubble Sort",
+            "Insertion Sort",
+            "Quick Sort",
+            "Selection Sort"
+        ],
+        "answer": "Quick Sort",
+        "explanation": "Quick Sort selects a pivot element and partitions the array into elements smaller and larger than the pivot."
+    },
+    {
+        "question": "What is the 'Time Complexity' of accessing an element in an array by its index?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)",
+            "O(n^2)"
+        ],
+        "answer": "O(1)",
+        "explanation": "Arrays allow constant-time access because the memory address can be calculated directly from the index."
+    },
+    {
+        "question": "In a 'Directed Acyclic Graph' (DAG), what is strictly prohibited?",
+        "options": [
+            "Having more than ten nodes in the structure.",
+            "Connecting two nodes with a weighted edge.",
+            "Forming a path that cycles back to a previous node.",
+            "Using a list to represent the connections of nodes."
+        ],
+        "answer": "Forming a path that cycles back to a previous node.",
+        "explanation": "A DAG is a directed graph with no directed cycles."
+    },
+    {
+        "question": "What is a 'Scripting API' used for in modern software development?",
+        "options": [
+            "To allow external scripts to control or extend the functionality of an application.",
+            "To replace the need for a graphical user interface in a consumer-facing app.",
+            "To convert Python scripts into machine code that runs without an interpreter.",
+            "To ensure that all scripts written by different developers use the same font."
+        ],
+        "answer": "To allow external scripts to control or extend the functionality of an application.",
+        "explanation": "Scripting APIs provide a way for developers to automate tasks within a host software system."
+    },
+    {
+        "question": "Which 'Code Smell' occurs when a class performs too many different and unrelated tasks?",
+        "options": [
+            "Large Class",
+            "Lazy Class",
+            "Data Class",
+            "Middle Man"
+        ],
+        "answer": "Large Class",
+        "explanation": "A 'Large Class' (or God Object) violates the Single Responsibility Principle by trying to do too much."
+    },
+    {
+        "question": "What does 'Encapsulation' provide to a software system?",
+        "options": [
+            "Improved performance by reducing the number of objects created in the memory.",
+            "Protection of data by preventing direct external access to an object's state.",
+            "Automatic detection of syntax errors before the code is executed by the user.",
+            "The ability to run the same code on both Windows and Linux without changes."
+        ],
+        "answer": "Protection of data by preventing direct external access to an object's state.",
+        "explanation": "Encapsulation bundles data and methods, hiding internal details to maintain control over how data is modified."
+    },
+    {
+        "question": "What is the typical time complexity of a 'Binary Search' algorithm?",
+        "options": [
+            "O(n)",
+            "O(n^2)",
+            "O(log n)",
+            "O(1)"
+        ],
+        "answer": "O(log n)",
+        "explanation": "Binary Search halves the search space in each step, making it much faster than a linear search."
+    },
+    {
+        "question": "Which of the following is a key practice in 'Code Review' sessions?",
+        "options": [
+            "Critiquing the developer's personal life instead of focusing on the code logic.",
+            "Checking for adherence to style guidelines and identifying logical errors.",
+            "Deleting all the code that the reviewer does not personally like or understand.",
+            "Rewriting the entire project from scratch to ensure it meets the reviewer's taste."
+        ],
+        "answer": "Checking for adherence to style guidelines and identifying logical errors.",
+        "explanation": "Code reviews are professional peer assessments aimed at improving code quality and catching bugs early."
+    },
+    {
+        "question": "What characterizes a 'Sparse Graph'?",
+        "options": [
+            "A graph where the number of edges is close to the maximum possible number.",
+            "A graph where most nodes have only a few edges connecting them to others.",
+            "A graph that contains only cycles and no leaf nodes or terminal vertices.",
+            "A graph where every single node is connected to every other node directly."
+        ],
+        "answer": "A graph where most nodes have only a few edges connecting them to others.",
+        "explanation": "A sparse graph has relatively few edges compared to the number of vertices."
+    },
+    {
+        "question": "In OOP, what is 'Method Overriding'?",
+        "options": [
+            "Creating a method with the same name as a built-in Python function to replace it.",
+            "Providing a new implementation for a method that is already defined in a parent class.",
+            "Calling a method from a different class without creating an instance of that class.",
+            "Using a loop to execute the same method multiple times with different parameters."
+        ],
+        "answer": "Providing a new implementation for a method that is already defined in a parent class.",
+        "explanation": "Overriding allows a subclass to provide a specific implementation of a method already provided by its parent."
+    },
+    {
+        "question": "What is the benefit of using 'Modular Programming' for maintainability?",
+        "options": [
+            "It allows developers to write the entire program in one single, large file.",
+            "It makes it easier to test and update individual parts of the system separately.",
+            "It reduces the total number of lines of code that the computer needs to read.",
+            "It prevents the user from seeing any error messages when the program fails."
+        ],
+        "answer": "It makes it easier to test and update individual parts of the system separately.",
+        "explanation": "Modularity divides a system into distinct components, making it easier to manage and modify."
+    },
+    {
+        "question": "Which sorting algorithm is known for being 'Stable'?",
+        "options": [
+            "Quick Sort",
+            "Merge Sort",
+            "Selection Sort",
+            "Heap Sort"
+        ],
+        "answer": "Merge Sort",
+        "explanation": "A stable sort preserves the relative order of elements with equal keys; Merge Sort is a common stable algorithm."
+    },
+    {
+        "question": "What is the 'Space Complexity' of an algorithm?",
+        "options": [
+            "The physical amount of disk space occupied by the source code files.",
+            "The amount of working memory an algorithm needs to run to completion.",
+            "The distance between the server and the user in a cloud computing setup.",
+            "The time it takes for the CPU to switch between two different applications."
+        ],
+        "answer": "The amount of working memory an algorithm needs to run to completion.",
+        "explanation": "Space complexity measures the total memory (RAM) required by an algorithm as a function of input size."
+    },
+    {
+        "question": "What is a 'Self-Loop' in a Graph?",
+        "options": [
+            "An edge that connects a vertex to itself.",
+            "A vertex that is connected to all other vertices.",
+            "A path that visits every node exactly twice.",
+            "A graph that has no edges connecting any nodes."
+        ],
+        "answer": "An edge that connects a vertex to itself.",
+        "explanation": "In graph theory, a loop (or self-loop) is an edge that starts and ends on the same vertex."
+    },
+    {
+        "question": "Which of the following is considered 'Bad Practice' in writing maintainable code?",
+        "options": [
+            "Using variable names like 'a', 'b', and 'c' for complex business logic.",
+            "Adding comments to explain the 'why' behind a non-obvious piece of logic.",
+            "Breaking down a long function into several smaller, reusable helper functions.",
+            "Using a version control system like Git to track changes made to the source code."
+        ],
+        "answer": "Using variable names like 'a', 'b', and 'c' for complex business logic.",
+        "explanation": "Non-descriptive variable names make the code difficult to read and maintain for other developers."
+    },
+    {
+        "question": "In Python, how is 'Inheritance' typically represented in a class definition?",
+        "options": [
+            "class ChildClass(ParentClass):",
+            "class ChildClass inherits ParentClass:",
+            "class ChildClass from ParentClass:",
+            "class ChildClass < ParentClass:"
+        ],
+        "answer": "class ChildClass(ParentClass):",
+        "explanation": "In Python, the parent class is passed as an argument in parentheses after the new class name."
+    },
+    {
+        "question": "What is the result of 'Breadth-First Search' (BFS) on a graph?",
+        "options": [
+            "It visits nodes by going as deep as possible before exploring neighbors.",
+            "It visits nodes layer by layer, exploring all immediate neighbors first.",
+            "It visits only the nodes that have the highest numerical value in the graph.",
+            "It visits nodes in a completely random order to ensure unbiased results."
+        ],
+        "answer": "It visits nodes layer by layer, exploring all immediate neighbors first.",
+        "explanation": "BFS starts at a root node and explores all neighboring nodes at the current depth before moving deeper."
+    },
+    {
+        "question": "What does 'YAGNI' stand for in software engineering?",
+        "options": [
+            "You Always Get New Insights",
+            "You Am Not Gonna Need It",
+            "Your Application Generally Needs Integration",
+            "Yield All Great New Ideas"
+        ],
+        "answer": "You Am Not Gonna Need It",
+        "explanation": "YAGNI is a principle that suggests developers should not add functionality until it is actually necessary."
+    }
+]

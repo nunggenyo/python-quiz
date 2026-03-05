@@ -1,0 +1,502 @@
+[
+    {
+        "question": "What is the primary advantage of defining a custom exception in a Python project?",
+        "options": [
+            "Increase the speed of the code execution",
+            "Minimize the memory used by the application",
+            "Encrypt the error messages for extra security"
+        ],
+        "answer": "Provide specific context for unique failures",
+        "explanation": "Custom exceptions allow developers to distinguish between different types of application-specific errors more clearly."
+    },
+    {
+        "question": "Which Python statement is used to define the body of a new exception class?",
+        "options": [
+            "The def function statement",
+            "The raise signal statement",
+            "The except handling statement"
+        ],
+        "answer": "The class definition statement",
+        "explanation": "In Python, exceptions are classes, so they must be defined using the 'class' keyword."
+    },
+    {
+        "question": "To create a custom exception, from which built-in class should you inherit?",
+        "options": [
+            "The SystemExit root class",
+            "The GeneratorExit base class",
+            "The StopIteration base class"
+        ],
+        "answer": "The built-in Exception class",
+        "explanation": "Inheriting from 'Exception' ensures that the custom error can be caught by standard try-except blocks."
+    },
+    {
+        "question": "What is the role of the 'raise' keyword when working with custom exceptions?",
+        "options": [
+            "Ignore the current exception state",
+            "Delete the exception from the memory",
+            "Format the exception as a JSON string"
+        ],
+        "answer": "Trigger the exception intentionally",
+        "explanation": "The 'raise' keyword is used to signal that a specific error condition has been met in the code."
+    },
+    {
+        "question": "Which method is typically used to pass an error code to a custom exception?",
+        "options": [
+            "The __str__ string method",
+            "The __repr__ debug method",
+            "The __call__ invoke method"
+        ],
+        "answer": "The __init__ startup method",
+        "explanation": "The constructor (__init__) is used to initialize the exception instance with specific data like error codes."
+    },
+    {
+        "question": "How do you ensure a custom exception message is stored in the base class?",
+        "options": [
+            "Assign it to a global variable",
+            "Write it to an external log file",
+            "Print it before raising the error"
+        ],
+        "answer": "Call the super().__init__ method",
+        "explanation": "Calling the parent's constructor ensures the error message is correctly stored in the 'args' attribute."
+    },
+    {
+        "question": "What is the recommended suffix for custom exception names in Python?",
+        "options": [
+            "The 'Alert' naming suffix",
+            "The 'Issue' naming suffix",
+            "The 'Fail' naming suffix"
+        ],
+        "answer": "The 'Error' naming suffix",
+        "explanation": "Following PEP 8, exception names should end with 'Error' to clarify their role in the program."
+    },
+    {
+        "question": "Which block is used to catch a specific custom exception in a Python script?",
+        "options": [
+            "The try execution block",
+            "The else completion block",
+            "The finally cleanup block"
+        ],
+        "answer": "The except handling block",
+        "explanation": "The 'except' block is where you define the logic to handle specific exceptions that are raised."
+    },
+    {
+        "question": "What does 'RDBMS' stand for in the context of database connectivity?",
+        "options": [
+            "Rapid Data Base Management System",
+            "Remote Data Binary Management Set",
+            "Relational Data Build Matrix System"
+        ],
+        "answer": "Relational Database Management System",
+        "explanation": "RDBMS refers to database systems that store data in tables linked by defined relationships."
+    },
+    {
+        "question": "Which library is part of the Python standard library for SQLite operations?",
+        "options": [
+            "The mysql_connector library",
+            "The postgresql_driver library",
+            "The oracle_database library"
+        ],
+        "answer": "The sqlite3 database library",
+        "explanation": "Python includes the 'sqlite3' module by default to provide access to SQLite databases."
+    },
+    {
+        "question": "What is the purpose of the 'connect()' function in a database module?",
+        "options": [
+            "Search for data in a table",
+            "Delete a table from the disk",
+            "Create a new database account"
+        ],
+        "answer": "Open a database session object",
+        "explanation": "The connect() function establishes the initial communication link between Python and the RDBMS."
+    },
+    {
+        "question": "Which object is used to execute SQL queries and fetch the results?",
+        "options": [
+            "A global application router",
+            "A local network socket port",
+            "A data serialization handler"
+        ],
+        "answer": "A database cursor instance",
+        "explanation": "A cursor allows you to execute SQL statements and navigate through the rows of a result set."
+    },
+    {
+        "question": "Which SQL statement is used to retrieve existing data from a database?",
+        "options": [
+            "The INSERT data statement",
+            "The UPDATE data statement",
+            "The DELETE data statement"
+        ],
+        "answer": "The SELECT data statement",
+        "explanation": "The SELECT statement is the standard way to query and fetch records from a database table."
+    },
+    {
+        "question": "What is the function of the 'commit()' method in a database connection?",
+        "options": [
+            "Check the SQL code for errors",
+            "Close the active network port",
+            "Reset the database login password"
+        ],
+        "answer": "Save all current pending changes",
+        "explanation": "Commit() makes all changes (like INSERT or UPDATE) permanent in the database."
+    },
+    {
+        "question": "Why should you use placeholders instead of f-strings in SQL queries?",
+        "options": [
+            "To increase the query speed",
+            "To reduce the script file size",
+            "To allow better text formatting"
+        ],
+        "answer": "To prevent SQL injection attacks",
+        "explanation": "Placeholders ensure user input is treated as data, not as executable SQL commands."
+    },
+    {
+        "question": "Which method retrieves only the next single row from a result set?",
+        "options": [
+            "The get_next() data method",
+            "The read_row() data method",
+            "The fetchall() data method"
+        ],
+        "answer": "The fetchone() data method",
+        "explanation": "The fetchone() method returns the very next row of a query result or None if no rows remain."
+    },
+    {
+        "question": "What is returned by fetchall() after a successful SELECT query execution?",
+        "options": [
+            "A dictionary of column names",
+            "A single integer for row count",
+            "A boolean value for the status"
+        ],
+        "answer": "A list of tuples for all rows",
+        "explanation": "The fetchall() method retrieves all rows from the result set and returns them in a list."
+    },
+    {
+        "question": "Which SQL keyword is used to add new records to a database table?",
+        "options": [
+            "The ADD data record keyword",
+            "The NEW data record keyword",
+            "The PUT data record keyword"
+        ],
+        "answer": "The INSERT record keyword",
+        "explanation": "The INSERT statement is used to create and add new rows of data into a specific table."
+    },
+    {
+        "question": "What happens if a database transaction encounters an error and is not committed?",
+        "options": [
+            "The database file is deleted",
+            "The SQL query is saved as text",
+            "The system memory is restarted"
+        ],
+        "answer": "The changes are rolled back",
+        "explanation": "Uncommitted changes are discarded (rolled back) to maintain the integrity of the database."
+    },
+    {
+        "question": "Which SQL clause is used to filter records based on a specific condition?",
+        "options": [
+            "The WHEN search filter clause",
+            "The FIND search filter clause",
+            "The CASE search filter clause"
+        ],
+        "answer": "The WHERE search filter clause",
+        "explanation": "The WHERE clause restricts the query results to rows that satisfy a given boolean condition."
+    },
+    {
+        "question": "How do you properly close a database connection to free resources?",
+        "options": [
+            "Call the exit() session method",
+            "Call the stop() session method",
+            "Call the end() session method"
+        ],
+        "answer": "Call the close() session method",
+        "explanation": "Calling close() on the connection object releases the database lock and system memory."
+    },
+    {
+        "question": "Which design pattern is used to notify objects when a state change occurs?",
+        "options": [
+            "The Factory design pattern",
+            "The Strategy design pattern",
+            "The Composite design pattern"
+        ],
+        "answer": "The Observer design pattern",
+        "explanation": "The Observer pattern defines a one-to-many dependency so that all dependents are notified of updates."
+    },
+    {
+        "question": "In the Observer pattern, what is the role of the 'Subject' object?",
+        "options": [
+            "Executing the core math logic",
+            "Connecting to the SQL database",
+            "Creating the observer instances"
+        ],
+        "answer": "Maintaining a list of observers",
+        "explanation": "The Subject keeps track of all registered observers and triggers their update methods."
+    },
+    {
+        "question": "Which method is commonly implemented by an Observer to receive updates?",
+        "options": [
+            "The notify() alert method",
+            "The signal() alert method",
+            "The alert() alert method"
+        ],
+        "answer": "The update() alert method",
+        "explanation": "The Subject calls the update() method on each observer whenever its internal state changes."
+    },
+    {
+        "question": "What is the main goal of the Strategy software design pattern?",
+        "options": [
+            "Ensure only one class instance",
+            "Log every error to a database",
+            "Organize code into tree nodes"
+        ],
+        "answer": "Define interchangeable algorithms",
+        "explanation": "The Strategy pattern encapsulates logic into separate classes so they can be swapped at runtime."
+    },
+    {
+        "question": "In the Strategy pattern, what does the 'Context' class represent?",
+        "options": [
+            "A list of all possible errors",
+            "A connection to a remote server",
+            "A database table with results"
+        ],
+        "answer": "An entity that uses a strategy",
+        "explanation": "The Context maintains a reference to a Strategy object and delegates the task execution to it."
+    },
+    {
+        "question": "Which design pattern allows you to choose an algorithm at runtime?",
+        "options": [
+            "The Observer design pattern",
+            "The Factory design pattern",
+            "The Composite design pattern"
+        ],
+        "answer": "The Strategy design pattern",
+        "explanation": "The Strategy pattern is specifically designed to allow switching between different behaviors dynamically."
+    },
+    {
+        "question": "What is the primary function of the Factory Method design pattern?",
+        "options": [
+            "Manage memory for objects",
+            "Delete old database records",
+            "Synchronize observer states"
+        ],
+        "answer": "Delegate object creation logic",
+        "explanation": "The Factory Method provides an interface for creating objects but lets subclasses decide the class."
+    },
+    {
+        "question": "In the Factory Method pattern, which class decides the concrete product type?",
+        "options": [
+            "The main application loop",
+            "The abstract product class",
+            "The database cursor object"
+        ],
+        "answer": "The concrete creator class",
+        "explanation": "Subclasses of the creator override the factory method to return specific instances of products."
+    },
+    {
+        "question": "How does the Abstract Factory pattern differ from the Factory Method?",
+        "options": [
+            "It only produces a single item",
+            "It handles SQL query errors",
+            "It sorts the database output"
+        ],
+        "answer": "It creates families of products",
+        "explanation": "Abstract Factory provides an interface for creating multiple related or dependent objects together."
+    },
+    {
+        "question": "Which design pattern is best for representing a part-whole hierarchy?",
+        "options": [
+            "The Observer design pattern",
+            "The Strategy design pattern",
+            "The Factory design pattern"
+        ],
+        "answer": "The Composite design pattern",
+        "explanation": "The Composite pattern organizes objects into tree structures to represent part-whole hierarchies."
+    },
+    {
+        "question": "What is a 'Leaf' object in the context of the Composite pattern?",
+        "options": [
+            "A class that defines the tree",
+            "A method that adds new nodes",
+            "A container for other objects"
+        ],
+        "answer": "A node with no child elements",
+        "explanation": "Leaves are the basic elements of the composition that do not contain other sub-components."
+    },
+    {
+        "question": "Which method do both Leaf and Composite objects usually implement?",
+        "options": [
+            "The notify() update method",
+            "The commit() database method",
+            "The raise() exception method"
+        ],
+        "answer": "The execute() operation method",
+        "explanation": "The Composite pattern works by having all components share a common interface for operations."
+    },
+    {
+        "question": "What is a common use case for the Composite design pattern?",
+        "options": [
+            "Implementing a math calculator",
+            "Connecting to a MySQL server",
+            "Handling login authentication"
+        ],
+        "answer": "Modeling a file system folder",
+        "explanation": "Folders containing both files and other folders are a perfect example of a Composite hierarchy."
+    },
+    {
+        "question": "Which pattern category do the Factory and Abstract Factory belong to?",
+        "options": [
+            "The Behavioral pattern group",
+            "The Structural pattern group",
+            "The Database pattern group"
+        ],
+        "answer": "The Creational pattern group",
+        "explanation": "Creational patterns are concerned with the process of object creation and instantiation."
+    },
+    {
+        "question": "In the Observer pattern, what is 'detaching' an observer?",
+        "options": [
+            "Deleting the observer from disk",
+            "Stopping the entire application",
+            "Updating the observer settings"
+        ],
+        "answer": "Removing it from the notify list",
+        "explanation": "Detaching an observer means the Subject will no longer call its update method during state changes."
+    },
+    {
+        "question": "Why is the Strategy pattern considered to support the Open/Closed Principle?",
+        "options": [
+            "It opens all the database ports",
+            "It closes all the active errors",
+            "It makes the code run in parallel"
+        ],
+        "answer": "It adds logic without edits",
+        "explanation": "You can add new strategies without modifying the existing Context class or other strategies."
+    },
+    {
+        "question": "Which SQL keyword is used to sort query results in ascending order?",
+        "options": [
+            "The SORT BY results keyword",
+            "The GROUP BY results keyword",
+            "The ARRANGE results keyword"
+        ],
+        "answer": "The ORDER BY results keyword",
+        "explanation": "The ORDER BY clause is used to sort the data retrieved by a SELECT statement."
+    },
+    {
+        "question": "What does 'consuming data' mean after a database fetch operation?",
+        "options": [
+            "Deleting the data from the table",
+            "Backing up the data to a file",
+            "Encrypting the data for storage"
+        ],
+        "answer": "Using the data in your program",
+        "explanation": "Consuming data involves processing the results retrieved from a database within the app logic."
+    },
+    {
+        "question": "In a custom exception, where should you put a description of the error?",
+        "options": [
+            "In a separate external text file",
+            "In the database table settings",
+            "In the global variable section"
+        ],
+        "answer": "In the class-level docstring",
+        "explanation": "A docstring inside the exception class explains the purpose of the error to other developers."
+    },
+    {
+        "question": "Which design pattern would you use for a cross-platform UI toolkit?",
+        "options": [
+            "The Observer design pattern",
+            "The Strategy design pattern",
+            "The Composite design pattern"
+        ],
+        "answer": "The Abstract Factory pattern",
+        "explanation": "Abstract Factory ensures that all UI elements (buttons, menus) are consistent for a specific platform."
+    },
+    {
+        "question": "What is the default return value of fetchmany(size) if size is 10 but only 2 rows remain?",
+        "options": [
+            "A list of ten empty tuples",
+            "A NoneType object value",
+            "A single tuple with two rows"
+        ],
+        "answer": "A list of the two remaining rows",
+        "explanation": "The fetchmany() method returns as many rows as are available, up to the requested size."
+    },
+    {
+        "question": "Which pattern is used to treat simple and complex objects the same way?",
+        "options": [
+            "The Factory design pattern",
+            "The Strategy design pattern",
+            "The Observer design pattern"
+        ],
+        "answer": "The Composite design pattern",
+        "explanation": "Composite allows clients to ignore the difference between individual items and compositions of items."
+    },
+    {
+        "question": "What is a 'transaction' in a relational database?",
+        "options": [
+            "A single login session log",
+            "A transfer of file data logs",
+            "A backup of the table schema"
+        ],
+        "answer": "A group of SQL operations",
+        "explanation": "A transaction is a unit of work where multiple SQL statements succeed or fail as a whole."
+    },
+    {
+        "question": "How do you specify the custom error message when using 'raise'?",
+        "options": [
+            "Assign it to a static attribute",
+            "Print it before the raise call",
+            "Save it in the system settings"
+        ],
+        "answer": "Pass it as a class argument",
+        "explanation": "When raising an exception, you typically pass the error message string as a parameter to the class."
+    },
+    {
+        "question": "In the Strategy pattern, why are algorithms encapsulated in classes?",
+        "options": [
+            "To speed up the SQL queries",
+            "To reduce the memory footprint",
+            "To hide the code from the user"
+        ],
+        "answer": "To make them interchangeable",
+        "explanation": "Encapsulation allows the algorithms to be swapped easily without affecting the client code."
+    },
+    {
+        "question": "Which method provides a readable description for a custom exception object?",
+        "options": [
+            "The __init__ startup method",
+            "The __repr__ debug method",
+            "The __call__ invoke method"
+        ],
+        "answer": "The __str__ display method",
+        "explanation": "The __str__ method defines the output when the exception is printed or converted to a string."
+    },
+    {
+        "question": "Which design pattern is used to decoupled an abstraction from its implementation?",
+        "options": [
+            "The Factory design pattern",
+            "The Observer design pattern",
+            "The Composite design pattern"
+        ],
+        "answer": "The Strategy design pattern",
+        "explanation": "Strategy decouples the algorithm implementation from the class that uses it (the Context)."
+    },
+    {
+        "question": "What is the primary function of the 'fetch' operations in Python DB-API?",
+        "options": [
+            "To delete rows from a table",
+            "To update values in a table",
+            "To create a new table schema"
+        ],
+        "answer": "To retrieve rows from a query",
+        "explanation": "Fetch methods like fetchone() and fetchall() are used to get data after a SELECT query."
+    },
+    {
+        "question": "Which pattern helps in avoiding tight coupling between creators and products?",
+        "options": [
+            "The Observer design pattern",
+            "The Strategy design pattern",
+            "The Composite design pattern"
+        ],
+        "answer": "The Factory Method pattern",
+        "explanation": "Factory Method allows classes to interact with products via an interface rather than concrete classes."
+    }
+]

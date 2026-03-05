@@ -58,15 +58,15 @@ const categoryConfigs = {
     glowColor: "rgba(99, 102, 241, 0.35)",
     comingSoon: false,
     dayConfigs: {
-      day1: { sets: [1, 2, 3, 4, 5], title: "Day 1", subtitle: "Software Design and Development" },
-      day2: { sets: [1, 2, 3, 4, 5], title: "Day 2", subtitle: "Programming Basics - 1 (Python)" },
-      day3: { sets: [1, 2, 3, 4, 5], title: "Day 3", subtitle: "Programming Basics - 2 (Python)" },
-      day4: { sets: [1, 2, 3, 4, 5], title: "Day 4", subtitle: "Object Oriented Programming - 1 (Python)" },
-      day5: { sets: [1, 2, 3, 4, 5], title: "Day 5", subtitle: "Object Oriented Programming - 1 (Python)" },
-      day6: { sets: [1, 2, 3, 4, 5], title: "Day 6", subtitle: "Web Design & Development Fundamentals (Front-End) - 1" },
-      day7: { sets: [1, 2, 3, 4, 5], title: "Day 7", subtitle: "Web Design & Development Fundamentals (Front-End) - 2" },
-      day8: { sets: [1, 2, 3, 4, 5], title: "Day 8", subtitle: "Relational Database" },
-      day9: { sets: [1, 2, 3, 4, 5], title: "Day 9", subtitle: "Web Application Development" }
+      day1: { sets: 5, title: "Day 1", subtitle: "Software Design and Development" },
+      day2: { sets: 5, title: "Day 2", subtitle: "Programming Basics - 1 (Python)" },
+      day3: { sets: 5, title: "Day 3", subtitle: "Programming Basics - 2 (Python)" },
+      day4: { sets: 5, title: "Day 4", subtitle: "Object Oriented Programming - 1 (Python)" },
+      day5: { sets: 5, title: "Day 5", subtitle: "Object Oriented Programming - 1 (Python)" },
+      day6: { sets: 5, title: "Day 6", subtitle: "Web Design & Development Fundamentals (Front-End) - 1" },
+      day7: { sets: 5, title: "Day 7", subtitle: "Web Design & Development Fundamentals (Front-End) - 2" },
+      day8: { sets: 5, title: "Day 8", subtitle: "Relational Database" },
+      day9: { sets: 5, title: "Day 9", subtitle: "Web Application Development" }
     }
   },
   advanced: {
@@ -76,7 +76,9 @@ const categoryConfigs = {
     glowColor: "rgba(6, 182, 212, 0.35)",
     comingSoon: false,
     dayConfigs: {
-      day1: { sets: [1], title: "Day 1", subtitle: "Software Design and Development" }
+      day1: { sets: 5, title: "Day 1", subtitle: "Software Design and Development" },
+      day2: { sets: 5, title: "Day 2", subtitle: "Object Oriented Programming" },
+      day3: { sets: 5, title: "Day 3", subtitle: "Object Oriented Programming" },
     }
   },
 };
@@ -118,6 +120,9 @@ export default function Quiz() {
   // Persist progress per-set whenever quiz state changes (only while a quiz is active)
   useEffect(() => {
     if (!selectedCategory || !selectedDay || !selectedSet || processedQuestions.length === 0 || finished) return;
+
+    // Do not save progress if the user hasn't answered any questions yet
+    if (correctCount === 0 && wrongCount === 0) return;
 
     saveSetProgress(selectedCategory, selectedDay, selectedSet, {
       processedQuestions,
@@ -277,7 +282,9 @@ export default function Quiz() {
     return completedSets[key] || null;
   };
   const getDayBestScore = (catKey, dayKey) => {
-    const scores = categoryConfigs[catKey]?.dayConfigs[dayKey]?.sets
+    const configSets = categoryConfigs[catKey]?.dayConfigs[dayKey]?.sets || 0;
+    const setsArray = Array.from({ length: configSets }, (_, i) => i + 1);
+    const scores = setsArray
       .map(s => {
         const k = catKey === 'foundation' ? `${dayKey}-set${s}` : `${catKey}-${dayKey}-set${s}`;
         return completedSets[k];
@@ -308,9 +315,10 @@ export default function Quiz() {
           <div className="category-grid">
             {Object.entries(categoryConfigs).map(([catKey, cat]) => {
               const daysArray = Object.entries(cat.dayConfigs || {});
-              const totalSets = daysArray.reduce((acc, [, config]) => acc + (config.sets.length || 0), 0);
+              const totalSets = daysArray.reduce((acc, [, config]) => acc + (config.sets || 0), 0);
               const completedCount = daysArray.reduce((acc, [dayKey, config]) => {
-                return acc + (config.sets.filter(s => {
+                const setsArray = Array.from({ length: config.sets || 0 }, (_, i) => i + 1);
+                return acc + (setsArray.filter(s => {
                   const k = catKey === 'foundation' ? `${dayKey}-set${s}` : `${catKey}-${dayKey}-set${s}`;
                   return completedSets[k];
                 }).length || 0);
@@ -402,7 +410,8 @@ export default function Quiz() {
 
           <div className="quiz-options">
             {Object.entries(daysInCategory).map(([dayKey, config], index) => {
-              const setsCompleted = config.sets.filter(s => {
+              const setsArray = Array.from({ length: config.sets || 0 }, (_, i) => i + 1);
+              const setsCompleted = setsArray.filter(s => {
                 const k = selectedCategory === 'foundation' ? `${dayKey}-set${s}` : `${selectedCategory}-${dayKey}-set${s}`;
                 return completedSets[k];
               }).length;
@@ -422,7 +431,7 @@ export default function Quiz() {
                   <div className="btn-right">
                     {setsCompleted > 0 && (
                       <span className="day-progress-badge">
-                        {setsCompleted}/{config.sets.length} sets
+                        {setsCompleted}/{config.sets} sets
                       </span>
                     )}
                     <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -441,7 +450,7 @@ export default function Quiz() {
   // ── SET SELECTION SCREEN ────────────────────────────────────────────────────
   if (selectedDay && !selectedSet) {
     const dayConfig = categoryConfigs[selectedCategory]?.dayConfigs[selectedDay];
-    const availableSets = dayConfig?.sets || [];
+    const availableSets = Array.from({ length: dayConfig?.sets || 0 }, (_, i) => i + 1);
 
     return (
       <div className="quiz-container">

@@ -1,0 +1,502 @@
+[
+    {
+        "question": "Which keyword is primarily used to trigger a custom exception after it has been defined in Python?",
+        "options": [
+            "throw",
+            "catch",
+            "yield"
+        ],
+        "answer": "raise",
+        "explanation": "In Python, the 'raise' keyword is used to trigger a specific exception, including those defined by the user through custom classes."
+    },
+    {
+        "question": "What is the standard requirement when creating a new custom exception class in Python?",
+        "options": [
+            "Import the external sys module library",
+            "Implement a mandatory boolean attribute",
+            "Define at least three separate methods"
+        ],
+        "answer": "Inherit from the built-in Exception class",
+        "explanation": "To integrate with Python's error handling system, custom exceptions must inherit from the base 'Exception' class or one of its subclasses."
+    },
+    {
+        "question": "Which method is commonly used to send an SQL command to a database using a cursor object?",
+        "options": [
+            "submit()",
+            "commit()",
+            "select()"
+        ],
+        "answer": "execute()",
+        "explanation": "The execute() method is the standard way to run SQL queries, such as INSERT or SELECT, through a database cursor in Python."
+    },
+    {
+        "question": "When connecting to an RDBMS, what is the primary purpose of the 'commit' operation?",
+        "options": [
+            "Delete the temporary cache files",
+            "Close the active network connection",
+            "Create a new database table schema"
+        ],
+        "answer": "Save all current pending changes",
+        "explanation": "The commit() method finalizes a transaction by ensuring all changes made during the session are permanently saved to the database."
+    },
+    {
+        "question": "Which design pattern is best suited for creating a one-to-many dependency between objects?",
+        "options": [
+            "Factory Pattern",
+            "Strategy Pattern",
+            "Composite Pattern"
+        ],
+        "answer": "Observer Pattern",
+        "explanation": "The Observer pattern allows an object (subject) to notify multiple other objects (observers) automatically whenever its state changes."
+    },
+    {
+        "question": "What is the main objective of using the Strategy software design pattern?",
+        "options": [
+            "Ensure a class has only one instance",
+            "Compose objects into tree structures",
+            "Log errors to a central database file"
+        ],
+        "answer": "Define a family of interchangeable algorithms",
+        "explanation": "The Strategy pattern enables selecting an algorithm's behavior at runtime by putting them into separate, interchangeable classes."
+    },
+    {
+        "question": "In the context of SQL in Python, what does the fetchall() method return?",
+        "options": [
+            "A single string of the first row",
+            "A dictionary containing table names",
+            "A boolean value of the query status"
+        ],
+        "answer": "A list of tuples for all result rows",
+        "explanation": "The fetchall() method retrieves all rows of a query result set and returns them as a list, where each row is represented as a tuple."
+    },
+    {
+        "question": "Which design pattern provides an interface for creating families of related or dependent objects?",
+        "options": [
+            "Observer Pattern",
+            "Strategy Pattern",
+            "Composite Pattern"
+        ],
+        "answer": "Abstract Factory Pattern",
+        "explanation": "The Abstract Factory pattern allows for the creation of related objects without specifying their concrete classes, ensuring consistency across a product family."
+    },
+    {
+        "question": "What is the primary function of the Factory Method design pattern?",
+        "options": [
+            "Manage memory for complex objects",
+            "Coordinate multiple database threads",
+            "Represent a group of similar objects"
+        ],
+        "answer": "Delegate object creation to subclasses",
+        "explanation": "The Factory Method pattern defines an interface for creating objects but lets subclasses decide which specific class to instantiate."
+    },
+    {
+        "question": "Which pattern allows you to treat individual objects and compositions of objects uniformly?",
+        "options": [
+            "Observer Pattern",
+            "Strategy Pattern",
+            "Abstract Factory"
+        ],
+        "answer": "Composite Pattern",
+        "explanation": "The Composite pattern organizes objects into tree structures to represent part-whole hierarchies, allowing clients to treat single instances and collections the same way."
+    },
+    {
+        "question": "Which base class must be inherited to create a specialized error type in Python?",
+        "options": [
+            "BaseError",
+            "SystemError",
+            "RootException"
+        ],
+        "answer": "Exception",
+        "explanation": "Custom exceptions in Python are created by subclassing the built-in 'Exception' class to ensure compatibility with try-except blocks."
+    },
+    {
+        "question": "What is the primary role of a 'cursor' object when working with Python database libraries?",
+        "options": [
+            "Store the database password securely",
+            "Format the output into a JSON string",
+            "Install the necessary database driver"
+        ],
+        "answer": "Execute commands and fetch result sets",
+        "explanation": "A cursor acts as a middleman that allows Python to send SQL statements to the database and retrieve the resulting data rows."
+    },
+    {
+        "question": "In the Observer design pattern, what is the role of the 'Subject' entity?",
+        "options": [
+            "Request updates from the client object",
+            "Execute the main business logic flow",
+            "Store the history of all data changes"
+        ],
+        "answer": "Maintain a list of dependent observers",
+        "explanation": "The Subject keeps track of all registered observers and notifies them automatically whenever its internal state changes."
+    },
+    {
+        "question": "Which SQL keyword is used within an 'execute' method to add new records to a table?",
+        "options": [
+            "CREATE",
+            "UPDATE",
+            "APPEND"
+        ],
+        "answer": "INSERT",
+        "explanation": "The INSERT statement is the standard SQL command used to add new rows of data into a specific database table."
+    },
+    {
+        "question": "How does the Strategy pattern typically handle different versions of a specific task?",
+        "options": [
+            "Use multiple nested if-else statements",
+            "Create a single class for all logic",
+            "Hardcode the logic into the main app"
+        ],
+        "answer": "Encapsulate each logic in separate classes",
+        "explanation": "The Strategy pattern defines a family of algorithms, putting each one into its own class so they can be swapped easily at runtime."
+    },
+    {
+        "question": "Which method should you call to close a database connection and free up system resources?",
+        "options": [
+            "stop()",
+            "exit()",
+            "terminate()"
+        ],
+        "answer": "close()",
+        "explanation": "The close() method is used to properly disconnect from the database, ensuring that no stale connections remain active in memory."
+    },
+    {
+        "question": "What distinguishes the Abstract Factory pattern from the standard Factory Method pattern?",
+        "options": [
+            "It only works with static class methods",
+            "It requires a direct connection to SQL",
+            "It manages the deletion of old objects"
+        ],
+        "answer": "It creates families of related products",
+        "explanation": "Abstract Factory provides an interface for creating multiple types of related objects, whereas Factory Method focuses on a single product type."
+    },
+    {
+        "question": "Which structure is used by the Composite pattern to represent part-whole hierarchies?",
+        "options": [
+            "A flat linear sequence of elements",
+            "A circular linked list of components",
+            "A distributed network of data nodes"
+        ],
+        "answer": "A recursive tree-like object structure",
+        "explanation": "The Composite pattern uses a tree structure where both individual objects and groups of objects (composites) share the same interface."
+    },
+    {
+        "question": "When defining a custom exception, why might you override the __init__ method?",
+        "options": [
+            "To prevent the error from being raised",
+            "To change the Python interpreter version",
+            "To automatically fix the code bug found"
+        ],
+        "answer": "To accept and store custom error data",
+        "explanation": "Overriding __init__ allows you to pass specific details (like error codes or timestamps) to the exception when it is initialized."
+    },
+    {
+        "question": "What does the fetchone() method return if a query result set is completely empty?",
+        "options": [
+            "An empty string object",
+            "The integer value zero",
+            "A blank list structure"
+        ],
+        "answer": "A Python NoneType object",
+        "explanation": "In most Python database APIs (like sqlite3 or psycopg2), fetchone() returns 'None' if there are no more rows to retrieve."
+    },
+    {
+        "question": "Which design pattern is most useful for implementing a flexible plug-in system?",
+        "options": [
+            "Composite Pattern",
+            "Abstract Factory",
+            "Observer Pattern"
+        ],
+        "answer": "Strategy Pattern",
+        "explanation": "The Strategy pattern allows different behaviors (plugins) to be injected into a system without changing the core code that uses them."
+    },
+    {
+        "question": "What is the primary benefit of using custom exceptions instead of generic ones?",
+        "options": [
+            "They make the code run much faster",
+            "They reduce the total size of the file",
+            "They bypass the standard try-except block"
+        ],
+        "answer": "They provide clearer context for errors",
+        "explanation": "Custom exceptions allow developers to catch and handle specific application-level errors more precisely than generic built-in errors."
+    },
+    {
+        "question": "In the Composite pattern, what is a 'Leaf' object?",
+        "options": [
+            "A class that inherits from the Root",
+            "A method that initializes the tree",
+            "A container that holds other objects"
+        ],
+        "answer": "An object that has no child elements",
+        "explanation": "A Leaf is the end-node in a Composite tree structure; it performs the work but cannot contain other sub-components."
+    },
+    {
+        "question": "Which module is commonly used in the Python standard library for RDBMS operations with SQLite?",
+        "options": [
+            "db_connect",
+            "sql_python",
+            "rdbms_lib"
+        ],
+        "answer": "sqlite3",
+        "explanation": "The 'sqlite3' module is part of the Python standard library and provides a DB-API 2.0 compatible interface for SQLite databases."
+    },
+    {
+        "question": "What happens to uncommitted changes if a database connection is closed unexpectedly?",
+        "options": [
+            "They are saved in a backup file",
+            "They are applied to the table later",
+            "They are sent to the admin email"
+        ],
+        "answer": "They are automatically rolled back",
+        "explanation": "Most RDBMS will discard (roll back) any pending changes that were not explicitly finalized with a 'commit' if the session ends abruptly."
+    },
+    {
+        "question": "Which design pattern would you use to notify multiple displays when weather data changes?",
+        "options": [
+            "Factory Pattern",
+            "Strategy Pattern",
+            "Composite Pattern"
+        ],
+        "answer": "Observer Pattern",
+        "explanation": "The Observer pattern is ideal for scenarios where an update in one object needs to be reflected in several other dependent objects automatically."
+    },
+    {
+        "question": "What is the specific purpose of the 'Factory Method' design pattern?",
+        "options": [
+            "To connect to a remote SQL server",
+            "To organize code into tree nodes",
+            "To handle complex nested exceptions"
+        ],
+        "answer": "To decouple object creation from use",
+        "explanation": "The Factory Method pattern allows a class to defer instantiation to subclasses, meaning the main code doesn't need to know the exact class name."
+    },
+    {
+        "question": "Which command is used to retrieve specific columns from a database table?",
+        "options": [
+            "GET",
+            "FETCH",
+            "EXTRACT"
+        ],
+        "answer": "SELECT",
+        "explanation": "The SELECT statement is used in SQL to query and retrieve specific data fields from one or more database tables."
+    },
+    {
+        "question": "In the Strategy pattern, how does the client switch between different algorithms?",
+        "options": [
+            "By restarting the entire application",
+            "By editing the library source code",
+            "By creating a new database connection"
+        ],
+        "answer": "By passing a different object instance",
+        "explanation": "The client can swap strategies at any time by assigning a different strategy object to the context class."
+    },
+    {
+        "question": "Why is it important to use parameterized queries when executing SQL in Python?",
+        "options": [
+            "To make the SQL code look cleaner",
+            "To increase the speed of the query",
+            "To bypass the need for a database"
+        ],
+        "answer": "To prevent SQL injection attacks",
+        "explanation": "Parameterized queries ensure that user input is treated as data only, preventing malicious users from executing unauthorized SQL commands."
+    },
+    {
+        "question": "Which of these is a key component of the Abstract Factory pattern?",
+        "options": [
+            "A single concrete database table",
+            "A recursive function for error logs",
+            "A strategy for handling user input"
+        ],
+        "answer": "A set of abstract product classes",
+        "explanation": "Abstract Factory relies on abstract classes or interfaces for each type of product that the various concrete factories will produce."
+    },
+    {
+        "question": "What is the result of using the 'raise' statement without any arguments inside an 'except' block?",
+        "options": [
+            "It clears the current error state",
+            "It stops the program with no error",
+            "It creates a new generic exception"
+        ],
+        "answer": "It re-raises the active exception",
+        "explanation": "Using 'raise' alone inside an 'except' block passes the current exception up the call stack so it can be handled elsewhere."
+    },
+    {
+        "question": "Which part of the Composite pattern defines the interface for all objects in the tree?",
+        "options": [
+            "The Leaf class",
+            "The Branch class",
+            "The Client class"
+        ],
+        "answer": "The Component class",
+        "explanation": "The Component class (usually abstract) defines the common operations for both simple objects and their containers in a Composite structure."
+    },
+    {
+        "question": "What does 'RDBMS' stand for in the context of Python database connectivity?",
+        "options": [
+            "Rapid Data Base Management System",
+            "Remote Data Binary Management Set",
+            "Relational Data Build Matrix System"
+        ],
+        "answer": "Relational Database Management System",
+        "explanation": "RDBMS refers to database systems like PostgreSQL, MySQL, and SQLite that organize data into tables related by common keys."
+    },
+    {
+        "question": "In an SQL query, which clause is used to filter results based on a condition?",
+        "options": [
+            "WHEN",
+            "IF",
+            "FILTER"
+        ],
+        "answer": "WHERE",
+        "explanation": "The WHERE clause is used to specify criteria that the data must meet to be included in the results of a SELECT, UPDATE, or DELETE query."
+    },
+    {
+        "question": "Which pattern is best for building a UI where a folder can contain both files and other folders?",
+        "options": [
+            "Observer Pattern",
+            "Strategy Pattern",
+            "Factory Pattern"
+        ],
+        "answer": "Composite Pattern",
+        "explanation": "The Composite pattern is perfect for hierarchical structures like file systems where containers and individual items are treated the same way."
+    },
+    {
+        "question": "When creating a custom exception, where should the 'docstring' typically be placed?",
+        "options": [
+            "Outside the class at the top",
+            "Inside the main __init__ method",
+            "After the first instance call"
+        ],
+        "answer": "Directly under the class definition",
+        "explanation": "A docstring placed immediately after the class header explains the purpose of the exception to other developers."
+    },
+    {
+        "question": "Which method is used to retrieve only the next single row from a database query?",
+        "options": [
+            "get_row()",
+            "next_item()",
+            "fetch_all()"
+        ],
+        "answer": "fetchone()",
+        "explanation": "The fetchone() method retrieves the very next row in the result set and moves the cursor forward by one."
+    },
+    {
+        "question": "What is a major advantage of the Abstract Factory design pattern?",
+        "options": [
+            "It simplifies the database schema",
+            "It makes the code execute faster",
+            "It removes the need for error logs"
+        ],
+        "answer": "It ensures product compatibility",
+        "explanation": "Abstract Factory ensures that objects created by a single factory are designed to work together correctly as a suite."
+    },
+    {
+        "question": "In the Strategy pattern, what is the 'Context' class responsible for?",
+        "options": [
+            "Defining the concrete algorithms",
+            "Creating the different strategies",
+            "Connecting to the external database"
+        ],
+        "answer": "Maintaining a reference to a Strategy",
+        "explanation": "The Context class holds a reference to one of the strategy objects and uses it to perform the required action."
+    },
+    {
+        "question": "Which exception is raised by Python when a database connection fails?",
+        "options": [
+            "NetworkError",
+            "ConnectionLimit",
+            "DatabaseLost"
+        ],
+        "answer": "OperationalError",
+        "explanation": "In the Python DB-API, OperationalError is typically raised for issues like a failed connection or an unexpected disconnect."
+    },
+    {
+        "question": "In the Observer pattern, what happens when an observer is 'detached'?",
+        "options": [
+            "The observer object is deleted",
+            "The subject object is destroyed",
+            "The entire program stops running"
+        ],
+        "answer": "It stops receiving notifications",
+        "explanation": "Detaching an observer simply removes it from the Subject's list, so it will no longer be notified of state changes."
+    },
+    {
+        "question": "What is the standard way to provide a custom error message to a new exception?",
+        "options": [
+            "Write it in a separate text file",
+            "Send it as a parameter to raise",
+            "Hardcode it in the class name"
+        ],
+        "answer": "Pass it to the super().__init__()",
+        "explanation": "By passing a message to the parent class's __init__ method, the message becomes available through the exception's 'args' attribute."
+    },
+    {
+        "question": "Which SQL command is used to modify existing data within a database table?",
+        "options": [
+            "CHANGE",
+            "MODIFY",
+            "EDIT"
+        ],
+        "answer": "UPDATE",
+        "explanation": "The UPDATE statement is the standard SQL command used to change values in rows that already exist in a table."
+    },
+    {
+        "question": "Which pattern allows adding new algorithms without changing the objects that use them?",
+        "options": [
+            "Composite Pattern",
+            "Factory Pattern",
+            "Observer Pattern"
+        ],
+        "answer": "Strategy Pattern",
+        "explanation": "The Strategy pattern promotes the Open/Closed Principle by allowing new strategies to be added without modifying the context class."
+    },
+    {
+        "question": "What is the role of 'subclasses' in the Factory Method design pattern?",
+        "options": [
+            "To catch all database exceptions",
+            "To define the main client interface",
+            "To store the application settings"
+        ],
+        "answer": "To decide which object to create",
+        "explanation": "In the Factory Method pattern, the base class provides the interface, but subclasses override the factory method to return specific object types."
+    },
+    {
+        "question": "What does the 'commit()' method ensure in an RDBMS transaction?",
+        "options": [
+            "The SQL syntax is verified",
+            "The database driver is updated",
+            "The cursor is reset to the top"
+        ],
+        "answer": "The data is permanently saved",
+        "explanation": "Commit ensures 'atomicity'—making sure all parts of a transaction are written to the disk and visible to other users."
+    },
+    {
+        "question": "In the Composite pattern, why do Leaf and Composite classes share the same interface?",
+        "options": [
+            "To minimize the memory usage",
+            "To increase the execution speed",
+            "To avoid using custom exceptions"
+        ],
+        "answer": "To treat them uniformly by clients",
+        "explanation": "Sharing the same interface allows client code to interact with a single object or a group of objects without needing to distinguish between them."
+    },
+    {
+        "question": "Which keyword is used to start a custom exception class definition in Python?",
+        "options": [
+            "def",
+            "error",
+            "exception"
+        ],
+        "answer": "class",
+        "explanation": "Like all other types of objects in Python, exceptions are defined using the 'class' keyword."
+    },
+    {
+        "question": "What is the primary purpose of the 'Observer' software design pattern?",
+        "options": [
+            "To encrypt data before saving it",
+            "To sort lists in alphabetical order",
+            "To manage memory for large objects"
+        ],
+        "answer": "To handle event-driven updates",
+        "explanation": "The Observer pattern is primarily used for event-handling systems where objects need to react to changes in another part of the software."
+    }
+]
